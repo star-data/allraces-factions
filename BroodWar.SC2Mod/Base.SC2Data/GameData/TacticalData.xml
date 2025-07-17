@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CTacticalOrder id="SCBW_Unit"/>
+<CTacticalOrder id="ArbiterSCBW"/>
+<CTacticalOrder id="ArchonSCBW"/>
+<CTacticalOrder id="CarrierSCBW">
+  <Abil value="CarrierSCBWHangar"/>
+  <Validator value="CarrierSCBW@HangarQueueEmpty"/>
+</CTacticalOrder>
+<CTacticalOrder id="CorsairSCBW"/>
+<CTacticalOrder id="DarkArchonSCBW"/>
+<CTacticalOrder id="DarkTemplarSCBW"/>
+<CTacticalOrder id="DragoonSCBW"/>
+<CTacticalOrder id="HighTemplarSCBW">
+  <Abil value="HighTemplarSCBWPsiStorm"/>
+  <TargetFind value="HighTemplarSCBW@PsiStorm"/>
+</CTacticalOrder>
+<CTacticalOrder id="InterceptorSCBW"/>
+<CTacticalOrder id="ObserverSCBW"/>
+<CTacticalOrder id="ProbeSCBW"/>
+<CTacticalOrder id="ReaverSCBW">
+  <Abil value="ReaverSCBWHangar"/>
+  <Validator value="ReaverSCBW@HangarQueueEmpty"/>
+</CTacticalOrder>
+<CTacticalOrder id="ScarabSCBW"/>
+<CTacticalOrder id="ScoutSCBW"/>
+<CTacticalOrder id="ShuttleSCBW"/>
+<CTacticalOrder id="ZealotSCBW"/>
+<CTacticalOrder id="ArbiterTribunalSCBW"/>
+<CTacticalOrder id="AssimilatorSCBW"/>
+<CTacticalOrder id="CitadelOfAdunSCBW"/>
+<CTacticalOrder id="CyberneticsCoreSCBW"/>
+<CTacticalOrder id="FleetBeaconSCBW"/>
+<CTacticalOrder id="ForgeSCBW"/>
+<CTacticalOrder id="GatewaySCBW">
+  <Abil value="Rally"/>
+  <TargetFind value="DefaultRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="NexusSCBW">
+  <Abil value="NexusSCBW@Rally"/>
+  <TargetFind value="WorkerRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="ObservatorySCBW"/>
+<CTacticalOrder id="PylonSCBW"/>
+<CTacticalOrder id="RoboticsBaySCBW"/>
+<CTacticalOrder id="RoboticsFacilitySCBW">
+  <Abil value="Rally"/>
+  <TargetFind value="DefaultRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="ShieldBatterySCBW"/>
+<CTacticalOrder id="TemplarArchiveSCBW"/>
+<CTacticalOrder id="PhotonCannonSCBW"/>
+<CTacticalOrder id="StargateSCBW"/>
+<CTacticalOrder id="ScienceVesselSCBW@DefensiveMatrix">
+  <Abil value="DefensiveMatrix"/>
+  <Validator value="TacticalDefensiveMatrix"/>
+</CTacticalOrder>
+<CTacticalOrder id="FirebatSCBW">
+  <Abil value="FirebatSCBWStimpack"/>
+  <Validator value="FirebatSCBWStimpack@Tactical"/>
+</CTacticalOrder>
+<CTacticalOrder id="ScienceVesselSCBW@TacticalEMP">
+  <Abil value="ScienceVesselSCBWEMPShockwave"/>
+  <TargetFind value="ScienceVesselSCBW@EMP"/>
+  <Retreat value="1"/>
+</CTacticalOrder>
+<CTacticalOrder id="GhostSCBW@Cloak">
+  <Abil value="GhostSCBWCloak"/>
+  <AbilCmdIndex value="1"/>
+  <Validator value="GhostSCBW@CloakOff"/>
+</CTacticalOrder>
+<CTacticalOrder id="GhostSCBW@Decloak">
+  <Abil value="GhostSCBWCloak"/>
+  <Validator value="GhostSCBW@CloakOn"/>
+</CTacticalOrder>
+<CTacticalSet id="GhostSCBW@Tactical">
+  <Array value="GhostSCBW@Cloak"/>
+  <Array value="GhostSCBW@Decloak"/>
+</CTacticalSet>
+<CTacticalOrder id="MarineSCBW">
+  <Abil value="MarineSCBWStimpack"/>
+  <Validator value="MarineSCBWStimpack@Tactical"/>
+</CTacticalOrder>
+<CTacticalOrder id="SiegeTankSCBW">
+  <Abil value="SiegeTankSCBW@Siege"/>
+  <Validator value="SiegeTankSCBW@TacticalSiege"/>
+</CTacticalOrder>
+<CTacticalOrder id="SiegeTankSCBWSieged">
+  <Abil value="SiegeTankSCBWSieged@Unsiege"/>
+  <Validator value="SiegeTankSCBWSieged@TacticalUnsiege"/>
+</CTacticalOrder>
+<CTacticalOrder id="WraithSCBW"/>
+<CTacticalOrder id="BarracksSCBW">
+  <Abil value="Rally"/>
+  <TargetFind value="DefaultRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="CommandCenterSCBW">
+  <Abil value="RallyCommand"/>
+  <TargetFind value="WorkerRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="FactorySCBW">
+  <Abil value="Rally"/>
+  <TargetFind value="DefaultRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="StarportSCBW">
+  <Abil value="Rally"/>
+  <TargetFind value="DefaultRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="DefilerSCBW">
+  <Abil value="DefilerSCBW@BurrowDown"/>
+  <Validator value="DefilerSCBW@TacticalBurrowDefilerDown"/>
+</CTacticalOrder>
+<CTacticalOrder id="DefilerSCBW@Burrowed">
+  <Abil value="DefilerSCBW@BurrowUp"/>
+  <Validator value="DefilerSCBW@TacticalBurrowDefilerUp"/>
+</CTacticalOrder>
+<CTacticalOrder id="DevourerSCBWEgg"/>
+<CTacticalOrder id="DroneSCBW">
+  <Abil value="DroneSCBW@BurrowDown"/>
+  <Validator value="DroneSCBW@TacticalBurrowDown"/>
+</CTacticalOrder>
+<CTacticalOrder id="DroneSCBW@Burrowed">
+  <Abil value="DroneSCBW@BurrowUp"/>
+  <Validator value="DroneSCBW@TacticalBurrowDUp"/>
+</CTacticalOrder>
+<CTacticalOrder id="GuardianSCBWEgg"/>
+<CTacticalOrder id="HydraliskSCBW">
+  <Abil value="HydraliskSCBW@BurrowDown"/>
+  <Validator value="HydraliskSCBW@TacticalBurrowHydraliskDown"/>
+</CTacticalOrder>
+<CTacticalOrder id="HydraliskSCBW@Burrowed">
+  <Abil value="HydraliskSCBW@BurrowUp"/>
+  <Validator value="HydraliskSCBW@TacticalBurrowHydraliskUp"/>
+</CTacticalOrder>
+<CTacticalOrder id="InfestedTerranSCBW">
+  <Abil value="InfestedTerranSCBW@BurrowDown"/>
+  <Validator value="HydraliskSCBW@TacticalBurrowHydraliskDown"/>
+</CTacticalOrder>
+<CTacticalOrder id="InfestedTerranSCBW@Burrowed">
+  <Abil value="InfestedTerranSCBW@BurrowUp"/>
+  <Validator value="HydraliskSCBW@TacticalBurrowHydraliskDown"/>
+</CTacticalOrder>
+<CTacticalOrder id="LurkerSCBW">
+  <Abil value="LurkerSCBW@BurrowDown"/>
+  <Validator value="LurkerSCBW@TacticalBurrow"/>
+</CTacticalOrder>
+<CTacticalOrder id="LurkerSCBW@Burrowed">
+  <Abil value="LurkerSCBW@BurrowUp"/>
+  <Validator value="LurkerSCBW@TacticalUnburrow"/>
+</CTacticalOrder>
+<CTacticalOrder id="LurkerSCBWEgg"/>
+<CTacticalOrder id="UltraliskSCBW">
+  <Abil value="LurkerSCBW@BurrowDown"/>
+  <Validator value="UltraliskSCBW@TacticalBurrowUltraliskDown"/>
+</CTacticalOrder>
+<CTacticalOrder id="UltraliskSCBW@Burrowed">
+  <Abil value="UltraliskSCBW@BurrowUp"/>
+  <Validator value="UltraliskSCBW@TacticalBurrowUltraliskUp"/>
+</CTacticalOrder>
+<CTacticalOrder id="ZerglingSCBW">
+  <Abil value="ZerglingSCBW@BurrowDown"/>
+  <Validator value="ZerglingSCBW@TacticalBurrowDown"/>
+</CTacticalOrder>
+<CTacticalOrder id="ZerglingSCBW@Burrowed">
+  <Abil value="ZerglingSCBW@BurrowUp"/>
+  <Validator value="ZerglingSCBW@TacticalBurrowUp"/>
+</CTacticalOrder>
+<CTacticalOrder id="HatcherySCBW@DefaultRally">
+  <Abil value="HatcherySCBW@Rally"/>
+  <TargetFind value="DefaultRallyPoint"/>
+</CTacticalOrder>
+<CTacticalOrder id="HatcherySCBW@WorkerRally">
+  <Abil value="HatcherySCBW@Rally"/>
+  <AbilCmdIndex value="1"/>
+  <TargetFind value="WorkerRallyPointHatchery"/>
+</CTacticalOrder>
+<CTacticalOrder id="InfestedCommandCenterSCBW"/>
+<CTacticalOrder id="InfestedCommandCenterSCBW@Flying"/>
+<CTacticalOrder id="CreepColonySCBW"/>
+<CTacticalOrder id="DefilerMoundSCBW"/>
+<CTacticalOrder id="EvolutionChamberSCBW"/>
+<CTacticalOrder id="ExtractorSCBW"/>
+<CTacticalOrder id="ExtractorSCBW@Rich"/>
+<CTacticalSet id="HiveSCBW">
+  <Array value="HatcherySCBW@DefaultRally"/>
+  <Array value="HatcherySCBW@WorkerRally"/>
+</CTacticalSet>
+<CTacticalOrder id="GreaterSpireSCBW"/>
+<CTacticalSet id="HatcherySCBW">
+  <Array value="HatcherySCBW@DefaultRally"/>
+  <Array value="HatcherySCBW@WorkerRally"/>
+</CTacticalSet>
+<CTacticalSet id="LairSCBW">
+  <Array value="HatcherySCBW@DefaultRally"/>
+  <Array value="HatcherySCBW@WorkerRally"/>
+</CTacticalSet>
+<CTacticalOrder id="HydraliskDenSCBW"/>
+<CTacticalOrder id="NydusCanalSCBW"/>
+<CTacticalOrder id="QueensNestSCBW"/>
+<CTacticalOrder id="SpawningPoolSCBW"/>
+<CTacticalOrder id="SpireSCBW"/>
+<CTacticalOrder id="SporeColonySCBW"/>
+<CTacticalOrder id="SunkenColonySCBW"/>
+<CTacticalOrder id="UltraliskCavernSCBW"/>
+<CTacticalOrder id="InfestedCommandCenterSC2"/>
+<CTacticalOrder id="InfestedCommandCenterSC2@Flying"/>
+<CTacticalOrder id="InfestedPlanetaryFortressSCBW"/>
+<CTacticalOrder id="InfestedPlanetaryFortressSCBW@Flying"/>
+<CTacticalOrder id="InfestedOrbitalCommandSCBW"/>
+<CTacticalOrder id="InfestedOrbitalCommandSCBW@Flying"/>
+
+</Catalog>

@@ -1,0 +1,1009 @@
+﻿Abil/Name/ArkwyrmTerritorialDive=Arkwyrm - Territorial Dive
+Abil/Name/ArkwyrmTransport=Arkwyrm - Transport
+Abil/Name/ArkwyrmUnload=Arkwyrm - Unload
+Abil/Name/AscendedArkwyrm=Ascended Arkwyrm
+Abil/Name/AscendedAuroraConduit=Ascended Aurora Conduit
+Abil/Name/AscendedBerserker=Ascended Berserker
+Abil/Name/AscendedBrimstoneDemolisher=Ascended Brimstone Demolisher
+Abil/Name/AscendedFlamespitter=Ascended Flamespitter
+Abil/Name/AscendedFleshrender=Ascended Fleshrender
+Abil/Name/AscendedFleshrender2=Ascended Fleshrender Copy
+Abil/Name/AscendedFleshrenderFree2=Ascended Fleshrender (Free)
+Abil/Name/AscendedGrimGlider=Ascended Grim Glider
+Abil/Name/AscendedHandofPower=Ascended Hand of Power
+Abil/Name/AscendedHornedMagus=Ascended Horned Magus
+Abil/Name/AscendedHunter=Ascended Hunter
+Abil/Name/AscendedPlodder=Ascended Plodder
+Abil/Name/AscendedRazorback=Ascended Razorback
+Abil/Name/AscendedRazorbackFission=Fission
+Abil/Name/AscendedSkyrazer=Ascended Skyrazer
+Abil/Name/AscendedUnseenBeast=Ascended Unseen Beast
+Abil/Name/AscendedVolcanicHarbinger=Ascended Volcanic Harbinger
+Abil/Name/AugmentationPit=Augmentation Pit
+Abil/Name/BrimstoneDemolisherInfernalBreath=Infernal Breath
+Abil/Name/DenizenoftheDeep=Denizen of the Deep
+Abil/Name/DenizenoftheDeepBuild=Denizen of the Deep - Build
+Abil/Name/DenizenoftheDeepRally=Denizen of the Deep - Rally
+Abil/Name/DenizenoftheDeepTrain=Denizen of the Deep - Train
+Abil/Name/DragonAscend=Dragon (Ascend)
+Abil/Name/DragonAscendedFission=Fission
+Abil/Name/DragonBuild=Dragon - Build
+Abil/Name/DragonBuildApplyBehavior=Dragon - Build (Apply Behavior)
+Abil/Name/DragonBuilding=Dragon Building
+Abil/Name/DragonFission=Fission
+Abil/Name/DragonTrain=Dragon - Train
+Abil/Name/FrontierDeepOneBuild=Frontier Deep One - Build
+Abil/Name/FrontierDeepOneInvigorate=Frontier Deep One - Invigorate
+Abil/Name/FrontierDeepOneResearch=Frontier Deep One - Research
+Abil/Name/GenesisPit=Genesis Pit
+Abil/Name/GenesisPitTrain=Genesis Pit - Train
+Abil/Name/GreaterDeepOne=Greater Deep One
+Abil/Name/GreaterDeepOneBuild=Greater Deep One - Build
+Abil/Name/GreaterDeepOneResearchBerserker=Greater Deep One - Research (Berserker)
+Abil/Name/GreaterDeepOneResearchBrimstoneDemolisher=Greater Deep One - Research (Brimstone Demolisher)
+Abil/Name/GreaterDeepOneResearchHandofPower=Greater Deep One - Research (Hand of Power)
+Abil/Name/GreaterDeepOneResearchSkyrazer=Greater Deep One - Research (Skyrazer)
+Abil/Name/GreaterDeepOneTrain=Greater Deep One - Train
+Abil/Name/GrimGliderEmaciate=Grim Glider - Emaciate
+Abil/Name/GrimGliderMortalitysEclipse=Grim Glider - Mortality's Eclipse
+Abil/Name/GrimGliderNullify=Grim Glider - Nullify
+Abil/Name/HandofPowerCrushingGravity=Hand of Power - Crushing Gravity
+Abil/Name/HandofPowerPortalEntrance=Hand of Power - Portal Entrance
+Abil/Name/HandofPowerPortalExit=Hand of Power - Portal Exit
+Abil/Name/HandofPowerShroud=Hand of Power - Shroud
+Abil/Name/HornedMagusFireShield=Horned Magus - Fire Shield
+Abil/Name/HornedMagusFrenzy=Horned Magus - Frenzy
+Abil/Name/HornedMagusInvigorate=Horned Magus - Invigorate
+Abil/Name/HunterActivateRegenesis=Hunter - Activate Regenesis
+Abil/Name/HunterDeactivateRegenesis=Hunter - Deactivate Regenesis
+Abil/Name/LesserDeepOne=Lesser Deep One
+Abil/Name/LesserDeepOneBuild=Lesser Deep One - Build
+Abil/Name/LesserDeepOneResearchFlamespitter=Lesser Deep One - Research (Flamespitter)
+Abil/Name/LesserDeepOneResearchHornedMagus=Lesser Deep One - Research (Horned Magus)
+Abil/Name/LesserDeepOneResearchHunter=Lesser Deep One - Research (Hunter)
+Abil/Name/LesserDeepOneResearchUnseenBeast=Lesser Deep One - Research (Unseen Beast)
+Abil/Name/LesserDeepOneTrain=Lesser Deep One - Train
+Abil/Name/PlodderBuild=Plodder - Build
+Abil/Name/PlodderHarvest=Plodder - Gather
+Abil/Name/Razorback=Razorback
+Abil/Name/ToweringDeepOne=Towering Deep One
+Abil/Name/ToweringDeepOneBuild=Towering Deep One - Build
+Abil/Name/ToweringDeepOneResearchAuroraConduit=Towering Deep One - Research (Aurora Conduit)
+Abil/Name/ToweringDeepOneResearchFleshrender=Towering Deep One - Research (Fleshrender)
+Abil/Name/ToweringDeepOneResearchGrimGlider=Towering Deep One - Research (Grim Glider)
+Abil/Name/ToweringDeepOneResearchVolcanicHarbinger=Towering Deep One - Research (Volcanic Harbinger)
+Abil/Name/ToweringDeepOneTrain=Towering Deep One - Train
+Abil/Name/UnseenBeastExploration=Unseen Beast - Exploration
+Abil/Name/UnseenBeastProwl=Unseen Beast - Prowl
+Abil/Name/UnseenBeastTeleportAssault=Unseen Beast - Teleport Assault
+Abil/Name/UnseenBeastTeleportAssaultTrigger=Unseen Beast - Teleport Assault (Trigger)
+Abil/Name/VolcanicHarbingerOverload=Overload
+Abil/Name/VolcanicHarbingerQueue=Volcanic Harbinger - Queue
+Attribute001/Desc=Activate to play as a custom race.
+Attribute001/Name=Custom Race
+Attribute001/Value001/Desc=Play as one of the three standard races.
+Attribute001/Value001/Name=Standard
+Attribute001/Value002/Desc=Play as the Dragons.
+Attribute001/Value002/Name=Dragons
+Behavior/Name/ArkwyrmTerritorialDive=Territorial Dive
+Behavior/Name/ArkwyrmUnload=Arkwyrm - Unload
+Behavior/Name/AuroraConduitNetherShock=Nether Shock
+Behavior/Name/BerserkerMadnessActiveMelee=Madness
+Behavior/Name/BerserkerMadnessActiveRanged=Madness
+Behavior/Name/BrimstoneDemolisherScorchingBlaze2=Brimstone Demolisher - Scorching Blaze (2)
+Behavior/Name/DeepOne3x3=Deep One (3x3)
+Behavior/Name/DeepOne4x4=Deep One (4x4)
+Behavior/Name/DeepOne5x5=Deep One (5x5)
+Behavior/Name/DragonAscend=Dragon - Ascend
+Behavior/Name/DragonAscended=Ascended
+Behavior/Name/DragonBuildRemoveBehavior=Dragon - Build (Remove Behavior)
+Behavior/Name/DragonCracksModel=Dragon - Cracks (Model)
+Behavior/Name/DragonFission=Fission
+Behavior/Name/DragonHunterRegenesis=Regenesis
+Behavior/Name/DragonLineageGreater=Dragon Lineage
+Behavior/Name/DragonLineageLesser=Dragon Lineage (Lesser)
+Behavior/Name/DragonTrain1=Dragon - Train 1
+Behavior/Name/DragonTrain2=Dragon - Train 2
+Behavior/Name/FlamespitterFervor=Fervor
+Behavior/Name/GrimGliderEmaciate=Emaciate
+Behavior/Name/GrimGliderMortalitysEclipseCaster=Mortality's Eclipse
+Behavior/Name/GrimGliderShade=Shade
+Behavior/Name/HandofPowerCrushingGravity=Crushing Gravity
+Behavior/Name/HandofPowerPortal=Hand of Power - Portal
+Behavior/Name/HandofPowerPortalActive=Hand of Power - Portal (Active)
+Behavior/Name/HandofPowerPortalSickness=Portal Sickness
+Behavior/Name/HandofPowerPortalStrength=Portal Strength
+Behavior/Name/HandofPowerShroud=Shroud
+Behavior/Name/HornedMagusFireShield=Fire Shield
+Behavior/Name/HornedMagusFireShieldInitial=Fire Shield
+Behavior/Name/HornedMagusFrenzy=Frenzy
+Behavior/Name/Skyrazer2=Skyrazer
+Behavior/Name/SkyrazerAscended1=Skyrazer
+Behavior/Name/SunkenGuardianCracksModel=Sunken Guardian - Cracks (Model)
+Behavior/Name/SunkenGuardianImpale=Impale
+Behavior/Name/VolcanicHarbingerOverload=Overload
+Behavior/Name/VolcanicHarbingerOverload0=Overload
+Behavior/Name/VolcanicHarbingerOverload1=Overload
+Behavior/Name/VolcanicHarbingerOverload2=Overload
+Behavior/Name/VolcanicHarbingerOverload3=Overload
+Behavior/Tooltip/AuroraConduitNetherShock=This unit has reduced armor.
+Behavior/Tooltip/BerserkerMadnessActiveMelee=This unit's movement speed is slowed by <d ref="(1-Behavior,BerserkerMadnessActiveMelee,Modification.MoveSpeedMultiplier)*100"/>% unless it attacks a Berserker.
+Behavior/Tooltip/BerserkerMadnessActiveRanged=This unit's movement speed is slowed by <d ref="(1-Behavior,BerserkerMadnessActiveRanged,Modification.MoveSpeedMultiplier)*100"/>% unless it attacks a Berserker.
+Behavior/Tooltip/DragonAscended=This Dragon is more powerful.
+Behavior/Tooltip/DragonFission=This unit deals <d ref="-100*Behavior,DragonFission,Modification.DamageDealtFraction[Melee]"/>% reduced damage and regenerates <d ref="Behavior,DragonFission,Modification.VitalRegenArray[Life]"/> life per second until it reaches full life.
+Behavior/Tooltip/DragonHunterRegenesis=Regenerating <d ref="Behavior,DragonHunterRegenesis,Modification.VitalRegenArray[Life]" precision="1"/> life per second.
+Behavior/Tooltip/GrimGliderEmaciate=Losing <d ref="-Effect,GrimGliderEmaciateModifyTarget,VitalArray[Energy].Change / Effect,GrimGliderEmaciateCreatePersistent,PeriodicPeriodArray[0]"/> energy and <d ref="Effect,GrimGliderEmaciateDamageEnemy,Amount / Effect,GrimGliderEmaciateCreatePersistent,PeriodicPeriodArray[0]"/> life per second while movement speed slowed by <d ref="(1 - Behavior,GrimGliderEmaciate,Modification.MoveSpeedMultiplier) * 100"/>%.
+Behavior/Tooltip/GrimGliderMortalitysEclipseCaster=Raises all combat units that die within <d ref="Effect,GrimGliderMortalitysEclipseSearchArea,AreaArray[0].Radius"/> range as uncontrollable Shades that fight on the Grim Glider's behalf with <d ref="(Behavior,GrimGliderShade,Modification.AttackSpeedMultiplier-1)*100"/>% attack speed. Shades decay over <d ref="-1/Effect,GrimGliderShadeModifyUnit,VitalArray[Life].ChangeFraction*Behavior,GrimGliderShade,Period" precision="1"/> seconds unless protected by Mortality's Eclipse or Wraith Night.
+Behavior/Tooltip/GrimGliderShade=Uncontrollable, has <d ref="(Behavior,GrimGliderShade,Modification.AttackSpeedMultiplier-1)*100"/>% attack speed, and decays over <d ref="-1/Effect,GrimGliderShadeModifyUnit,VitalArray[Life].ChangeFraction*Behavior,GrimGliderShade,Period" precision="1"/> seconds unless protected by Mortality's Eclipse or Wraith Night.
+Behavior/Tooltip/HandofPowerCrushingGravity=Target is being pulled to the ground and is now vulnerable to ground attacks. This unit cannot use abilities until Crushing Gravity ends.
+Behavior/Tooltip/HandofPowerPortalSickness=This unit cannot attack or use abilities.
+Behavior/Tooltip/HandofPowerPortalStrength=This unit has temporarily increased hit points from passing through a portal.
+Behavior/Tooltip/HandofPowerShroud=Temporarily cloaked with movement speed increased by <d ref="100*(Behavior,HandofPowerShroud,Modification.MoveSpeedMultiplier-1)"/>% unless it attacks or receives damage.
+Behavior/Tooltip/HornedMagusFireShield=Armor increased by <d ref="Behavior,HornedMagusFireShield,Modification.LifeArmorBonus"/> and causes nearby units on the same plane that do not also have Fire Shield to suffer <d ref="Effect,HornedMagusFireShieldDamage,Amount/Behavior,HornedMagusFireShield,Period"/> damage per second.
+Behavior/Tooltip/HornedMagusFireShieldInitial=Armor increased by <d ref="Behavior,HornedMagusFireShieldInitial,Modification.LifeArmorBonus"/> and after a <d ref="Behavior,HornedMagusFireShieldInitial,Duration" precision="1"/> second delay causes nearby units on the same plane that do not also have Fire Shield to suffer <d ref="Effect,HornedMagusFireShieldDamage,Amount/Behavior,HornedMagusFireShield,Period"/> damage per second.
+Behavior/Tooltip/HornedMagusFrenzy=Uncontrollable. Attack and movement speed increased by 50% but armor reduced by 2.
+Behavior/Tooltip/SunkenGuardianImpale=This unit cannot move.
+Behavior/Tooltip/VolcanicHarbingerOverload0=The next attack will not hit an additional time.
+Behavior/Tooltip/VolcanicHarbingerOverload1=The next attack will hit an additional time.
+Behavior/Tooltip/VolcanicHarbingerOverload2=The next attack will hit two additional times.
+Behavior/Tooltip/VolcanicHarbingerOverload3=The next attack will hit three additional times.
+Button/Name/Arkwyrm=Spawn Arkwyrm
+Button/Name/ArkwyrmLoad=Load
+Button/Name/ArkwyrmTerritorialDive=Territorial Dive
+Button/Name/ArkwyrmUnloadAll=Unload All
+Button/Name/AscendedArkwyrm=Ascend
+Button/Name/AscendedAuroraConduit=Ascend
+Button/Name/AscendedBerserker=Ascend
+Button/Name/AscendedBrimstoneDemolisher=Ascend
+Button/Name/AscendedDragon=Ascend
+Button/Name/AscendedFlamespitter=Ascend
+Button/Name/AscendedFleshrender=Ascend
+Button/Name/AscendedGrimGlider=Ascend
+Button/Name/AscendedHandofPower=Ascend
+Button/Name/AscendedHornedMagus=Ascend
+Button/Name/AscendedHunter=Ascend
+Button/Name/AscendedPlodder=Ascend
+Button/Name/AscendedRazorback=Ascend
+Button/Name/AscendedSkyrazer=Ascend
+Button/Name/AscendedUnseenBeast=Ascend
+Button/Name/AscendedVolcanicHarbinger=Ascend
+Button/Name/AugmentDragonFireAttacksLevel1=Augment Dragon Fire Attacks Level 1
+Button/Name/AugmentDragonFireAttacksLevel2=Augment Dragon Fire Attacks Level 2
+Button/Name/AugmentDragonFireAttacksLevel3=Augment Dragon Fire Attacks Level 3
+Button/Name/AugmentDragonMeleeAttacksLevel1=Augment Dragon Melee Attacks Level 1
+Button/Name/AugmentDragonMeleeAttacksLevel2=Augment Dragon Melee Attacks Level 2
+Button/Name/AugmentDragonMeleeAttacksLevel3=Augment Dragon Melee Attacks Level 3
+Button/Name/AugmentDragonPlateArmorLevel1=Augment Dragon Plate Armor Level 1
+Button/Name/AugmentDragonPlateArmorLevel2=Augment Dragon Plate Armor Level 2
+Button/Name/AugmentDragonPlateArmorLevel3=Augment Dragon Plate Armor Level 3
+Button/Name/AugmentDragonScaleArmorLevel1=Augment Dragon Scale Armor Level 1
+Button/Name/AugmentDragonScaleArmorLevel2=Augment Dragon Scale Armor Level 2
+Button/Name/AugmentDragonScaleArmorLevel3=Augment Dragon Scale Armor Level 3
+Button/Name/AugmentationPit=Propagate Augmentation Pit
+Button/Name/AugmentationPitFrontier=Propagate Augmentation Pit
+Button/Name/AugmentationPitGreater=Propagate Augmentation Pit
+Button/Name/AugmentationPitLesser=Propogate Augmentation Pit
+Button/Name/AugmentationPitTowering=Propogate Augmentation Pit
+Button/Name/AuroraConduit=Spawn Aurora Conduit
+Button/Name/AuroraConduitNetherShock=Nether Shock
+Button/Name/Berserker=Spawn Berserker
+Button/Name/BerserkerBerserk=Berserk
+Button/Name/BerserkerMadness=Madness
+Button/Name/BrimstoneDemolisher=Spawn Brimstone Demolisher
+Button/Name/BrimstoneDemolisherAdaptiveArmor=Adaptive Armor
+Button/Name/BrimstoneDemolisherBrutalThrash=Brutal Thrash
+Button/Name/BrimstoneDemolisherInfernalBreath=Infernal Breath
+Button/Name/Coagulator=Propagate Coagulator
+Button/Name/DenizenoftheDeep=Unearth Denizen of the Deep
+Button/Name/DragonAscended=Ascended
+Button/Name/DragonFission=Fission
+Button/Name/DragonHunter=Spawn Hunter
+Button/Name/DragonHunterActivateRegenesis=Activate Regenesis
+Button/Name/DragonHunterCliffJumper=Cliff Jumper
+Button/Name/DragonHunterDeactivateRegenesis=Deactivate Regenesis
+Button/Name/DragonIndomitableStrength=Indomitable Strength
+Button/Name/DragonRetarget=Retarget
+Button/Name/Flamespitter=Spawn Flamespitter
+Button/Name/FlamespitterFervor=Fervor
+Button/Name/FlamespitterOverheat=Overheat
+Button/Name/Fleshrender=Spawn Fleshrender
+Button/Name/FleshrenderInfernalEffigy=Infernal Effigy
+Button/Name/FleshrenderKite=Kite
+Button/Name/FrontierDeepOne=Unearth Frontier Deep One
+Button/Name/FrontierDeepOneActivateInvigorate=Invigorate
+Button/Name/FrontierDeepOneDragonLineage=Augment Dragon Lineage
+Button/Name/FrontierDeepOneMigratoryEndurance=Augment Migratory Endurance
+Button/Name/GenesisPit=Propagate Genesis Pit
+Button/Name/GenesisPitGreater=Propogate Genesis Pit
+Button/Name/GenesisPitLesser=Propagate Genesis Pit
+Button/Name/GenesisPitTowering=Propagate Genesis Pit
+Button/Name/GreaterDeepOne=Unearth Greater Deep One
+Button/Name/GreaterDeepOneEmberCore=Augment Ember Core
+Button/Name/GreaterDeepOneFrenzy=Augment Frenzy
+Button/Name/GreaterDeepOneInfernalBreath=Augment Infernal Breath
+Button/Name/GreaterDeepOneMadness=Augment Madness
+Button/Name/GreaterDeepOnePortal=Augment Portal
+Button/Name/GrimGlider=Spawn Grim Glider
+Button/Name/GrimGliderEmaciate=Emaciate
+Button/Name/GrimGliderMortalitysEclipse=Mortality's Eclipse
+Button/Name/GrimGliderNullify=Nullify
+Button/Name/GrimGliderPermanentlyCloaked=Permanently Cloaked
+Button/Name/GrimGliderWraithNight=Wraith Night
+Button/Name/HandofPower=Spawn Hand of Power
+Button/Name/HandofPowerCrushingGravity=Crushing Gravity
+Button/Name/HandofPowerPortalEntrance=Portal Entrance
+Button/Name/HandofPowerPortalExit=Portal Exit
+Button/Name/HandofPowerShroud=Shroud
+Button/Name/HornedMagus=Spawn Horned Magus
+Button/Name/HornedMagusActivateInvigorate=Activate Invigorate
+Button/Name/HornedMagusDeactivateInvigorate=Deactivate Invigorate
+Button/Name/HornedMagusFireShield=Fire Shield
+Button/Name/HornedMagusFrenzy=Frenzy
+Button/Name/HunterFeast=Feast
+Button/Name/HunterTongueLash=Tongue Lash
+Button/Name/ImprovedSpikedCarapace=Improved Spiked Carapace
+Button/Name/LesserDeepOne=Unearth Lesser Deep One
+Button/Name/LesserDeepOneFervidReconstitution=Augment Fervid Reconstitution
+Button/Name/LesserDeepOneProwl=Augment Prowl
+Button/Name/LesserDeepOneWickedBarbs=Augment Wicked Barbs
+Button/Name/PhlogistonGuardian=Propagate Phlogiston Guardian
+Button/Name/Plodder=Spawn Plodder
+Button/Name/PlodderGather=Gather
+Button/Name/Razorback=Propagate Razorback
+Button/Name/RazorbackSpikedCarapace=Spiked Carapace
+Button/Name/Skyrazer=Spawn Skyrazer
+Button/Name/SkyrazerEmberCore=Ember Core
+Button/Name/SunkenGuardian=Propagate Sunken Guardian
+Button/Name/ToweringDeepOne=Unearth Towering Deep One
+Button/Name/ToweringDeepOneConduction=Augment Conduction
+Button/Name/ToweringDeepOneMortalitysEclipse=Augment Mortality's Eclipse
+Button/Name/ToweringDeepOnePlasmaCatalyst=Augment Plasma Catalyst
+Button/Name/ToweringDeepOneProliferation=Augment Proliferation
+Button/Name/UnearthDeepOne=Unearth Deep One
+Button/Name/UnseenBeast=Spawn Unseen Beast
+Button/Name/UnseenBeastActivateExploration=Activate Exploration
+Button/Name/UnseenBeastDeactivateExploration=Deactivate Exploration
+Button/Name/UnseenBeastKeenSenses=Keen Senses
+Button/Name/UnseenBeastProwl=Prowl
+Button/Name/UnseenBeastTeleportAssault=Teleport Assault
+Button/Name/VolcanicHarbinger=Spawn Volcanic Harbinger
+Button/Name/VolcanicHarbingerOverload=Overload
+Button/Tooltip/Arkwyrm=Flying transport. Can load and unload units. Ranged unload.<n/><n/><c val="00FF00">Ascend:<n/>+<d ref="Unit,AscendedArkwyrm,LifeMax - Unit,Arkwyrm,LifeMax"/> Life<n/>+<d ref="Unit,AscendedArkwyrm,LifeArmor - Unit,Arkwyrm,LifeArmor"/> Armor<n/>+<d ref="Unit,AscendedArkwyrm,Speed - Unit,Arkwyrm,Speed" precision="1"/> Speed<n/>Territorial Dive</c>
+Button/Tooltip/ArkwyrmLoad=Loads units into the Arkwyrm's gizzard.
+Button/Tooltip/ArkwyrmTerritorialDive=After <d ref="Abil,ArkwyrmTerritorialDive,CastIntroTime[0]" precision="1"/> seconds, rapidly travels to the target location.<n/><n/><c val="#ColorAttackInfo">Requires vision.</c>
+Button/Tooltip/ArkwyrmUnloadAll=Unloads all units at the target point.
+Button/Tooltip/AscendedArkwyrm=<c val="00FF00">+<d ref="Unit,AscendedArkwyrm,LifeMax - Unit,Arkwyrm,LifeMax"/> Life<n/>+<d ref="Unit,AscendedArkwyrm,LifeArmor - Unit,Arkwyrm,LifeArmor"/> Armor<n/>+<d ref="Unit,AscendedArkwyrm,Speed - Unit,Arkwyrm,Speed" precision="1"/> Speed<n/>Territorial Dive</c>
+Button/Tooltip/AscendedAuroraConduit=<c val="00FF00">+<d ref="Unit,AscendedAuroraConduit,LifeMax-Unit,AuroraConduit,LifeMax"/> Life<n/>+<d ref="Weapon,AscendedAuroraConduitNetherShockAir,Range-Weapon,AuroraConduitNetherShockAir,Range"/> Attack Range<n/>+<d ref="(Weapon,AuroraConduitNetherShockAir,Period/Weapon,AscendedAuroraConduitNetherShockAir,Period-1)*100" precision="1"/>% Attack Speed</c>
+Button/Tooltip/AscendedBerserker=<c val="00FF00">+<d ref="Unit,AscendedBerserker,LifeMax-Unit,Berserker,LifeMax"/> Life<n/>+<d ref="Effect,BerserkerAscendedCrushingBlowDamage,Amount-Effect,BerserkerCrushingBlowDamage,Amount"/> Attack Damage<n/>Massive<n/>Not Light<n/>Indomitable Strength</c>
+Button/Tooltip/AscendedBrimstoneDemolisher=<c val="00FF00">+<d ref="Unit,AscendedBrimstoneDemolisher,LifeMax-Unit,BrimstoneDemolisher,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedBrimstoneDemolisher,EnergyRegenRate/Unit,BrimstoneDemolisher,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>+ <d ref="100*(Effect,BrimstoneDemolisherAscendedBrutalThrashSearchArea,AreaArray[0].Radius/Effect,BrimstoneDemolisherBrutalThrashSearchArea,AreaArray[0].Radius-1)"/>% Brutal Thrash Range<n/>Adaptive Armor</c>
+Button/Tooltip/AscendedFlamespitter=<c val="00FF00">+<d ref="Unit,AscendedFlamespitter,LifeMax-Unit,Flamespitter,LifeMax"/> Life<n/>+<d ref="Effect,FlamespitterAscendedClawsDamage,Amount-Effect,FlamespitterClawsDamage,Amount"/> Melee Attack Damage<n/>Can Attack air units</c>
+Button/Tooltip/AscendedFleshrender=<c val="00FF00">+<d ref="Unit,AscendedFleshrender,LifeMax-Unit,Fleshrender,LifeMax"/> Life<n/>Infernal Effigy</c>
+Button/Tooltip/AscendedGrimGlider=<c val="00FF00">+<d ref="Unit,AscendedGrimGlider,LifeMax-Unit,GrimGlider,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedGrimGlider,EnergyRegenRate/Unit,GrimGlider,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>+<d ref="Unit,AscendedGrimGlider,Speed-Unit,GrimGlider,Speed" precision="1"/> Speed<n/>Wraith Night</c>
+Button/Tooltip/AscendedHandofPower=<c val="00FF00">+<d ref="Unit,AscendedHandofPower,LifeMax-Unit,HandofPower,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedHandofPower,EnergyRegenRate/Unit,HandofPower,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>Unobstructed Vision</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/AscendedHornedMagus=<c val="00FF00">+<d ref="Unit,AscendedHornedMagus,LifeMax-Unit,HornedMagus,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedHornedMagus,EnergyRegenRate/Unit,HornedMagus,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>+<d ref="Unit,AscendedHornedMagus,LifeRegenRate-Unit,HornedMagus,LifeRegenRate" precision="1"/> Life Regeneration</c>
+Button/Tooltip/AscendedHunter=<c val="00FF00">+<d ref="Unit,AscendedDragonHunter,LifeMax-Unit,DragonHunter,LifeMax"/> Life<n/>Feast</c><n/><c val="FF0000">No Cliff Jump</c>
+Button/Tooltip/AscendedPlodder=<c val="00FF00">+<d ref="Unit,AscendedPlodder,LifeMax-Unit,Plodder,LifeMax"/> Life<n/>+<d ref="Unit,AscendedPlodder,LifeArmor-Unit,Plodder,LifeArmor"/> Armor<n/>+<d ref="Behavior,DragonAscended,Modification.ResourceHarvestAmountBonus[Minerals]"/> Minerals Gathered<n/>+<d ref="Behavior,DragonAscended,Modification.ResourceHarvestAmountBonus[Vespene]"/> Vespene Gathered</c>
+Button/Tooltip/AscendedRazorback=<c val="00FF00">+<d ref="Unit,AscendedRazorback,LifeMax-Unit,Razorback,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedRazorback,Food-Unit,Razorback,Food)" precision="1"/> Supply<n/>Improved Spiked Carapace</c>
+Button/Tooltip/AscendedSkyrazer=<c val="00FF00">+<d ref="Unit,AscendedSkyrazer,LifeMax-Unit,Skyrazer,LifeMax"/> Life<n/>+1 Attack Projectile</c>
+Button/Tooltip/AscendedUnseenBeast=<c val="00FF00">+<d ref="Unit,AscendedUnseenBeast,LifeMax-Unit,UnseenBeast,LifeMax"/> Life<n/>Teleport Assault</c>
+Button/Tooltip/AscendedVolcanicHarbinger=<c val="00FF00">+<d ref="Unit,AscendedVolcanicHarbinger,LifeMax-Unit,VolcanicHarbinger,LifeMax"/> Life<n/>+<d ref="Weapon,VolcanicHarbingerAscendedPlasmaFlare,Range-Weapon,VolcanicHarbingerPlasmaFlare,Range"/> Attack Range<n/>+<d ref="(Behavior,VolcanicHarbingerAscended,Modification.RateMultiplierArray[Queueable]-1)*100"/>% Overload Speed</c>
+Button/Tooltip/AugmentDragonFireAttacksLevel1=Upgrades the ranged attacks of all fire breathing Dragon units.
+Button/Tooltip/AugmentDragonFireAttacksLevel2=Further upgrades the ranged attacks of all fire breathing Dragon units.
+Button/Tooltip/AugmentDragonFireAttacksLevel3=Maximizes the ranged attacks of all fire breathing Dragon units.
+Button/Tooltip/AugmentDragonMeleeAttacksLevel1=Upgrades all Dragon melee attacks, the ranged attacks of Hunters and Sunken Guardians, and the Spiked Carapace of Razorbacks.
+Button/Tooltip/AugmentDragonMeleeAttacksLevel2=Further upgrades all Dragon melee attacks, the ranged attacks of Hunters and Sunken Guardians, and the Spiked Carapace of Razorbacks.
+Button/Tooltip/AugmentDragonMeleeAttacksLevel3=Maximizes all Dragon melee attacks, the ranged attacks of Hunters and Sunken Guardians, and the Spiked Carapace of Razorbacks.
+Button/Tooltip/AugmentDragonPlateArmorLevel1=Upgrades the armor of all armored Dragon units and structures.
+Button/Tooltip/AugmentDragonPlateArmorLevel2=Further upgrades the armor of all armored Dragon units and structures.
+Button/Tooltip/AugmentDragonPlateArmorLevel3=Maximizes the armor of all armored Dragon units and structures.
+Button/Tooltip/AugmentDragonScaleArmorLevel1=Upgrades the armor of all light Dragon units.
+Button/Tooltip/AugmentDragonScaleArmorLevel2=Further upgrades the armor of all light Dragon units.
+Button/Tooltip/AugmentDragonScaleArmorLevel3=Maximizes the armor of all light Dragon units.
+Button/Tooltip/AugmentationPit=Contains upgrades for Dragon units.
+Button/Tooltip/AugmentationPitFrontier=Contains attack, armor and other miscellaneous upgrades for Dragon units.
+Button/Tooltip/AugmentationPitGreater=Contains upgrades for Dragon units spawned by Greater Deep Ones. Provides additional unit options for its parent and attached Genesis Pits.<n/><n/><c val="ffff8a">Enables:</c><n/>- Hands of Power<n/>- Brimstone Demolishers
+Button/Tooltip/AugmentationPitLesser=Contains upgrades for Dragon units spawned by Lesser Deep Ones. Provides additional unit options for its parent and attached Genesis Pits.<n/><n/><c val="ffff8a">Enables:</c><n/>- Horned Magus<n/>- Unseen Beasts
+Button/Tooltip/AugmentationPitTowering=Contains upgrades for Dragon units spawned by Towering Deep Ones. Provides additional unit options for its parent and attached Genesis Pits.<n/><n/><c val="ffff8a">Enables:</c><n/>- Volcanic Harbingers<n/>- Grim Gliders
+Button/Tooltip/AuroraConduit=Flying ranged support unit. Reduces armor on attack. Can be upgraded to reduce the armor of additional targets.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedAuroraConduit,LifeMax-Unit,AuroraConduit,LifeMax"/> Life<n/>+<d ref="Weapon,AscendedAuroraConduitNetherShockAir,Range-Weapon,AuroraConduitNetherShockAir,Range"/> Attack Range<n/>+<d ref="(Weapon,AuroraConduitNetherShockAir,Period/Weapon,AscendedAuroraConduitNetherShockAir,Period-1)*100" precision="1"/>% Attack Speed</c>
+Button/Tooltip/AuroraConduitNetherShock=Each attack reduces target armor by <d ref="-Behavior,AuroraConduitNetherShock,Modification.LifeArmorBonus"/> for <d ref="Behavior,AuroraConduitNetherShock,Duration"/> seconds.
+Button/Tooltip/Berserker=Durable melee unit.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedBerserker,LifeMax-Unit,Berserker,LifeMax"/> Life<n/>+<d ref="Effect,BerserkerAscendedCrushingBlowDamage,Amount-Effect,BerserkerCrushingBlowDamage,Amount"/> Attack Damage<n/>Massive<n/>Not Light<n/>Indomitable Strength</c>
+Button/Tooltip/BerserkerBerserk=Increases movement speed by <d ref="100*(Behavior,BerserkerBerserk,Modification.MoveSpeedMultiplier-1)"/>% for 1 second upon taking damage.
+Button/Tooltip/BerserkerMadness=Ground enemies within <d ref="Effect,BerserkerMadnessSearchArea,AreaArray[0].Radius"/> range of a Berserker that are not attacking one have their movement speed slowed by <d ref="(1-Behavior,BerserkerMadnessActiveRanged,Modification.MoveSpeedMultiplier)*100"/>% or by <d ref="(1-Behavior,BerserkerMadnessActiveMelee,Modification.MoveSpeedMultiplier)*100"/>% if in melee range.
+Button/Tooltip/BrimstoneDemolisher=Powerful massive unit. Deals heavy melee splash damage. Can be upgraded to deal ranged splash damage.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedBrimstoneDemolisher,LifeMax-Unit,BrimstoneDemolisher,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedBrimstoneDemolisher,EnergyRegenRate/Unit,BrimstoneDemolisher,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>+ <d ref="100*(Effect,BrimstoneDemolisherAscendedBrutalThrashSearchArea,AreaArray[0].Radius/Effect,BrimstoneDemolisherBrutalThrashSearchArea,AreaArray[0].Radius-1)"/>% Brutal Thrash Range<n/>Adaptive Armor</c>
+Button/Tooltip/BrimstoneDemolisherAdaptiveArmor=Reduces melee, ranged and splash damage taken depending on the amount.<n/><n/>10 damage reduced by ~1<n/>20 damage reduced by ~3.7<n/>30 damage reduced by ~7.9<n/>40 damage reduced by ~13.5<n/>50 damage reduced by ~20<n/>60 damage reduced by ~27.5<n/>70 damage reduced by ~35.8<n/>80 damage reduced by ~44.7<n/>90 damage reduced by ~54.2<n/>100 damage reduced by ~64.1
+Button/Tooltip/BrimstoneDemolisherBrutalThrash=Melee attacks deals two instances of area damage in half arcs that overlap in front of the Brimstone Demolisher.
+Button/Tooltip/BrimstoneDemolisherInfernalBreath=Ranged attack that produces a continuous stream of fire that deals <d ref="Effect,BrimstoneDemolisherInfernalBreathDamage,Amount/Weapon,BrimstoneDemolisherInfernalBreathDummy,Period"/> damage per second to all enemies in its area of effect.<n/><n/><c val="f078ff">Costs <d ref="-Effect,BrimstoneDemolisherInfernalBreathModifyUnit,VitalArray[Energy].Change/Weapon,BrimstoneDemolisherInfernalBreathDummy,Period"/> energy per second.</c>
+Button/Tooltip/ChangelingFlamespitter=Ranged unit. Projectiles may retarget.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/Coagulator=Propogated over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/CoagulatorRich=Propogated over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/DenizenoftheDeep=Primary structure. Used to receive gathered resources. Propogates economic Dragon structures.<n/><n/>Generates <d ref="60/Behavior,DenizenoftheDeepRage,Period"/> rage per minute.<n/><n/><c val="ffff8a">Enables:</c><n/>- Plodders<n/>- Razorbacks<n/>- Coagulaters
+Button/Tooltip/DenizenoftheDeepFootprint=Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
+Button/Tooltip/DragonFission=Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.
+Button/Tooltip/DragonHunter=Fast ranged unit. Pulls enemies with ranged attack. Can jump up and down cliffs.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedDragonHunter,LifeMax-Unit,DragonHunter,LifeMax"/> Life<n/>Feast</c><n/><c val="FF0000">No Cliff Jump</c>
+Button/Tooltip/DragonHunterActivateRegenesis=Regenerates <d ref="Behavior,DragonHunterRegenesis,Modification.VitalRegenArray[Life]" precision="1"/> life per second but prevents attacks and movement.
+Button/Tooltip/DragonHunterCliffJumper=This unit can jump up and down cliffs.
+Button/Tooltip/DragonHunterDeactivateRegenesis=Deactivates Regenesis allowing attacks and movement.
+Button/Tooltip/DragonIndomitableStrength=Can push through other units and is immune to snare, stun, mind control, and movement altering effects.
+Button/Tooltip/DragonRetarget=Ranged attack projectiles retarget if the original target dies.
+Button/Tooltip/Flamespitter=Fragile ranged unit. Projectiles may retarget.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedFlamespitter,LifeMax-Unit,Flamespitter,LifeMax"/> Life<n/>+<d ref="Effect,FlamespitterAscendedClawsDamage,Amount-Effect,FlamespitterClawsDamage,Amount"/> Melee Attack Damage<n/>Can Attack air units</c>
+Button/Tooltip/FlamespitterFervor=Attacking increases movement speed by <d ref="100*(Behavior,FlamespitterFervor,Modification.MoveSpeedMultiplier-1)"/>% for <d ref="Behavior,FlamespitterFervor,Duration" precision="1"/> seconds.
+Button/Tooltip/FlamespitterOverheat=Attacking reduces movement speed by <d ref="100*(1-Behavior,FlamespitterOverheated,Modification.MoveSpeedMultiplier)"/>% for <d ref="Behavior,FlamespitterOverheated,Duration" precision="1"/> seconds.
+Button/Tooltip/Fleshrender=Fast flying melee unit.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedFleshrender,LifeMax-Unit,Fleshrender,LifeMax"/> Life<n/>Infernal Effigy</c>
+Button/Tooltip/FleshrenderInfernalEffigy=Increases the Fleshrender's attack priority. Upon death deals <d ref="Effect,FleshrenderInfernalEffigyDamage,Amount"/> damage to the killing unit and Ascends a nearby Fleshrender.
+Button/Tooltip/FleshrenderKite=Quickly kites around targets to perform attacks. Attacks can be performed while moving.
+Button/Tooltip/FrontierDeepOne=Propogates basic Dragon structures. Heals nearby biological units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Razorbacks<n/>- Augmentation Pits<n/>- Sunken Guardians<n/>- Phlogiston Guardians
+Button/Tooltip/FrontierDeepOneActivateInvigorate=Heals up to <d ref="1/Behavior,FrontierDeepOneInvigorateCaster,Period"/> nearby friendly biological units and structures each second.<n/><n/><c val="f078ff">Heals <d ref="Effect,DragonInvigorateModifyUnit2,VitalArray[Life].Change*Effect,DragonInvigorateCreatePersistent,PeriodCount"/> life for <d ref="-Effect,DragonInvigorateModifyUnit1,VitalArray[Energy].Change*Effect,DragonInvigorateCreatePersistent,PeriodCount"/> energy each second per target.</c>
+Button/Tooltip/FrontierDeepOneDragonLineage=Provides all Dragon units and structures with ramping life regeneration out of combat.
+Button/Tooltip/FrontierDeepOneMigratoryEndurance=Increases <c val="ffff8a">Razorback</c> movement speed by 200%.
+Button/Tooltip/GenesisPit=Spawns units like its parent Deep One.
+Button/Tooltip/GenesisPitGreater=Spawns greater Dragon units. Inherits Augmentation Pit status from its parent.<n/><n/><c val="ffff8a">Enables:</c><n/>- Berserkers<n/>- Skyrazers
+Button/Tooltip/GenesisPitLesser=Spawns lesser Dragon units. Inherits Augmentation Pit status from its parent.<n/><n/><c val="ffff8a">Enables:</c><n/>- Flamespitters<n/>- Hunters
+Button/Tooltip/GenesisPitNoFootprint=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/GenesisPitTowering=Spawns flying Dragon units. Inherits Augmentation Pit status from its parent.<n/><n/><c val="ffff8a">Enables:</c><n/>- Fleshrenders<n/>- Aurora Conduits<n/>- Arkwyrms
+Button/Tooltip/GreaterDeepOne=Spawns greater Dragon units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Berserkers<n/>- Skyrazers
+Button/Tooltip/GreaterDeepOneEmberCore=Allows <c val="ffff8a">Skyrazors</c> to use <c val="ffff8a">Superior Blast</c> against targets on higher cliff levels. Increases the range of <c val="ffff8a">Inferior Blast</c> by 1 and <c val="ffff8a">Superior Blast</c> by 2.
+Button/Tooltip/GreaterDeepOneFrenzy=Allows <c val="ffff8a">Horned Magus</c> use Frenzy and increases their starting energy by 25.
+Button/Tooltip/GreaterDeepOneInfernalBreath=Allows <c val="ffff8a">Brimstone Demolishers</c> to use Infernal Breath.
+Button/Tooltip/GreaterDeepOneMadness=Ground enemies within <d ref="Effect,BerserkerMadnessSearchArea,AreaArray[0].Radius"/> range of a <c val="ffff8a">Berserker</c> that are not attacking one have their movement speed slowed by <d ref="(1-Behavior,BerserkerMadnessActiveRanged,Modification.MoveSpeedMultiplier)*100"/>% or by <d ref="(1-Behavior,BerserkerMadnessActiveMelee,Modification.MoveSpeedMultiplier)*100"/>% if in melee range.
+Button/Tooltip/GreaterDeepOneNoFootprint=Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
+Button/Tooltip/GreaterDeepOnePortal=Allows <c val="ffff8a">Hands of Power</c> to use Portal and increases their starting energy by 25.
+Button/Tooltip/GrimGlider=Massive flying unit. Can drain energy, shields, and life from targets. Can destroy enemy projectiles. Can be upgraded to raise units slain nearby as temporary shades.<n/><n/><c val="FFE303">Detector</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedGrimGlider,LifeMax-Unit,GrimGlider,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedGrimGlider,EnergyRegenRate/Unit,GrimGlider,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>+<d ref="Unit,AscendedGrimGlider,Speed-Unit,GrimGlider,Speed" precision="1"/> Speed<n/>Wraith Night</c>
+Button/Tooltip/GrimGliderEmaciate=Drains energy and vitality from a target without alerting enemies. Enemy and neutral targets lose <d ref="-Effect,GrimGliderEmaciateModifyTarget,VitalArray[Energy].Change / Effect,GrimGliderEmaciateCreatePersistent,PeriodicPeriodArray[0]"/> energy and <d ref="Effect,GrimGliderEmaciateDamageEnemy,Amount / Effect,GrimGliderEmaciateCreatePersistent,PeriodicPeriodArray[0]"/> vitality per second while having their movement speed slowed by <d ref="(1 - Behavior,GrimGliderEmaciate,Modification.MoveSpeedMultiplier) * 100"/>%. Player or allied targets lose the same amount of energy but only lose <d ref="Effect,GrimGliderEmaciateDamageAlly,Amount / Effect,GrimGliderEmaciateCreatePersistent,PeriodicPeriodArray[0]"/> vitality per second. The Grim Glider gains <d ref="Effect,GrimGliderEmaciateDamageEnemy,LeechFraction[Energy]*100"/>% of these amounts as energy, except for the vitality drained from neutral targets.<n/><n/><c val="#ColorAttackInfo">Prioritizes enemies that are not currently Emaciated, then with high energy and vitality.</c>
+Button/Tooltip/GrimGliderMortalitysEclipse=For the next <d ref="Behavior,GrimGliderMortalitysEclipseCaster,Duration"/> seconds raises all combat units that die within <d ref="Effect,GrimGliderMortalitysEclipseSearchArea,AreaArray[0].Radius"/> range as uncontrollable Shades that fight on the Grim Glider's behalf with <d ref="(Behavior,GrimGliderShade,Modification.AttackSpeedMultiplier-1)*100"/>% attack speed. Shades decay over <d ref="-1/Effect,GrimGliderShadeModifyUnit,VitalArray[Life].ChangeFraction*Behavior,GrimGliderShade,Period" precision="1"/> seconds unless protected by Mortality's Eclipse or Wraith Night.
+Button/Tooltip/GrimGliderNullify=Destroys a nearby enemy projectile.
+Button/Tooltip/GrimGliderPermanentlyCloaked=The Grim Glider is permanently cloaked.
+Button/Tooltip/GrimGliderWraithNight=Friendly Shades within <d ref="Validator,GrimGliderShadeDamage,AreaArray[0].Radius"/> range do not decay.
+Button/Tooltip/HandofPower=Caster unit that can push enemies back with its attacks. Can use Crushing Gravity and Shroud. Can be upgraded to use Portal.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedHandofPower,LifeMax-Unit,HandofPower,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedHandofPower,EnergyRegenRate/Unit,HandofPower,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>Unobstructed Vision</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/HandofPowerCrushingGravity=Immobilizes enemy units in the target area for up to <d ref="Effect,HandofPowerCrushingGravityCreatePersistent,PeriodCount*Effect,HandofPowerCrushingGravityCreatePersistent,PeriodicPeriodArray[0]"/> seconds and forces air units to the ground. Detects cloaked units and forces burrowed units to unburrow.<n/><n/><c val="#ColorAttackInfo">Massive units are immune.
+Button/Tooltip/HandofPowerPortalEntrance=Creates a portal entrance at the target location which teleports ground units that enter it to the next created portal exit. Lasts <d ref="Behavior,HandofPowerPortalActive,Duration"/> seconds.
+Button/Tooltip/HandofPowerPortalExit=Activates the nearest inactive portal entrance in range linking it to the created portal exit.
+Button/Tooltip/HandofPowerShroud=Temporarily cloaks and increases the movement speed of friendly units in the target area by <d ref="100*(Behavior,HandofPowerShroud,Modification.MoveSpeedMultiplier-1)"/>% for <d ref="Behavior,HandofPowerShroud,Duration"/> seconds unless they attack or receive damage.
+Button/Tooltip/HornedMagus=Ranged caster unit. Projectiles may retarget. Can use Fire Shield and Invigorate. Can be upgraded to use Frenzy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedHornedMagus,LifeMax-Unit,HornedMagus,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedHornedMagus,EnergyRegenRate/Unit,HornedMagus,EnergyRegenRate-1)*100"/>% Energy Regeneration<n/>+<d ref="Unit,AscendedHornedMagus,LifeRegenRate-Unit,HornedMagus,LifeRegenRate" precision="1"/> Life Regeneration</c>
+Button/Tooltip/HornedMagusActivateInvigorate=Heals up to <d ref="1/Behavior,HornedMagusInvigorateCaster,Period"/> nearby friendly biological units and structures each second.<n/><n/><c val="f078ff">Heals <d ref="Effect,DragonInvigorateModifyUnit2,VitalArray[Life].Change*Effect,DragonInvigorateCreatePersistent,PeriodCount"/> life for <d ref="-Effect,DragonInvigorateModifyUnit1,VitalArray[Energy].Change*Effect,DragonInvigorateCreatePersistent,PeriodCount"/> energy each second per target.</c>
+Button/Tooltip/HornedMagusDeactivateInvigorate=Stops healing nearby friendly biological units and structures to conserve energy.<n/><n/><c val="f078ff">Heals <d ref="Effect,DragonInvigorateModifyUnit2,VitalArray[Life].Change*Effect,DragonInvigorateCreatePersistent,PeriodCount"/> life for <d ref="-Effect,DragonInvigorateModifyUnit1,VitalArray[Energy].Change*Effect,DragonInvigorateCreatePersistent,PeriodCount"/> energy each second per target.</c>
+Button/Tooltip/HornedMagusFireShield=Increases the target unit's armor by <d ref="Behavior,HornedMagusFireShield,Modification.LifeArmorBonus"/> and causes nearby units on the same plane that do not also have Fire Shield to suffer <d ref="Effect,HornedMagusFireShieldDamage,Amount/Behavior,HornedMagusFireShield,Period"/> damage per second. Lasts <d ref="Behavior,HornedMagusFireShield,Duration"/> seconds.
+Button/Tooltip/HornedMagusFrenzy=Causes Biological units in the target area to go mad for <d ref="Behavior,HornedMagusFrenzy,Duration"/> seconds rendering them uncontrollable. Increases attack and movement speed by 50% but reduces armor by 2.
+Button/Tooltip/HunterFeast=Each attack against biological or shielded targets provides the Hunter <d ref="Effect,DragonHunterMeleeModifyUnit,VitalArray[Life].Change"/> life with Claws and <d ref="Effect,HunterTongueLashModifyUnit,VitalArray[Life].Change"/> life with Tongue Lash.
+Button/Tooltip/HunterTongueLash=Ranged attacks pull the target towards the Hunter with increased effect against light units.
+Button/Tooltip/ImprovedSpikedCarapace=Razorbacks deal <d ref="Effect,RazorbackAscendedSpikedCarapaceDamage,Amount"/> damage to melee attackers and <d ref="Effect,RazorbackAscendedUrticatingQuillsDamage,Amount"/> damage to ranged attackers. Deals <d ref="Effect,RazorbackAscendedSpikedCarapaceDamage,AttributeBonus[Armored]"/> additional damage to Armored units.
+Button/Tooltip/LesserDeepOne=Spawns lesser Dragon units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Flamespitters<n/>- Hunters
+Button/Tooltip/LesserDeepOneFervidReconstitution=Prevents <c val="ffff8a">Flamespitters</c> from overheating, instead causing them to temporarily gain movement speed while attacking.
+Button/Tooltip/LesserDeepOneNoFootprint=Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
+Button/Tooltip/LesserDeepOneProwl=Allows <c val="ffff8a">Unseen Beasts</c> to use Prowl.
+Button/Tooltip/LesserDeepOneWickedBarbs=Improves the <c val="ffff8a">Hunter's</c> Claws to deal +6 damage vs. light units and Tongue Lash to deal +13 damage vs. light units.
+Button/Tooltip/PhlogistonGuardian=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/Plodder=Basic worker unit. Can harvest minerals and vespene gas. Can excavate structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedPlodder,LifeMax-Unit,Plodder,LifeMax"/> Life<n/>+<d ref="Unit,AscendedPlodder,LifeArmor-Unit,Plodder,LifeArmor"/> Armor<n/>+<d ref="Behavior,DragonAscended,Modification.ResourceHarvestAmountBonus[Minerals]"/> Minerals Gathered<n/>+<d ref="Behavior,DragonAscended,Modification.ResourceHarvestAmountBonus[Vespene]"/> Vespene Gathered</c>
+Button/Tooltip/PlodderGather=Orders Plodder to gather resources from a selected Mineral Field or Vespene Geyser.
+Button/Tooltip/Razorback=Provides supply.<n/>Supply allows you to create more units.<n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedRazorback,LifeMax-Unit,Razorback,LifeMax"/> Life<n/>+<d ref="(Unit,AscendedRazorback,Food-Unit,Razorback,Food)" precision="1"/> Supply<n/>Improved Spiked Carapace</c>
+Button/Tooltip/RazorbackSpikedCarapace=Razorbacks deal <d ref="Effect,RazorbackSpikedCarapaceDamage,Amount"/> damage to melee attackers and <d ref="Effect,RazorbackUrticatingQuillsDamage,Amount"/> damage to ranged attackers. Deals <d ref="Effect,RazorbackSpikedCarapaceDamage,AttributeBonus[Light]"/> additional damage to Light units.
+Button/Tooltip/Skyrazer=Ranged unit. Projectiles may retarget. Powerful anti-air attack.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedSkyrazer,LifeMax-Unit,Skyrazer,LifeMax"/> Life<n/>+1 Attack Projectile</c>
+Button/Tooltip/SkyrazerEmberCore=Allows <c val="ffff8a">Skyrazors</c> to use <c val="ffff8a">Superior Blast</c> against targets on higher cliff levels or while affected by <c val="ffff8a">Crushing Gravity</c>.
+Button/Tooltip/SunkenGuardian=Anti-ground defensive structure. <n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/ToweringDeepOne=Spawns flying Dragon units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Fleshrenders<n/>- Aurora Conduits<n/>- Arkwyrms
+Button/Tooltip/ToweringDeepOneConduction=Causes the <c val="ffff8a">Aurora Conduit's</c> Nether Shock armor reduction to chain to up to two additional targets.
+Button/Tooltip/ToweringDeepOneMortalitysEclipse=Allows <c val="ffff8a">Grim Gliders</c> to use Mortality's Eclipse.
+Button/Tooltip/ToweringDeepOneNoFootprint=Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
+Button/Tooltip/ToweringDeepOnePlasmaCatalyst=Allows <c val="ffff8a">Volcanic Harbingers</c> to Overload while attacking, prevents them from wasting charges on overkills, and reduces the charge time to 3 seconds.
+Button/Tooltip/ToweringDeepOneProliferation=Reduces the build time of <c val="ffff8a">Fleshrenders</c> by 5 seconds and reduces their Fission cost by 5 Rage.
+Button/Tooltip/UnearthDeepOne=A list of structures.
+Button/Tooltip/UnseenBeast=Mobile melee assassin. Can be upgraded to cloak rendering the unit invisible to enemies without detection.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedUnseenBeast,LifeMax-Unit,UnseenBeast,LifeMax"/> Life<n/>Teleport Assault</c>
+Button/Tooltip/UnseenBeastActivateExploration=Activate Exploration disabling attacks.
+Button/Tooltip/UnseenBeastDeactivateExploration=Deactivate Exploration enabling attacks.
+Button/Tooltip/UnseenBeastKeenSenses=This unit can detect cloaked, burrowed, and hallucinated units. Exposes enemy locations within <d ref="Behavior,UnseenBeastRadar,Modification.Radar-Unit,UnseenBeast,Radius"/> range of Unseen Beasts.
+Button/Tooltip/UnseenBeastProwl=Unseen Beasts cloak when they detect nearby enemies reducing their movement speed by <d ref="100*(1-Behavior,UnseenBeast,Modification.MoveSpeedMultiplier)"/>% but decloak in the presence of detectors or when they receive damage.
+Button/Tooltip/UnseenBeastTeleportAssault=Teleports to the opposite side of a target unit to attack it.
+Button/Tooltip/VolcanicHarbinger=Heavy siege flyer that charges up attacks. Can be upgraded to gain charges while attacking.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/><c val="00FF00">Ascended:<n/>+<d ref="Unit,AscendedVolcanicHarbinger,LifeMax-Unit,VolcanicHarbinger,LifeMax"/> Life<n/>+<d ref="Weapon,VolcanicHarbingerAscendedPlasmaFlare,Range-Weapon,VolcanicHarbingerPlasmaFlare,Range"/> Attack Range<n/>+<d ref="(Behavior,VolcanicHarbingerAscended,Modification.RateMultiplierArray[Queueable]-1)*100"/>% Overload Speed</c>
+Button/Tooltip/VolcanicHarbingerOverload=Overloads the next attack to hit an additional time for each charge.<n/><c val="#ColorAttackInfo">Maximum of 3 charges.</c></n><c val="FF0000">Cannot charge while attacking.</c>
+Button/Tooltip/VolcanicHarbingerOverloadPlasmaCatalyst=Overloads the next attack to hit an additional time for each charge.<n/><c val="#ColorAttackInfo">Maximum of 3 charges.</c>
+Commander/Name/DragonCommander=Dragon Commander
+DocInfo/DescLong=Includes Dragons Race For All Races Mods<n/>Author: SkeletalHammer <n/>SC2 All Races: Visceroid#0249 
+DocInfo/HowToPlayAdvanced00=Dragon workers can only construct primary production structures.
+DocInfo/HowToPlayAdvanced01=Primary production structures can propogate tech structures and secondary production structures.
+DocInfo/HowToPlayAdvanced02=Utilize propogated structures to maximize the effect of Deep Ones.
+DocInfo/HowToPlayAdvanced03=Dragons are research heavy, do not neglect their potential.
+DocInfo/HowToPlayAdvanced04=Razorbacks provide supply and can be used defensively with their Spiked Carapace upgrade.
+DocInfo/HowToPlayBasic00=Standard melee play.
+DocInfo/HowToPlayBasic01=Includes a new custom race, the Dragons.
+DocInfo/HowToPlayWinning00=Standard melee objectives.
+DocInfo/Name=[AR2] Dragons
+DocInfo/PatchNote001=Fixed many tooltip problems.
+DocInfo/PatchNote002=Reduced some fire VX.
+DocInfo/PatchNote003=Flamespitter
+DocInfo/PatchNote004=	Life increased from 75 to 90.
+DocInfo/PatchNote005=	Fervid Reconstitution requires a Greater Deep One instead of a Towering Deep One.
+DocInfo/PatchNote006=Hunter
+DocInfo/PatchNote007=	Tongue Lash damage increased from 9 (15 to Light) to 14 (23 to Light).
+DocInfo/PatchNote008=	Radius reduced from 0.625 to 0.5.
+DocInfo/PatchNote009=	Ascended Radius reduced from 0.75 to 0.625.
+DocInfo/PatchNote010=Horned Magus
+DocInfo/PatchNote011=	Fire Shield damage reduced from 11.2 to 7 per second.
+DocInfo/PatchNote012=	Fire Shield cast range reduced from 9 to 7.
+DocInfo/PatchNote013=	Fire Shield no longer damages cargo.
+DocInfo/PatchNote014=	Shroud is now properly disabled when a unit attacks.
+DocInfo/PatchNote015=	Shroud search radius increased from 3 to 5.
+DocInfo/PatchNote016=	Shroud increases movement speed multiplier increased from 1.2 to 1.5.
+DocInfo/PatchNote017=	Shroud duration increased from 15 to 20 seconds.
+DocInfo/PatchNote018=Berserker
+DocInfo/PatchNote019=	Life increased from 270 to 375.
+DocInfo/PatchNote020=	Ascended life increased from 330 to 450.
+DocInfo/PatchNote021=	Madness is disabled while cloaked.
+DocInfo/PatchNote022=	Madness forces Siege Tanks to Unsiege.
+DocInfo/PatchNote023=	Ascended now has Berserk, increases movement speed by 50% for 1 second upon taking damage.
+DocInfo/PatchNote024=Skyrazer
+DocInfo/PatchNote025=	Radius reduced from 0.6875 to 0.625
+DocInfo/PatchNote026=	Ascended Radius increased from 0.8125 to 0.875.
+DocInfo/PatchNote027=Hand of Power
+DocInfo/PatchNote028=	Life increased from 90 to 150.
+DocInfo/PatchNote029=	Armor increased from 0 to 1.
+DocInfo/PatchNote030=	Ascended life increased from 165 to 225.
+DocInfo/PatchNote031=	Portal duration increased from 10 to 20 seconds.
+DocInfo/PatchNote032=	Portal range increased from 9 to 15.
+DocInfo/PatchNote033=	Portal link range increased from 12 to 24.
+DocInfo/PatchNote035=Brimstone Demolisher
+DocInfo/PatchNote036=	Life increased from 390 to 525.
+DocInfo/PatchNote037=	Ascended Life increased from 525 to 600.
+DocInfo/PatchNote038=	Scorching Blaze cost per hit increased from 2 to 4 energy.
+DocInfo/PatchNote039=Aurora Conduit
+DocInfo/PatchNote040=	Nether Shock no longer refreshes all stacks on application.
+DocInfo/PatchNote041=Grim Glider
+DocInfo/PatchNote042=	Life increased from 150 to 240.
+DocInfo/PatchNote043=	Ascended Life increased from 195 to 360.
+DocInfo/PatchNote044=	Armor decreased from 0 to -1.
+DocInfo/PatchNote045=	Speed increased from 1.4 to 2.8.
+DocInfo/PatchNote046=	Ascended Speed increased from 2.1 to 4.2.
+DocInfo/PatchNote047=Deep Ones
+DocInfo/PatchNote048=	Build range increased from 5 to 7.
+DocInfo/PatchNote049=Towering Deep One
+DocInfo/PatchNote050=	No longer capable of being moved.
+DocInfo/PatchNote062=- Armor reduced from 1 to 0.
+DocInfo/PatchNote063=- Fire damage reduced from 12 to 10.
+DocInfo/PatchNote064=Unseen Beast
+DocInfo/PatchNote065=- Increased research cost from 100/200 to 200/200.
+DocInfo/PatchNote066=- Psionic
+DocInfo/PatchNote067=Volcanic Harbinger
+DocInfo/PatchNote068=- Armor reduced from 0 to -1.
+DocInfo/PatchNote069=- Overload cost changed from 4 vespene to 10 minerals.
+DocInfo/PatchNote070=- Overload build time increased from 3 to 5 seconds.
+DocInfo/PatchNote071=- Plasma Catalyst's improved Overload build time increased from 2 to 3 seconds.
+DocInfo/PatchNote072=- Requires Spiked Carapace.
+DocInfo/PatchNote073=Unseen Beast
+DocInfo/PatchNote074=- Supply increased from 2 to 3.
+DocInfo/PatchNote075=- Stealthy Hunter movement speed reduction increased from 40% to 60%.
+DocInfo/PatchNote076=Volcanic Harbinger
+DocInfo/PatchNote077=- Damage reduced from 20 to 16. Damage vs. Armored remains 20.
+DocInfo/PatchNote078=- Splash damage area scaled down.
+DocInfo/PatchNote081=General
+DocInfo/PatchNote082=- Dragons have a resouce called Rage, which is gained by spending resources, killing enemies, or losing Ascended units in combat.
+DocInfo/PatchNote083=- Dragon units can use Ascend at the cost of Rage, which permanently improves it.
+DocInfo/PatchNote084=- Dragon units can use Fission at the cost of Rage, which splits it into two injured copies that deal reduced damage until healed.
+DocInfo/PatchNote085=- Reduced the cost of Dragon Scale Armors from 150/150 to 100/100.
+DocInfo/PatchNote086=Arkwyrm
+DocInfo/PatchNote087=- Speed increased from 2.5 to 2.75.
+DocInfo/PatchNote088=Horned Magus
+DocInfo/PatchNote089=- Invigorate heals 3 Life per 1 Energy each second instead of 4 Life per 1 Energy every 2 seconds.
+DocInfo/PatchNote090=- Fire Shield damage reduced from 10 to 8 per second.
+DocInfo/PatchNote091=- Reduced Mysic Bolt damage from 10 to 7. Damage vs. Light remains 14.
+DocInfo/PatchNote092=Hand of Power
+DocInfo/PatchNote093=- Crushing Gravity no longer prevents air units from attacking.
+DocInfo/PatchNote094=- Portal now cancels command queues.
+DocInfo/PatchNote095=- Reduced the cost of Mighty Fist from 150/150 to 100/100.
+DocInfo/PatchNote096=Hunter
+DocInfo/PatchNote097=- Now requires Augmentation Pit
+DocInfo/PatchNote098=- Ranged damage changed from 8 + 8 vs. Light to 9 + 6 vs. Light.
+DocInfo/PatchNote099=- Melee attack changed to 2x8 damage.
+DocInfo/PatchNote100=- Feast upgrade reduced from 45 to 30 life.
+DocInfo/PatchNote101=Phlogiston Guardian
+DocInfo/PatchNote102=- Armor increased from 0 to 1.
+DocInfo/PatchNote103=- Damage decreased from 15 to 14.
+DocInfo/PatchNote104=- Requires Spiked Carapace.
+DocInfo/PatchNote105=Ravager
+DocInfo/PatchNote106=- Increased cost from 200/100 to 250/100.
+Effect/Name/ArkwyrmTerritorialDiveApplyBehavior=Arkwyrm - Territorial Dive (Apply Behavior)
+Effect/Name/ArkwyrmTerritorialDiveApplyBehaviorFinish=Arkwyrm - Territorial Dive (Apply Behavior Finish)
+Effect/Name/ArkwyrmTerritorialDiveApplyForce=Arkwyrm - Territorial Dive (Apply Force)
+Effect/Name/ArkwyrmTerritorialDiveSearchArea=Arkwyrm - Territorial Dive (Search Area)
+Effect/Name/ArkwyrmTerritorialDiveSet=Arkwyrm - Territorial Dive (Set)
+Effect/Name/ArkwyrmTransportCreatePersistent=Arkwyrm - Transport (Create Persistent)
+Effect/Name/ArkwyrmTransportSet=Arkwyrm - Transport (Set)
+Effect/Name/ArkwyrmUnloadCreatePersistent=Arkwyrm - Unload (Create Persistent)
+Effect/Name/ArkwyrmUnloadIssueOrder1=Arkwyrm - Unload (Issue Order 1)
+Effect/Name/ArkwyrmUnloadIssueOrder2=Arkwyrm - Unload (Issue Order 2)
+Effect/Name/ArkwyrmUnloadLaunchMissile=Arkwyrm - Unload (Launch Missile)
+Effect/Name/ArkwyrmUnloadRemoveBehavior=Arkwyrm - Unload (Remove Behavior)
+Effect/Name/ArkwyrmUnloadSearchArea=Arkwyrm - Unload (Search Area)
+Effect/Name/ArkwyrmUnloadSet=Arkwyrm - Unload (Set)
+Effect/Name/ArkwyrmUnloadTeleport=Arkwyrm - Unload (Teleport)
+Effect/Name/AugmentationPit=Augmentation Pit
+Effect/Name/AugmentationPitIssueOrder=Augmentation Pit (Issue Order)
+Effect/Name/AuroraConduitAscendedNetherShockDamage=Aurora Conduit (Ascended) - Nether Shock (Damage)
+Effect/Name/AuroraConduitNetherShockApplyBehavior=Aurora Conduit - Nether Shock (Apply Behavior)
+Effect/Name/AuroraConduitNetherShockDamage=Aurora Conduit - Nether Shock (Damage)
+Effect/Name/AuroraConduitNetherShockDummy=Aurora Conduit - Nether Shock (Dummy)
+Effect/Name/AuroraConduitNetherShockLaunchMissile1=Aurora Conduit - Nether Shock (Launch Missile 1)
+Effect/Name/AuroraConduitNetherShockLaunchMissile2=Aurora Conduit - Nether Shock (Launch Missile 2)
+Effect/Name/AuroraConduitNetherShockSearchArea=Aurora Conduit - Nether Shock (Search Area)
+Effect/Name/AuroraConduitNetherShockSearchArea1=Aurora Conduit - Nether Shock (Search Area 1)
+Effect/Name/AuroraConduitNetherShockSearchArea2=Aurora Conduit - Nether Shock (Search Area 2)
+Effect/Name/AuroraConduitNetherShockSearchArea3=Aurora Conduit - Nether Shock (Search Area 3)
+Effect/Name/AuroraConduitNetherShockSet=Aurora Conduit - Nether Shock (Set)
+Effect/Name/AuroraConduitNetherShockSet1=Aurora Conduit - Nether Shock (Set 1)
+Effect/Name/AuroraConduitNetherShockSet2=Aurora Conduit - Nether Shock (Set 2)
+Effect/Name/AuroraConduitNetherShockSet3=Aurora Conduit - Nether Shock (Set 3)
+Effect/Name/AuroraConduitNetherShockSet4=Aurora Conduit - Nether Shock (Set 4)
+Effect/Name/AuroraConduitNetherShockSwitch=Aurora Conduit - Nether Shock (Switch)
+Effect/Name/BerserkerCrushingBlowDamage=Berserker - Crushing Blow (Damage)
+Effect/Name/BerserkerMadnessApplyBehaviorActiveMelee=Berserker - Madness (Apply Behavior: Active Melee)
+Effect/Name/BerserkerMadnessApplyBehaviorActiveRanged=Berserker - Madness (Apply Behavior: Active Ranged)
+Effect/Name/BerserkerMadnessApplyBehaviorInactive=Berserker - Madness (Apply Behavior: Inactive)
+Effect/Name/BerserkerMadnessSearchArea=Berserker - Madness (Search Area)
+Effect/Name/BerserkerMadnessSet=Berserker - Madness (Set)
+Effect/Name/BrimstoneDemolisherAscendedBrutalThrashCreatePersistent1=Brimstone Demolisher (Ascended) - Brutal Thrash (Create Persistent 1)
+Effect/Name/BrimstoneDemolisherAscendedBrutalThrashCreatePersistent2=Brimstone Demolisher (Ascended) - Brutal Thrash (Create Persistent 2)
+Effect/Name/BrimstoneDemolisherAscendedBrutalThrashSearchArea=Brimstone Demolisher (Ascended) - Brutal Thrash (Search Area)
+Effect/Name/BrimstoneDemolisherAscendedBrutalThrashSet=Brimstone Demolisher (Ascended) - Brutal Thrash (Set)
+Effect/Name/BrimstoneDemolisherBrutalThrashCreatePersistent1=Brimstone Demolisher - Brutal Thrash (Create Persistent 1)
+Effect/Name/BrimstoneDemolisherBrutalThrashCreatePersistent2=Brimstone Demolisher - Brutal Thrash (Create Persistent 2)
+Effect/Name/BrimstoneDemolisherBrutalThrashDamage=Brimstone Demolisher - Brutal Thrash (Damage)
+Effect/Name/BrimstoneDemolisherBrutalThrashSearchArea=Brimstone Demolisher - Brutal Thrash (Search Area)
+Effect/Name/BrimstoneDemolisherBrutalThrashSet=Brimstone Demolisher - Brutal Thrash (Set)
+Effect/Name/BrimstoneDemolisherInfernalBreathApplyBehavior1=Brimstone Demolisher - Infernal Breath (Apply Behavior 1)
+Effect/Name/BrimstoneDemolisherInfernalBreathApplyBehavior2=Brimstone Demolisher - Infernal Breath (Apply Behavior 2)
+Effect/Name/BrimstoneDemolisherInfernalBreathCreatePersistent1=Brimstone Demolisher - Infernal Breath (Create Persistent 1)
+Effect/Name/BrimstoneDemolisherInfernalBreathCreatePersistent2=Brimstone Demolisher - Infernal Breath (Create Persistent 2)
+Effect/Name/BrimstoneDemolisherInfernalBreathDamage=Brimstone Demolisher - Infernal Breath (Damage)
+Effect/Name/BrimstoneDemolisherInfernalBreathIssueOrder=Brimstone Demolisher - Infernal Breath (Issue Order)
+Effect/Name/BrimstoneDemolisherInfernalBreathModifyUnit=Brimstone Demolisher - Infernal Breath (Modify Unit)
+Effect/Name/BrimstoneDemolisherInfernalBreathRemoveBehavior=Brimstone Demolisher - Infernal Breath (Remove Behavior)
+Effect/Name/BrimstoneDemolisherInfernalBreathSet1=Brimstone Demolisher - Infernal Breath (Set 1)
+Effect/Name/BrimstoneDemolisherInfernalBreathSet2=Brimstone Demolisher - Infernal Breath (Set 2)
+Effect/Name/DeepOne3x3CreateUnit=Deep One - 3x3 (Create Unit)
+Effect/Name/DeepOne3x3RemoveBehavior=Deep One - 3x3 (Remove Behavior)
+Effect/Name/DeepOne3x3Set=Deep One - 3x3 (Set)
+Effect/Name/DeepOne4x4CreateUnit=Deep One - 4x4 (Create Unit)
+Effect/Name/DeepOne4x4RemoveBehavior=Deep One - 4x4 (Remove Behavior)
+Effect/Name/DeepOne4x4Set=Deep One - 4x4 (Set)
+Effect/Name/DeepOne5x5CreateUnit=Deep One - 5x5 (Create Unit)
+Effect/Name/DeepOne5x5RemoveBehavior=Deep One - 5x5 (Remove Behavior)
+Effect/Name/DeepOne5x5Set=Deep One - 5x5 (Set)
+Effect/Name/DenizenoftheDeepRageModifyPlayer=Denizen of the Deep - Rage (Modify Player)
+Effect/Name/DisguiseAsFlamespitter=Disguise As Flamespitter
+Effect/Name/DisguiseAsFlamespitterIssueOrder=Disguise As Flamespitter Issue Order
+Effect/Name/DragonBuildApplyBehavior=Dragon - Build (Apply Behavior)
+Effect/Name/DragonBuildCreatePersistant=Dragon - Build (Create Persistant)
+Effect/Name/DragonBuildCreateUnit=Dragon - Build (Create Unit)
+Effect/Name/DragonBuildIssueOrder=Dragon - Build (Issue Order)
+Effect/Name/DragonBuildLaunchMissile=Dragon - Build (Launch Missile)
+Effect/Name/DragonBuildModel=Dragon - Build (Model)
+Effect/Name/DragonBuildRemoveBehavior=Dragon - Build (Remove Behavior)
+Effect/Name/DragonBuildSet=Dragon - Build (Set)
+Effect/Name/DragonDragonLineageApplyBehavior=Dragon - Dragon Lineage (Apply Behavior)
+Effect/Name/DragonDragonLineageRemoveBehavior=Dragon - Dragon Lineage (Remove Behavior)
+Effect/Name/DragonFinishApplyBehavior=Dragon - Finish (Apply Behavior)
+Effect/Name/DragonFinishSet=Dragon - Finish (Set)
+Effect/Name/DragonFission=Dragon - Fission
+Effect/Name/DragonGenesisPitLaunchMissile=Dragon - Genesis Pit (Launch Missile)
+Effect/Name/DragonGreaterDeepOneLaunchMissile=Dragon - Greater Deep One (Launch Missile)
+Effect/Name/DragonHunterMeleeCreatePersistent=Hunter - Melee (Create Persistent)
+Effect/Name/DragonHunterMeleeModifyUnit=Hunter - Melee (Modify Unit)
+Effect/Name/DragonHunterMeleeSet=Hunter - Melee (Set)
+Effect/Name/DragonInvigorateApplyBehavior=Dragon - Invigorate (Apply Behavior)
+Effect/Name/DragonInvigorateCreatePersistent=Dragon - Invigorate (Create Persistent)
+Effect/Name/DragonInvigorateModifyUnit1=Dragon - Invigorate (Modify Unit 1)
+Effect/Name/DragonInvigorateModifyUnit2=Dragon - Invigorate (Modify Unit 2)
+Effect/Name/DragonInvigorateSet=Dragon - Invigorate (Set)
+Effect/Name/DragonLesserDeepOneLaunchMissile=Dragon - Lesser Deep One (Launch Missile)
+Effect/Name/DragonRetargetAirLaunchMissile=Dragon - Retarget: Air (Launch Missile)
+Effect/Name/DragonRetargetAirSearchArea=Dragon - Retarget: Air (Search Area)
+Effect/Name/DragonRetargetGroundLaunchMissile=Dragon - Retarget: Ground (Launch Missile)
+Effect/Name/DragonRetargetGroundSearchArea=Dragon - Retarget: Ground (Search Area)
+Effect/Name/DragonRetargetLaunchMissile=Dragon - Retarget (Launch Missile)
+Effect/Name/DragonRetargetLaunchMissileGround=Dragon - Retarget (Launch Missile: Ground)
+Effect/Name/DragonRetargetSearchArea=Dragon - Retarget (Search Area)
+Effect/Name/DragonRetargetSearchAreaAir=Dragon - Retarget (Search Area: Air)
+Effect/Name/DragonRetargetSearchAreaGround=Dragon - Retarget (Search Area: Ground)
+Effect/Name/DragonToweringDeepOneLaunchMissile=Dragon - Towering Deep One (Launch Missile)
+Effect/Name/DragonTrainApplyBehavior1=Dragon - Train (Apply Behavior 1)
+Effect/Name/DragonTrainApplyBehavior2=Dragon - Train (Apply Behavior 2)
+Effect/Name/DragonTrainIssueOrder=Dragon - Train (Issue Order)
+Effect/Name/DragonTrainLaunchMissile=Dragon - Train (Launch Missile)
+Effect/Name/DragonTrainRemoveBehavior1=Dragon - Train (Remove Behavior 1)
+Effect/Name/DragonTrainRemoveBehavior2=Dragon - Train (Remove Behavior 2)
+Effect/Name/DragonTrainSet=Dragon - Train (Set)
+Effect/Name/DragonTrainSwitch=Dragon - Train (Switch)
+Effect/Name/FlamespitterAscendedClawsDamage=Flamespitter (Ascended) - Claws (Damage)
+Effect/Name/FlamespitterAscendedMeleeSet=Flamespitter (Ascended) - Melee (Set)
+Effect/Name/FlamespitterAscendedSeekerFlameDamage=Flamespitter (Ascended) - Seeker Flame (Damage)
+Effect/Name/FlamespitterAscendedSeekerFlameLaunchMissile1=Flamespitter (Ascended) - Seeker Flame (Launch Missile 1)
+Effect/Name/FlamespitterAscendedSeekerFlameLaunchMissile2=Flamespitter (Ascended) - Seeker Flame (Launch Missile 2)
+Effect/Name/FlamespitterAscendedSeekerFlameSearchArea=Flamespitter (Ascended) - Seeker Flame (Search Area)
+Effect/Name/FlamespitterAscendedSeekerFlameSwitch=Flamespitter (Ascended) - Seeker Flame (Switch)
+Effect/Name/FlamespitterAttackApplyBehavior=Flamespitter - Attack (Apply Behavior)
+Effect/Name/FlamespitterClawsDamage=Flamespitter - Claws (Damage)
+Effect/Name/FlamespitterMeleeSet=Flamespitter - Melee (Set)
+Effect/Name/FlamespitterSeekerFlameDamage=Flamespitter - Seeker Flame (Damage)
+Effect/Name/FlamespitterSeekerFlameLaunchMissile1=Flamespitter - Seeker Flame (Launch Missile 1)
+Effect/Name/FlamespitterSeekerFlameLaunchMissile2=Flamespitter - Seeker Flame (Launch Missile 2)
+Effect/Name/FlamespitterSeekerFlameSearchArea=Flamespitter - Seeker Flame (Search Area)
+Effect/Name/FlamespitterSeekerFlameSwitch=Flamespitter - Seeker Flame (Switch)
+Effect/Name/FleshrenderCinderSpikeCreatePersistent=Fleshrender - Cinder Spike (Create Persistent)
+Effect/Name/FleshrenderCinderSpikeDamage=Fleshrender - Cinder Spike (Damage)
+Effect/Name/FleshrenderCinderSpikeLaunchMissile1=Fleshrender - Cinder Spike (Launch Missile 1)
+Effect/Name/FleshrenderCinderSpikeLaunchMissile2=Fleshrender - Cinder Spike (Launch Missile 2)
+Effect/Name/FleshrenderCinderSpikeSearchArea=Fleshrender - Cinder Spike (Search Area)
+Effect/Name/FleshrenderCinderSpikeSet=Fleshrender - Cinder Spike (Set)
+Effect/Name/FleshrenderCinderSpikeSwitch=Fleshrender - Cinder Spike (Switch)
+Effect/Name/FleshrenderInfernalAscendApplyBehavior=Fleshrender - Infernal Ascend (Apply Behavior)
+Effect/Name/FleshrenderInfernalAscendDamage=Fleshrender - Infernal Ascend (Damage)
+Effect/Name/FleshrenderInfernalAscendIssueOrder=Fleshrender - Infernal Ascend (Issue Order)
+Effect/Name/FleshrenderInfernalAscendLaunchMissile1=Fleshrender - Infernal Ascend (Launch Missile 1)
+Effect/Name/FleshrenderInfernalAscendLaunchMissile2=Fleshrender - Infernal Ascend (Launch Missile 2)
+Effect/Name/FleshrenderInfernalAscendRemoveBehavior=Fleshrender - Infernal Ascend (Remove Behavior)
+Effect/Name/FleshrenderInfernalAscendSearchArea1=Fleshrender - Infernal Ascend (Search Area 1)
+Effect/Name/FleshrenderInfernalAscendSearchArea2=Fleshrender - Infernal Ascend (Search Area 2)
+Effect/Name/FleshrenderInfernalAscendSet=Fleshrender - Infernal Ascend (Set)
+Effect/Name/FleshrenderInfernalAscendSwitch=Fleshrender - Infernal Ascend (Switch)
+Effect/Name/FleshrenderInfernalEffigyDamage=Fleshrender - Infernal Effigy (Damage)
+Effect/Name/FleshrenderInfernalEffigyLaunchMissile1=Fleshrender - Infernal Effigy (Launch Missile 1)
+Effect/Name/FleshrenderInfernalEffigyLaunchMissile2=Fleshrender - Infernal Effigy (Launch Missile 2)
+Effect/Name/FleshrenderInfernalEffigySearchArea1=Fleshrender - Infernal Effigy (Search Area 1)
+Effect/Name/FleshrenderInfernalEffigySearchArea2=Fleshrender - Infernal Effigy (Search Area 2)
+Effect/Name/FleshrenderInfernalEffigySwitch1=Fleshrender - Infernal Effigy (Switch 1)
+Effect/Name/FleshrenderInfernalEffigySwitch2=Fleshrender - Infernal Effigy (Switch 2)
+Effect/Name/FleshrenderShredCreatePersistent=Fleshrender - Shred (Create Persistent)
+Effect/Name/FleshrenderShredDamage=Fleshrender - Shred (Damage)
+Effect/Name/FleshrenderShredSet=Fleshrender - Shred (Set)
+Effect/Name/FrontierDeepOneInvigorateApplyBehavior=Frontier Deep One - Invigorate (Apply Behavior)
+Effect/Name/FrontierDeepOneInvigorateSearchArea=Frontier Deep One - Invigorate (Search Area)
+Effect/Name/GenesisPit=Genesis Pit
+Effect/Name/GenesisPitIssueOrder=Genesis Pit (Issue Order)
+Effect/Name/GrimGliderEmaciateApplyBehavior=Grim Glider - Emaciate (Apply Behavior)
+Effect/Name/GrimGliderEmaciateCreatePersistent=Grim Glider - Emaciate (Create Persistent)
+Effect/Name/GrimGliderEmaciateDamageAlly=Grim Glider - Emaciate (Damage: Ally)
+Effect/Name/GrimGliderEmaciateDamageEnemy=Grim Glider - Emaciate (Damage: Enemy)
+Effect/Name/GrimGliderEmaciateDamageNeutral=Grim Glider - Emaciate (Damage: Neutral)
+Effect/Name/GrimGliderEmaciateDummy=Grim Glider - Emaciate (Dummy)
+Effect/Name/GrimGliderEmaciateModifyCaster=Grim Glider - Emaciate (Modify Caster)
+Effect/Name/GrimGliderEmaciateModifyTarget=Grim Glider - Emaciate (Modify Target)
+Effect/Name/GrimGliderEmaciateSet=Grim Glider - Emaciate (Set)
+Effect/Name/GrimGliderEmaciateSwitch=Grim Glider - Emaciate (Switch)
+Effect/Name/GrimGliderMortalitysEclipseApplyBehavior1=Grim Glider - Mortality's Eclipse (Apply Behavior 1)
+Effect/Name/GrimGliderMortalitysEclipseApplyBehavior2=Grim Glider - Mortality's Eclipse (Apply Behavior 2)
+Effect/Name/GrimGliderMortalitysEclipseApplyBehaviorCaster=Grim Glider - Mortality's Eclipse (Apply Behavior: Caster)
+Effect/Name/GrimGliderMortalitysEclipseCreateUnit=Grim Glider - Mortality's Eclipse (Create Unit)
+Effect/Name/GrimGliderMortalitysEclipseSearchArea=Grim Glider - Mortality's Eclipse (Search Area)
+Effect/Name/GrimGliderNullifyApplyBehavior=Grim Glider - Nullify (Apply Behavior)
+Effect/Name/GrimGliderNullifyIssueOrder=Grim Glider - Nullify (Issue Order)
+Effect/Name/GrimGliderNullifyModifiyUnit=Grim Glider - Nullify (Modifiy Unit)
+Effect/Name/GrimGliderShadeModifyUnit=Grim Glider - Shade (Modify Unit)
+Effect/Name/GrimGliderShadeSet=Grim Glider - Shade (Set)
+Effect/Name/HandofPowerCrushingGravityApplyBehavior1=Hand of Power - Crushing Gravity (Apply Behavior 1)
+Effect/Name/HandofPowerCrushingGravityApplyBehavior2=Hand of Power - Crushing Gravity (Apply Behavior 2)
+Effect/Name/HandofPowerCrushingGravityApplyBehavior3=Hand of Power - Crushing Gravity (Apply Behavior 3)
+Effect/Name/HandofPowerCrushingGravityApplyBehavior4=Hand of Power - Crushing Gravity (Apply Behavior 4)
+Effect/Name/HandofPowerCrushingGravityApplyForce1=Hand of Power - Crushing Gravity (Apply Force 1)
+Effect/Name/HandofPowerCrushingGravityApplyForce2=Hand of Power - Crushing Gravity (Apply Force 2)
+Effect/Name/HandofPowerCrushingGravityCreatePersistent=Hand of Power - Crushing Gravity (Create Persistent)
+Effect/Name/HandofPowerCrushingGravityModifyUnit1=Hand of Power - Crushing Gravity (Modify Unit 1)
+Effect/Name/HandofPowerCrushingGravityModifyUnit2=Hand of Power - Crushing Gravity (Modify Unit 2)
+Effect/Name/HandofPowerCrushingGravitySearchArea1=Hand of Power - Crushing Gravity (Search Area 1)
+Effect/Name/HandofPowerCrushingGravitySearchArea2=Hand of Power - Crushing Gravity (Search Area 2)
+Effect/Name/HandofPowerCrushingGravitySet1=Hand of Power - Crushing Gravity (Set 1)
+Effect/Name/HandofPowerCrushingGravitySet2=Hand of Power - Crushing Gravity (Set 2)
+Effect/Name/HandofPowerCrushingGravitySet3=Hand of Power - Crushing Gravity (Set 3)
+Effect/Name/HandofPowerPortalApplyBehavior1=Hand of Power - Portal (Apply Behavior 1)
+Effect/Name/HandofPowerPortalApplyBehavior2=Hand of Power - Portal (Apply Behavior 2)
+Effect/Name/HandofPowerPortalApplyForce=Hand of Power - Portal (Apply Force)
+Effect/Name/HandofPowerPortalApplySickness=Hand of Power - Portal (Apply Sickness)
+Effect/Name/HandofPowerPortalApplyStrength=Hand of Power - Portal (Apply Strength)
+Effect/Name/HandofPowerPortalCreatePersistent=Hand of Power - Portal (Create Persistent)
+Effect/Name/HandofPowerPortalEntranceCreateUnit=Hand of Power - Portal Entrance (Create Unit)
+Effect/Name/HandofPowerPortalExitApplyBehavior=Hand of Power - Portal Exit (Apply Behavior)
+Effect/Name/HandofPowerPortalExitCreateUnit=Hand of Power - Portal Exit (Create Unit)
+Effect/Name/HandofPowerPortalExitRemoveBehavior=Hand of Power - Portal Exit (Remove Behavior)
+Effect/Name/HandofPowerPortalExitSearchArea=Hand of Power - Portal Exit (Search Area)
+Effect/Name/HandofPowerPortalExitSet=Hand of Power - Portal Exit (Set)
+Effect/Name/HandofPowerPortalSearchArea=Hand of Power - Portal (Search Area)
+Effect/Name/HandofPowerPortalSet1=Hand of Power - Portal (Set 1)
+Effect/Name/HandofPowerPortalSet2=Hand of Power - Portal (Set 2)
+Effect/Name/HandofPowerPortalSiegeTankApplyBehavior=Hand of Power - Portal (Siege Tank: Apply Behavior)
+Effect/Name/HandofPowerPortalSiegeTankIssueOrder=Hand of Power - Portal (Siege Tank: Issue Order)
+Effect/Name/HandofPowerPortalTeleport=Hand of Power - Portal (Teleport)
+Effect/Name/HandofPowerPsionicImpulseDamage=Hand of Power - Psionic Impulse (Damage)
+Effect/Name/HandofPowerPsionicImpulseForce=Hand of Power - Psionic Impulse (Apply Force)
+Effect/Name/HandofPowerPsionicImpulseSet=Hand of Power - Psionic Impulse (Set)
+Effect/Name/HandofPowerShroudApplyBehavior=Hand of Power - Shroud (Apply Behavior)
+Effect/Name/HandofPowerShroudSearchArea=Hand of Power - Shroud (Search Area)
+Effect/Name/HornedMagusFireShieldApplyBehavior1=Horned Magus - Fire Shield (Apply Behavior 1)
+Effect/Name/HornedMagusFireShieldApplyBehavior2=Horned Magus - Fire Shield (Apply Behavior 2)
+Effect/Name/HornedMagusFireShieldApplyBehavior3=Horned Magus - Fire Shield (Apply Behavior 3)
+Effect/Name/HornedMagusFireShieldCargo=Horned Magus - Fire Shield (Cargo)
+Effect/Name/HornedMagusFireShieldDamage=Horned Magus - Fire Shield (Damage)
+Effect/Name/HornedMagusFireShieldSearchArea1=Horned Magus - Fire Shield (Search Area 1)
+Effect/Name/HornedMagusFireShieldSearchArea2=Horned Magus - Fire Shield (Search Area 2)
+Effect/Name/HornedMagusFireShieldSet=Horned Magus - Fire Shield (Set)
+Effect/Name/HornedMagusFireShieldSwitch=Horned Magus - Fire Shield (Switch)
+Effect/Name/HornedMagusFrenzyApplyBehavior=Horned Magus - Frenzy (Apply Behavior)
+Effect/Name/HornedMagusFrenzyCreatePersistent=Horned Magus - Frenzy (Create Persistent)
+Effect/Name/HornedMagusFrenzyIssueOrder1=Horned Magus - Frenzy (Issue Order 1)
+Effect/Name/HornedMagusFrenzyIssueOrder22=Horned Magus - Frenzy (Issue Order 2)
+Effect/Name/HornedMagusFrenzyIssueOrder3=Horned Magus - Frenzy (Issue Order 3)
+Effect/Name/HornedMagusFrenzyRemoveBehavior=Horned Magus - Frenzy (Remove Behavior)
+Effect/Name/HornedMagusFrenzySearchArea=Horned Magus - Frenzy (Search Area)
+Effect/Name/HornedMagusFrenzySet=Horned Magus - Frenzy (Set)
+Effect/Name/HornedMagusFrenzySwitch=Horned Magus - Frenzy (Switch)
+Effect/Name/HornedMagusFrenzyUnburrow=Horned Magus - Frenzy (Unburrow)
+Effect/Name/HornedMagusHeadbuttDamage=Horned Magus - Headbutt (Damage)
+Effect/Name/HornedMagusInvigorateApplyBehavior=Horned Magus - Invigorate (Apply Behavior)
+Effect/Name/HornedMagusInvigorateSearchArea=Horned Magus - Invigorate (Search Area)
+Effect/Name/HornedMagusMysticBoltDamage=Horned Magus - Mystic Bolt (Damage)
+Effect/Name/HornedMagusMysticBoltLaunchMissile1=Horned Magus - Mystic Bolt (Launch Missile 1)
+Effect/Name/HornedMagusMysticBoltLaunchMissile2=Horned Magus - Mystic Bolt (Launch Missile 2)
+Effect/Name/HornedMagusMysticBoltSearchArea=Horned Magus - Mystic Bolt (Search Area)
+Effect/Name/HornedMagusMysticBoltSwitch=Horned Magus - Mystic Bolt (Switch)
+Effect/Name/HunterMeleeDamage=Hunter - Melee (Damage)
+Effect/Name/HunterRegenesisApplyBehavior=Hunter - Regenesis (Apply Behavior)
+Effect/Name/HunterRegenesisRemoveBehavior=Hunter - Regenesis (Remove Behavior)
+Effect/Name/HunterTongueLashApplyBehaviorLight=Hunter - Tongue Lash (Apply Behavior: Light)
+Effect/Name/HunterTongueLashApplyBehaviorNotLight=Hunter - Tongue Lash (Apply Behavior: Not Light)
+Effect/Name/HunterTongueLashDamage=Hunter - Tongue Lash (Damage)
+Effect/Name/HunterTongueLashForceLight=Hunter - Tongue Lash (Force: Light)
+Effect/Name/HunterTongueLashForceNotLight=Hunter - Tongue Lash (Force: Not Light)
+Effect/Name/HunterTongueLashLaunchMissile=Hunter - Tongue Lash (Launch Missile)
+Effect/Name/HunterTongueLashModifyUnit=Hunter - Tongue Lash (Modify Unit)
+Effect/Name/HunterTongueLashSet=Hunter - Tongue Lash (Set)
+Effect/Name/PhlogistonGuardianFulminationCreatePersistent=Phlogiston Guardian - Fulmination (Create Persistent)
+Effect/Name/PhlogistonGuardianFulminationDamage=Phlogiston Guardian - Fulmination (Damage)
+Effect/Name/PhlogistonGuardianFulminationLaunchMissile1=Phlogiston Guardian - Fulmination (Launch Missile 1)
+Effect/Name/PhlogistonGuardianFulminationLaunchMissile2=Phlogiston Guardian - Fulmination (Launch Missile 2)
+Effect/Name/PhlogistonGuardianFulminationSearchArea=Phlogiston Guardian - Fulmination (Search Area)
+Effect/Name/PhlogistonGuardianFulminationSwitch=Phlogiston Guardian - Fulmination (Switch)
+Effect/Name/PlodderPincerDamage=Plodder - Pincer (Damage)
+Effect/Name/RazorbackAscendedSpikedCarapaceDamage=Razorback (Ascended) - Spiked Carapace (Damage)
+Effect/Name/RazorbackAscendedUrticatingQuillsCreatePersistant=Razorback (Ascended) - Urticating Quills (Create Persistant)
+Effect/Name/RazorbackAscendedUrticatingQuillsDamage=Razorback (Ascended) - Urticating Quills (Damage)
+Effect/Name/RazorbackAscendedUrticatingQuillsLaunchMissile=Razorback (Ascended) - Urticating Quills (Launch Missile)
+Effect/Name/RazorbackSpikedCarapaceDamage=Razorback - Spiked Carapace (Damage)
+Effect/Name/RazorbackUrticatingQuillsCreatePersistant=Razorback - Urticating Quills (Create Persistant)
+Effect/Name/RazorbackUrticatingQuillsDamage=Razorback - Urticating Quills (Damage)
+Effect/Name/RazorbackUrticatingQuillsLaunchMissile=Razorback - Urticating Quills (Launch Missile)
+Effect/Name/RemovewithCaster=Remove with Caster
+Effect/Name/SkyrazerAscendedInferiorBlastCreatePersistent=Skyrazer (Ascended) - Inferior Blast (Create Persistent)
+Effect/Name/SkyrazerAttackCreatePersistent=Skyrazer (Ascended) - Superior Blast (Create Persistent)
+Effect/Name/SkyrazerAttackDamage=Skyrazer - Attack (Damage)
+Effect/Name/SkyrazerAttackLaunchMissile1=Skyrazer - Attack (Launch Missile 1)
+Effect/Name/SkyrazerAttackLaunchMissile2=Skyrazer - Attack (Launch Missile 2)
+Effect/Name/SkyrazerAttackSearchArea=Skyrazer - Attack (Search Area)
+Effect/Name/SkyrazerAttackSet=Skyrazer - Attack (Set)
+Effect/Name/SkyrazerAttackSwitch=Skyrazer - Attack (Switch)
+Effect/Name/SkyrazerInferiorBlastCreatePersistent=Skyrazer - Inferior Blast (Create Persistent)
+Effect/Name/SkyrazerSavageClawsDamage=Skyrazer - Savage Claws (Damage)
+Effect/Name/SkyrazerSuperiorBlastCreatePersistent=Skyrazer - Superior Blast (Create Persistent)
+Effect/Name/SuicidewithCaster=Suicide with Caster
+Effect/Name/SunkenGuardianCracksModel=Sunken Guardian - Cracks (Model)
+Effect/Name/SunkenGuardianImpaleApplyBehavior=Sunken Guardian - Impale (Apply Behavior)
+Effect/Name/SunkenGuardianImpaleCreatePersistent=Sunken Guardian - Impale (Create Persistent)
+Effect/Name/SunkenGuardianImpaleDamage=Sunken Guardian - Impale (Damage)
+Effect/Name/SunkenGuardianImpaleLaunchMissile=Sunken Guardian - Impale (Launch Missile)
+Effect/Name/SunkenGuardianImpaleSet=Sunken Guardian - Impale (Set)
+Effect/Name/UnseenBeastExploration=Unseen Beast - Exploration
+Effect/Name/UnseenBeastSpiritSmashDamage=Unseen Beast - Spirit Smash (Damage)
+Effect/Name/UnseenBeastTeleportAssaultIssueOrder=Unseen Beast - Teleport Assault (Issue Order)
+Effect/Name/UnseenBeastTeleportAssaultSet=Unseen Beast - Teleport Assault (Set)
+Effect/Name/VolcanicHarbingerDischargeIssueOrder1=Volcanic Harbinger - Discharge (Issue Order 1)
+Effect/Name/VolcanicHarbingerDischargeIssueOrder2=Volcanic Harbinger - Discharge (Issue Order 2)
+Effect/Name/VolcanicHarbingerDischargeQueue1=Volcanic Harbinger - Discharge (Queue 1)
+Effect/Name/VolcanicHarbingerDischargeQueue2=Volcanic Harbinger - Discharge (Queue 2)
+Effect/Name/VolcanicHarbingerDischargeQueue3=Volcanic Harbinger - Discharge (Queue 3)
+Effect/Name/VolcanicHarbingerDischargeSet=Volcanic Harbinger - Discharge (Set)
+Effect/Name/VolcanicHarbingerOverloadSet=Volcanic Harbinger - Overload (Set)
+Effect/Name/VolcanicHarbingerPlasmaFlareDamage=Volcanic Harbinger - Plasma Flare (Damage)
+Effect/Name/VolcanicHarbingerPlasmaFlareIterateMagazine=Volcanic Harbinger - Plasma Flare (Iterate Magazine)
+Effect/Name/VolcanicHarbingerPlasmaFlareSet=Volcanic Harbinger - Plasma Flare (Set)
+LoadingScreen/Help51=Plodders can only build primary Dragon buildings. These buildings can propogate their own secondary structures.
+LoadingScreen/Help52=Razorbacks provide supply. They also make excellent walls.
+LoadingScreen/Help53=Flamespitters are fragile but deal a lot of damage. They also slow down while attacking, so position them wisely and let them rip.
+LoadingScreen/Help54=Hunters deal bonus damage to light units and can jump up cliffs. They make ideal units to harass enemy worker lines.
+LoadingScreen/Help55=Horned Magus are potent offensive and defensive spell casters. Do not neglect their ability to sway fights.
+LoadingScreen/Help56=Unseen Beasts cloak in the presence of enemy units. They can deal massive amounts of damage if not detected.
+LoadingScreen/Help57=Berserkers are very tough for their cost. Use them to absorb damage for less durable Dragon units.
+LoadingScreen/Help58=Skyrazers are deadly against flying units, but are otherwise unimpressive against land based targets.
+LoadingScreen/Help59=Hands of Power are detectors and powerful casters. Their abilities can restrict enemy mobility and increase your own.
+LoadingScreen/Help60=Brimstone Demolishers are engines of destruction. Do not neglect to upgrade Dragon Fire Attacks, which greatly improve their damage output.
+LoadingScreen/Help61=Fleshrenders are the most mobile air unit, their ability to make lightning quick attacks can provide great map control.
+LoadingScreen/Help62=Aurora Conduits can reduce enemy armor. Use them in combination with fast attacking units to deal massive amounts of damage.
+LoadingScreen/Help63=Arkwyrms can unload units at a distance, allowing you to siege enemy base beyond the range of ground based anti-air.
+LoadingScreen/Help64=Volcanic Harbingers deal increased damage and gain an area of effect attack with Overload. Allow them to charge up between shots to maximize their potential.
+LoadingScreen/Help65=Grim Gliders are not just expensive detectors. They can raise the dead as weaker temporary Shades with Mortality's Eclipse, adding the slain on both sides to your own army.
+LoadingScreen/Help66=Sunken Guardians temporary immobilze enemies when they strike them. They also benefit from Dragon Melee Attacks.
+LoadingScreen/Help67=Phlogiston Guardians are detectors. They also benefit from Dragon Fire Attacks.
+LoadingScreen/Help68=Dragon buildings benefit from Dragon Plate Armor. Their durability can be further increased with Dragon Lineage.
+LoadingScreen/Help69=Dragon Fire Attacks increase the damage of all Dragon units and structures that attack with flame projectiles.
+LoadingScreen/Help70=Dragon Melee Attacks increase the damage of all Dragon units and structures that attack with a physical extension of themselves.
+LoadingScreen/Help71=Dragon Scale Armor increases the armor of all Light Dragon units.
+LoadingScreen/Help72=Dragon Plate Armor increases the armor of all Armored Dragon units and structures.
+LoadingScreen/Help73=Killing a primary Dragon structure destroys all of its propogated secondary structures.
+LoadingScreen/Help74=Denizens of the Deep can convert between minerals and vespene gas when Abundance is upgraded.
+LoadingScreen/Help75=Razorbacks have upgrades that can cause them to damage attackers, increase the amount of supply they provide, and make them more durable.
+LoadingScreen/Help76=Fervid Reconstitution makes Flamespitters move faster when attacking instead of slower, as well as increasing their damage by 1. It is a must have to bring your Flamespitters on the offensive.
+LoadingScreen/Help77=Feast increases maximum Hunter life and provides them with life gain on hit. It can elevate Hunters from harassment units to your core army.
+LoadingScreen/Help78=The Horned Magus's Fire Shield can be used offensively or defensively. It increases the targets armor but it also deals great damage to all nearby units that aren't also fireshielded, enemy and ally alike.
+LoadingScreen/Help79=The Horned Magus's Shroud can be used to get the jump on your enemies or to make a hasty get away.
+LoadingScreen/Help80=The Horned Magus's Invigorate is one of the only way Dragon units can heal.
+LoadingScreen/Help81=To build Unseen Beasts you must first research them in the Lesser Deep One's Augmentation Pit.
+LoadingScreen/Help82=Unseen Beasts make excellent scouts in addition to crushing enemy worker lines with their Keep Senses ability and their high survivability.
+LoadingScreen/Help83=Madness forces nearby enemies to attack Berserkers, preventing them from attacking your less durable units or escaping. It also makes them highly effective against Banelings.
+LoadingScreen/Help84=Ember Core increases a Skyrazer's range by its current cliff level. This can increase its range by up to 3, making it an excellent defense against flying siege units.
+LoadingScreen/Help85=The Hand of Power's Crushing Gravity also affects units that enter its area after it has been casted. It is extra effective against air units because it prevents them from attacking and forces them to the ground.
+LoadingScreen/Help86=The Hand of Power's Frenzy affects all biological units. It can be used not only to increase the damage output of your units, but also to soften and clean up fleeing biological enemies.
+LoadingScreen/Help87=Infernal Breath increases the range of Brimstone Demolishers, vastly increasing the amount of enemies they can roast.
+LoadingScreen/Help88=Proliferation reduces the build time of Fleshrenders. This can be used to quickly build a large amount of map control, or to counter heavily specialized armies.
+LoadingScreen/Help89=Celerity increases the rate at which Aurora Conduits attack, causing them not only to deal more damage but also further reduce enemy armor.
+LoadingScreen/Help90=Plasma Catalyst increases the rate at which Volcanic Harbingers can produce Overload charges, allowing them to obliterate enemies more quickly than before.
+LoadingScreen/Help91=Volcanic Harbingers deal splash damage to your own units with Overload. However, they never deal splash damage to Shades.
+LoadingScreen/Help92=Wraith Night prevents Shades from decaying when near a friendly Grim Glider. This can cause a powerful push to be game ending.
+LoadingScreen/Help93=Shades can't be controlled and deal half the damage and have half the life of their parent unit. This means that as your enemy accumulate upgrades, your Shades produced by their units are effectively weaker.
+LoadingScreen/Help94=Dragon units with Fire attacks have Retarget, which prevents them from wasting shots.
+LoadingScreen/Help95=Many Dragon units have different weapons for melee and ranged attacks which benefit from separate upgrades. Flamespitters for example deal reduced damage in melee.
+LoadingScreen/Help96=Frontier Deep Ones have a more powerful version of Invigorate that can simultaneously heal large numbers of biological units.
+LoadingScreen/Help97=Propogate Genesis Pits from your Deep Ones to increase your army production rate.
+LoadingScreen/Help98=Propogate Augmentation Pits from your Deep Ones to access upgrades and higher tier units.
+LoadingScreen/Help99=Dragon Lineage provides all Dragon units and structures with life regeneration outside of combat, as well as increasing the durability of Dragon structures.
+Race/Name/Dragon=Dragon
+RequirementNode/Tooltip/CountBehaviorAugmentationPitCompleteOnlyAtUnit2977094741=Augmentation Pit
+RequirementNode/Tooltip/CountUpgradeRazorbackMigratoryEnduranceCompleteOnly2219638757=Augment Migratory Endurance at a Frontier Deep One Augmentation Pit
+RequirementNode/Tooltip/LT2695958664CountUnitVolcanicHarbingerOverloadQueuedOrBetterAtUnit3=Overload cannot exceed level 3
+UI/ResourceName3=Rage
+UI/ResourceSupplyToolTip_Dragon=All living units cost supply. Propogate Razorbacks to increase supply.
+UI/ResourceToolTip3=Rage is used to Ascend Dragon units and by certain Dragon abilities. Gain Rageby spending resources or killing enemies. Ascended Dragons return some of the Rage spent to make them when they die in battle.
+Unit/Category/DragonUnits=Dragon
+Unit/LifeArmorName/DragonArmoredArmor=Dragon Plate Armor
+Unit/LifeArmorName/DragonBuildUnitArmoredArmor=Dragon Plate Armor
+Unit/LifeArmorName/DragonLightArmor=Dragon Scale Armor
+Unit/LifeArmorName/VolcanicHarbingerOverloadArmoredArmor=Dragon Plate Armor
+Unit/Name/Arkwyrm=Arkwyrm
+Unit/Name/AscendedArkwyrm=Ascended Arkwyrm
+Unit/Name/AscendedAuroraConduit=Ascended Aurora Conduit
+Unit/Name/AscendedBerserker=Ascended Berserker
+Unit/Name/AscendedBrimstoneDemolisher=Ascended Brimstone Demolisher
+Unit/Name/AscendedDragonHunter=Ascended Hunter
+Unit/Name/AscendedFlamespitter=Ascended Flamespitter
+Unit/Name/AscendedFleshrender=Ascended Fleshrender
+Unit/Name/AscendedGrimGlider=Ascended Grim Glider
+Unit/Name/AscendedHandofPower=Ascended Hand of Power
+Unit/Name/AscendedHornedMagus=Ascended Horned Magus
+Unit/Name/AscendedPlodder=Ascended Plodder
+Unit/Name/AscendedRazorback=Ascended Razorback
+Unit/Name/AscendedSkyrazer=Ascended Skyrazer
+Unit/Name/AscendedUnseenBeast=Ascended Unseen Beast
+Unit/Name/AscendedVolcanicHarbinger=Ascended Volcanic Harbinger
+Unit/Name/AugmentationPit=Augmentation Pit
+Unit/Name/AugmentationPitFrontier=Augmentation Pit
+Unit/Name/AugmentationPitGreater=Augmentation Pit
+Unit/Name/AugmentationPitLesser=Augmentation Pit
+Unit/Name/AugmentationPitTowering=Augmentation Pit
+Unit/Name/AuroraConduit=Aurora Conduit
+Unit/Name/AuroraConduitAttackMissile=Aurora Conduit - Attack (Missile)
+Unit/Name/Berserker=Berserker
+Unit/Name/BrimstoneDemolisher=Brimstone Demolisher
+Unit/Name/Coagulator=Coagulator
+Unit/Name/CoagulatorRich=Rich Coagulator
+Unit/Name/DenizenoftheDeep=Denizen of the Deep
+Unit/Name/Dragon=Dragon
+Unit/Name/DragonArmy=Dragon (Army)
+Unit/Name/DragonArmyAir=Dragon (Army/Air)
+Unit/Name/DragonArmyAirArmored=Dragon (Army/Air/Armored)
+Unit/Name/DragonArmyAirLight=Dragon (Army/Air/Light)
+Unit/Name/DragonArmyArmored=Dragon (Army: Armored)
+Unit/Name/DragonArmyGround=Dragon (Army/Ground)
+Unit/Name/DragonArmyGroundArmored=Dragon (Army/Ground/Armored)
+Unit/Name/DragonArmyGroundLight=Dragon (Army/Ground/Light)
+Unit/Name/DragonBuildMissile=Dragon - Build (Missile)
+Unit/Name/DragonBuildUnit=Dragon - Build (Unit)
+Unit/Name/DragonDeepOne=Dragon (Deep One)
+Unit/Name/DragonHunter=Hunter
+Unit/Name/DragonHunterAttackMissile=DragonHunter - Attack (Missile)
+Unit/Name/DragonStructure=Dragon (Structure)
+Unit/Name/DragonTrainMissile=Dragon - Train (Missile)
+Unit/Name/DragonUnit=Dragon (Unit)
+Unit/Name/Flamespitter=Flamespitter
+Unit/Name/FlamespitterAttackMissile=Flamespitter - Attack (Missile)
+Unit/Name/Fleshrender=Fleshrender
+Unit/Name/FleshrenderAttackMissile=Fleshrender - Attack (Missile)
+Unit/Name/FleshrenderInfernalAscendMissile=Fleshrender - Infernal Ascend (Missile)
+Unit/Name/FleshrenderInfernalEffigyMissile=Fleshrender - Infernal Effigy (Missile)
+Unit/Name/FrontierDeepOne=Frontier Deep One
+Unit/Name/GenesisPit=Genesis Pit
+Unit/Name/GenesisPitGreater=Genesis Pit
+Unit/Name/GenesisPitLesser=Genesis Pit
+Unit/Name/GenesisPitTowering=Genesis Pit
+Unit/Name/GreaterDeepOne=Greater Deep One
+Unit/Name/GrimGlider=Grim Glider
+Unit/Name/HandofPower=Hand of Power
+Unit/Name/HandofPowerPortalEntranceUnit=Hand of Power - Portal Entrance (Unit)
+Unit/Name/HandofPowerPortalExitUnit=Hand of Power - Portal Exit (Unit)
+Unit/Name/HornedMagus=Horned Magus
+Unit/Name/HornedMagusAttackMissile=Horned Magus - Attack (Missile)
+Unit/Name/LesserDeepOne=Lesser Deep One
+Unit/Name/PhlogistonGuardian=Phlogiston Guardian
+Unit/Name/PhlogistonGuardianAttackMissile=Phlogiston Guardian - Attack (Missile)
+Unit/Name/Plodder=Plodder
+Unit/Name/Razorback=Razorback
+Unit/Name/RazorbackUrticatingQuillsMissile=Razorback - Urticating Quills (Missile)
+Unit/Name/Skyrazer=Skyrazer
+Unit/Name/SkyrazerAttackMissile=Skyrazer - Attack (Missile)
+Unit/Name/SunkenGuardian=Sunken Guardian
+Unit/Name/SunkenGuardianAttackMissile=Sunken Guardian - Attack (Missile)
+Unit/Name/ToweringDeepOne=Towering Deep One
+Unit/Name/UnseenBeast=Unseen Beast
+Unit/Name/VolcanicHarbinger=Volcanic Harbinger
+Unit/Name/VolcanicHarbingerOverload=Overload
+UnitKillRank/Rank1_Drag=Hatchling
+UnitKillRank/Rank2_Drag=Whelp
+UnitKillRank/Rank3_Drag=Drake
+UnitKillRank/Rank4_Drag=Wyrm
+UnitKillRank/Rank5_Drag=Ascended
+Upgrade/Name/AuroraConduitConduction=Conduction
+Upgrade/Name/BerserkerMadness=Madness
+Upgrade/Name/BrimstoneDemolisherInfernalBreath=Infernal Breath
+Upgrade/Name/DragonCommander=DragonCommander
+Upgrade/Name/DragonFireAttacks=Dragon Fire Attacks
+Upgrade/Name/DragonFireAttacksLevel1=Dragon Fire Attacks Level 1
+Upgrade/Name/DragonFireAttacksLevel2=Dragon Fire Attacks Level 2
+Upgrade/Name/DragonFireAttacksLevel3=Dragon Fire Attacks Level 3
+Upgrade/Name/DragonFlameAttacks=Dragon Flame Attacks
+Upgrade/Name/DragonLineage=Dragon Lineage
+Upgrade/Name/DragonMeleeAttacks=Dragon Melee Attacks
+Upgrade/Name/DragonMeleeAttacksLevel1=Dragon Melee Attacks Level 1
+Upgrade/Name/DragonMeleeAttacksLevel2=Dragon Melee Attacks Level 2
+Upgrade/Name/DragonMeleeAttacksLevel3=Dragon Melee Attacks Level 3
+Upgrade/Name/DragonPlateArmorLevel1=Dragon Plate Armor Level 1
+Upgrade/Name/DragonPlateArmorLevel2=Dragon Plate Armor Level 2
+Upgrade/Name/DragonPlateArmorLevel3=Dragon Plate Armor Level 3
+Upgrade/Name/DragonPlateArmors=Dragon Plate Armors
+Upgrade/Name/DragonScaleArmorLevel1=Dragon Scale Armor Level 1
+Upgrade/Name/DragonScaleArmorLevel2=Dragon Scale Armor Level 2
+Upgrade/Name/DragonScaleArmorLevel3=Dragon Scale Armor Level 3
+Upgrade/Name/DragonScaleArmors=Dragon Scale Armors
+Upgrade/Name/FlamespitterFervidReconstitution=Fervid Reconstitution
+Upgrade/Name/FleshrenderProliferation=Proliferation
+Upgrade/Name/GrimGliderMortalitysEclipse=Mortality's Eclipse
+Upgrade/Name/HandofPowerPortal=Portal
+Upgrade/Name/HornedMagusFrenzy=Frenzy
+Upgrade/Name/HunterWickedBarbs=Wicked Barbs
+Upgrade/Name/RazorbackMigratoryEndurance=Migratory Endurance
+Upgrade/Name/SkyrazerEmberCore=Ember Core
+Upgrade/Name/UnseenBeastProwl=Prowl
+Upgrade/Name/VolcanicHarbingerPlasmaCatalyst=Plasma Catalyst
+Weapon/Name/AscendedAuroraConduitNetherShockAir=Nether Shock
+Weapon/Name/AuroraConduitNetherShock=Nether Shock
+Weapon/Name/AuroraConduitNetherShockAir=Nether Shock
+Weapon/Name/BerserkerAscendedCrushingBlow=Crushing Blow
+Weapon/Name/BerserkerCrushingBlow=Crushing Blow
+Weapon/Name/BrimstoneDemolisherBrutalThrash=Brutal Thrash
+Weapon/Name/BrimstoneDemolisherInfernalBreathDummy=Infernal Breath
+Weapon/Name/BrimstoneDemolisherScorchingBlaze=Brimstone Demolisher - Scorching Blaze
+Weapon/Name/DragonHunterClaws=Claws
+Weapon/Name/DragonHunterTongueLash=Tongue Lash
+Weapon/Name/FlamespitterAscendedClaws=Flamespitter (Ascended) -Claws
+Weapon/Name/FlamespitterClaws=Claws
+Weapon/Name/FlamespitterSeekerFlame=Seeker Flame
+Weapon/Name/FleshrenderAir=Fleshrender
+Weapon/Name/FleshrenderCinderSpike=Cinder Spike
+Weapon/Name/FleshrenderCinderSpikeDummy=Fleshrender - Cinder Spike
+Weapon/Name/FleshrenderGround=Fleshrender
+Weapon/Name/FleshrenderShred=Shred
+Weapon/Name/GrimGliderEmaciate=Grim Glider - Emaciate
+Weapon/Name/HandofPowerPsionicImpulse=Psionic Impulse
+Weapon/Name/HornedMagusHeadbutt=Headbutt
+Weapon/Name/HornedMagusMysticBolt=Mystic Bolt
+Weapon/Name/PhlogistonGuardianFulmination=Fulmination
+Weapon/Name/PlodderPincer=Pincer
+Weapon/Name/SkyrazerInferiorBlast=Inferior Blast
+Weapon/Name/SkyrazerSavageClaws=Savage Claws
+Weapon/Name/SkyrazerSuperiorBlast=Superior Blast
+Weapon/Name/SunkenGuardianImpale=Impale
+Weapon/Name/UnseenBeastExploration=Unseen Beast - Exploration
+Weapon/Name/UnseenBeastSpiritSmash=Spirit Smash
+Weapon/Name/VolcanicHarbingerAscendedPlasmaFlare=Plasma Flare
+Weapon/Name/VolcanicHarbingerPlasmaFlare=Plasma Flare
+UI/HelpMenuDialogTechGlossary_Control_Unit/Category/DragonUnits=Dragon Units

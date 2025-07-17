@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectModifyUnit id="UPLBehemothRevenantBombChannelInit">
+        <EditorCategories value="Race:UPL"/>
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="UPLBehemothRevenantBomb,255" CooldownOperation="Set" CooldownTimeUse="0.0625"/>
+        <ModifyFlags index="InterpolateFacing" value="1"/>
+        <FacingLocation Value="TargetPoint"/>
+        <FacingType value="LookAt"/>
+    </CEffectModifyUnit>
+    <CEffectCreatePersistent id="UPLBehemothRevenantBombFinalForceOptional">
+        <WhichLocation Value="CasterUnit"/>
+        <OffsetVectorStartLocation Value="CasterUnit"/>
+        <OffsetVectorEndLocation Value="CasterUnit"/>
+        <PeriodCount value="50"/>
+        <PeriodicValidator value="CasterHasNoOrders"/>
+        <PeriodicEffectArray value="UPLBehemothRevenantBombForce"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="UPLBehemothRevenantBombFinalForceMandatory">
+        <WhichLocation Value="CasterUnit"/>
+        <OffsetVectorStartLocation Value="CasterUnit"/>
+        <OffsetVectorEndLocation Value="CasterUnit"/>
+        <FinalEffect value="UPLBehemothRevenantBombFinalForceOptional"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="UPLBehemothRevenantBombForce"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="UPLBehemothBombImpact">
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="JupiterShellShockedSearch"/>
+        <PeriodicEffectArray value="JupiterNapalmCreatePersistent"/>
+        <PeriodicEffectArray value="UPLBehemothRevenantBombDamage"/>
+        <AINotifyEffect value="UPLBehemothRevenantBombDamage"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="UPLBehemothRevenantBombCooldownFinal">
+        <ImpactUnit Value="Source"/>
+        <Cost Abil="UPLBehemothRevenantBomb,255" CooldownOperation="Set" CooldownTimeUse="10"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectModifyUnit>
+    <CEffectSwitch id="UPLBehemothRevenantBomb">
+        <CaseArray Validator="RevenantLaunchTargetSlow" Effect="UPLBehemothRevenantBombLaunchMissile"/>
+        <CaseDefault value="UPLBehemothRevenantBombChannel"/>
+        <TargetLocationType value="Point"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectSwitch>
+    <CEffectApplyForce id="UPLBehemothRevenantBombForce">
+        <WhichLocation Value="TargetPoint"/>
+        <WhichUnit Value="Caster"/>
+        <Amount value="1"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectApplyForce>
+    <CEffectDamage id="UPLBehemothRevenantBombDamage">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MinorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Armored" value="25"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="25"/>
+        <Death value="Blast"/>
+        <AreaArray Fraction="2"/>
+        <AreaArray Radius="1.5" Fraction="1"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectDamage>
+    <CEffectDestroyPersistent id="UPLBehemothRevenantBombDestroyChannel">
+        <WhichLocation Value="TargetPoint"/>
+        <Effect value="UPLBehemothRevenantBombChannel"/>
+        <Count value="1"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectDestroyPersistent>
+    <CEffectLaunchMissile id="UPLBehemothRevenantBombLaunchMissile">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MinorDanger" value="1"/>
+        <!--        <ImpactEffect value="JupiterRevenantBombLaunchMissileImpact"/>-->
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="UPLBehemothBombImpact"/>
+        <FinishEffect value="BehemothBombLocationSearch"/>
+        <AmmoOwner Value="Caster"/>
+        <AmmoUnit value="UPLBehemothRevenantBombLMWeapon"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="UPLBehemothRevenantBombForceOffset">
+        <WhichLocation Value="CasterUnit"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="UPLBehemothRevenantBombForce"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="UPLBehemothRevenantBombChannel">
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialDelay value="0.0625"/>
+        <InitialEffect value="UPLBehemothRevenantBombChannelInit"/>
+        <PeriodicEffectArray value="JupiterRevenantBombLaunchQuerySet"/>
+        <PeriodicEffectArray value="UPLBehemothRevenantBombForceOffset"/>
+        <PeriodicEffectArray value="JupiterSpeed"/>
+        <PeriodicEffectArray value="JupiterStealth"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectCreatePersistent>
+    <CAbilEffectTarget id="UPLBehemothRevenantBomb">
+        <EditorCategories value="Race:UPL,AbilityorEffectType:Units"/>
+        <PostEffectBehavior Behavior="ALLRACE2VisceroidUPLStarbaseRevenantBombChannel"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <Range value="71.25"/>
+        <Arc value="360"/>
+        <CursorEffect value="UPLBehemothRevenantBombDamage"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="UPLBehemothRevenantBomb"/>
+    </CAbilEffectTarget>
+    <CValidatorLocationArc id="UPLBehemothFacingTargetWithin01">
+        <WhichLocation Value="SourceUnit"/>
+        <Find value="1"/>
+        <Arc value="0.9997"/>
+        <Value Effect="UPLBehemothRevenantBombChannel" Value="TargetUnitOrPoint"/>
+    </CValidatorLocationArc>
+    <CValidatorCombine id="UPLBehemothChannelForce">
+        <CombineArray value="CasterHasNoOrders"/>
+    </CValidatorCombine>
+    <CTacticalOrder id="UPLBehemoth">
+        <Abil value="UPLBehemothRevenantBomb"/>
+        <Retreat value="1"/>
+        <TargetFind value="UPLBehemothRevenantBomb"/>
+    </CTacticalOrder>
+    <CButton id="UPLBehemothRevenantBomb">
+        <TooltipFlags index="ShowLevel" value="0"/>
+        <Icon value="Assets\Textures\btn-top-hornerhan-bombers.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-bombers.dds"/>
+        <EditorCategories value="Race:UPL"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <!--    <CActorSound id="JupiterBombRunStart" parent="SoundOneShot">-->
+    <!--        <On Terms="Behavior.JupiterSpeed.Off" Send="Destroy"/>-->
+    <!--        <On Terms="Behavior.JupiterSpeed.On" Send="Create"/>-->
+    <!--    </CActorSound>-->
+    <CActorRange id="UPLBehemothRevenantBombRange" parent="RangeAbil" abil="UPLBehemothRevenantBomb">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconArcLength value="3.250000"/>
+    </CActorRange>
+    <CActorSound id="UPLBehemothBombImpactAdd" parent="SoundOneShot">
+        <FogVisibility value="Visible"/>
+        <On Terms="Effect.UPLBehemothBombImpact.Start" Send="Create"/>
+        <Sound value="JupiterAttackImpactAdd"/>
+    </CActorSound>
+    <!--    <CActorSound id="JupiterBombRun" parent="SoundOneShot">-->
+    <!--        <FogVisibility value="Visible"/>-->
+    <!--        <On Terms="ActorOrphan" Send="Destroy"/>-->
+    <!--        <On Terms="Behavior.JupiterSpeed.On" Send="Create"/>-->
+    <!--        <On Terms="Behavior.JupiterSpeed.Off" Send="Destroy"/>-->
+    <!--        <On Terms="ActorCreation" Send="SoundSetPaused 1 0"/>-->
+    <!--        <On Terms="BehaviorStackItem.JupiterSpeed.Add; ValidateUnit CasterIsMovingGTE8; IsStatus JupiterSound 0" Send="SoundSetPaused"/>-->
+    <!--        <On Terms="BehaviorStackItem.JupiterSpeed.Add; ValidateUnit CasterIsMovingGTE8; IsStatus JupiterSound 0" Send="StatusSet JupiterSound 1"/>-->
+    <!--        <On Terms="BehaviorStackItem.JupiterSpeed.Remove; ValidateUnit CasterIsMovingLT8; IsStatus JupiterSound 1" Send="Destroy"/>-->
+    <!--    </CActorSound>-->
+    <CActorAction id="UPLBehemothAttack" parent="GenericAttack" effectImpact="JupiterShellShockedSearch" effectLaunch="UPLBehemothRevenantBombLaunchMissile">
+        <LaunchAttachQuery Methods="AMRandomUniform"/>
+        <LaunchAssets Model="UPLBehemothNovaGriffinBombingRunStraferAttackLaunch"/>
+        <!--        <LaunchAttachQuery Methods="AMFilterWeapon"/>-->
+        <!--        <ImpactPhysics Name="Explosion" MatchKeys="Basic" Physics="SiegeTankSiegedForce"/>-->
+        <Missile value="BehemothBomb"/>
+        <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow"/>
+        <ImpactMap index="None" Model="ALLRACELotCUPLBehemothAttackImpact"/>
+        <ImpactPhysics Name="Explosion" MatchKeys="Basic" Physics="SiegeTankSiegedForce"/>
+    </CActorAction>
+    <CActorMissile id="UPLBehemothAttackMissile" parent="GenericAttackMissile" unitName="UPLBehemothRevenantBombLMWeapon">
+        <Model value="UPLBehemothAttackMissile"/>
+    </CActorMissile>
+    <CTargetFindSet id="UPLBehemothRevenantBomb">
+        <Type value="Sequential"/>
+        <Array value="UPLBehemothRevenantBombSearch"/>
+        <Array value="RevenantBombBestPoint"/>
+    </CTargetFindSet>
+    <CTargetFindEffect id="UPLBehemothRevenantBombSearch">
+        <Effect value="JupiterShellShockedSearch"/>
+    </CTargetFindEffect>
+    <CModel id="ALLRACELotCUPLBehemothAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\MiraHorner_NapalmBomb_Coop_Explosion\MiraHorner_NapalmBomb_Coop_Explosion.m3"/>
+        <EditorCategories value="Race:UPL"/>
+        <Flags index="Wait" value="1"/>
+        <Priority value="32"/>
+        <ScaleMax value="1.100000,1.100000,0.750000"/>
+        <ScaleMin value="1.100000,1.100000,0.750000"/>
+    </CModel>
+    <CModel id="UPLBehemothAttackSplat" parent="Splat">
+        <Model value="Assets\UI\Cursors\TerranAOECursor\TerranAOECursor.m3"/>
+        <EditorCategories value="Race:UPL"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="UPLBehemothAttackMissile" parent="MissileFX">
+        <Model value="Assets\Units\Terran\Griffin_BombRun_COOP\Griffin_BombRun_COOP.m3"/>
+        <EditorCategories value="Race:UPL"/>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Griffin_BombParachute"/>
+            <Type value="Sound"/>
+            <Time value="0.006000"/>
+            <Payload value="Griffin_BombParachute"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,02"/>
+            <Name value="Griffin_Bombing_Whistle"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="Griffin_Bombing_Whistle"/>
+        </Events>
+        <!--Model value="Assets\Effects\Terran\MiraHorner_Carrier_Coop_Missile\MiraHorner_Carrier_Coop_Missile.m3"/>
+        <Flags index="Wait" value="1"/>
+        <Priority value="32"/>
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="1.250000,0.750000,1.250000"/>
+        <ScaleMin value="1.250000,0.750000,1.250000"/-->
+    </CModel>
+    <CModel id="UPLBehemothNapalmImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\MiraHorner_NapalmBomb_Coop_Fire\MiraHorner_NapalmBomb_Coop_Fire.m3"/>
+        <EditorCategories value="Race:UPL"/>
+        <Flags index="Wait" value="1"/>
+        <Priority value="32"/>
+    </CModel>
+    <CWeaponLegacy id="UPLBehemothVisceroidRevenantBomb">
+        <Icon value="Assets\Textures\btn-upgrade-genetron-rocketweapons-level0.dds"/>
+        <DisplayEffect value="UPLBehemothRevenantBombDamage"/>
+        <Range value="3"/>
+        <Period value="8"/>
+        <Effect value="RevenantBombTSet"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+    </CWeaponLegacy>
+    <CMoverMissile id="UPLBehemothRevenantBombLMWeapon">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="8"/>
+            <Speed value="0"/>
+            <MinSpeed value="1"/>
+            <MaxSpeed value="10"/>
+            <ActorTracking value="Actual"/>
+            <RotationLaunchActorType value="LaunchToTarget"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CSound id="UPLBehemothBombRunStart" parent="Spell">
+        <AssetArray File="Assets\Sounds\Griffin_PkUp_Hit_FlyOut.wav" FacialGroup=""/>
+        <Pitch value="2.000000,2.000000"/>
+        <EditorCategories value="Race:UPL"/>
+    </CSound>
+    <CSound id="UPLBehemothBombRun" parent="Spell">
+        <AssetArray File="Assets\Sounds\Griffin_ScreamBy_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Griffin_ScreamBy_03.wav" FacialGroup=""/>
+        <MuteFadeOut/>
+        <MuteFadeOut Time="1500" Volume="-96.000000"/>
+        <Pitch value="-7.000000,-7.000000"/>
+        <SustainFade index="1" Time="1500"/>
+        <Volume value="-8.000000,-8.000000"/>
+        <VolumeRolloffPoints Distance="10.000000"/>
+        <VolumeRolloffPoints Distance="50.000000" Volume="-96.000000"/>
+        <EditorCategories value="Race:UPL"/>
+    </CSound>
+    <CUnit id="UPLBehemothRevenantBombLMWeapon" parent="MISSILE_INVULNERABLE">
+        <Race value="UPLL"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CBehaviorBuff id="ALLRACE2VisceroidUPLStarbaseRevenantBombChannel">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:UPL,AbilityorEffectType:Units"/>
+        <BuffFlags index="Channeling" value="1"/>
+        <Modification>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+</Catalog>

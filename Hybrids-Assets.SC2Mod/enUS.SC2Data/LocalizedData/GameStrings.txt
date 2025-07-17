@@ -1,0 +1,3 @@
+﻿DocInfo/DescLong=Asset mod for Zero Custom Races
+DocInfo/Name=[AR3] ZCR-Assets
+DocInfo/Website=https://discord.gg/rfPG2y62A3

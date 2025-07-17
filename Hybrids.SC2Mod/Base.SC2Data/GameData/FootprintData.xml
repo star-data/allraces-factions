@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CFootprint id="ZHBRAmplifier@Placement">
+        <Layers index="Check" Area="-1,0,1,1">
+            <Sets index="0">
+                <Negative index="NoBuild" value="0"/>
+                <Negative index="Creep" value="0"/>
+                <Negative index="Masked" value="0"/>
+                <Negative index="Water" value="1"/>
+            </Sets>
+            <Rows value="xx"/>
+        </Layers>
+        <Layers index="Place" Area="-1,0,1,1">
+            <Sets index="0" removed="1"/>
+            <Rows value=".."/>
+        </Layers>
+        <Shape>
+            <Radius value="1.1181"/>
+            <Offsets value="-1,-0.5;1,-0.5;-1,0.5;1,0.5"/>
+            <Borders value="0,2,2;1,0,2;2,3,2;3,1,2"/>
+        </Shape>
+    </CFootprint>
+    <CFootprint id="ZHBRAmplifier@Footprint">
+        <Layers index="Check" Area="-1,0,1,1">
+            <Sets index="0">
+                <Negative index="NoBuild" value="0"/>
+                <Negative index="Creep" value="0"/>
+                <Negative index="Masked" value="0"/>
+                <Negative index="Water" value="1"/>
+            </Sets>
+            <Rows value="xx"/>
+        </Layers>
+        <Layers index="Place" Area="-1,0,1,1">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoBuild" value="0"/>
+                <Positive index="NearResources" value="1"/>
+            </Sets>
+            <Rows value="xx"/>
+        </Layers>
+        <Shape>
+            <Radius value="2"/>
+            <Offsets value="-1,-1;1,-1;-1,1;1,1"/>
+            <Borders value="0,2,2;1,0,2;2,3,2;3,1,2"/>
+        </Shape>
+    </CFootprint>
+</Catalog>

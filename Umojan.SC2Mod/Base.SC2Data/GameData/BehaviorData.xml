@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="UmojanAloeHealSoloAutocastSecondary">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UmojanAloeHealSoloIsNotHealing"/>
+        <Period value="1"/>
+        <PeriodicEffect value="UmojanAloeHealSoloAutocastSecondarySearch"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorPowerSource id="UmojanPowerSourceCHBis">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\wireframe-terran-umojanlabgenerator.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <Requirements value="UmojanHaveAuxiliaryGenerator"/>
+        <Radius value="10"/>
+        <PowerLink value="PowerSource"/>
+    </CBehaviorPowerSource>
+    <CBehaviorBuff id="UmojanRaptorIdle">
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UmojanCasterIsNotMoving"/>
+        <DisableValidatorArray value="CasterIsNotHidden"/>
+        <DisableValidatorArray value="CasterNotAttacking"/>
+        <Period value="0.06"/>
+        <PeriodicEffect value="UmojanHexaremRaptorDummyRecallETU"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanStasisMineProtection">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-forcefield-red.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanStasisMine">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-forcefield-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="5"/>
+        <Modification>
+            <ModifyFlags index="Reveal" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+        <FinalEffect value="UmojanStasisMineProtectionApply"/>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="UmojanTransientAttackTrackerHexarem">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <MaxTrackedUnits value="1"/>
+        <UnitAddedAtMaxRule value="ReplaceOldest"/>
+        <ReplacedEffect value="UmojanTrancientWeaponTrackerRBHexarem"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="UmojanTransientAttackTrackerTargetHexarem">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+        <MaxStackCountPerCaster value="1"/>
+        <DamageResponse Fatal="1" Handled="UmojanHexaremRaptorDummyRecallMU">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanTyphonOffensiveWarped">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilMove" value="1"/>
+            <AbilLinkEnableArray value="VolatileBurstBuilding"/>
+            <AbilLinkEnableArray value="GhostCloak"/>
+            <AbilLinkEnableArray value="BansheeCloak"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanTyphonOffensiveWarping">
+        <Cost>
+            <Charge Link="Behavior/Recalling"/>
+            <Cooldown Link="Behavior/Recalling"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <ExpireEffect value="UmojanTyphonWarpAssaultWarpSet"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilMove" value="1"/>
+            <AbilLinkEnableArray value="VolatileBurstBuilding"/>
+            <AbilLinkEnableArray value="GhostCloak"/>
+            <AbilLinkEnableArray value="BansheeCloak"/>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/Recalling"/>
+                <Cooldown Link="Behavior/Recalling"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="UmojanTrackerSpot">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorUnitTracker id="UmojanTransientAttackTracker">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <MaxTrackedUnits value="1"/>
+        <UnitAddedAtMaxRule value="ReplaceOldest"/>
+        <ReplacedEffect value="UmojanTrancientWeaponTrackerRB"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="UmojanTransientAttackTrackerTarget">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+        <MaxStackCountPerCaster value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanDeepCloakEnergy">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CanSpendEnergy"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+        <Modification MoveSpeedMultiplier="1.35">
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Undetectable" value="1"/>
+            <StateFlags index="Unradarable" value="1"/>
+            <VitalRegenArray index="Energy" value="-15.5625"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanBattleshipMaginotLineShielding">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterShieldsGE1"/>
+        <DamageResponse ClampMaximum="30" Minimum="30">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCommandoAmbush">
+        <InfoIcon value="Assets\Textures\btn-ability-terran-cloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <FinalEffect value="UmojanCommandoAmbushBuffAB"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+        <RemoveValidatorArray value="UmojanCasterIsNotMoving"/>
+        <RemoveValidatorArray value="UmojanCasterNotDealingDamageShort"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCommandoAmbushBuff">
+        <InfoIcon value="Assets\Textures\btn-upgrade-tychus-attackspeed.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="4"/>
+        <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCommandoAmbushPermanant">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanCasterIsNotMoving"/>
+        <DisableValidatorArray value="UmojanCasterNotDealingDamageShort"/>
+        <DisableValidatorArray value="UmojanResearchPersonalCloakingResearched"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="UmojanCommandoAmbushCDAB"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCommandoAmbushCD">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <RemoveValidatorArray value="UmojanCasterIsNotMoving"/>
+        <RemoveValidatorArray value="UmojanCasterNotDealingDamageShort"/>
+        <Period value="3"/>
+        <PeriodicEffect value="UmojanCommandoAmbushAB"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCommandoFlashGrenadeBlind">
+        <InfoIcon value="Assets\Textures\cyanstarflash.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="2"/>
+        <Modification>
+            <SightBonus value="-2"/>
+            <WeaponRange value="-2"/>
+            <Detect value="-2"/>
+            <Radar value="-2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCrowRecalled">
+        <Cost>
+            <Charge Link="Behavior/Recalled"/>
+            <Cooldown Link="Behavior/Recalled"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilMove" value="1"/>
+            <AbilLinkEnableArray value="VolatileBurstBuilding"/>
+            <AbilLinkEnableArray value="GhostCloak"/>
+            <AbilLinkEnableArray value="BansheeCloak"/>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/Recalled"/>
+                <Cooldown Link="Behavior/Recalled"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCrowRecalling">
+        <Cost>
+            <Charge Link="Behavior/Recalling"/>
+            <Cooldown Link="Behavior/Recalling"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <ExpireEffect value="UmojanCrowRecallSet"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilMove" value="1"/>
+            <AbilLinkEnableArray value="VolatileBurstBuilding"/>
+            <AbilLinkEnableArray value="GhostCloak"/>
+            <AbilLinkEnableArray value="BansheeCloak"/>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/Recalling"/>
+                <Cooldown Link="Behavior/Recalling"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanAloeSendReconActiveRecon">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <FinalEffect value="UmojanWhirlwindSendReconReconEndSet"/>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="UmojanAloeHealSoloTracker">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <MaxTrackedUnits value="1"/>
+        <UnitAddedAtMaxRule value="ReplaceOldest"/>
+        <ReplacedEffect value="UmojanAloeHealSoloTrackedRB"/>
+        <TrackingValidatorArray value="CasterAndTargetNotDead"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="UmojanAloeSendBomberReturnToCarrier">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="NoOrdersAndNoMove"/>
+        <Period value="0.1"/>
+        <PeriodicEffect value="UmojanAloeSendBomberReturnCraftToCarrier"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanAloeSendReconReturnToCarrier">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="NoOrdersAndNoMove"/>
+        <Period value="0.1"/>
+        <PeriodicEffect value="UmojanWhirlwindSendReconReturnCraftToCarrier"/>
+        <FinalEffect value="UmojanWhirlwindSendReconActiveReconCDIniTarget"/>
+    </CBehaviorBuff>
+    <CBehaviorPowerUser id="UmojanPowerUpgradeBattleTank">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-boss-prisongenerator.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <PowerLink value="PowerSource"/>
+        <Flags index="DisplayPower" value="1"/>
+        <Flags index="HideUnpoweredText" value="1"/>
+        <Flags index="LevelFromSourceCount" value="1"/>
+        <PowerStageArray/>
+        <PowerStageArray MinPowerLevel="1"/>
+    </CBehaviorPowerUser>
+    <CBehaviorUnitTracker id="UmojanTrackerCarrier">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="UmojanCrowTimeBomb">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="0.125"/>
+        <Modification MoveSpeedMultiplier="0.7" AttackSpeedMultiplier="0.7"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanHyperjumpTeleport">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="4.8"/>
+        <ExpireEffect value="UmojanHyperjumpTeleportInAB"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanHyperjumpTeleportIn">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="0.6"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+        <FinalEffect value="UmojanHyperjumpInitialDelaySuppressWeaponRB"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanHyperjumpTeleportOut">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="0.6"/>
+        <ExpireEffect value="UmojanHyperjumpTeleportSet"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanHyperjumpInitialDelaySuppressWeapon">
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanHyperjumpTeleportOutTargetSuppressCollision">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="0.0625"/>
+        <ExpireEffect value="UmojanSuicideRemoveSource"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanAloeHealSoloIsHealing">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="UmojanAloeHealAreaAutocast"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanAloeHealSoloUnitInTheArea">
+        <InfoFlags index="Hidden" value="1"/>
+        <BehaviorCategories index="Aura" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="UmojanCasterat6units"/>
+        <RemoveValidatorArray value="CasterHasEnergyAndNotDead"/>
+        <RemoveValidatorArray value="NotFullLife"/>
+        <RemoveValidatorArray value="UmojanAloeHealSoloAutocast"/>
+        <InitialEffect value="UmojanAloeHealSolo"/>
+        <FinalEffect value="UmojanAloeHealSoloIsHealingRB"/>
+        <DamageResponse Handled="UmojanAloeHealSoloApplyIsBeeingHealed"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanAloeHealSoloIsBeeingHealed">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="UmojanCasterat6units"/>
+        <RemoveValidatorArray value="CasterHasEnergyAndNotDead"/>
+        <RemoveValidatorArray value="UmojanAloeHealAreaAutocast"/>
+        <RemoveValidatorArray value="NotFullLife"/>
+        <InitialEffect value="UmojanAloeHealArea"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanBattlecatStayatRange">
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanLockdown">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-stetmann-corruptormissileaoe.dds"/>
+        <BehaviorCategories index="Stun" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="8"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressRadar" value="1"/>
+        </Modification>
+        <DurationOverride>
+            <Duration value="3"/>
+            <ValidatorArray value="UmojanIsHeroic"/>
+        </DurationOverride>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanDefensiveMatrix">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="20"/>
+        <DamageResponse ModifyFraction="0" ModifyLimit="400" ModifyMinimumDamage="1">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCloakFieldEffect">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="UmojanCasterat5units"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <RemoveValidatorArray value="UmojanCasterIsnotStased"/>
+        <RemoveValidatorArray value="UmojanCasterisCloakingthearea"/>
+        <TimeScaleSource Value="Global"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+        <MaxStackCount value="65535"/>
+        <MaxStackCountPerCaster value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanCloakField">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="UmojanCloakingFieldSearch"/>
+        <Modification>
+            <VitalRegenArray index="Energy" value="-2"/>
+        </Modification>
+        <RemoveValidatorArray value="CanSpendEnergy"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanAIKitingWirlwindPseudo">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Modification>
+            <StateFlags index="IsKiting" value="1"/>
+        </Modification>
+        <RemoveValidatorArray value="UmojanAIControlCaster"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanDeepCloak">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="5.7"/>
+        <Modification>
+            <StateFlags index="Undetectable" value="1"/>
+            <StateFlags index="Unradarable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanPermaCloak">
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanResearchCloakingFieldResearched"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanDroneConstruction">
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <RemoveValidatorArray value="IsConstructing"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <Period value="0.2"/>
+        <InitialEffect value="UmojanDroneConstructionSetStart"/>
+        <PeriodicEffect value="UmojanDroneConstructionBeam"/>
+        <FinalEffect value="UmojanDroneConstructionSet"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanPermaCloakNightwish">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanOverchargeGenerator">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+    </CBehaviorBuff>
+    <CBehaviorPowerSource id="UmojanPowerSourceCH">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\wireframe-terran-umojanlabgenerator.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <Requirements value="UmojanHaveAuxiliaryGenerator"/>
+        <Radius value="10"/>
+        <PowerLink value="PowerSource"/>
+    </CBehaviorPowerSource>
+    <CBehaviorBuff id="UmojanShadowPermaCloak">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanResearchPersonalCloakingResearched"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanSalvageBunker" parent="Salvage">
+        <Name value="Behavior/Name/UmojanSalvageBunker"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanShieldTransferGiver">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="2"/>
+        <Modification>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanScienceConsumerValidatorGreen">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoFlags index="AlwaysUseGameText" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanScienceFacilityStarshipSpecialisedGreen"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanScienceConsumerValidatorRed">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoFlags index="AlwaysUseGameText" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanScienceFacilityInfantrySpecialisedRed"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanScienceConsumerValidatorBlue">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoFlags index="AlwaysUseGameText" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanScienceFacilityVehicleSpecialisedBlue"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanShieldTransferReceiver">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="1"/>
+        <Modification>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanStasisField">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-forcefield-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="14"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorPowerUser id="UmojanScienceConsumerGreen">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-terran-starport.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <PowerLink value="UmojanScienceSourceGreen"/>
+        <Flags index="DisplayPower" value="1"/>
+        <Flags index="HideUnpoweredText" value="1"/>
+        <PowerStageArray/>
+        <PowerStageArray MinPowerLevel="1">
+            <Modification>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorPowerUser id="UmojanScienceConsumerRed">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-terran-barracks.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <PowerLink value="UmojanScienceSourceRed"/>
+        <Flags index="DisplayPower" value="1"/>
+        <Flags index="HideUnpoweredText" value="1"/>
+        <PowerStageArray/>
+        <PowerStageArray MinPowerLevel="1">
+            <Modification>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorPowerSource id="UmojanScienceGreen">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Building-Terran-ScienceFacility.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <Radius value="8.5"/>
+        <CliffLevelFlags index="Higher" value="0"/>
+        <Requirements value="NotUnderConstruction"/>
+    </CBehaviorPowerSource>
+    <CBehaviorPowerSource id="UmojanScienceBlue">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Building-Terran-ScienceFacility.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <Radius value="8.5"/>
+        <CliffLevelFlags index="Higher" value="0"/>
+        <Requirements value="NotUnderConstruction"/>
+    </CBehaviorPowerSource>
+    <CBehaviorPowerUser id="UmojanScienceConsumerBlue">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-terran-factory.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <PowerLink value="UmojanScienceSourceBlue"/>
+        <Flags index="DisplayPower" value="1"/>
+        <Flags index="HideUnpoweredText" value="1"/>
+        <PowerStageArray/>
+        <PowerStageArray MinPowerLevel="1">
+            <Modification>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorPowerSource id="UmojanScienceRed">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Building-Terran-ScienceFacility.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <Radius value="8.5"/>
+        <CliffLevelFlags index="Higher" value="0"/>
+        <Requirements value="NotUnderConstruction"/>
+    </CBehaviorPowerSource>
+    <CBehaviorPowerSource id="UmojanPowerSourceDummy">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\wireframe-terran-umojanlabgenerator.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <PowerLink value="PowerSourceDummy"/>
+    </CBehaviorPowerSource>
+    <CBehaviorBuff id="UmojanStasisFieldProtection">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-forcefield-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="UmojanTrackerWarp">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="UmojanTyphonWeaponCounter">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <MaxStackCount value="4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanUnderConstructionSec">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsConstructing"/>
+        <FinalEffect value="UmojanMicroBuildingHeal"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanWarpSignatureKillOwner">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <RemoveValidatorArray value="CasterLifeGT0Percent"/>
+        <FinalEffect value="TimedLifeFate"/>
+        <DamageResponse Fatal="1" Handled="KillCaster">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanIsWarpingOut">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Modification>
+            <AbilClassDisableArray index="CAbilResearch" value="1"/>
+            <AbilClassDisableArray index="CAbilTrain" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CloakFieldEffect">
+        <DisableValidatorArray value="UmojanNotCrow"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanAIKitingPathfinder">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Modification>
+            <StateFlags index="IsKiting" value="1"/>
+        </Modification>
+        <DisableValidatorArray value="UmojanCasterDealingDamageShort"/>
+        <RemoveValidatorArray value="UmojanAIControlCaster"/>
+    </CBehaviorBuff>
+    <CBehaviorPowerSource id="UmojanPowerSource">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-terran-commandcenter.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <Radius value="6.5"/>
+        <PowerLink value="PowerSource"/>
+    </CBehaviorPowerSource>
+    <CBehaviorBuff id="UmojanGroundSensor">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-status-radar.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Structures"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Modification Radar="3" RadarFilters="Ground;Neutral,Structure,Hover,Missile,Destructible,Item,Dead,Hidden,Passive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanPowerLevel0">
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanPowerLevel0"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanPowerLevel1">
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanPowerLevel1"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanPowerLevel2">
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanPowerLevel2"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanPowerLevel3">
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <DisableValidatorArray value="UmojanPowerLevel3"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorPowerUser id="UmojanPowerUpgrade">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-boss-prisongenerator.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <PowerLink value="PowerSource"/>
+        <Flags index="DisplayPower" value="1"/>
+        <Flags index="HideUnpoweredText" value="1"/>
+        <Flags index="LevelFromSourceCount" value="1"/>
+        <PoweredWhileUnderConstruction value="1"/>
+        <PowerStageArray>
+            <Modification>
+                <StateFlags index="SuppressShields" value="1"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-1"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray MinPowerLevel="1">
+            <Modification TimeScale="1.15">
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.75"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray MinPowerLevel="2">
+            <Modification QueueSize="1" TimeScale="1.3">
+                <VitalMaxDecreaseAffectsCurrentArray index="Shields" value="1"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.5"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray MinPowerLevel="3">
+            <Modification QueueSize="2" TimeScale="1.45"/>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorBuff id="UmojanPlasmaBurn">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_blue.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="8"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="UmojanPlasmabatCorrosiveBlastDoTEffect"/>
+        <Modification MoveSpeedMultiplier="0.5"/>
+        <PeriodCount value="15"/>
+        <InitialEffect value="UmojanPlasmabatCorrosiveBlastDoTEffect"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanPlasmaBurnTarget">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_blue.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <RemoveValidatorArray value="NoPurificationNova"/>
+        <RemoveValidatorArray value="HasNovaPsiStrikeWalkSpeed"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorPowerUser id="UmojanPowerUpgradeBarricade" parent="UmojanPowerUpgrade">
+        <Name value="Behavior/Name/UmojanPowerUpgradeBarricade"/>
+        <PowerStageArray index="0">
+            <Modification>
+                <StateFlags index="SuppressShields" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="0"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="1" MinPowerLevel="1">
+            <Modification TimeScale="1">
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="0.5"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="2" MinPowerLevel="2">
+            <Modification QueueSize="0" TimeScale="1">
+                <VitalMaxDecreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="1"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="3" MinPowerLevel="3">
+            <Modification QueueSize="0" TimeScale="1">
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="1.5"/>
+            </Modification>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorPowerUser id="UmojanPowerUpgradeHiddenConstructionSpeed" parent="UmojanPowerUpgrade">
+        <Name value="Behavior/Name/UmojanPowerUpgradeHiddenConstructionSpeed"/>
+        <Flags index="DisplayPower" value="0"/>
+        <PowerStageArray index="0">
+            <Modification>
+                <StateFlags index="SuppressShields" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="0"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="1" MinPowerLevel="1">
+            <Modification TimeScale="1.095">
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="0"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="2" MinPowerLevel="2">
+            <Modification QueueSize="0" TimeScale="1.18">
+                <VitalMaxDecreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="0"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="3" MinPowerLevel="3">
+            <Modification QueueSize="0" TimeScale="1.26"/>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorPowerUser id="UmojanPowerUpgradeUtilityUnits" parent="UmojanPowerUpgrade">
+        <Name value="Behavior/Name/UmojanPowerUpgradeUtilityUnits"/>
+        <PowerStageArray index="0">
+            <Modification>
+                <StateFlags index="SuppressShields" value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-1"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="1" MinPowerLevel="1">
+            <Modification QueueSize="1" TimeScale="1.05">
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.75"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="2" MinPowerLevel="2">
+            <Modification QueueSize="0" TimeScale="1.1">
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalMaxDecreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.5"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="3" MinPowerLevel="3">
+            <Modification QueueSize="0" TimeScale="1.15">
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorPowerUser id="UmojanPowerUpgradeOtherBuilding" parent="UmojanPowerUpgrade">
+        <Name value="Behavior/Name/UmojanPowerUpgradeOtherBuilding"/>
+        <PowerStageArray index="1" MinPowerLevel="1">
+            <Modification TimeScale="1.05">
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.75"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="2" MinPowerLevel="2">
+            <Modification QueueSize="0" TimeScale="1.1">
+                <VitalMaxDecreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.5"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="3" MinPowerLevel="3">
+            <Modification QueueSize="0" TimeScale="1.15"/>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorPowerUser id="UmojanPowerUpgradeCH" parent="UmojanPowerUpgrade">
+        <Name value="Behavior/Name/UmojanPowerUpgradeCH"/>
+        <PowerStageArray index="1" MinPowerLevel="1">
+            <Modification TimeScale="1">
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.75"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="2" MinPowerLevel="2">
+            <Modification QueueSize="0" TimeScale="1">
+                <VitalMaxDecreaseAffectsCurrentArray index="Shields" value="1"/>
+                <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.5"/>
+            </Modification>
+        </PowerStageArray>
+        <PowerStageArray index="3" MinPowerLevel="3">
+            <Modification QueueSize="0" TimeScale="1"/>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
+    <CBehaviorBuff id="UmojanStrikeMineBurrowFirst">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <InitialEffect value="UmojanStrikeMineBurrowOrder"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanGroundDetectorBurrowFirst">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <InitialEffect value="UmojanGroundDetectorBurrowOrder"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanSabotageTarget">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-recalibratedexplosives.dds"/>
+        <BehaviorCategories index="Stun" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="7.5"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressCombat" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressFoodMade" value="1"/>
+            <StateFlags index="SuppressRadar" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+        </Modification>
+        <FinalEffect value="UmojanShadowguardSabotageDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanWhirlwindWeaponLaunchMissileAlternate">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanWeaponPowerAccumulator">
+        <Alignment value="Positive"/>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-raynor-phobosclassweaponssystem.dds"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UmojanHasMarineWeaponUpgrade"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanWhirlwindWeaponMissileSearch">
+        <EditorCategories value="AbilityorEffectType:Units,Race:TerU"/>
+        <Period value="0.1"/>
+        <PeriodCount value="100"/>
+        <InitialEffect value="UmojanWhirlwindAttackWeaponMissileSearch"/>
+        <PeriodicEffect value="UmojanWhirlwindAttackWeaponMissileSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UmojanUnderConstruction">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:TerU,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsConstructing"/>
+        <FinalEffect value="UmojanConstructionFinishedSet"/>
+    </CBehaviorBuff>
+</Catalog>

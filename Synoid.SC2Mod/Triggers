@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TriggerData>
+    <Library Id="Synd">
+        <Root>
+            <Item Type="Trigger" Library="Synd" Id="512302E7"/>
+        </Root>
+        <Element Type="Trigger" Id="512302E7">
+            <Event Type="FunctionCall" Library="Synd" Id="E031D44C"/>
+        </Element>
+        <Element Type="FunctionCall" Id="E031D44C">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="B1A02C2E"/>
+            <Parameter Type="Param" Library="Synd" Id="28240598"/>
+        </Element>
+        <Element Type="Param" Id="28240598">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="177B3837"/>
+            <Value>GAME START Synd</Value>
+            <ValueType Type="string"/>
+        </Element>
+    </Library>
+</TriggerData>

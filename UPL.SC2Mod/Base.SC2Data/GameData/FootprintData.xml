@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CFootprint id="Footprint5x5Contour2">
+        <Layers index="Check" Area="-2,-2,3,3">
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+        </Layers>
+        <Layers index="Place" Area="-2,-2,3,3">
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+        </Layers>
+        <Shape>
+            <Radius value="2.6926"/>
+            <Offsets value="-1,-2.5;0,-2.5;-1,2.5;1,2.5;-2.5,-1;-2.5,1;-1,2;2.5,0;2.5,1;-1.25,2.25"/>
+            <Borders value="0,4,2;1,0,2;2,3,2;3,8,2;4,5,2;5,9,2;6,2,2;7,1,2;8,7,2;9,6,2"/>
+        </Shape>
+    </CFootprint>
+    <CFootprint id="Footprint5x5DropOff2">
+        <Layers index="Check" Area="-2,-2,3,3">
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+        </Layers>
+        <Layers index="Place" Area="-2,-2,3,3">
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+        </Layers>
+        <Shape>
+            <Radius value="3.5356"/>
+            <Offsets value="-2.5,-2.5;2.5,-2.5;-2.5,2.5;-1.5,2.5;-0.5,2.5;2.5,2.5;-1,2"/>
+            <Borders value="0,2,2;1,0,2;2,3,2;3,6,2;4,5,2;5,1,2;6,4,2"/>
+        </Shape>
+    </CFootprint>
+    <CFootprint id="FootprintUPLForwardOperatingBase">
+        <Layers index="Check" Area="-3,-2,3,2">
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+        </Layers>
+        <Layers index="Place" Area="-3,-2,3,2">
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+        </Layers>
+        <Shape>
+            <Radius value="3.6057"/>
+            <Offsets value="-3,-2;3,-2;-3,2;3,2"/>
+            <Borders value="0,2,2;1,0,2;2,3,2;3,1,2"/>
+        </Shape>
+    </CFootprint>
+</Catalog>

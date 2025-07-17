@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAccumulatorVitals id="TaDarimDeathStarReleasedDestroyerHealth">
+        <UnitSource Effect="TalDarimDeathStarReleaseCommandSet" Value="Target"/>
+        <Ratio value="1"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="TaDarimDeathStarReleasedDestroyerShield">
+        <VitalType value="Shields"/>
+        <UnitSource Effect="TalDarimDeathStarReleaseCommandSet" Value="Target"/>
+        <Ratio value="1"/>
+    </CAccumulatorVitals>
+</Catalog>

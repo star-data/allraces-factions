@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit id="UPLDestructibleDebris4x4">
+        <DeathRevealRadius value="3"/>
+        <Race value="UPLL"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="Movable" value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <EditorFlags index="BlockStructures" value="0"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="120"/>
+        <LifeMax value="120"/>
+        <LifeArmorName value="Unit/LifeArmorName/HardenedMaterial"/>
+        <Footprint value="Footprint4x4ContourDestructibleRock"/>
+        <ScoreMake value="1"/>
+        <ScoreKill value="1"/>
+        <MinimapRadius value="0.7"/>
+        <EditorCategories value="ObjectType:Destructible,ObjectFamily:Melee"/>
+    </CUnit>
+</Catalog>

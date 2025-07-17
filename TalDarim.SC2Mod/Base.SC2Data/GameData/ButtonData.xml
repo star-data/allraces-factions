@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="TalDarimDestroyerVoidAmplifier">
+        <Icon value="Assets\Textures\btn-upgrade-terran-corvidreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-corvidreactor.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimFleetLodestarDestroyerResearchVoidAmplifier"/>
+    </CButton>
+    <CButton id="TalDarimDreadnoughCloningVat">
+        <Icon value="Assets\Textures\btn-tips-lab.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-lab.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimFleetLodestarDreadnoughResearchCloningVat"/>
+    </CButton>
+    <CButton id="TalDarimFleetLodestarOutriderResearchGoliarPulseCrystal">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-vanguard-increasedarmordamage.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-vanguard-increasedarmordamage.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimCynosurePhotonicOvercharge">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="TalDarimAutomationBayVanguardResearchMatterDispersion">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-vanguard-aoeradiusincreased.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-vanguard-aoeradiusincreased.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimAutomationBayWarPrismResearchGraviticDrive">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-graviticdrive.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-graviticdrive.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimFleetLodestarDreadnoughResearchCloningVat">
+        <Icon value="Assets\Textures\btn-tips-lab.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-lab.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimOutriderGoliarPulseCrystal">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-vanguard-increasedarmordamage.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-vanguard-increasedarmordamage.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimFleetLodestarOutriderResearchGoliarPulseCrystal"/>
+    </CButton>
+    <CButton id="TalDarimWarPrismGraviticDrive">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-graviticdrive.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-graviticdrive.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimAutomationBayWrathwalkerResearchAirTargeting">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-cantargetairunits.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-cantargetairunits.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimAscendantArchivesAscendantResearchMindBlast">
+        <Icon value="Assets\Textures\btn-ability-protoss-mindblast.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-mindblast.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimWrathwalkerAirTargeting">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-cantargetairunits.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-cantargetairunits.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimVanguardMatterDispersion">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-vanguard-aoeradiusincreased.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-vanguard-aoeradiusincreased.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDeathCouncilChampionResearchHegemonie">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeweapon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeweapon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDeathCouncilSlayerResearchEnhancedFrame">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-chargetimeimproved.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-chargetimeimproved.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimCyberneticsKernelResearchCloakingModule">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDeathCouncilSupplicantResearchBloodShields">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSupplicantBloodShields">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDeathCouncilSupplicantResearchSoulAugmentation">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantextrashields.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantextrashields.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSupplicantSoulAugmentation">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantextrashields.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantextrashields.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimHavocCloakingModule">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeAirArmorLevel1">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-airarmorlevel1.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-airarmorlevel1.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeAirArmorLevel2">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-airarmorlevel2.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-airarmorlevel2.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeAirArmorLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeAirArmorLevel3">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-airarmorlevel3.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-airarmorlevel3.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeAirArmorLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeAirWeaponsLevel1">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-airweaponslevel1.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-airweaponslevel1.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeAirWeaponsLevel2">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-airweaponslevel2.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-airweaponslevel2.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeAirWeaponsLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeAirWeaponsLevel3">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-airweaponslevel3.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-airweaponslevel3.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeAirWeaponsLevel1"/>
+    </CButton>
+    <CButton id="TalDarimSlayerEnhancedFrame">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-chargetimeimproved.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-wrathwalker-chargetimeimproved.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeGroundArmorLevel1">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-groundarmorlevel1.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-groundarmorlevel1.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeGroundArmorLevel2">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-groundarmorlevel2.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-groundarmorlevel2.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeGroundArmorLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeGroundArmorLevel3">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-groundarmorlevel3.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-groundarmorlevel3.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeGroundArmorLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeGroundWeaponsLevel1">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-groundweaponslevel1.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-groundweaponslevel1.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeGroundWeaponsLevel2">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-groundweaponslevel2.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-groundweaponslevel2.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeGroundWeaponsLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeGroundWeaponsLevel3">
+        <Icon value="Assets\icons\btn-upgrade-taldarim-groundweaponslevel3.dds"/>
+        <AlertIcon value="Assets\icons\btn-upgrade-taldarim-groundweaponslevel3.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeGroundWeaponsLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeShieldsLevel1">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeShieldsLevel2">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeShieldsLevel1"/>
+    </CButton>
+    <CButton id="TalDarimUpgradeShieldsLevel3">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimUpgradeShieldsLevel1"/>
+    </CButton>
+    <CButton id="TalDarimReliquaryofSouls">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-reaver.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-reaver.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimPeristyle">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-pylon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-pylon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimFracturer">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-assimilator.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-assimilator.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimCyberneticsKernel">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-cyberneticscore.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-cyberneticscore.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimBloodShrine">
+        <Icon value="Assets\Textures\btn-building-protoss-darkshrine-forged.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-darkshrine-forged.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimFleetLodestar">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-fleetbeacon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-fleetbeacon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDuplicator">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-forge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-forge.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimParticleCannon">
+        <Icon value="Assets\Textures\btn-building-protoss-particlecanon-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-particlecanon-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimDefenseAppender"/>
+    </CButton>
+    <CButton id="TalDarimAutomationBay">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-roboticssupportbay.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-roboticssupportbay.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimAutomationFacility">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-roboticsfacility.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-roboticsfacility.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimPrismaticTower">
+        <Icon value="Assets\Textures\btn-unit-protoss-shieldgenerator-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-shieldgenerator-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimDefenseAppender"/>
+    </CButton>
+    <CButton id="TalDarimStararch">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-stargate.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-stargate.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimArchway">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-gateway.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-gateway.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimReconstitute">
+        <Icon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimCustodesChainedDestruction">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice-lightingstrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice-lightingstrike.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechLocust">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechLocust"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechPriorityHigh">
+        <Icon value="Assets\Textures\ui_glues_ladder_score_rating_up.dds"/>
+        <AlertIcon value="Assets\Textures\ui_glues_ladder_score_rating_up.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechPriorityLow">
+        <Icon value="Assets\Textures\ui_glues_ladder_score_rating_down.dds"/>
+        <AlertIcon value="Assets\Textures\ui_glues_ladder_score_rating_down.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechPriorityHighPassive">
+        <Icon value="Assets\Textures\ui_glues_ladder_score_rating_up.dds"/>
+        <AlertIcon value="Assets\Textures\ui_glues_ladder_score_rating_up.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechPriorityMedium">
+        <Icon value="Assets\Textures\ui_glues_ladder_score_rating_tie.dds"/>
+        <AlertIcon value="Assets\Textures\ui_glues_ladder_score_rating_tie.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechPriorityLowPassive">
+        <Icon value="Assets\Textures\ui_glues_ladder_score_rating_down.dds"/>
+        <AlertIcon value="Assets\Textures\ui_glues_ladder_score_rating_down.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechPriorityMediumPassive">
+        <Icon value="Assets\Textures\ui_glues_ladder_score_rating_tie.dds"/>
+        <AlertIcon value="Assets\Textures\ui_glues_ladder_score_rating_tie.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechWarmistress">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechWarmistress"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimWarpInTwoSupplicant">
+        <Icon value="Assets\Icons\btn-unit-taldarim-twinned-supplicant.dds"/>
+        <AlertIcon value="Assets\Icons\btn-unit-taldarim-twinned-supplicant.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimWarmistressSoulsOvercharge">
+        <Icon value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimWarmistressSoulsOvercharge"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechWarPrism">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechWarPrism"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulAmplification">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulAmplification"/>
+    </CButton>
+    <CButton id="TalDarimWarPrismTurretMode">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-warpprismstationary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-warpprismstationary.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeySet value="TalDarimWarPrismModes"/>
+    </CButton>
+    <CButton id="TalDarimCustodesTarrazineFog">
+        <Icon value="Assets\Textures\tip_terrazinefog.dds"/>
+        <AlertIcon value="Assets\Textures\tip_terrazinefog.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimCustodesAnchorLink">
+        <Icon value="Assets\Textures\amonshards_weapon.dds"/>
+        <AlertIcon value="Assets\Textures\amonshards_weapon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimCustodesMergeSelection">
+        <Icon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimCustodesMergeTarget">
+        <Icon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimCustodesMergeSelection"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TadDarimHavocVoidShard">
+        <Icon value="Assets\Textures\btn-unit-void-deathgripcrystal.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-void-deathgripcrystal.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechAscendant">
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechAscendant"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechCustodes">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechVanguard">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechVanguard"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSummonBloodHunter">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-darktemplar.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-darktemplar.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon3"/>
+    </CButton>
+    <CButton id="TalDarimSummonChampion">
+        <Icon value="Assets\Textures\btn-unit-protoss-adept-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon2"/>
+    </CButton>
+    <CButton id="TalDarimSummonLocust">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-probe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-probe.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimCustodian">
+        <Icon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSummonCustodian">
+        <Icon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-darkarchon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon6"/>
+    </CButton>
+    <CButton id="TalDarimSummonDestroyer">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-voidray.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-voidray.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon4"/>
+    </CButton>
+    <CButton id="TalDarimDreadnought">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-carrier-collection.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-carrier-collection.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSummonDreadnought">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-carrier-collection.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-carrier-collection.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon6"/>
+    </CButton>
+    <CButton id="TalDarimSummonOutrider">
+        <Icon value="Assets\Icons\btn-unit-taldarim-scout.dds"/>
+        <AlertIcon value="Assets\Icons\btn-unit-taldarim-scout.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon3"/>
+    </CButton>
+    <CButton id="TalDarimSummonRiddler">
+        <Icon value="Assets\Textures\btn-unit-protoss-oracle-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-oracle-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon3"/>
+    </CButton>
+    <CButton id="TalDarimSummonSlayer">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-stalker-collection.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-stalker-collection.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon2"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechHavoc">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechHavoc"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSummonSupplicant">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-supplicant.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-supplicant.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon1"/>
+    </CButton>
+    <CButton id="TalDarimSummonVanguard">
+        <Icon value="Assets\Textures\btn-unit-protoss-immortal-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-immortal-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon4"/>
+    </CButton>
+    <CButton id="TalDarimWrathwalker">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-colossus.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-colossus.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimBloodHunter">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-darktemplar.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-darktemplar.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimAscendant">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-hightemplar.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-hightemplar.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimVanguard">
+        <Icon value="Assets\Textures\btn-unit-protoss-immortal-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-immortal-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimMonitor">
+        <Icon value="Assets\Textures\btn-unit-collection-taldarim-observer.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-collection-taldarim-observer.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimRiddler">
+        <Icon value="Assets\Textures\btn-unit-protoss-oracle-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-oracle-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimOutrider">
+        <Icon value="Assets\Icons\btn-unit-taldarim-scout.dds"/>
+        <AlertIcon value="Assets\Icons\btn-unit-taldarim-scout.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSlayer">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-stalker-collection.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-stalker-collection.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimHavoc">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-sentry.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-sentry.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimMonitorDetonation">
+        <Icon value="Assets\Textures\btn-upgrade-terran-enhancedmunitions.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-enhancedmunitions.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimPermanentlyCloakedMonitor">
+        <Icon value="Assets\Textures\BTN-ability-Protoss-permanentlycloaked-Observer-color.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDeathStarReleaseCommand">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-cancel.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechDeathStar">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechDeathStar"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimDeathStarAssumeCommand">
+        <Icon value="Assets\Textures\btn-unit-protoss-voidray-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-voidray-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechDestroyer">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechDestroyer"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimDeathStarVaporize">
+        <Icon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechMonitor">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechWrathwalker">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimWrathwalkerSoulLeech"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSupplicantDrainSupplicant">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimDrainSupplicantGeneric2"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechPariah">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSummonWrathwalker">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-colossus.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-colossus.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSummon6"/>
+    </CButton>
+    <CButton id="TalDarimWrathwalkerCliffWalk">
+        <Icon value="Assets\Textures\BTN-ability-Protoss-cliffwalk-color.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-ability-Protoss-cliffwalk-color.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechBloodHunter">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechBloodHunter"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechRiddler">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechRiddler"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechSupplicant">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechSupplicant"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechOutrider">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechOutrider"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechReliquary">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimDrainSupplicantGeneric1">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeyAlias value="TalDarimDrainSupplicantGeneric2"/>
+    </CButton>
+    <CButton id="TalDarimCynosure">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-nexus.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-nexus.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimGatherPrTD">
+        <Icon value="Assets\Textures\btn-ability-protoss-gather.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-gather.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+        <SimpleDisplayText value="SimpleDisplay/Gather"/>
+    </CButton>
+    <CButton id="TalDarimRiddlerPlasmaBomb">
+        <Icon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimRiddlerPlasmaBombBoom">
+        <Icon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimWarmistress">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-mothership.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-mothership.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimPermanentlyCloakedPlasmaBomb">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimRiddlerEnshroud">
+        <Icon value="Assets\Textures\cloudsingle.dds"/>
+        <AlertIcon value="Assets\Textures\cloudsingle.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="TalDarimLocust">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-probe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-probe.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimCynosureDestructiveHarvest">
+        <Icon value="Assets\Textures\btn-ability-protoss-sacrifice.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-sacrifice.dds"/>
+    </CButton>
+    <CButton id="TalDarimSlayerEntropicShield">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-stalkerphasingarmor.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stalkerphasingarmor.dds"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechSlayer">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechSlayer"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimChampionHegemonie">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeweapon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeweapon.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechChampion">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechChampion"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimDrainSupplicantGeneric2">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantsacrifice.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSoulLeechDreadnought">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ChargeText value="Button/ChargeText/TalDarimSoulLeechDreadnought"/>
+        <TooltipAppender Text="Button/Tooltip/TalDarimSoulLeechAppend"/>
+        <Hotkey value="Button/Hotkey/TalDarimSoulLeech"/>
+        <HotkeyAlias value="TalDarimSoulLeechAscendant"/>
+    </CButton>
+    <CButton id="TalDarimBloodHunterVoidStasis">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-VoidStasis.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-VoidStasis.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimHavocTargetLock">
+        <Icon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimHavocSquadSight">
+        <Icon value="Assets\Textures\btn-ability-protoss-squadsight.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDestroyerBloodSeeker">
+        <Icon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDeathStar">
+        <Icon value="Assets\Icons\btn-unit-taldarim-tempest.dds"/>
+        <AlertIcon value="Assets\Icons\btn-unit-taldarim-tempest.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDestroyer">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-voidray.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-voidray.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimChampion">
+        <Icon value="Assets\Textures\btn-unit-protoss-adept-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-taldarim.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimWarPrism">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-warpprism.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-warpprism.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimSupplicant">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-supplicant.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-supplicant.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimAscendantPsiOrb">
+        <Icon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <HidesForSimpleText value="0"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimAscendantMindBlast">
+        <Icon value="Assets\Textures\btn-ability-protoss-mindblast.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimWarPrismTransportMode">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-warpprism.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-warpprism.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <HotkeySet value="TalDarimWarPrismModes"/>
+    </CButton>
+    <CButton id="TalDarimAscendantArchive">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-templararchives.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-templararchives.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimDeathCouncil">
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-twilightcouncil.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-twilightcouncil.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+    <CButton id="TalDarimWarPrismUnloadAll">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TalDarimFleetLodestarDestroyerResearchVoidAmplifier">
+        <Icon value="Assets\Textures\btn-upgrade-terran-corvidreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-corvidreactor.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CButton>
+</Catalog>

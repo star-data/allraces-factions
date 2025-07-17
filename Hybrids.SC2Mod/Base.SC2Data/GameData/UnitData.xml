@@ -1,0 +1,2703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit default="1" id="DefaultSettingsZHBRBuilding">
+        <Race value="ZHBR"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Locust" value="1"/>
+        <Collide index="Phased" value="1"/>
+        <Collide index="Small" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZHBRBuildingPlating"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ZHBRShields"/>
+        <HotkeyCategory value="Unit/Category/ZHBRUnits"/>
+        <SubgroupPriority value="2"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <DataCollection value="##id##"/>
+        <BehaviorArray Link="ZHBRCommon@BuildersTracker"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUser"/>
+        <BehaviorArray Link="ZHBRRestorationShield"/>
+        <AbilArray Link="BuildInProgress"/>
+        <LifeArmor value="1"/>
+        <Facing value="315"/>
+        <ScoreResult value="BuildOrder"/>
+        <CardLayouts>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+        </CardLayouts>
+        <DeathRevealRadius value="3"/>
+        <AttackTargetPriority value="11"/>
+        <Mob value="Multiplayer"/>
+        <Sight value="9"/>
+        <ShieldArmorTip value="Unit/ShieldArmorTooltip/ZHBRShields"/>
+        <!--<EffectArray index="Create" value="ZHBRHybridRaceControl@AddTrackedUnit"/>-->
+        <EffectArray index="Birth" value="ZHBRRaceControl@AddTrackedUnit"/>
+    </CUnit>
+    <CUnit default="1" id="DefaultSettingsZHBRGroundUnit">
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <DataCollection value="##id##"/>
+        <Race value="ZHBR"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZHBRArmor"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ZHBRShields"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="20"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <LifeArmor value="1"/>
+        <CargoSize value="1"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+        </CardLayouts>
+        <GlossaryCategory value="Unit/Category/ZHBRUnits"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="20"/>
+            <ChanceArray index="Idle" value="70"/>
+            <ChanceArray index="Turn" value="10"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="5"/>
+        <TauntDuration index="Dance" value="5"/>
+        <Mob value="Multiplayer"/>
+        <AttackTargetPriority value="20"/>
+        <DeathRevealRadius value="3"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Locust" value="1"/>
+        <Collide index="Small" value="1"/>
+        <HotkeyCategory value="Unit/Category/ZHBRUnits"/>
+        <KillDisplay value="Always"/>
+        <RankDisplay value="Always"/>
+        <ScoreResult value="BuildOrder"/>
+        <ShieldArmorTip value="Unit/ShieldArmorTooltip/ZHBRShields"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUser"/>
+        <BehaviorArray Link="ZHBRRestorationShield"/>
+    </CUnit>
+    <CUnit default="1" id="DefaultSettingsZHBRGroundUnitExtendedCC" parent="DefaultSettingsZHBRGroundUnit">
+        <CardLayouts index="0">
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPageExtended"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPageExtended"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPageExtended"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1GU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="2"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="1GU1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRWarbringerMaceStrike@Extended" Type="AbilCmd" AbilCmd="ZHBRWarbringerMaceStrike,On" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRPsionicTornado@Extended" Type="AbilCmd" AbilCmd="ZHBRPsionicTornado,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRDeepTunnel@Extended" Type="AbilCmd" AbilCmd="ZHBRDeepTunnel,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRSentinelJump@Extended" Type="AbilCmd" AbilCmd="ZHBRSentinelJump,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRWarbringerMaceStrike@MaceCannonExtended" Type="AbilCmd" AbilCmd="ZHBRWarbringerMaceStrike,Off" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRTimeWarp@Extended" Type="AbilCmd" AbilCmd="ZHBRTimeWarp,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRConfusion@Extended" Type="AbilCmd" AbilCmd="ZHBRConfusion,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRPsiOrb@Extended" Type="AbilCmd" AbilCmd="ZHBRPsiOrb,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRConsumeDNA@Extended" Type="AbilCmd" AbilCmd="ZHBRConsumeDNA,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <CardLayouts CardId="2AU1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRRevealingSacrifice@Extended" Type="AbilCmd" AbilCmd="ZHBRRevealingSacrifice,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBREnergation@Extended" Type="AbilCmd" AbilCmd="ZHBREnergation@Energation,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRDisappearance@Extended" Type="AbilCmd" AbilCmd="ZHBRDisappearance,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRPhaseShift@Extended" Type="AbilCmd" AbilCmd="ZHBRPhaseShift,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRPowerField@Extended" Type="AbilCmd" AbilCmd="ZHBRPowerField@DummyAbility,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRPowerField@CancelExtended" Type="AbilCmd" AbilCmd="ZHBRPowerField@Cancel,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRNavigatorLoad@UnloadAllExtended" Type="AbilCmd" AbilCmd="ZHBRNavigatorLoad,UnloadAll" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRInterdimensionalOverload@Extended" Type="AbilCmd" AbilCmd="ZHBRInterdimensionalOverload,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="2AU2">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRAcceleration@Extended" Type="AbilCmd" AbilCmd="ZHBRAcceleration,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRPollinatorShadowMantle@OnExtended" Type="AbilCmd" AbilCmd="ZHBRPollinatorShadowMantle@ShadowMantle,On" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRPollinatorShadowMantle@OffExtended" Type="AbilCmd" AbilCmd="ZHBRPollinatorShadowMantle@ShadowMantle,Off" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRPlasmaticBlast@PlasmaticChargeExtended" Type="AbilCmd" AbilCmd="ZHBRPlasmaticBlast,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRPlasmaticBlast@Extended" Type="AbilCmd" AbilCmd="ZHBRPlasmaticBlast,On" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidChasm@Extended" Type="AbilCmd" AbilCmd="ZHBRVoidChasm,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@IonizerExtended" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@DisintegratorExtended" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,On" Row="2" Column="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit default="1" id="DefaultSettingsZHBRAirUnit">
+        <DeathRevealRadius value="3"/>
+        <Race value="ZHBR"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZHBRArmor"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ZHBRShields"/>
+        <Mover value="Fly"/>
+        <Acceleration value="1000"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="20"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <LifeArmor value="1"/>
+        <CargoSize value="1"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+        </CardLayouts>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/ZHBRUnits"/>
+        <HotkeyCategory value="Unit/Category/ZHBRUnits"/>
+        <KillDisplay value="Always"/>
+        <RankDisplay value="Always"/>
+        <DataCollection value="##id##"/>
+        <Sight value="9"/>
+        <ShieldArmorTip value="Unit/ShieldArmorTooltip/ZHBRShields"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUser"/>
+        <BehaviorArray Link="ZHBRRestorationShield"/>
+        <!--<ShieldRegenDelay value="5"/>
+        <LifeRegenDelay value="5"/>-->
+    </CUnit>
+    <CUnit default="1" id="DefaultSettingsZHBRAirUnitExtendedCC" parent="DefaultSettingsZHBRAirUnit">
+        <CardLayouts index="0">
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPageExtended"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPageExtended"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPageExtended"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1GU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="1"/>
+                <Column value="2"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="1GU1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRWarbringerMaceStrike@Extended" Type="AbilCmd" AbilCmd="ZHBRWarbringerMaceStrike,On" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRPsionicTornado@Extended" Type="AbilCmd" AbilCmd="ZHBRPsionicTornado,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRDeepTunnel@Extended" Type="AbilCmd" AbilCmd="ZHBRDeepTunnel,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRSentinelJump@Extended" Type="AbilCmd" AbilCmd="ZHBRSentinelJump,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRWarbringerMaceStrike@MaceCannonExtended" Type="AbilCmd" AbilCmd="ZHBRWarbringerMaceStrike,Off" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRTimeWarp@Extended" Type="AbilCmd" AbilCmd="ZHBRTimeWarp,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRConfusion@Extended" Type="AbilCmd" AbilCmd="ZHBRConfusion,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRPsiOrb@Extended" Type="AbilCmd" AbilCmd="ZHBRPsiOrb,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRConsumeDNA@Extended" Type="AbilCmd" AbilCmd="ZHBRConsumeDNA,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <CardLayouts CardId="2AU1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRRevealingSacrifice@Extended" Type="AbilCmd" AbilCmd="ZHBRRevealingSacrifice,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBREnergation@Extended" Type="AbilCmd" AbilCmd="ZHBREnergation@Energation,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRDisappearance@Extended" Type="AbilCmd" AbilCmd="ZHBRDisappearance,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRPhaseShift@Extended" Type="AbilCmd" AbilCmd="ZHBRPhaseShift,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRPowerField@Extended" Type="AbilCmd" AbilCmd="ZHBRPowerField@DummyAbility,Execute" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRPowerField@CancelExtended" Type="AbilCmd" AbilCmd="ZHBRPowerField@Cancel,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRNavigatorLoad@UnloadAllExtended" Type="AbilCmd" AbilCmd="ZHBRNavigatorLoad,UnloadAll" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRInterdimensionalOverload@Extended" Type="AbilCmd" AbilCmd="ZHBRInterdimensionalOverload,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="2AU2">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRAcceleration@Extended" Type="AbilCmd" AbilCmd="ZHBRAcceleration,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRPollinatorShadowMantle@OnExtended" Type="AbilCmd" AbilCmd="ZHBRPollinatorShadowMantle@ShadowMantle,On" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRPollinatorShadowMantle@OffExtended" Type="AbilCmd" AbilCmd="ZHBRPollinatorShadowMantle@ShadowMantle,Off" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRPlasmaticBlast@PlasmaticChargeExtended" Type="AbilCmd" AbilCmd="ZHBRPlasmaticBlast,Off" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRPlasmaticBlast@Extended" Type="AbilCmd" AbilCmd="ZHBRPlasmaticBlast,On" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidChasm@Extended" Type="AbilCmd" AbilCmd="ZHBRVoidChasm,Execute" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@IonizerExtended" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@DisintegratorExtended" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,On" Row="2" Column="1"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="HybridSpiritSacificingReveal" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="HybridSpiritSacrificingRevealMover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="HybridPsyon@FragmentumCorrosionWeapon" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Projectile"/>
+    </CUnit>
+    <CUnit id="HybridSentinelPlaceholder" parent="PLACEHOLDER">
+        <DeathRevealRadius value="3"/>
+        <Race value="ZHBR"/>
+        <Collide index="Structure" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="55"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <LeaderAlias value=""/>
+        <HotkeyAlias value=""/>
+    </CUnit>
+    <CUnit id="ZHBRAmplifier@PathingBlocker">
+        <Race value="ZHBR"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Footprint value="FootprintMineralsRounded"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Shape,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRCapsule" parent="DefaultSettingsZHBRBuilding">
+        <Facing value="0"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <ShieldsMax value="250"/>
+        <ShieldRegenRate value="10"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="125"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="ZHBRStructureTeleport@Capsule"/>
+        <AbilArray Link="ZHBRCapsule@Research"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedBehemoth" Type="AbilCmd" AbilCmd="ZHBRCapsule@Research,Research1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedDominator" Type="AbilCmd" AbilCmd="ZHBRCapsule@Research,Research2" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRBrokenDNA" Type="AbilCmd" AbilCmd="ZHBRCapsule@Research,Research4" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRDestructionOrb" Type="AbilCmd" AbilCmd="ZHBRCapsule@Research,Research3" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Capsule,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <CostCategory value="Technology"/>
+        <GlossaryPriority value="210"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <ScoreMake value="325"/>
+        <ScoreKill value="325"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="ZHBRConductor" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <ShieldsMax value="100"/>
+        <ShieldRegenRate value="2"/>
+        <Speed value="2.9492"/>
+        <Acceleration value="3.5"/>
+        <Height value="4"/>
+        <VisionHeight value="4"/>
+        <Food value="-4"/>
+        <AbilArray index="1" Link="move"/>
+        <AbilArray index="2" Link="ZHBRPowerField"/>
+        <AbilArray Link="ZHBRPowerField@DummyAbility"/>
+        <AbilArray Link="ZHBRPowerField@Cancel"/>
+        <AbilArray Link="ZHBRPhaseShift"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRPhaseShift" Type="AbilCmd" AbilCmd="ZHBRPhaseShift,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRPowerField" Type="AbilCmd" AbilCmd="ZHBRPowerField@DummyAbility,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRPowerField@Cancel" Type="AbilCmd" AbilCmd="ZHBRPowerField@Cancel,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <MinimapRadius value="1"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="350"/>
+        <KillXP value="35"/>
+        <FlagArray index="AISupport" value="1"/>
+        <AIEvalFactor value="0"/>
+        <Sight value="10"/>
+        <GlossaryPriority value="32"/>
+        <CostCategory value="Army"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <EnergyStart value="150"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="1"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="200"/>
+        <SubgroupPriority value="18"/>
+    </CUnit>
+    <CUnit id="ZHBRShapeshifterWeapon2@Weapon" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Projectile"/>
+    </CUnit>
+    <CUnit id="ZHBRShapeshifterWeapon@Weapon" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Projectile"/>
+    </CUnit>
+    <CUnit id="ZHBRShapeshifter" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="240"/>
+        <LifeMax value="240"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="120"/>
+        <Speed value="2.6914"/>
+        <Acceleration value="4.5"/>
+        <StationaryTurningRate value="1699.9804"/>
+        <TurningRate value="819.8437"/>
+        <Sight value="10"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <Food value="-6"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="450"/>
+        <CostResource index="Vespene" value="300"/>
+        <AbilArray Link="ZHBRVoidChasm"/>
+        <AbilArray Link="ZHBRPlasmaticBlast"/>
+        <WeaponArray Link="ZHBRShapeshifterWeapon2"/>
+        <WeaponArray Link="ZHBRShapeshifterWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRPlasmaticBlast@PlasmaticCharge" Type="AbilCmd" AbilCmd="ZHBRPlasmaticBlast,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRPlasmaticBlast@PlasmaticChargePassive" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRPlasmaticBlast" Type="AbilCmd" AbilCmd="ZHBRPlasmaticBlast,On" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRPlasmaticBlast@Passive" Type="Passive" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidChasm" Type="AbilCmd" AbilCmd="ZHBRVoidChasm,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="1"/>
+        <SubgroupPriority value="19"/>
+        <MinimapRadius value="1"/>
+        <GlossaryPriority value="43"/>
+        <ShieldRegenRate value="2"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <EnergyStart value="150"/>
+        <ScoreMake value="750"/>
+        <ScoreKill value="750"/>
+    </CUnit>
+    <CUnit id="ZHBRKeystone" parent="DefaultSettingsZHBRBuilding">
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="ZHBRStructureTeleport@Keystone"/>
+        <AbilArray Link="ZHBRKeystone@Research"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <ShieldsMax value="200"/>
+        <ShieldRegenRate value="10"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRIndestructible" Type="AbilCmd" AbilCmd="ZHBRKeystone@Research,Research2" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRDeepTunnel@Research" Type="AbilCmd" AbilCmd="ZHBRKeystone@Research,Research3" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Keystone,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <BehaviorArray Link="ZHBRKeystone@Connection"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <CostCategory value="Technology"/>
+        <CostResource index="Minerals" value="150"/>
+        <GlossaryPriority value="25"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="ZHBRHoldingCell" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <ShieldsMax value="300"/>
+        <ShieldRegenRate value="10"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="ZHBRStructureTeleport@HoldingCell"/>
+        <AbilArray Link="ZHBRHoldingCell@Research"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRGroundWeaponUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research5" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundWeaponUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research6" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundWeaponUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research7" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundArmorUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research11" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundArmorUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research12" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundArmorUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research13" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRAirWeaponUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research8" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRAirWeaponUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research9" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRAirWeaponUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research10" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidShield" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research4" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@HoldingCell,Build1" Row="2" Column="3"/>
+            <LayoutButtons Face="ZHBRIonicField" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research2" Row="0" Column="3"/>
+            <LayoutButtons Face="ZHBRAirArmorUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research14" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRAirArmorUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research15" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRAirArmorUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research16" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRRestorationShield" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research3" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidBonus@Research" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research17" Row="0" Column="4"/>
+        </CardLayouts>
+        <CostResource index="Minerals" value="125"/>
+        <CostCategory value="Technology"/>
+        <GlossaryPriority value="21"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="ZHBRCrypt" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <ShieldsMax value="250"/>
+        <ShieldRegenRate value="10"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="125"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="ZHBRStructureTeleport@Crypt"/>
+        <AbilArray Link="ZHBRCrypt@Research"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Crypt,Build1" Row="2" Column="3"/>
+            <LayoutButtons Face="ZHBRProtectionJump" Type="AbilCmd" AbilCmd="ZHBRCrypt@Research,Research1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRSubjugationJumpPassive" Type="AbilCmd" AbilCmd="ZHBRCrypt@Research,Research4" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRUltimateUnitOfTransfusion" Type="AbilCmd" AbilCmd="ZHBRCrypt@Research,Research3" Row="0" Column="3"/>
+            <LayoutButtons Face="ZHBRWatcher" Type="AbilCmd" AbilCmd="ZHBRCrypt@Research,Research5" Row="0" Column="2"/>
+        </CardLayouts>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <CostCategory value="Technology"/>
+        <GlossaryPriority value="23"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehaviorCrypts"/>
+        <ScoreMake value="325"/>
+        <ScoreKill value="325"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="ZHBRRaceControl">
+        <Race value="ZHBR"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Unradarable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <FlagArray index="CameraFollow" value="0"/>
+        <FlagArray index="TreatStructureAsUnitForSelection" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <EffectArray index="Create" value="ZHBRRaceControl@AddTrackedUnit"/>
+        <EffectArray index="Birth" value="ZHBRRaceControl@AddTrackedUnit"/>
+        <CardLayouts>
+            <LayoutButtons Face="ZHBRTempleTrain@SummonMinion" Type="AbilCmd" AbilCmd="ZHBRTempleTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRPermanentPower" Type="AbilCmd" AbilCmd="ZHBRPermanentPower,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidImmunity" Type="AbilCmd" AbilCmd="ZHBRVoidImmunity,Execute" Row="0" Column="2"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPage"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresVoidRiftUse"/>
+                <SubmenuCardId value="SUP2"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPage"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresVoidRiftUse"/>
+                <SubmenuCardId value="SUP3"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="2"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRStructureTeleport"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1TS1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="2"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRMinionBuild@SummonStructure"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresMinionUse"/>
+                <SubmenuCardId value="BSP1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="1"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRMinionBuild@SummonAdvancedStructured"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="BSP2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRRaceControl@ResearchPage" Type="Submenu" SubmenuCardId="2RT1" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPage"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresVoidRiftUse"/>
+                <SubmenuCardId value="SUP1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="1TS1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@SwapPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1TS2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="0"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseTemple" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Temple,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseHarvester" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Harvester,Build1" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseIonicCrystal" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@IonicCrystal,Build1" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseVoidRift" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@VoidRift,Build1" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseVespeneConcentrator" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@VespeneConcentrator,Build1" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseAmplifier" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Amplifier,Build1" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseHoldingCell" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@HoldingCell,Build1" Row="1" Column="3"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseConstructAntiAir" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@ConstructAntiAir,Build1" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseConstructAntiGround" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@ConstructAntiGround,Build1" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseDeformer" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Deformer,Build1" Row="2" Column="2"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseStasisCell" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@StasisCell,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="1TS2">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@SwapPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1TS1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="0"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseCrypt" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Crypt,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseTomb" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Tomb,Build1" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseKeystone" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Keystone,Build1" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseProjector" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Projector,Build1" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseCapsule" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Capsule,Build1" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRRaceControl@ChooseVoidForge" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@VoidForge,Build1" Row="2" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="2RT1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseCrypt"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresCryptUse"/>
+                <SubmenuCardId value="Crpt"/>
+                <Row value="0"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseHoldingCell"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresHoldingCellUse"/>
+                <SubmenuCardId value="HCel"/>
+                <Row value="1"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseStasisCell"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresStasisCellUse"/>
+                <SubmenuCardId value="StCl"/>
+                <Row value="2"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseKeystone"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresKeystoneUse"/>
+                <SubmenuCardId value="Kstn"/>
+                <Row value="1"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseTomb"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresTombUse"/>
+                <SubmenuCardId value="Tomb"/>
+                <Row value="0"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseProjector"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresProjectorUse"/>
+                <SubmenuCardId value="Pjcr"/>
+                <Row value="1"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseCapsule"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresCapsuleUse"/>
+                <SubmenuCardId value="Cpsl"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@ChooseVoidForge"/>
+                <Type value="Submenu"/>
+                <Requirements value="ZHBRCommon@RequiresVoidForgeUse"/>
+                <SubmenuCardId value="VdFg"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="SUP1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonWarrior" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train2" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonFlayer" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train3" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonSentinel" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train5" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonWarbringer" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train4" Row="0" Column="3"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonProteus" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train6" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonChimera" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train1" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonStrider" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train7" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonDreadnok" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train10" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonDominator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train9" Row="1" Column="3"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonBehemoth" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train8" Row="1" Column="4"/>
+            <LayoutButtons Face="ZHBRRaceControl@GroundUnitPage" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="SUP2"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="SUP3"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="2"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="SUP2">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonEnergator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train16" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonConductor" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train20" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonNavigator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train15" Row="0" Column="2"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="SUP1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRRaceControl@AirSupportUnitPage" Type="Passive" Row="2" Column="1"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="SUP3"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="2"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="SUP3">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="SUP1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPage"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="SUP2"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRRaceControl@AirBattleUnitPage" Type="Passive" Row="2" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonPsyon" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train21" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonPollinator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train17" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonShapeshifter" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train18" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonNemesis" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train19" Row="0" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="BSP1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonTemple" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonHarvester" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build3" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonIonicCrystal" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build2" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonVoidRift" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build9" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonAmplifier" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build21" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonVespeneConcentrator" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build6" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonHoldingCell" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build8" Row="1" Column="3"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonConstructAntiAir" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build18" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonConstructAntiGround" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build17" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonDeformer" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build4" Row="2" Column="2"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonStasisCell" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build5" Row="2" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="BSP2">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonCrypt" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build15" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonTomb" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build16" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonKeystone" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build22" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonProjector" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build10" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonCapsule" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build19" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonVoidForge" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build7" Row="2" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="HCel">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRGroundWeaponUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research5" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundWeaponUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research6" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundWeaponUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research7" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRAirWeaponUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research8" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRAirWeaponUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research9" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRAirWeaponUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research10" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidShield" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research4" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRIonicField" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research2" Row="0" Column="3"/>
+            <LayoutButtons Face="ZHBRVoidBonus@Research" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research17" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRGroundArmorUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research11" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundArmorUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research12" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRGroundArmorUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research13" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRAirArmorUpgradeLevel1" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research14" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRAirArmorUpgradeLevel2" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research15" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRAirArmorUpgradeLevel3" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research16" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRRestorationShield" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research3" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRPrimeSummoning@Research" Type="AbilCmd" AbilCmd="ZHBRHoldingCell@Research,Research1" Row="1" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="StCl">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRWarriorDeconstruction"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="ZHBRStasisCell@Research,Research3"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="0"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRFlayerFury@Research" Type="AbilCmd" AbilCmd="ZHBRStasisCell@Research,Research1" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRProtectionJump" Type="AbilCmd" AbilCmd="ZHBRStasisCell@Research,Research2" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRFlayerBerserker" Type="AbilCmd" AbilCmd="ZHBRStasisCell@Research,Research4" Row="1" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="Crpt">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRWarbringerOrbitalGuidance" Type="AbilCmd" AbilCmd="ZHBRCrypt@Research,Research2" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRUltimateUnitOfTransfusion" Type="AbilCmd" AbilCmd="ZHBRCrypt@Research,Research9" Row="0" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="Tomb">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRDisappearance@Research" Type="AbilCmd" AbilCmd="ZHBRTomb@Research,Research2" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRPhaseShift@Research" Type="AbilCmd" AbilCmd="ZHBRTomb@Research,Research3" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRCloakedSpirit@Research" Type="AbilCmd" AbilCmd="ZHBRTomb@Research,Research4" Row="0" Column="2"/>
+        </CardLayouts>
+        <CardLayouts CardId="Kstn">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRDeepTunnel@Research"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="ZHBRKeystone@Research,Research3"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="0"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRIndestructible" Type="AbilCmd" AbilCmd="ZHBRKeystone@Research,Research2" Row="0" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="Pjcr">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRAcceleration@Research"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="ZHBRProjector@Research,Research2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="0"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRToxicity@Research" Type="AbilCmd" AbilCmd="ZHBRProjector@Research,Research2" Row="0" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="Cpsl">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" ShowInGlossary="0" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRUpgradeToAdvancedBehemoth"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="ZHBRCapsule@Research,Research1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="0"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedDominator" Type="AbilCmd" AbilCmd="ZHBRCapsule@Research,Research2" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRBrokenDNA" Type="AbilCmd" AbilCmd="ZHBRCapsule@Research,Research4" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRDestructionOrb" Type="AbilCmd" AbilCmd="ZHBRCapsule@Research,Research3" Row="1" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="VdFg">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBREnhancedArmor@Research"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="ZHBRVoidForge@Research,Research1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <Row value="0"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedNemesis@Research" Type="AbilCmd" AbilCmd="ZHBRVoidForge@Research,Research3" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidChasm@Research" Type="AbilCmd" AbilCmd="ZHBRVoidForge@Research,Research4" Row="1" Column="0"/>
+        </CardLayouts>
+        <SubgroupPriority value="255"/>
+        <EditorCategories value="ObjectType:Character,ObjectFamily:Melee"/>
+        <HotkeyCategory value="Unit/Category/ZHBRUnits"/>
+    </CUnit>
+    <CUnit id="ZHBRPowerField@DummyUnit">
+        <Race value="ZHBR"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="IgnoreTerrainZInit" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <BehaviorArray Link="ZHBRVoid@PowerSourceConductor"/>
+        <EditorCategories value="ObjectType:Other,ObjectFamily:Melee"/>
+        <Mover value="Fly"/>
+        <Sight value="5"/>
+    </CUnit>
+    <CUnit id="ZHBRProteus" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="175"/>
+        <ShieldRegenRate value="10"/>
+        <Speed value="3.1992"/>
+        <Sight value="7"/>
+        <Food value="-6"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <BehaviorArray Link="ZHBRTransfusion@CarryBehavior"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRTransfusion" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRUltimateUnitOfTransfusion@Passive" Type="Passive" Requirements="ZHBRUltimateUnitOfTransfusion@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <InnerRadius value="0.75"/>
+        <MinimapRadius value="0.75"/>
+        <WeaponArray Link="ZHBRProteusWeapon"/>
+        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Vespene" value="225"/>
+        <GlossaryPriority value="15"/>
+        <CargoSize value="8"/>
+        <EnergyStart value="150"/>
+        <SubgroupPriority value="8"/>
+    </CUnit>
+    <CUnit id="ZHBRPsionicTornado" parent="MISSILE">
+        <DeathRevealRadius value="2"/>
+        <DeathRevealDuration value="4"/>
+        <Race value="ZHBR"/>
+        <FlagArray index="Uncommandable" value="0"/>
+        <FlagArray index="Uncloakable" value="1"/>
+        <FlagArray index="Missile" value="0"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="KillCredit" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoScore" value="0"/>
+        <FlagArray index="NoDeathEvent" value="0"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <EditorFlags index="NoPlacement" value="0"/>
+        <Response value="Acquire"/>
+        <LifeStart value="1"/>
+        <LifeMax value="1"/>
+        <Mover value="Fly"/>
+        <Speed value="2"/>
+        <Acceleration value="1000"/>
+        <AbilArray Link="move"/>
+        <BehaviorArray Link="ZHBRPsionicTornado@TornadoBehavior"/>
+        <Radius value="0.5"/>
+        <SeparationRadius value="0.5"/>
+        <MinimapRadius value="0.5"/>
+        <EditorCategories value="ObjectType:Spell,ObjectFamily:Melee"/>
+        <LeaderAlias value="ZHBRPsionicTornado"/>
+        <HotkeyAlias value="ZHBRPsionicTornado"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CUnit>
+    <CUnit id="ZHBRPsyon" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <WeaponArray Link="ZHBRPsyonWeapon"/>
+        <WeaponArray Link="HybridPsyon@FragmentumCorrosion"/>
+        <ShieldsMax value="100"/>
+        <ShieldRegenRate value="2"/>
+        <Speed value="3"/>
+        <Acceleration value="3.5"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <AbilArray index="0" Link="ZHBRPsyon@Stop"/>
+        <AbilArray Link="ZHBRAcceleration"/>
+        <BehaviorArray Link="ZHBRPsyonWeapon@TargetSearch"/>
+        <BehaviorArray Link="ZHBRPsyonWeapon@UnitTracker"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="1" Face="Stop" Type="AbilCmd" AbilCmd="ZHBRPsyon@Stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRAcceleration" Type="AbilCmd" AbilCmd="ZHBRAcceleration,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ImmunetoAttackSpeedChange" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <MinimapRadius value="1"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="200"/>
+        <GlossaryPriority value="41"/>
+        <ScoreMake value="500"/>
+        <ScoreKill value="500"/>
+        <SubgroupPriority value="16"/>
+        <Sight value="10"/>
+    </CUnit>
+    <CUnit id="ZHBRStriderCrawler" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <EnergyMax value="100"/>
+        <ShieldsMax value="50"/>
+        <ShieldRegenRate value="2"/>
+        <Speed value="0.9375"/>
+        <Sight value="9"/>
+        <CostCategory value="Army"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <BehaviorArray Link="ZHBREvaporator@AttackRangeBuff"/>
+        <BehaviorArray Link="ZHBRStriderCrawler@CarryBehavior"/>
+        <BehaviorArray Link="ZHBRVoid@SuppressedRegeneration"/>
+        <WeaponArray Link="ZHBRStriderWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBREvaporator" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRIndestructible@Passive" Type="Passive" Requirements="ZHBRIndestructible@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.25"/>
+        <SeparationRadius value="0.75"/>
+        <InnerRadius value="0.25"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="8"/>
+        <MinimapRadius value="0.25"/>
+        <HotkeyAlias value=""/>
+        <GlossaryPriority value="22"/>
+        <GlossaryStrongArray value="Marauder"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="Immortal"/>
+        <GlossaryWeakArray value="HellionTank"/>
+        <GlossaryWeakArray value="Roach"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <HotkeyCategory value=""/>
+    </CUnit>
+    <CUnit id="ZHBRStriderWeapon@MissileEvaporator" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRStriderWeapon@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRTomb" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <ShieldsMax value="250"/>
+        <ShieldRegenRate value="10"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="125"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="ZHBRStructureTeleport@Tomb"/>
+        <AbilArray Link="ZHBRTomb@Research"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRDisappearance@Research" Type="AbilCmd" AbilCmd="ZHBRTomb@Research,Research2" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRCloakedSpirit@Research" Type="AbilCmd" AbilCmd="ZHBRTomb@Research,Research4" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Tomb,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <MinimapRadius value="1"/>
+        <CostCategory value="Technology"/>
+        <GlossaryPriority value="24"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehaviorCrypts"/>
+        <ScoreMake value="325"/>
+        <ScoreKill value="325"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="ZHBRNavigator" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <FlagArray index="AISupport" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <ShieldsMax value="90"/>
+        <Speed value="3.3984"/>
+        <Acceleration value="2.625"/>
+        <LateralAcceleration value="57"/>
+        <StationaryTurningRate value="720"/>
+        <TurningRate value="720"/>
+        <Sight value="10"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <Food value="-3"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="225"/>
+        <CostResource index="Vespene" value="100"/>
+        <RepairTime value="50"/>
+        <KillXP value="35"/>
+        <AbilArray index="1" Link="move"/>
+        <AbilArray index="2" Link="ZHBRInterdimensionalOverload"/>
+        <AbilArray Link="ZHBRNavigatorLoad"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRNavigatorLoad@UnloadAllM" Type="AbilCmd" AbilCmd="ZHBRNavigatorLoad,UnloadAt" Row="2" Column="2"/>
+            <LayoutButtons Face="ZHBRNavigatorLoad@Load" Type="AbilCmd" AbilCmd="ZHBRNavigatorLoad,Load" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRInterdimensionalOverload" Type="AbilCmd" AbilCmd="ZHBRInterdimensionalOverload,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="3"/>
+            <LayoutButtons Face="ZHBRNavigator@FromTheVoid" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <SeparationRadius value="0.875"/>
+        <ScoreMake value="325"/>
+        <ScoreKill value="325"/>
+        <SubgroupPriority value="5"/>
+        <MinimapRadius value="0.875"/>
+        <TacticalAIThink value="AIThinkWarpPrism"/>
+        <AIEvalFactor value="0"/>
+        <GlossaryPriority value="33"/>
+        <GlossaryWeakArray value="MissileTurret"/>
+        <GlossaryWeakArray value="SporeCrawler"/>
+        <GlossaryWeakArray value="PhotonCannon"/>
+        <ShieldRegenRate value="2"/>
+        <BehaviorArray Link="ZHBRNavigator@FromTheVoid"/>
+        <BehaviorArray Link="Detector11"/>
+    </CUnit>
+    <CUnit id="ZHBRNemesisAdvanced" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="175"/>
+        <Speed value="2.6601"/>
+        <Acceleration value="1.0625"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="720"/>
+        <TurningRate value="720"/>
+        <Height value="4"/>
+        <VisionHeight value="4"/>
+        <Food value="-6"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="700"/>
+        <CostResource index="Vespene" value="600"/>
+        <AbilArray Link="ZHBRNemesisDisintegrator"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <BehaviorArray Link="ZHBRNemesisAdvanced@BonusNetwork"/>
+        <WeaponArray Link="ZHBRNemesisWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@Ionizer" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@IonizerPassive" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@Disintegrator" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,On" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@DisintegratorPassive" Type="Passive" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedNemesis" Type="Passive" Requirements="ZHBRUpgradeToAdvancedNemesis@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <InnerRadius value="0.5"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="1.25"/>
+        <AIEvalFactor value="0.55"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+        </Fidget>
+        <ReviveType value="ZHBRNemesis"/>
+        <LeaderAlias value="ZHBRNemesis"/>
+        <HotkeyAlias value="ZHBRNemesis"/>
+        <SelectAlias value="ZHBRNemesis"/>
+        <SubgroupAlias value="ZHBRNemesis"/>
+        <AIEvaluateAlias value="ZHBRNemesis"/>
+        <GlossaryCategory value=""/>
+        <HotkeyCategory value=""/>
+        <ShieldRegenRate value="2"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="ZHBRNemesis" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="175"/>
+        <Speed value="2.6601"/>
+        <Acceleration value="2"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="720"/>
+        <TurningRate value="720"/>
+        <Height value="4"/>
+        <VisionHeight value="4"/>
+        <CostCategory value="Army"/>
+        <AbilArray Link="ZHBRNemesisDisintegrator"/>
+        <WeaponArray Link="ZHBRNemesisWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@Ionizer" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@IonizerPassive" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@Disintegrator" Type="AbilCmd" AbilCmd="ZHBRNemesisDisintegrator,On" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRNemesisDisintegrator@DisintegratorPassive" Type="Passive" Row="2" Column="1"/>
+            <LayoutButtons Face="ImmunetoAttackSpeedChange" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedNemesis" Type="Passive" Requirements="ZHBRUpgradeToAdvancedNemesis@Use" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <InnerRadius value="0.5"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="1.25"/>
+        <AIEvalFactor value="0.55"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+        </Fidget>
+        <Food value="-7"/>
+        <CostResource index="Minerals" value="700"/>
+        <CostResource index="Vespene" value="600"/>
+        <GlossaryPriority value="44"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <ShieldRegenRate value="2"/>
+        <EnergyStart value="150"/>
+        <Sight value="13"/>
+    </CUnit>
+    <CUnit id="ZHBRDeformer" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <EnergyStart value="150"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="2"/>
+        <ShieldsMax value="100"/>
+        <ShieldRegenRate value="2"/>
+        <AbilArray Link="ZHBRStructureTeleport@Deformer"/>
+        <AbilArray Link="ZHBREnergation@EnergationDeformer"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBREnergationDeformer" Type="AbilCmd" AbilCmd="ZHBREnergation@EnergationDeformer,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Deformer,Build11" Row="2" Column="3"/>
+            <LayoutButtons Face="Detector" Type="Passive" Row="2" Column="2"/>
+            <LayoutButtons Face="HybridDeformerDestructionArise" Row="2" Column="0"/>
+        </CardLayouts>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostCategory value="Technology"/>
+        <GlossaryPriority value="24"/>
+        <BehaviorArray Link="Detector11"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <BehaviorArray Link="HybridDeformer@DestructionArise"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="3"/>
+    </CUnit>
+    <CUnit id="ZHBRPollinatorWeapon@Weapon" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Projectile"/>
+    </CUnit>
+    <CUnit id="ZHBRPollinator" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="75"/>
+        <Speed value="3.8007"/>
+        <Acceleration value="3.5"/>
+        <StationaryTurningRate value="1499.9414"/>
+        <TurningRate value="1499.9414"/>
+        <Sight value="11"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <Food value="-5"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="200"/>
+        <KillXP value="40"/>
+        <AbilArray Link="ZHBRPollinatorShadowMantle@ShadowMantle"/>
+        <WeaponArray Link="ZHBRPollinatorWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRPollinatorShadowMantle@On" Type="AbilCmd" AbilCmd="ZHBRPollinatorShadowMantle@ShadowMantle,On" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRPollinatorShadowMantle@Off" Type="AbilCmd" AbilCmd="ZHBRPollinatorShadowMantle@ShadowMantle,Off" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRToxicity" Type="Passive" Requirements="ZHBRToxicity@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="15"/>
+        <GlossaryPriority value="42"/>
+        <GlossaryStrongArray value="SCV"/>
+        <GlossaryStrongArray value="Drone"/>
+        <GlossaryStrongArray value="Probe"/>
+        <GlossaryWeakArray value="Thor"/>
+        <GlossaryWeakArray value="Viper"/>
+        <GlossaryWeakArray value="Phoenix"/>
+        <ShieldRegenRate value="2"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+    </CUnit>
+    <CUnit id="ZHBREnergatorWeapon@Weapon" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Projectile"/>
+    </CUnit>
+    <CUnit id="ZHBREnergator" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <FlagArray index="PreventDestroy" value="0"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <EnergyStart value="150"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="2"/>
+        <ShieldsMax value="90"/>
+        <Speed value="3.375"/>
+        <Acceleration value="1.875"/>
+        <StationaryTurningRate value="539.4726"/>
+        <TurningRate value="539.4726"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <Food value="-2"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="100"/>
+        <KillXP value="400"/>
+        <AbilArray Link="ZHBRDisappearance"/>
+        <AbilArray Link="ZHBREnergation@Energation"/>
+        <WeaponArray Link="ZHBREnergatorWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRDisappearance" Type="AbilCmd" AbilCmd="ZHBRDisappearance,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBREnergation" Type="AbilCmd" AbilCmd="ZHBREnergation@Energation,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <SeparationRadius value="0.875"/>
+        <SubgroupPriority value="17"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryPriority value="31"/>
+        <GlossaryStrongArray value="Battlecruiser"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="Phoenix"/>
+        <GlossaryWeakArray value="MissileTurret"/>
+        <GlossaryWeakArray value="VikingFighter"/>
+        <GlossaryWeakArray value="Corruptor"/>
+        <ShieldRegenRate value="2"/>
+        <LifeArmor value="0"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="400"/>
+    </CUnit>
+    <CUnit id="ZHBRSpirit" parent="DefaultSettingsZHBRAirUnitExtendedCC">
+        <FlagArray index="PreventDestroy" value="0"/>
+        <FlagArray index="UseLineOfSight" value="0"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="26"/>
+        <LifeMax value="26"/>
+        <ShieldsMax value="13"/>
+        <Speed value="2"/>
+        <Acceleration value="3"/>
+        <StationaryTurningRate value="720"/>
+        <TurningRate value="720"/>
+        <Sight value="11"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <Food value="-1"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Vespene" value="25"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRRevealingSacrifice" Type="AbilCmd" AbilCmd="ZHBRRevealingSacrifice,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRCloakedSpirit" Type="Passive" Requirements="ZHBRCloakedSpirit@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <SeparationRadius value="0.4"/>
+        <SubgroupPriority value="6"/>
+        <GlossaryPriority value="2"/>
+        <AttackTargetPriority value="19"/>
+        <BehaviorArray Link="ZHBRCloakedSpirit@Cloak"/>
+        <Radius value="0.375"/>
+        <AbilArray Link="ZHBRRevealingSacrifice"/>
+        <ShieldRegenRate value="2"/>
+        <EffectArray index="Create" value="ZHBRRaceControl@AddTrackedUnit"/>
+        <EffectArray index="Birth" value="ZHBRRaceControl@AddTrackedUnit"/>
+        <MinimapRadius value="0.375"/>
+    </CUnit>
+    <CUnit id="ZHBRVoidThrasher">
+        <DeathRevealRadius value="3"/>
+        <Race value="ZHBR"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="AISplash" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <PushPriority value="11"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Response value="Nothing"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="1800"/>
+        <LifeMax value="1800"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/VoidArmor"/>
+        <ShieldsStart value="600"/>
+        <ShieldsMax value="600"/>
+        <ShieldRegenDelay value="10"/>
+        <ShieldRegenRate value="1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/VoidShields"/>
+        <Speed value="3"/>
+        <Acceleration value="1000"/>
+        <StationaryTurningRate value="124.9804"/>
+        <TurningRate value="124.9804"/>
+        <Sight value="14"/>
+        <Height value="0.02"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="BuildInProgress"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="2.5"/>
+        <SeparationRadius value="2.5"/>
+        <InnerRadius value="1"/>
+        <CargoSize value="8"/>
+        <MinimapRadius value="1"/>
+        <EditorCategories value="ObjectType:Hero,ObjectFamily:Campaign"/>
+        <EquipmentArray Weapon="VoidThrasherFakeWeapon"/>
+        <Fidget>
+            <ChanceArray index="Idle" value="0"/>
+        </Fidget>
+        <AlliedPushPriority value="11"/>
+    </CUnit>
+    <CUnit id="ZHBRConstruct@AntiAir" parent="DefaultSettingsZHBRBuilding">
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="320"/>
+        <LifeMax value="320"/>
+        <CostCategory value="Technology"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="20"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="ZHBRStructureTeleport@ConstructAntiAir"/>
+        <AbilArray Link="ZHBRConstruct@TransformToAntiGround"/>
+        <WeaponArray Link="ZHBRConstructWeaponAntiAir" Turret="ZHBRConstructTurret"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRMinionBuild@ConstructAntiAir" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRConstruct@TransformToConstructAntiGround" Type="AbilCmd" AbilCmd="ZHBRConstruct@TransformToAntiGround,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRConstruct@ClusterNova" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@ConstructAntiAir,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <InnerRadius value="1"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="275"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="4"/>
+        <MinimapRadius value="1"/>
+        <DataCollection value="ZHBRConstruct"/>
+        <ShieldsMax value="160"/>
+        <GlossaryPriority value="300"/>
+        <CostResource index="Minerals" value="275"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <ShieldRegenRate value="10"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <BehaviorArray Link="Detector11"/>
+    </CUnit>
+    <CUnit id="ZHBRConstruct@AntiGround" parent="DefaultSettingsZHBRBuilding">
+        <FlagArray index="Turnable" value="1"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <ShieldsMax value="150"/>
+        <ShieldRegenRate value="2"/>
+        <CostCategory value="Technology"/>
+        <CostResource index="Minerals" value="275"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="20"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="ZHBRConstruct@TransformToAntiAir"/>
+        <AbilArray Link="ZHBRStructureTeleport@ConstructAntiGround"/>
+        <WeaponArray Link="ZHBRConstructWeaponAntiGround" Turret="ZHBRConstructTurret"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRConstruct@TransformToConstructAntiAir" Type="AbilCmd" AbilCmd="ZHBRConstruct@TransformToAntiAir,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@ConstructAntiGround" Type="Passive" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRConstruct@ClusterNova" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@ConstructAntiGround,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <InnerRadius value="1"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="275"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="4"/>
+        <MinimapRadius value="1"/>
+        <GlossaryPriority value="300"/>
+        <DataCollection value="ZHBRConstruct"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <BehaviorArray Link="Detector11"/>
+    </CUnit>
+    <CUnit id="ZHBRConstructWeaponAntiAir@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRConstructWeaponAntiAir@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRVespeneConcentrator" parent="DefaultSettingsZHBRBuilding">
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <ShieldsMax value="175"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="175"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRVespeneMining" Type="Passive" Behavior="ZHBRVespeneMining@Mining" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@VespeneConcentrator,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="200"/>
+        <SubgroupPriority value="28"/>
+        <MinimapRadius value="1.5"/>
+        <GlossaryPriority value="14"/>
+        <BehaviorArray Link="ZHBRVespeneMining@Mining"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <ResourceType value="Vespene"/>
+        <BuiltOn value="VespeneGeyser"/>
+        <BuiltOn value="SpacePlatformGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <BuiltOn value="ProtossVespeneGeyser"/>
+        <BuiltOn value="PurifierVespeneGeyser"/>
+        <BuiltOn value="ShakurasVespeneGeyser"/>
+        <ShieldRegenRate value="10"/>
+        <AbilArray Link="ZHBRStructureTeleport@VespeneConcentrator"/>
+        <Food value="-2"/>
+    </CUnit>
+    <CUnit id="ZHBRProjector" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <ShieldsMax value="200"/>
+        <CostCategory value="Technology"/>
+        <CostResource index="Minerals" value="150"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="ZHBRStructureTeleport@Projector"/>
+        <AbilArray Link="ZHBRProjector@Research"/>
+        <BehaviorArray Link="ZHBRProjector@Connection"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRNavigatorInterdimensionalOverload" Type="AbilCmd" AbilCmd="ZHBRProjector@Research,255" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Projector,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <SeparationRadius value="1"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="4"/>
+        <MinimapRadius value="1"/>
+        <GlossaryPriority value="42"/>
+        <ShieldRegenRate value="10"/>
+    </CUnit>
+    <CUnit id="ZHBRHarvesterRich" parent="DefaultSettingsZHBRBuilding">
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Vespene"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <ShieldsMax value="175"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="75"/>
+        <BehaviorArray Link="ZHBRHarvesterRich@HarvestableVespeneGeyserGasZHBR"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <ScoreMake value="75"/>
+        <ScoreKill value="75"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="1.5"/>
+        <GlossaryPriority value="14"/>
+        <HotkeyAlias value="ZHBRHarvester"/>
+        <SelectAlias value="ZHBRHarvester"/>
+        <SubgroupAlias value="ZHBRHarvester"/>
+        <GlossaryAlias value="ZHBRHarvester"/>
+        <ShieldRegenRate value="10"/>
+        <TechAliasArray value="TechAlias_ZHBR_Harvester"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Harvester,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <AbilArray Link="ZHBRStructureTeleport@Harvester"/>
+    </CUnit>
+    <CUnit id="ZHBRHarvester" parent="DefaultSettingsZHBRBuilding">
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Vespene"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <ShieldsMax value="175"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="75"/>
+        <BehaviorArray Link="ZHBRHarvester@HarvestableVespeneGeyserGasZHBR"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <BuiltOn value="VespeneGeyser"/>
+        <BuiltOn value="SpacePlatformGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <BuiltOn value="ProtossVespeneGeyser"/>
+        <BuiltOn value="PurifierVespeneGeyser"/>
+        <BuiltOn value="ShakurasVespeneGeyser"/>
+        <BuildOnAs value="ZHBRHarvesterRich"/>
+        <ScoreMake value="75"/>
+        <ScoreKill value="75"/>
+        <SubgroupPriority value="1"/>
+        <MinimapRadius value="1.5"/>
+        <GlossaryPriority value="2"/>
+        <ShieldRegenRate value="10"/>
+        <TechAliasArray value="TechAlias_ZHBR_Harvester"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Harvester,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <AbilArray Link="ZHBRStructureTeleport@Harvester"/>
+    </CUnit>
+    <CUnit id="ZHBRIonicCrystal@Moveable" parent="DefaultSettingsZHBRBuilding">
+        <Name value="Unit/Name/ZHBRIonicCrystal"/>
+        <Description value="Button/Tooltip/ZHBRIonicCrystal"/>
+        <FlagArray index="ForceCollisionCheck" value="1"/>
+        <Response value="AcquireNoFlee"/>
+        <LifeStart value="80"/>
+        <LifeMax value="80"/>
+        <ShieldsMax value="40"/>
+        <Speed value="1.3984"/>
+        <Acceleration value="800"/>
+        <Food value="8"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="100"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal"/>
+        <AbilArray Link="ZHBRStructureTeleport@IonicCrystal"/>
+        <AbilArray Link="attack"/>
+        <BehaviorArray Link="ZHBRVoid@PowerSourceIonicCrystalSmall"/>
+        <BehaviorArray Link="ZHBRVoid@PowerSourceIonicCrystalLarge"/>
+        <BehaviorArray Link="ZHBRIonicField@Controller"/>
+        <BehaviorArray Link="ZHBRIonicCrystalMorph@VisualController"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <TurretArray value="ZHBRIonicCrystal@RingRotate"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal" Type="AbilCmd" AbilCmd="ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="ZHBRIonicField@Passive" Type="Passive" Requirements="ZHBRIonicField@Use" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@IonicCrystal,Build1" Row="2" Column="3"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="7"/>
+        <MinimapRadius value="1"/>
+        <LeaderAlias value="ZHBRIonicCrystal"/>
+        <HotkeyAlias value="ZHBRIonicCrystal"/>
+        <SelectAlias value="ZHBRIonicCrystal"/>
+        <SubgroupAlias value="ZHBRIonicCrystal"/>
+        <TechAliasArray value="Alias_ZHBRIonicCrystal"/>
+        <GlossaryPriority value="18"/>
+        <AIEvaluateAlias value="ZHBRIonicCrystal"/>
+        <DataCollection value="ZHBRIonicCrystal"/>
+        <ShieldRegenRate value="2"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="RoachBurrow" value="0"/>
+        <Attributes index="Massive" value="1"/>
+        <Attributes index="Structure" value="0"/>
+    </CUnit>
+    <CUnit id="ZHBRIonicCrystal" parent="DefaultSettingsZHBRBuilding">
+        <Response value="AcquireNoFlee"/>
+        <LifeStart value="80"/>
+        <LifeMax value="80"/>
+        <ShieldsMax value="40"/>
+        <Food value="8"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="100"/>
+        <AbilArray Link="ZHBRIonicCrystalMorph@TransfromToMoveableIonicCrystal"/>
+        <AbilArray Link="ZHBRStructureTeleport@IonicCrystal"/>
+        <AbilArray Link="attack"/>
+        <BehaviorArray Link="ZHBRVoid@PowerSourceIonicCrystalSmall"/>
+        <BehaviorArray Link="ZHBRVoid@PowerSourceIonicCrystalLarge"/>
+        <BehaviorArray Link="ZHBRIonicField@Controller"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <TurretArray value="PylonRingRotate"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="ZHBRIonicCrystalTeleport@Build,255" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@IonicCrystal,Build1" Row="2" Column="3"/>
+            <LayoutButtons Face="ZHBRIonicField@Passive" Type="Passive" Requirements="ZHBRIonicField@Use" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal" Type="AbilCmd" AbilCmd="ZHBRIonicCrystalMorph@TransfromToMoveableIonicCrystal,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="MothershipCoreAttack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="7"/>
+        <MinimapRadius value="1"/>
+        <TechAliasArray value="Alias_ZHBRIonicCrystal"/>
+        <GlossaryPriority value="3"/>
+        <ShieldRegenRate value="2"/>
+        <Attributes index="Massive" value="1"/>
+        <Attributes index="Structure" value="0"/>
+    </CUnit>
+    <CUnit id="ZHBRStasisCell" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <ShieldsMax value="200"/>
+        <CostCategory value="Technology"/>
+        <CostResource index="Minerals" value="175"/>
+        <CostResource index="Vespene" value="50"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRWarriorDeconstruction" Type="AbilCmd" AbilCmd="ZHBRStasisCell@Research,Research3" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRFlayerBerserker" Type="AbilCmd" AbilCmd="ZHBRStasisCell@Research,Research4" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRFlayerFury@Research" Type="AbilCmd" AbilCmd="ZHBRStasisCell@Research,Research1" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@StasisCell,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="225"/>
+        <ScoreKill value="225"/>
+        <SubgroupPriority value="4"/>
+        <MinimapRadius value="1"/>
+        <GlossaryPriority value="22"/>
+        <AbilArray Link="ZHBRStructureTeleport@StasisCell"/>
+        <AbilArray Link="ZHBRStasisCell@Research"/>
+        <AbilArray Link="que5"/>
+        <BehaviorArray Link="ZHBRStasisCell@Connection"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehaviorCrypts"/>
+        <ShieldRegenRate value="10"/>
+    </CUnit>
+    <CUnit id="ZHBRTemple" parent="DefaultSettingsZHBRBuilding">
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="0"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <ShieldsMax value="600"/>
+        <Sight value="11"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="400"/>
+        <AbilArray Link="ZHBRStructureTeleport@Temple"/>
+        <AbilArray Link="que5Passive"/>
+        <AbilArray Link="ZHBRTemple@Rally"/>
+        <AbilArray Link="ZHBRTempleTrain"/>
+        <AbilArray Link="ZHBRVoidImmunity"/>
+        <AbilArray Link="ZHBRPermanentPower"/>
+        <WeaponArray Turret="Nexus"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Cancel" Type="AbilCmd" AbilCmd="que5Passive,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="ZHBRTemple@Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="ZHBRTempleTrain@SummonMinion" Type="AbilCmd" AbilCmd="ZHBRTempleTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Temple,Build1" Row="2" Column="3"/>
+            <LayoutButtons Face="ZHBRPermanentPower" Type="AbilCmd" AbilCmd="ZHBRPermanentPower,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidImmunity" Type="AbilCmd" AbilCmd="ZHBRVoidImmunity,Execute" Row="0" Column="2"/>
+        </CardLayouts>
+        <Radius value="2"/>
+        <SeparationRadius value="2"/>
+        <Footprint value="Footprint5x5Contour"/>
+        <PlacementFootprint value="Footprint5x5DropOff"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="400"/>
+        <MinimapRadius value="2.5"/>
+        <TacticalAI value="Nexus"/>
+        <TacticalAIThink value="AIThinkNexus"/>
+        <GlossaryPriority value="1"/>
+        <KillDisplay value="Never"/>
+        <TechTreeProducedUnitArray value="Probe"/>
+        <TechTreeProducedUnitArray value="Mothership"/>
+        <Food value="15"/>
+        <ShieldRegenRate value="10"/>
+        <EnergyStart value="150"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+    </CUnit>
+    <CUnit id="ZHBRVoidForge" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <ShieldsStart value="500"/>
+        <ShieldsMax value="500"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="150"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="ZHBRStructureTeleport@VoidForge"/>
+        <AbilArray Link="ZHBRVoidForge@Research"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedNemesis@Research" Type="AbilCmd" AbilCmd="ZHBRVoidForge@Research,Research3" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@VoidForge,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.8125"/>
+        <SeparationRadius value="1"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <MinimapRadius value="1.75"/>
+        <GlossaryPriority value="244"/>
+        <CostCategory value="Technology"/>
+        <ShieldRegenRate value="10"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <ScoreKill value="300"/>
+        <ScoreLost value="300"/>
+        <SubgroupPriority value="4"/>
+    </CUnit>
+    <CUnit id="ZHBRVoidRift" parent="DefaultSettingsZHBRBuilding">
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="ZHBRStructureTeleport@VoidRift"/>
+        <AbilArray Link="ZHBRVoidRiftTrain"/>
+        <AbilArray Link="ZHBRPrimeSummoning@Transport"/>
+        <AbilArray Link="ZHBRPrimeSummoning@Instant"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1GU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@VoidRift,Build1" Row="2" Column="3"/>
+            <LayoutButtons Face="ZHBRPrimeSummoning" Type="AbilCmd" AbilCmd="ZHBRPrimeSummoning@Instant,Execute" Row="1" Column="0"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="2"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="1GU1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonWarrior" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train2" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonFlayer" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train3" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonWarbringer" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train4" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonSentinel" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train5" Row="0" Column="3"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonProteus" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train6" Row="0" Column="4"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonChimera" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train1" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonStrider" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train7" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonDreadnok" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train10" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonDominator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train9" Row="1" Column="3"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonBehemoth" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train8" Row="1" Column="4"/>
+            <LayoutButtons Face="ZHBRRaceControl@GroundUnitPageVoidRift" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="2"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="2AU1">
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonEnergator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train16" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonNavigator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train15" Row="0" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1GU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonConductor" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train20" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRRaceControl@AirSupportUnitPageVoidRift" Type="Passive" Row="2" Column="1"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirBattleUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU2"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="2"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="2AU2">
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonPsyon" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train21" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonPollinator" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train17" Row="0" Column="1"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@GroundUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="1GU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonShapeshifter" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train18" Row="0" Column="2"/>
+            <LayoutButtons>
+                <Face value="ZHBRRaceControl@AirSupportUnitPageVoidRift"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="2AU1"/>
+                <SubmenuFullSubCmdValidation value="1"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRRaceControl@AirBattleUnitPageVoidRift" Type="Passive" Row="2" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidRiftTrain@SummonNemesis" Type="AbilCmd" AbilCmd="ZHBRVoidRiftTrain,Train19" Row="0" Column="3"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <MinimapRadius value="1.75"/>
+        <ShieldsMax value="250"/>
+        <CostResource index="Minerals" value="175"/>
+        <GlossaryPriority value="11"/>
+        <ShieldRegenRate value="10"/>
+        <SubgroupPriority value="3"/>
+        <CostCategory value="Technology"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+    </CUnit>
+    <CUnit id="ZHBRVoidRiftTrain@Missile" parent="MISSILE_INVULNERABLE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRVoidRiftTrain@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRChimera" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <Speed value="2.6015"/>
+        <LateralAcceleration value="46"/>
+        <Sight value="10"/>
+        <Food value="-3"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="200"/>
+        <WeaponArray Link="ZHBRChimeraMeleeWeapon"/>
+        <WeaponArray Link="ZHBRChimeraRangedWeapon"/>
+        <Radius value="0.625"/>
+        <InnerRadius value="0.625"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="400"/>
+        <SubgroupPriority value="18"/>
+        <AIEvalFactor value="2"/>
+        <GlossaryPriority value="21"/>
+        <GlossaryStrongArray value="Banshee"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryWeakArray value="SiegeTank"/>
+        <GlossaryWeakArray value="Zergling"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <ShieldsMax value="90"/>
+        <AbilArray Link="ZHBRDeepTunnel"/>
+        <BehaviorArray Link="ZHBRChimera@Cloak"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRChimera@Cloak" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRDeepTunnel" Type="AbilCmd" AbilCmd="ZHBRDeepTunnel,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <ShieldRegenRate value="2"/>
+    </CUnit>
+    <CUnit id="ZHBRDominatorAdvanced" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <PushPriority value="11"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="Locust" value="0"/>
+        <Collide index="Small" value="0"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="150"/>
+        <Speed value="2.5703"/>
+        <Sight value="14"/>
+        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Vespene" value="300"/>
+        <KillXP value="80"/>
+        <AbilArray Link="ZHBRPsiOrb"/>
+        <AbilArray Link="ZHBRConfusion"/>
+        <WeaponArray Link="ZHBRDominatorWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRConfusion" Type="AbilCmd" AbilCmd="ZHBRConfusion,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedDominator@Passive" Type="Passive" Requirements="ZHBRUpgradeToAdvancedDominator@Use" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRDestructionOrb@Passive" Type="Passive" Requirements="ZHBRDestructionOrb@Use" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRPsiOrb" Type="AbilCmd" AbilCmd="ZHBRPsiOrb,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <InnerRadius value="0.75"/>
+        <ScoreKill value="1600"/>
+        <SubgroupPriority value="59"/>
+        <HotkeyCategory value=""/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="0"/>
+        <TauntDuration index="Dance" value="0"/>
+        <CargoSize value="8"/>
+        <Food value="-5"/>
+        <LeaderAlias value="ZHBRDominator"/>
+        <HotkeyAlias value="ZHBRDominator"/>
+        <SelectAlias value="ZHBRDominator"/>
+        <SubgroupAlias value="ZHBRDominator"/>
+        <GlossaryCategory value=""/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <ShieldRegenRate value="2"/>
+        <Height value="1"/>
+        <Description value="Button/Tooltip/ZHBRDominator"/>
+        <VisionHeight value="4"/>
+    </CUnit>
+    <CUnit id="ZHBRDominator" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="Ground" value="0"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="Locust" value="0"/>
+        <Collide index="Small" value="0"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <ShieldsMax value="100"/>
+        <Speed value="2.3906"/>
+        <Sight value="14"/>
+        <KillXP value="80"/>
+        <AbilArray Link="ZHBRPsiOrb"/>
+        <AbilArray Link="ZHBRConfusion"/>
+        <WeaponArray Link="ZHBRDominatorWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRConfusion" Type="AbilCmd" AbilCmd="ZHBRConfusion,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRPsiOrb" Type="AbilCmd" AbilCmd="ZHBRPsiOrb,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRCPlasmaBlast" Type="AbilCmd" AbilCmd="ZZHBRPlasmaBlast,255" Row="2" Column="2"/>
+            <LayoutButtons Face="ZZHBRPsychicClones" Type="AbilCmd" AbilCmd="ZZHBRPsychicClones,255" Row="2" Column="3"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedDominator@Passive" Type="Passive" Requirements="ZHBRUpgradeToAdvancedDominator@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <InnerRadius value="0.75"/>
+        <ScoreKill value="1600"/>
+        <SubgroupPriority value="20"/>
+        <GlossaryPriority value="24"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="0"/>
+        <TauntDuration index="Dance" value="0"/>
+        <EnergyMax value="200"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="450"/>
+        <CargoSize value="8"/>
+        <Food value="-6"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <ShieldRegenRate value="2"/>
+        <Height value="1"/>
+        <VisionHeight value="4"/>
+        <EnergyStart value="150"/>
+    </CUnit>
+    <CUnit id="ZHBRDreadnok" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <DeathRevealRadius value="2"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="100"/>
+        <Speed value="2.5"/>
+        <StationaryTurningRate value="494.4726"/>
+        <TurningRate value="494.4726"/>
+        <Sight value="9"/>
+        <Food value="-6"/>
+        <AbilArray Link="ZHBRPsionicTornado"/>
+        <AbilArray Link="ZHBRTimeWarp"/>
+        <WeaponArray Link="ZHBRDreadnokWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRPsionicTornado" Type="AbilCmd" AbilCmd="ZHBRPsionicTornado,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRTimeWarp" Type="AbilCmd" AbilCmd="ZHBRTimeWarp,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRDreadnokWeapon" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.8125"/>
+        <SubgroupPriority value="21"/>
+        <GlossaryPriority value="23"/>
+        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Vespene" value="300"/>
+        <CargoSize value="8"/>
+        <SeparationRadius value="0.8125"/>
+        <MinimapRadius value="0.8125"/>
+        <ShieldRegenRate value="2"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <LifeArmor value="0"/>
+        <EnergyStart value="150"/>
+    </CUnit>
+    <CUnit id="ZHBRDreadnokWeapon@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRDreadnokWeapon@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRFlayer" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="160"/>
+        <LifeMax value="160"/>
+        <ShieldsMax value="80"/>
+        <Speed value="3.0507"/>
+        <Sight value="8"/>
+        <Food value="-2"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="75"/>
+        <KillXP value="5"/>
+        <BehaviorArray Link="ZHBRFlayerFury"/>
+        <WeaponArray Link="ZHBRFlayerWeapon"/>
+        <Radius value="0.4375"/>
+        <SeparationRadius value="0.4375"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="225"/>
+        <ScoreKill value="225"/>
+        <SubgroupPriority value="8"/>
+        <MinimapRadius value="0.4375"/>
+        <GlossaryPriority value="12"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <CardLayouts index="0">
+            <LayoutButtons>
+                <Face value="ZHBRFlayerFury"/>
+                <Type value="Passive"/>
+                <Behavior value="ZHBRFlayerFury@Cooldown"/>
+                <Requirements value="ZHBRFlayerFury@HasBehavior"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRFlayerFury"/>
+                <Type value="Passive"/>
+                <Behavior value="ZHBRFlayerFury"/>
+                <Requirements value="ZHBRFlayerFury@Use"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ZHBRFlayerBerserker@Passive" Type="Passive" Requirements="ZHBRFlayerBerserker@Use" Row="2" Column="1"/>
+        </CardLayouts>
+        <ShieldRegenRate value="2"/>
+    </CUnit>
+    <CUnit id="ZHBRWarrior@Changeling" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <FlagArray index="NoScore" value="1"/>
+        <FlagArray index="AILifetime" value="1"/>
+        <FlagArray index="AIChangeling" value="1"/>
+        <FlagArray index="ArmySelect" value="0"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="95"/>
+        <LifeMax value="95"/>
+        <ShieldsMax value="45"/>
+        <ShieldRegenRate value="4.5"/>
+        <Speed value="2.9531"/>
+        <Sight value="9"/>
+        <CostCategory value="Army"/>
+        <BehaviorArray Link="ChangelingDisable"/>
+        <WeaponArray Link="ZHBRWarriorWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRWarriorDeconstruction@Passive" Type="Passive" Requirements="ZHBRWarriorDeconstruction@Use" Row="2" Column="0"/>
+        </CardLayouts>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <SubgroupPriority value="47"/>
+        <MinimapRadius value="0.375"/>
+        <LeaderAlias value="Changeling"/>
+        <HotkeyAlias value="Changeling"/>
+        <SelectAlias value="Changeling"/>
+        <SubgroupAlias value="Changeling"/>
+        <GlossaryCategory value=""/>
+        <DataCollection value="ZHBRWarrior"/>
+    </CUnit>
+    <CUnit id="ZHBRMinion" parent="DefaultSettingsZHBRGroundUnit">
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="ArmySelect" value="0"/>
+        <Collide index="ForceField" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Flee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="26"/>
+        <LifeMax value="26"/>
+        <ShieldsMax value="13"/>
+        <Speed value="2.8125"/>
+        <Acceleration value="2.5"/>
+        <LateralAcceleration value="46"/>
+        <Sight value="8"/>
+        <Food value="-1"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="50"/>
+        <AIOverideTargetPriority value="10"/>
+        <KillXP value="10"/>
+        <AbilArray Link="ZHBRMinionBuild"/>
+        <AbilArray Link="ZHBRMinionBuild@Main"/>
+        <AbilArray Link="ZHBRMinionHarvest"/>
+        <AbilArray Link="ZHBRSpray"/>
+        <AbilArray Link="ZHBRMinionMorph@MechanicalReincarnation"/>
+        <WeaponArray Link="ParticleBeam"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="GatherProt" Type="AbilCmd" AbilCmd="ZHBRMinionHarvest,Gather" Row="1" Column="0"/>
+            <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="ZHBRMinionHarvest,Return" Row="1" Column="1"/>
+            <LayoutButtons>
+                <Face value="ZHBRMinionBuild@SummonStructure"/>
+                <Type value="Submenu"/>
+                <AbilCmd value="255,255"/>
+                <SubmenuCardId value="HBl1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ZHBRMinionBuild@SummonAdvancedStructured"/>
+                <Type value="Submenu"/>
+                <AbilCmd value="255,255"/>
+                <SubmenuCardId value="HBl2"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="Spray" Type="AbilCmd" AbilCmd="ZHBRSpray,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="ZHBRMinionBuild@Main,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRMinionMorph" Type="AbilCmd" AbilCmd="ZHBRMinionMorph@MechanicalReincarnation,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="ZHBRVoidBonus" Type="Passive" Requirements="ZHBRVoidBonus@Use" Row="1" Column="4"/>
+        </CardLayouts>
+        <CardLayouts CardId="HBl1">
+            <LayoutButtons Face="ZHBRMinionBuild@SummonTemple" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonHarvester" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build3" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonConstructAntiAir" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build18" Row="2" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonConstructAntiGround" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build17" Row="2" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonVoidRift" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build9" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonIonicCrystal" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build2" Row="0" Column="2"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonAmplifier" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build21" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonDeformer" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build4" Row="2" Column="2"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonVespeneConcentrator" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build6" Row="1" Column="2"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonHoldingCell" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build8" Row="1" Column="3"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonStasisCell" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build5" Row="2" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="HBl2">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonCrypt" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build15" Row="0" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonTomb" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build16" Row="0" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonKeystone" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build22" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonProjector" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build10" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonCapsule" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build19" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRMinionBuild@SummonVoidForge" Type="AbilCmd" AbilCmd="ZHBRMinionBuild,Build7" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="50"/>
+        <SubgroupPriority value="4"/>
+        <MinimapRadius value="0.375"/>
+        <GlossaryPriority value="1"/>
+        <LifeArmor value="0"/>
+        <ShieldRegenRate value="2"/>
+        <EffectArray index="Create" value="ZHBRRaceControl@AddTrackedUnit"/>
+        <EffectArray index="Birth" value="ZHBRRaceControl@AddTrackedUnit"/>
+    </CUnit>
+    <CUnit id="ZHBRBehemoth" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="Ground" value="0"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="Locust" value="0"/>
+        <Collide index="Small" value="0"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="250"/>
+        <ShieldRegenRate value="10"/>
+        <Speed value="2.9531"/>
+        <Sight value="11"/>
+        <Food value="-6"/>
+        <CostResource index="Minerals" value="700"/>
+        <CostResource index="Vespene" value="400"/>
+        <KillXP value="80"/>
+        <AbilArray Link="ZHBRConsumeDNA"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <BehaviorArray Link="Frenzy"/>
+        <WeaponArray Link="ZHBRBehemothWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRConsumeDNA" Type="AbilCmd" AbilCmd="ZHBRConsumeDNA,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedBehemoth@Passive" Type="Passive" Requirements="ZHBRUpgradeToAdvancedBehemoth@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.75"/>
+        <CargoSize value="8"/>
+        <ScoreKill value="1100"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="1.25"/>
+        <GlossaryPriority value="25"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+        <VisionHeight value="4"/>
+        <LifeArmor value="3"/>
+        <ShieldArmor value="3"/>
+        <ScoreMake value="1100"/>
+        <EnergyStart value="150"/>
+    </CUnit>
+    <CUnit id="ZHBRConsumeDNA@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRConsumeDNA@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRBehemothAdvanced" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Description value="Button/Tooltip/ZHBRReaver"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="Locust" value="0"/>
+        <Collide index="Small" value="0"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="3"/>
+        <EnergyMax value="100"/>
+        <ShieldsMax value="250"/>
+        <ShieldRegenRate value="10"/>
+        <Speed value="2.9531"/>
+        <Sight value="11"/>
+        <Food value="-6"/>
+        <CostResource index="Minerals" value="700"/>
+        <CostResource index="Vespene" value="400"/>
+        <KillXP value="80"/>
+        <AbilArray Link="ZHBRConsumeDNA"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <WeaponArray Link="ZHBRBehemothWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRConsumeDNA" Type="AbilCmd" AbilCmd="ZHBRConsumeDNA,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRUpgradeToAdvancedBehemoth@Passive" Type="Passive" Requirements="ZHBRUpgradeToAdvancedBehemoth@Use" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRBrokenDNA@Passive" Type="Passive" Requirements="ZHBRBrokenDNA@Use" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <InnerRadius value="0.75"/>
+        <CargoSize value="8"/>
+        <ScoreKill value="1100"/>
+        <SubgroupPriority value="13"/>
+        <MinimapRadius value="1.25"/>
+        <LeaderAlias value="ZHBRBehemoth"/>
+        <HotkeyAlias value="ZHBRBehemoth"/>
+        <SelectAlias value="ZHBRBehemoth"/>
+        <SubgroupAlias value="ZHBRBehemoth"/>
+        <GlossaryCategory value=""/>
+        <HotkeyCategory value=""/>
+        <AIEvaluateAlias value="ZHBRBehemoth"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="0"/>
+            <ChanceArray index="Idle" value="100"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="0"/>
+        <TauntDuration index="Dance" value="0"/>
+        <VisionHeight value="4"/>
+        <ShieldArmor value="3"/>
+        <ScoreMake value="1100"/>
+    </CUnit>
+    <CUnit id="ZHBRBehemothWeaponAntiAir@Missile" parent="MISSILE_INVULNERABLE">
+        <Race value="ZHBR"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRSentinel" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <ShieldsMax value="100"/>
+        <Speed value="3.1992"/>
+        <Sight value="10"/>
+        <Food value="-5"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="250"/>
+        <KillXP value="5"/>
+        <AbilArray Link="ZHBRSentinelJump"/>
+        <WeaponArray Link="ZHBRSentinelWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRSentinelJump" Type="AbilCmd" AbilCmd="ZHBRSentinelJump,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRProtectionJump@Passive" Type="Passive" Requirements="ZHBRProtectionJump@Use" Row="1" Column="0"/>
+            <LayoutButtons Face="ZHBRSubjugationJumpPassive" Type="Passive" Requirements="ZHBRSubjugationJump@Use" Row="1" Column="1"/>
+            <LayoutButtons Face="ZHBRWatcherPassive" Type="Passive" Requirements="ZHBRSentinelWatcher@Use" Row="2" Column="3"/>
+        </CardLayouts>
+        <CargoSize value="4"/>
+        <ScoreMake value="550"/>
+        <ScoreKill value="550"/>
+        <SubgroupPriority value="18"/>
+        <GlossaryPriority value="13"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <ShieldRegenRate value="2"/>
+        <BehaviorArray Link="HybridSentinelWatcher@CliffJump"/>
+    </CUnit>
+    <CUnit id="ZHBRStriderWeapon@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRStriderWeapon@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRStrider" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <EnergyMax value="200"/>
+        <ShieldsMax value="100"/>
+        <ShieldRegenRate value="2"/>
+        <Speed value="2.9531"/>
+        <Sight value="12"/>
+        <Food value="-6"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="300"/>
+        <CostResource index="Vespene" value="200"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <BehaviorArray Link="ZHBREvaporator@AttackRangeBuff"/>
+        <BehaviorArray Link="ZHBRStriderCrawler@SpawnBehavior"/>
+        <WeaponArray Link="ZHBRStriderWeapon"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBREvaporator" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRIndestructible@Passive" Type="Passive" Requirements="ZHBRIndestructible@Use" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <InnerRadius value="0.75"/>
+        <CargoSize value="8"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <SubgroupPriority value="8"/>
+        <MinimapRadius value="0.75"/>
+        <GlossaryPriority value="22"/>
+        <GlossaryStrongArray value="Marauder"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="Immortal"/>
+        <GlossaryWeakArray value="HellionTank"/>
+        <GlossaryWeakArray value="Roach"/>
+        <GlossaryWeakArray value="Colossus"/>
+    </CUnit>
+    <CUnit id="ZHBRWarbringerWeaponMaceCannon@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRWarbringerWeaponMaceCannon@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRWarbringer" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <FlagArray index="AlwaysThreatens" value="1"/>
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <FlagArray index="AISplash" value="1"/>
+        <FlagArray index="AIHighPrioTarget" value="1"/>
+        <FlagArray index="AICaster" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <EnergyMax value="200"/>
+        <Speed value="2.3007"/>
+        <Deceleration value="1000"/>
+        <LateralAcceleration value="46"/>
+        <Sight value="12"/>
+        <Height value="0.5"/>
+        <Food value="-6"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="225"/>
+        <CostResource index="Vespene" value="225"/>
+        <KillXP value="40"/>
+        <AbilArray Link="ZHBRWarbringerMaceStrike"/>
+        <WeaponArray Link="ZHBRWarbringerWeaponMaceCannon"/>
+        <WeaponArray Link="ZHBRWarbringerWeaponMaceStrike"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRWarbringerMaceStrike@MaceCannon" Type="AbilCmd" AbilCmd="ZHBRWarbringerMaceStrike,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRWarbringerMaceStrike@MaceCannonPassive" Type="Passive" Requirements="ZHBRWarbringerMaceStrike@HasNoBuff" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRWarbringerMaceStrike" Type="AbilCmd" AbilCmd="ZHBRWarbringerMaceStrike,On" Row="2" Column="1"/>
+            <LayoutButtons>
+                <Face value="ZHBRWarbringerMaceStrike@Passive"/>
+                <Type value="Passive"/>
+                <AbilCmd value="ZHBRWarbringerMaceStrike,On"/>
+                <Requirements value="ZHBRWarbringerMaceStrike@HasBuff"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <InnerRadius value="0.625"/>
+        <CargoSize value="4"/>
+        <ScoreMake value="450"/>
+        <ScoreKill value="450"/>
+        <SubgroupPriority value="19"/>
+        <TacticalAI value="HighTemplar"/>
+        <TacticalAIThink value="AIThinkHighTemplar"/>
+        <AIEvalFactor value="1.8"/>
+        <GlossaryPriority value="14"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Hydralisk"/>
+        <GlossaryStrongArray value="Sentry"/>
+        <GlossaryWeakArray value="Ghost"/>
+        <GlossaryWeakArray value="Roach"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <ShieldsMax value="50"/>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.625"/>
+        <MinimapRadius value="0.625"/>
+        <ShieldRegenRate value="2"/>
+        <BehaviorArray Link="ZHBRVoid@PowerUserNetwork"/>
+        <EnergyStart value="150"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ZHBRWarrior" parent="DefaultSettingsZHBRGroundUnitExtendedCC">
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <ShieldsMax value="50"/>
+        <Speed value="2.9531"/>
+        <Sight value="9"/>
+        <Food value="-2"/>
+        <CostCategory value="Army"/>
+        <CostResource index="Minerals" value="150"/>
+        <WeaponArray Link="ZHBRWarriorWeapon"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="8"/>
+        <MinimapRadius value="0.375"/>
+        <GlossaryPriority value="11"/>
+        <GlossaryStrongArray value="Marauder"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="Immortal"/>
+        <GlossaryWeakArray value="HellionTank"/>
+        <GlossaryWeakArray value="Roach"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRWarriorDeconstruction@Passive" Type="Passive" Requirements="ZHBRWarriorDeconstruction@Use" Row="2" Column="0"/>
+        </CardLayouts>
+        <LifeArmor value="0"/>
+        <ShieldRegenRate value="2"/>
+    </CUnit>
+    <CUnit id="ZHBRChimeraRangedWeapon@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRChimeraRangedWeapon@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRWarriorWeapon@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRWarriorWeapon@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRAmplifier" parent="DefaultSettingsZHBRBuilding">
+        <SeparationRadius value="0.75"/>
+        <Footprint value="ZHBRAmplifier@Footprint"/>
+        <PlacementFootprint value="ZHBRAmplifier@Placement"/>
+        <BuiltOn value="BattleStationMineralField"/>
+        <BuiltOn value="BattleStationMineralField750"/>
+        <BuiltOn value="LabMineralField750"/>
+        <BuiltOn value="LabMineralField"/>
+        <BuiltOn value="MineralField"/>
+        <BuiltOn value="MineralField450"/>
+        <BuiltOn value="MineralField750"/>
+        <BuiltOn value="MineralFieldOpaque900"/>
+        <BuiltOn value="MineralFieldOpaque"/>
+        <BuiltOn value="PurifierMineralField"/>
+        <BuiltOn value="PurifierMineralField750"/>
+        <BuiltOn value="PurifierRichMineralField"/>
+        <BuiltOn value="PurifierRichMineralField750"/>
+        <BuiltOn value="RichMineralField"/>
+        <BuiltOn value="RichMineralField750"/>
+        <MinimapRadius value="0.75"/>
+        <ResourceType value="Minerals"/>
+        <BehaviorArray Link="ZHBRMineralMining@Mining"/>
+        <BehaviorArray Link="HybridStructureResearchStateValidateBehavior"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <ShieldsMax value="125"/>
+        <ShieldRegenRate value="12.5"/>
+        <CostCategory value="Economy"/>
+        <CostResource index="Minerals" value="125"/>
+        <GlossaryPriority value="13"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ZHBRMineralMining" Type="Passive" Row="2" Column="0"/>
+            <LayoutButtons Face="ZHBRStructureTeleport" Type="AbilCmd" AbilCmd="ZHBRStructureTeleport@Amplifier,Build1" Row="2" Column="3"/>
+        </CardLayouts>
+        <AbilArray Link="ZHBRStructureTeleport@Amplifier"/>
+        <GlossaryCategory value="Unit/Category/ZHBRUnits"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Structure" value="0"/>
+        <Collide index="RoachBurrow" value="0"/>
+        <Collide index="ForceField" value="0"/>
+        <Collide index="Locust" value="0"/>
+        <Collide index="Phased" value="0"/>
+        <Collide index="Small" value="0"/>
+        <Food value="-1"/>
+    </CUnit>
+    <CUnit id="ZHBRPsiOrb@Missile" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Sight value="5"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ZHBRWarriorWeapon@MissileUpgraded" parent="MISSILE">
+        <Race value="ZHBR"/>
+        <Mover value="ZHBRWarriorWeapon@Mover"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+</Catalog>

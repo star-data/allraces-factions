@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CTurret id="DragoonSCBW" parent="FreeRotate">
+  <Idle value="FollowMovement"/>
+  <YawRate value="1080"/>
+  <YawIdleRate value="360"/>
+</CTurret>
+<CTurret id="PhotonCannonSCBW@Turret" parent="FreeRotate"/>
+<CTurret id="BattlecruiserSCBW@Turret">
+  <YawArc value="90"/>
+  <YawRate value="1999.8632"/>
+</CTurret>
+<CTurret id="GoliathSCBW@Turret">
+  <YawArc value="144.9975"/>
+  <YawRate value="720"/>
+  <YawIdleRate value="360"/>
+  <Idle value="ResetIfMoving"/>
+</CTurret>
+<CTurret id="ScienceVesselSCBW@Turret">
+  <Idle value="FollowMovement"/>
+  <YawArc value="360"/>
+  <YawRate value="720"/>
+  <YawIdleRate value="360"/>
+  <Fidget DelayMax="30" DelayMin="10"/>
+</CTurret>
+<CTurret id="SiegeTankSCBW" parent="FreeRotate">
+  <Idle value="ResetIfMoving"/>
+  <YawIdleRate value="149.9414"/>
+</CTurret>
+<CTurret id="SiegeTankSCBWSieged" parent="FreeRotate">
+  <YawStart value="-180"/>
+  <YawRate value="360"/>
+</CTurret>
+<CTurret id="MissileTurretSCBW">
+  <Idle value="Spin"/>
+  <YawArc value="360"/>
+  <YawRate value="720"/>
+  <YawIdleRate value="45"/>
+  <Fidget DelayMax="30" DelayMin="10"/>
+</CTurret>
+<CTurret id="LurkerSCBW">
+  <Idle value="Hold"/>
+  <YawArc value="360"/>
+  <YawRate value="2799.8437"/>
+  <Fidget DelayMax="30" DelayMin="10"/>
+</CTurret>
+<CTurret id="SporeColonySCBW@Turret">
+  <Idle value="Hold"/>
+  <YawArc value="360"/>
+  <YawRate value="360"/>
+  <YawIdleRate value="360"/>
+  <Fidget DelayMax="30" DelayMin="10"/>
+</CTurret>
+<CTurret id="SunkenColonySCBW@Turret">
+  <Idle value="Hold"/>
+  <YawArc value="360"/>
+  <YawRate value="2857.5"/>
+</CTurret>
+<CTurret id="InfestedPlanetaryFortressSCBW@Turret" parent="FreeRotate">
+  <YawRate value="90"/>
+  <Fidget DelayMax="0" DelayMin="0">
+    <ChanceArray index="Anim" value="0"/>
+    <ChanceArray index="Idle" value="0"/>
+    <ChanceArray index="Turn" value="0"/>
+  </Fidget>
+</CTurret>
+<CTurret id="StingerSCBW">
+  <Idle value="ResetIfMoving"/>
+  <YawArc value="360"/>
+  <YawRate value="999.8437"/>
+  <Fidget DelayMax="30" DelayMin="10"/>
+</CTurret>
+
+</Catalog>

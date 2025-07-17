@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="TalDarimFleetLodestarDestroyerLearnedVoidAmplifier">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimFleetLodestarDestroyerVoidAmplifierCompleteOnly2924413385"/>
+    </CRequirement>
+    <CRequirement id="TalDarimFleetLodestarDreadnoughLearnedCloningVat">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimFleetLodestarDreadnoughCloningVatCompleteOnly1805613357"/>
+    </CRequirement>
+    <CRequirement id="TalDarimFleetLodestarOutriderLearnedGoliarPulseCrystal">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimFleetLodestarOutriderGoliarPulseCrystalCompleteOnly3180002996"/>
+    </CRequirement>
+    <CRequirement id="TalDarimFleetLodestarDreadnoughLearnCloningVat">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimFleetLodestarDreadnoughCloningVatQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimFleetLodestarOutriderLearnGoliarPulseCrystal">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimFleetLodestarOutriderGoliarPulseCrystalQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimFleetLodestarDestroyerLearnVoidAmplifier">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimFleetLodestarDestroyerVoidAmplifierQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimMonitorHaveNoDetonationCharge">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Use" Link="Eq3740906089CountBehaviorTalDarimMonitorDetonationChargeCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimPeristylePhotonicOverchargeRequirement">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Show" Link="EqCountBehaviorTalDarimCynosurePhotonicOverchargeCompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAutomationBayVanguardLearnMatterDispersion">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAutomationBayVanguardMatterDispersionQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAutomationBayWarPrismLearnedGraviticDrive">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimAutomationBayWarPrismGraviticDriveCompleteOnly2366166871"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAutomationBayWrathwalkerLearnedAirTargeting">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimAutomationBayWrathwalkerAirTargetingCompleteOnly259159487"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAutomationBayWarPrismLearnGraviticDrive">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAutomationBayWarPrismGraviticDriveQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAutomationBayWrathwalkerLearnAirTargeting">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAutomationBayWrathwalkerAirTargetingQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAscendantArchivesAscendantLearnMindBlast">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAscendantArchivesAscendantMindBlastQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAscendantArchivesAscendantLearnedMindBlast">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimAscendantArchivesAscendantMindBlastCompleteOnly1235665448"/>
+    </CRequirement>
+    <CRequirement id="TalDarimAutomationBayVanguardLearnedMatterDispersion">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimAutomationBayVanguardMatterDispersionCompleteOnly1051668991"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilChampionLearnHegemony">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimDeathCouncilChampionHegemonyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilSlayerLearnEnhancedFrame">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimDeathCouncilSlayerFrameEnhancementQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimCyberneticKernelHavocLearnedCloakingModule">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimDeathCouncilSlayerFrameEnhancementCompleteOnly1557606976"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilChampionLearnedHegemony">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimDeathCouncilChampionHegemonyCompleteOnly391097612"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilSupplicantLearnedBloodShields">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimDeathCouncilSupplicantBloodShieldsCompleteOnly3756393484"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilSupplicantLearnedSoulAugmentation">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimDeathCouncilSupplicantSoulAugmentationCompleteOnly2770948149"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnGroundArmor1">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimGroundArmorsLevel1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnAirArmor1">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAirArmorsLevel1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnGroundArmor2">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq3042748322CountUpgradeTalDarimGroundArmorsLevel1CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimGroundArmorsLevel2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnAirArmor2">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq841426029CountUpgradeTalDarimAirArmorsLevel1CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAirArmorsLevel2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnGroundArmor3">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1297184705CountUpgradeTalDarimGroundArmorsLevel2CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimGroundArmorsLevel3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnAirArmor3">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq2343560081CountUpgradeTalDarimAirArmorsLevel2CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAirArmorsLevel3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnGroundWeapon1">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimGroundWeaponsLevel1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnAirWeapon1">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAirWeaponsLevel1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnGroundWeapon2">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq94940388CountUpgradeTalDarimGroundWeaponsLevel1CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimGroundWeaponsLevel2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnAirWeapon2">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq785678381CountUpgradeTalDarimAirWeaponsLevel1CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAirWeaponsLevel2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnGroundWeapon3">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq140474246CountUpgradeTalDarimGroundWeaponsLevel2CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimGroundWeaponsLevel3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnAirWeapon3">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1434375792CountUpgradeTalDarimAirWeaponsLevel2CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimAirWeaponsLevel3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnShield1">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimShieldsLevel1QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnShield2">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq3109251884CountUpgradeTalDarimShieldsLevel1CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimShieldsLevel2QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLearnShield3">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1014989270CountUpgradeTalDarimShieldsLevel2CompleteOnly1CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimShieldsLevel3QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimCyberneticKernelHavocLearnCloakingModule">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimCyberneticKernelHavocCloakingModuleQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilSupplicantLearnBloodShields">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimDeathCouncilSupplicantBloodShieldsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilSlayerLearnedEnhancedFrame">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTalDarimDeathCouncilSlayerFrameEnhancementCompleteOnly1232013551"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathCouncilSupplicantLearnSoulAugmentation">
+        <EditorCategories value="Race:PrTD,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTalDarimDeathCouncilSupplicantSoulAugmentationQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TalDarimWarmistressRequirements">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUnitTalDarimFleetLodestarCompleteOnlyTechTreeCheatEq1638404485CountUnitTalDarimWarmistressQueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveCyberneticsKernel">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimCyberneticsKernelCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveBloodShrine">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimBloodShrineCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveFleetLodestar">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimFleetLodestarCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveDuplicator">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimDuplicatorCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveArchway">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimArchwayCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveAutomationBay">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimAutomationBayCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveAutomationFacility">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimAutomationFacilityCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveStararch">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimStararchCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveAscendantArchives">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimAscendantArchivesCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveDeathCouncil">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimDeathCouncilCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimCollectorEnergyCharged">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountBehaviorTalDarimLocustEnergyChargedCompleteOnlyAtUnit78175013"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHighPriority">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Show" Link="EqCountBehaviorTalDarimSoulDrinkerPriorityHighCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimLowPriority">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Show" Link="EqCountBehaviorTalDarimSoulDrinkerPriorityLowCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimMediumPriority">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Show" Link="OrEqCountBehaviorTalDarimSoulDrinkerPriorityLowCompleteOnlyAtUnit1EqCountBehaviorTalDarimSoulDrinkerPriorityHighCompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="TalDarimWarmistressHave4SoulShard">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <NodeArray index="Use" Link="GT1333621204CountBehaviorTalDarimWarmistressSoulsOverchargeCompleteOnlyAtUnit3"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathStarGotEscort">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Use" Link="GT1926611650CountUnitTalDarimDestroyerQueuedOrBetterAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimBloodHunterHaveSoulShard">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Use" Link="GT631217625CountBehaviorTalDarimBloodHunterSoulShardChargeCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathStarNotatMaxEscort2">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Use" Link="LT1462268040CountUnitTalDarimDestroyerQueuedOrBetterAtUnit5"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDestroyerHaveBloodCharge">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Use" Link="GT1818745331CountBehaviorTalDarimDestroyerBloodChargeCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimMonitorHaveDetonationCharge">
+        <EditorCategories value="Race:PrTD,TechType:Ability"/>
+        <NodeArray index="Use" Link="GT1351170555CountBehaviorTalDarimMonitorDetonationChargeCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="TalDarimHaveCynosure">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitTalDarimCynosureCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TalDarimDeathStarRequirements">
+        <EditorCategories value="Race:PrTD,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUnitTalDarimFleetLodestarCompleteOnlyTechTreeCheatEq1251210394CountUnitTalDarimDeathStarQueuedOrBetter0"/>
+    </CRequirement>
+</Catalog>

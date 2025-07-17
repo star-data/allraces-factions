@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectEnumArea id="UPLSpaceTrashCoordinationEnum">
+        <ImpactLocation Value="SourceUnit"/>
+        <ExcludeArray Value="Source"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Structure,User1,Missile,Item,Stasis,Dead,Hidden,Invulnerable,Benign,Unstoppable,Resistant"/>
+        <AreaArray Radius="2"/>
+        <SearchFlags index="SameCliff" value="1"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="UPLSpaceTrashCoordinationDamage">
+        <SearchFilters value="Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <EditorCategories value="Race:UPL"/>
+    </CEffectDamage>
+    <CAbilEffectTarget id="UPLSpaceTrashCoordination">
+        <EditorCategories value="Race:UPL,AbilityorEffectType:Units"/>
+        <Effect index="0" value="CalldownMULECreateUnit2"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="20"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="6"/>
+            </Charge>
+            <Cooldown Operation="Add" TimeUse="6"/>
+        </Cost>
+        <Range value="13"/>
+        <Arc value="360"/>
+        <PrepTime value="3"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SpaceTrashCoordination"/>
+        <CursorEffect value="UPLSpaceTrashCoordinationEnum"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="UPLSeekerDroneExplode">
+        <EditorCategories value="AbilityorEffectType:Units,Race:UPL"/>
+        <Effect index="0" value="VolatileBurst2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="UPLSeekerDronExplode"/>
+        <Range value="2.75"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LotCUPLCSVSupplyLineManagement">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:UPL"/>
+        <Effect index="0" value="LotCUPLSupplyLineManagement"/>
+        <Cost>
+            <Vital index="Energy" value="150"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CSVSupplyLineManagement"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilBehavior id="UPLSalvage">
+        <Name value="Abil/Name/Salvage"/>
+        <EditorCategories value="Race:UPL,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="On" DefaultButtonFace="Salvage">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="SalvageShared"/>
+        <ValidatorArray value="HasNoCargo"/>
+    </CAbilBehavior>
+    <CAbilAttack id="UPLBehemothattack">
+        <EditorCategories value="Race:UPL,AbilityorEffectType:Units"/>
+        <TargetMessage value="Abil/TargetMessage/UPLBehemothattack"/>
+        <MinAttackSpeedMultiplier value="0.25"/>
+        <MaxAttackSpeedMultiplier value="128"/>
+    </CAbilAttack>
+</Catalog>

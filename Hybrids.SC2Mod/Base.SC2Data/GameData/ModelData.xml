@@ -1,0 +1,2787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel default="1" id="ZHBRCommon@UnderConstructionDeath">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Lighting value="ZHBRCommon@UnderConstructionDeath"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel default="1" id="ZHBRCommon@StructureDeathCommon">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_EntropicBlast_Explosion\Xelnaga_Construct_EntropicBlast_Explosion.m3"/>
+        <AnimSpeed value="0.250000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Lighting value="ZHBRCommon@StructureDeathCommon"/>
+    </CModel>
+    <CModel id="HybridPsyon@FragmentumCorrosionModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\SuppressionTower_SuppressionBeam_Cursor\SuppressionTower_SuppressionBeam_Cursor.m3"/>
+        <AnimSpeed value="0.200000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Events>
+            <Anim value="Birth"/>
+            <Name value="Zerg_BuildingMorphStart"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="Zerg_BuildingMorphStart"/>
+        </Events>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="HybridDeformerDestructionArise@TargetImpact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ShieldFizzle\ShieldFizzle.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
+    </CModel>
+    <CModel id="HybridSpiritSacificingReveal" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhoenixMissile\PhoenixMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="HybridSpiritSacrificingRevealAttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Protoss\PhoenixOverloadImpact\PhoenixOverloadImpact.m3"/>
+        <LowQualityModel value="ProtossShieldDamage"/>
+        <AnimSpeed value="2.000000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="HybridProtectionJumpShieldEffect" parent="OneShotSpellFX">
+        <Model value="Assets\COOP\Zeratul\Effects\Sentry_Zeratul_COOP_ShieldBubble\Sentry_Zeratul_COOP_ShieldBubble.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <Lighting value=""/>
+        <Occlusion value="Hide"/>
+        <ScaleMax value="0.160000,0.160000,0.260000"/>
+        <ScaleMin value="0.160000,0.160000,0.260000"/>
+    </CModel>
+    <CModel id="HybridConstructLockTargeVisual" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\EMPImpact\EMPImpact.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:Terran"/>
+        <Lighting value=""/>
+        <RadiusLoose value="0.600000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="HybridConstructAttackImpactVisualEffect" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\ArcadeMothershipMissile\ArcadeMothershipMissile.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <Lighting value=""/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.150000"/>
+        <ScaleMax value="4.500000,4.500000,4.500000"/>
+        <ScaleMin value="4.500000,4.500000,4.500000"/>
+    </CModel>
+    <CModel id="HybridConstructAttackVisualEffect2nd" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\DiamondbackMissileImpact\DiamondbackMissileImpact.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:Terran"/>
+        <Lighting value=""/>
+        <RadiusLoose value="0.600000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="HybridPsyon@FragmentumCorrosionImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\SuppressionTower_SuppressionBeam_Cursor\SuppressionTower_SuppressionBeam_Cursor.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="HybridPsyon@FragmentumCorrosionWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\SuppressionTower_SuppressionBeam_Cursor\SuppressionTower_SuppressionBeam_Cursor.m3"/>
+        <AnimSpeed value="0.300000"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="HybridSentinelPlaceholder" parent="ReaperBase">
+        <Model value="assets\Units\ZHybrid\Sentinel\Sentinel.m3"/>
+        <RequiredAnims index="0" removed="1"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+    </CModel>
+    <CModel id="ReaperJumpLandDownModel2" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\ReaperJumpLandDown\ReaperJumpLandDown.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <RadiusLoose value="0.500000"/>
+    </CModel>
+    <CModel id="ZHBRConductor@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\WarpPrismPortrait\WarpPrismPortrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\WarpPrismPortrait_Static.dds"/>
+        <Lighting value="WarpPrismPortrait"/>
+    </CModel>
+    <CModel id="ZHBRAmplifier@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRAmplifier@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+    </CModel>
+    <CModel id="ZHBREnergation@BeamDeformer" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\HybridEnergizeBeam\HybridEnergizeBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Priority value="16"/>
+        <ScaleMax value="0.100000,1.000000,0.100000"/>
+        <ScaleMin value="0.100000,1.000000,0.100000"/>
+    </CModel>
+    <CModel id="ZHBREnergation@ImpactDeformer" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\ProtossShield_Battery_Beam_Impact\ProtossShield_Battery_Beam_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConfusion@TargetDamageImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Alarak_COOP_SoulAbsorption_Impact\Alarak_COOP_SoulAbsorption_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRStriderWeapon@ImpactEvaporator" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\DragoonMissileImpact\DragoonMissileImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRStriderWeapon@MissileEvaporator" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhalanxMissile\PhalanxMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.800000,0.500000"/>
+        <ScaleMin value="0.500000,0.800000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingBlue" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Artanis_BasicAirAttack_Missile\Artanis_BasicAirAttack_Missile.m3"/>
+        <AnimSpeed value="0.100000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.250000"/>
+        <ScaleMax value="3.400000,3.400000,3.400000"/>
+        <ScaleMin value="3.400000,3.400000,3.400000"/>
+    </CModel>
+    <CModel id="ZHBRFlayer@Fury2Upgraded" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_COOP_Sacrifice_Missile\Alarak_COOP_Sacrifice_Missile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+    </CModel>
+    <CModel id="ZHBRPermanentPower@Impact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\FeedbackImpact\FeedbackImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRPermanentPower@Launch" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\FeedbackLaunch\FeedbackLaunch.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+    </CModel>
+    <CModel id="ZHBRConductor@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_EntropicBlast_Explosion\Xelnaga_Construct_EntropicBlast_Explosion.m3"/>
+        <LowQualityModel value="ProtossMediumUnitDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Lighting value="ZHBRNavigator@Death"/>
+        <ScaleMax value="0.550000,0.550000,0.550000"/>
+    </CModel>
+    <CModel id="ZHBRPsyon@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Zerg\ZergMediumUnitDeath\ZergMediumUnitDeath.m3"/>
+        <LowQualityModel value="ProtossMediumUnitDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="2.250000,2.250000,2.250000"/>
+        <ScaleMin value="2.250000,2.250000,2.250000"/>
+    </CModel>
+    <CModel id="ZHBRPermanentPower@Glaze">
+        <Model value="Assets\Effects\Glaze\PylonPowerOn_Glaze\PylonPowerOn_Glaze.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRStructureTeleport@Splat" parent="UI">
+        <Model value="assets\Effects\ZHybrid\PowerField\PowerField.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <SelectionRadius value="1.000000"/>
+        <ShadowRadius value="1.000000"/>
+    </CModel>
+    <CModel id="ZHBRBehemoth@DeathAdvanced" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\Hybrid_Zerg_Advanced_Death\Hybrid_Zerg_Advanced_Death.m3"/>
+        <LowQualityModel value="ZergLargeUnitDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SelectionRadius value="0.625000"/>
+        <ShadowRadius value="0.625000"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRBehemoth@ModelAdvanced" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\HybridZergAdvanced\HybridZergAdvanced.m3"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+            <Payload value="ZHBRBehemothWeapon@AttackLaunch_Additive"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.200000"/>
+            <Payload value="ZHBRBehemothWeapon@AttackLaunch_Additive"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.390000"/>
+            <Payload value="ZHBRBehemoth@AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.530000"/>
+            <Payload value="ZHBRBehemoth@AttackImpact"/>
+        </Events>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigher16"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <TechPurchaseCamera value="Star2CameraHigher16"/>
+        <UnitGlossaryCamera value="Star2CameraHigher16"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRStructureTeleport@TPOut">
+        <Model value="Assets\COOP\Zeratul\Effects\Disruptor_Zeratul_COOP_PurificationNova\Disruptor_Zeratul_COOP_PurificationNova.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRDominator@DeathAdvanced" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Hybrid_ProtossAdvanced_Death\Hybrid_ProtossAdvanced_Death.m3"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRDominator@ModelAdvanced" parent="Unit" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\HybridProtossAdvanced\HybridProtossAdvanced.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigher08"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.111000"/>
+        <ShadowRadius value="1.111000"/>
+        <TechPurchaseCamera value="Star2CameraHigher08"/>
+        <UnitGlossaryCamera value="Star2CameraHigher08"/>
+    </CModel>
+    <CModel id="ZHBRPrimeSummoning@Glaze" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_ShieldBattery_StructureBarrier\Glaze_ShieldBattery_StructureBarrier.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="ZHBRNemesis@ModelAdvanced" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\NemesisAdvanced\NemesisAdvanced.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow08"/>
+        <Radius value="1.250000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.400000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow08"/>
+        <UnitGlossaryCamera value="Star2CameraLow08"/>
+    </CModel>
+    <CModel id="ZHBRStructureTeleport@SplatConductor" parent="UI">
+        <Model value="assets\Effects\ZHybrid\PowerField\PowerField.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.725000,0.725000,0.725000"/>
+        <ScaleMin value="0.725000,0.725000,0.725000"/>
+        <SelectionRadius value="1.000000"/>
+        <ShadowRadius value="1.000000"/>
+    </CModel>
+    <CModel id="ZHBRStructureTeleport@TPModel">
+        <Model value="Assets\COOP\Zeratul\Effects\VoidPrism_AutoUnloadOn_Zeratul_COOP\VoidPrism_AutoUnloadOn_Zeratul_COOP.m3"/>
+        <AnimSpeed value="0.900000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRMinionBuild@Death_A"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_B"/>
+            <Type value="Sound"/>
+            <Time value="0.816000"/>
+            <Payload value="ZHBRMinionBuild@Death_B"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_RockDebris"/>
+            <Type value="Sound"/>
+            <Time value="1.590000"/>
+            <Payload value="ZHBRMinionBuild@Death_RockDebris"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="RockExplosion_Large"/>
+            <Type value="Sound"/>
+            <Time value="1.533000"/>
+            <Payload value="ZHBRMinionBuild@RockExplosionLarge"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_Explosion"/>
+            <Type value="Sound"/>
+            <Time value="1.500000"/>
+            <Payload value="ZHBRMinionBuild@Death_Explosion"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_Electric"/>
+            <Type value="Sound"/>
+            <Time value="0.105000"/>
+            <Payload value="ZHBRMinionBuild@Death_Electric"/>
+        </Events>
+    </CModel>
+    <CModel id="ZHBRShapeshifterWeapon2@Impact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\PlasmaBurst_Missile_Impact\PlasmaBurst_Missile_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRShapeshifterWeapon2@Missile" parent="Unit" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\HybridPlasmaMissile\HybridPlasmaMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.250000"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+    </CModel>
+    <CModel id="HybridDeformerDestructionArise@Impact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ShieldFizzle\ShieldFizzle.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.150000"/>
+        <ScaleMax value="4.800000,4.800000,0.400000"/>
+        <ScaleMin value="4.800000,4.800000,0.400000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingVoidBonus" parent="MissileFX">
+        <Model value="Assets\Doodads\Pickup_JunkParts_MineralGas_Coop\Pickup_JunkParts_MineralGas_Coop.m3"/>
+        <AnimSpeed value="0.100000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.750000"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingRedStart" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_COOP_Sacrifice_Missile_Impact\Alarak_COOP_Sacrifice_Missile_Impact.m3"/>
+        <AnimSpeed value="0.100000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.250000"/>
+        <ScaleMax value="4.000000,4.000000,4.000000"/>
+        <ScaleMin value="4.000000,4.000000,4.000000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingRed" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_DestructionWave\Alarak_DestructionWave.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.250000"/>
+        <ScaleMax value="0.700000,0.700000,2.100000"/>
+        <ScaleMin value="0.700000,0.700000,2.100000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingBlueStart" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Adept_Missile_Impact\Adept_Missile_Impact.m3"/>
+        <AnimSpeed value="0.100000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.250000"/>
+        <ScaleMax value="3.400000,3.400000,3.400000"/>
+        <ScaleMin value="3.400000,3.400000,3.400000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingRedEnd" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_COOP_SoulAbsorption_Impact\Alarak_COOP_SoulAbsorption_Impact.m3"/>
+        <AnimSpeed value="0.070000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.250000"/>
+        <ScaleMax value="2.000000,2.000000,5.000000"/>
+        <ScaleMin value="3.000000,3.000000,5.000000"/>
+    </CModel>
+    <CModel id="ZHBRPollinator@VoidToxin" parent="MissileFX">
+        <Model value="Assets\COOP\Zeratul\Effects\Immortal_Zeratul_COOP_CannonMissile\Immortal_Zeratul_COOP_CannonMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.750000"/>
+        <ScaleMax value="0.600000,0.300000,0.300000"/>
+        <ScaleMin value="0.600000,0.300000,0.300000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingVoidBonusCaster" parent="MissileFX">
+        <Model value="Assets\Doodads\SpaceMineralCluster\SpaceMineralCluster_03.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.750000"/>
+    </CModel>
+    <CModel id="ZHBRStructures@ResearchingVoidBonus3" parent="MissileFX">
+        <Model value="Assets\Doodads\Pickup_JunkParts_MineralGas_Coop\Pickup_JunkParts_MineralGas_Coop.m3"/>
+        <AnimSpeed value="0.100000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Hide"/>
+        <OccludingOpacity value="0.750000"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRVoidChasm@Impact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Neutral\Aiur_VoidTendril_DeathGrip_BeamCage\Aiur_VoidTendril_DeathGrip_BeamCage.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="CageStart"/>
+            <Type value="Sound"/>
+            <Time value="0.003000"/>
+            <Payload value="ZHBRVoidChasm@CageStart"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="CageEnd"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="ZHBRVoidChasm@CageEnd"/>
+        </Events>
+    </CModel>
+    <CModel id="ZHBRPsyon@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\VorazunEx2Portrait\VorazunEx2Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <PortraitOffset value="-0.050000,0.100000,-0.350000"/>
+    </CModel>
+    <CModel id="ZHBRPsyon@PortraitAddition" parent="FXAPortrait" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Psyon\Psyon.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+    </CModel>
+    <CModel id="ZHBRPsyonWeapon@Beam" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\DetonateBeam\DetonateBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <RadiusLoose value="4.000000"/>
+        <SelectionRadius value="0.714000"/>
+        <ShadowRadius value="0.714000"/>
+        <AnimSpeed value="2.000000"/>
+    </CModel>
+    <CModel id="ZHBRPsyon@Model" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\Psyon\Psyon.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.000000"/>
+        <SelectionRadius value="1.000000"/>
+        <AnimAliases Anim="Stand" Alias="Attack"/>
+        <AnimAliases Anim="Stand" Alias="Birth"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionOffset value="0.000000,0.000000,1.000000"/>
+    </CModel>
+    <CModel id="ZHBRPowerField@Beam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\TractorBeam\TractorBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConfusion@Glaze" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_Corrupted_TangentSpace\Glaze_Corrupted_TangentSpace.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="ZHBRPhaseShift@Glaze" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Kerrigan_Glaze_ImmobilizationWave\Kerrigan_Glaze_ImmobilizationWave.m3"/>
+        <AnimSpeed value="2.000000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="ZHBRPhaseShift@Impact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\StasisTomb\StasisTomb.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+    </CModel>
+    <CModel id="ZHBRPhaseShift@Beam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\SuppressionTower_SuppressionBeam\SuppressionTower_SuppressionBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRPowerField@GroundIndicator" parent="PersistentSpellFX">
+        <Model value="Assets\COOP\Zeratul\Effects\WarpPrism_Zeratul_COOP_ShieldRange\WarpPrism_Zeratul_COOP_ShieldRange.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="FOW" value="0"/>
+        <Radius value="4.000000"/>
+        <RadiusLoose value="4.000000"/>
+        <ScaleMax value="0.812500,0.812500,0.812500"/>
+        <ScaleMin value="0.812500,0.812500,0.812500"/>
+    </CModel>
+    <CModel id="ZHBRConductor@Model" parent="Unit">
+        <Model value="assets\Units\ZHybrid\Conductor\Conductor.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+        <SelectionRadius value="1.500000"/>
+    </CModel>
+    <CModel id="ZHBRPsiOrb@GuideVisualQuadImpact" parent="UI">
+        <Model value="Assets\UI\Cursors\UI_AOEStretchLine_Alarak_End\UI_AOEStretchLine_Alarak_End.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRPsiOrb@GuideVisualQuadCenter" parent="UI">
+        <Model value="Assets\UI\Cursors\UI_AOEStretchLine_Alarak_Mid\UI_AOEStretchLine_Alarak_Mid.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRPsiOrb@GuideVisualQuadLaunch" parent="UI">
+        <Model value="Assets\UI\Cursors\UI_AOEStretchLine_Alarak_Start\UI_AOEStretchLine_Alarak_Start.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRProteus@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\VorazunEx2Portrait\VorazunEx2Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <PortraitOffset value="-0.100000,0.100000,-0.500000"/>
+    </CModel>
+    <CModel id="ZHBRProteus@PortraitAddition" parent="FXAPortrait" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Proteus\Proteus.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="ZHBRRestorationShield@HealTick" parent="RacePersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\Dehaka_Coop_PrimalRegeneration_Impact\Dehaka_Coop_PrimalRegeneration_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="ZHBRCapsule@Death" parent="ZHBRCommon@StructureDeathCommon" Prefix="Buildings\" Race="Protoss">
+        <AnimSpeed value="0.400000"/>
+        <RadiusLoose value="1.500000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.500000"/>
+        <ShadowRadius value="1.500000"/>
+    </CModel>
+    <CModel id="ZHBRCapsule@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+    </CModel>
+    <CModel id="ZHBRCapsule@Model" parent="BuildingEx">
+        <Model value="assets\Buildings\ZHybrid\Capsule\Capsule.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <SelectionRadius value="5.000000"/>
+        <ShadowRadius value="1.250000"/>
+        <Radius value="1.300000"/>
+    </CModel>
+    <CModel id="ZHBRRaceControl@Model" Race="Neutral">
+        <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Radius value="-1.000000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="0.000000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="ZHBRHoldingCell@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <Model value="assets\Buildings\ZHybrid\HoldingCellDeath\HoldingCellDeath.m3"/>
+        <AnimSpeed value="1.000000"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="ZHBRDeformer@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <AnimSpeed value="1.000000"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="ZHBRHoldingCell@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRDeformer@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRHoldingCell@Model" parent="BuildingEx" Race="Protoss">
+        <Model value="assets\Buildings\ZHybrid\HoldingCell\HoldingCell.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.500000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.500000"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+        <SelectionRadius value="3.500000"/>
+        <ShadowRadius value="1.176200"/>
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel id="ZHBRDeformer@Model" parent="BuildingEx" Race="Protoss">
+        <Model value="assets\Buildings\ZHybrid\Deformer\Deformer.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.500000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="1.176200"/>
+        <SquibTypeDefault value="Rock"/>
+    </CModel>
+    <CModel id="ZHBRKeystone@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <AnimSpeed value="0.400000"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRKeystone@Model" parent="BuildingEx" Race="Protoss">
+        <Model value="assets\Buildings\ZHybrid\Keystone\Keystone.m3"/>
+        <AnimSpeed value="0.600000"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.500000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.550000,0.550000,0.550000"/>
+        <ScaleMin value="0.550000,0.550000,0.550000"/>
+        <SelectionRadius value="2.150000"/>
+        <ShadowRadius value="1.176200"/>
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel id="ZHBRProteus@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <SelectionRadius value="0.555400"/>
+        <ShadowRadius value="0.555400"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="ZHBRProteus@Model" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\Proteus\Proteus.m3"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="AttackSoundWhoosh"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="ZHBRProteusWeapon@Whoosh"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,02"/>
+            <Name value="AttackSoundWhoosh"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="ZHBRProteusWeapon@Whoosh"/>
+        </Events>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SelectionRadius value="1.100000"/>
+        <ShadowRadius value="1.100000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.800000"/>
+        <TipabilityWidth value="0.800000"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="ZHBRProteusWeapon@AttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\SwarmGuardianMissileImpact\SwarmGuardianMissileImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConsumeDNA@Stun" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Neutral\Stun_Void\Stun_Void.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRStriderCrawler" parent="Unit" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\StriderCrawler\StriderCrawler.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="0.900000"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <SelectionRadius value="0.900000"/>
+        <ShadowRadius value="0.900000"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="ZHBRVoidChasm@Model" parent="PersistentSpellFX">
+        <Model value="Assets\Buildings\Protoss\Void_ShardFortress\Void_ShardFortress.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <RadiusLoose value="5.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.350000"/>
+        <ScaleMin value="0.750000,0.750000,0.350000"/>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth"/>
+            <Time value="0.300000"/>
+            <Payload value="ZHBRVoidChasm@Birth"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_DeathSweetener"/>
+            <Time value="1.300000"/>
+            <Payload value="ZHBRVoidChasm@DeathSweetener"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth2"/>
+            <Time value="0.300000"/>
+            <Payload value="ZHBRVoidChasm@Birth2"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="0.330000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="0.660000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="1.000000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="1.330000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="1.660000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="2.000000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="2.330000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="2.660000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="3.000000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="3.330000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="3.660000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="4.000000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="4.330000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="4.660000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_Birth3"/>
+            <Time value="5.000000"/>
+            <Payload value="ZHBRVoidChasm@Birth3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_DeathExplosion"/>
+            <Time value="2.700000"/>
+            <Payload value="ZHBRVoidChasm@DeathExplosion"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_DeathExplosion2"/>
+            <Time value="2.700000"/>
+            <Payload value="ZHBRVoidChasm@DeathExplosion2"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_DeathExplosion3"/>
+            <Time value="2.800000"/>
+            <Payload value="ZHBRVoidChasm@DeathExplosion3"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Unpowered,End,00"/>
+            <Name value="VoidChasm_DeathExplosion4"/>
+            <Time value="2.600000"/>
+            <Payload value="ZHBRVoidChasm@DeathExplosion4"/>
+        </Events>
+    </CModel>
+    <CModel id="ZHBRTomb@Death" parent="ZHBRCommon@StructureDeathCommon" Prefix="Buildings\" Race="Protoss">
+        <AnimSpeed value="0.400000"/>
+        <RadiusLoose value="1.500000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.500000"/>
+        <ShadowRadius value="1.500000"/>
+    </CModel>
+    <CModel id="ZHBRTomb@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+    </CModel>
+    <CModel id="ZHBRTomb@Model" parent="BuildingEx">
+        <Model value="assets\Buildings\ZHybrid\Tomb\Tomb.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.650000,0.650000,0.750000"/>
+        <ScaleMin value="0.650000,0.650000,0.750000"/>
+        <SelectionRadius value="3.000000"/>
+        <ShadowRadius value="1.250000"/>
+        <Radius value="1.300000"/>
+    </CModel>
+    <CModel id="ZHBRSpray@Spray">
+        <Model value="Assets\Effects\Protoss\DecalTagSplat_Protoss_Void\DecalTagSplat_Protoss_Void.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRCommon@GlazePermanent">
+        <Model value="Assets\Effects\Glaze\Glaze_Corrupted_TangentSpace\Glaze_Corrupted_TangentSpace.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRCommon@Portrait" parent="ProtossBuildingPortraitBase">
+        <Model value="assets\Portraits\ZHybrid\Annihilator\Annihilator.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <Lighting value="ExecutorPortrait"/>
+    </CModel>
+    <CModel id="ZHBRCommon@GlazePeriodic">
+        <Model value="assets\Effects\ZHybrid\GlazePeriodic\GlazePeriodic.m3"/>
+        <AnimSpeed value="0.900000"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRShapeshifterWeapon@SplashFX" parent="FX">
+        <Model value="Assets\Effects\Zerg\HybridPlasmaMissileImpact\HybridPlasmaMissileImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRShapeshifterWeapon@Impact" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\PlasmaBurst_Missile_Impact\PlasmaBurst_Missile_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRShapeshifterWeapon@Missile" parent="Unit" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\HybridPlasmaMissile\HybridPlasmaMissile.m3"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.250000"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRShapeshifter@Model" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\Shapeshifter\Shapeshifter.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow08"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+        <SelectionRadius value="1.500000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow08"/>
+        <UnitGlossaryCamera value="Star2CameraLow08"/>
+    </CModel>
+    <CModel id="ZHBRShapeshifter@Death" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <LowQualityModel value="ZergLargeUnitDeathLow"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="2.500000,2.500000,2.500000"/>
+        <ScaleMin value="2.500000,2.500000,2.500000"/>
+    </CModel>
+    <CModel id="ZHBRShapeshifter@Portrait" parent="Portrait">
+        <Model value="Assets\Portraits\Zerg\HybridZergPortrait\HybridZergPortrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRInterdimensionalOverload@TeleportOut" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\Artanis_Resurgence\Artanis_Resurgence.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.300000,0.300000,0.300000"/>
+        <ScaleMin value="0.300000,0.300000,0.300000"/>
+    </CModel>
+    <CModel id="ZHBRInterdimensionalOverload@JumpPowerup" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_VoidShard_VoidZone\Glaze_VoidShard_VoidZone.m3"/>
+        <Priority value="32"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRNavigator@Model" parent="Unit" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Navigator\Navigator.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow09"/>
+        <Radius value="0.875000"/>
+        <ScaleMax value="0.550000,0.550000,0.550000"/>
+        <ScaleMin value="0.550000,0.550000,0.550000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.700000"/>
+        <SelectionRadius value="1.590800"/>
+        <ShadowRadius value="1.590800"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraLow09"/>
+        <UnitGlossaryCamera value="Star2CameraLow09"/>
+    </CModel>
+    <CModel id="ZHBRNavigator@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_EntropicBlast_Explosion\Xelnaga_Construct_EntropicBlast_Explosion.m3"/>
+        <LowQualityModel value="ProtossMediumUnitDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRNavigator@Portrait" parent="WarpPrismPortraitBase">
+        <Model value="Assets\Portraits\Protoss\Purifier_Hologram_AI_Portrait\Purifier_Hologram_AI_Portrait.m3"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <Lighting value="WarpPrismPortrait"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRNavigatorLoad@LoadModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\BlinkIn\BlinkIn.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRNavigatorLoad@UnloadFX" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\UnloadFX\UnloadFX.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRNavigatorLoad@UnloadModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\BlinkIn\BlinkIn.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRNavigatorLoad@WarpOut" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\WarpPrism_WarpOut_MP\WarpPrism_WarpOut_MP.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="ZHBRNemesisAdvanced@Model" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\NemesisAdvanced\NemesisAdvanced.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow08"/>
+        <Radius value="1.250000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.400000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow08"/>
+        <UnitGlossaryCamera value="Star2CameraLow08"/>
+    </CModel>
+    <CModel id="ZHBRNemesisAdvanced@Portrait">
+        <Model value="Assets\Portraits\Protoss\Hybrid_Nemesis_Portrait\Hybrid_Nemesis_Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRNemesis@Portrait">
+        <Model value="Assets\Portraits\Protoss\Hybrid_Nemesis_Portrait\Hybrid_Nemesis_Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRNemesisWeapon@Beam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\HybridEnergizeBeamLarge\HybridEnergizeBeamLarge.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="ZHBRNemesisWeapon@BuffedBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Sentry_Purifier_ChronoBeam\Sentry_Purifier_ChronoBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRNemesis@Model" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\Nemesis\Nemesis.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow08"/>
+        <Radius value="1.250000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.400000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow08"/>
+        <UnitGlossaryCamera value="Star2CameraLow08"/>
+        <!--AttachProps Id="Ref_Center" RadiusShield="1.500000"/-->
+    </CModel>
+    <CModel id="ZHBRNemesis@Death" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Protoss\Hybrid_Nemesis_Death\Hybrid_Nemesis_Death.m3"/>
+        <LowQualityModel value="ZergMediumUnitDeathLow"/>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="ZHBRNemesisDeathSound"/>
+            <Type value="Actor"/>
+            <Time value="3.017000"/>
+            <Payload value="ZHBRNemesis@DeathSound"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Uni_DeathFXAcid"/>
+            <Type value="Sound"/>
+            <Time value="0.021000"/>
+            <Payload value="Uni_DeathFXAcid"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Uni_DeathFXAcid"/>
+            <Type value="Sound"/>
+            <Time value="3.004000"/>
+            <Payload value="Uni_DeathFXAcid"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="ZHBR_Nemesis_DeathScreams"/>
+            <Type value="Sound"/>
+            <Time value="0.011000"/>
+            <Payload value="ZHBRNemesis@DeathScreams"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="ZHBR_Nemesis_DeathScreams"/>
+            <Type value="Sound"/>
+            <Time value="0.810000"/>
+            <Payload value="ZHBRNemesis@DeathScreams"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="ZHBR_Nemesis_DeathScreams"/>
+            <Type value="Sound"/>
+            <Time value="1.607000"/>
+            <Payload value="ZHBRNemesis@DeathScreams"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="ZHBR_Nemesis_DeathScreams"/>
+            <Type value="Sound"/>
+            <Time value="2.389000"/>
+            <Payload value="ZHBRNemesis@DeathScreams"/>
+        </Events>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRPollinatorWeapon@Impact" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\ViciousGlaiveImpact\ViciousGlaiveImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRPollinatorWeapon@Missile" parent="Unit" Race="Zerg">
+        <Model value="Assets\COOP\Zeratul\Effects\Immortal_Zeratul_COOP_CannonMissile\Immortal_Zeratul_COOP_CannonMissile.m3"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.250000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRPollinatorShadowMantle@ShadowMantleOn">
+        <Model value="Assets\Effects\Zerg\HybridBlinkOut\HybridBlinkOut.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRPollinatorShadowMantle@ShadowMantleOff">
+        <Model value="Assets\Effects\Zerg\HybridBlinkIn\HybridBlinkIn.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRPollinator@Model" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\Pollinator\Pollinator.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.640000,0.640000,0.640000"/>
+        <ScaleMin value="0.640000,0.640000,0.640000"/>
+    </CModel>
+    <CModel id="ZHBRPollinator@Death" parent="MutaliskDeathBase">
+        <Model value="Assets\Effects\Zerg\ZergMediumUnitDeath\ZergMediumUnitDeath.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <VariationCount value="1"/>
+        <Variations index="0" removed="1"/>
+        <Variations index="1" removed="1"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRPollinator@Portrait" parent="Portrait" Race="Zerg">
+        <Model value="assets\Portraits\ZHybrid\Chimera\Chimera.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRPollinator@HitTestSphere">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBREnergatorWeapon@Impact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_EntropicBlast_Impact\Xelnaga_Construct_EntropicBlast_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBREnergatorWeapon@Missile" parent="Unit" Race="Zerg">
+        <Model value="Assets\Effects\Protoss\AmonShard_Blue_Aoe_Missile\AmonShard_Blue_Aoe_Missile.m3"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.250000"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBREnergation@Impact" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\ProtossShield_Battery_Beam_Impact\ProtossShield_Battery_Beam_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBREnergation@Beam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\KerriganHybridBeam\KerriganHybridBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Priority value="16"/>
+        <ScaleMax value="0.700000,1.000000,0.700000"/>
+        <ScaleMin value="0.700000,1.000000,0.700000"/>
+    </CModel>
+    <CModel id="ZHBRDisappearance@Model" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\HybridPsionicShockwave\HybridPsionicShockwave.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <RadiusLoose value="1.000000"/>
+        <AnimSpeed value="0.750000"/>
+    </CModel>
+    <CModel id="ZHBREnergator@Model" parent="Unit" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Energator\Energator.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow05"/>
+        <Radius value="0.875000"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+        <SelectionRadius value="2.500000"/>
+        <ShadowRadius value="0.875000"/>
+        <TechPurchaseCamera value="Star2CameraLow05"/>
+        <UnitGlossaryCamera value="Star2CameraLow05"/>
+    </CModel>
+    <CModel id="ZHBREnergator@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Zerg\ZergMediumUnitDeath\ZergMediumUnitDeath.m3"/>
+        <LowQualityModel value="ProtossMediumUnitDeathLow"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="2.250000,2.250000,2.250000"/>
+        <ScaleMin value="2.250000,2.250000,2.250000"/>
+    </CModel>
+    <CModel id="ZHBREnergator@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Zerg\DevourerEx3_Portrait\DevourerEx3_Portrait.m3"/>
+        <Lighting value="DevourerMPPortrait"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModelFoliage id="ZHBRRevealingSacrifice@Launch">
+        <Model value="Assets\Effects\Protoss\EnergyTransferImpact\EnergyTransferImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModelFoliage>
+    <CModel id="ZHBRRevealingSacrifice@BehaviorModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\MotherShipCoreMissile\MotherShipCoreMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.300000,0.300000,0.300000"/>
+        <ScaleMin value="0.300000,0.300000,0.300000"/>
+    </CModel>
+    <CModel id="ZHBRSpirit" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\Spirit\Spirit.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <SelectionRadius value="0.650000"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.250000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+    </CModel>
+    <CModel id="ZHBRSpirit@Death" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\COOP\Zeratul\Units\Construct_Mini_Zeratul_COOP_Death\Construct_Mini_Zeratul_COOP_Death.m3"/>
+        <LowQualityModel value="ZergLargeUnitDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="ZHBRSpirit@Portrait" parent="Portrait">
+        <Model value="Assets\COOP\Zeratul\Portraits\Construct_Mini_Zeratul_COOP_Portrait\Construct_Mini_Zeratul_COOP_Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRKeystone@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRCrypt@Death" parent="ZHBRCommon@StructureDeathCommon" Prefix="Buildings\" Race="Protoss">
+        <AnimSpeed value="0.400000"/>
+        <RadiusLoose value="1.500000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.500000"/>
+        <ShadowRadius value="1.500000"/>
+    </CModel>
+    <CModel id="ZHBRCrypt@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+    </CModel>
+    <CModel id="ZHBRCrypt@Model" parent="BuildingEx">
+        <Model value="assets\Buildings\ZHybrid\Crypt\Crypt.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.650000,0.650000,0.750000"/>
+        <ScaleMin value="0.650000,0.650000,0.750000"/>
+        <SelectionRadius value="3.000000"/>
+        <ShadowRadius value="1.250000"/>
+        <Radius value="1.300000"/>
+    </CModel>
+    <CModel id="ZHBRVoidThrasher" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\VoidThrasher\VoidThrasher_Walker.m3"/>
+        <AttachProps Id="Ref_Center" RadiusShield="4.000000"/>
+        <!--Events>
+            <Anim value="Birth,00"/>
+            <Name value="Void_Thrasher_Birth_Fx"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="Void_Thrasher_Birth_Fx"/>
+        </Events>-->
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="Void_Thrasher_Birth_Vox"/>
+            <Type value="Sound"/>
+            <Time value="2.019000"/>
+            <Payload value="Void_Thrasher_Birth_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="Void_Thrasher_ChestGlow"/>
+            <Type value="Sound"/>
+            <Time value="4.222000"/>
+            <Payload value="Void_Thrasher_ChestGlow"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Void_Thrasher_SWS"/>
+            <Type value="Sound"/>
+            <Time value="0.007000"/>
+            <Payload value="Void_Thrasher_SWS"/>
+        </Events>
+        <!--Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Void_Thrasher_Electric_StrikeShort"/>
+            <Type value="Sound"/>
+            <Time value="0.766000"/>
+            <Payload value="Void_Thrasher_Electric_StrikeShort"/>
+        </Events>-->
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="Void_Thrasher_Movement_Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.013000"/>
+            <Payload value="Void_Thrasher_Movement_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Stun,00"/>
+            <Name value="Void_Thrasher_Injured_Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.049000"/>
+            <Payload value="Void_Thrasher_Injured_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,A,00"/>
+            <Name value="Void_Thrasher_Electric_StrikeShort"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="Void_Thrasher_Electric_StrikeShort"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,A,End,00"/>
+            <Name value="Void_Thrasher_Electric_Exhale_Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.012000"/>
+            <Payload value="Void_Thrasher_Electric_Exhale_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="Void_Thrasher_Movement_Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.121000"/>
+            <Payload value="Void_Thrasher_Movement_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="Void_Thrasher_Walk_Vox"/>
+            <Type value="Sound"/>
+            <Time value="2.218000"/>
+            <Payload value="Void_Thrasher_Walk_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="Void_Thrasher_Movement_Vox"/>
+            <Type value="Sound"/>
+            <Time value="4.521000"/>
+            <Payload value="Void_Thrasher_Movement_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="Void_Thrasher_Walk_Vox"/>
+            <Type value="Sound"/>
+            <Time value="7.388000"/>
+            <Payload value="Void_Thrasher_Walk_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Start,00"/>
+            <Name value="Void_Thrasher_Walk_Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.020000"/>
+            <Payload value="Void_Thrasher_Walk_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,Left,00"/>
+            <Name value="Void_Thrasher_Movement_Vox"/>
+            <Type value="Sound"/>
+            <Time value="3.928000"/>
+            <Payload value="Void_Thrasher_Movement_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,Left,00"/>
+            <Name value="Void_Thrasher_Walk_Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.232000"/>
+            <Payload value="Void_Thrasher_Walk_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,Right,00"/>
+            <Name value="Void_Thrasher_Movement_Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.021000"/>
+            <Payload value="Void_Thrasher_Movement_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Void_Thrasher_ChestGlow"/>
+            <Type value="Sound"/>
+            <Time value="2.978000"/>
+            <Payload value="Void_Thrasher_ChestGlow"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Void_Thrasher_Electric_StrikeShort"/>
+            <Type value="Sound"/>
+            <Time value="2.586000"/>
+            <Payload value="Void_Thrasher_Electric_StrikeShort"/>
+        </Events>
+        <PlanetPanelCamera value="Star2CameraLow15"/>
+        <Radius value="1.200000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow15"/>
+        <UnitGlossaryCamera value="Star2CameraLow15"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRVoidThrasher@Death" parent="UnitDeath" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\VoidThrasher\VoidThrasher_Walker.m3"/>
+        <AttachProps Id="Ref_Center" RadiusShield="4.000000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Void_Thrasher_ChestGlow"/>
+            <Type value="Sound"/>
+            <Time value="2.978000"/>
+            <Payload value="Void_Thrasher_ChestGlow"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Void_Thrasher_Electric_StrikeShort"/>
+            <Type value="Sound"/>
+            <Time value="2.586000"/>
+            <Payload value="Void_Thrasher_Electric_StrikeShort"/>
+        </Events>
+        <PlanetPanelCamera value="Star2CameraLow15"/>
+        <Radius value="1.200000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow15"/>
+        <UnitGlossaryCamera value="Star2CameraLow15"/>
+    </CModel>
+    <CModel id="ZHBRVoidThrasher@Portrait">
+        <Model value="Assets\Portraits\Protoss\VoidThrasherEx2_Portrait\VoidThrasherEx2_Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConstruct@Death">
+        <Model value="Assets\Units\Protoss\XelNaga_Construct_Sentinel_Death\XelNaga_Construct_Sentinel_Death.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.625000,0.625000,0.625000"/>
+        <ScaleMin value="0.625000,0.625000,0.625000"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRConstruct@DeathUnderConstruction">
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.450000,1.450000,1.450000"/>
+        <ScaleMin value="1.450000,1.450000,1.450000"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRConstruct@Beam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_Beam\Xelnaga_Construct_Beam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConstruct@Model" parent="BuildingEx" Prefix="Units\">
+        <Model value="assets\Buildings\ZHybrid\Construct\Construct.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.500000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="ZHBRConstruct@_Walk"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_Walk"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,A,End"/>
+            <Name value="ZHBRConstruct@_StandWorkAEnd_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAEnd_A"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,A,End"/>
+            <Name value="ZHBRConstruct@_StandWorkAEnd_B"/>
+            <Type value="Sound"/>
+            <Time value="0.519000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAEnd_B"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRConstruct@_AttackLaunch_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_AttackLaunch_A"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRConstruct@_AttackLaunch_B"/>
+            <Type value="Sound"/>
+            <Time value="0.538000"/>
+            <Payload value="ZHBRConstruct@_AttackLaunch_B"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRConstruct@_AttackLaunch_C"/>
+            <Type value="Sound"/>
+            <Time value="1.573000"/>
+            <Payload value="ZHBRConstruct@_AttackLaunch_C"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,A,Start,00"/>
+            <Name value="ZHBRConstruct@_StandWorkAStart_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAStart_A"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,A,Start,00"/>
+            <Name value="ZHBRConstruct@_StandWorkAStart_B"/>
+            <Type value="Sound"/>
+            <Time value="0.476000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAStart_B"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,B,End,00"/>
+            <Name value="ZHBRConstruct@_StandWorkBEnd"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkBEnd"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,B,Start,00"/>
+            <Name value="ZHBRConstruct@_StandWorkBStart"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkBStart"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="ZHBRConstruct@_StandWorkEnd_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkEnd_A"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="ZHBRConstruct@_StandWorkEnd_B"/>
+            <Type value="Sound"/>
+            <Time value="1.169000"/>
+            <Payload value="ZHBRConstruct@_StandWorkEnd_B"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="ZHBRConstruct@_StandWorkEnd_C"/>
+            <Type value="Sound"/>
+            <Time value="2.259000"/>
+            <Payload value="ZHBRConstruct@_StandWorkEnd_C"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="ZHBRConstruct@_StandWorkEnd_D"/>
+            <Type value="Sound"/>
+            <Time value="4.337000"/>
+            <Payload value="ZHBRConstruct@_StandWorkEnd_D"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="ZHBRConstruct@_StandWorkStart_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkStart_A"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="ZHBRConstruct@_StandWorkStart_B"/>
+            <Type value="Sound"/>
+            <Time value="0.719000"/>
+            <Payload value="ZHBRConstruct@_StandWorkStart_B"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="ZHBRConstruct@_StandWorkStart_C"/>
+            <Type value="Sound"/>
+            <Time value="2.308000"/>
+            <Payload value="ZHBRConstruct@_StandWorkStart_C"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="ZHBRConstruct@_StandWorkStart_D"/>
+            <Type value="Sound"/>
+            <Time value="3.157000"/>
+            <Payload value="ZHBRConstruct@_StandWorkStart_D"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,C"/>
+            <Name value="ZHBRConstruct@_StandWorkAEnd_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAEnd_A"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,C"/>
+            <Name value="ZHBRConstruct@_StandWorkAEnd_B"/>
+            <Type value="Sound"/>
+            <Time value="0.519000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAEnd_B"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,C"/>
+            <Name value="ZHBRConstruct@_StandWorkBStart"/>
+            <Type value="Sound"/>
+            <Time value="1.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkBStart"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,D"/>
+            <Name value="ZHBRConstruct@_StandWorkBEnd"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkBEnd"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,D"/>
+            <Name value="ZHBRConstruct@_StandWorkAStart_A"/>
+            <Type value="Sound"/>
+            <Time value="1.001000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAStart_A"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,D"/>
+            <Name value="ZHBRConstruct@_StandWorkAStart_B"/>
+            <Type value="Sound"/>
+            <Time value="1.476000"/>
+            <Payload value="ZHBRConstruct@_StandWorkAStart_B"/>
+        </Events>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <Radius value="1.000000"/>
+        <RadiusLoose value="3.000000"/>
+        <ScaleMax value="0.625000,0.625000,0.625000"/>
+        <ScaleMin value="0.625000,0.625000,0.625000"/>
+        <SelectionRadius value="1.500000"/>
+        <ShadowRadius value="1.500000"/>
+    </CModel>
+    <CModel id="ZHBRConstruct@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Units\Protoss\XelNaga_Construct_Sentinel_Portrait\XelNaga_Construct_Sentinel_Portrait.m3"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConstructWeaponAntiAir@AttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\ScoutAirMissileImpact\ScoutAirMissileImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConstructWeaponAntiAir@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ShadowCannonMissile\ShadowCannonMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRVespeneConcentrator@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+    </CModel>
+    <CModel id="ZHBRVespeneConcentrator@Death">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_EntropicBlast_Explosion\Xelnaga_Construct_EntropicBlast_Explosion.m3"/>
+        <AnimSpeed value="0.250000"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRVespeneConcentrator@Model" parent="NexusBase">
+        <Model value="assets\Buildings\ZHybrid\VespeneConcentrator\VespeneConcentrator.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <Radius value="1.000000"/>
+        <SelectionRadius value="1.700000"/>
+        <ShadowRadius value="1.700000"/>
+    </CModel>
+    <CModel id="ZHBRProjector@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRProjector@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+    </CModel>
+    <CModel id="ZHBRProjector@Model" parent="BuildingEx" Race="Protoss">
+        <Model value="assets\Buildings\ZHybrid\Projector\Projector.m3"/>
+        <AttachProps Id="Ref_Target 01">
+            <Keys index="Ground" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="0.800000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.352500"/>
+        <ShadowRadius value="1.352500"/>
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel id="ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR" parent="FX">
+        <Model value="Assets\Buildings\Resources\GasCube_HighYield\GasCube_HighYield.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRHarvesterRich@Model" parent="AssimilatorBase">
+        <Model value="assets\Buildings\ZHybrid\Harvester_HighYield\Harvester_HighYield.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.300000"/>
+    </CModel>
+    <CModel id="ZHBRHarvester@CarryHarvestableVespeneGeyserGasZHBR" parent="FX">
+        <Model value="Assets\Buildings\Resources\GasCube_EX3\GasCube_EX3.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRHarvesterRich@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+        <Model value="assets\Buildings\ZHybrid\Harvester_HighYield\Harvester_HighYield_Death.m3"/>
+        <AnimSpeed value="1.000000"/>
+    </CModel>
+    <CModel id="ZHBRHarvesterRich@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <Lighting value="ZHBRCommon@UnderConstructionDeath"/>
+    </CModel>
+    <CModel id="ZHBRHarvester@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <Lighting value="ZHBRCommon@UnderConstructionDeath"/>
+    </CModel>
+    <CModel id="ZHBRHarvester@Death">
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+        <Model value="assets\Buildings\ZHybrid\Harvester\Harvester_Death.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRHarvester@Model" parent="AssimilatorBase">
+        <Model value="assets\Buildings\ZHybrid\Harvester\Harvester.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.300000"/>
+    </CModel>
+    <CModel id="ZHBRStructureTeleport@Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_StasisWard\Glaze_StasisWard.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRIonicCrystal@MoveableModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\PurifyLaunch\PurifyLaunch.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="CloakedUndetectedIsHidden" value="1"/>
+    </CModel>
+    <CModel id="ZHBRIonicCrystal@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+    </CModel>
+    <CModel id="ZHBRIonicCrystal@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+    </CModel>
+    <CModel id="ZHBRIonicCrystal@HitTestSphere">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="2.500000,2.500000,5.000000"/>
+        <ScaleMin value="2.500000,2.500000,5.000000"/>
+    </CModel>
+    <CModel id="ZHBRIonicCrystal@Model" parent="BuildingEx" Race="Protoss">
+        <Model value="assets\Buildings\ZHybrid\IonicCrystal\IonicCrystal.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="0.552500,0.552500,0.552500"/>
+        <ScaleMin value="0.552500,0.552500,0.552500"/>
+        <SelectionOffset value="0.000000,0.000000,-0.650000"/>
+        <SelectionRadius value="1.376200"/>
+        <ShadowRadius value="1.176200"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionLayer value="0"/>
+    </CModel>
+    <CModel id="ZHBRStasisCell@Death" parent="ZHBRCommon@StructureDeathCommon">
+        <AnimSpeed value="0.500000"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+    </CModel>
+    <CModel id="ZHBRStasisCell@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+    </CModel>
+    <CModel id="ZHBRStasisCell@Model" parent="BuildingEx" Race="Protoss">
+        <Model value="assets\Buildings\ZHybrid\StasisCell\StasisCell.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SelectionRadius value="1.176200"/>
+        <ShadowRadius value="1.176200"/>
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel id="ZHBRVoidImmunity@Model">
+        <Model value="Assets\Effects\Protoss\StasisWardImpact\StasisWardImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AnimSpeed value="0.500000"/>
+    </CModel>
+    <CModel id="ZHBRTemple@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="ZHBRTemple@Death">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_EntropicBlast_Explosion\Xelnaga_Construct_EntropicBlast_Explosion.m3"/>
+        <AnimSpeed value="0.250000"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRTemple@Model" parent="NexusBase">
+        <Model value="assets\Buildings\ZHybrid\Temple\Temple.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+    </CModel>
+    <CModel id="ZHBRVoidForge@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+    </CModel>
+    <CModel id="ZHBRVoidForge@Death">
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_EntropicBlast_Explosion\Xelnaga_Construct_EntropicBlast_Explosion.m3"/>
+        <AnimSpeed value="0.250000"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRVoidForge@Model" parent="BuildingEx" Race="Protoss">
+        <Model value="assets\Buildings\ZHybrid\VoidForge\VoidForge.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.800000"/>
+        <ShadowRadius value="1.500000"/>
+        <Radius value="1.400000"/>
+    </CModel>
+    <CModel id="ZHBRVoidRift@DeathUnderConstruction">
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+        <Model value="Assets\Effects\Protoss\Zeratul_ShadowBlade_Impact\Zeratul_ShadowBlade_Impact.m3"/>
+        <AnimSpeed value="0.225000"/>
+    </CModel>
+    <CModel id="ZHBRVoidRift@Model" parent="BuildingEx">
+        <Model value="assets\Buildings\ZHybrid\Rift\Rift.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRMinionBuild@Death_A"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_B"/>
+            <Type value="Sound"/>
+            <Time value="0.816000"/>
+            <Payload value="ZHBRMinionBuild@Death_B"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_RockDebris"/>
+            <Type value="Sound"/>
+            <Time value="1.590000"/>
+            <Payload value="ZHBRMinionBuild@Death_RockDebris"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="RockExplosion_Large"/>
+            <Type value="Sound"/>
+            <Time value="1.533000"/>
+            <Payload value="ZHBRMinionBuild@RockExplosionLarge"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_Explosion"/>
+            <Type value="Sound"/>
+            <Time value="1.500000"/>
+            <Payload value="ZHBRMinionBuild@Death_Explosion"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_Electric"/>
+            <Type value="Sound"/>
+            <Time value="0.105000"/>
+            <Payload value="ZHBRMinionBuild@Death_Electric"/>
+        </Events>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="2.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <Radius value="1.300000"/>
+    </CModel>
+    <CModel id="ZHBRVoidRift@Death" parent="ZHBRVoidRift@Model">
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="VoidRift_Death_RockDebris"/>
+            <Type value="Sound"/>
+            <Time value="1.590000"/>
+            <Payload value="ZHBRMinionBuild@Death_RockDebris"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="VoidRift_RockExplosion_Large"/>
+            <Type value="Sound"/>
+            <Time value="1.533000"/>
+            <Payload value="ZHBRMinionBuild@RockExplosionLarge"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="VoidRift_Death_Explosion"/>
+            <Type value="Sound"/>
+            <Time value="1.500000"/>
+            <Payload value="ZHBRMinionBuild@Death_Explosion"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="VoidRift_Death_Electric"/>
+            <Type value="Sound"/>
+            <Time value="0.105000"/>
+            <Payload value="ZHBRMinionBuild@Death_Electric"/>
+        </Events>
+        <SelectionLayer value="0"/>
+        <AttachProps index="0" removed="1"/>
+        <SelectionRadius value="1.500000"/>
+        <Radius value="0.500000"/>
+        <RadiusLoose value="1.500000"/>
+        <ShadowRadius value="1.500000"/>
+    </CModel>
+    <CModel id="ZHBRVoidRiftTrain@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Other\Void_UnitSpawn_Missile\Void_UnitSpawn_Missile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRVoidRiftTrain@ModelBirth" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Other\Void_UnitSpawn_Impact\Void_UnitSpawn_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRChimera@Model" parent="Unit" Race="Zerg">
+        <Model value="assets\Units\ZHybrid\Chimera\Chimera.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid08"/>
+        <Radius value="0.600000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="0.571000"/>
+        <ShadowRadius value="0.571000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraMid08"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.800000"/>
+        <TipabilityWidth value="0.800000"/>
+        <UnitGlossaryCamera value="Star2CameraMid08"/>
+        <Events>
+            <Anim value="Attack,Cover,01"/>
+            <Name value="MeleeWeaponAttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+            <Payload value="ZHBRChimeraMeleeWeapon@AttackLaunchModel"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,Cover,01"/>
+            <Name value="MeleeWeaponAttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.250000"/>
+            <Payload value="ZHBRChimeraMeleeWeapon@AttackLaunchModel"/>
+        </Events>
+    </CModel>
+    <CModel id="ZHBRChimera@Death" parent="HydraliskDeathBase">
+        <Model value="Assets\Units\Zerg\HydraliskDeathEx1\HydraliskDeathEx1.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRChimera@Portrait" parent="HydraliskPortraitBase">
+        <Model value="assets\Portraits\ZHybrid\Chimera\Chimera.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <Lighting value="HydraliskPortrait"/>
+    </CModel>
+    <CModel id="ZHBRDominator@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.800000,1.800000,1.800000"/>
+        <ScaleMin value="1.800000,1.800000,1.800000"/>
+    </CModel>
+    <CModel id="ZHBRTimeWarp@Impact" parent="ImpactFX">
+        <Model value="assets\Effects\ZHybrid\TimeWarp_Impact\TimeWarp_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.000000"/>
+    </CModel>
+    <CModel id="ZHBRTimeWarp@Model" parent="PersistentSpellFX">
+        <Model value="assets\Effects\ZHybrid\TimeWarp\TimeWarp.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <RadiusLoose value="2.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRDominator@Model" parent="Unit" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\HybridProtoss\HybridProtoss.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigher08"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.111000"/>
+        <ShadowRadius value="1.111000"/>
+        <TechPurchaseCamera value="Star2CameraHigher08"/>
+        <UnitGlossaryCamera value="Star2CameraHigher08"/>
+    </CModel>
+    <CModel id="ZHBRDominatorAdvanced@Model" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\HybridProtossAdvanced\HybridProtossAdvanced.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigher08"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="1.111000"/>
+        <TechPurchaseCamera value="Star2CameraHigher08"/>
+        <UnitGlossaryCamera value="Star2CameraHigher08"/>
+    </CModel>
+    <CModel id="ZHBRDominatorAdvanced@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Hybrid_ProtossAdvanced_Death\Hybrid_ProtossAdvanced_Death.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+    </CModel>
+    <CModel id="ZHBRDominatorAdvanced@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\Hybrid_Protoss_Advanced_Portrait\Hybrid_Protoss_Advanced_Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRDominator@Portrait" parent="Portrait" Race="ZHBR">
+        <Model value="Assets\Portraits\Protoss\HybridProtossPortrait\HybridProtossPortrait.m3"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRDominatorWeapon@Beam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\HybridBeam\HybridBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRDominatorWeapon@AttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\ArchonBeamImpact\ArchonBeamImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRDominatorWeapon@AttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\HybridBeam\HybridBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConfusion@Beam">
+        <Model value="Assets\Effects\Protoss\DarkArchon_MindControl_Beam\DarkArchon_MindControl_Beam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRDreadnok@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\VorazunEx2Portrait\VorazunEx2Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <PortraitOffset value="-0.050000,0.000000,-0.550000"/>
+    </CModel>
+    <CModel id="ZHBRDreadnok@PortraitAddition" parent="FXAPortrait" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Dreadnok\Dreadnok.m3"/>
+        <RequiredAnims value="Assets\Units\Zerg\PrimalZerg_RequiredAnims\PrimalZerg_RequiredAnims.m3a"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRDreadnok@HitTestSphere">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ZHBRPsionicTornado@TargetImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Disintegration_State\Disintegration_State.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRPsionicTornado@Tornado" parent="OneShotSpellFX">
+        <Model value="Assets\COOP\Zeratul\Effects\EnergyTornado_Zeratul_COOP\EnergyTornado_Zeratul_COOP.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+    </CModel>
+    <CModel id="ZHBRDreadnokWeapon@Impact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Disintegration_Impact\Disintegration_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="ZHBRDreadnokWeapon@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Disintegration_Missile\Disintegration_Missile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="ZHBRDreadnok@Model" parent="Unit">
+        <Model value="assets\Units\ZHybrid\Dreadnok\Dreadnok.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Radius value="0.600000"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+        <SelectionRadius value="0.600000"/>
+    </CModel>
+    <CModel id="ZHBRDreadnok@Death" parent="UnitDeath">
+        <Model value="assets\Units\ZHybrid\Dreadnok\Dreadnok.m3"/>
+        <LowQualityModel value="ZergLargeUnitDeathLow"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+    </CModel>
+    <CModel id="ZHBRFlayer@Death" parent="ZealotDeathBase">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRFlayer@Model" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\Flayer\Flayer.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="0.600000"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+        <SelectionRadius value="0.571000"/>
+        <ShadowRadius value="0.571000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.800000"/>
+        <TipabilityWidth value="0.800000"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="AttackLaunchSound"/>
+            <Type value="Sound"/>
+            <Time value="0.314000"/>
+            <Payload value="ZHBRFlayerWeapon@Launch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="AttackLaunchSound"/>
+            <Type value="Sound"/>
+            <Time value="0.600000"/>
+            <Payload value="ZHBRFlayerWeapon@Launch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,02"/>
+            <Name value="AttackLaunchSound"/>
+            <Type value="Sound"/>
+            <Time value="0.515000"/>
+            <Payload value="ZHBRFlayerWeapon@Launch"/>
+        </Events>
+        <Events>
+            <Anim value="Spell"/>
+            <Name value="AttackLaunchSound"/>
+            <Type value="Sound"/>
+            <Time value="0.515000"/>
+            <Payload value="ZHBRFlayerWeapon@Launch"/>
+        </Events>
+        <Events>
+            <Anim value="Spell"/>
+            <Name value="AttackLaunchSound"/>
+            <Type value="Sound"/>
+            <Time value="0.625000"/>
+            <Payload value="ZHBRFlayerWeapon@Launch"/>
+        </Events>
+        <Events>
+            <Anim value="Spell"/>
+            <Name value="AttackLaunchSound"/>
+            <Type value="Sound"/>
+            <Time value="0.750000"/>
+            <Payload value="ZHBRFlayerWeapon@Launch"/>
+        </Events>
+        <Events>
+            <Anim value="Spell"/>
+            <Name value="AttackLaunchSound"/>
+            <Type value="Sound"/>
+            <Time value="0.935000"/>
+            <Payload value="ZHBRFlayerWeapon@Launch"/>
+        </Events>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+    </CModel>
+    <CModel id="ZHBRFlayer@Portrait" parent="ZerglingPortraitBase">
+        <Model value="assets\Portraits\ZHybrid\Flayer\Flayer.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <Lighting value="ZerglingPortrait"/>
+    </CModel>
+    <CModel id="ZHBRMinion@BuildBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Xelnaga_Construct_Beam_Chase\Xelnaga_Construct_Beam_Chase.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRMinionBuild@Build">
+        <Model value="assets\Buildings\ZHybrid\Rift_Static\Rift_Static.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <SelectionLayer value="2"/>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_A"/>
+            <Type value="Sound"/>
+            <Time value="0.001000"/>
+            <Payload value="ZHBRMinionBuild@Death_A"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_B"/>
+            <Type value="Sound"/>
+            <Time value="0.816000"/>
+            <Payload value="ZHBRMinionBuild@Death_B"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_RockDebris"/>
+            <Type value="Sound"/>
+            <Time value="1.590000"/>
+            <Payload value="ZHBRMinionBuild@Death_RockDebris"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="RockExplosion_Large"/>
+            <Type value="Sound"/>
+            <Time value="1.533000"/>
+            <Payload value="ZHBRMinionBuild@RockExplosionLarge"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_Explosion"/>
+            <Type value="Sound"/>
+            <Time value="1.500000"/>
+            <Payload value="ZHBRMinionBuild@Death_Explosion"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death_Electric"/>
+            <Type value="Sound"/>
+            <Time value="0.105000"/>
+            <Payload value="ZHBRMinionBuild@Death_Electric"/>
+        </Events>
+    </CModel>
+    <CModel id="ZHBRMinionBuild@BuildLow">
+        <Model value="Assets\Effects\Neutral\Aiur_VoidTendril_DeathGrip_BeamCage\Aiur_VoidTendril_DeathGrip_BeamCage.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="4.000000,4.000000,4.000000"/>
+        <ScaleMin value="4.000000,4.000000,4.000000"/>
+        <SelectionLayer value="2"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRMinionMorph@Model">
+        <Model value="Assets\COOP\Zeratul\Effects\DarkTemplar_Zeratul_COOP_StasisCacoon\DarkTemplar_Zeratul_COOP_StasisCacoon.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRMinionWeapon@AttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ProbeBeam\ProbeBeam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRMinionWeapon@AttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\ProbeImpact\ProbeImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRMinion@Model" parent="ProbeBase">
+        <Model value="assets\Units\ZHybrid\Minion\Minion.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <Radius value="0.400000"/>
+    </CModel>
+    <CModel id="ZHBRMinion@Death" parent="ProbeDeathBase">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRMinion@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\VorazunEx2Portrait\VorazunEx2Portrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <PortraitOffset value="-0.100000,-0.100000,-0.500000"/>
+    </CModel>
+    <CModel id="ZHBRMinion@PortraitAddition" parent="FXAPortrait" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Minion\Minion.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Download" value="1"/>
+        <PortraitOffset value="0.000000,0.000000,-1.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRConsumeDNA@ImpactArea">
+        <Model value="Assets\COOP\Zeratul\Effects\Disruptor_Zeratul_COOP_PurificationNova\Disruptor_Zeratul_COOP_PurificationNova.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRBehemoth@Model" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\HybridZerg\HybridZerg.m3"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+            <Payload value="ZHBRBehemothWeapon@AttackLaunch_Additive"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.200000"/>
+            <Payload value="ZHBRBehemothWeapon@AttackLaunch_Additive"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.390000"/>
+            <Payload value="ZHBRBehemoth@AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.530000"/>
+            <Payload value="ZHBRBehemoth@AttackImpact"/>
+        </Events>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigher16"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <TechPurchaseCamera value="Star2CameraHigher16"/>
+        <UnitGlossaryCamera value="Star2CameraHigher16"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRBehemoth@Death" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\HybridZergDeathEx1\HybridZergDeathEx1.m3"/>
+        <LowQualityModel value="ZergLargeUnitDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <SelectionRadius value="0.625000"/>
+        <ShadowRadius value="0.625000"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRConsumeDNA@Missile">
+        <Model value="Assets\Effects\Zerg\HybridConsumeMissile\HybridConsumeMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRBehemoth@Portrait" parent="Portrait" Race="ZHBR">
+        <Model value="Assets\Portraits\Zerg\HybridZergPortrait\HybridZergPortrait.m3"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRBehemothWeaponAntiAir@AttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\FungalGrowthMissileImpact\FungalGrowthMissileImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.450000,0.450000,0.450000"/>
+        <ScaleMin value="0.450000,0.450000,0.450000"/>
+    </CModel>
+    <CModel id="ZHBRBehemothWeaponAntiAir@AttackWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\SporeCannonMissile\SporeCannonMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRBehemothAdvanced@Portrait" parent="Portrait" Race="ZHBR">
+        <Model value="Assets\Portraits\Zerg\Hybrid_Zerg_Advanced_Portrait\Hybrid_Zerg_Advanced_Portrait.m3"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRBehemothAdvanced@Model" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\HybridZergAdvanced\HybridZergAdvanced.m3"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+            <Payload value="ZHBRBehemothAdvanced@AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.200000"/>
+            <Payload value="ZHBRBehemothAdvanced@AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.390000"/>
+            <Payload value="ZHBRBehemothAdvanced@AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="ZHBRSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.530000"/>
+            <Payload value="ZHBRBehemothAdvanced@AttackImpact"/>
+        </Events>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigher14"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <TechPurchaseCamera value="Star2CameraHigher14"/>
+        <UnitGlossaryCamera value="Star2CameraHigher14"/>
+    </CModel>
+    <CModel id="ZHBRBehemothAdvanced@Death" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\Hybrid_Zerg_Advanced_Death\Hybrid_Zerg_Advanced_Death.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="ZHBRSentinel@Portrait" parent="Portrait" Race="Zerg">
+        <Model value="assets\Portraits\ZHybrid\Sentinel\Sentinel.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="ZHBRSentinel@Death" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <SelectionRadius value="0.555400"/>
+        <ShadowRadius value="0.555400"/>
+    </CModel>
+    <CModel id="ZHBRSentinelJump@Stun" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Neutral\Stun_Void\Stun_Void.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRSentinelJump@LandDownModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\ReaperJumpLandDown\ReaperJumpLandDown.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <RadiusLoose value="0.500000"/>
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
+    </CModel>
+    <CModel id="ZHBRSentinelJump@JumpLaunchModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\ReaperJumpLaunch\ReaperJumpLaunch.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="0.350000"/>
+        <RadiusLoose value="0.350000"/>
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
+    </CModel>
+    <CModel id="ZHBRSentinel@Model" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\Sentinel\Sentinel.m3"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="AttackSoundWhoosh"/>
+            <Type value="Sound"/>
+            <Time value="0.400000"/>
+            <Payload value="ZHBRSentinelWeapon@Whoosh"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,01"/>
+            <Name value="AttackSoundWhoosh"/>
+            <Type value="Sound"/>
+            <Time value="0.400000"/>
+            <Payload value="ZHBRSentinelWeapon@Whoosh"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,02"/>
+            <Name value="AttackSoundWhoosh"/>
+            <Type value="Sound"/>
+            <Time value="0.400000"/>
+            <Payload value="ZHBRSentinelWeapon@Whoosh"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,03"/>
+            <Name value="AttackSoundWhoosh"/>
+            <Type value="Sound"/>
+            <Time value="0.400000"/>
+            <Payload value="ZHBRSentinelWeapon@Whoosh"/>
+        </Events>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="0.600000"/>
+        <SelectionRadius value="0.571000"/>
+        <ShadowRadius value="0.571000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.800000"/>
+        <TipabilityWidth value="0.800000"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+    </CModel>
+    <CModel id="ZHBRSentinelWeapon@AttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\DehakaAttackImpact\DehakaAttackImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRStriderWeapon@Impact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\DragoonMissileImpact\DragoonMissileImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRStriderWeapon@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhalanxMissile\PhalanxMissile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.200000,0.500000,0.200000"/>
+        <ScaleMin value="0.400000,0.600000,0.400000"/>
+    </CModel>
+    <CModel id="ZHBRStrider@Death" parent="ZealotDeathBase">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRStrider@Model" parent="Unit" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Strider\Strider.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="0.900000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="0.900000"/>
+        <ShadowRadius value="0.900000"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="ZHBRStrider@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="assets\Portraits\ZHybrid\Strider\Strider.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRWarbringerMaceStrike@Warning">
+        <Model value="Assets\Effects\Protoss\SOA_GroundTargetCursor\SOA_GroundTargetCursor.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRWarbringer@Portrait" parent="Portrait" Race="ZHBR">
+        <Model value="Assets\Portraits\Protoss\HybridProtossPortrait\HybridProtossPortrait.m3"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRWarbringerWeaponMaceStrike@AOEModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\SOA_OrbitalStrike_Impact_Karax\SOA_OrbitalStrike_Impact_Karax.m3"/>
+        <AnimSpeed value="1.400000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRWarbringerWeaponMaceStrike@LaunchModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\SOA_OrbitalStrike_Missile_Karax\SOA_OrbitalStrike_Missile_Karax.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AnimSpeed value="0.730000"/>
+    </CModel>
+    <CModel id="ZHBRWarbringerWeaponMaceCannon@Impact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Adept_Missile_Impact\Adept_Missile_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="1.800000,1.800000,1.800000"/>
+        <ScaleMin value="1.800000,1.800000,1.800000"/>
+    </CModel>
+    <CModel id="ZHBRWarbringerWeaponMaceCannon@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\DragoonEX2_Missile\DragoonEX2_Missile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.200000,3.000000,0.200000"/>
+        <ScaleMin value="0.200000,3.000000,0.200000"/>
+    </CModel>
+    <CModel id="ZHBRWarbringer@Model" parent="Unit" Race="ZHBR">
+        <Model value="assets\Units\ZHybrid\Warbringer\Warbringer.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigh05"/>
+        <SquibTypeDefault value="LightArmor"/>
+        <TechPurchaseCamera value="Star2CameraHigh05"/>
+        <UnitGlossaryCamera value="Star2CameraHigh05"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+    </CModel>
+    <CModel id="ZHBRWarbringer@Death" parent="HighTemplarDeathBase">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRWarrior@Model" parent="Unit" Race="Protoss">
+        <Model value="assets\Units\ZHybrid\Warrior\Warrior.m3"/>
+        <RequiredAnims value="Assets\Units\Protoss\Zealot_SwarmAnims\Zealot_SwarmAnims.m3a"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="0.375000"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <SelectionRadius value="0.416500"/>
+        <ShadowRadius value="0.416500"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="ZHBRWarrior@Death" parent="ZealotDeathBase">
+        <Model value="Assets\Effects\Protoss\ProtossSpiritDeath\ProtossSpiritDeath.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRWarrior@Portrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\HybridProtossPortrait\HybridProtossPortrait.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Image value="Assets\Textures\protossblankportrait_static.dds"/>
+    </CModel>
+    <CModel id="ZHBRChimeraRangedWeapon@Impact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Artanis_BasicAirAttack_Impact\Artanis_BasicAirAttack_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRChimeraRangedWeapon@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Artanis_BasicAirAttack_Missile\Artanis_BasicAirAttack_Missile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="ZHBRWarriorWeapon@Impact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\DragoonMissileImpact\DragoonMissileImpact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRWarriorWeapon@ImpactUpgraded" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_DestructionWave_Impact\Alarak_DestructionWave_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="ZHBRWarriorWeapon@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\DragoonEX2_Missile\DragoonEX2_Missile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRAmplifier@Model" parent="BuildingEx">
+        <Model value="assets\Buildings\ZHybrid\Amplifier\Amplifier.m3"/>
+        <AttachProps Id="Ref_Center" SquibType="Shield" RadiusShield="1.000000">
+            <Keys index="Shield" value="0"/>
+        </AttachProps>
+        <EditorCategories value="Race:ZHBR"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="1.500000"/>
+    </CModel>
+    <CModel id="ZHBRPsiOrb@Beam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_PsionicOrb_Beam\HighTemplarTaldarim_PsionicOrb_Beam.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <RadiusLoose value="1.000000"/>
+        <AnimSpeed value="5.000000"/>
+        <ScaleMax value="0.700000,1.000000,0.700000"/>
+        <ScaleMin value="0.700000,1.000000,0.700000"/>
+    </CModel>
+    <CModel id="ZHBRPsiOrb@Missile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_Sacrifice_Cast\HighTemplarTaldarim_Sacrifice_Cast.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="ZHBRPsiOrb@CursorSplat" parent="UI">
+        <Model value="Assets\UI\Cursors\ProtossCursor1\ProtossCursor1.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+        <SelectionRadius value="2.500000"/>
+        <ShadowRadius value="2.500000"/>
+    </CModel>
+    <CModel id="ZHBRPsiOrb@FinalImpactModel">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_PsionicOrb_Impact\HighTemplarTaldarim_PsionicOrb_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRConfusion@Marker">
+        <Model value="Assets\Effects\Protoss\DarkArchon_Confusion_State\DarkArchon_Confusion_State.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CModel>
+    <CModel id="ZHBRDeepTunnel@Burrow" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Zerg\ZagaraDeepBurrow\ZagaraDeepBurrow.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRDeepTunnel@Unburrow" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Zerg\ZagaraDeepUnBurrow\ZagaraDeepUnBurrow.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ZHBRStructureTeleport@TPModelLow">
+        <Model value="Assets\COOP\Zeratul\Effects\Stalker_Zeratul_COOP_AfterImage\Stalker_Zeratul_COOP_AfterImage.m3"/>
+        <AnimSpeed value="0.150000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="4.000000,4.000000,4.000000"/>
+        <ScaleMin value="4.000000,4.000000,4.000000"/>
+    </CModel>
+    <CModel id="ZHBRWarriorWeapon@MissileUpgraded" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_Attack_Beam_Strong_Impact\Alarak_Attack_Beam_Strong_Impact.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="2.200000,2.200000,2.200000"/>
+        <ScaleMin value="2.200000,2.200000,2.200000"/>
+    </CModel>
+    <CModel id="ZHBRFlayer@BerserkUpgraded" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_COOP_Sacrifice_Missile\Alarak_COOP_Sacrifice_Missile.m3"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+    </CModel>
+</Catalog>

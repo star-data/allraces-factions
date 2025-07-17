@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CCommander id="ZHBRCommon">
+        <Race value="ZHBR"/>
+        <ConsoleSkin value="ConsoleProtoss_Ihanrii"/>
+    </CCommander>
+</Catalog>

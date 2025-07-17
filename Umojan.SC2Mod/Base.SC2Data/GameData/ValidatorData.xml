@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorLocationEnumArea id="UmojanGroundEnemiesVERYNearby">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Compare="GT" Count="0" Radius="1.5"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="UmojanNoGroundEnemiesVERYNearby">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Radius="1.5"/>
+        <Compare value="Eq"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="UmojanIsNotStasisMine">
+        <Value value="UmojanStasisMine"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="UmojanIsStasisMineProtected">
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="UmojanStasisMineProtection"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="UmojanResearchPlasmaRecyclerResearched">
+        <Find value="1"/>
+        <Value value="LearnUmojanPlasmaRecycler"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorLocationComparePower id="UmojanTargetAreaIsPowered">
+        <ResultFailed value="CantLandLocationInvalid"/>
+        <PowerLink value="PowerSource"/>
+        <Compare value="GT"/>
+    </CValidatorLocationComparePower>
+    <CValidatorUnitOrderQueue id="UmojanTargetIsAttacking">
+        <AbilLink value="attack"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitType id="UmojanCasterIsEnergyBarricade">
+        <WhichUnit Value="Caster"/>
+        <Value value="UmojanEnergyBarricade"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="UmojanCasterIsNotEnergyBarricade">
+        <CombineArray value="UmojanCasterIsEnergyBarricade"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="UmojanStrikefoxMissileMaxDistance">
+        <ResultFailed value="TargetIsOutOfRange"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LT"/>
+        <Range value="10"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAttackTrackedByUnit">
+        <Compare value="GT"/>
+        <Behavior value="UmojanTransientAttackTrackerTarget"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="UmojanBattlecruiserTargetWithinWeaponRange">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="9.5"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareAttackPriority id="UmojanThreatensGround" parent="ThreatensUnit" unitLink="Hydralisk">
+        <AttackerAlternateType value="UmojanPathfinder"/>
+    </CValidatorUnitCompareAttackPriority>
+    <CValidatorUnitCompareBehaviorCount id="UmojanTyphonWeaponCounter4">
+        <WhichUnit Value="Caster"/>
+        <Value value="4"/>
+        <Behavior value="UmojanTyphonWeaponCounter"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="UmojanIsNotShieldCapable">
+        <Compare value="LT"/>
+        <Type value="Maximum"/>
+        <Value value="1"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitFilters id="UmojanCasterCloaked">
+        <ResultFailed value="CantTargetCloakedUnits"/>
+        <WhichUnit Value="Caster"/>
+        <Filters value="Cloaked;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareSpeed id="UmojanCasterIsNotMoving">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LE"/>
+        <Value value="0.1015"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitCompareBehaviorCount id="UmojanHasWeaponPowerAccumulatorBuff">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="UmojanWeaponPowerAccumulator"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="UmojanDistanceLessThan10">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LT"/>
+        <Range value="10"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorPlayerRequirement id="UmojanHasMarineWeaponUpgrade">
+        <WhichPlayer Value="Target"/>
+        <Find value="1"/>
+        <Value value="UmojanResearchWeaponPowerAccumulator"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitFilters id="UmojanIsHeroic">
+        <Filters value="HeroUnit;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="UmojanIsNotBlind">
+        <Behavior value="UmojanCommandoFlashGrenadeBlind"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanCasterisCloakingthearea">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="UmojanCloakField"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="UmojanIsShieldCapable">
+        <Compare value="GE"/>
+        <Type value="Maximum"/>
+        <Value value="1"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="UmojanTyphonWeaponCounter1">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="UmojanTyphonWeaponCounter"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanTyphonWeaponCounter2">
+        <WhichUnit Value="Caster"/>
+        <Value value="2"/>
+        <Behavior value="UmojanTyphonWeaponCounter"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanTyphonWeaponCounter3">
+        <WhichUnit Value="Caster"/>
+        <Value value="3"/>
+        <Behavior value="UmojanTyphonWeaponCounter"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorIsUnitTracked id="UmojanWhirlwindSpotter">
+        <Find value="1"/>
+        <BehaviorLink value="UmojanTrackerSpot"/>
+        <TrackedUnit Value="Target"/>
+    </CValidatorIsUnitTracked>
+    <CValidatorLocationEnumArea id="UmojanWhirlwindSpotterAtRange">
+        <AreaArray Radius="7" Validator="UmojanWhirlwindSpotter"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy,Missile,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="UmojanWhirlwindSpotterAtLongRange">
+        <AreaArray Radius="9" Validator="UmojanWhirlwindSpotter"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy,Missile,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="UmojanWhirlwindNightwishAtRange">
+        <AreaArray Radius="12" Validator="UmojanWhirlwindSpotter"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy,Missile,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="ZerojanDisguiseAsMarineWithoutShield">
+        <Type value="And"/>
+        <CombineArray value="ZerojanDisguiseAsMarine"/>
+        <CombineArray value="ZerojanMissingMarineShieldUpgrade"/>
+    </CValidatorCombine>
+    <CValidatorPlayerRequirement id="ZerojanMissingMarineShieldUpgrade">
+        <WhichPlayer Value="Target"/>
+        <Value value="UmojanResearchShieldWall"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareField id="ZerojanDisguiseAsMarine">
+        <Field value="Race"/>
+        <Value value="TerU"/>
+    </CValidatorUnitCompareField>
+    <CValidatorCombine id="ZerojanDisguiseAsMarineWithShield">
+        <Type value="And"/>
+        <CombineArray value="ZerojanDisguiseAsMarine"/>
+        <CombineArray value="UmojanHasMarineShieldUpgrade"/>
+    </CValidatorCombine>
+    <CValidatorPlayerRequirement id="UmojanHasMarineShieldUpgrade">
+        <WhichPlayer Value="Target"/>
+        <Find value="1"/>
+        <Value value="UmojanResearchShieldWall"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanNoMarineShield">
+        <Value value="UmojanResearchShieldWall"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorCombine id="UmojanAIBattelshipStasisValidTargets">
+        <Type value="And"/>
+        <CombineArray value="noMarkers"/>
+        <CombineArray value="NotStasis"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="UmojanAIAloeHostileSearch" parent="HostileSearch">
+        <AreaArray Radius="7"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="UmojanAIAloeNotBullyTest" parent="TacticalBurrowBullyTest">
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorLocationEnumArea id="UmojanAIBattleTankGroundHostileSearch" parent="HostileSearch">
+        <AreaArray Radius="15"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="UmojanAIBattleTankOnlyGroundEnemies">
+        <Type value="And"/>
+        <CombineArray value="UmojanAIBattleTankNoAirHostileSearch"/>
+        <CombineArray value="UmojanAIBattleTankGroundHostileSearch"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="UmojanAIBattleTankNoAirHostileSearch" parent="HostileSearch">
+        <AreaArray Radius="15"/>
+        <Compare value="LT"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="UmojanAIShadowguardValidatorTargetVita">
+        <CombineArray value="TargetLifeGE80"/>
+        <CombineArray value="TargetShieldsGE70"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanAIAloeTacticalSeige">
+        <Type value="And"/>
+        <CombineArray value="CasterNotForcedToMove"/>
+        <CombineArray value="CasterIdleOrAttacking"/>
+        <CombineArray value="UmojanAIAloeNotWantsToMoveOrEnemiesInRange"/>
+        <CombineArray value="UmojanAIAloeNotBullyTest"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanAIBattleTankTacticalUnsiege">
+        <CombineArray value="CasterForcedToMove"/>
+        <CombineArray value="UmojanAIBattleTankIdleAndShouldMove"/>
+        <CombineArray value="UmojanAIBattleTankOnlyGroundEnemies"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanAIAloeTacticalUnsiege">
+        <CombineArray value="CasterForcedToMove"/>
+        <CombineArray value="UmojanAIAloeIdleAndShouldMove"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanAIBattleTankIdleAndShouldMove">
+        <Type value="And"/>
+        <CombineArray value="CasterHasNoOrders"/>
+        <CombineArray value="AICasterWantsToMoveAndNotCombat"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="UmojanAIBattleTankNotBullyTest" parent="TacticalBurrowBullyTest">
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="UmojanAIBattleTankTacticalSeige">
+        <Type value="And"/>
+        <CombineArray value="CasterNotForcedToMove"/>
+        <CombineArray value="CasterIdleOrAttacking"/>
+        <CombineArray value="UmojanAIBattleTankAirHostileSearch"/>
+        <CombineArray value="UmojanAIBattleTankNotBullyTest"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanAIAloeIdleAndShouldMove">
+        <Type value="And"/>
+        <CombineArray value="CasterHasNoOrders"/>
+        <CombineArray value="AICasterWantsToMoveAndNotCombat"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanAIAloeNotWantsToMoveOrEnemiesInRange">
+        <CombineArray value="CasterNotWantsToMove"/>
+        <CombineArray value="UmojanAIAloeHostileSearch"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="UmojanAIBattleTankAirHostileSearch" parent="HostileSearch">
+        <AreaArray Radius="15"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="UmojanShadowguardNotLockdowned">
+        <Behavior value="UmojanLockdown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UmojanAIShadowguardValidatorTarget">
+        <Type value="And"/>
+        <CombineArray value="noMarkers"/>
+        <CombineArray value="UmojanShadowguardNotLockdowned"/>
+        <CombineArray value="UmojanAIShadowguardValidatorTargetVita"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeHaveActiveRecon">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="UmojanAloeSendReconActiveRecon"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeNoActiveRecon">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="UmojanAloeSendReconActiveRecon"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UmojanAloeSendReconCPValidator">
+        <Type value="And"/>
+        <CombineArray value="CasterAndTargetNotDead"/>
+        <CombineArray value="UmojanAloeHaveActiveRecon"/>
+        <CombineArray value="UmojanWhirlwindAtRange"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="UmojanWhirlwindAtRange">
+        <WhichLocation Effect="UmojanWhirlwindSendReconDummyCP"/>
+        <Compare value="LE"/>
+        <Range value="32.2"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="UmojanBattleshipCanShoot">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="UmojanHyperjumpInitialDelaySuppressWeapon"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UmojanBattleshipCanShootCombine">
+        <Type value="And"/>
+        <CombineArray value="UmojanBattleshipIsNotYamatoing"/>
+        <CombineArray value="CasterAndTargetNotDead"/>
+        <CombineArray value="UmojanBattleshipCanShoot"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareOrderCount id="UmojanParasiticBombBattleshipHyperjumping">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="UmojanHyperjump"/>
+    </CValidatorUnitCompareOrderCount>
+    <CValidatorPlayerRequirement id="UmojanResearchOverchargeGeneratorResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchOverchargeGenerator"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitState id="UmojanTargetIsDetector">
+        <Enabled value="1"/>
+        <State value="Detector"/>
+    </CValidatorUnitState>
+    <CValidatorCombine id="TargetNotTacticalJumping">
+        <CombineArray value="UmojanTargetTacticalJumping"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitOrderQueue id="UmojanTargetTacticalJumping">
+        <ResultFailed value="Error,Error/CantTargetBattlecruiserHyperjump"/>
+        <WhichUnit Value="Target"/>
+        <AbilLink value="UmojanHyperjump"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorCombine id="ParasiticBombValidatorSetB">
+        <CombineArray index="3" value="UmojanParasiticBombBattleshipHyperjumping"/>
+        <CombineArray value="ParasiticBombNotMassRecalling"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="UmojanCasterIsSpahi">
+        <WhichUnit Value="Caster"/>
+        <Value value="UmojanBattlecatSpahi"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="UmojanIsMassive">
+        <Filters value="Massive;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorCombine id="UmojanAloeHealAreaNotIsBeeingHealedAndMarker">
+        <Type value="And"/>
+        <CombineArray value="UmojanAloeHealAreaIsBeeingHealed"/>
+        <CombineArray value="UmojanNoMoreThanOneMarkers"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanAloeHealSoloInAreaAndMarker">
+        <Type value="And"/>
+        <CombineArray value="UmojanAloeHealSoloInArea"/>
+        <CombineArray value="noMarkers"/>
+    </CValidatorCombine>
+    <CValidatorUnitOrder id="UmojanAloeHealSoloAutocast">
+        <AbilLink value="UmojanAloeHealUnit"/>
+        <CmdFlags index="SetAutoCast" value="1"/>
+    </CValidatorUnitOrder>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeHealAreaNotIsBeeingHealed">
+        <Behavior value="UmojanAloeHealSoloIsBeeingHealed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeHealAreaIsBeeingHealed">
+        <Value value="1"/>
+        <Behavior value="UmojanAloeHealSoloIsBeeingHealed"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeHealSoloNotInArea">
+        <ResultFailed value="AlreadyTargeted"/>
+        <Behavior value="UmojanAloeHealSoloUnitInTheArea"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeHealSoloIsNotHealing">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="UmojanAloeHealSoloIsHealing"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeHealSoloInArea">
+        <Value value="1"/>
+        <Behavior value="UmojanAloeHealSoloUnitInTheArea"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="UmojanCasterat6units">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="6.2"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="UmojanBattlecatCouldShoot">
+        <CombineArray value="UmojanBattlecatStayAtRange"/>
+        <CombineArray value="UmojanBattlecatHoldingPosition"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanBattlecatHoldingPosition">
+        <CombineArray value="CasterNotHoldingPosition"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="UmojanBattlecatNotTooClose">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GT"/>
+        <Range value="0.3"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="UmojanIsMassiveOrStructure">
+        <CombineArray value="UmojanIsMassive"/>
+        <CombineArray value="IsStructure"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="UmojanCasterIsCuirassier">
+        <WhichUnit Value="Caster"/>
+        <Value value="UmojanBattlecatCuirassier"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="UmojanIsShadowguardCaster">
+        <WhichUnit Value="Caster"/>
+        <Value value="UmojanShadowguard"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="UmojanNotHoldingFire">
+        <Behavior value="GhostHoldFireB"/>
+        <WhichUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanBattlecatStayAtRange">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="UmojanBattlecatStayatRange"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="UmojanIsPretorian">
+        <Value value="UmojanMarine"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="UmojanBattleshipIsNotYamatoing">
+        <CombineArray value="UmojanBattleshipIsYamatoing"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitOrderQueue id="UmojanBattleshipIsYamatoing">
+        <AbilLink value="UmojanStasisGun"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitType id="UmojanIsPlasmabat">
+        <Value value="UmojanPlasmabat"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="UmojanIsShadowguard">
+        <Value value="UmojanShadowguard"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="UmojanNoDefensiveMatrix">
+        <Behavior value="UmojanDefensiveMatrix"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UmojanNotHoldingFireorShadowguard">
+        <CombineArray value="UmojanNotHoldingFire"/>
+        <CombineArray value="UmojanIsShadowguardCaster"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="UmojanAloeHealAreaNotInArea">
+        <ResultFailed value="AlreadyTargeted"/>
+        <Behavior value="UmojanAloeHealUnitInTheArea"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="UmojanResearchSecondaryHangarResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchSecondaryHangar"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchLockdownResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchLockdown"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareAttackPriority id="UmojanThreatensAir" parent="ThreatensUnit" unitLink="Hydralisk">
+        <AttackerAlternateType value="UmojanBattleship"/>
+    </CValidatorUnitCompareAttackPriority>
+    <CValidatorUnitCompareBehaviorCount id="UmojanUnitIsTrackedToBeAttacked">
+        <Compare value="GT"/>
+        <Behavior value="UmojanTransientAttackTrackerTarget"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerCompareType id="UmojanNotAIControlCaster">
+        <Compare value="NE"/>
+        <Value value="Computer"/>
+    </CValidatorPlayerCompareType>
+    <CValidatorLocationCompareRange id="UmojanCasterat5units">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="5.2"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitState id="UmojanCasterIsnotStased">
+        <WhichUnit Value="Caster"/>
+        <State value="InStasis"/>
+    </CValidatorUnitState>
+    <CValidatorPlayerRequirement id="UmojanResearchSelfGuidedMissileResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchSelfGuidedMissile"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchPersonalCloakingResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchPersonalCloaking"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchBlinkResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchBlink"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchStasisGunResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchStasisGunResearched"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchBattlelinkSystemResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchBattlelinkSystem"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchCloakingFieldResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchCloakingField"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchEngineeringSuitResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchEngineeringSuit"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchMobileTargetingResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchMobileTargeting"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="UmojanResearchStrikeMineReserveResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchStrikeMineReserve"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="UmojanShieldTransferNoReceive">
+        <Behavior value="UmojanShieldTransferGiver"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareDamageDealtTime id="UmojanCasterDealingDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="1.5"/>
+    </CValidatorUnitCompareDamageDealtTime>
+    <CValidatorUnitCompareDamageDealtTime id="UmojanCasterDealingDamageShort">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="1"/>
+    </CValidatorUnitCompareDamageDealtTime>
+    <CValidatorUnitCompareDamageDealtTime id="UmojanCasterNotDealingDamageShort">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Value value="0.1"/>
+    </CValidatorUnitCompareDamageDealtTime>
+    <CValidatorUnitCompareDamageDealtTime id="UmojanCasterNotDealingDamageLong">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Value value="3"/>
+    </CValidatorUnitCompareDamageDealtTime>
+    <CValidatorUnitCompareDamageDealtTime id="UmojanCasterNotDealingDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareDamageDealtTime>
+    <CValidatorLocationEnumArea id="UmojanDisruptionWebNoAllyNearby" parent="HostileSearch">
+        <AreaArray Radius="3" Validator="TargetCanAttack"/>
+        <Compare value="Eq"/>
+        <Count value="0"/>
+        <SearchFilters value="-;Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <WhichLocation Value="TargetPoint"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="UmojanDisruptionWebOnTarget">
+        <Compare value="GT"/>
+        <Behavior value="UmojanDisruptionWeb"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="UmojanNoEnemyNearTurret" parent="HostileSearch">
+        <AreaArray Radius="8"/>
+        <Compare value="Eq"/>
+        <Count value="0"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="UmojanEnergyBarricade">
+        <Value value="UmojanEnergyBarricade"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareField id="UmojanRequiresUmojan">
+        <ResultFailed value="MustTargetRace"/>
+        <Field value="Race"/>
+        <Value value="TerU"/>
+    </CValidatorUnitCompareField>
+    <CValidatorPlayerCompareType id="UmojanAIControlTarget">
+        <WhichPlayer Value="Target"/>
+        <Value value="Computer"/>
+    </CValidatorPlayerCompareType>
+    <CValidatorCombine id="UmojanGroundSensor">
+        <CombineArray value="UmojanGroundSensorUnburrowed"/>
+        <CombineArray value="UmojanGroundSensorBurrowed"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="UmojanGroundSensorProximityGS">
+        <AreaArray Radius="15" Validator="UmojanGroundSensor"/>
+        <Compare value="Eq"/>
+        <SearchFilters value="-;Neutral,Enemy,Dead,Hidden"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="UmojanGroundSensorProximityStru">
+        <AreaArray Radius="15"/>
+        <Compare value="Eq"/>
+        <SearchFilters value="Structure,Visible;Neutral,Enemy,Buried,Dead,Hidden"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="UmojanGroundSensorUnburrowed">
+        <Value value="UmojanGroundSensor"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="UmojanGroundSensorBurrowed">
+        <Value value="UmojanGroundSensorBurrowed"/>
+    </CValidatorUnitType>
+    <CValidatorLocationComparePower id="UmojanScienceFacilityInfantrySpecialisedRed">
+        <WhichLocation Value="CasterOuterUnitOrPoint"/>
+        <PowerSource value="UmojanScienceRed"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+    </CValidatorLocationComparePower>
+    <CValidatorLocationComparePower id="UmojanScienceFacilityVehicleSpecialisedBlue">
+        <WhichLocation Value="CasterOuterUnitOrPoint"/>
+        <PowerSource value="UmojanScienceBlue"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+    </CValidatorLocationComparePower>
+    <CValidatorLocationComparePower id="UmojanScienceFacilityStarshipSpecialisedGreen">
+        <WhichLocation Value="CasterOuterUnitOrPoint"/>
+        <PowerSource value="UmojanScienceGreen"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+    </CValidatorLocationComparePower>
+    <CValidatorUnitCompareVital id="UmojanShieldL3Quarter">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="LT"/>
+        <Type value="Fraction"/>
+        <Value value="0.75"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorCombine id="UmojanShieldTransferCombine">
+        <Type value="And"/>
+        <CombineArray value="UmojanShieldTransferMaxShield"/>
+        <CombineArray value="UmojanShieldTransferNoGiver"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="UmojanShieldTransferNoGiver">
+        <Behavior value="UmojanShieldTransferGiver"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="UmojanTargetShieldsGE25">
+        <Compare value="GE"/>
+        <Value value="25"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorPlayerCompareType id="UmojanAIControlCaster">
+        <Value value="Computer"/>
+    </CValidatorPlayerCompareType>
+    <CValidatorUnitCompareBehaviorCount id="UmojanIsStasisProtected">
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="UmojanStasisFieldProtection"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="UmojanMissileBarrageTargetCount">
+        <AreaArray Radius="5"/>
+        <Compare value="LT"/>
+        <Count value="5"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="UmojanMissileStrikeTargetCount">
+        <AreaArray Radius="0.8"/>
+        <Compare value="LT"/>
+        <Count value="1"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="UmojanMissileStrikeTargetCountSet">
+        <Type value="And"/>
+        <CombineArray value="UmojanMissileStrikeTargetCount"/>
+        <CombineArray value="UmojanAIControlCaster"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanMissileBarrageTargetCountSet">
+        <Type value="And"/>
+        <CombineArray value="UmojanMissileBarrageTargetCount"/>
+        <CombineArray value="UmojanAIControlCaster"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="UmojanMissileTooClose">
+        <ResultFailed value="TargetIsTooClose"/>
+        <Compare value="GT"/>
+        <Range value="5"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareDamageDealtTime id="UmojanCasterDealingDamageLong">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="3"/>
+    </CValidatorUnitCompareDamageDealtTime>
+    <CValidatorCombine id="UmojanCasterinBattle">
+        <CombineArray value="CasterInCombatLong"/>
+        <CombineArray value="UmojanCasterDealingDamageLong"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="UmojanStrikeMinePANIKTest">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="8"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="UmojanDisruptionWebNotOnTarget">
+        <Behavior value="UmojanDisruptionWeb"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="UmojanNotCrow">
+        <Value value="UmojanCrow"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="UmojanIsNotBeeningSabotaged">
+        <ResultFailed value="AlreadyTargeted"/>
+        <ResultNoUnit value="AlreadyTargeted"/>
+        <Behavior value="UmojanSabotageTarget"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanIsNotPlasmaBlastBurning">
+        <Behavior value="UmojanPlasmaBurn"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="UmojanNotMaxShield">
+        <ResultFailed value="TooMuchShields"/>
+        <Compare value="LT"/>
+        <Type value="Fraction"/>
+        <Value value="1"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitFilters id="UmojanTargetIsAllyorPlayerorNeutral">
+        <Filters value="-;Enemy"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="UmojanIsWarpSignature">
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="UmojanWarpSignatureKillOwner"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitComparePowerUserLevel id="UmojanPowerLevel1">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <ResultFailed value="Error,Texterror/PowerLevel1"/>
+    </CValidatorUnitComparePowerUserLevel>
+    <CValidatorUnitComparePowerUserLevel id="UmojanPowerLevel2">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="2"/>
+        <ResultFailed value="Error,Texterror/PowerLevel2"/>
+    </CValidatorUnitComparePowerUserLevel>
+    <CValidatorUnitComparePowerUserLevel id="UmojanPowerLevel3">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="3"/>
+        <ResultFailed value="Error,Texterror/PowerLevel3"/>
+    </CValidatorUnitComparePowerUserLevel>
+    <CValidatorCombine id="UmojanTacticalStimpack">
+        <Type value="And"/>
+        <CombineArray value="UmojanTacticalStimpackTestBuff"/>
+        <CombineArray value="CasterIsAttacking"/>
+        <CombineArray value="CasterNotInCombat"/>
+        <CombineArray value="TacticalStimpackHostiles"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="UmojanTacticalStimpackTestBuff">
+        <Behavior value="UmojanWeaponPowerAccumulator"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="UmojanShieldTransferMaxShield">
+        <WhichUnit Effect="UmojanShieldTransferSearchGiver"/>
+        <Compare value="LT"/>
+        <Type value="Fraction"/>
+        <Value value="1"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitComparePowerUserLevel id="UmojanPowerLevel0">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+    </CValidatorUnitComparePowerUserLevel>
+    <CValidatorPlayerRequirement id="UmojanResearchVigilantTurretResearched">
+        <Find value="1"/>
+        <Value value="UmojanResearchVigilantTurret"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorCombine id="UmojanResearchVigilantTurretNotResearched">
+        <CombineArray value="UmojanResearchVigilantTurretResearched"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UmojanWhirlwindAIStupidity">
+        <CombineArray value="UmojanNotAIControlCaster"/>
+        <CombineArray value="UmojanWhirlwindAIStupiditySearch"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="UmojanWhirlwindAIStupiditySearch">
+        <AreaArray Radius="6.5"/>
+        <Compare value="Eq"/>
+        <SearchFilters value="Ground,Visible;Neutral,Enemy,Missile,Stasis,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="UmojanWhirlwindWeaponLaunchMissileAlternate">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="UmojanWhirlwindWeaponLaunchMissileAlternate"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitOrder id="UmojanAloeHealAreaAutocast">
+        <AbilLink value="UmojanAloeHealArea"/>
+        <CmdFlags index="SetAutoCast" value="1"/>
+    </CValidatorUnitOrder>
+    <CValidatorUnitCompareMarkerCount id="UmojanNoMoreThanOneMarkers">
+        <ResultFailed value="AlreadyTargeted"/>
+        <Compare value="LE"/>
+    </CValidatorUnitCompareMarkerCount>
+    <CValidatorUnitCompareBehaviorCount id="UmojanCasterIsNotYoinked">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="YoinkTentacle"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationPlacement id="UmojanBattleshipPlacementCheck">
+        <Range value="3"/>
+        <Unit value="UmojanBattleship"/>
+    </CValidatorLocationPlacement>
+    <CValidatorUnitCompareAttackPriority id="UmojanAIUnitThreatensShadowguard" parent="UnitThreatens" unitLink="UmojanShadowguard">
+        <WhichUnit Value="Caster"/>
+        <Attacker Value="Target"/>
+    </CValidatorUnitCompareAttackPriority>
+</Catalog>

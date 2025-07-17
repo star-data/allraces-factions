@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Icon>
+        <Value>logo-small.png</Value>
+    </Icon>
+    <Dependencies>
+        <Value>bnet:Void (Mod)/0.0/999,file:Mods/Void.SC2Mod</Value>
+        <Value>bnet:[AR3] AllRaces-Assets/0.0/332433,file:ASSETS\AllRaces-Assets.SC2Mod</Value>
+    </Dependencies>
+    <Preload>
+        <Value>GameLink:Unit;ZHBRRaceControl</Value>
+        <Value>GameLink:Unit;ZHBRWarrior</Value>
+        <Value>GameLink:Unit;ZHBRMinion</Value>
+        <Value>GameLink:Unit;ZHBRSpirit</Value>
+        <Value>GameLink:Unit;ZHBRFlayer</Value>
+        <Value>GameLink:Unit;ZHBRSentinel</Value>
+        <Value>GameLink:Unit;ZHBRWarbringer</Value>
+        <Value>GameLink:Unit;ZHBRProteus</Value>
+        <Value>GameLink:Unit;ZHBRChimera</Value>
+        <Value>GameLink:Unit;ZHBRStrider</Value>
+        <Value>GameLink:Unit;ZHBRStriderCrawler</Value>
+        <Value>GameLink:Unit;ZHBRDreadnok</Value>
+        <Value>GameLink:Unit;ZHBRDominator</Value>
+        <Value>GameLink:Unit;ZHBRBehemoth</Value>
+        <Value>GameLink:Unit;ZHBREnergator</Value>
+        <Value>GameLink:Unit;ZHBRConductor</Value>
+        <Value>GameLink:Unit;ZHBRNavigator</Value>
+        <Value>GameLink:Unit;ZHBRPsyon</Value>
+        <Value>GameLink:Unit;ZHBRPollinator</Value>
+        <Value>GameLink:Unit;ZHBRShapeshifter</Value>
+        <Value>GameLink:Unit;ZHBRNemesis</Value>
+        <Value>GameLink:Unit;ZHBRTemple</Value>
+        <Value>GameLink:Unit;ZHBRHarvester</Value>
+        <Value>GameLink:Unit;ZHBRIonicCrystal</Value>
+        <Value>GameLink:Unit;ZHBRVoidRift</Value>
+        <Value>GameLink:Unit;ZHBRStasisCell</Value>
+        <Value>GameLink:Unit;ZHBRAmplifier</Value>
+        <Value>GameLink:Unit;ZHBRVespeneConcentrator</Value>
+        <Value>GameLink:Unit;ZHBRHoldingCell</Value>
+        <Value>GameLink:Unit;ZHBRConstruct@AntiAir</Value>
+        <Value>GameLink:Unit;ZHBRDeformer</Value>
+        <Value>GameLink:Unit;ZHBRCrypt</Value>
+        <Value>GameLink:Unit;ZHBRTomb</Value>
+        <Value>GameLink:Unit;ZHBRKeystone</Value>
+        <Value>GameLink:Unit;ZHBRProjector</Value>
+        <Value>GameLink:Unit;ZHBRCapsule</Value>
+        <Value>GameLink:Unit;ZHBRVoidForge</Value>
+    </Preload>
+</DocInfo>

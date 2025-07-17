@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTargetSortVital id="TSEnergyLargestFirst" parent="TSEnergy">
+        <Descending value="1"/>
+    </CTargetSortVital>
+    <CTargetSortBehaviorCount id="TSNetherShockCount">
+        <Behavior value="AuroraConduitNetherShock"/>
+    </CTargetSortBehaviorCount>
+    <CTargetSortBehaviorCount id="TSEmaciate">
+        <Behavior value="GrimGliderEmaciate"/>
+    </CTargetSortBehaviorCount>
+    <CTargetSortBehaviorDuration id="TSNetherShockDuration">
+        <Behavior value="AuroraConduitNetherShock"/>
+    </CTargetSortBehaviorDuration>
+    <CTargetSortVital id="TSShieldsLargestFirst" parent="TSShields">
+        <Descending value="1"/>
+    </CTargetSortVital>
+</Catalog>

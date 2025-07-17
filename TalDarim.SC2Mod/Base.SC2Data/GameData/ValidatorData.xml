@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorUnitCompareVital id="TalDarimCasterHasNoEnergy">
+        <WhichUnit Value="Caster"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorCombine id="TalDarimCasterHasEnergyOrEnergised">
+        <CombineArray value="CasterHasEnergy"/>
+        <CombineArray value="TalDarimCollectorIsEnergised"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimCollectorIsEnergised">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="TalDarimLocustEnergyChargedTemp"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimCasterisLocust">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimLocust"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimCustodesAnchoredbyCaster">
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="TalDarimCustodesAnchorLink"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TalDarimCustodesAnchoredbyCasterandBothNotDead">
+        <CombineArray value="TalDarimCustodesAnchoredbyCaster"/>
+        <CombineArray value="CasterAndTargetNotDead"/>
+        <Type value="And"/>
+    </CValidatorCombine>
+    <CValidatorPlayerRequirement id="TalDarimDeathCouncilChampionLearnedHegemony">
+        <Value value="TalDarimDeathCouncilChampionLearnedHegemony"/>
+        <Find value="1"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="TalDarimCyberneticKernelHavocLearnedCloakingModule">
+        <Value value="TalDarimCyberneticKernelHavocLearnedCloakingModule"/>
+        <Find value="1"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDestructiveHarvestedGas">
+        <Value value="1"/>
+        <Behavior value="TalDarimCynosureDestructiveHarvestGas"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDestructiveHarvestedMineral">
+        <Value value="1"/>
+        <Behavior value="TalDarimCynosureDestructiveHarvestMineral"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TalDarimDestructiveHarvestedAny">
+        <CombineArray value="TalDarimDestructiveHarvestedGas"/>
+        <CombineArray value="TalDarimDestructiveHarvestedMineral"/>
+    </CValidatorCombine>
+    <CValidatorPlayerRequirement id="TalDarimFleetLodestarOutriderLearnedGoliarPulseCrystal">
+        <Find value="1"/>
+        <Value value="TalDarimFleetLodestarOutriderLearnedGoliarPulseCrystal"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorLocationEnumArea id="TalDarimNoEnemiesNearbyAir">
+        <WhichLocation Value="CasterUnit"/>
+        <AreaArray Count="0" Radius="11"/>
+        <Compare value="Eq"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Air,Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimPrismaticTowerNotActivatedMono">
+        <IgnoreWhileChanneling value="1"/>
+        <ResultFailed value="Error,Error\TargetLock"/>
+        <Behavior value="TalDarimPrismaticTowerActivatedMono"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="TalDarimRangeCheckGE1">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GT"/>
+        <Range value="1"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimCasterHavenoActiveEntropicShield">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimSlayerEntropicShieldActive"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TalDarimCasterInCombat">
+        <CombineArray value="CasterInCombat"/>
+        <CombineArray value="CasterRecentlyDealtDamage"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TalDarimCasterisWarmistress">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimWarmistress"/>
+    </CValidatorUnitType>
+    <CValidatorLocationEnumArea id="TalDarimNearbySoulDrinkers">
+        <WhichLocation Value="CasterPoint"/>
+        <AreaArray Radius="8" Validator="TalDarimTargetisSoulDrinker"/>
+        <Compare value="GE"/>
+        <Count value="1"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Stasis,UnderConstruction,Hallucination"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimSoulLeechHigh">
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="TalDarimSoulDrinkerPriorityHigh"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimSoulLeechNotLow">
+        <Behavior value="TalDarimSoulDrinkerPriorityLow"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimSoulLeechLow">
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="TalDarimSoulDrinkerPriorityLow"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TalDarimTargetCustodesisDamaged">
+        <CombineArray value="TalDarimTargetDamagedat10"/>
+        <CombineArray value="TalDarimTargetisCustodes"/>
+        <Type value="And"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareVital id="TalDarimTargetDamagedat10">
+        <Compare value="LT"/>
+        <Type value="Fraction"/>
+        <Value value="0.9"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimTargetNotChargedMonitor">
+        <Behavior value="TalDarimMonitorDetonationCharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareChargeUsed id="TalDarimTargetNotFullofSoulsHavoc">
+        <WhichUnit Value="Target"/>
+        <ResultNoUnit value="MustTargetUnit"/>
+        <Compare value="GT"/>
+        <ChargeLink value="Abil/TalDarimHavocVoidShard"/>
+    </CValidatorUnitCompareChargeUsed>
+    <CValidatorCombine id="TalDarimTargetisBuiltCynosure">
+        <Type value="And"/>
+        <CombineArray value="TalDarimTargetisCynosure"/>
+        <CombineArray value="NotUnderConstruction"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TalDarimTargetisNotHavoc">
+        <Value value="TalDarimHavoc"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TalDarimTargetisNotHavocorNotFullofSoulsHavoc">
+        <CombineArray value="TalDarimTargetisNotHavoc"/>
+        <CombineArray value="TalDarimTargetNotFullofSoulsHavoc"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TalDarimTargetisPeristyle">
+        <Value value="TalDarimPeristyle"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TalDarimTargetisStructureorMechanical">
+        <CombineArray value="IsStructure"/>
+        <CombineArray value="IsMechanical"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TalDarimTargetisNotCustodes">
+        <Value value="TalDarimCustodes"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisCustodes">
+        <Value value="TalDarimCustodes"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TalDarimTargetisSoulDrinkerOrDamagedCustodes">
+        <CombineArray value="TalDarimTargetisSoulDrinker"/>
+        <CombineArray value="TalDarimTargetCustodesisDamaged"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimWarmistressHave4Souls">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="4"/>
+        <Behavior value="TalDarimWarmistressSoulsOvercharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimCustodesNotAnchored">
+        <Behavior value="TalDarimCustodesAnchorLink"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="TalDarimRangeCheckGE11">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GE"/>
+        <Range value="11"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="TalDarimRangeCheckGE9">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GE"/>
+        <Range value="9"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimCasterHaveSouls">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Categories index="PassiveMagic" value="1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="TalDarimRangeCheckLT10">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="10"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="TalDarimRangeCheckLT10andCasterNotDead">
+        <Type value="And"/>
+        <CombineArray value="TalDarimRangeCheckLT10"/>
+        <CombineArray value="CasterNotDead"/>
+    </CValidatorCombine>
+    <CValidatorUnitFilters id="TalDarimTargetisaHero">
+        <Filters value="Heroic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimTargetNotFullofSouls">
+        <Compare value="LT"/>
+        <Value value="5"/>
+        <Categories index="PassiveMagic" value="1"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimWarPrismNotFullBloodShield">
+        <Compare value="LT"/>
+        <Value value="25"/>
+        <Behavior value="TalDarimWarPrismBloodShield"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimTargetisWarPrism">
+        <Value value="TalDarimWarPrism"/>
+        <Type value="SelectAlias"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimCasterisWarPrism">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimWarPrism"/>
+        <Type value="SelectAlias"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimSupplicantHaveBloodShield">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimSupplicantBloodShield"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitState id="TalDarimCasterisHidden">
+        <WhichUnit Value="Caster"/>
+        <Enabled value="1"/>
+        <State value="Hidden"/>
+    </CValidatorUnitState>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimTargetisSoulDrinker">
+        <Value value="1"/>
+        <Behavior value="TalDarimSoulDrinker"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareCooldown id="TalDarimWarmistressCooldown">
+        <ResultNoUnit value="Cooldown"/>
+        <CooldownLink value="Abil/TalDarimWarmistressSoulsOvercharge"/>
+        <Ability value="TalDarimWarmistressSoulsOvercharge"/>
+    </CValidatorUnitCompareCooldown>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimWarmistressDontHave4Souls">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="4"/>
+        <Behavior value="TalDarimWarmistressSoulsOvercharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareField id="ZerDarimDisguiseAsSupplicant">
+        <Field value="Race"/>
+        <Value value="PrTD"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitType id="TalDarimCasterisAscendant">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimAscendant"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimCasterisVanguard">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimVanguard"/>
+    </CValidatorUnitType>
+    <CValidatorUnitState id="TalDarimNotUnselectable">
+        <State value="Unselectable"/>
+    </CValidatorUnitState>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimPrismaticTowerActivatedMono">
+        <IgnoreWhileChanneling value="1"/>
+        <ResultFailed value="Error,Error\TargetLock"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimPrismaticTowerActivatedMono"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimPrismaticTowerActivatedMulti">
+        <IgnoreWhileChanneling value="1"/>
+        <ResultFailed value="Error,Error\TargetLock"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimPrismaticTowerActivatedBouncer"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitOrderQueue id="TalDarimTargetisNotAttacking">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="attack"/>
+        <Find value="0"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitFilters id="TalDarimCasterNotInvulnerable">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorCombine id="TalDarimTargetisNotPlayerPrismaticTower">
+        <CombineArray value="TalDarimTargetisPrismaticTower"/>
+        <CombineArray value="TargetIsPlayer"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TalDarimTargetisPlayerPrismaticTower">
+        <Type value="And"/>
+        <CombineArray value="TalDarimTargetisPrismaticTower"/>
+        <CombineArray value="TargetIsPlayer"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TalDarimTargetisPrismaticTower">
+        <Value value="TalDarimPrismaticTower"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimSlayerNoShieldShard">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimSlayerEntropicShieldCharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="TalDarimIsAir">
+        <Filters value="Air;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorLocationEnumArea id="TalDarimNearbySaccrifiable">
+        <WhichLocation Value="CasterUnit"/>
+        <AreaArray Radius="8" Validator="TalDarimTargetisSacrifiable"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Stasis,Hallucination,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="TalDarimTargetisParticleCannon">
+        <Value value="TalDarimParticleCannon"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimTerrazineFogTestBuff">
+        <Behavior value="TalDarimCustodesTerrazineFog"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimCasterisCustodes">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimCustodes"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimIsVoidShard">
+        <Value value="1"/>
+        <Behavior value="TalDarimHavocVoidShard"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimCasterisMonitor">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimMonitor"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimCasterisHavoc">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimHavoc"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDeathStarTracked">
+        <Value value="1"/>
+        <Behavior value="TalDarimDeathStarTrack"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDeathStarNotFull">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="5"/>
+        <Behavior value="TalDarimDeathStarDeathCharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="TalDarimEnemiesNearbyAny">
+        <AreaArray Compare="GT" Count="1" Radius="10"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="TalDarimMonitorTargetisStructureorAir">
+        <CombineArray value="TalDarimIsAir"/>
+        <CombineArray value="IsStructure"/>
+        <ResultFailed value="CantTargetGroundUnits"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareSpeed id="TalDarimTargetisStationary"/>
+    <CValidatorUnitType id="TalDarimCasterisDeathStar">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimDeathStar"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisHavoc">
+        <Value value="TalDarimHavoc"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisDeathStar">
+        <Value value="TalDarimDeathStar"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDeathStarNotTracked">
+        <Behavior value="TalDarimDeathStarTrack"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDestroyerIsTracked">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="TalDarimDeathStarTrack"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimTargetisDestroyer">
+        <Value value="TalDarimDestroyer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitOrder id="TalDarimDestroyerBeamAutoCast">
+        <AbilLink value="TalDarimDestroyerMultiTargetBoost"/>
+        <CmdFlags index="SetAutoCast" value="1"/>
+        <CmdFlags index="SetAutoCastOn" value="1"/>
+        <CheckStateOnly value="1"/>
+    </CValidatorUnitOrder>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDestroyerCasterHaveBloodCharge">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimDestroyerBloodCharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimCasterisDestroyer">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimDestroyer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDestroyerMultiTargetBoost">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="TalDarimDestroyerBloodSeeker"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TalDarimAIRiddlerSoulLeech">
+        <Type value="And"/>
+        <CombineArray value="TalDarimAIRiddlerSoulLeechCount"/>
+        <CombineArray value="TalDarimEnemiesNearbyAir"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TalDarimCasterisWrathwalker">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimWrathwalker"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDreadnoughtBeetlesNotArmed">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimDreadnoughtBeetlesArmed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="TalDarimEnemiesNearbyAir">
+        <AreaArray Compare="GT" Count="1" Radius="10"/>
+        <SearchFilters value="Air,Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimNotEnshrouded">
+        <Behavior value="TalDarimRiddlerEnshrouded"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TalDarimAISupplicantSoulLeech">
+        <Type value="And"/>
+        <CombineArray value="CasterLifeLT60Percent"/>
+        <CombineArray value="CasterInCombat"/>
+    </CValidatorCombine>
+    <CValidatorUnitFilters id="TalDarimCasterNotStasis">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Stasis"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="TalDarimCasterStunned">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Stunned"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitType id="TalDarimCasterisSupplicant">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimSupplicant"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TalDarimHavocTargetLockValidTarget">
+        <CombineArray value="TalDarimHavocTargetLockCombineAtMax"/>
+        <CombineArray value="TalDarimHavocTargetLockCombineNotAtMax"/>
+    </CValidatorCombine>
+    <CValidatorCompareTrackedUnitsCount id="TalDarimHavocTargetLockIsatMax">
+        <ResultFailed value="Error,Error\TooManyLockTargets"/>
+        <Value value="3"/>
+        <BehaviorLink value="TalDarimHavocTargetLockTrack"/>
+        <TrackedUnitFilters value="-;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorCompareTrackedUnitsCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimBloodHunterTargetNoSoulShard">
+        <Behavior value="TalDarimBloodHunterSoulShard"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimBloodHunterCasterSoulShard">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimBloodHunterSoulShardCharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimCasterisBloodHunter">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimBloodHunter"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimCasterisRiddler">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimRiddler"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TalDarimHavocTargetLockCombineAtMax">
+        <Type value="And"/>
+        <CombineArray value="TalDarimHavocTargetLockIsatMax"/>
+        <CombineArray value="TalDarimHavocTargetLockIsLocked"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TalDarimHavocTargetLockCombineNotAtMax">
+        <Type value="And"/>
+        <CombineArray value="CasterNotMaxTargetLocks"/>
+        <CombineArray value="TalDarimHavocTargetLockNotLocked"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimHavocTargetLockIsLocked">
+        <ResultFailed value="Error,Error\TargetLock"/>
+        <Value value="1"/>
+        <Behavior value="TalDarimHavocTargetLocked"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimAIRiddlerSoulLeechCount">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="3"/>
+        <Behavior value="TalDarimRiddlerHarmonization"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimCasterisPariah">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimPariah"/>
+    </CValidatorUnitType>
+    <CValidatorUnitState id="TalDarimNotUntargetable">
+        <State value="Untargetable"/>
+    </CValidatorUnitState>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimWrathwalkerHaveAdditionnalAmmos">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimWrathwalkerSoulsWeapon"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimTargetisRiddler">
+        <Value value="TalDarimRiddler"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisBloodHunter">
+        <Value value="TalDarimBloodHunter"/>
+    </CValidatorUnitType>
+    <CValidatorLocationEnumArea id="TalDarimEnemiesNearbyGround">
+        <AreaArray Compare="GT" Count="1" Radius="10"/>
+        <SearchFilters value="Ground,Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimBloodHunterVoidStased">
+        <Compare value="GT"/>
+        <Behavior value="TalDarimBloodHunterVoidStasis"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCompareTrackedUnitsCount id="TalDarimReliquaryNotAt3">
+        <Compare value="LT"/>
+        <Value value="3"/>
+        <BehaviorLink value="TalDarimReliquaryTracking"/>
+        <TrackerUnit Value="Target"/>
+    </CValidatorCompareTrackedUnitsCount>
+    <CValidatorCompareTrackedUnitsCount id="TalDarimReliquaryNotAt2">
+        <Compare value="LT"/>
+        <Value value="2"/>
+        <BehaviorLink value="TalDarimReliquaryTracking"/>
+        <TrackerUnit Value="Source"/>
+    </CValidatorCompareTrackedUnitsCount>
+    <CValidatorLocationEnumArea id="TalDarimRiddlerPlasmaBombTargetInRange">
+        <ResultFailed value="CantFindEnoughTargets"/>
+        <WhichLocation Value="SourceUnit"/>
+        <AreaArray>
+            <Compare value="GE"/>
+            <Count value="1"/>
+            <Radius value="2"/>
+            <Validator value="TalDarimRiddlerPlasmaBombValidators"/>
+        </AreaArray>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="Air,Visible;Player,Ally,Neutral,Structure,Missile,Dead,Hidden"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="TalDarimRiddlerPlasmaBombValidators">
+        <Type value="And"/>
+        <CombineArray value="IsNotPhasedUnit"/>
+        <CombineArray value="TargetNotUntargetable"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="TalDarimCynosureNearbyCynosure">
+        <LaunchLocation Value="TargetPoint"/>
+        <AreaArray>
+            <Compare value="GE"/>
+            <Count value="1"/>
+            <Radius value="8"/>
+            <Validator value="TalDarimTargetisBuiltCynosure"/>
+        </AreaArray>
+        <SearchFilters value="Structure,Visible;Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <ResultFailed value="TargetIsOutOfRange"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareField id="TalDarimIsResourceTypeMineral">
+        <Field value="ResourceType"/>
+        <Value value="Mineral"/>
+        <ResultNoUnit value="MustTargetResources"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimOutriderHaveAdditionnalAmmos">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimOutriderSoulsWeapon"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TalDarimCasterisChampion">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimChampion"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisCynosure">
+        <Value value="TalDarimCynosure"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisDreadnought">
+        <Value value="TalDarimDreadnought"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimCasterisDreadnought">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimDreadnought"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimCasterisOutrider">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimOutrider"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TalDarimTargetisSacrifiable">
+        <CombineArray value="TalDarimTargetisLitany"/>
+        <CombineArray value="TalDarimTargetisSupplicant"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TalDarimTargetisChampion">
+        <Value value="TalDarimChampion"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisOutrider">
+        <Value value="TalDarimOutrider"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimCasterisSlayer">
+        <WhichUnit Value="Caster"/>
+        <Value value="TalDarimSlayer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisPariah">
+        <Value value="TalDarimPariah"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisSupplicant">
+        <Value value="TalDarimSupplicant"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisSlayer">
+        <Value value="TalDarimSlayer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareField id="TalDarimIsResourceTypeVespene">
+        <Field value="ResourceType"/>
+        <Value value="Vespene"/>
+        <ResultNoUnit value="MustTargetResources"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareResourceContents id="TalDarimHasRessource">
+        <ResultFailed value="CantBuildOnThat"/>
+        <ResultNoUnit value="CantHarvestThatResource"/>
+        <Compare value="GT"/>
+    </CValidatorUnitCompareResourceContents>
+    <CValidatorUnitType id="TalDarimTargetisLitany">
+        <Value value="TalDarimLitany"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TalDarimTargetisReliquary">
+        <Value value="TalDarimReliquaryofSouls"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimHavocTargetLockNotLocked">
+        <ResultFailed value="Error,Error\TargetLock"/>
+        <Behavior value="TalDarimHavocTargetLocked"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCompareTrackedUnitsCount id="CasterNotMaxTargetLocks">
+        <ResultFailed value="Error,Error\TooManyLockTargets"/>
+        <Compare value="LT"/>
+        <Value value="3"/>
+        <BehaviorLink value="TalDarimHavocTargetLockTrack"/>
+        <TrackedUnitFilters value="-;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorCompareTrackedUnitsCount>
+    <CValidatorCombine id="TalDarimHavocTargetLockCombine">
+        <Type value="And"/>
+        <CombineArray value="CasterNotDead"/>
+        <CombineArray value="CasterNotStunned"/>
+        <CombineArray value="TargetNotDead"/>
+        <CombineArray value="TalDarimHavocTargetLockRange"/>
+        <CombineArray value="HiddenCompareAB"/>
+        <CombineArray value="HiddenCompareBA"/>
+        <CombineArray value="NotInvulnerable"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="TalDarimHavocTargetLockRange">
+        <ResultFailed value="TargetIsOutOfRange"/>
+        <WhichLocation Value="CasterUnit"/>
+        <Compare value="LT"/>
+        <Range value="10"/>
+        <Value Value="TargetUnit"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="TalDarimDreadnoughtBeetlesArmed">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TalDarimDreadnoughtBeetlesArmed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="TalDarimTargetisNotPlayer">
+        <Filters value="-;Player"/>
+    </CValidatorUnitFilters>
+</Catalog>

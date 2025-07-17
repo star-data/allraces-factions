@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CUpgrade default="1" id="SCBW_Upgrade">
+  <Icon value="##icon##"/>
+  <Flags index="IgnoreInvalidReferenceInTemplate" value="1"/>
+  <DataCollection value="##parent##"/>
+  <WebPriority value="0"/>
+  <?token id="icon" value="Assets\Textures\blank.dds" type="CImageLink"?>
+</CUpgrade>
+<CUpgrade default="1" id="SCBW_LeveledWeaponUpgrade" parent="SCBW_Upgrade">
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,Level" Value="1"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^Weapon@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^Weapon@DamageExpl,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^Weapon@DamageConc,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"/>
+  <EffectArrayTemplate Reference="Accumulator,^ParamId^Weapon@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^Weapon,Icon" Value="##icon##"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponGround,Level" Value="1"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponGround@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponGround@DamageExpl,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponGround@DamageConc,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"/>
+  <EffectArrayTemplate Reference="Accumulator,^ParamId^WeaponGround@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^WeaponGround,Icon" Value="##icon##"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAir,Level" Value="1"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponAir@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponAir@DamageExpl,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponAir@DamageConc,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.5}"/>
+  <EffectArrayTemplate Reference="Accumulator,^ParamId^WeaponAir@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^WeaponAir,Icon" Value="##icon##"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAlt,Level" Value="1"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponAlt@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponAlt@DamageExpl,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^WeaponAlt@DamageConc,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.5}"/>
+  <EffectArrayTemplate Reference="Accumulator,^ParamId^WeaponAlt@Damage,Amount" Value="{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^WeaponAlt,Icon" Value="##icon##"/>
+</CUpgrade>
+<CUpgrade default="1" id="SCBW_Research">
+  <EffectArray Operation="Set" Reference="Unit,SCBW_DummyUpgradeTarget,SubgroupPriorityDelta" Value="0"/>
+  <Flags index="TechTreeCheat" value="1"/>
+  <Flags index="IgnoreInvalidReferenceInTemplate" value="1"/>
+  <Alert value="ResearchComplete"/>
+  <DataCollection value="##id##"/>
+</CUpgrade>
+<CUpgrade default="1" id="SCBW_SpeedUpgrade" parent="SCBW_Research">
+  <EffectArrayTemplate Operation="Multiply" Reference="Unit,^ParamId^,Speed" Value="1.5"/>
+</CUpgrade>
+<CUpgrade default="1" id="SCBW_EnergyUpgrade" parent="SCBW_Research">
+  <EffectArrayTemplate Reference="Unit,^ParamId^,EnergyStart" Value="12"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,EnergyMax" Value="50"/>
+</CUpgrade>
+<CUpgrade default="1" id="ProtossAirArmorsSCBW" parent="SCBW_Upgrade">
+  <Race value="BWPr"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+  <LeaderAlias value="##parent##"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+</CUpgrade>
+<CUpgrade default="1" id="ProtossAirWeaponsSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <Race value="BWPr"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon@Dummy,Level" Value="1"/>
+  <EditorCategories value="Race:Protoss,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="ProtossGroundArmorsSCBW" parent="SCBW_Upgrade">
+  <Race value="BWPr"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="ProtossGroundWeaponsSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Protoss,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="ProtossShieldsSCBW" parent="SCBW_Upgrade">
+  <Race value="BWPr"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,ShieldArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Protoss,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="TerranInfantryWeaponsSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <InfoTooltipPriority value="61"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="TerranInfantryArmorsSCBW" parent="SCBW_Upgrade">
+  <Race value="BWTe"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="TerranVehicleWeaponsSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="TerranVehiclePlatingSCBW" parent="SCBW_Upgrade">
+  <Race value="BWTe"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="TerranShipWeaponsSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="50"/>
+  <BonusResourcePerLevel index="Vespene" value="50"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="TerranShipPlatingSCBW" parent="SCBW_Upgrade">
+  <Race value="BWTe"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="MechPlating" parent="SCBW_Upgrade">
+  <Race value="BWTe"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArray Operation="Set" Reference="Actor,DropshipSCBW,LifeArmorIcon" Value="##otherIcon##"/>
+  <EffectArray Operation="Set" Reference="Actor,WraithSCBW,LifeArmorIcon" Value="##otherIcon##"/>
+  <EffectArray Operation="Set" Reference="Actor,ValkyrieSCBW,LifeArmorIcon" Value="##otherIcon##"/>
+  <EffectArray Operation="Set" Reference="Actor,ScienceVesselSCBW,LifeArmorIcon" Value="##otherIcon##"/>
+  <EffectArray Operation="Set" Reference="Actor,BattlecruiserSCBW,LifeArmorIcon" Value="##otherIcon##"/>
+  <EffectArray Operation="Set" Reference="Actor,VultureSCBW,LifeArmorIcon" Value="##icon##"/>
+  <EffectArray Operation="Set" Reference="Actor,SiegeTankSCBW,LifeArmorIcon" Value="##icon##"/>
+  <EffectArray Operation="Set" Reference="Actor,SiegeTankSCBWSieged,LifeArmorIcon" Value="##icon##"/>
+  <EffectArray Operation="Set" Reference="Actor,GoliathSCBW,LifeArmorIcon" Value="##icon##"/>
+  <EffectArray Operation="Set" Reference="Actor,StingerSCBW,LifeArmorIcon" Value="##icon##"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+  <?token id="icon" value="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel0.dds" type="CImageLink"?>
+  <?token id="otherIcon" value="Assets\Textures\btn-upgrade-terran-shipplatinglevel0.dds" type="CImageLink"?>
+</CUpgrade>
+<CUpgrade default="1" id="ZergFlyerAttacksSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="ZergFlyerCarapaceSCBW" parent="SCBW_Upgrade">
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="ZergGroundCarapaceSCBW" parent="SCBW_Upgrade">
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreCount value="ArmorTechnologyCount"/>
+  <ScoreValue value="ArmorTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+  <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="##icon##"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:ArmorBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="ZergMeleeAttacksSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade default="1" id="ZergMissileAttacksSCBW" parent="SCBW_LeveledWeaponUpgrade">
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreCount value="WeaponTechnologyCount"/>
+  <ScoreValue value="WeaponTechnologyValue"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:AttackBonus"/>
+  <BonusResourcePerLevel index="Minerals" value="75"/>
+  <BonusResourcePerLevel index="Vespene" value="75"/>
+  <LeaderAlias value="##parent##"/>
+</CUpgrade>
+<CUpgrade id="GatewaySCBWResonantMatrixResearch">
+  <Flags index="UpgradeCheat" value="0"/>
+  <Icon value="Assets\Textures\btn-ability-spearofadun-chronomancy.dds"/>
+  <Race value="BWPr"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="GatewaySCBW"/>
+  <ScoreAmount value="400"/>
+  <ScoreResult value="BuildOrder"/>
+</CUpgrade>
+<CUpgrade id="ArbiterSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-adeptshieldupgrade.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="ArbiterSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="ArbiterSCBWRecallResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-recall.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <AffectedUnitArray value="ArbiterSCBW"/>
+</CUpgrade>
+<CUpgrade id="ArbiterSCBWStasisFieldResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-stasisfield.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <AffectedUnitArray value="ArbiterSCBW"/>
+</CUpgrade>
+<CUpgrade id="CarrierSCBWHangarIncreaseUpgrade" parent="SCBW_Research">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-gravitoncatapult.dds"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="400"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Operation="Set" Reference="Abil,^ParamId^Hangar,MaxCount" Value="8"/>
+  <EffectArrayTemplate Operation="Set" Reference="Abil,^ParamId^Hangar,InfoArray[Ammo1].Button.Requirements" Value="CarrierSCBWHangar@ArmUpgrade"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="CarrierSCBW"/>
+</CUpgrade>
+<CUpgrade id="CorsairSCBWDisruptionWebResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-disruptionweb.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <AffectedUnitArray value="CorsairSCBW"/>
+</CUpgrade>
+<CUpgrade id="CorsairSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-ability-protoss-stasistrap.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="CorsairSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="DarkArchonSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-argustalisman@scbw.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="DarkArchonSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="DarkArchonSCBWFeedbackResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-archonfeedback@scbw.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <Flags index="TechTreeCheat" value="0"/>
+  <Flags index="UpgradeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="DarkArchonSCBWMaelstromResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <AffectedUnitArray value="DarkArchonSCBW"/>
+</CUpgrade>
+<CUpgrade id="DarkArchonSCBWMindControlResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-mindcontrol.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="399"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <AffectedUnitArray value="DarkArchonSCBW"/>
+</CUpgrade>
+<CUpgrade id="DragoonSCBWRangeUpgrade" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-artanis-singularitycharge.dds"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,Range" Value="2"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,MinScanRange" Value="2"/>
+  <EffectArrayTemplate index="0" Value="1"/>
+  <EffectArrayTemplate index="1" Value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="DragoonSCBW"/>
+</CUpgrade>
+<CUpgrade id="HighTemplarSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-khaydarinamulet.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="HighTemplarSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="HighTemplarSCBWHallucinationResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-hallucination-color.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <AffectedUnitArray value="HighTemplarSCBW"/>
+</CUpgrade>
+<CUpgrade id="HighTemplarSCBWPsiStormResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Protoss"/>
+  <AffectedUnitArray value="HighTemplarSCBW"/>
+</CUpgrade>
+<CUpgrade id="ObserverSCBWSightUpgrade" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zeratul-observer-sensorarray.dds"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,Sight" Value="2"/>
+  <EffectArrayTemplate Reference="Behavior,^ParamId^@Detector,Modification.Detect" Value="2"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="ObserverSCBW"/>
+  <AffectedUnitArray value="ObserverSCBWSieged"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+</CUpgrade>
+<CUpgrade id="ObserverSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="ObserverSCBW"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,Acceleration" Value="1.0625"/>
+</CUpgrade>
+<CUpgrade id="ProtossAirArmorsSCBW@Lvl1" parent="ProtossAirArmorsSCBW" icon="Assets\Textures\btn-upgrade-protoss-airarmorlevel1.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ProtossAirArmorsSCBW@Lvl2" parent="ProtossAirArmorsSCBW" icon="Assets\Textures\btn-upgrade-protoss-airarmorlevel2.dds">
+  <ScoreAmount value="450"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ProtossAirArmorsSCBW@Lvl3" parent="ProtossAirArmorsSCBW" icon="Assets\Textures\btn-upgrade-protoss-airarmorlevel3.dds">
+  <ScoreAmount value="600"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ProtossAirWeaponsSCBW@Lvl1" parent="ProtossAirWeaponsSCBW" icon="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds">
+  <LeaderLevel value="1"/>
+  <ScoreAmount value="200"/>
+</CUpgrade>
+<CUpgrade id="ProtossAirWeaponsSCBW@Lvl2" parent="ProtossAirWeaponsSCBW" icon="Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds">
+  <ScoreAmount value="350"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ProtossAirWeaponsSCBW@Lvl3" parent="ProtossAirWeaponsSCBW" icon="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds">
+  <ScoreAmount value="500"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ProtossGroundArmorsSCBW@Lvl1" parent="ProtossGroundArmorsSCBW" icon="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds">
+  <ScoreAmount value="200"/>
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ProtossGroundArmorsSCBW@Lvl2" parent="ProtossGroundArmorsSCBW" icon="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ProtossGroundArmorsSCBW@Lvl3" parent="ProtossGroundArmorsSCBW" icon="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ProtossGroundWeaponsSCBW@Lvl1" parent="ProtossGroundWeaponsSCBW" icon="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ProtossGroundWeaponsSCBW@Lvl2" parent="ProtossGroundWeaponsSCBW" icon="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ProtossGroundWeaponsSCBW@Lvl3" parent="ProtossGroundWeaponsSCBW" icon="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ProtossShieldsSCBW@Lvl1" parent="ProtossShieldsSCBW" icon="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ProtossShieldsSCBW@Lvl2" parent="ProtossShieldsSCBW" icon="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ProtossShieldsSCBW@Lvl3" parent="ProtossShieldsSCBW" icon="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds">
+  <ScoreAmount value="500"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ReaverSCBWHangarIncreaseUpgrade" parent="SCBW_Research">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-increasedscarabcapacity@scbw.dds"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Operation="Set" Reference="Abil,^ParamId^Hangar,MaxCount" Value="10"/>
+  <EffectArrayTemplate Operation="Set" Reference="Abil,^ParamId^Hangar,InfoArray[Ammo1].Button.Requirements" Value="ReaverSCBWHangar@ArmUpgrade"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="ReaverSCBW"/>
+</CUpgrade>
+<CUpgrade id="ScarabSCBWWeaponDamageUpgrade" parent="SCBW_Research">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="250"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^Weapon@Damage,Amount" Value="25"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^Weapon@DamageFallback,Amount" Value="25"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^Weapon@Damage,ShieldBonus" Value="30"/>
+  <EffectArrayTemplate Reference="Effect,^ParamId^Weapon@DamageFallback,ShieldBonus" Value="30"/>
+  <EditorCategories value="UpgradeType:AttackBonus,Race:Protoss"/>
+  <AffectedUnitArray value="ReaverSCBW"/>
+</CUpgrade>
+<CUpgrade id="ReaverSCBWWeaponRangeUpgrade" parent="SCBW_Research">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="400"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,Range" Value="2"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,MinScanRange" Value="2"/>
+  <EditorCategories value="UpgradeType:AttackBonus,Race:Protoss"/>
+  <AffectedUnitArray value="ReaverSCBW"/>
+  <Flags index="TechTreeCheat" value="0"/>
+  <Flags index="UpgradeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="ScarabSCBWWeaponDamageUpgrade@Dummy" parent="SCBW_Research">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
+  <EditorCategories value="UpgradeType:AttackBonus,Race:Protoss"/>
+  <DataCollection value="ScarabSCBWWeaponDamageUpgrade"/>
+  <Flags index="TechTreeCheat" value="0"/>
+  <Flags index="UpgradeCheat" value="0"/>
+  <Race value="BWPr"/>
+</CUpgrade>
+<CUpgrade id="ScoutSCBWSightUpgrade" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-apialsensors@scbw.dds"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,Sight" Value="2"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <AffectedUnitArray value="ScoutSCBW"/>
+</CUpgrade>
+<CUpgrade id="ScoutSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <EffectArrayTemplate index="0" Operation="Multiply" Reference="Unit,^ParamId^,Speed" Value="1.33"/>
+  <EffectArrayTemplate index="0" Value="1.25"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="ScoutSCBW"/>
+</CUpgrade>
+<CUpgrade id="ShuttleSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-graviticdrive.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:Talents,Race:Protoss"/>
+  <AffectedUnitArray value="ShuttleSCBW"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,Acceleration" Value="0.75"/>
+</CUpgrade>
+<CUpgrade id="ZealotSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+  <Race value="BWPr"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+  <AffectedUnitArray value="ZealotSCBW"/>
+  <EffectArrayTemplate index="0" Operation="Add" Value="1.4"/>
+</CUpgrade>
+<CUpgrade id="BattlecruiserSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="BattlecruiserSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="BattlecruiserSCBWYamatoResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-mengsk-battlecruiser-yamatocannon.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="BattlecruiserSCBW"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWCloakResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-nova-tacticalstealthsuit.dds"/>
+  <Race value="BWTe"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <ScoreAmount value="200"/>
+  <AffectedUnitArray value="GhostSCBW"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-terran-moebiusreactor.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="GhostSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWHoldFireResearch" parent="SCBW_Research">
+  <Race value="BWTe"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWLockdownResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-abilty-terran-lockdown@scbw.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="GhostSCBW"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWSightUpgrade" parent="SCBW_Research">
+  <EffectArrayTemplate Reference="Unit,^ParamId^,Sight" Value="2"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-ocularimplants@scbw.dds"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <Race value="BWTe"/>
+  <AffectedUnitArray value="GhostSCBW"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWWeaponsFreeResearch" parent="SCBW_Research">
+  <Race value="BWTe"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="GoliathSCBWRangeUpgrade" parent="SCBW_Research">
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAir,Range" Value="3"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAir,MinScanRange" Value="3"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAir@Fake,Range" Value="3"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAir@Fake,MinScanRange" Value="3"/>
+  <EffectArrayTemplate index="0" Value="2"/>
+  <EffectArrayTemplate index="1" Value="2"/>
+  <EffectArrayTemplate index="2" Value="2"/>
+  <EffectArrayTemplate index="3" Value="2"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-magfieldaccelerator.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="GoliathSCBW"/>
+</CUpgrade>
+<CUpgrade id="MarineSCBWRangeUpgrade" parent="SCBW_Research">
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,Range" Value="1"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,MinScanRange" Value="1"/>
+  <Icon value="Assets\Textures\btn-tips-terran-penetrator.dds"/>
+  <AffectedUnitArray value="MarineSCBW"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <EffectArray Operation="Set" Reference="Actor,MarineSCBW,Wireframe.Image[0]" Value="Assets\Textures\wireframe-terran-marine-upgraded@scbw.dds"/>
+  <EffectArray Operation="Set" Reference="Actor,MarineSCBW,UnitIcon" Value="Assets\Textures\btn-unit-terran-marine-upgraded@scbw.dds"/>
+  <EffectArray Operation="Set" Reference="Actor,MarineSCBW,HeroIcon" Value="Assets\Textures\btn-unit-terran-marine-upgraded@scbw.dds"/>
+  <EffectArray Operation="Set" Reference="Actor,MarineSCBW,GroupIcon.Image[0]" Value="Assets\Textures\wireframe-terran-marine-upgraded@scbw.dds"/>
+  <EffectArray Operation="Set" Reference="Button,MarineSCBW,Icon" Value="Assets\Textures\btn-unit-terran-marine-upgraded@scbw.dds"/>
+  <EffectArray Operation="Set" Reference="Button,MarineSCBW,AlertIcon" Value="Assets\Textures\btn-unit-terran-marine-upgraded@scbw.dds"/>
+</CUpgrade>
+<CUpgrade id="MedicSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="MedicSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="ScienceVesselSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-terran-corvidreactor.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="ScienceVesselSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="SiegeModeSCBWResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-terran-nova-siegetankrange.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="SiegeTankSCBW"/>
+</CUpgrade>
+<CUpgrade id="StimpackSCBWResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <Race value="BWTe"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="MarineSCBW"/>
+  <AffectedUnitArray value="FirebatSCBW"/>
+</CUpgrade>
+<CUpgrade id="MedicSCBWHealResearch" parent="SCBW_Research">
+  <Race value="BWTe"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+</CUpgrade>
+<CUpgrade id="MedicSCBWOpticFlareResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="MedicSCBW"/>
+</CUpgrade>
+<CUpgrade id="MedicSCBWRestorationResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-terran-restoration@scbw.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="MedicSCBW"/>
+</CUpgrade>
+<CUpgrade id="ScienceVesselSCBWDefensiveMatrixResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-swann-defensivematrix.dds"/>
+  <Race value="BWTe"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <ScoreAmount value="300"/>
+</CUpgrade>
+<CUpgrade id="ScienceVesselSCBWEMPShockwaveResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-mengsk-ghost-staticempblast.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="400"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="ScienceVesselSCBW"/>
+</CUpgrade>
+<CUpgrade id="ScienceVesselSCBWIrradiateResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-swann-irradiate.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="ScienceVesselSCBW"/>
+</CUpgrade>
+<CUpgrade id="VulturePlaceSpiderMineSCBWResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-siegetank-spidermines.dds"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="UpgradeType:SpellResearch,Race:Terran"/>
+  <AffectedUnitArray value="VultureSCBW"/>
+  <Race value="BWTe"/>
+</CUpgrade>
+<CUpgrade id="VultureSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <Icon value="Assets\Textures\btn-ability-terran-emergencythrusters.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="VultureSCBW"/>
+</CUpgrade>
+<CUpgrade id="WraithSCBWCloakResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-nova-tacticalstealthsuit.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="WraithSCBW"/>
+</CUpgrade>
+<CUpgrade id="TerranInfantryArmorsSCBW@Lvl1" parent="TerranInfantryArmorsSCBW" icon="Assets\Textures\btn-upgrade-terran-infantryarmorlevel1.dds">
+  <ScoreAmount value="200"/>
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="TerranInfantryArmorsSCBW@Lvl2" parent="TerranInfantryArmorsSCBW" icon="Assets\Textures\btn-upgrade-terran-infantryarmorlevel2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="TerranInfantryArmorsSCBW@Lvl3" parent="TerranInfantryArmorsSCBW" icon="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="TerranInfantryWeaponsSCBW@Lvl1" parent="TerranInfantryWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-infantryweaponslevel1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="TerranInfantryWeaponsSCBW@Lvl2" parent="TerranInfantryWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="TerranInfantryWeaponsSCBW@Lvl3" parent="TerranInfantryWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="TerranShipPlatingSCBW@Lvl1" parent="TerranShipPlatingSCBW" icon="Assets\Textures\btn-upgrade-terran-shipplatinglevel1.dds">
+  <ScoreAmount value="200"/>
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="TerranShipPlatingSCBW@Lvl2" parent="TerranShipPlatingSCBW" icon="Assets\Textures\btn-upgrade-terran-shipplatinglevel2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="TerranShipPlatingSCBW@Lvl3" parent="TerranShipPlatingSCBW" icon="Assets\Textures\btn-upgrade-terran-shipplatinglevel3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="TerranShipWeaponsSCBW@Lvl1" parent="TerranShipWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-shipweaponslevel1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="TerranShipWeaponsSCBW@Lvl2" parent="TerranShipWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="TerranShipWeaponsSCBW@Lvl3" parent="TerranShipWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-shipweaponslevel3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="TerranVehiclePlatingSCBW@Lvl1" parent="TerranVehiclePlatingSCBW" icon="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel1.dds">
+  <ScoreAmount value="200"/>
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="TerranVehiclePlatingSCBW@Lvl2" parent="TerranVehiclePlatingSCBW" icon="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel2.dds">
+  <ScoreAmount value="350"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="TerranVehiclePlatingSCBW@Lvl3" parent="TerranVehiclePlatingSCBW" icon="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel3.dds">
+  <ScoreAmount value="500"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="TerranVehicleWeaponsSCBW@Lvl1" parent="TerranVehicleWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="TerranVehicleWeaponsSCBW@Lvl2" parent="TerranVehicleWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds">
+  <ScoreAmount value="350"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="TerranVehicleWeaponsSCBW@Lvl3" parent="TerranVehicleWeaponsSCBW" icon="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds">
+  <ScoreAmount value="500"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="WraithSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-ability-terran-redlinereactor.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="WraithSCBW"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="DropshipSCBWSpeedBoostResearch" parent="SCBW_Research">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="DropshipSCBW"/>
+  <Flags index="UpgradeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="MechPlating@Lvl1" parent="MechPlating" otherIcon="Assets\Textures\btn-upgrade-terran-shipplatinglevel1.dds" icon="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel1.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="MechPlating@Lvl2" parent="MechPlating" otherIcon="Assets\Textures\btn-upgrade-terran-shipplatinglevel2.dds" icon="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel2.dds">
+  <ScoreAmount value="450"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="MechPlating@Lvl3" parent="MechPlating" otherIcon="Assets\Textures\btn-upgrade-terran-shipplatinglevel3.dds" icon="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel3.dds">
+  <ScoreAmount value="600"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="WraithSCBWCloak@Upgrade">
+  <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+  <Alert value="ResearchComplete"/>
+  <Race value="Terr"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="WraithSCBW"/>
+</CUpgrade>
+<CUpgrade id="FirebatSCBWStimpack" parent="Research">
+  <Icon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+  <Race value="Terr"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="FirebatSCBW"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWLockdown@Upgrade">
+  <Icon value="Assets\Textures\btn-ability-nova-domination.dds"/>
+  <Alert value="ResearchComplete"/>
+  <Race value="Terr"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="GhostSCBW"/>
+</CUpgrade>
+<CUpgrade id="GhostSCBWCloak@Upgrade">
+  <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+  <Alert value="ResearchComplete"/>
+  <Race value="Terr"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="GhostSCBW"/>
+</CUpgrade>
+<CUpgrade id="MarineSCBWStimpack" parent="Research">
+  <Icon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+  <Race value="Terr"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Terran,UpgradeType:SpellResearch"/>
+  <AffectedUnitArray value="MarineSCBW"/>
+</CUpgrade>
+<CUpgrade id="DefilerSCBWConsumeResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
+  <AffectedUnitArray value="DefilerSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:SpellResearch"/>
+</CUpgrade>
+<CUpgrade id="DefilerSCBWDarkSwarmResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zerg-darkswarm.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:SpellResearch"/>
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="DefilerSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-tissueassimilation.dds"/>
+  <AffectedUnitArray value="DefilerSCBW"/>
+  <AffectedUnitArray value="DefilerSCBW@Burrowed"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="DefilerSCBWPlagueResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zerg-defilerplague.dds"/>
+  <AffectedUnitArray value="DefilerSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:SpellResearch"/>
+</CUpgrade>
+<CUpgrade id="HydraliskSCBWRangeUpgrade" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-groovedspines.dds"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,Range" Value="1"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,MinScanRange" Value="1"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAlt,Range" Value="1"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^WeaponAlt,MinScanRange" Value="1"/>
+  <AffectedUnitArray value="HydraliskSCBW"/>
+  <AffectedUnitArray value="HydraliskSCBW@Burrowed"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+</CUpgrade>
+<CUpgrade id="HydraliskSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-muscularaugments.dds"/>
+  <AffectedUnitArray value="HydraliskSCBW"/>
+  <AffectedUnitArray value="HydraliskSCBW@Burrowed"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+</CUpgrade>
+<CUpgrade id="LurkerSCBWResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-unit-zerg-lurker@scbw.dds"/>
+  <AffectedUnitArray value="HydraliskSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+</CUpgrade>
+<CUpgrade id="OverlordSCBWSightUpgrade" parent="SCBW_Research">
+  <EffectArrayTemplate Reference="Unit,^ParamId^,Sight" Value="2"/>
+  <EffectArrayTemplate Reference="Behavior,^ParamId^@Detector,Modification.Detect" Value="2"/>
+  <EffectArrayTemplate index="0" Value="3"/>
+  <EffectArrayTemplate index="1" Value="3"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+  <Icon value="Assets\Textures\btn-ability-zerg-overlord-oversight-off.dds"/>
+  <AffectedUnitArray value="OverlordSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="100"/>
+  <ScoreResult value="BuildOrder"/>
+</CUpgrade>
+<CUpgrade id="OverlordSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-pneumatizedcarapace.dds"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate index="0" Operation="Multiply" Reference="Unit,^ParamId^,Speed" Value="5"/>
+  <EffectArrayTemplate index="0" Operation="Set" Value="2.38"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+  <AffectedUnitArray value="OverlordSCBW"/>
+</CUpgrade>
+<CUpgrade id="OverlordSCBWTransportResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-ventralsacs.dds"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+  <AffectedUnitArray value="OverlordSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+</CUpgrade>
+<CUpgrade id="QueenSCBWEnergyUpgrade" parent="SCBW_EnergyUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-pathogenglands.dds"/>
+  <AffectedUnitArray value="QueenSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+  <EffectArrayTemplate index="0" Value="25"/>
+</CUpgrade>
+<CUpgrade id="QueenSCBWEnsnareResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zerg-fungalgrowth-color.dds"/>
+  <AffectedUnitArray value="QueenSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:SpellResearch"/>
+</CUpgrade>
+<CUpgrade id="QueenSCBWParasiteResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:SpellResearch"/>
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="QueenSCBWSpawnBroodlingsResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zerg-swarmseeds-color.dds"/>
+  <AffectedUnitArray value="QueenSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:SpellResearch"/>
+</CUpgrade>
+<CUpgrade id="UltraliskSCBWArmorUpgrade" parent="SCBW_Research">
+  <InfoTooltipPriority value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-chitinousplating.dds"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="2"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:ArmorBonus"/>
+  <AffectedUnitArray value="UltraliskSCBW"/>
+  <AffectedUnitArray value="UltraliskSCBW@Burrowed"/>
+</CUpgrade>
+<CUpgrade id="UltraliskSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-anabolicsynthesis.dds"/>
+  <AffectedUnitArray value="UltraliskSCBW"/>
+  <AffectedUnitArray value="UltraliskSCBW@Burrowed"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+</CUpgrade>
+<CUpgrade id="ZergFlyerAttacksSCBW@Lvl1" parent="ZergFlyerAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ZergFlyerAttacksSCBW@Lvl2" parent="ZergFlyerAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds">
+  <ScoreAmount value="350"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ZergFlyerAttacksSCBW@Lvl3" parent="ZergFlyerAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds">
+  <ScoreAmount value="500"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ZergFlyerCarapaceSCBW@Lvl1" parent="ZergFlyerCarapaceSCBW" icon="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds">
+  <LeaderLevel value="1"/>
+  <ScoreAmount value="200"/>
+</CUpgrade>
+<CUpgrade id="ZergFlyerCarapaceSCBW@Lvl2" parent="ZergFlyerCarapaceSCBW" icon="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds">
+  <ScoreAmount value="350"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ZergFlyerCarapaceSCBW@Lvl3" parent="ZergFlyerCarapaceSCBW" icon="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds">
+  <ScoreAmount value="500"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ZergGroundCarapaceSCBW@Lvl1" parent="ZergGroundCarapaceSCBW" icon="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ZergGroundCarapaceSCBW@Lvl2" parent="ZergGroundCarapaceSCBW" icon="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ZergGroundCarapaceSCBW@Lvl3" parent="ZergGroundCarapaceSCBW" icon="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds">
+  <ScoreAmount value="500"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ZergMeleeAttacksSCBW@Lvl1" parent="ZergMeleeAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ZergMeleeAttacksSCBW@Lvl2" parent="ZergMeleeAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ZergMeleeAttacksSCBW@Lvl3" parent="ZergMeleeAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ZergMissileAttacksSCBW@Lvl1" parent="ZergMissileAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds">
+  <LeaderLevel value="1"/>
+</CUpgrade>
+<CUpgrade id="ZergMissileAttacksSCBW@Lvl2" parent="ZergMissileAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds">
+  <ScoreAmount value="300"/>
+  <LeaderLevel value="2"/>
+</CUpgrade>
+<CUpgrade id="ZergMissileAttacksSCBW@Lvl3" parent="ZergMissileAttacksSCBW" icon="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds">
+  <ScoreAmount value="400"/>
+  <LeaderLevel value="3"/>
+</CUpgrade>
+<CUpgrade id="ZergSCBWBurrowResearch" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-zerg-burrow-color.dds"/>
+  <AffectedUnitArray value="DroneSCBW"/>
+  <AffectedUnitArray value="ZerglingSCBW"/>
+  <AffectedUnitArray value="HydraliskSCBW"/>
+  <AffectedUnitArray value="DefilerSCBW"/>
+  <AffectedUnitArray value="InfestedTerranSCBW"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+</CUpgrade>
+<CUpgrade id="ZerglingSCBWAttackSpeedUpgrade" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
+  <EffectArrayTemplate Reference="Weapon,^ParamId^Weapon,RateMultiplier" Value="0.33"/>
+  <EffectArrayTemplate index="0" Value="0.4483"/>
+  <AffectedUnitArray value="ZerglingSCBW"/>
+  <AffectedUnitArray value="ZerglingSCBW@Burrowed"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="400"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+</CUpgrade>
+<CUpgrade id="ZerglingSCBWSpeedUpgrade" parent="SCBW_SpeedUpgrade">
+  <Icon value="Assets\Textures\btn-upgrade-zerg-hotsmetabolicboost.dds"/>
+  <AffectedUnitArray value="ZerglingSCBW"/>
+  <AffectedUnitArray value="ZerglingSCBW@Burrowed"/>
+  <InfoTooltipPriority value="1"/>
+  <Race value="BWZe"/>
+  <ScoreAmount value="200"/>
+  <ScoreResult value="BuildOrder"/>
+  <EditorCategories value="Race:Zerg,UpgradeType:Talents"/>
+</CUpgrade>
+<CUpgrade id="StingerSCBWAttackMoveUpgrade" parent="SCBW_Research">
+  <Icon value="Assets\Textures\btn-ability-mengsk-siegetank-flyingtankarmament.dds"/>
+  <Race value="BWTe"/>
+  <ScoreAmount value="300"/>
+  <ScoreResult value="BuildOrder"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^Weapon,Options[OnlyFireAtAttackOrderTarget]" Value="0"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^Weapon,Options[OnlyFireWhileInAttackOrder]" Value="0"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^Weapon,AllowedMovement" Value="Moving"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^Weapon@Air,Options[OnlyFireAtAttackOrderTarget]" Value="0"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^Weapon@Air,Options[OnlyFireWhileInAttackOrder]" Value="0"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^Weapon@Air,AllowedMovement" Value="Moving"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^WeaponGround,Options[OnlyFireAtAttackOrderTarget]" Value="0"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^WeaponGround,Options[OnlyFireWhileInAttackOrder]" Value="0"/>
+  <EffectArrayTemplate Operation="Set" Reference="Weapon,^ParamId^WeaponGround,AllowedMovement" Value="Moving"/>
+  <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+  <AffectedUnitArray value="StingerSCBW"/>
+</CUpgrade>
+<CUpgrade id="ArmorPiercingRockets">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="BattlecruiserBehemothReactor">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="CarrierCarrierCapacity">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="CarrierLaunchSpeedUpgrade">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="CarrierLeashRangeUpgrade">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="CycloneLockOnRangeUpgrade">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="CycloneRapidFireLaunchers">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="DurableMaterials">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="GhostMoebiusReactor">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="OracleEnergyUpgrade">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="RavenCorvidReactor">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="ReaperSpeed">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="RestoreShields">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="SecretedCoating">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+<CUpgrade id="hydraliskspeed">
+  <Flags index="TechTreeCheat" value="0"/>
+</CUpgrade>
+
+</Catalog>

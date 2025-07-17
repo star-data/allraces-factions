@@ -1,0 +1,18 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Factions - UPL
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+fixed[17] libUPLL_gv_UPLZ2DashFacing;
+
+// Trigger Declarations
+trigger libUPLL_gt_InitializeUPLRace;
+trigger libUPLL_gt_CM_NovaPsiStrike;
+trigger libUPLL_gt_ClaymoreMinePlaceDummy;
+trigger libUPLL_gt_ClaymoreMineSetDirection;
+trigger libUPLL_gt_ClaymoreMineSetDirectionCancel;
+
+// Library Initialization
+void libUPLL_InitVariables ();
+

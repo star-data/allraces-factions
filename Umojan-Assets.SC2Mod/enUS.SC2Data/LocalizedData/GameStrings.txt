@@ -1,0 +1,2 @@
+﻿DocInfo/DescLong=Assets mod for the Umojan Faction.
+DocInfo/Name=[AR3] Umojan-Assets

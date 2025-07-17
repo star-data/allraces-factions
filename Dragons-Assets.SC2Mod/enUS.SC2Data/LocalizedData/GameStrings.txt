@@ -1,0 +1,2 @@
+﻿DocInfo/DescLong=Dragons Assets
+DocInfo/Name=[AR3] Dragons-Assets

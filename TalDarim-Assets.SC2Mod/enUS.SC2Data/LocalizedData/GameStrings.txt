@@ -1,0 +1,3 @@
+﻿DocInfo/DescLong=Assets mod for the Tal'Darim Faction.
+DocInfo/DescShort= 
+DocInfo/Name=[AR3] TalDarim-Assets

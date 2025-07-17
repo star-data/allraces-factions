@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CTargetSortValidator id="SpiderMineSCBWWeapon@TargetSort">
+  <Validator value="SpiderMineSCBW@ChaseRange"/>
+</CTargetSortValidator>
+<CTargetSortValidator id="SpiderMineSCBWWeapon@TargetMarker">
+  <Validator value="SpiderMineSCBWWeapon@TargetMarker"/>
+</CTargetSortValidator>
+<CTargetSortValidator id="DefilerSCBWDarkSwarm">
+  <WhichUnit Value="Target"/>
+  <Validator value="UnderDarkSwarmCombine"/>
+</CTargetSortValidator>
+<CTargetSortValidator id="DefilerSCBWDarkSwarm@Not">
+  <WhichUnit Value="Target"/>
+  <Validator value="NotUnderDarkSwarmCombine"/>
+</CTargetSortValidator>
+
+</Catalog>

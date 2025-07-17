@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="GrimGliderEmaciate">
+        <EditorCategories value="Race:Dragon"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="IgnoreThreat" value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireTargetSorts RequestCount="1" RequestPercentage="1">
+            <SortArray value="TSEmaciate"/>
+            <SortArray value="TSEnergyLargestFirst"/>
+            <SortArray value="TSLifeLargestFirst"/>
+            <SortArray value="TSShieldsLargestFirst"/>
+        </AcquireTargetSorts>
+        <MinScanRange value="9"/>
+        <Range value="7"/>
+        <RangeSlop value="3"/>
+        <Arc value="360"/>
+        <Period value="0.0625"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="GrimGliderEmaciateCreatePersistent"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HandofPowerPsionicImpulse">
+        <EditorCategories value="Race:Dragon"/>
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="HandofPowerPsionicImpulseDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="9"/>
+        <Range value="7"/>
+        <Arc value="22.5"/>
+        <ArcSlop value="22.5"/>
+        <Period value="0.21"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="HandofPowerPsionicImpulseSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhlogistonGuardianFulmination">
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="PhlogistonGuardianFulminationDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="0.77"/>
+        <Effect value="PhlogistonGuardianFulminationCreatePersistent"/>
+        <MinScanRange value="7"/>
+        <EditorCategories value="Race:Dragon"/>
+        <DisplayAttackCount value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SunkenGuardianImpale">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="SunkenGuardianImpaleDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <Period value="2.03"/>
+        <DamagePoint value="0.5"/>
+        <Effect value="SunkenGuardianImpaleLaunchMissile"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SunkenGuardianImpale1" parent="SunkenGuardianImpale">
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SunkenGuardianImpale2" parent="SunkenGuardianImpale">
+        <Arc value="360"/>
+        <Effect value="SunkenGuardianImpaleCreatePersistent"/>
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponStrafe id="FleshrenderAir">
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0"/>
+        <Period value="0.56"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="FleshrenderShredCreatePersistent"/>
+        <LoiterInnerRadius value="1"/>
+        <LoiterRadius value="1.5"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponStrafe>
+    <CWeaponStrafe id="FleshrenderGround" parent="FleshrenderAir">
+        <Name value="Weapon/Name/FleshrenderGround"/>
+        <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="2.5"/>
+        <LoiterRadius value="2.5"/>
+        <Effect value="FleshrenderCinderSpikeCreatePersistent"/>
+        <Period value="0.91"/>
+    </CWeaponStrafe>
+    <CWeaponLegacy id="HornedMagusMysticBolt">
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="HornedMagusMysticBoltDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.47"/>
+        <DamagePoint value="0.125"/>
+        <Effect value="HornedMagusMysticBoltLaunchMissile1"/>
+        <MinScanRange value="8"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AuroraConduitNetherShockAir">
+        <EditorCategories value="Race:Dragon"/>
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="AuroraConduitNetherShockDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="8"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="3.15"/>
+        <DamagePoint value="0.125"/>
+        <Effect value="AuroraConduitNetherShockSet1"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AscendedAuroraConduitNetherShockAir" parent="AuroraConduitNetherShockAir">
+        <Range value="9"/>
+        <Period value="2.1"/>
+        <MinScanRange value="11"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AuroraConduitNetherShockGround" parent="AuroraConduitNetherShockAir">
+        <Name value="Weapon/Name/AuroraConduitNetherShock"/>
+        <MinScanRange value="8"/>
+        <Range value="6"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AscendedAuroraConduitNetherShockGround" parent="AuroraConduitNetherShockGround">
+        <Range value="7"/>
+        <Period value="2.1"/>
+        <MinScanRange value="9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PlodderPincer">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="PlodderPincerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.2"/>
+        <Period value="1.5"/>
+        <Effect value="PlodderPincerDamage"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HornedMagusHeadbutt" parent="HornedMagusMysticBolt">
+        <Name value="Weapon/Name/HornedMagusHeadbutt"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="HornedMagusHeadbuttDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="0.5"/>
+        <Effect value="HornedMagusHeadbuttDamage"/>
+        <MinScanRange value="5"/>
+        <DisplayName value="Weapon/Name/HornedMagusHeadbutt"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FlamespitterSeekerFlame">
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="FlamespitterSeekerFlameDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinimumRange value="0.5"/>
+        <Period value="0.56"/>
+        <DamagePoint value="0.2"/>
+        <Effect value="FlamespitterSeekerFlameLaunchMissile1"/>
+        <MinScanRange value="7"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FlamespitterAscendedSeekerFlame" parent="FlamespitterSeekerFlame">
+        <DisplayEffect value="FlamespitterAscendedSeekerFlameDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinimumRange value="0"/>
+        <Effect value="FlamespitterAscendedSeekerFlameLaunchMissile1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FlamespitterClaws" parent="FlamespitterSeekerFlame">
+        <Name value="Weapon/Name/FlamespitterClaws"/>
+        <Tip value="Weapon/Tip/SeekerFlame"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="FlamespitterClawsDamage"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="0.25"/>
+        <MinimumRange value="0"/>
+        <Marker Link="Weapon/SeekerFlame"/>
+        <Cost>
+            <Cooldown Link="Weapon/SeekerFlame"/>
+        </Cost>
+        <Effect value="FlamespitterMeleeSet"/>
+        <MinScanRange value="5"/>
+        <DisplayName value="Weapon/Name/FlamespitterClaws"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FlamespitterAscendedClaws" parent="FlamespitterClaws">
+        <DisplayEffect value="FlamespitterAscendedClawsDamage"/>
+        <Effect value="FlamespitterAscendedMeleeSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BerserkerCrushingBlow">
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="BerserkerCrushingBlowDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="0.5"/>
+        <Period value="1.19"/>
+        <DamagePoint value="0.375"/>
+        <Effect value="BerserkerCrushingBlowDamage"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BrimstoneDemolisherInfernalBreathDummy">
+        <EditorCategories value="Race:Dragon"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="BrimstoneDemolisherInfernalBreathDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <MinScanRange value="9"/>
+        <Range value="7"/>
+        <ArcSlop value="5.625"/>
+        <Period value="0.25"/>
+        <DamagePoint value="0.25"/>
+        <Backswing value="0"/>
+        <Effect value="BrimstoneDemolisherInfernalBreathCreatePersistent1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BrimstoneDemolisherInfernalBreath" parent="BrimstoneDemolisherInfernalBreathDummy">
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="1"/>
+        <Period value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FleshrenderShred">
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <DisplayEffect value="FleshrenderShredDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.25"/>
+        <Arc value="360"/>
+        <Period value="0.56"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="FleshrenderShredDamage"/>
+        <AllowedMovement value="Moving"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BrimstoneDemolisherBrutalThrash">
+        <Options index="Melee" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="BrimstoneDemolisherBrutalThrashDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="1"/>
+        <Period value="1.33"/>
+        <DamagePoint value="0.25"/>
+        <Effect value="BrimstoneDemolisherBrutalThrashSet"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BrimstoneDemolisherAscendedBrutalThrash" parent="BrimstoneDemolisherBrutalThrash">
+        <Range value="1.25"/>
+        <Effect value="BrimstoneDemolisherAscendedBrutalThrashSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FleshrenderCinderSpike" parent="FleshrenderShred">
+        <Name value="Weapon/Name/FleshrenderCinderSpike"/>
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="FleshrenderCinderSpikeDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <Period value="0.91"/>
+        <Effect value="FleshrenderCinderSpikeLaunchMissile1"/>
+        <DisplayName value="Weapon/Name/FleshrenderCinderSpike"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BerserkerAscendedCrushingBlow" parent="BerserkerCrushingBlow">
+        <Name value="Weapon/Name/BerserkerAscendedCrushingBlow"/>
+        <Tip value="Weapon/Tip/BerserkerAscendedCrushingBlow"/>
+        <DisplayEffect value="BerserkerAscendedCrushingBlowDamage"/>
+        <Marker Link="Weapon/RavagerCrushingBlow"/>
+        <Cost>
+            <Cooldown Link="Weapon/RavagerCrushingBlow"/>
+        </Cost>
+        <Effect value="BerserkerAscendedCrushingBlowDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SkyrazerInferiorBlast">
+        <EditorCategories value="Race:Dragon"/>
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="SkyrazerAttackDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
+        <Range value="6"/>
+        <MinimumRange value="0.5"/>
+        <Period value="0.91"/>
+        <DamagePoint value="0.25"/>
+        <Effect value="SkyrazerInferiorBlastCreatePersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DragonHunterTongueLash">
+        <EditorCategories value="Race:Dragon"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="HunterTongueLashDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="2.1"/>
+        <Effect value="HunterTongueLashLaunchMissile"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <MinimumRange value="0.5"/>
+        <Range value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DragonHunterClaws" parent="DragonHunterTongueLash">
+        <Name value="Weapon/Name/DragonHunterClaws"/>
+        <Options index="Melee" value="1"/>
+        <DisplayEffect value="DragonHunterMeleeDamage"/>
+        <DisplayAttackCount value="2"/>
+        <DisplayName value="Weapon/Name/DragonHunterClaws"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="0.25"/>
+        <Effect value="DragonHunterMeleeCreatePersistent"/>
+        <MinimumRange value="0"/>
+        <Period value="1.05"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SkyrazerAscendedInferiorBlast" parent="SkyrazerInferiorBlast">
+        <DisplayAttackCount value="2"/>
+        <Effect value="SkyrazerAscendedAttackCreatePersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SkyrazerSavageClaws" parent="SkyrazerInferiorBlast">
+        <Name value="Weapon/Name/SkyrazerSavageClaws"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="SkyrazerSavageClawsDamage"/>
+        <DisplayName value="Weapon/Name/SkyrazerSavageClaws"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <MinScanRange value="5"/>
+        <Range value="0.25"/>
+        <MinimumRange value="0"/>
+        <Effect value="SkyrazerSavageClawsDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="UnseenBeastExploration">
+        <EditorCategories value="Race:Dragon"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Options index="RequireEnabledAttackAbil" value="0"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <MinScanRange value="10"/>
+        <Range value="8"/>
+        <Period value="1"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="UnseenBeastSpiritSmash">
+        <EditorCategories value="Race:Dragon"/>
+        <Options index="Melee" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-meleeattacks-level0.dds"/>
+        <DisplayEffect value="UnseenBeastSpiritSmashDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="0.25"/>
+        <Period value="0.77"/>
+        <DamagePoint value="0.1875"/>
+        <Backswing value="0.25"/>
+        <Effect value="UnseenBeastSpiritSmashDamage"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <RangeSlop value="2"/>
+        <ArcSlop value="45"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SkyrazerSuperiorBlast" parent="SkyrazerInferiorBlast">
+        <Name value="Weapon/Name/SkyrazerSuperiorBlast"/>
+        <DisplayAttackCount value="2"/>
+        <DisplayName value="Weapon/Name/SkyrazerSuperiorBlast"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="9"/>
+        <Range value="7"/>
+        <MinimumRange value="0"/>
+        <Effect value="SkyrazerSuperiorBlastCreatePersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SkyrazerAscendedSuperiorBlast" parent="SkyrazerSuperiorBlast">
+        <DisplayAttackCount value="3"/>
+        <Effect value="SkyrazerAscendedSuperiorBlastCreatePersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SkyrazerAscendedSuperiorBlastEmbercore" parent="SkyrazerAscendedSuperiorBlast">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinimumRange value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SkyrazerSuperiorBlastEmbercore" parent="SkyrazerSuperiorBlast">
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinimumRange value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VolcanicHarbingerPlasmaFlare">
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-dragon-fireattacks-level0.dds"/>
+        <DisplayEffect value="VolcanicHarbingerPlasmaFlareDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Period value="2.1"/>
+        <Effect value="VolcanicHarbingerPlasmaFlareSet"/>
+        <AllowedMovement value="Slowing"/>
+        <MinScanRange value="12"/>
+        <DamagePoint value="0.1875"/>
+        <Backswing value="0.1875"/>
+        <EditorCategories value="Race:Dragon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VolcanicHarbingerAscendedPlasmaFlare" parent="VolcanicHarbingerPlasmaFlare">
+        <MinScanRange value="13"/>
+        <Range value="11"/>
+    </CWeaponLegacy>
+</Catalog>

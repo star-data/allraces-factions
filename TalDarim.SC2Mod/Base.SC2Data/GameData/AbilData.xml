@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilResearch id="TalDarimFleetLodestarResearch">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <InfoArray index="Research2" Time="80" Upgrade="TalDarimFleetLodestarDreadnoughCloningVat">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="TalDarimFleetLodestarDreadnoughResearchCloningVat" State="Restricted" Requirements="TalDarimFleetLodestarDreadnoughLearnCloningVat">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3" Time="90" Upgrade="TalDarimFleetLodestarOutriderGoliarPulseCrystal">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TalDarimFleetLodestarOutriderResearchGoliarPulseCrystal" Requirements="TalDarimFleetLodestarOutriderLearnGoliarPulseCrystal">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research4" Time="80" Upgrade="TalDarimFleetLodestarDestroyerVoidAmplifier">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimFleetLodestarDestroyerResearchVoidAmplifier" Requirements="TalDarimFleetLodestarDestroyerLearnVoidAmplifier"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="TalDarimCynosurePhotonicOvercharge">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Effect index="0" value="TalDarimCynosurePhotonicOverchargeAB"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Stasis,UnderConstruction,Dead,Hidden"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimCynosurePhotonicOvercharge"/>
+    </CAbilEffectTarget>
+    <CAbilResearch id="TalDarimAutomationBayResearch">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research2" Time="80" Upgrade="TalDarimAutomationBayWarPrismGraviticDrive">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimAutomationBayWarPrismResearchGraviticDrive" State="Restricted" Requirements="TalDarimAutomationBayWarPrismLearnGraviticDrive">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3" Time="80" Upgrade="TalDarimAutomationBayWrathwalkerAirTargeting">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimAutomationBayWrathwalkerResearchAirTargeting" State="Restricted" Requirements="TalDarimAutomationBayWrathwalkerLearnAirTargeting">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research6" Time="140" Upgrade="TalDarimAutomationBayVanguardMatterDispersion">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TalDarimAutomationBayVanguardResearchMatterDispersion" State="Restricted" Requirements="TalDarimAutomationBayVanguardLearnMatterDispersion">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="TalDarimCyberneticsKernelResearch">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="160" Upgrade="TalDarimAirWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimUpgradeAirWeaponsLevel1" State="Restricted" Requirements="TalDarimLearnAirWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="190" Upgrade="TalDarimAirWeaponsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TalDarimUpgradeAirWeaponsLevel2" State="Restricted" Requirements="TalDarimLearnAirWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="220" Upgrade="TalDarimAirWeaponsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TalDarimUpgradeAirWeaponsLevel3" State="Restricted" Requirements="TalDarimLearnAirWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="160" Upgrade="TalDarimAirArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimUpgradeAirArmorLevel1" State="Restricted" Requirements="TalDarimLearnAirArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="190" Upgrade="TalDarimAirArmorsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TalDarimUpgradeAirArmorLevel2" State="Restricted" Requirements="TalDarimLearnAirArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="220" Upgrade="TalDarimAirArmorsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TalDarimUpgradeAirArmorLevel3" State="Restricted" Requirements="TalDarimLearnAirArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="80" Upgrade="TalDarimCyberneticKernelHavocCloakingModule">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="75"/>
+            <Button DefaultButtonFace="TalDarimCyberneticsKernelResearchCloakingModule" State="Restricted" Requirements="TalDarimCyberneticKernelHavocLearnCloakingModule"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="TalDarimDuplicatorResearch">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="160" Upgrade="TalDarimGroundWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimUpgradeGroundWeaponsLevel1" State="Restricted" Requirements="TalDarimLearnGroundWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="190" Upgrade="TalDarimGroundWeaponsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TalDarimUpgradeGroundWeaponsLevel2" State="Restricted" Requirements="TalDarimLearnGroundWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="220" Upgrade="TalDarimGroundWeaponsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="TalDarimUpgradeGroundWeaponsLevel3" State="Restricted" Requirements="TalDarimLearnGroundWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="160" Upgrade="TalDarimGroundArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimUpgradeGroundArmorLevel1" State="Restricted" Requirements="TalDarimLearnGroundArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="190" Upgrade="TalDarimGroundArmorsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TalDarimUpgradeGroundArmorLevel2" State="Restricted" Requirements="TalDarimLearnGroundArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="220" Upgrade="TalDarimGroundArmorsLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="TalDarimUpgradeGroundArmorLevel3" State="Restricted" Requirements="TalDarimLearnGroundArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="160" Upgrade="TalDarimShieldsLevel1">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TalDarimUpgradeShieldsLevel1" State="Restricted" Requirements="TalDarimLearnShield1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="190" Upgrade="TalDarimShieldsLevel2">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="TalDarimUpgradeShieldsLevel2" State="Restricted" Requirements="TalDarimLearnShield2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="220" Upgrade="TalDarimShieldsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TalDarimUpgradeShieldsLevel3" State="Restricted" Requirements="TalDarimLearnShield3"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilQueue id="TalDarimQueue8x2Hangar">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <QueueCount value="2"/>
+        <QueueSize value="8"/>
+        <Flags index="Passive" value="1"/>
+    </CAbilQueue>
+    <CAbilTrain id="TalDarimDreadnoughtTrain">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Cloning"/>
+        <InfoArray index="Train1" Time="28" Effect="TalDarimDreadnougthWarpInSupplicant">
+            <Button DefaultButtonFace="TalDarimSupplicant" State="Restricted" Requirements="TalDarimFleetLodestarDreadnoughLearnedCloningVat"/>
+            <Unit value="TalDarimSupplicant"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="TalDarimCynosureTrainWarmistress">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <Offset value="0,0"/>
+        <InfoArray index="Train1" Time="160">
+            <Button DefaultButtonFace="TalDarimWarmistress" State="Restricted" Requirements="TalDarimWarmistressRequirements"/>
+            <Unit value="TalDarimWarmistress"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="TalDarimAutomationFacilityTrain">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="50" Effect="WarpInEffect15">
+            <Button DefaultButtonFace="TalDarimWarPrism" State="Restricted"/>
+            <Unit value="TalDarimWarPrism"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="25" Effect="WarpInEffect15">
+            <Button DefaultButtonFace="TalDarimMonitor" State="Restricted"/>
+            <Unit value="TalDarimMonitor"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="75">
+            <Button DefaultButtonFace="TalDarimReliquaryofSouls" State="Restricted" Requirements="TalDarimHaveAutomationBay"/>
+            <Unit value="TalDarimReliquaryofSouls"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="55">
+            <Button DefaultButtonFace="TalDarimVanguard" State="Restricted"/>
+            <Unit value="TalDarimVanguard"/>
+        </InfoArray>
+        <InfoArray index="Train19" Time="60">
+            <Button DefaultButtonFace="TalDarimWrathwalker" State="Restricted" Requirements="TalDarimHaveAutomationBay"/>
+            <Unit value="TalDarimWrathwalker"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="TalDarimStararchTrain">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="45" Effect="WarpInEffect">
+            <Button DefaultButtonFace="TalDarimOutrider"/>
+            <Unit value="TalDarimOutrider"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="90" Effect="WarpInEffect">
+            <Button DefaultButtonFace="TalDarimDreadnought" State="Restricted" Requirements="TalDarimHaveFleetLodestar"/>
+            <Unit value="TalDarimDreadnought"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="50" Effect="WarpInEffect">
+            <Button DefaultButtonFace="TalDarimDestroyer"/>
+            <Unit value="TalDarimDestroyer"/>
+        </InfoArray>
+        <InfoArray index="Train9" Time="35" Effect="WarpInEffect">
+            <Button DefaultButtonFace="TalDarimRiddler"/>
+            <Unit value="TalDarimRiddler"/>
+        </InfoArray>
+        <InfoArray index="Train10" Time="75" Effect="WarpInEffect">
+            <Button DefaultButtonFace="TalDarimDeathStar" Requirements="TalDarimDeathStarRequirements"/>
+            <Unit value="TalDarimDeathStar"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="TalDarimArchwayTrain">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="28">
+            <Button DefaultButtonFace="TalDarimSupplicant" State="Restricted"/>
+            <Unit value="TalDarimSupplicant"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="42">
+            <Button DefaultButtonFace="TalDarimSlayer" State="Restricted" Requirements="TalDarimHaveCyberneticsKernel"/>
+            <Unit value="TalDarimSlayer"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="28">
+            <Resource index="Vespene" value="5"/>
+            <Button DefaultButtonFace="TalDarimWarpInTwoSupplicant" State="Restricted" Requirements="TalDarimHaveDeathCouncil"/>
+            <Unit value="TalDarimSupplicant"/>
+            <Unit value="TalDarimSupplicant"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="55">
+            <Button DefaultButtonFace="TalDarimAscendant" State="Restricted" Requirements="TalDarimHaveAscendantArchives"/>
+            <Unit value="TalDarimAscendant"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="55">
+            <Button DefaultButtonFace="TalDarimBloodHunter" State="Restricted" Requirements="TalDarimHaveBloodShrine"/>
+            <Unit value="TalDarimBloodHunter"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="37">
+            <Button DefaultButtonFace="TalDarimHavoc" State="Restricted" Requirements="TalDarimHaveCyberneticsKernel"/>
+            <Unit value="TalDarimHavoc"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="38">
+            <Button DefaultButtonFace="TalDarimChampion" State="Restricted" Requirements="TalDarimHaveCyberneticsKernel"/>
+            <Unit value="TalDarimChampion"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilBuild id="TalDarimBuildDef">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <FlagArray index="Interruptible" value="1"/>
+        <FlagArray index="PeonDisableCollision" value="1"/>
+        <FlagArray index="RequireFacing" value="1"/>
+        <InfoArray index="Build8" Unit="TalDarimParticleCannon" Time="40">
+            <Button DefaultButtonFace="TalDarimParticleCannon" Requirements="TalDarimHaveDuplicator"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="TalDarimPrismaticTower" Time="40">
+            <Button DefaultButtonFace="TalDarimPrismaticTower" Requirements="TalDarimHaveDuplicator"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilEffectTarget id="TalDarimReconstitute">
+        <Alignment value="Positive"/>
+        <AbilSetId value="Repair"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimLocustReconstitute"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOffOwnerLeave" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <Flags index="PassengerAcquirePassengers" value="1"/>
+        <TargetFilters value="Visible;Self,Enemy,Biological,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <Range value="0.5"/>
+        <RangeSlop value="0.2"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AutoCastRange value="7"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <UseMarkerArray index="Cast" value="0"/>
+        <UseMarkerArray index="Channel" value="0"/>
+        <InheritAttackPriorityArray index="Prep" value="1"/>
+        <InheritAttackPriorityArray index="Cast" value="1"/>
+        <InheritAttackPriorityArray index="Channel" value="1"/>
+        <AINotifyEffect value="TalDarimLocustReconstitute"/>
+        <DefaultError value="RequiresRepairTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimReconstitute" Requirements="TalDarimCollectorEnergyCharged">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TalDarimCustodesAnchorLink">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimCustodesAnchorLinkCP"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Structure,Heroic,Missile,Buried,Stasis,Dead,Hidden,Unstoppable,Resistant,MapBoss"/>
+        <Range value="11"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral"/>
+        <AutoCastRange value="11"/>
+        <AutoCastValidatorArray value="TalDarimCustodesNotAnchored"/>
+        <AutoCastValidatorArray value="TalDarimRangeCheckGE1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimCustodesAnchorLink"/>
+        <TargetSorts>
+            <SortArray value="TSFarthestDistance"/>
+        </TargetSorts>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="TalDarimSoulLeechPriorityLow">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimSoulLeechPriorityLow" Requirements="TalDarimLowPriority"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechPriorityMedium">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimSoulLeechPriorityMedium" Requirements="TalDarimMediumPriority"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechPriorityHigh">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimSoulLeechPriorityHigh" Requirements="TalDarimHighPriority"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimWarmistressSoulsOvercharge">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimWarmistressSoulsOverchargeSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="PassengerAcquirePassengers" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <Arc value="360"/>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="TalDarimCasterInCombat"/>
+        <AutoCastValidatorArray value="TalDarimNearbySoulDrinkers"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimWarmistressSoulsOvercharge" Requirements="TalDarimWarmistressHave4SoulShard"/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="TalDarimWarPrismTurretMode">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimWarPrismTurretMode"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="TalDarimWarPrismTurret">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="TalDarimWarPrismTransportMode">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimWarPrismTransportMode"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="TalDarimWarPrism">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="1.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilResearch id="TalDarimDeathCouncilResearch">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="120" Upgrade="TalDarimDeathCouncilSupplicantBloodShields">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimDeathCouncilSupplicantResearchBloodShields" State="Restricted" Requirements="TalDarimDeathCouncilSupplicantLearnBloodShields">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="140" Upgrade="TalDarimDeathCouncilSupplicantSoulAugmentation">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TalDarimDeathCouncilSupplicantResearchSoulAugmentation" State="Restricted" Requirements="TalDarimDeathCouncilSupplicantLearnSoulAugmentation">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3" Time="170" Upgrade="TalDarimDeathCouncilSlayerFrameEnhancement">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TalDarimDeathCouncilSlayerResearchEnhancedFrame" State="Restricted" Requirements="TalDarimDeathCouncilSlayerLearnEnhancedFrame">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research4" Time="140" Upgrade="TalDarimDeathCouncilChampionHegemony">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TalDarimDeathCouncilChampionResearchHegemonie" Requirements="TalDarimDeathCouncilChampionLearnHegemony">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="TalDarimAscendantArchivesResearch">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research5" Time="110" Upgrade="TalDarimAscendantArchivesAscendantMindBlast">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="TalDarimAscendantArchivesAscendantResearchMindBlast" State="Restricted" Requirements="TalDarimAscendantArchivesAscendantLearnMindBlast">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilMorph id="ZerDarimDisguiseAsSupplicant" parent="DisguiseChangeling">
+        <Name value="Abil/Name/ZerDarimDisguiseAsSupplicant"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimSupplicant"/>
+        <InfoArray Unit="ZerDarimChangelingSupplicant">
+            <SectionArray index="Actor">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilEffectTarget id="TalDarimCustodesTerrazineFog">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimCustodesTerrazineFogPersistent"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Life" value="75"/>
+            <Cooldown TimeUse="2"/>
+        </Cost>
+        <Range value="9"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="TalDarimCustodesTerrazineFogSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimCustodesTarrazineFog"/>
+    </CAbilEffectTarget>
+    <CAbilMerge id="TalDarimCustodesMerge">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="SelectedUnits" DefaultButtonFace="TalDarimCustodesMergeSelection">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="WithTarget" DefaultButtonFace="TalDarimCustodesMergeTarget"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Info Unit="TalDarimCustodes" Time="12"/>
+    </CAbilMerge>
+    <CAbilMergeable id="TalDarimCustodesMergeable">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Cancelable value="0"/>
+    </CAbilMergeable>
+    <CAbilEffectInstant id="TalDarimHavocVoidShard">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="2" Location="Unit"/>
+        </Cost>
+        <Range value="8"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral"/>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="TalDarimEnemiesNearbyGround"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimBloodHunter"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardChampion" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardChampion"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateChampion"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimChampion"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardSupplicant" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardSupplicant"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateSupplicant"/>
+        <Cost index="0">
+            <Vital index="Energy" value="35"/>
+            <Charge CountMax="10" CountUse="1" Location="Unit"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimSupplicant"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardDestroyer" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardDestroyer"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateDestroyer"/>
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="4" Location="Unit"/>
+        </Cost>
+        <AutoCastValidatorArray index="0" value="TalDarimEnemiesNearbyAny"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimDestroyer"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardRiddler" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardRiddler"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateRiddler"/>
+        <AutoCastValidatorArray index="0" value="TalDarimEnemiesNearbyAir"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimRiddler"/>
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="3" Location="Unit"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardOutrider" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardOutrider"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateOutrider"/>
+        <AutoCastValidatorArray index="0" value="TalDarimEnemiesNearbyAny"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimOutrider"/>
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="3" Location="Unit"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardWrathwalker" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardWrathwalker"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateWrathwalker"/>
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="6" Location="Unit"/>
+        </Cost>
+        <AutoCastValidatorArray index="0" value="TalDarimEnemiesNearbyAny"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimWrathwalker"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardVanguard" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardVanguard"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateVanguard"/>
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="4" Location="Unit"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimVanguard"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardSlayer" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardSlayer"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateSlayer"/>
+        <AutoCastValidatorArray index="0" value="TalDarimEnemiesNearbyAny"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimSlayer"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardLocust" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardLocust"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateCollector"/>
+        <Cost index="0">
+            <Vital index="Energy" value="50"/>
+            <Charge>
+                <CountMax value="0"/>
+                <CountUse value="0"/>
+                <Link value="Abil/TalDarimHavocVoidShardLocust"/>
+                <Location value="Abil"/>
+            </Charge>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimLocust"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardBloodHunter" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardBloodHunter"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateBloodHunter"/>
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="3" Location="Unit"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimHavocVoidShardDreadnought" parent="TalDarimHavocVoidShard">
+        <Name value="Abil/Name/TalDarimHavocVoidShardDreadnought"/>
+        <Effect index="0" value="TalDarimHavocVoidShardCreateDreadnought"/>
+        <Cost index="0">
+            <Vital index="Energy" value="75"/>
+            <Charge CountMax="10" CountUse="6" Location="Unit"/>
+        </Cost>
+        <AutoCastValidatorArray index="0" value="TalDarimEnemiesNearbyAny"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimDreadnought"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="TalDarimMonitorDetonation">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimMonitorDetonationLM"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.2"/>
+        </Cost>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <AutoCastFilters value="-;Player,Ally,Neutral,Uncommandable"/>
+        <AutoCastRange value="8"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimMonitorDetonation" Requirements="TalDarimMonitorHaveDetonationCharge"/>
+        <SmartValidatorArray value="EnemyTarget"/>
+        <AutoCastValidatorArray value="TalDarimNotUnselectable"/>
+        <AutoCastValidatorArray value="TalDarimNotUntargetable"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TalDarimDeathStarReleaseCommand">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimDeathStarReleaseCommandSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.1"/>
+        </Cost>
+        <TargetFilters value="Uncommandable;Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Stunned"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
+        <AutoCastRange value="7"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimDeathStarReleaseCommand" Requirements="TalDarimDeathStarGotEscort"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TalDarimDestroyerFakeBoost">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <TargetFilters value="-;Self,Ally,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <Range value="4"/>
+        <Arc value="14.9963"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Heal"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TalDarimDeathStarAssumeCommand">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimDeathStarAssumeCommandCP"/>
+        <Flags index="AutoCast" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.1"/>
+        </Cost>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Missile,Uncommandable,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Stunned"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
+        <AutoCastRange value="20"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimDeathStarAssumeCommand" Requirements="TalDarimDeathStarNotatMaxEscort2"/>
+    </CAbilEffectTarget>
+    <CAbilArmMagazine id="TalDarimDeathStarDestroyerEscort">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="Retarget" value="1"/>
+        <Leash value="4"/>
+        <InfoArray index="Ammo1" Distance="1" Manage="Recall" Unit="TalDarimDestroyer">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Flags index="External" value="1"/>
+            <Flags index="LeashRetarget" value="1"/>
+        </InfoArray>
+        <Alert value=""/>
+        <ExternalAngle value="180"/>
+        <ExternalAngle value="225"/>
+        <ExternalAngle value="135"/>
+        <ExternalAngle value="270"/>
+        <ExternalAngle value="90"/>
+        <EffectArray index="Create" value="TalDarimDeathStarAssumeCommandTrack"/>
+        <EffectArray index="Launch" value="TalDarimDeathStarAssumeCommandTrack"/>
+        <EffectArray index="Release" value="TalDarimDeathStarAssumeCommandTrack"/>
+    </CAbilArmMagazine>
+    <CAbilEffectTarget id="TalDarimDeathStarVaporize">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimDeathStarVaporizeCP1"/>
+        <Effect value="TalDarimDeathStarVaporizeCP2"/>
+        <Effect value="TalDarimDeathStarVaporizeCP3"/>
+        <Effect value="TalDarimDeathStarVaporizeCP4"/>
+        <Effect value="TalDarimDeathStarVaporizeCP5"/>
+        <Effect value="TalDarimDeathStarVaporizeCP6"/>
+        <Cost>
+            <Cooldown TimeUse="35"/>
+        </Cost>
+        <InterruptCost>
+            <Cooldown TimeUse="10"/>
+        </InterruptCost>
+        <Range value="10"/>
+        <Range value="11"/>
+        <Range value="12"/>
+        <Range value="13"/>
+        <Range value="14"/>
+        <Range value="15"/>
+        <CastIntroTime value="0.5"/>
+        <CastOutroTime value="0.5"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CursorEffect value="TalDarimDeathStarVaporizeSearch1"/>
+        <CursorEffect value="TalDarimDeathStarVaporizeSearch2"/>
+        <CursorEffect value="TalDarimDeathStarVaporizeSearch3"/>
+        <CursorEffect value="TalDarimDeathStarVaporizeSearch4"/>
+        <CursorEffect value="TalDarimDeathStarVaporizeSearch5"/>
+        <CursorEffect value="TalDarimDeathStarVaporizeSearch6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimDeathStarVaporize"/>
+        <Levels value="6"/>
+        <AlertArray index="Cast" value="CalldownLaunch"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="TalDarimSoulLeech">
+        <AbilSetId value="TalDarimSoulLeech"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="PassengerAcquirePassengers" value="1"/>
+        <Cost/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimSoulLeechSupplicant"/>
+    </CAbilEffectInstant>
+    <CAbilQueue id="TalDarimReliquaryQueue">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <QueueCount value="3"/>
+        <QueueSize value="3"/>
+        <Flags index="Hidden" value="1"/>
+        <Flags index="Passive" value="1"/>
+    </CAbilQueue>
+    <CAbilArmMagazine id="TalDarimReliquaryLitanyEscort">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="Retarget" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Leash value="12"/>
+        <InfoArray index="Ammo1" Distance="1" Manage="Recall" Unit="TalDarimLitany">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Flags index="External" value="1"/>
+            <Flags index="LeashRetarget" value="1"/>
+        </InfoArray>
+        <Alert value=""/>
+        <EffectArray index="Create" value="TalDarimReliquaryLitanySpawnTrack"/>
+        <ExternalAngle value="0"/>
+        <ExternalAngle value="45"/>
+        <ExternalAngle value="-45"/>
+    </CAbilArmMagazine>
+    <CAbilTrain id="TalDarimCynosureTrain">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="17">
+            <Button DefaultButtonFace="TalDarimLocust"/>
+            <Unit value="TalDarimLocust"/>
+        </InfoArray>
+        <Alert value="TrainWorkerComplete"/>
+    </CAbilTrain>
+    <CAbilHarvest id="TalDarimLocustHarvest">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+    </CAbilHarvest>
+    <CAbilBuild id="TalDarimBuild">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <FlagArray index="Interruptible" value="1"/>
+        <FlagArray index="PeonDisableCollision" value="1"/>
+        <FlagArray index="PeonMaintained" value="0"/>
+        <InfoArray index="Build1" Unit="TalDarimCynosure" Time="100">
+            <Button DefaultButtonFace="TalDarimCynosure"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="TalDarimPeristyle" Time="25">
+            <Button DefaultButtonFace="TalDarimPeristyle"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="TalDarimFracturer" Time="30">
+            <Button DefaultButtonFace="TalDarimFracturer"/>
+            <ValidatorArray value="HasVespene"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="TalDarimArchway" Time="65">
+            <Button DefaultButtonFace="TalDarimArchway" Requirements="TalDarimHaveCynosure"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="TalDarimDuplicator" Time="45">
+            <Button DefaultButtonFace="TalDarimDuplicator" Requirements="TalDarimHaveCynosure"/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="TalDarimFleetLodestar" Time="60">
+            <Button DefaultButtonFace="TalDarimFleetLodestar" Requirements="TalDarimHaveStararch"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="TalDarimDeathCouncil" Time="50">
+            <Button DefaultButtonFace="TalDarimDeathCouncil" Requirements="TalDarimHaveCyberneticsKernel"/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="TalDarimStararch" Time="60">
+            <Button DefaultButtonFace="TalDarimStararch" Requirements="TalDarimHaveCyberneticsKernel"/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="TalDarimAscendantArchives" Time="50">
+            <Button DefaultButtonFace="TalDarimAscendantArchive" Requirements="TalDarimHaveDeathCouncil"/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="TalDarimBloodShrine" Time="100">
+            <Button DefaultButtonFace="TalDarimBloodShrine" Requirements="TalDarimHaveDeathCouncil"/>
+        </InfoArray>
+        <InfoArray index="Build13" Unit="TalDarimAutomationBay" Time="65">
+            <Button DefaultButtonFace="TalDarimAutomationBay" Requirements="TalDarimHaveAutomationFacility"/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="TalDarimAutomationFacility" Time="65">
+            <Button DefaultButtonFace="TalDarimAutomationFacility" Requirements="TalDarimHaveCyberneticsKernel"/>
+        </InfoArray>
+        <InfoArray index="Build15" Unit="TalDarimCyberneticsKernel" Time="50">
+            <Button DefaultButtonFace="TalDarimCyberneticsKernel" Requirements="TalDarimHaveArchway"/>
+        </InfoArray>
+        <SmartPriority value="18"/>
+    </CAbilBuild>
+    <CAbilBuild id="TalDarimRiddlerBuildPlasmaBomb">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <FlagArray index="RequireFacing" value="1"/>
+        <InfoArray index="Build1" Unit="TalDarimRiddlerPlasmaBomb" Time="5">
+            <Vital index="Energy" value="40"/>
+            <Button DefaultButtonFace="TalDarimRiddlerPlasmaBomb">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <Range value="5"/>
+        <EffectArray index="Start" value="TalDarimRiddlerPlasmaBombBuildBeamOn"/>
+        <EffectArray index="Finish" value="TalDarimRiddlerPlasmaBombBuildBeamOff"/>
+        <EffectArray index="Cancel" value="TalDarimRiddlerPlasmaBombBuildBeamOff"/>
+    </CAbilBuild>
+    <CAbilEffectInstant id="TalDarimRiddlerPlasmaBombActivate">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimRiddlerPlasmaBombActivateSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.5"/>
+        </Cost>
+        <Arc value="360"/>
+        <AutoCastRange value="2"/>
+        <AutoCastValidatorArray value="TalDarimRiddlerPlasmaBombTargetInRange"/>
+        <PrepTime value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimRiddlerPlasmaBombBoom"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="TalDarimRiddlerEnshroud">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimRiddlerEnshroudSearch"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+        </Cost>
+        <Range value="9"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="TalDarimRiddlerEnshroudSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimRiddlerEnshroud"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TalDarimCynosureDestructiveHarvest">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimCynosureDestructiveHarvestSwitch"/>
+        <Cost>
+            <Vital index="Energy" value="60"/>
+        </Cost>
+        <TargetFilters value="-;Ally,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimCynosureDestructiveHarvest"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="TalDarimDrainSupplicant">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimDrainSupplicantSearch"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.1"/>
+        </Cost>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimDrainSupplicantGeneric1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimDrainSupplicantDeathStar" parent="TalDarimDrainSupplicant">
+        <Name value="Abil/Name/TalDarimDrainSupplicantDeathStarDreadnought2"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOffOwnerLeave" value="1"/>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="TalDarimDeathStarNotFull"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimDrainSupplicantDreadnought" parent="TalDarimDrainSupplicant">
+        <Name value="Abil/Name/TalDarimDrainSupplicantDreadnought"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOffOwnerLeave" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <InterruptCost>
+            <Charge Link="Abil/TalDarimDrainSupplicantDreadnought"/>
+            <Cooldown Link="Abil/TalDarimDrainSupplicantDreadnought"/>
+        </InterruptCost>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="TalDarimEnemiesNearbyGround"/>
+        <AutoCastValidatorArray value="TalDarimDreadnoughtBeetlesNotArmed"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimDrainSupplicantReliquary" parent="TalDarimDrainSupplicant">
+        <Name value="Abil/Name/TalDarimDrainSupplicantReliquary"/>
+        <DataCollection value="TalDarimDrainSupplicantReliquary"/>
+        <Effect index="0" value="TalDarimDrainSupplicantReliquarySearch"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOffOwnerLeave" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <InterruptCost>
+            <Charge Link="Abil/TalDarimDrainSupplicantReliquary"/>
+            <Cooldown Link="Abil/TalDarimDrainSupplicantReliquary"/>
+        </InterruptCost>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="TalDarimEnemiesNearbyGround"/>
+        <AutoCastValidatorArray value="TalDarimReliquaryNotAt2"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="TalDarimBloodHunterVoidStasis">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Effect index="0" value="TalDarimBloodHunterVoidStasisSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <TargetFilters value="Ground;Player,Ally,Missile,Stasis,UnderConstruction,Dead,Hidden,Invulnerable,Unstoppable,Resistant"/>
+        <Range value="6"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="TalDarimNotUnselectable"/>
+        <AutoCastValidatorArray value="TalDarimNotUntargetable"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimBloodHunterVoidStasis" Requirements="TalDarimBloodHunterHaveSoulShard"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="TalDarimDrainSupplicantWarmistress" parent="TalDarimDrainSupplicant">
+        <Name value="Abil/Name/TalDarimDrainSupplicantWarmistress"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOffOwnerLeave" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost index="0">
+            <Charge Link="Abil/TalDarimDrainSupplicantWarmistress"/>
+            <Cooldown Link="Abil/TalDarimDrainSupplicantWarmistress" TimeUse="0.1"/>
+        </Cost>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="TalDarimCasterInCombat"/>
+        <AutoCastValidatorArray value="TalDarimWarmistressCooldown"/>
+        <AutoCastValidatorArray value="TalDarimWarmistressDontHave4Souls"/>
+        <AutoCastValidatorArray value="TalDarimNearbySoulDrinkers"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimDrainSupplicantMonitor" parent="TalDarimDrainSupplicant">
+        <Name value="Abil/Name/TalDarimDrainSupplicantMonitor"/>
+        <CmdButtonArray index="Execute" Requirements="TalDarimMonitorHaveNoDetonationCharge"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="TalDarimHavocTargetLock">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimHavocTargetLockCP"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Unit" TimeUse="3"/>
+        </Cost>
+        <TargetFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSLifeLargestFirst"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="8"/>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="TalDarimHavocTargetLockNotLocked"/>
+        <AutoCastValidatorArray value="TalDarimNotUntargetable"/>
+        <AutoCastValidatorArray value="TalDarimNotUnselectable"/>
+        <CastOutroTime value="0.5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimHavocTargetLock"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="TalDarimSoulLeechBloodHunter" parent="TalDarimSoulLeech">
+        <Effect index="0" value="TalDarimSoulLeechBloodHunterSoulShardABCharge"/>
+        <Name value="Abil/Name/TalDarimSoulLeechBloodHunter"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechLocust" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechLocust"/>
+        <Effect index="0" value="TalDarimSoulLeechLocustSet"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechCustodes" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechCustodes"/>
+        <Effect index="0" value="TalDarimSoulLeechCustodesRegenerate"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechDestroyer" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechDestroyer"/>
+        <Effect index="0" value="TalDarimSoulLeechDestroyerMultiTargetChargeAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechAscendant" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechAscendant"/>
+        <Effect index="0" value="TalDarimSoulLeechAscendantSoulChargeAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechMonitor" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechMonitor"/>
+        <Effect index="0" value="TalDarimSoulLeechMonitorDetonationChargeAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechHavoc" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechHavoc"/>
+        <Effect index="0" value="TalDarimSoulLeechHavocVoidCharge"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechWarmistress" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechWarmistress"/>
+        <Effect index="0" value="TalDarimSoulLeechWarmistressSoulOverchargeAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechWrathwalker" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechWrathwalker"/>
+        <Effect index="0" value="TalDarimSoulLeechWrathwalkerSoulsWeaponAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechRiddler" parent="TalDarimSoulLeech">
+        <Effect index="0" value="TalDarimSoulLeechRiddlerHarmonizationAB"/>
+        <Name value="Abil/Name/TalDarimSoulLeechRiddler"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechSlayer" parent="TalDarimSoulLeech">
+        <Effect index="0" value="TalDarimSoulLeechSlayerEntropicShieldCharge"/>
+        <Name value="Abil/Name/TalDarimSoulLeechSlayer"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechDreadnought" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechDeadnought"/>
+        <Effect index="0" value="TalDarimSoulLeechDreadnoughtBeetleArmedAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechSupplicant" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechSupplicant"/>
+        <Effect index="0" value="TalDarimSoulLeechSupplicantShieldAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechPariah" parent="TalDarimSoulLeech">
+        <Effect index="0" value="TalDarimSoulLeechPariahRegenerate"/>
+        <Name value="Abil/Name/TalDarimSoulLeechPariah"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechOutrider" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechOutrider"/>
+        <Effect index="0" value="TalDarimSoulLeechOutriderSoulsWeaponAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechChampion" parent="TalDarimSoulLeech">
+        <Effect index="0" value="TalDarimSoulLeechChampionBurstOfSpeedAB"/>
+        <Name value="Abil/Name/TalDarimSoulLeechChampion"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimDestroyerMultiTargetBoost">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TalDarimDestroyerMultiTargetSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="3.9"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastValidatorArray value="TalDarimCasterisBloodHunter"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimDestroyerBloodSeeker" Requirements="TalDarimDestroyerHaveBloodCharge">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="TalDarimAscendantMindBlast">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Effect index="0" value="TalDarimAscendantMindBlastDamage"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+            <Cooldown TimeUse="8"/>
+        </Cost>
+        <TargetFilters value="Visible;Player,Ally,Structure,Missile,Stasis,Dead,Invulnerable"/>
+        <Range value="13"/>
+        <AINotifyEffect value="TalDarimAscendantMindBlastDamage"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimAscendantMindBlast" Requirements="TalDarimAscendantArchivesAscendantLearnedMindBlast"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TalDarimAscendantPsiOrb">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Effect index="0" value="TalDarimAscendantPsiOrbInitialPersistent"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Cooldown TimeUse="2"/>
+        </Cost>
+        <Range value="10"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TalDarimAscendantPsiOrb"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="TalDarimSoulLeechVanguard" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechVanguard"/>
+        <Effect index="0" value="TalDarimSoulLeechVanguardSoulArmourAB"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TalDarimSoulLeechWarPrism" parent="TalDarimSoulLeech">
+        <Name value="Abil/Name/TalDarimSoulLeechWarPrism"/>
+        <Effect index="0" value="TalDarimSoulLeechWarPrismSet"/>
+    </CAbilEffectInstant>
+    <CAbilAttack id="TalDarimPeristylePhotonicOverchargeAttack">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <TargetMessage value="Abil/TargetMessage/attack"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AttackBuilding" Requirements="TalDarimPeristylePhotonicOverchargeRequirement"/>
+        <MinAttackSpeedMultiplier value="0.25"/>
+        <MaxAttackSpeedMultiplier value="128"/>
+    </CAbilAttack>
+    <CAbilStop id="TalDarimPeristylePhotonicOverchargeStop">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Stop" Requirements="TalDarimPeristylePhotonicOverchargeRequirement"/>
+    </CAbilStop>
+</Catalog>

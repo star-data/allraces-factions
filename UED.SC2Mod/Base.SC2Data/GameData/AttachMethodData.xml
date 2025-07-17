@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAttachMethodFilter id="UEDAMFilterWeapon01And02">
+        <Keys Keyword="Weapon" Index="1"/>
+        <Keys Keyword="Weapon" Index="2"/>
+        <Logic value="OR"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="UEDAMPatternSpartanAir">
+        <Keyword value="Weapon"/>
+        <Driver value="UEDLaunchMissleSpartan"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="UEDAMPatternTurret">
+        <Keyword value="Weapon"/>
+        <Base value="LongboltMissileLM2"/>
+        <Multiplier value="5"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="UEDAMPatternTyphoon">
+        <Keyword value="Weapon"/>
+        <Base value="UEDTyphoonLM"/>
+        <Multiplier value="2"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="UEDAMPatternStrikeFighter">
+        <Keyword value="Weapon"/>
+        <Base value="LanzerTorpedoesLM2"/>
+        <Multiplier value="3"/>
+    </CAttachMethodPattern>
+</Catalog>

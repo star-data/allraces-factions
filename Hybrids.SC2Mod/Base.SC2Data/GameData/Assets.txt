@@ -1,0 +1,34 @@
+UI/LeaderPanelRaceIcon_ZHBR=Assets\Textures\icon-1v1-zhybrid.dds
+UI/ObserverPreviewFrameRaceIcon_ZHBR=Assets\Textures\icon-1v1-zhybrid.dds
+
+UI/RaceButtonIcon=Assets\Textures\ui_console_helperbutton_icon_race_zhybrid.dds
+UI/ArmyButtonIcon_ZHBR=Assets\Textures\ui_console_helperbutton_icon_army_zhybrid.dds
+UI/IdleButtonIcon_ZHBR=Assets\Textures\ui_console_helperbutton_icon_worker_zhybrid.dds
+UI/RaceButtonIcon_ZHBR=Assets\Textures\ui_console_helperbutton_icon_race_zhybrid.dds
+
+UI/ResourceIcon0_ZHBR=Assets\Textures\icon-mineral-zhybrid.dds
+UI/ResourceIcon1_ZHBR=Assets\Textures\icon-gas-zhybrid.dds
+UI/ResourceIcon2_ZHBR=Assets\Textures\icon-energy-zhybrid.dds
+UI/ResourceIcon3_ZHBR=Assets\Textures\icon-health-zhybrid.dds
+
+UI/ResourceIconNoBackground1_ZHBR=Assets\Textures\icon-gas-zhybrid-nobg.dds
+UI/ResourceIconNoBackground2_ZHBR=Assets\Textures\icon-energy-NoBG.dds
+UI/ResourceIconNoBackground3_ZHBR=Assets\Textures\icon-health-NoBG.dds
+
+UI/1v1PanelRaceIcon_ZHBR=Assets\Textures\icon-1v1-zhybrid.dds
+UI/1v1PanelSupplyIcon_ZHBR=Assets\Textures\icon-supply-zhybrid_nobg.dds
+
+UI/ResourceFrameSupplyIcon_ZHBR=assets\textures\icon-supply-zhybrid_nobg.dds
+UI/ResourceFrameArmyIcon_ZHBR=assets\textures\btn-unit-zhybrid-warrior.dds
+UI/ResourceFrameWorkerIcon_ZHBR=assets\textures\btn-unit-zhybrid-minion.dds
+
+// Observer Interface Assets //
+
+// Pro 2020/WCS 3
+WCS/Race_ZHBR=Assets\Textures\icon-1v1-zhybrid.dds
+WCS/SmallRace_ZHBR=Assets\Textures\icon-1v1-zhybrid.dds
+WCS/PlayerBarRace_ZHBR=Assets\Textures\icon-1v1-zhybrid.dds
+WCS/Supply_ZHBR=assets\textures\icon-supply-zhybrid_nobg.dds
+WCS/Workers_ZHBR=assets\textures\btn-unit-zhybrid-minion.dds
+WCS/Minerals_ZHBR=Assets\Textures\ui_emoticons_minerals.dds
+WCS/Gas_ZHBR=Assets\Textures\ui_emoticons_gas.dds

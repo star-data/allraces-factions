@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="TalDarimCynosurePhotonicOverchargeLight" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\PurifyLaunch\PurifyLaunch.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimPhotonicBarrageMissileImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\Malash_Attack_Missile_Impact\Malash_Attack_Missile_Impact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimPhotonicBarrageMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Malash_Attack_Missile\Malash_Attack_Missile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimCustodesAnchorLinkBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\AmonShard_Heal_Beam\AmonShard_Heal_Beam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimCustodesTerrazineFogModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\PsiStorm\PsiStorm.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TalDarimCustodesTarrazineFogCursorSplat" parent="UI">
+        <Model value="Assets\UI\Cursors\ProtossCursor1\ProtossCursor1.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+        <SelectionRadius value="2.500000"/>
+        <ShadowRadius value="2.500000"/>
+    </CModel>
+    <CModel id="TalDarimCustodesPsionicShockAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Neutral\Hybrid_ProtossAdvanced_Experimented_AttackBeam\Hybrid_ProtossAdvanced_Experimented_AttackBeam.m3"/>
+        <LowQualityModel value="ArchonAttackBeamLow"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TalDarimCustodesTerrazineFogImpact" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_VoidShard_VoidZone\Glaze_VoidShard_VoidZone.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="TalDarimHavocVoidShardBirth" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\HallucinateBirth\HallucinateBirth.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimHavocVoidShardWrathwalkerBirth" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\HallucinateColossusBirth\HallucinateColossusBirth.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimDeathStarVaporizeIndicator" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\GhostLaseTargetTactical\GhostLaseTargetTactical.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <AnimSpeed value="2.200000"/>
+    </CModel>
+    <CModel id="TalDarimDeathStarSphereAttachment" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Tempest_TalDarim_PlasmaMissile\Tempest_TalDarim_PlasmaMissile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimDeathStarVaporizeAttackBeam" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Mothership_Taldarim_Thermal_Lance_Beam\Mothership_Taldarim_Thermal_Lance_Beam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TalDarimDestroyerAttackBounceBeam" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\VoidRayBeamBounceMissile\VoidRayBeamBounceMissile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TalDarimDreadnoughtBeetleAttackExplosion" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Models\Effects\Reaver_Forged_Scarab_Impact.m3"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimChampionBurstofSpeedModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\Ultralisk_SpeedUpgrade\Ultralisk_SpeedUpgrade.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimBloodHunterSoulShardModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Void_Cloud_Damage\Void_Cloud_Damage.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimDeathStarVaporize" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\Tempest_TalDarim_GroundMissileImpact\Tempest_TalDarim_GroundMissileImpact.m3"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimHavocVoidShard" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_VoidShard_VoidZone\Glaze_VoidShard_VoidZone.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="TalDarimDeathStarAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\Alarak_COOP_Empower_Impact\Alarak_COOP_Empower_Impact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimDeathStarAttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\SnipeLaunch\SnipeLaunch.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimParticleCannonPlacement" parent="Building" Race="Protoss">
+        <Model value="Assets\Models\ParticleCannon_Taldarim_DS_Placement.m3"/>
+        <Radius value="4.000000"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="4.000000"/>
+        <ShadowRadius value="4.000000"/>
+        <SquibTypeDefault value="Metal"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimParticleCannonWarpIn" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Models\ParticleCannon_Taldarim_DS_TC_WarpIn.m3"/>
+        <Occlusion value="Show"/>
+        <Radius value="4.000000"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="4.000000"/>
+        <ShadowRadius value="4.000000"/>
+        <SquibTypeDefault value="Metal"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimPhotonicBarrageMissileLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Protoss\Malash_Attack_Missile_Launch\Malash_Attack_Missile_Launch.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimPrismaticTowerDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Buildings\Protoss\Taldarim_Shield_Generator_Death\Taldarim_Shield_Generator_Death.m3"/>
+        <LowQualityModel value="TalDarimParticleCannonDeathUnpowered"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSoulCharge" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_Alarak_COOP_PrestigeMechBuff\Glaze_Alarak_COOP_PrestigeMechBuff.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantDeathModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\DisruptionBlast_Damage\DisruptionBlast_Damage.m3"/>
+        <AnimSpeed value="4.000000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimRiddlerPlasmaBombBuildBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\StasisWard_Beam\StasisWard_Beam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimRiddlerPlasmaBombExplosion" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Neutral\Self_Destruct_Coop\Self_Destruct_Coop.m3"/>
+        <AnimSpeed value="4.000000"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimRiddlerEnshroudBehaviorModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ShadowUnitSmoke\ShadowUnitSmoke.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="TalDarimRiddlerEnshroudModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Neutral\PulloftheVoid_Coop\PulloftheVoid_Coop.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimRiddlerAttackBeam" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PulsarBeam\PulsarBeam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+        <SelectionRadius value="0.714000"/>
+        <ShadowRadius value="0.714000"/>
+    </CModel>
+    <CModel id="TalDarimOutrider" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Scout_Taldarim\Scout_Taldarim.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow05"/>
+        <Radius value="0.750000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <TechPurchaseCamera value="Star2CameraLow05"/>
+        <UnitGlossaryCamera value="Star2CameraLow05"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderGroundAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\Malash_Attack_Missile_Launch\Malash_Attack_Missile_Launch.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderGroundWeaponLeft" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Malash_Attack_Missile\Malash_Attack_Missile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderGroundWeaponRight" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Malash_Attack_Missile\Malash_Attack_Missile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Scout_Taldarim_Death\Scout_Taldarim_Death.m3"/>
+        <LowQualityModel value="ProtossMediumUnitDeathLow"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.750000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderAirAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\Alarak_COOP_Empower_Impact\Alarak_COOP_Empower_Impact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderAirAttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\SnipeLaunch\SnipeLaunch.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderPortrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\Phoenix_Taldarim_Portrait\Phoenix_Taldarim_Portrait.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimOutriderWarpIn" parent="OneShotSpellFX">
+        <Model value="Assets\Units\Protoss\ScoutWarpIn\ScoutWarpIn.m3"/>
+        <LowQualityModel value="ProtossUnitBirth"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.750000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+    </CModel>
+    <CModel id="TalDarimCynosureDestructiveHarvestModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Void_Cloud_Damage\Void_Cloud_Damage.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimLitanyTimedLife" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_Alarak_COOP_Empower\Glaze_Alarak_COOP_Empower.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantLeechBeam" parent="PersistentSpellFX">
+        <Model value="Assets\COOP\Stetmann\Effects\Ultralisk_Stetmann_COOP_LifeLeechBeam\Ultralisk_Stetmann_COOP_LifeLeechBeam.m3"/>
+        <AnimSpeed value="0.500000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSupplicant" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Supplicant\Supplicant.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantImpact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Supplicant_COOP_Missile_Impact\Supplicant_COOP_Missile_Impact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantPlacementModel" parent="Placement">
+        <Model value="Assets\Units\Protoss\Supplicant_PlacementModel\Supplicant_PlacementModel.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantWarpIn" parent="OneShotSpellFX">
+        <Model value="Assets\Units\Protoss\Supplicant_WarpIn\Supplicant_WarpIn.m3"/>
+        <LowQualityModel value="ProtossUnitBirth"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Supplicant_COOP_Missile\Supplicant_COOP_Missile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantMissileLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Protoss\Supplicant_COOP_Missile_Launch\Supplicant_COOP_Missile_Launch.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Supplicant_Death\Supplicant_Death.m3"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantPortrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Portraits\Protoss\Supplicant_Portrait\Supplicant_Portrait.m3"/>
+        <Image value="Assets\Textures\supplicantportrait_static.dds"/>
+        <Lighting value="UnknownLight"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSupplicantSacrificeDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Supplicant_Sacrifice_Death\Supplicant_Sacrifice_Death.m3"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+        <Occlusion value="Show"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSlayerMissile" parent="RaceMissileFX" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\Stalker_TalDarim_Missile\Stalker_TalDarim_Missile.m3"/>
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+        <SelectionRadius value="0.714000"/>
+        <ShadowRadius value="0.714000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSlayerMissileImpact" parent="RaceImpactFX" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\Stalker_TalDarim_Missile_Impact\Stalker_TalDarim_Missile_Impact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimSlayerEntropicShield" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_PhaseArmor\Glaze_PhaseArmor.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Priority value="32"/>
+    </CModel>
+    <CModel id="TalDarimReliquaryofSouls" parent="Unit" Race="Protoss">
+        <Model value="Assets\Models\Reaver_Taldarim_ds.m3"/>
+        <AttachProps>
+            <Id value="Ref_Center"/>
+            <SquibType value="Metal"/>
+            <RadiusTarget value="0.750000"/>
+            <RadiusShield value="1.000000"/>
+        </AttachProps>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid09"/>
+        <Radius value="0.800000"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <SelectionRadius value="1.029000"/>
+        <ShadowRadius value="0.800000"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraMid09"/>
+        <!--Tipability value="0.750000"/-->
+        <Tipability value="1.000000"/>
+        <TipabilityLength value="1.800000"/>
+        <TipabilityWidth value="1.200000"/>
+        <TextureDeclares Prefix="reaver_">
+            <Adaptions TriggerOnSubstring="_Diffuse" Slot="main"/>
+        </TextureDeclares>
+        <UnitGlossaryCamera value="Star2CameraMid09"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimReliquaryofSoulsDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Models\Reaver_Taldarim_ds_Death_00.m3"/>
+        <LowQualityModel value="ProtossLargeUnitDeathLow"/>
+        <Events>
+            <Variation value="0"/>
+            <Anim value="Death,00"/>
+            <Name value="Reaver_DeathExplosion"/>
+            <Type value="Sound"/>
+            <Time value="1.370000"/>
+            <Payload value="Reaver_DeathExplosion"/>
+        </Events>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimReliquaryofSoulsDeathRagdoll" parent="UnitDeathRagdoll" Race="Protoss">
+        <Model value="Assets\Models\Reaver_Taldarim_ds_Death_01.m3"/>
+        <Events>
+            <Variation value="0"/>
+            <Anim value="Death,00"/>
+            <Name value="Reaver_DeathExplosion"/>
+            <Type value="Sound"/>
+            <Time value="1.370000"/>
+            <Payload value="Reaver_DeathExplosion"/>
+        </Events>
+        <VariationCount value="2"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimReliquaryofSoulsPortrait" parent="Portrait" Race="Protoss">
+        <Model value="Assets\Models\Reaver_Taldarim_ds_Portrait.m3"/>
+        <Image value="Assets\Textures\ReaverPortrait_Static.dds"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimWarmistressParticleBeamBeam" parent="MissileFX">
+        <Model value="Assets\Effects\Neutral\Void_DeathGripCrystal_DeathGripBeam\Void_DeathGripCrystal_DeathGripBeam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
+        <SelectionRadius value="0.714000"/>
+        <ShadowRadius value="0.714000"/>
+    </CModel>
+    <CModel id="TalDarimDreadnoughtBeetleWeapon" parent="MissileFX">
+        <Model value="Assets\Models\Reaver_Taldarim_ds_Missile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="ScarabAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Models\Reaver_Taldarim_ds_Missile_Impact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimBloodHunterVoidStasis" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\VoidStasis\VoidStasis.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimBloodHunterVoidStasisGlaze" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_VoidStasis\Glaze_VoidStasis.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimParticleCannonParticleBeamBeam" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Alarak_Attack_Beam\Alarak_Attack_Beam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+        <SelectionRadius value="0.714000"/>
+        <ShadowRadius value="0.714000"/>
+    </CModel>
+    <CModel id="TalDarimDreadnoughtParticleBeamBeam" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Mothership_Taldarim_Terminator_Beam\Mothership_Taldarim_Terminator_Beam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="0.700000,0.700000,0.700000"/>
+        <ScaleMin value="0.700000,0.700000,0.700000"/>
+        <SelectionRadius value="0.714000"/>
+        <ShadowRadius value="0.714000"/>
+    </CModel>
+    <CModel id="TalDarimWrathwalkerWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ColossusTaldarim_Missile\ColossusTaldarim_Missile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimWrathwalkerPowerUpModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\ColossusTaldarim_Powerup\ColossusTaldarim_Powerup.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimHavocSquadSight" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\SquadSight\SquadSight.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimHavocTargetLockModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\TargetLockImpact\TargetLockImpact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimHavocTargetLockModelLarge" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\TargetLockImpactLarge\TargetLockImpactLarge.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimHavocTargetLockLaser" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\TargetLockBeam\TargetLockBeam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimDestroyerAttackBeam" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\VoidRayBeamBounceMissile\VoidRayBeamBounceMissile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TalDarimDestroyerChargeBase" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\VoidRayBeamBounceBeam\VoidRayBeamBounceBeam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimDestroyerCenterBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\VoidRayCenterBeam\VoidRayCenterBeam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TalDarimDeathStarWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Tempest_TalDarim_PlasmaMissile\Tempest_TalDarim_PlasmaMissile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimVanguardScatterCannonsMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\ScatterCannonMissile\ScatterCannonMissile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimVanguardScatterCannonsImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\ScatterCannonMissileImpact\ScatterCannonMissileImpact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimVanguardScatterCannonsModel" parent="LaunchFX">
+        <Model value="Assets\Effects\Protoss\ScatterCannonLaunch\ScatterCannonLaunch.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimParticleCannon" parent="Building" Race="Protoss">
+        <Model value="Assets\Models\ParticleCannon_Taldarim_DS_TC.m3"/>
+        <Radius value="4.000000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="4.000000"/>
+        <ShadowRadius value="4.000000"/>
+        <SquibTypeDefault value="Metal"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimParticleCannonDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Models\ParticleCannon_Taldarim_DS_TC_Death.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimParticleCannonDeathUnpowered" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Models\ParticleCannon_Taldarim_DS_TC_DeathUnpowered.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimParticleCannonAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Alarak_Attack_Beam\Alarak_Attack_Beam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimPrismaticTower" parent="Building" Race="Protoss">
+        <Model value="Assets\Buildings\Protoss\Taldarim_Shield_Generator\Taldarim_Shield_Generator.m3"/>
+        <Events>
+            <Anim value="Death,A,00"/>
+            <Name value="TaldarimShieldGenerator_DeathA_Death"/>
+            <Type value="Sound"/>
+            <Time value="0.020000"/>
+            <Payload value="TaldarimShieldGenerator_DeathA"/>
+        </Events>
+        <Events>
+            <Anim value="Death,B,00"/>
+            <Name value="TaldarimShieldGenerator_DeathB_Death"/>
+            <Type value="Sound"/>
+            <Time value="0.020000"/>
+            <Payload value="TaldarimShieldGenerator_DeathB"/>
+        </Events>
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="Taldarim_Shield_Generator_Birth"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="TaldarimShieldGenerator_Birth"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Taldarim_Shield_Generator_ActivateComposite"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="TaldarimShieldGenerator_Activate"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Taldarim_Shield_Generator_ActivateLazer"/>
+            <Type value="Sound"/>
+            <Time value="0.200000"/>
+            <Payload value="TaldarimShieldGenerator_ActivateLazer"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="Taldarim_Shield_Generator_WorkEnd"/>
+            <Type value="Sound"/>
+            <Time value="0.200000"/>
+            <Payload value="TaldarimShieldGenerator_DeathB"/>
+        </Events>
+        <Radius value="2.000000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="2.500000"/>
+        <ShadowRadius value="2.500000"/>
+        <SquibTypeDefault value="Metal"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimAscendantWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_AgonizingBlast\HighTemplarTaldarim_AgonizingBlast.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimAscendantAttackImpact" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_AgonizingBlast_Impact\HighTemplarTaldarim_AgonizingBlast_Impact.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="VoidHighTemplarPsiOrbCursorSplat" parent="UI">
+        <Model value="Assets\UI\Cursors\ProtossCursor1\ProtossCursor1.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+        <SelectionRadius value="2.500000"/>
+        <ShadowRadius value="2.500000"/>
+    </CModel>
+    <CModel id="TalDarimAscendantMindBlastExplosion" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_MindBlast\HighTemplarTaldarim_MindBlast.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <!--ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/-->
+        <SelectionRadius value="0.200000"/>
+        <ShadowRadius value="0.200000"/>
+    </CModel>
+    <CModel id="TalDarimAscendantPsiOrbBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_PsionicOrb_Beam\HighTemplarTaldarim_PsionicOrb_Beam.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <!--CModel id="VoidHighTemplarPsiOrbBeamImpactModel">-->
+    <!--        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_PsionicOrb_Impact\HighTemplarTaldarim_PsionicOrb_Impact.m3"/>-->
+    <!--    </CModel-->
+    <CModel id="VoidHighTemplarPsiOrbMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\HighTemplarTaldarim_PsionicOrb_Missile\HighTemplarTaldarim_PsionicOrb_Missile.m3"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CModel>
+    <CModel id="TalDarimInvisible" Race="Neutral">
+        <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+        <AttachProps Id="Ref_Center" RadiusShield="0.500000"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Radius value="-1.000000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="1.750000"/>
+        <ShadowRadius value="1.750000"/>
+    </CModel>
+</Catalog>

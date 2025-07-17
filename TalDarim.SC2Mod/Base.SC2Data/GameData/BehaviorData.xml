@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="TalDarimAscendantPsiOrbBeamCaster">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="TalDarimAscendantPsiOrbSearchBeamCaster"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimAscendantPsionicOrbBeamCaster">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.6665"/>
+        <Period value="0.5"/>
+        <InitialEffect value="TalDarimAscendantPsiOrbFakeDamage"/>
+        <PeriodicEffect value="TalDarimAscendantPsiOrbFakeDamage"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimCynosurePhotonicOvercharge">
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="30"/>
+        <Modification>
+            <WeaponArray Link="TalDarimPhotonicBarrage" Turret="Nexus"/>
+            <WeaponArray Link="TalDarimPhotonicBarrage"/>
+            <WeaponEnableArray value="TalDarimPhotonicBarrage"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimHavocCloakingModule">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="TalDarimDeathCouncilChampionLearnedHegemony"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimOutriderArmorReduction">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-vanguard-increasedarmordamage.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <RemoveValidatorArray value="NotOracleStasisTrapped"/>
+        <Duration value="10"/>
+        <Modification ShieldArmorBonus="-1">
+            <LifeArmorBonus value="-1"/>
+        </Modification>
+        <MaxStackCount value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorJump id="TalDarimSlayerEnhancedFrame">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Requirements value="TalDarimDeathCouncilSlayerLearnedEnhancedFrame"/>
+        <TriggerHeightDeltaMin value="1.5"/>
+        <TriggerHeightDeltaMax value="4.5"/>
+        <InitiateRangeUp value="1.5"/>
+        <InitiateRangeDown value="0.5"/>
+        <JumpRangeMax value="12"/>
+        <Mover value="CliffJumper"/>
+        <MoverUp value="ReaperJumpDown"/>
+        <MoverDown value="ReaperJumpDown"/>
+        <DurationPreLaunch value="0.05"/>
+        <DurationPostLand value="0.075"/>
+        <DurationMoveOut value="0.08"/>
+        <Placeholder value="ReaperPlaceholder"/>
+        <LandAdjustmentDown value="1"/>
+        <LandArrivalRange value="0.05"/>
+        <LandCheckRadius value="5"/>
+    </CBehaviorJump>
+    <CBehaviorBuff id="TalDarimLocustEnergyCharged">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="TalDarimCasterHasEnergyOrEnergised"/>
+        <MaxStackCount value="5"/>
+        <Period value="0.06"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimLocustEnergyChargedMax">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Modification>
+            <EnergyDamageRatioBonus value="1"/>
+            <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            <VitalMaxArray index="Energy" value="100"/>
+        </Modification>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="TalDarimCasterHasEnergyOrEnergised"/>
+        <PeriodicEffect value="TalDarimLocustReconstitute"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimLocustEnergyChargedTemp">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="0.06"/>
+        <BuffFlags index="Extend" value="1"/>
+        <Period value="0.06"/>
+        <PeriodicEffect value="TalDarimSoulLeechLocustGainEnergy20"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimCustodesAnchorLink">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\amonshards_weapon.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="7.5"/>
+        <Period value="0.09"/>
+        <InitialEffect value="TalDarimCustodesAnchorLinkPull"/>
+        <PeriodicEffect value="TalDarimCustodesAnchorLinkPull"/>
+        <Modification MoveSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimPhotonicOverchargeWarPrism">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-structureovercharge.dds"/>
+        <Modification>
+            <WeaponEnableArray value="TalDarimPhotonicBarrage"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimAscendantPsionicOrbDamage">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.6665"/>
+        <Period value="0.5"/>
+        <InitialEffect value="TalDarimAscendantPsiOrbDamage"/>
+        <PeriodicEffect value="TalDarimAscendantPsiOrbDamage"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimSoulDrinker">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DamageResponse Fatal="1" Handled="TalDarimSoulLeechAllDeathCP">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimSoulDrinkerPriorityLow">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\ui_glues_ladder_score_rating_down.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimSoulDrinkerPriorityHigh">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\ui_glues_ladder_score_rating_up.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimSoulDrinkerSP">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DamageResponse Fatal="1" Handled="TalDarimSoulLeechAllDeathCP">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimWarPrismBloodShield">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Duration value="12.5"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="20"/>
+        </Modification>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimVanguardSoulArmour">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7.5"/>
+        <Modification ShieldArmorBonus="1">
+            <LifeArmorBonus value="1"/>
+        </Modification>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimPrismaticTowerActivatedBouncer">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <Duration value="0.3"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimDeathStarRelease">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DamageResponse Fatal="1" Handled="TalDarimDeathStarReleaseCommandIterate">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimCustodesTerrazineFog">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\tip_terrazinefog.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.6665"/>
+        <Period value="0.571"/>
+        <Modification>
+            <DamageDealtFraction index="Ranged" value="-0.5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimHavocVoidShard">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Modification WeaponScanBonus="5" SubgroupPriority="-100">
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="EnableAttack" value="1"/>
+            <ModifyFlags index="EnableMove" value="1"/>
+            <ModifyFlags index="HideChangeUI" value="1"/>
+            <StateFlags index="Hallucination" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressFoodMade" value="1"/>
+            <StateFlags index="SuppressFoodUsed" value="1"/>
+            <StateFlags index="SuppressPassenger" value="1"/>
+            <StateFlags index="SuppressRadar" value="1"/>
+            <StateFlags index="SuppressRequirements" value="1"/>
+            <StateFlags index="SuppressXPGain" value="1"/>
+            <StateFlags index="SuppressXPGrant" value="1"/>
+            <StateFlags index="SuppressXPSharing" value="1"/>
+            <DamageDealtFraction index="Spell" value="-0.5"/>
+            <DamageDealtFraction index="Melee" value="-0.5"/>
+            <DamageDealtFraction index="Ranged" value="-0.5"/>
+            <DamageDealtFraction index="Splash" value="-0.5"/>
+            <AbilClassEnableArray index="CAbilMorph" value="1"/>
+            <AbilClassEnableArray index="CAbilMorphPlacement" value="1"/>
+            <AbilClassEnableArray index="CAbilStop" value="1"/>
+            <AbilLinkDisableArray value="PhasingMode"/>
+        </Modification>
+        <DamageResponse ModifyFraction="2">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimBeetleAmmoTimedLife">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <InitialEffect value="SuicideRemove"/>
+        <ExpireEffect value="SuicideRemove"/>
+        <Modification>
+            <StateFlags index="Summoned" value="1"/>
+        </Modification>
+        <KillCredit Value="Caster"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimBloodHunterSoulShard">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <DamageResponse Fatal="1" Handled="TalDarimBloodHunterSoulShardDeathSearch">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimMonitorDetonationCharge">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <AdditiveMoveSpeedFactor value="0.5"/>
+        </Modification>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimDeathStarTrack">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Modification>
+            <StateFlags index="Uncommandable" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimDeathStarVaporiseBar">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="6"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimDestroyerBloodCharge">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7.5"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimDeathStarDeathCharge">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="5"/>
+        <Duration value="20"/>
+        <Modification>
+            <DamageDealtScaled index="Spell" value="25"/>
+            <DamageDealtScaled index="Splash" value="25"/>
+            <DamageDealtAttributeScaled index="Structure" value="10"/>
+        </Modification>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimPrismaticTowerActivatedMono">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <Duration value="0.3"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="TalDarimPrismaticTowerTargetTracking">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <TrackingValidatorArray value="WeaponInRange"/>
+        <MaxTrackedUnits value="1"/>
+        <UnitAddedAtMaxRule value="ReplaceOldest"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="TalDarimSlayerEntropicShieldCharge">
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7.5"/>
+        <DamageResponse Handled="TalDarimSlayerEntropicShieldChargeSet">
+            <Chance value="1"/>
+        </DamageResponse>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimVoidShardTimer">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="20"/>
+        <ExpireEffect value="TalDarimHavocKillVoidShard"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimWrathwalkerSoulsWeapon">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="5"/>
+        <Duration value="5"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimPariahTimedLife" parent="TimedLife">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <Duration value="12.5"/>
+        <ExpireEffect value="TalDarimLitanyTimedLifeFate"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimSupplicantBloodShield">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="5"/>
+        <Duration value="20"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="10"/>
+        </Modification>
+        <BehaviorFlags index="EnabledWhileDead" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimRiddlerHarmonization">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7.5"/>
+        <Modification WeaponRange="1.2">
+            <AdditiveAttackSpeedFactor value="0.1"/>
+        </Modification>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimBloodHunterSoulShardCharge">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7.5"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimOutriderSoulsWeapon">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7.5"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="TalDarimReliquaryTracking">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <MaxTrackedUnits value="3"/>
+        <UnitAddedAtMaxRule value="ReplaceOldest"/>
+        <ReplacedEffect value="TalDarimKillSupplicant"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="TalDarimLitanyTimedLife" parent="TimedLife">
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <ExpireEffect value="TalDarimLitanyTimedLifeFate"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimRiddlerPlasmaBombCloak">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="IsNotConstructing"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimRiddlerPlasmaBombCaster">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-unit-protoss-stasisward.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressPassenger" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Unstoppable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimRiddlerEnshrouded">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\cloudsingle.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <FinalEffect value="TalDarimRiddlerEnshroudDestroy"/>
+        <ExpireEffect value="TalDarimRiddlerEnshroudDestroy"/>
+        <Modification SightBonus="-6" DetectBonus="-6" Radar="-6"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimChampionBurstofSpeed">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedBonus="1.5">
+            <DamageDealtScaled index="Melee" value="3"/>
+            <DamageDealtAttributeUnscaled index="Armored" value="4"/>
+        </Modification>
+        <MaxStackCount value="5"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimChampionHegemony">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DamageResponse Fatal="1" Handled="TalDarimChampionHegemonySearch" ModifyFraction="0">
+            <ValidatorArray value="TalDarimNearbySaccrifiable"/>
+            <Chance value="1"/>
+        </DamageResponse>
+        <DisableValidatorArray value="TalDarimDeathCouncilChampionLearnedHegemony"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimCynosureDestructiveHarvestMineral">
+        <Tooltip value="Behavior/Tooltip/TalDarimCynosureDestructiveHarvest"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-combatmastery.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <RemoveValidatorArray value="HasVespene"/>
+        <TimeScaleSource Value="Unknown"/>
+        <Duration value="90"/>
+        <Period value="1"/>
+        <PeriodicEffect value="TalDarimCynosureDestructiveHarvestMineralSet"/>
+        <InitialEffect value="TalDarimCynosureDestructiveHarvestSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimCynosureDestructiveHarvestGas">
+        <Tooltip value="Behavior/Tooltip/TalDarimCynosureDestructiveHarvest"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-combatmastery.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <RemoveValidatorArray value="HasVespene"/>
+        <TimeScaleSource Value="Unknown"/>
+        <Duration value="90"/>
+        <Period value="1"/>
+        <PeriodicEffect value="TalDarimCynosureDestructiveHarvestGasSet"/>
+        <InitialEffect value="TalDarimCynosureDestructiveHarvestSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimSlayerEntropicShieldActive">
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stalkerphasingarmor.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <Alignment value="Positive"/>
+        <DamageResponse ModifyFraction="0.1">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimSlayerEntropicShieldActiveLong">
+        <Tooltip value="Behavior/Tooltip/TalDarimSlayerEntropicShieldActive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stalkerphasingarmor.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+        </Modification>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimBloodHunterVoidStasis">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="3.5"/>
+        <Modification>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressFoodMade" value="1"/>
+            <StateFlags index="SuppressRadar" value="1"/>
+            <StateFlags index="SuppressTech" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
+            <BehaviorClassDisableArray index="CBehaviorPowerSource" value="1"/>
+            <BehaviorClassDisableArray index="CBehaviorResource" value="1"/>
+            <BehaviorLinkDisableArray value="SalvageBunker"/>
+            <BehaviorLinkDisableArray value="SalvageShared"/>
+            <BehaviorLinkDisableArray value="SensorTowerRadar"/>
+        </Modification>
+        <DurationOverride>
+            <Duration value="1.5"/>
+            <ValidatorArray value="TalDarimTargetisaHero"/>
+        </DurationOverride>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimHavocSquadSight">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-squadsight.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <Modification RangedWeaponRange="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimHavocSquadSightAura">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <!--Requirements value="HaveObserver"/-->
+        <DisableValidatorArray value="IsNotWarpingIn"/>
+        <DisableValidatorArray value="TalDarimCasterNotStasis"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="TalDarimHavocSquadSightSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimHavocTargetLocked">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <Modification>
+            <DamageTakenFraction index="Spell" value="0.15"/>
+            <DamageTakenFraction index="Melee" value="0.15"/>
+            <DamageTakenFraction index="Ranged" value="0.15"/>
+            <DamageTakenFraction index="Splash" value="0.15"/>
+            <DamageTakenFraction index="NoProc" value="0.15"/>
+        </Modification>
+        <RemoveValidatorArray value="TalDarimHavocTargetLockRange"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="TalDarimHavocTargetLockTrack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <TrackingValidatorArray value="CasterAndTargetNotDead"/>
+        <TrackingValidatorArray value="TalDarimHavocTargetLockRange"/>
+        <TrackingValidatorArray value="NotStasis"/>
+        <MaxTrackedUnits value="3"/>
+        <UnitAddedAtMaxRule value="ReplaceOldest"/>
+    </CBehaviorUnitTracker>
+    <CBehaviorBuff id="TalDarimDestroyerBloodSeeker">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-beambounce.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="4"/>
+        <BuffFlags index="Extend" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimDreadnoughtBeetlesArmed">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="5"/>
+        <Duration value="10"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <Modification>
+            <WeaponEnableArray value="TalDarimDreadnoughtBeetle"/>
+        </Modification>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimAscendantSoulPower">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:PrTD,AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Duration value="10"/>
+        <Modification>
+            <DamageDealtFraction index="Spell" value="0.15"/>
+            <DamageDealtFraction index="Melee" value="0.15"/>
+            <DamageDealtFraction index="Ranged" value="0.15"/>
+            <DamageDealtFraction index="Splash" value="0.15"/>
+            <DamageDealtFraction index="NoProc" value="0.15"/>
+            <VitalMaxArray index="Shields" value="25"/>
+        </Modification>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimAscendantPsiOrb">
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="TalDarimAscendantPsiOrbSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TalDarimWarmistressSoulsOvercharge">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:PrTD"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="5"/>
+        <Duration value="10"/>
+    </CBehaviorBuff>
+</Catalog>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAccumulatorUserData id="HybridDeformer@DestructionAriseLifetoRestore">
+        <Key value="DestructionAriseLife"/>
+    </CAccumulatorUserData>
+    <CAccumulatorUserData id="HybridDeformer@DestructionAriseShieldtoRestore">
+        <Key value="DestructionAriseShield"/>
+    </CAccumulatorUserData>
+    <CAccumulatorArithmetic id="HybridDeformer@DestructionAriseShieldRestoreArithmetic">
+        <MinAccumulation value="0"/>
+        <Parameters value="0">
+            <AccumulatorArray value="HybridDeformerDestructionArise@TotalVital"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="HybridDeformer@DestructionAriseLifetoRestore"/>
+        </Parameters>
+        <Operation value="Subtract"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorUserData id="HybridDeformerDestructionArise@TotalVital">
+        <Key value="DestructionAriseTotalVital"/>
+    </CAccumulatorUserData>
+    <CAccumulatorVitals id="HybridGetTargetLifeMissing">
+        <Ratio value="1"/>
+        <Missing value="1"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetTargetShields">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetTargetLife">
+        <Ratio value="1"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetTargetEnergy">
+        <Ratio value="1"/>
+        <VitalType value="Energy"/>
+        <UnitSource Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetLifeMissing">
+        <Ratio value="1"/>
+        <Missing value="1"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetNetwork">
+        <Ratio value="-0.01"/>
+        <VitalType value="Energy"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetCasterEnergy">
+        <Ratio value="1"/>
+        <VitalType value="Energy"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetCasterShields">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="GetCasterLife">
+        <Ratio value="1"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorArithmetic id="HybridDeformer@DestructionAriseLifeRestoreArithmetic">
+        <MinAccumulation value="0"/>
+        <Parameters value="0">
+            <AccumulatorArray value="HybridDeformerDestructionArise@TotalVital"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="HybridGetTargetLifeMissing"/>
+        </Parameters>
+        <Operation value="Minimum"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorUserData id="ZHBRConsumeDNA@LifeToRestore">
+        <Key value="LifeToRestore"/>
+    </CAccumulatorUserData>
+    <CAccumulatorArithmetic id="ZHBRConsumeDNA@LifeToRestoreArithmetic">
+        <MinAccumulation value="0"/>
+        <Parameters value="0">
+            <AccumulatorArray value="ZHBRConsumeDNA@TotalVital"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="GetLifeMissing"/>
+        </Parameters>
+        <Operation value="Minimum"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorUserData id="ZHBRConsumeDNA@TotalVital">
+        <Key value="TotalVital"/>
+    </CAccumulatorUserData>
+    <CAccumulatorUserData id="ZHBRConsumeDNA@ShieldToRestore">
+        <Key value="ShieldToRestore"/>
+    </CAccumulatorUserData>
+    <CAccumulatorArithmetic id="ZHBRConsumeDNA@ShieldToRestoreArithmetic">
+        <MinAccumulation value="0"/>
+        <Parameters value="0">
+            <AccumulatorArray value="ZHBRConsumeDNA@TotalVital"/>
+        </Parameters>
+        <Parameters value="0">
+            <AccumulatorArray value="ZHBRConsumeDNA@LifeToRestore"/>
+        </Parameters>
+        <Operation value="Subtract"/>
+    </CAccumulatorArithmetic>
+    <CAccumulatorUserData id="ZHBREvaporator@EvaporatorUserData">
+        <Key value="EvaporatorDamage"/>
+        <ApplicationRule value="AdditiveMultiply"/>
+    </CAccumulatorUserData>
+</Catalog>

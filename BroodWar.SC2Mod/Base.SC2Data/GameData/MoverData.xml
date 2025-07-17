@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CMoverMissile id="SunkenColonyWeaponSCBW@Missile">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="10" ClearanceAcceleration="75" Outro="-1" ThrowBandYaw="-360,-360,-360,-360" ThrowBandPitch="-360,-360,-360,-360" YawPitchRoll="719.2968"/>
+  <MotionPhases YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="DevourerMPWeaponMissileSCBW@Missile">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="11" ThrowBandYaw="-360,-360,-360,-360" ThrowBandPitch="-360,-360,-360,-360" YawPitchRoll="5759.6484"/>
+</CMoverMissile>
+<CMoverMissile id="ArbiterSCBWWeapon@Mover">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="20" YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="DragoonSCBWWeapon@Mover">
+  <PathMode value="Flying"/>
+  <MotionPhases Driver="Throw" Acceleration="10" Speed="5" MaxSpeed="15" BlendType="Linear" Outro="0.1,0.5" ThrowVector="0,0,1"/>
+  <MotionPhases Driver="Guidance" Acceleration="50" MaxSpeed="20" BlendType="Linear" YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="PhotonCannonSCBWWeapon@Mover" parent="MissileDefault">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="18" ClearanceAcceleration="75" Outro="-1" YawPitchRoll="719.2968" index="0"/>
+</CMoverMissile>
+<CMoverMissile id="ScoutSCBWWeaponAir@MoverLeft">
+  <MotionPhases Driver="Throw" Acceleration="10" Speed="5" MaxSpeed="15" Outro="0.4,0.85" ThrowRotationType="ThrowForward" ThrowVector="0.9,-1,0"/>
+  <MotionPhases Outro="1,1.5" ThrowVector="-0.4,-1,0"/>
+  <MotionPhases Driver="Guidance" Acceleration="60" MaxSpeed="40" YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="ScoutSCBWWeaponAir@MoverRight">
+  <MotionPhases Driver="Throw" Acceleration="10" Speed="5" MaxSpeed="15" Outro="0.4,0.85" ThrowRotationType="ThrowForward" ThrowVector="-0.9,-1,0"/>
+  <MotionPhases Outro="1,1.5" ThrowVector="0.4,-1,0"/>
+  <MotionPhases Driver="Guidance" Acceleration="60" MaxSpeed="40" YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="ReaverSCBWWeapon@Mover">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="10" ClearanceAcceleration="75" Outro="-0.2,-0.1" YawPitchRoll="719.2968">
+    <Overlays Scale="0.7,0.1"/>
+  </MotionPhases>
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="10" ClearanceAcceleration="75" YawPitchRoll="MAX">
+    <Overlays Scale="0.1,0.1"/>
+  </MotionPhases>
+  <MotionOverlays Type="Wave" Axis="1,0,0" Wavelength="6,0.1"/>
+</CMoverMissile>
+<CMoverMissile id="HighTemplarSCBWWeapon@Mover" parent="MissileDefault"/>
+<CMoverMissile id="MissileTurretSCBWWeapon@Mover">
+  <MotionPhases Driver="Guidance" Speed="10" MaxSpeed="10" ActorTracking="Actual" Outro="-4" YawPitchRoll="MAX"/>
+  <MotionPhases Acceleration="200" MaxSpeed="20"/>
+</CMoverMissile>
+<CMoverMissile id="ValkyrieSCBWWeapon@Mover">
+  <MotionPhases Driver="Guidance" Acceleration="18" MaxSpeed="16" Outro="-1" YawPitchRoll="719.2968">
+    <Overlays Scale="1,0.5"/>
+  </MotionPhases>
+  <MotionPhases YawPitchRoll="MAX"/>
+  <MotionPhases index="0" Acceleration="23"/>
+  <MotionOverlays Type="Revolver" Polarity="Random" Axis="0,-1,0" Wavelength="0,0.8" WavelengthChangeProbability="0.8" RevolverSpeed="179.2968" RevolverSpeedRange="179.2968" RevolverMaxSpeed="719.2968" RevolverMaxSpeedRange="0" RevolverAccel="337.5" RevolverAccelRange="337.5"/>
+  <MotionOverlays Type="Wave" Wavelength="0" WavelengthChangeProbability="0" RevolverSpeed="0" RevolverSpeedRange="0" RevolverMaxSpeed="0" RevolverMaxSpeedRange="0" RevolverAccel="0" RevolverAccelRange="0"/>
+</CMoverMissile>
+<CMoverMissile id="GoliathSCBWWeaponAir@Missile">
+  <PathMode value="Flying"/>
+  <MotionPhases Driver="Throw" Speed="2" MaxSpeed="2" Outro="0.2,0.55" Timeout="10" ThrowRotationType="LookAtTarget" ThrowVector="0,-1,1" YawPitchRoll="506.25"/>
+  <MotionPhases Driver="Guidance" Acceleration="56" Speed="2" MaxSpeed="28" Outro="0.56,1.5" Timeout="10" YawPitchRoll="MAX"/>
+  <MotionPhases Driver="Guidance" MaxSpeed="3200" Timeout="10" YawPitchRoll="5568.75"/>
+</CMoverMissile>
+<CMoverMissile id="BattlecruiserSCBWWeaponAir@Mover">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="40" ClearanceAcceleration="75" Outro="-1" YawPitchRoll="719.2968"/>
+  <MotionPhases YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="WraithSCBWWeaponGround@Mover">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="40" ClearanceAcceleration="75" Outro="-1" YawPitchRoll="719.2968"/>
+  <MotionPhases YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="ScienceVesselSCBWEMPShockwave@Mover">
+  <MotionPhases Driver="Guidance" Acceleration="15" Speed="0.5" MaxSpeed="30" ClearanceAcceleration="75" Outro="-1" YawPitchRoll="719.2968"/>
+  <MotionPhases YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="GhostSCBWLockdown@Mover">
+  <PathMode value="Flying"/>
+  <MotionPhases Driver="Throw" Speed="2" MaxSpeed="2" Outro="0.2,0.55" Timeout="10" ThrowRotationType="LookAtTarget" ThrowVector="0,-1,1" YawPitchRoll="506.25"/>
+  <MotionPhases Driver="Guidance" Acceleration="56" Speed="2" MaxSpeed="28" Outro="0.56,1.5" Timeout="10" YawPitchRoll="MAX"/>
+  <MotionPhases Driver="Guidance" MaxSpeed="3200" Timeout="10" YawPitchRoll="5568.75"/>
+</CMoverMissile>
+<CMoverMissile id="BattlecruiserSCBWYamato@Mover">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="20" ClearanceAcceleration="75" Outro="-1" YawPitchRoll="719.2968"/>
+  <MotionPhases YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="DevourerSCBWWeapon@Missile">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="20" YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="MutaliskSCBWWeapon@MissileBounce">
+  <MotionPhases Driver="Guidance" Acceleration="3200" MaxSpeed="18.75" ClearanceAcceleration="75" ActorTracking="Actual" Outro="-1" RotationLaunchActorType="LaunchToTarget" YawPitchRoll="719.2968"/>
+  <MotionPhases YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="HydraliskSCBWWeapon@Mover">
+  <MotionPhases Driver="Guidance" Speed="40" MaxSpeed="40" YawPitchRoll="MAX"/>
+</CMoverMissile>
+<CMoverMissile id="StingerSCBWWeaponGround@Missile">
+  <MotionPhases Driver="Guidance" Speed="20" MaxSpeed="20" YawPitchRoll="MAX"/>
+</CMoverMissile>
+
+</Catalog>

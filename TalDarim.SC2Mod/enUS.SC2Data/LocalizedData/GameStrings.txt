@@ -1,0 +1,972 @@
+﻿Abil/Name/TalDarimArchwayTrain=Tal'Darim - Archway - Train
+Abil/Name/TalDarimAscendantArchivesResearch=Tal'Darim - Ascendant Archives - Research
+Abil/Name/TalDarimAscendantMindBlast=Mind Blast
+Abil/Name/TalDarimAscendantPsiOrb=Psi Orb
+Abil/Name/TalDarimAutomationBayResearch=Tal'Darim - Automation Bay - Research
+Abil/Name/TalDarimAutomationFacilityTrain=Tal'Darim - Automation Facility - Train
+Abil/Name/TalDarimBloodHunterVoidStasis=Void Stasis
+Abil/Name/TalDarimBuild=Tal'Darim - Locust - Build
+Abil/Name/TalDarimBuildDef=Tal'Darim - Locust - Build (Def)
+Abil/Name/TalDarimCustodesAnchorLink=Tal'Darim - Custodes - Anchor Link
+Abil/Name/TalDarimCustodesMerge=Tal'Darim - Custodes - Merge
+Abil/Name/TalDarimCustodesMergeable=Tal'Darim - Custodes - Mergeable
+Abil/Name/TalDarimCustodesTerrazineFog=Tal'Darim - Custodes - Terrazine Fog
+Abil/Name/TalDarimCyberneticsKernelResearch=Tal'Darim - Cybernetics Kernel - Research
+Abil/Name/TalDarimCynosureDestructiveHarvest=Tal'Darim - Cynosure - Destructive Harvest
+Abil/Name/TalDarimCynosurePhotonicOvercharge=Tal'Darim - Cynosure - Photonic Overcharge
+Abil/Name/TalDarimCynosureTrain=Tal'Darim - Cynosure - Train
+Abil/Name/TalDarimCynosureTrainWarmistress=Tal'Darim - Cynosure - Train Warmistress
+Abil/Name/TalDarimDeathCouncilResearch=Tal'Darim - Death Council - Research
+Abil/Name/TalDarimDeathStarAssumeCommand=Tal'Darim - Death Star - Assume Command
+Abil/Name/TalDarimDeathStarDestroyerEscort=Tal'Darim - Death Star - Destroyer Escort
+Abil/Name/TalDarimDeathStarReleaseCommand=Tal'Darim - Death Star - Release Command
+Abil/Name/TalDarimDeathStarVaporize=Tal'Darim - Death Star - Vaporize
+Abil/Name/TalDarimDestroyerFakeBoost=Tal'Darim - Destroyer - Fake Boost
+Abil/Name/TalDarimDestroyerMultiTargetBoost=Tal'Darim - Destroyer - Multi-Target Boost
+Abil/Name/TalDarimDrainSupplicant=Tal'Darim - Drain Supplicant
+Abil/Name/TalDarimDrainSupplicantDeathStarDreadnought2=Tal'Darim - Drain Supplicant - Death Star
+Abil/Name/TalDarimDrainSupplicantDreadnought=Tal'Darim - Drain Supplicant - Dreadnought
+Abil/Name/TalDarimDrainSupplicantMonitor=Tal'Darim - Drain Supplicant - Monitor
+Abil/Name/TalDarimDrainSupplicantReliquary=Tal'Darim - Drain Supplicant - Reliquary
+Abil/Name/TalDarimDrainSupplicantWarmistress=Tal'Darim - Drain Supplicant - Warmistress
+Abil/Name/TalDarimDreadnoughtTrain=Tal'Darim - Dreadnought - Train
+Abil/Name/TalDarimDuplicatorResearch=Tal'Darim - Duplicator - Research
+Abil/Name/TalDarimFleetLodestarResearch=Tal'Darim - Fleet Lodestar -Research
+Abil/Name/TalDarimHavocTargetLock=Tal'Darim - Havoc - Target Lock
+Abil/Name/TalDarimHavocVoidShard=Tal'Darim - Havoc - Void Shard
+Abil/Name/TalDarimHavocVoidShardBloodHunter=Tal'Darim - Havoc - Void Shard (Blood Hunter)
+Abil/Name/TalDarimHavocVoidShardChampion=Tal'Darim - Havoc - Void Shard (Champion)
+Abil/Name/TalDarimHavocVoidShardDestroyer=Tal'Darim - Havoc - Void Shard (Destroyer)
+Abil/Name/TalDarimHavocVoidShardDreadnought=Tal'Darim - Havoc - Void Shard (Dreadnought)
+Abil/Name/TalDarimHavocVoidShardLocust=Tal'Darim - Havoc - Void Shard (Locust)
+Abil/Name/TalDarimHavocVoidShardOutrider=Tal'Darim - Havoc - Void Shard (Outrider)
+Abil/Name/TalDarimHavocVoidShardRiddler=Tal'Darim - Havoc - Void Shard (Riddler)
+Abil/Name/TalDarimHavocVoidShardSlayer=Tal'Darim - Havoc - Void Shard (Slayer)
+Abil/Name/TalDarimHavocVoidShardSupplicant=Tal'Darim - Havoc - Void Shard (Supplicant)
+Abil/Name/TalDarimHavocVoidShardVanguard=Tal'Darim - Havoc - Void Shard (Vanguard)
+Abil/Name/TalDarimHavocVoidShardWrathwalker=Tal'Darim - Havoc - Void Shard (Wrathwalker)
+Abil/Name/TalDarimLocustHarvest=Tal'Darim - Locust - Gather
+Abil/Name/TalDarimMonitorDetonation=Tal'Darim - Monitor - Detonation
+Abil/Name/TalDarimPeristylePhotonicOverchargeAttack=Tal'Darim - Peristyle - Photonic Overcharge (Attack)
+Abil/Name/TalDarimPeristylePhotonicOverchargeStop=Tal'Darim - Peristyle - Photonic Overcharge (Stop)
+Abil/Name/TalDarimQueue8x2Hangar=Tal'Darim - Queue (8x2) (Hangar)
+Abil/Name/TalDarimReconstitute=Reconstitute
+Abil/Name/TalDarimReliquaryLitanyEscort=Tal'Darim - Reliquary - Litany Escort
+Abil/Name/TalDarimReliquaryQueue=Tal'Darim - Reliquary - Queue
+Abil/Name/TalDarimRiddlerBuildPlasmaBomb=Tal'Darim - Riddler - Build Plasma Bomb
+Abil/Name/TalDarimRiddlerEnshroud=Tal'Darim - Riddler - Enshroud
+Abil/Name/TalDarimRiddlerPlasmaBombActivate=Tal'Darim - Riddler - Plasma Bomb - Activate
+Abil/Name/TalDarimSoulLeech=Tal'Darim - Soul Leech
+Abil/Name/TalDarimSoulLeechAscendant=Tal'Darim - Soul Leech - Ascendant
+Abil/Name/TalDarimSoulLeechBloodHunter=Tal'Darim - Soul Leech - Blood Hunter
+Abil/Name/TalDarimSoulLeechChampion=Tal'Darim - Soul Leech - Champion
+Abil/Name/TalDarimSoulLeechCustodes=Tal'Darim - Soul Leech - Custodes
+Abil/Name/TalDarimSoulLeechDeadnought=Tal'Darim - Soul Leech - Deadnought
+Abil/Name/TalDarimSoulLeechDestroyer=Tal'Darim - Soul Leech - Destroyer
+Abil/Name/TalDarimSoulLeechDreadnought=Tal'Darim - Soul Leech - Dreadnought
+Abil/Name/TalDarimSoulLeechHavoc=Tal'Darim - Soul Leech - Havoc
+Abil/Name/TalDarimSoulLeechLocust=Tal'Darim - Soul Leech - Locust
+Abil/Name/TalDarimSoulLeechMonitor=Tal'Darim - Soul Leech - Monitor
+Abil/Name/TalDarimSoulLeechOutrider=Tal'Darim - Soul Leech - Outrider
+Abil/Name/TalDarimSoulLeechPariah=Tal'Darim - Soul Leech - Pariah
+Abil/Name/TalDarimSoulLeechPriorityHigh=Tal'Darim - Soul Leech Priority High
+Abil/Name/TalDarimSoulLeechPriorityLow=Tal'Darim - Soul Leech Priority Low
+Abil/Name/TalDarimSoulLeechPriorityMedium=Tal'Darim - Soul Leech Priority Medium
+Abil/Name/TalDarimSoulLeechRiddler=Tal'Darim - Soul Leech - Riddler
+Abil/Name/TalDarimSoulLeechSlayer=Tal'Darim - Soul Leech - Slayer
+Abil/Name/TalDarimSoulLeechSupplicant=Tal'Darim - Soul Leech - Supplicant
+Abil/Name/TalDarimSoulLeechVanguard=Tal'Darim - Soul Leech - Vanguard
+Abil/Name/TalDarimSoulLeechWarPrism=Tal'Darim - Soul Leech - War Prism
+Abil/Name/TalDarimSoulLeechWarmistress=Tal'Darim - Soul Leech - Warmistress
+Abil/Name/TalDarimSoulLeechWrathwalker=Tal'Darim - Soul Leech - Wrathwalker
+Abil/Name/TalDarimStararchTrain=Tal'Darim - Stararch - Train
+Abil/Name/TalDarimWarPrismTransportMode=Transport Mode
+Abil/Name/TalDarimWarPrismTurretMode=Turret Mode
+Abil/Name/TalDarimWarmistressSoulsOvercharge=Tal'Darim - Warmistress - Souls Overcharge
+Abil/Name/ZerDarimDisguiseAsSupplicant=Disguise As Supplicant
+Behavior/Name/TalDarimAscendantPsiOrb=Tal'Darim - Ascendant - Psi Orb
+Behavior/Name/TalDarimAscendantPsiOrbBeamCaster=Tal'Darim - Ascendant - Psi Orb Beam Caster
+Behavior/Name/TalDarimAscendantPsionicOrbDamage=Psionic Orb
+Behavior/Name/TalDarimAscendantSoulPower=Soul Power
+Behavior/Name/TalDarimBloodHunterSoulShard=Soul Shard
+Behavior/Name/TalDarimBloodHunterSoulShardCharge=Soul Shard
+Behavior/Name/TalDarimBloodHunterVoidStasis=Void Stasis
+Behavior/Name/TalDarimChampionBurstofSpeed=Burst of Speed
+Behavior/Name/TalDarimCustodesAnchorLink=Anchor Link
+Behavior/Name/TalDarimCustodesTerrazineFog=Terrazine Fog
+Behavior/Name/TalDarimCynosureDestructiveHarvestGas=Destructive Harvest
+Behavior/Name/TalDarimCynosureDestructiveHarvestMineral=Destructive Harvest
+Behavior/Name/TalDarimCynosurePhotonicOvercharge=Photonic Overcharge
+Behavior/Name/TalDarimDeathStarDeathCharge=Death Charge
+Behavior/Name/TalDarimDeathStarVaporiseBar=Tal'Darim - Death Star - Vaporise Bar
+Behavior/Name/TalDarimDestroyerBloodCharge=Blood Charge
+Behavior/Name/TalDarimDestroyerBloodSeeker=Blood Seeker
+Behavior/Name/TalDarimDreadnoughtBeetlesArmed=Beetles Armed
+Behavior/Name/TalDarimHavocSquadSight=Tal'Darim - Havoc - Squad Sight
+Behavior/Name/TalDarimHavocTargetLocked=Target Locked
+Behavior/Name/TalDarimLocustEnergyCharged=Energy Charged
+Behavior/Name/TalDarimMonitorDetonationCharge=Detonation Charge
+Behavior/Name/TalDarimOutriderArmorReduction=Armor Reduction
+Behavior/Name/TalDarimOutriderSoulsWeapon=Souls Weapon
+Behavior/Name/TalDarimPhotonicOverchargeWarPrism=Tal'Darim - Photonic Overcharge (War Prism)
+Behavior/Name/TalDarimRiddlerEnshrouded=Enshrouded
+Behavior/Name/TalDarimRiddlerHarmonization=Harmonization
+Behavior/Name/TalDarimSlayerEntropicShieldActive=Entropic Shield Active
+Behavior/Name/TalDarimSlayerEntropicShieldActiveLong=Entropic Shield Active Long
+Behavior/Name/TalDarimSlayerEntropicShieldCharge=Entropic Shield Charge
+Behavior/Name/TalDarimSoulDrinkerPriorityHigh=Priority High
+Behavior/Name/TalDarimSoulDrinkerPriorityLow=Priority Low
+Behavior/Name/TalDarimSupplicantBloodShield=Blood Shield
+Behavior/Name/TalDarimVanguardSoulArmour=Soul Armour
+Behavior/Name/TalDarimWarPrismBloodShield=Blood Shield
+Behavior/Name/TalDarimWarmistressSoulsOvercharge=Souls Overcharge
+Behavior/Name/TalDarimWrathwalkerSoulsWeapon=Souls Weapon
+Behavior/Tooltip/TalDarimAscendantPsionicOrbDamage=Target is under the effects of Psionic Orb and will take massive damage while in this area of effect.
+Behavior/Tooltip/TalDarimAscendantSoulPower=This Ascendant deal more damage.
+Behavior/Tooltip/TalDarimAscendantSoulPower2=This Ascendant deal more damage.
+Behavior/Tooltip/TalDarimBloodHunterSoulShard=If the unit die, nearby Tal'Darim will be invigorated.
+Behavior/Tooltip/TalDarimBloodHunterSoulShardCharge=The Blood Hunter carry a soul shard.
+Behavior/Tooltip/TalDarimBloodHunterVoidStasis=The unit is stased and can't act.
+Behavior/Tooltip/TalDarimChampionBurstofSpeed=This Champion is charging, allowing it to quickly close the distance with its target.
+Behavior/Tooltip/TalDarimCustodesAnchorLink=Target is pulled toward the Custodes.
+Behavior/Tooltip/TalDarimCustodesTerrazineFog=Target is under the effects of Tarrazine Fog and will deal half damage while in this area of effect.
+Behavior/Tooltip/TalDarimCynosureDestructiveHarvest=Resource are forcefully gathered at a destructive rate.
+Behavior/Tooltip/TalDarimCynosurePhotonicOvercharge=This Peristyle has a powerful long-ranged attack.
+Behavior/Tooltip/TalDarimDeathStarDeathCharge=This Death Star deal more damage.
+Behavior/Tooltip/TalDarimDeathStarVaporiseBar=The Death Star is channeling it's main weapon
+Behavior/Tooltip/TalDarimDestroyerBloodCharge=This unit attack hit 3 additional targets.
+Behavior/Tooltip/TalDarimDestroyerBloodSeeker=This unit attack 3 additional targets.
+Behavior/Tooltip/TalDarimDreadnoughtBeetlesArmed=The Dreadnought can fire Beetles.
+Behavior/Tooltip/TalDarimLocustEnergyCharged=This Collector can repair mechanical units and is protected.
+Behavior/Tooltip/TalDarimMonitorDetonationCharge=This Monitor can detonate and move faster.
+Behavior/Tooltip/TalDarimOutriderSoulsWeapon=The Outrider will fire additionnal missiles.
+Behavior/Tooltip/TalDarimPhotonicOverchargeWarPrism=This War Prism has a powerful long-ranged attack.
+Behavior/Tooltip/TalDarimRiddlerEnshrouded=This unit or structure vision and detection range is greatly impaired.
+Behavior/Tooltip/TalDarimRiddlerHarmonization=The Riddler gain attack range.
+Behavior/Tooltip/TalDarimSlayerEntropicShieldActive=The Slayer is invulnerable.
+Behavior/Tooltip/TalDarimSlayerEntropicShieldCharge=The Slayer can become resistant.
+Behavior/Tooltip/TalDarimSoulDrinkerPriorityHigh=Will get prioritized by Supplicant's death
+Behavior/Tooltip/TalDarimSoulDrinkerPriorityLow=Will get deprioritized by Supplicant's death.
+Behavior/Tooltip/TalDarimSupplicantBloodShield=This unit gain an additional shield.
+Behavior/Tooltip/TalDarimVanguardSoulArmour=This Vanguard have additional armour
+Behavior/Tooltip/TalDarimWarPrismBloodShield=This unit gain an additional shield.
+Behavior/Tooltip/TalDarimWarmistressSoulsOvercharge=Can use 4 soul charges to enhance ALL nearby Tal'Darim
+Behavior/Tooltip/TalDarimWrathwalkerSoulsWeapon=The Wrathwalker will fire on an additional target.
+Button/ChargeText/TalDarimPariahSoulLeech=<d ref="$BehaviorStackCount:TalDarimPariahBloodShield$"/>
+Button/ChargeText/TalDarimSoulAmplification=<d ref="$BehaviorStackCount:TalDarimWarPrismBloodShield$"/>/<d ref="$BehaviorRemainingDuration:TalDarimWarPrismBloodShield$"/>s
+Button/ChargeText/TalDarimSoulLeechAscendant=<d ref="$BehaviorStackCount:TalDarimAscendantSoulPower$"/>/<d ref="$BehaviorRemainingDuration:TalDarimAscendantSoulPower$"/>s
+Button/ChargeText/TalDarimSoulLeechBloodHunter=<d ref="$BehaviorStackCount:TalDarimBloodHunterSoulShardCharge$"/>/<d ref="$BehaviorRemainingDuration:TalDarimBloodHunterSoulShardCharge$"/>s
+Button/ChargeText/TalDarimSoulLeechChampion=<d ref="$BehaviorStackCount:TalDarimChampionBurstofSpeed$"/>/<d ref="$BehaviorRemainingDuration:TalDarimChampionBurstofSpeed$"/>s
+Button/ChargeText/TalDarimSoulLeechDeathStar=<d ref="$BehaviorStackCount:TalDarimDeathStarDeathCharge$"/>/<d ref="$BehaviorRemainingDuration:TalDarimDeathStarDeathCharge$"/>s
+Button/ChargeText/TalDarimSoulLeechDestroyer=<d ref="$BehaviorStackCount:TalDarimDestroyerBloodCharge$"/>/<d ref="$BehaviorRemainingDuration:TalDarimDestroyerBloodCharge$"/>s
+Button/ChargeText/TalDarimSoulLeechDreadnought=<d ref="$BehaviorStackCount:TalDarimDreadnoughtBeetlesArmed$"/>/<d ref="$BehaviorRemainingDuration:TalDarimDreadnoughtBeetlesArmed$"/>s
+Button/ChargeText/TalDarimSoulLeechHavoc=<d ref="$AbilChargeCount:TalDarimHavocVoidShardChampion,0$"/>
+Button/ChargeText/TalDarimSoulLeechLocust=<d ref="$BehaviorStackCount:TalDarimLocustEnergyCharged$"/>
+Button/ChargeText/TalDarimSoulLeechMonitor=<d ref="$BehaviorRemainingDuration:TalDarimMonitorDetonationCharge$"/>s
+Button/ChargeText/TalDarimSoulLeechOutrider=<d ref="$BehaviorStackCount:TalDarimOutriderSoulsWeapon$"/>/<d ref="$BehaviorRemainingDuration:TalDarimOutriderSoulsWeapon$"/>s
+Button/ChargeText/TalDarimSoulLeechRiddler=<d ref="$BehaviorStackCount:TalDarimRiddlerHarmonization$"/>/<d ref="$BehaviorRemainingDuration:TalDarimRiddlerHarmonization$"/>s
+Button/ChargeText/TalDarimSoulLeechSlayer=<d ref="$BehaviorStackCount:TalDarimSlayerEntropicShieldCharge$"/>/<d ref="$BehaviorRemainingDuration:TalDarimSlayerEntropicShieldCharge$"/>s
+Button/ChargeText/TalDarimSoulLeechSupplicant=
+Button/ChargeText/TalDarimSoulLeechVanguard=<d ref="$BehaviorStackCount:TalDarimVanguardSoulArmour$"/>/<d ref="$BehaviorRemainingDuration:TalDarimVanguardSoulArmour$"/>s
+Button/ChargeText/TalDarimSoulLeechWarPrism=<d ref="$BehaviorStackCount:TalDarimWarPrismBloodShield$"/>/<d ref="$BehaviorRemainingDuration:TalDarimWarPrismBloodShield$"/>s
+Button/ChargeText/TalDarimSoulLeechWarmistress=<d ref="$BehaviorStackCount:TalDarimWarmistressSoulsOvercharge$"/>/<d ref="$BehaviorRemainingDuration:TalDarimWarmistressSoulsOvercharge$"/>s
+Button/ChargeText/TalDarimSummon1=<d ref="$AbilChargeCount:TalDarimHavocVoidShardChampion,0$"/>/1
+Button/ChargeText/TalDarimSummon2=<d ref="$AbilChargeCount:TalDarimHavocVoidShardChampion,0$"/>/2
+Button/ChargeText/TalDarimSummon3=<d ref="$AbilChargeCount:TalDarimHavocVoidShardChampion,0$"/>/3
+Button/ChargeText/TalDarimSummon4=<d ref="$AbilChargeCount:TalDarimHavocVoidShardChampion,0$"/>/4
+Button/ChargeText/TalDarimSummon6=<d ref="$AbilChargeCount:TalDarimHavocVoidShardChampion,0$"/>/6
+Button/ChargeText/TalDarimWarmistressSoulsOvercharge=
+Button/ChargeText/TalDarimWrathwalkerSoulLeech=<d ref="$BehaviorStackCount:TalDarimWrathwalkerSoulsWeapon$"/>/<d ref="$BehaviorRemainingDuration:TalDarimWrathwalkerSoulsWeapon$"/>s
+Button/Name/TalDarimArchway=Warp In Archway
+Button/Name/TalDarimAscendant=Warp In Ascendant
+Button/Name/TalDarimAscendantArchive=Warp In Ascendant Archive
+Button/Name/TalDarimAscendantArchivesAscendantResearchMindBlast=Research Mind Blast
+Button/Name/TalDarimAscendantMindBlast=MindBlast
+Button/Name/TalDarimAscendantPsiOrb=Psionic Orb
+Button/Name/TalDarimAutomationBay=Warp In Automation Bay
+Button/Name/TalDarimAutomationBayVanguardResearchMatterDispersion=Research Matter Dispersion
+Button/Name/TalDarimAutomationBayWarPrismResearchGraviticDrive=Research Gravitic Drive
+Button/Name/TalDarimAutomationBayWrathwalkerResearchAirTargeting=Research Air Targeting
+Button/Name/TalDarimAutomationFacility=Warp In Automation Facility
+Button/Name/TalDarimBloodHunter=Warp In Blood Hunter
+Button/Name/TalDarimBloodHunterVoidStasis=Void Stasis
+Button/Name/TalDarimBloodShrine=Warp In Blood Shrine
+Button/Name/TalDarimChampion=Warp In Champion
+Button/Name/TalDarimChampionHegemonie=Hegemonie
+Button/Name/TalDarimCustodesAnchorLink=Anchor Link
+Button/Name/TalDarimCustodesChainedDestruction=Chained Destruction
+Button/Name/TalDarimCustodesMergeSelection=Custodes Merge
+Button/Name/TalDarimCustodesMergeTarget=Custodes Merge
+Button/Name/TalDarimCustodesTarrazineFog=Tarrazine Fog
+Button/Name/TalDarimCustodian=Warp In Custodian
+Button/Name/TalDarimCyberneticsKernel=Warp In Cybernetics Kernel
+Button/Name/TalDarimCyberneticsKernelResearchCloakingModule=Research Cloaking Module
+Button/Name/TalDarimCynosure=Warp In Cynosure
+Button/Name/TalDarimCynosureDestructiveHarvest=Destructive Harvest
+Button/Name/TalDarimCynosurePhotonicOvercharge=Photonic Overcharge
+Button/Name/TalDarimDeathCouncil=Warp In Death Council
+Button/Name/TalDarimDeathCouncilChampionResearchHegemonie=Research Hegemonie
+Button/Name/TalDarimDeathCouncilSlayerResearchEnhancedFrame=Research Enhanced Frame
+Button/Name/TalDarimDeathCouncilSupplicantResearchBloodShields=Research Blood Shields
+Button/Name/TalDarimDeathCouncilSupplicantResearchSoulAugmentation=Research Soul Augmentation
+Button/Name/TalDarimDeathStar=Warp In Death Star
+Button/Name/TalDarimDeathStarAssumeCommand=Assume Command
+Button/Name/TalDarimDeathStarReleaseCommand=Release Command
+Button/Name/TalDarimDeathStarVaporize=Vaporize
+Button/Name/TalDarimDestroyer=Warp In Destroyer
+Button/Name/TalDarimDestroyerBloodSeeker=Blood Seeker
+Button/Name/TalDarimDestroyerVoidAmplifier=Void Amplifier
+Button/Name/TalDarimDrainSupplicantGeneric1=Drain Supplicant
+Button/Name/TalDarimDrainSupplicantGeneric2=Drain Supplicant
+Button/Name/TalDarimDreadnoughCloningVat=Cloning Vat
+Button/Name/TalDarimDreadnought=Warp In Dreadnought
+Button/Name/TalDarimDuplicator=Warp In Duplicator
+Button/Name/TalDarimFleetLodestar=Warp In Fleet Lodestar
+Button/Name/TalDarimFleetLodestarDestroyerResearchVoidAmplifier=Research Void Amplifier
+Button/Name/TalDarimFleetLodestarDreadnoughResearchCloningVat=Research Cloning Vat
+Button/Name/TalDarimFleetLodestarOutriderResearchGoliarPulseCrystal=Research Goliar Pulse-Crystal
+Button/Name/TalDarimFracturer=Warp In Fracturer
+Button/Name/TalDarimGatherPrTD=Gather
+Button/Name/TalDarimHavoc=Warp In Havoc
+Button/Name/TalDarimHavocCloakingModule=Cloaking Module
+Button/Name/TalDarimHavocSquadSight=Squad Sight
+Button/Name/TalDarimHavocTargetLock=Target Lock
+Button/Name/TalDarimHavocVoidShard=Void Shard
+Button/Name/TalDarimLocust=Warp In Locust
+Button/Name/TalDarimMonitor=Warp In Monitor
+Button/Name/TalDarimMonitorDetonation=Detonation
+Button/Name/TalDarimOutrider=Warp In Outrider
+Button/Name/TalDarimOutriderGoliarPulseCrystal=Goliar Pulse-Crystal
+Button/Name/TalDarimParticleCannon=Warp In Particle Cannon
+Button/Name/TalDarimPeristyle=Warp In Peristyle
+Button/Name/TalDarimPermanentlyCloakedMonitor=Permanently Cloaked
+Button/Name/TalDarimPermanentlyCloakedPlasmaBomb=Permanently Cloaked
+Button/Name/TalDarimPrismaticTower=Warp In Prismatic Tower
+Button/Name/TalDarimReconstitute=Reconstitute
+Button/Name/TalDarimReliquaryofSouls=Warp In Reliquary of Souls
+Button/Name/TalDarimRiddler=Warp In Riddler
+Button/Name/TalDarimRiddlerEnshroud=Enshroud
+Button/Name/TalDarimRiddlerPlasmaBomb=Plasma Bomb
+Button/Name/TalDarimRiddlerPlasmaBombBoom=Detonate
+Button/Name/TalDarimSlayer=Warp In Slayer
+Button/Name/TalDarimSlayerEnhancedFrame=Enhanced Frame
+Button/Name/TalDarimSlayerEntropicShield=Entropic Shield
+Button/Name/TalDarimSoulAmplification=Soul Amplification
+Button/Name/TalDarimSoulLeechAscendant=Soul Leech
+Button/Name/TalDarimSoulLeechBloodHunter=Soul Leech
+Button/Name/TalDarimSoulLeechChampion=Soul Leech
+Button/Name/TalDarimSoulLeechCustodes=Soul Leech
+Button/Name/TalDarimSoulLeechDeathStar=Soul Leech
+Button/Name/TalDarimSoulLeechDestroyer=Soul Leech
+Button/Name/TalDarimSoulLeechDreadnought=Soul Leech
+Button/Name/TalDarimSoulLeechHavoc=Soul Leech
+Button/Name/TalDarimSoulLeechLocust=Soul Leech
+Button/Name/TalDarimSoulLeechMonitor=Soul Leech
+Button/Name/TalDarimSoulLeechOutrider=Soul Leech
+Button/Name/TalDarimSoulLeechPariah=Soul Leech
+Button/Name/TalDarimSoulLeechPriorityHigh=High
+Button/Name/TalDarimSoulLeechPriorityHighPassive=High
+Button/Name/TalDarimSoulLeechPriorityLow=Low
+Button/Name/TalDarimSoulLeechPriorityLowPassive=Low
+Button/Name/TalDarimSoulLeechPriorityMedium=Medium
+Button/Name/TalDarimSoulLeechPriorityMediumPassive=Medium
+Button/Name/TalDarimSoulLeechReliquary=Soul Leech
+Button/Name/TalDarimSoulLeechRiddler=Soul Leech
+Button/Name/TalDarimSoulLeechSlayer=Soul Leech
+Button/Name/TalDarimSoulLeechSupplicant=Soul Leech
+Button/Name/TalDarimSoulLeechVanguard=Soul Leech
+Button/Name/TalDarimSoulLeechWarPrism=Soul Leech
+Button/Name/TalDarimSoulLeechWarmistress=Soul Leech
+Button/Name/TalDarimSoulLeechWrathwalker=Soul Leech
+Button/Name/TalDarimStararch=Warp In Stararch
+Button/Name/TalDarimSummonBloodHunter=Summon Blood Hunter
+Button/Name/TalDarimSummonChampion=Summon Champion
+Button/Name/TalDarimSummonCustodian=Summon Custodian
+Button/Name/TalDarimSummonDestroyer=Summon Destroyer
+Button/Name/TalDarimSummonDreadnought=Summon Dreadnought
+Button/Name/TalDarimSummonLocust=Summon Locust
+Button/Name/TalDarimSummonOutrider=Summon Outrider
+Button/Name/TalDarimSummonRiddler=Summon Riddler
+Button/Name/TalDarimSummonSlayer=Summon Slayer
+Button/Name/TalDarimSummonSupplicant=Summon Supplicant
+Button/Name/TalDarimSummonVanguard=Summon Vanguard
+Button/Name/TalDarimSummonWrathwalker=Summon Wrathwalker
+Button/Name/TalDarimSupplicant=Warp In Supplicant
+Button/Name/TalDarimSupplicantBloodShields=Blood Shields
+Button/Name/TalDarimSupplicantDrainSupplicant=Drain Supplicant
+Button/Name/TalDarimSupplicantSoulAugmentation=Soul Augmentation
+Button/Name/TalDarimUpgradeAirArmorLevel1=Upgrade Air Armor Level 1
+Button/Name/TalDarimUpgradeAirArmorLevel2=Upgrade Air Armor Level 2
+Button/Name/TalDarimUpgradeAirArmorLevel3=Upgrade Air Armor Level 3
+Button/Name/TalDarimUpgradeAirWeaponsLevel1=Upgrade Air Weapons Level 1
+Button/Name/TalDarimUpgradeAirWeaponsLevel2=Upgrade Air Weapons Level 2
+Button/Name/TalDarimUpgradeAirWeaponsLevel3=Upgrade Air Weapons Level 3
+Button/Name/TalDarimUpgradeGroundArmorLevel1=Upgrade Ground Armor Level 1
+Button/Name/TalDarimUpgradeGroundArmorLevel2=Upgrade Ground Armor Level 2
+Button/Name/TalDarimUpgradeGroundArmorLevel3=Upgrade Ground Armor Level 3
+Button/Name/TalDarimUpgradeGroundWeaponsLevel1=Upgrade Ground Weapons Level 1
+Button/Name/TalDarimUpgradeGroundWeaponsLevel2=Upgrade Ground Weapons Level 2
+Button/Name/TalDarimUpgradeGroundWeaponsLevel3=Upgrade Ground Weapons Level 3
+Button/Name/TalDarimUpgradeShieldsLevel1=Upgrade Shields Level 1
+Button/Name/TalDarimUpgradeShieldsLevel2=Upgrade Shields Level 2
+Button/Name/TalDarimUpgradeShieldsLevel3=Upgrade Shields Level 3
+Button/Name/TalDarimVanguard=Warp In Vanguard
+Button/Name/TalDarimVanguardMatterDispersion=Matter Dispersion
+Button/Name/TalDarimWarPrism=Warp In War Prism
+Button/Name/TalDarimWarPrismGraviticDrive=Gravitic Drive
+Button/Name/TalDarimWarPrismTransportMode=Transport Mode
+Button/Name/TalDarimWarPrismTurretMode=Turret Mode
+Button/Name/TalDarimWarPrismUnloadAll=Unload All Bellow
+Button/Name/TalDarimWarmistress=Warp In Warmistress
+Button/Name/TalDarimWarmistressSoulsOvercharge=Souls Overcharge
+Button/Name/TalDarimWarpInTwoSupplicant=Warp In Two Supplicant
+Button/Name/TalDarimWrathwalker=Warp In Wrathwalker
+Button/Name/TalDarimWrathwalkerAirTargeting=Air Targeting
+Button/Name/TalDarimWrathwalkerCliffWalk=Cliff Walk
+Button/Tooltip/TalDarimArchway=Warps in Tal'Darim ground units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Supplicant
+Button/Tooltip/TalDarimAscendant=Potent psionic master. Can use Psionic Orb and be upgraded to use Mind Blast.
+Button/Tooltip/TalDarimAscendantArchives=Contains an upgrade for Ascendant.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ascendant at the Archway
+Button/Tooltip/TalDarimAscendantArchivesAscendantResearchMindBlast=Allows <c val="ffff8a">Ascendants</c> to blast their way through, dealing <d ref="Effect,TalDarimAscendantMindBlastDamage,Amount*(1+($BehaviorStackCount:TalDarimAscendantSoulPower$*Behavior,TalDarimAscendantSoulPower,Modification.DamageDealtFraction[Spell]))"/> damage to a targeted enemy unit.<c val="#ColorAttackInfo"></n></n>Can target ground and air units.</c>
+Button/Tooltip/TalDarimAscendantMindBlast=Deals <d ref="Effect,TalDarimAscendantMindBlastDamage,Amount*(1+($BehaviorStackCount:TalDarimAscendantSoulPower$*Behavior,TalDarimAscendantSoulPower,Modification.DamageDealtFraction[Spell]))"/> damage to target enemy unit.<c val="#ColorAttackInfo"></n></n>Can target ground and air units.</c>
+Button/Tooltip/TalDarimAscendantPsiOrb=Unleashes a traveling Psionic Orb that deals <d ref="Effect,TalDarimAscendantPsiOrbDamage,Amount / Effect,TalDarimAscendantPsiOrbPersistent,PeriodicPeriodArray[0]*(1+($BehaviorStackCount:TalDarimAscendantSoulPower$*Behavior,TalDarimAscendantSoulPower,Modification.DamageDealtFraction[Spell]))"/> damage per second to all enemies along its path. Multiple Orb don't stack.
+Button/Tooltip/TalDarimAutomationBay=Contains upgrades for the Monitor, War Prism, and Wrathwalker.<n/><n/><c val="ffff8a">Enables:</c><n/>- Wrathwalker at the Automation Facility<n/>- Reliquary of Souls at the Automation Facility
+Button/Tooltip/TalDarimAutomationBayVanguardResearchMatterDispersion=Increases the range of <c val="ffff8a">Vanguards</c> weapon by +1 and it's area of effect by 25%.
+Button/Tooltip/TalDarimAutomationBayWarPrismResearchGraviticDrive=Increases the movement speed and acceleration of <c val="ffff8a">War Prisms</c>.
+Button/Tooltip/TalDarimAutomationBayWrathwalkerResearchAirTargeting=Allows <c val="ffff8a">Wrathwalkers</c> to attack air units.
+Button/Tooltip/TalDarimAutomationFacility=Warps in Tal'Darim robotic units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Monitor<n/>- War Prisms<n/>- Vanguard
+Button/Tooltip/TalDarimBloodHunter=Deadly warrior. Can use Void Stasis and may cloak, renders the unit invisible to enemies without detection. Two can merge into an Custodes.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimBloodHunterVoidStasis=<c val="FF0000">Consume a Soul Shard</c><n/>Embed a Soul Shard into a ground target and put them into stasis. Units in Stasis are immaterial, cannot move, attack, be attacked or be affected by spells for <d ref="Behavior,TalDarimBloodHunterVoidStasis,Duration" precision="1"/> seconds.<n/><n/>Blood Hunter can attack units that are in Void Stasis.<n/>
+Button/Tooltip/TalDarimBloodShrine=Blood Hunter tech structure.<n/><n/><c val="ffff8a">Enables:</c><n/>- Blood Hunter at the Archway<n/>- Custodes Merge from Blood Hunter
+Button/Tooltip/TalDarimChampion=Melee anti-armour specialist. Can be upgraded to use Hegemony.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/TalDarimChampionHegemonie=When the champion would die, instead sacrifice a <c val="ffff8a">Supplicant</c> within <d ref="Effect,TalDarimChampionHegemonySearch,AreaArray[0].Radius"/> to return to full health and shield.
+Button/Tooltip/TalDarimChangelingSupplicant=Powerful melee warrior.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimCustodes=Powerful psionic attacker, can use Anchor Link and Terrazine Fog.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimCustodesAnchorLink=Slowly pull the target toward the Custodes.
+Button/Tooltip/TalDarimCustodesChainedDestruction=Custodes attacks can target units stased by Blood Hunters.<n/>They can also bounce to a secondary target, or even a tertiary if there is a stased unit nearby.
+Button/Tooltip/TalDarimCustodesMergeSelection=Sacrifices 2 Blood Hunter to create an Custodes, a powerfull caster.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimCustodesMergeTarget=Sacrifices 2 Blood Hunter to create an Custodes.
+Button/Tooltip/TalDarimCustodesTarrazineFog=Creates a fog of terrazine that lasts <d ref="(1+ Effect,TalDarimCustodesTerrazineFogPersistent,PeriodCount) * Effect,TalDarimCustodesTerrazineFogPersistent,PeriodicPeriodArray[0]" precision="1"/> seconds. Unit inside deal <d ref="1 + Behavior,TalDarimCustodesTerrazineFog,Modification.DamageDealtFraction[Ranged] * 100"/>% less ranged damage.
+Button/Tooltip/TalDarimCustodian=Powerful psionic attacker.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimCyberneticsKernel=Contains weapon and armor upgrades for Tal'Darim air units and the Stealth Module upgrade.<n/><n/><c val="ffff8a">Enables:</c><n/>- Havoc at the Archway<n/>- Slayer at the Archway<n/>- Champion at the Archway
+Button/Tooltip/TalDarimCyberneticsKernelResearchCloakingModule=Permanently cloak <c val="ffff8a">Havocs</c>. Cloak renders a unit invisible to enemies unless it's revealed by detectors or effects.
+Button/Tooltip/TalDarimCynosure=Primary structure. Can receive gathered resources. Can use the Destructive Harvest and Photonic Overcharge Overcharge abilities.<n/><n/><c val="ffff8a">Enables:</c><n/>- Collector
+Button/Tooltip/TalDarimCynosureDestructiveHarvest=Gather <d ref="Effect,TalDarimCynosureDestructiveHarvestPlayerMineral,ResourcesCollected[Minerals] * Behavior,TalDarimCynosureDestructiveHarvestMineral,Duration / Behavior,TalDarimCynosureDestructiveHarvestMineral,Period"/> resources of the targeted Mineral Field or Assimilator over <d ref="Behavior,TalDarimCynosureDestructiveHarvestMineral,Duration"/> seconds. Burn <d ref="(- Effect,TalDarimCynosureDestructiveHarvest,Resources - Effect,TalDarimCynosureDestructiveHarvestPlayerMineral,ResourcesCollected[Minerals]) * Behavior,TalDarimCynosureDestructiveHarvestMineral,Duration / Behavior,TalDarimCynosureDestructiveHarvestMineral,Period"/> resources over the same duration.<n/><n/>Each Cynosure can cast in the range of other Cynosure and one must stay present for the effect to work.
+Button/Tooltip/TalDarimCynosurePhotonicOvercharge=Energizes the target Peristyle's khaydarin crystal, turning it into a powerful long-range weapon for <d ref="Behavior,TalDarimCynosurePhotonicOvercharge,Duration[0]"/> seconds that deals <d ref="Effect,TalDarimWarPrismPhotonicBarrageDamage,Amount[0]"/> damage every <d ref="Weapon,TalDarimPhotonicBarrage,Period"/> seconds.<n/><n/>Each Cynosure can cast in the range of other Cynosure.
+Button/Tooltip/TalDarimDeathCouncil=Contains upgrades for Supplicant, Slayer, and Champion.
+Button/Tooltip/TalDarimDeathCouncilChampionResearchHegemonie=Allow <c val="ffff8a">Champion</c> that would die to instead sacrifice a <c val="ffff8a">Supplicant</c> within <d ref="Effect,TalDarimChampionHegemonySearch,AreaArray[0].Radius"/> and return to full health and shield.
+Button/Tooltip/TalDarimDeathCouncilSlayerResearchEnhancedFrame=<c val="ffff8a">Slayers</c> gain +20 health, +0.5 movement speed, and can jump up and down cliffs.
+Button/Tooltip/TalDarimDeathCouncilSupplicantResearchBloodShields=<c val="ffff8a">Supplicants</c> gain +2 shield armor.
+Button/Tooltip/TalDarimDeathCouncilSupplicantResearchSoulAugmentation=<c val="ffff8a">Supplicants</c> gain +25 shields.
+Button/Tooltip/TalDarimDeathStar=Siege artillery craft. Can use Vaporize to destroy enemies with the help of Destroyers.<n/><n/><c val="ff0000">Can not normally attack.</c>
+Button/Tooltip/TalDarimDeathStarAssumeCommand=Order the targeted Destroyer to escort the Death Star to empower it, increasing it's range and area of effect.
+Button/Tooltip/TalDarimDeathStarReleaseCommand=Release the targeted Destroyer from it's escort duty.
+Button/Tooltip/TalDarimDeathStarVaporize=Deal <d ref="Effect,TalDarimDeathStarVaporizeDamage,Amount + ($BehaviorStackCount:TalDarimDeathStarDeathCharge$ * Behavior,TalDarimDeathStarDeathCharge,Modification.DamageDealtScaled[Spell])"/> (+<d ref="Effect,TalDarimDeathStarVaporizeDamage,AttributeBonus[Structure] + ($BehaviorStackCount:TalDarimDeathStarDeathCharge$ * Behavior,TalDarimDeathStarDeathCharge,Modification.DamageDealtAttributeScaled[Structure])"/> Structure) damage to all units in the area.
+Button/Tooltip/TalDarimDefenseAppender=<n/><n/><c val="FF0000">Require that the Locust channel.</c>
+Button/Tooltip/TalDarimDestroyer=Light-Clearing armored Craft.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimDestroyerBloodSeeker=Enhance the Destroyer Destruction Beam to bounce and deal <d ref="Effect,TalDarimDestroyerDestructionDamageBounce,Amount"/> (+<d ref="Effect,TalDarimDestroyerDestructionDamageBounce,AttributeBonus[Light]"/> light) damage on <d ref="Effect,TalDarimDestroyerDestructionBounceSearch,AreaArray[0].MaxCount"/> nearby targets for <d ref="Behavior,TalDarimDestroyerBloodSeeker,Duration[0]"/> seconds.
+Button/Tooltip/TalDarimDestroyerVoidAmplifier=The Destroyer weapon bounce on an additional target.
+Button/Tooltip/TalDarimDrainSupplicantGeneric1=Kill off a <c val="ffff8a">Supplicant</c> within <d ref="Effect,TalDarimDrainSupplicantSearch,AreaArray[0].Radius"/> to gain 1 stack of Soul Leech in addition of the normal <c val="ffff8a">Supplicant</c> death effect.
+Button/Tooltip/TalDarimDrainSupplicantGeneric2=Kill off a <c val="ffff8a">Supplicant</c> within <d ref="Effect,TalDarimDrainSupplicantSearch,AreaArray[0].Radius"/> to gain 2 stacks of Soul Leech in addition of the normal <c val="ffff8a">Supplicant</c> death effect.
+Button/Tooltip/TalDarimDreadnoughCloningVat=The Dreadnought can train Supplicants in the battlefields, with 2 queue lines.
+Button/Tooltip/TalDarimDreadnought=Anti-capital ship Capital ship. Can be upgraded to clone Supplicant on the battlefield.<n/><n/><c val="ffff8a">Can attack air units.</c><n/><c val="ffff8a">Can attack ground units by sacrificing Supplicants.</c>
+Button/Tooltip/TalDarimDuplicator=Contains weapon and armor upgrades for Tal'Darim ground units and shield upgrades for all Tal'Darim units and structures.<n/><n/><c val="ffff8a">Enables:</c><n/>- Particle Cannon from Locust<n/>- Prismatic Tower from Locust
+Button/Tooltip/TalDarimFleetLodestar=Contains upgrades for Outrider, Destroyer and Dreadnought.<n/><n/><c val="ffff8a">Enables:</c><n/>- Dreadnought at the Stararch</n>- Death Star at the Stararch<n/>- Warmistress at the Cynosure
+Button/Tooltip/TalDarimFleetLodestarDestroyerResearchVoidAmplifier=Allow <c val="ffff8a">Destroyers</c> weapon to bounce on an additional target.
+Button/Tooltip/TalDarimFleetLodestarDreadnoughResearchCloningVat=Allow <c val="ffff8a">Dreadnoughts</c> to train Supplicants in the battlefields, with 2 queue lines.
+Button/Tooltip/TalDarimFleetLodestarOutriderResearchGoliarPulseCrystal=<c val="ffff8a">Outriders</c> attacks reduce their target armour by <d ref="Behavior,TalDarimOutriderArmorReduction,Modification.LifeArmorBonus"/>, up to <d ref="Behavior,TalDarimOutriderArmorReduction,MaxStackCount * Behavior,TalDarimOutriderArmorReduction,Modification.LifeArmorBonus"/> for <d ref="Behavior,TalDarimOutriderArmorReduction,Duration"/> seconds.
+Button/Tooltip/TalDarimFracturer=Warped in over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/TalDarimFracturerRich=Warped in over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/TalDarimGatherPrTD=Orders Probe to gather resources from a selected Mineral Field or Vespene Geyser.
+Button/Tooltip/TalDarimHavoc=Support unit. Can use Target Lock, Squad Sight, and Void Shard. Can be upgraded to be permanently cloaked.<n/><n/><c val="ff0000">Can not attack.</c>
+Button/Tooltip/TalDarimHavocCloakingModule=The Havoc is permanently cloaked.
+Button/Tooltip/TalDarimHavocSquadSight=Nearby allied units gain +<d ref="Behavior,TalDarimHavocSquadSight,Modification.RangedWeaponRange"/> range to their attacks.
+Button/Tooltip/TalDarimHavocTargetLock=Increases damage dealt to target enemy unit by <d ref="Behavior,TalDarimHavocTargetLocked,Modification.DamageTakenFraction[Ranged] * 100"/>%. Effect lasts as long as the Havoc remains locked onto the target.
+Button/Tooltip/TalDarimLocust=Basic worker unit. Can gather resources and warp in Tal'Darim structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimMonitor=Flying spy. Cloak renders the unit invisible to enemies without detection.<n/><n/><c val="FFE303">Detector</c><n/><c val="ffff8a">Can attack buildings and air units by sacrificing a Supplicant.</c>
+Button/Tooltip/TalDarimMonitorDetonation=Detonate the Monitor on the target air unit or structure, dealing <d ref="Effect,TalDarimMonitorDetonationDamage,Amount"/> (+<d ref="Effect,TalDarimMonitorDetonationDamage,AttributeBonus[Structure]"/> Structure) damage.
+Button/Tooltip/TalDarimOutrider=Versatile high-speed fighter with an edge in ground attack.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimOutriderGoliarPulseCrystal=The Outrider attacks reduce its target armour by <d ref="Behavior,TalDarimOutriderArmorReduction,Modification.LifeArmorBonus"/>, up to <d ref="Behavior,TalDarimOutriderArmorReduction,MaxStackCount * Behavior,TalDarimOutriderArmorReduction,Modification.LifeArmorBonus"/> for <d ref="Behavior,TalDarimOutriderArmorReduction,Duration"/> seconds.
+Button/Tooltip/TalDarimPariah=Powerful melee warrior doomed to die for it's transgression.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimParticleCannon=Primary defensive structure.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimPeristyle=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
+Button/Tooltip/TalDarimPermanentlyCloakedMonitor=The Monitor is permanently cloaked.
+Button/Tooltip/TalDarimPermanentlyCloakedPlasmaBomb=The Plasma Bomb is permanently cloaked.
+Button/Tooltip/TalDarimPrismaticTower=Anti-air defensive structure. Attack by redirecting Particle Cannon attacks.<n/><n/><c val="ffff8a">Can attack air units with the help of Particle Cannons.</c>
+Button/Tooltip/TalDarimReconstitute=Restores <d ref="Effect,TalDarimLocustReconstitute,RechargeVitalRate" precision="1"/> life points per seconds to mechanical units and to non-biological structures at the cost of energy, with a 1 life per <d ref="Effect,TalDarimLocustReconstitute,DrainVitalCostFactor"/> energy ratio.<n/><n/>Automatically drain energy to self repair.
+Button/Tooltip/TalDarimReliquaryofSouls=Slow high value crawler. Can make Supplicant souls be reused once.<n/><n/><c val="ffff8a">Can attack ground units by sacrificing Supplicants.</c>
+Button/Tooltip/TalDarimRiddler=Flying caster. Can use Enshroud and Plasma Bomb.<n/><n/><c val="ffff8a">Can attack air units.</c><n/>
+Button/Tooltip/TalDarimRiddlerEnshroud=Causes enemy units and structures within the target area to have their vision, detection and radar range reduced by <d ref="-1 * Behavior,TalDarimRiddlerEnshrouded,Modification.SightBonus"/> for <d ref="Behavior,TalDarimRiddlerEnshrouded,Duration"/> seconds.
+Button/Tooltip/TalDarimRiddlerPlasmaBomb=Places a cloaked Plasma Bomb at the target location. Once activated by an enemy air unit, the bomb detonate dealing <d ref="Effect,TalDarimRiddlerPlasmaBombDamage,Amount"/> damage to nearby air enemies.
+Button/Tooltip/TalDarimRiddlerPlasmaBombBoom=Detonate violently, dealing <d ref="Effect,TalDarimRiddlerPlasmaBombDamage,Amount"/> damage to nearby air enemies.
+Button/Tooltip/TalDarimSlayer=Ranged anti-light support strider. Can be enhanced to jump cliffs<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimSlayerEnhancedFrame=The Slayer gain +20 health, +0.5 movement speed, and can jump up and down cliffs.
+Button/Tooltip/TalDarimSlayerEntropicShield=When taking damage, reduce further taken damage by <d ref="(1 - Behavior,TalDarimSlayerEntropicShieldActive,DamageResponse.ModifyFraction) * 100"/>% for <d ref="Behavior,TalDarimSlayerEntropicShieldActive,Duration" precision="2"/> seconds.
+Button/Tooltip/TalDarimSoulAmplification=Increase the area of effect of the death of a transported <c val="ffff8a">Supplicant</c> by +<d ref="Effect,TalDarimSupplicantDeathLargeSearch,AreaArray[0].Radius - Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>.
+Button/Tooltip/TalDarimSoulLeechAppend=<n/><n/>Can be clicked on to set Soul Leech priority.
+Button/Tooltip/TalDarimSoulLeechAscendant=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain +<d ref="Behavior,TalDarimAscendantSoulPower,Modification.DamageDealtFraction[Spell] * 100"/>% damage and +<d ref="Behavior,TalDarimAscendantSoulPower,Modification.VitalMaxArray[Shields]"/> maximum shield for <d ref="Behavior,TalDarimAscendantSoulPower,Duration" precision="1"/> seconds, stacks up to <d ref="Behavior,TalDarimAscendantSoulPower,MaxStackCount"/> times.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimAscendantSoulPower$ * Behavior,TalDarimAscendantSoulPower,Modification.DamageDealtFraction[Spell] * 100"/>% damage<n/>+<d ref="$BehaviorStackCount:TalDarimAscendantSoulPower$ * Behavior,TalDarimAscendantSoulPower,Modification.VitalMaxArray[Shields]"/> maximum shield
+Button/Tooltip/TalDarimSoulLeechBloodHunter=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain a Soul Shard for <d ref="Behavior,TalDarimBloodHunterSoulShardCharge,Duration" precision="1"/> seconds, stacks up to <d ref="Behavior,TalDarimBloodHunterSoulShardCharge,MaxStackCount"/> times.<n/>If in possession of a Soul Shard, the Blood Hunter become cloaked and his attack can embed on of his Shards inside an enemy he attacks.<n/>Embedded shards last for <d ref="Behavior,TalDarimBloodHunterSoulShard,Duration" precision="1"/> seconds.<n/>When an enemies with Soul Shard embedded is killed, it's killer invigorate nearby Tal'Darim units as if a supplicant died.<n/><n/>Current bonus:<n/><d ref="$BehaviorStackCount:TalDarimBloodHunterSoulShardCharge$"/> Soul Shard.
+Button/Tooltip/TalDarimSoulLeechChampion=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain +<d ref="Behavior,TalDarimChampionBurstofSpeed,Modification.MoveSpeedBonus" precision="1"/> move speed and +<d ref="Behavior,TalDarimChampionBurstofSpeed,Modification.DamageDealtScaled[Melee]"/> damage (+<d ref="Behavior,TalDarimChampionBurstofSpeed,Modification.DamageDealtAttributeUnscaled[Armored]"/> against Armored) for <d ref="Behavior,TalDarimChampionBurstofSpeed,Duration" precision="1"/> seconds, stacks up to <d ref="Behavior,TalDarimChampionBurstofSpeed,MaxStackCount"/> times, consume <d ref="Effect,TalDarimChampionPsiEviceratorBurstOfSpeedRB,Count"/> charge each attack.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimChampionBurstofSpeed$ * Behavior,TalDarimChampionBurstofSpeed,Modification.MoveSpeedBonus" precision="1"/> move speed<n/>+<d ref="$BehaviorStackCount:TalDarimChampionBurstofSpeed$ * Behavior,TalDarimChampionBurstofSpeed,Modification.DamageDealtScaled[Melee]"/> damage (+<d ref="$BehaviorStackCount:TalDarimChampionBurstofSpeed$ * Behavior,TalDarimChampionBurstofSpeed,Modification.DamageDealtAttributeUnscaled[Armored]"/> against Armored) 
+Button/Tooltip/TalDarimSoulLeechCustodes=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, regain <d ref="Effect,TalDarimSoulLeechCustodesRegenerate,VitalArray[Life].Change"/> health.
+Button/Tooltip/TalDarimSoulLeechDeathStar=<c val="FF0000">Can only trigger by directly draining a</c> <c val="ffff8a">Supplicant</c><c val="FF0000">.</c><n/><n/>Enhance the damage of next use of the Vaporize ability by <d ref="Behavior,TalDarimDeathStarDeathCharge,Modification.DamageDealtScaled[Spell]"/> (+<d ref="Behavior,TalDarimDeathStarDeathCharge,Modification.DamageDealtAttributeScaled[Structure]"/> Structure). Last <d ref="Behavior,TalDarimDeathStarDeathCharge,Duration"/> and stack up to <d ref="Behavior,TalDarimDeathStarDeathCharge,MaxStackCount"/> times.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimDeathStarDeathCharge$ * Behavior,TalDarimDeathStarDeathCharge,Modification.DamageDealtScaled[Spell]"/> damage<n/>+<d ref="$BehaviorStackCount:TalDarimDeathStarDeathCharge$ * Behavior,TalDarimDeathStarDeathCharge,Modification.DamageDealtAttributeScaled[Structure]"/> damage (Structure)
+Button/Tooltip/TalDarimSoulLeechDestroyer=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain 1 charge of Blood Seeker that last <d ref="Behavior,TalDarimDestroyerBloodCharge,Duration"/> seconds, stacks up to <d ref="Behavior,TalDarimDestroyerBloodCharge,MaxStackCount"/> times.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimDestroyerBloodCharge$"/> charges
+Button/Tooltip/TalDarimSoulLeechDreadnought=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain a Beetle charge that allow ground attacks that last <d ref="Behavior,TalDarimDreadnoughtBeetlesArmed,Duration"/> seconds, stacks up to <d ref="Behavior,TalDarimDreadnoughtBeetlesArmed,MaxStackCount"/> times.<n/><n/>Current bonus:<n/><d ref="$BehaviorStackCount:TalDarimDreadnoughtBeetlesArmed$"/> Beetle(s)
+Button/Tooltip/TalDarimSoulLeechHavoc=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, give a Void Shard Charge. Can carry up to <d ref="Abil,TalDarimHavocVoidShardChampion,Cost[0].Charge.CountMax"/> charges.
+Button/Tooltip/TalDarimSoulLeechLocust=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain <d ref="Effect,TalDarimSoulLeechLocustGainEnergy20,VitalArray[Energy].Change"/> energy, up to <d ref="Behavior,TalDarimLocustEnergyChargedMax,Modification.VitalMaxArray[Energy]"/> maximum energy.
+Button/Tooltip/TalDarimSoulLeechMonitor=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, increase the Monitor movement speed by <d ref="Behavior,TalDarimMonitorDetonationCharge,Modification.AdditiveMoveSpeedFactor * 100"/>% and allow it to Detonate on enemies, but remove cloaking. The charge last forever.
+Button/Tooltip/TalDarimSoulLeechOutrider=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, the next anti-ground attack will fire 1 additional missiles, stacks up to <d ref="Behavior,TalDarimOutriderSoulsWeapon,MaxStackCount"/> times.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimOutriderSoulsWeapon$"/> additional missiles
+Button/Tooltip/TalDarimSoulLeechPariah=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, refresh the Pariah duration.
+Button/Tooltip/TalDarimSoulLeechPriorityHigh=Set the unit type as High priority for soul leeching
+Button/Tooltip/TalDarimSoulLeechPriorityHighPassive=Unit type is set as High priority for soul leeching
+Button/Tooltip/TalDarimSoulLeechPriorityLow=Set the unit type as Low priority for soul leeching
+Button/Tooltip/TalDarimSoulLeechPriorityLowPassive=Unit type is set as Low priority for soul leeching
+Button/Tooltip/TalDarimSoulLeechPriorityMedium=Set the unit type as Medium priority for soul leeching
+Button/Tooltip/TalDarimSoulLeechPriorityMediumPassive=Unit type is set as Medium priority for soul leeching
+Button/Tooltip/TalDarimSoulLeechReliquary=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, spawn a <c val="ffff8a">Litany</c>. Always trigger without counting in the limit.<n/>The <c val="ffff8a">Litany</c> are targeted first by sacrifice effects, can pass through units, is tethered to the Reliquary of Souls and only last <d ref="Behavior,TalDarimLitanyTimedLife,Duration"/> seconds.<n/><n/>Can maintain up to <d ref="Behavior,TalDarimReliquaryTracking,MaxTrackedUnits"/> <c val="ffff8a">Litanies</c>.
+Button/Tooltip/TalDarimSoulLeechRiddler=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, the Riddler gain +<d ref="Behavior,TalDarimRiddlerHarmonization,Modification.WeaponRange" precision="1"/> attack range and <d ref="Behavior,TalDarimRiddlerHarmonization,Modification.AdditiveAttackSpeedFactor * 100"/>% attack speed for <d ref="Behavior,TalDarimRiddlerHarmonization,Duration" precision="1"/> seconds, stacks up to <d ref="Behavior,TalDarimRiddlerHarmonization,MaxStackCount"/> times.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimRiddlerHarmonization$ * Behavior,TalDarimRiddlerHarmonization,Modification.WeaponRange" precision="1"/> bonus range<n/>+<d ref="( Behavior,TalDarimRiddlerHarmonization,Modification.AdditiveAttackSpeedFactor * $BehaviorStackCount:TalDarimRiddlerHarmonization$ ) * 100" precision="1"/>% attack speed
+Button/Tooltip/TalDarimSoulLeechSlayer=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain a charge of Entropic Shield for <d ref="Behavior,TalDarimSlayerEntropicShieldCharge,Duration" precision="1"/> seconds, stacks up to <d ref="Behavior,TalDarimSlayerEntropicShieldCharge,MaxStackCount"/> times.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimSlayerEntropicShieldCharge$"/> charge
+Button/Tooltip/TalDarimSoulLeechSupplicant=When a <c val="ffff8a">Supplicant</c> die, <d ref="Effect,TalDarimSupplicantDeathLargeSearch,MaxCount"/> allied units within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/> will gain their Soul Leech bonus.
+Button/Tooltip/TalDarimSoulLeechVanguard=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, increase the Armour by +<d ref="Behavior,TalDarimVanguardSoulArmour,Modification.LifeArmorBonus"/> for <d ref="Behavior,TalDarimVanguardSoulArmour,Duration"/> seconds, stacks up to <d ref="Behavior,TalDarimVanguardSoulArmour,MaxStackCount"/> times.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimVanguardSoulArmour$"/> Armour<n/>
+Button/Tooltip/TalDarimSoulLeechWarPrism=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain <d ref="Behavior,TalDarimWarPrismBloodShield,Modification.VitalMaxArray[Shields]"/> maximum shield, for <d ref="Behavior,TalDarimWarPrismBloodShield,Duration" precision="1"/> seconds, stacks up to <d ref="Behavior,TalDarimWarPrismBloodShield,MaxStackCount"/> times.<n/>Automatically gain an additionnal stack for each <c val="ffff8a">Supplicants</c> in its hold.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimWarPrismBloodShield$ * Behavior,TalDarimWarPrismBloodShield,Modification.VitalMaxArray[Shields]"/> bonus shield<n/><n/><n/>Special: Increase transported <c val="ffff8a">Supplicants</c> death effect radius by +<d ref="Effect,TalDarimSupplicantDeathLargeSearch,AreaArray[0].Radius - Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>.
+Button/Tooltip/TalDarimSoulLeechWarmistress=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, gain a Soul Charge, stacks up to <d ref="Behavior,TalDarimWrathwalkerSoulsWeapon,MaxStackCount"/> times and last up to <d ref="Behavior,TalDarimWarmistressSoulsOvercharge,Duration" precision="1"/> seconds.<n/><n/>Current bonus:<n/>+<d ref="$BehaviorStackCount:TalDarimWrathwalkerSoulsWeapon$"/> souls
+Button/Tooltip/TalDarimSoulLeechWrathwalker=When a <c val="ffff8a">Supplicant</c> die within <d ref="Effect,TalDarimSupplicantDeathSearch,AreaArray[0].Radius"/>, the next attack will fire on <d ref="Effect,TalDarimWrathwalkerSearchGround,AreaArray[0].MaxCount"/> additional target, stacks up to <d ref="Behavior,TalDarimWrathwalkerSoulsWeapon,MaxStackCount"/> times and last up to <d ref="Behavior,TalDarimWrathwalkerSoulsWeapon,Duration" precision="1"/> seconds.<n/><n/>Current bonus:<n/>+<d ref="Effect,TalDarimWrathwalkerSearchGround,AreaArray[0].MaxCount"/> additional target on the next <d ref="$BehaviorStackCount:TalDarimWrathwalkerSoulsWeapon$"/> shots
+Button/Tooltip/TalDarimStararch=Warps in Tal'Darim air units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Outrider<n/>- Destroyer<n/>- Riddler
+Button/Tooltip/TalDarimSummonBloodHunter=Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimSummonChampion=Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/TalDarimSummonCustodian=Powerful psionic attacker.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimSummonDestroyer=Surgical strike craft.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimSummonDreadnought=Capital ship. Can build and launch Interceptors to make attacks.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimSummonLocust=Basic worker unit. Can gather resources and warp in Tal'Darim structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimSummonRiddler=Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.
+Button/Tooltip/TalDarimSummonSlayer=Ranged support strider.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimSummonSupplicant=Powerful melee warrior.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimSummonVanguard=Assault strider. Can use Barrier to absorb damage.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimSummonWrathwalker=Battle strider with a powerful area attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimSupplicant=Weak ranged sacrificial unit. The core of the Tal'Darim army and a balanced soul's diet.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimSupplicantBloodShields=The Supplicant gain +2 shield armor.
+Button/Tooltip/TalDarimSupplicantDrainSupplicant=Kill off a <c val="ffff8a">Supplicant</c> within <d ref="Effect,TalDarimDrainSupplicantSearch,AreaArray[0].Radius"/> to turn into a <c val="ffff8a">Pariah</c>, a powerful melee warrior that last <d ref="Behavior,TalDarimPariahTimedLife,Duration" precision="1"/> seconds.<n/>This activate the normal <c val="ffff8a">Supplicant</c> death effect twice.
+Button/Tooltip/TalDarimSupplicantSoulAugmentation=The Supplicant gain +25 shields.
+Button/Tooltip/TalDarimUpgradeAirArmorLevel1=Upgrades the armor of Protoss air units.
+Button/Tooltip/TalDarimUpgradeAirArmorLevel2=Further upgrades the armor of Protoss air units.
+Button/Tooltip/TalDarimUpgradeAirArmorLevel3=Maximizes the armor of Protoss air units.
+Button/Tooltip/TalDarimUpgradeAirWeaponsLevel1=Upgrades the damage dealt by Protoss air units.
+Button/Tooltip/TalDarimUpgradeAirWeaponsLevel2=Further upgrades the damage dealt by Protoss air units.
+Button/Tooltip/TalDarimUpgradeAirWeaponsLevel3=Maximizes the damage dealt by Protoss air units.
+Button/Tooltip/TalDarimUpgradeGroundArmorLevel1=Upgrades the armor of Tal'Darim ground units.
+Button/Tooltip/TalDarimUpgradeGroundArmorLevel2=Further upgrades the armor of Tal'Darim ground units.
+Button/Tooltip/TalDarimUpgradeGroundArmorLevel3=Maximizes the armor of Tal'Darim ground units.
+Button/Tooltip/TalDarimUpgradeGroundWeaponsLevel1=Upgrades the damage dealt by Tal'Darim ground units.
+Button/Tooltip/TalDarimUpgradeGroundWeaponsLevel2=Further upgrades the damage dealt by Tal'Darim ground units.
+Button/Tooltip/TalDarimUpgradeGroundWeaponsLevel3=Maximizes the damage dealt by Tal'Darim ground units.
+Button/Tooltip/TalDarimUpgradeShieldsLevel1=Upgrades the shields of all Tal'Darim units and structures.
+Button/Tooltip/TalDarimUpgradeShieldsLevel2=Further upgrades the shields of all Tal'Darim units and structures.
+Button/Tooltip/TalDarimUpgradeShieldsLevel3=Maximizes the shields of all Tal'Darim units and structures.
+Button/Tooltip/TalDarimVanguard=Light-cleansing assault strider.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimVanguardMatterDispersion=The range of the Vanguard weapon is increased by +1 and it's area of effect by 25%.
+Button/Tooltip/TalDarimWarPrism=Flying transport. Can load and unload units. Can also deploy to use its weapon.
+Button/Tooltip/TalDarimWarPrismGraviticDrive=The movement speed and acceleration of the War Prism is increased.
+Button/Tooltip/TalDarimWarPrismTransportMode=Reverts the Warp Prism back to Transport Mode, allowing it to move.
+Button/Tooltip/TalDarimWarPrismTurret=Immobile defensive flyer. Can load and unload units. Can switch to a mobile Transport Mode.
+Button/Tooltip/TalDarimWarPrismTurretMode=Activate the War Prism Turret Mode, allowing it to protect an area by activating it's weapon but render it immobile.
+Button/Tooltip/TalDarimWarPrismUnloadAll=Unloads all units directly bellow itself.
+Button/Tooltip/TalDarimWarmistress=Powerful flying flagship. Can use enhance nearby Tal'Darim.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TalDarimWarmistressSoulsOvercharge=By burning <d ref="Validator,TalDarimWarmistressHave4Souls,Value"/> soul charges, the Warmistress can give a soul charge to all nearby Tal'Darim units.
+Button/Tooltip/TalDarimWarpInTwoSupplicant=Spawn 2 Supplicants.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/TalDarimWrathwalker=Battle strider with a powerful targeted attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<n/><n/><c val="ffff8a">Can attack ground units.</c><n/><c val="ffff8a">Can be upgraded to attack air units.</c>
+Button/Tooltip/TalDarimWrathwalkerAirTargeting=The Wrathwalker can attack air units.
+Button/Tooltip/TalDarimWrathwalkerCliffWalk=The Wrathwalker can walk up and down cliffs.
+Button/Tooltip/WarpInTalDarimChampionVoidShard=Melee anti-armour specialist. Can use Psionic Resurrection.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+ConsoleSkin/Description/ConsoleProtoss_Forged=Enhance your console with the brooding style of Tal'darim chic.
+DocInfo/DescLong=Tal'Darim Faction mod<n/>by Cornebre 
+DocInfo/Name=[AR2] Taldarim
+Effect/Name/DarkTemplarVoidStasisIterateTransport=Tal'Darim - Blood Hunter - Void Stasis Iterate Transport
+Effect/Name/TalDarimAscendantMindBlastDamage=Tal'Darim - Ascendant - Mind Blast Damage
+Effect/Name/TalDarimAscendantPsiOrbAB=Tal'Darim - Ascendant - Psi Orb AB
+Effect/Name/TalDarimAscendantPsiOrbABBeamCaster=Tal'Darim - Ascendant - Psi Orb AB Beam Caster
+Effect/Name/TalDarimAscendantPsiOrbABDamage=Tal'Darim - Ascendant - Psi Orb AB Damage
+Effect/Name/TalDarimAscendantPsiOrbDamage=Tal'Darim - Ascendant - Psi Orb Damage
+Effect/Name/TalDarimAscendantPsiOrbDestroyPersistent=Tal'Darim - Ascendant - Psi Orb Destroy Persistent
+Effect/Name/TalDarimAscendantPsiOrbFakeDamage=Tal'Darim - Ascendant - Psi Orb Fake Damage
+Effect/Name/TalDarimAscendantPsiOrbInitialPersistent=Tal'Darim - Ascendant - Psi Orb Initial Persistent
+Effect/Name/TalDarimAscendantPsiOrbLaunchMissile=Tal'Darim - Ascendant - Psi Orb Launch Missile
+Effect/Name/TalDarimAscendantPsiOrbPersistent=Tal'Darim - Ascendant - Psi Orb Persistent
+Effect/Name/TalDarimAscendantPsiOrbSearch=Tal'Darim - Ascendant - Psi Orb Search
+Effect/Name/TalDarimAscendantPsiOrbSearchBeamCaster=Tal'Darim - Ascendant - Psi Orb Search Beam Caster
+Effect/Name/TalDarimAscendantPsiOrbSet=Tal'Darim - Ascendant - Psi Orb Set
+Effect/Name/TalDarimAscendantWeapon=Tal'Darim - Ascendant - Weapon
+Effect/Name/TalDarimAscendantWeaponLM=Tal'Darim - Ascendant - Weapon LM
+Effect/Name/TalDarimBloodHunterSoulShard=Tal'Darim - Blood Hunter - Soul Shard
+Effect/Name/TalDarimBloodHunterSoulShardAB=Tal'Darim - Blood Hunter - Soul Shard AB
+Effect/Name/TalDarimBloodHunterSoulShardDeathSearch=Tal'Darim - Blood Hunter - Soul Shard (Death Search)
+Effect/Name/TalDarimBloodHunterSoulShardRBCharge=Tal'Darim - Blood Hunter - Soul Shard RB (Charge)
+Effect/Name/TalDarimBloodHunterVoidStasisAB=Tal'Darim - Blood Hunter - Void Stasis AB
+Effect/Name/TalDarimBloodHunterVoidStasisSet=Tal'Darim - Blood Hunter - Void Stasis Set
+Effect/Name/TalDarimBloodHunterWeaponDamage=Tal'Darim - Blood Hunter Weapon Damage
+Effect/Name/TalDarimBloodHunterWeaponSet=Tal'Darim - Blood Hunter Weapon Set
+Effect/Name/TalDarimBloodHunterWeaponSetStasis=Tal'Darim - Blood Hunter Weapon Set (Stasis)
+Effect/Name/TalDarimChampionHegemonyBurstOfSpeedAB=Tal'Darim - Champion - Hegemony Burst Of Speed AB
+Effect/Name/TalDarimChampionHegemonyRegen=Tal'Darim - Champion - Hegemony Regen
+Effect/Name/TalDarimChampionHegemonySearch=Tal'Darim - Champion - Hegemony Search
+Effect/Name/TalDarimChampionHegemonySet=Tal'Darim - Champion - Hegemony Set
+Effect/Name/TalDarimChampionHegemonySetLitany=Tal'Darim - Champion - Hegemony Set Litany
+Effect/Name/TalDarimChampionHegemonySetSupplicant=Tal'Darim - Champion - Hegemony Set Supplicant
+Effect/Name/TalDarimChampionPsiEviceratorBurstOfSpeedRB=Tal'Darim - Champion - Psi Evicerator (Burst Of Speed RB)
+Effect/Name/TalDarimChampionPsiEviceratorDamage=Tal'Darim - Champion - Psi Evicerator (Damage)
+Effect/Name/TalDarimChampionPsiEviceratorSet=Tal'Darim - Champion - Psi Evicerator (Set)
+Effect/Name/TalDarimCollectorParticleBeam=Tal'Darim - Collector - Particle Beam
+Effect/Name/TalDarimCustodesAnchorLinkAB=Tal'Darim - Custodes - Anchor Link (AB)
+Effect/Name/TalDarimCustodesAnchorLinkCP=Tal'Darim - Custodes - Anchor Link (CP)
+Effect/Name/TalDarimCustodesAnchorLinkPull=Tal'Darim - Custodes - Anchor Link (Pull)
+Effect/Name/TalDarimCustodesPsionicShockChainDamage=Tal'Darim - Custodes - Psionic Shock Chain (Damage)
+Effect/Name/TalDarimCustodesPsionicShockChainSearch=Tal'Darim - Custodes - Psionic Shock Chain (Search)
+Effect/Name/TalDarimCustodesPsionicShockChainStasisDamage=Tal'Darim - Custodes - Psionic Shock Chain (Stasis Damage)
+Effect/Name/TalDarimCustodesPsionicShockChainStasisSearch=Tal'Darim - Custodes - Psionic Shock Chain (Stasis Search)
+Effect/Name/TalDarimCustodesPsionicShockDamage=Tal'Darim - Custodes - Psionic Shock (Damage)
+Effect/Name/TalDarimCustodesPsionicShockSet=Tal'Darim - Custodes - Psionic Shock (Set)
+Effect/Name/TalDarimCustodesPsionicShockStasisSet=Tal'Darim - Custodes - Psionic Shock (Stasis Set)
+Effect/Name/TalDarimCustodesTerrazineFogApplyBuff=Tal'Darim - Custodes - Terrazine Fog (Apply Buff)
+Effect/Name/TalDarimCustodesTerrazineFogPersistent=Tal'Darim - Custodes - Terrazine Fog (Persistent)
+Effect/Name/TalDarimCustodesTerrazineFogSearch=Tal'Darim - Custodes - Terrazine Fog (Search)
+Effect/Name/TalDarimCynosureDestructiveHarvest=Tal'Darim - Cynosure - Destructive Harvest
+Effect/Name/TalDarimCynosureDestructiveHarvestABGas=Tal'Darim - Cynosure - Destructive Harvest AB (Gas)
+Effect/Name/TalDarimCynosureDestructiveHarvestABMineral=Tal'Darim - Cynosure - Destructive Harvest AB (Mineral)
+Effect/Name/TalDarimCynosureDestructiveHarvestGasSet=Tal'Darim - Cynosure - Destructive Harvest (Gas Set)
+Effect/Name/TalDarimCynosureDestructiveHarvestMineralSet=Tal'Darim - Cynosure - Destructive Harvest (Mineral Set)
+Effect/Name/TalDarimCynosureDestructiveHarvestPlayerGas=Tal'Darim - Cynosure - Destructive Harvest (Player Gas)
+Effect/Name/TalDarimCynosureDestructiveHarvestPlayerMineral=Tal'Darim - Cynosure - Destructive Harvest (Player Mineral)
+Effect/Name/TalDarimCynosureDestructiveHarvestSearch=Tal'Darim - Cynosure - Destructive Harvest (Search)
+Effect/Name/TalDarimCynosureDestructiveHarvestSwitch=Tal'Darim - Cynosure - Destructive Harvest (Switch)
+Effect/Name/TalDarimCynosureDestructiveHarvestTick=Tal'Darim - Cynosure - Destructive Harvest (Tick)
+Effect/Name/TalDarimCynosurePhotonicOverchargeAB=Tal'Darim - Cynosure - Photonic Overcharge AB
+Effect/Name/TalDarimDeathStarAssumeCommandCP=Tal'Darim - Death Star - Assume Command (CP)
+Effect/Name/TalDarimDeathStarAssumeCommandLC=Tal'Darim - Death Star - Assume Command (LC)
+Effect/Name/TalDarimDeathStarAssumeCommandTP=Tal'Darim - Death Star - Assume Command (TP)
+Effect/Name/TalDarimDeathStarAssumeCommandTrack=Tal'Darim - Death Star - Assume Command (Track)
+Effect/Name/TalDarimDeathStarReleaseCommandCopy=Tal'Darim - Death Star - Release Command (Copy)
+Effect/Name/TalDarimDeathStarReleaseCommandCopyBeha=Tal'Darim - Death Star - Release Command (Copy Beha)
+Effect/Name/TalDarimDeathStarReleaseCommandCreate=Tal'Darim - Death Star - Release Command (Create)
+Effect/Name/TalDarimDeathStarReleaseCommandIterate=Tal'Darim - Death Star - Release Command (Iterate)
+Effect/Name/TalDarimDeathStarReleaseCommandSet=Tal'Darim - Death Star - Release Command (Set)
+Effect/Name/TalDarimDeathStarReleaseCommandSetCopy=Tal'Darim - Death Star - Release Command (Set Copy)
+Effect/Name/TalDarimDeathStarReleaseCommandTrack=Tal'Darim - Death Star - Release Command (Track)
+Effect/Name/TalDarimDeathStarVaporizeCP1=Tal'Darim - Death Star - Vaporize CP 1
+Effect/Name/TalDarimDeathStarVaporizeCP2=Tal'Darim - Death Star - Vaporize CP 2
+Effect/Name/TalDarimDeathStarVaporizeCP3=Tal'Darim - Death Star - Vaporize CP 3
+Effect/Name/TalDarimDeathStarVaporizeCP4=Tal'Darim - Death Star - Vaporize CP 4
+Effect/Name/TalDarimDeathStarVaporizeCP5=Tal'Darim - Death Star - Vaporize CP 5
+Effect/Name/TalDarimDeathStarVaporizeCP6=Tal'Darim - Death Star - Vaporize CP 6
+Effect/Name/TalDarimDeathStarVaporizeDamage=Tal'Darim - Death Star - Vaporize Damage
+Effect/Name/TalDarimDeathStarVaporizeFinOrderStop2=Tal'Darim - Death Star - Vaporize Fin Order Stop
+Effect/Name/TalDarimDeathStarVaporizeFinOrderStopIterate=Tal'Darim - Death Star - Vaporize Fin Order Stop Iterate
+Effect/Name/TalDarimDeathStarVaporizeFinRB=Tal'Darim - Death Star - Vaporize Fin RB
+Effect/Name/TalDarimDeathStarVaporizeFinSet=Tal'Darim - Death Star - Vaporize Fin Set
+Effect/Name/TalDarimDeathStarVaporizeIniAB=Tal'Darim - Death Star - Vaporize Ini AB
+Effect/Name/TalDarimDeathStarVaporizeIniOrderBoost=Tal'Darim - Death Star - Vaporize Ini Order Boost
+Effect/Name/TalDarimDeathStarVaporizeIniOrderBoostIterate=Tal'Darim - Death Star - Vaporize Ini Order Boost Iterate
+Effect/Name/TalDarimDeathStarVaporizeIniSet=Tal'Darim - Death Star - Vaporize Ini Set
+Effect/Name/TalDarimDeathStarVaporizeSearch1=Tal'Darim - Death Star - Vaporize Search 1
+Effect/Name/TalDarimDeathStarVaporizeSearch2=Tal'Darim - Death Star - Vaporize Search 2
+Effect/Name/TalDarimDeathStarVaporizeSearch3=Tal'Darim - Death Star - Vaporize Search 3
+Effect/Name/TalDarimDeathStarVaporizeSearch4=Tal'Darim - Death Star - Vaporize Search 4
+Effect/Name/TalDarimDeathStarVaporizeSearch5=Tal'Darim - Death Star - Vaporize Search 5
+Effect/Name/TalDarimDeathStarVaporizeSearch6=Tal'Darim - Death Star - Vaporize Search 6
+Effect/Name/TalDarimDeathStarWeaponLaunchMissile1=Tal'Darim - Death Star - Weapon Launch Missile 1
+Effect/Name/TalDarimDeathStarWeaponLaunchMissile2=Tal'Darim - Death Star - Weapon Launch Missile 2
+Effect/Name/TalDarimDeathStarWeaponLaunchMissile3=Tal'Darim - Death Star - Weapon Launch Missile 3
+Effect/Name/TalDarimDeathStarWeaponLaunchMissile4=Tal'Darim - Death Star - Weapon Launch Missile 4
+Effect/Name/TalDarimDeathStarWeaponLaunchMissile5=Tal'Darim - Death Star - Weapon Launch Missile 5
+Effect/Name/TalDarimDeathStarWeaponLaunchMissile6=Tal'Darim - Death Star - Weapon Launch Missile 6
+Effect/Name/TalDarimDestroyerDestructionAutoCast=Tal'Darim - Destroyer - Destruction - Auto-Cast
+Effect/Name/TalDarimDestroyerDestructionBounceOff=Tal'Darim - Destroyer - Destruction - Bounce Off
+Effect/Name/TalDarimDestroyerDestructionBounceSearch=Tal'Darim - Destroyer - Destruction - Bounce Search
+Effect/Name/TalDarimDestroyerDestructionBounceSwitch=Tal'Darim - Destroyer - Destruction - Bounce Switch
+Effect/Name/TalDarimDestroyerDestructionCP=Tal'Darim - Destroyer - Destruction - CP
+Effect/Name/TalDarimDestroyerDestructionDamage=Tal'Darim - Destroyer - Destruction - Damage
+Effect/Name/TalDarimDestroyerDestructionDamageBounce=Tal'Darim - Destroyer - Destruction - Damage Bounce
+Effect/Name/TalDarimDestroyerDestructionSet=Tal'Darim - Destroyer - Destruction - Set
+Effect/Name/TalDarimDestroyerFakeBoost=Tal'Darim - Destroyer - Fake Boost
+Effect/Name/TalDarimDestroyerFakeBoostTick=Tal'Darim - Destroyer - Fake Boost Tick
+Effect/Name/TalDarimDestroyerMultiTargetBoostAB=Tal'Darim - Destroyer - Multi-Target Boost AB
+Effect/Name/TalDarimDestroyerMultiTargetChargeRB=Tal'Darim - Destroyer - Multi-Target Charge RB
+Effect/Name/TalDarimDestroyerMultiTargetSet=Tal'Darim - Destroyer - Multi-Target Set
+Effect/Name/TalDarimDrainSupplicantReliquaryOrder=Tal'Darim - Drain Supplicant - Reliquary - Order
+Effect/Name/TalDarimDrainSupplicantReliquarySearch=Tal'Darim - Drain Supplicant - Reliquary - Search
+Effect/Name/TalDarimDrainSupplicantReliquarySetSupplicant=Tal'Darim - Drain Supplicant - Reliquary - Set Supplicant
+Effect/Name/TalDarimDrainSupplicantSearch=Tal'Darim - Drain Supplicant - Search
+Effect/Name/TalDarimDreadnoughtBeetleArmedRB=Tal'Darim - Dreadnought - Beetle (Armed RB)
+Effect/Name/TalDarimDreadnoughtBeetleCP=Tal'Darim - Dreadnought - Beetle (CP)
+Effect/Name/TalDarimDreadnoughtBeetleDamageTarget=Tal'Darim - Dreadnought - Beetle (Damage Target)
+Effect/Name/TalDarimDreadnoughtBeetleLM=Tal'Darim - Dreadnought - Beetle (LM)
+Effect/Name/TalDarimDreadnoughtParticleBeamCP=Tal'Darim - Dreadnought - Particle Beam (CP)
+Effect/Name/TalDarimDreadnoughtParticleBeamDamage=Tal'Darim - Dreadnought - Particle Beam (Damage)
+Effect/Name/TalDarimDreadnoughtParticleBeamDummy=Tal'Darim - Dreadnought - Particle Beam (Dummy)
+Effect/Name/TalDarimDreadnougthWarpInSupplicant=Tal'Darim - Dreadnougth - Warp In Supplicant
+Effect/Name/TalDarimHavocKillVoidShard=Tal'Darim - Havoc - Kill Void Shard
+Effect/Name/TalDarimHavocSquadSightAB=Tal'Darim - Havoc - Squad Sight (AB)
+Effect/Name/TalDarimHavocSquadSightSearch=Tal'Darim - Havoc - Squad Sight (Search)
+Effect/Name/TalDarimHavocTargetLockAB=Tal'Darim - Havoc - Target Lock (AB)
+Effect/Name/TalDarimHavocTargetLockCP=Tal'Darim - Havoc - Target Lock (CP)
+Effect/Name/TalDarimHavocTargetLockDeathEnumTracked=Tal'Darim - Havoc - Target Lock (Death Enum Tracked)
+Effect/Name/TalDarimHavocTargetLockFakeCD=Tal'Darim - Havoc - Target Lock (Fake CD)
+Effect/Name/TalDarimHavocTargetLockFakeSet=Tal'Darim - Havoc - Target Lock (Fake Set)
+Effect/Name/TalDarimHavocTargetLockRB=Tal'Darim - Havoc - Target Lock (RB)
+Effect/Name/TalDarimHavocTargetLockSet=Tal'Darim - Havoc - Target Lock (Set)
+Effect/Name/TalDarimHavocTargetLockTrack=Tal'Darim - Havoc - Target Lock (Track)
+Effect/Name/TalDarimHavocVoidShardABVoidShard=Tal'Darim - Havoc - Void Shard (AB Void Shard)
+Effect/Name/TalDarimHavocVoidShardABVoidShardSet=Tal'Darim - Havoc - Void Shard (AB Void Shard Set)
+Effect/Name/TalDarimHavocVoidShardABVoidShardTimer=Tal'Darim - Havoc - Void Shard (AB Void Shard Timer)
+Effect/Name/TalDarimHavocVoidShardChampionRB=Tal'Darim - Havoc - Void Shard (Champion RB)
+Effect/Name/TalDarimHavocVoidShardChampionSet=Tal'Darim - Havoc - Void Shard (Champion Set)
+Effect/Name/TalDarimHavocVoidShardCreateBloodHunter=Tal'Darim - Havoc - Void Shard (Create Blood Hunter)
+Effect/Name/TalDarimHavocVoidShardCreateChampion=Tal'Darim - Havoc - Void Shard (Create Champion)
+Effect/Name/TalDarimHavocVoidShardCreateCollector=Tal'Darim - Havoc - Void Shard (Create Collector)
+Effect/Name/TalDarimHavocVoidShardCreateDestroyer=Tal'Darim - Havoc - Void Shard (Create Destroyer)
+Effect/Name/TalDarimHavocVoidShardCreateDreadnought=Tal'Darim - Havoc - Void Shard (Create Dreadnought)
+Effect/Name/TalDarimHavocVoidShardCreateOutrider=Tal'Darim - Havoc - Void Shard (Create Outrider)
+Effect/Name/TalDarimHavocVoidShardCreateRiddler=Tal'Darim - Havoc - Void Shard (Create Riddler)
+Effect/Name/TalDarimHavocVoidShardCreateSlayer=Tal'Darim - Havoc - Void Shard (Create Slayer)
+Effect/Name/TalDarimHavocVoidShardCreateSupplicant=Tal'Darim - Havoc - Void Shard (Create Supplicant)
+Effect/Name/TalDarimHavocVoidShardCreateVanguard=Tal'Darim - Havoc - Void Shard (Create Vanguard)
+Effect/Name/TalDarimHavocVoidShardCreateWrathwalker=Tal'Darim - Havoc - Void Shard (Create Wrathwalker)
+Effect/Name/TalDarimKillSupplicant=Tal'Darim - Kill Supplicant
+Effect/Name/TalDarimKillSupplicantPoint=Tal'Darim - Kill Supplicant Point
+Effect/Name/TalDarimLitanyTimedLifeFate=Tal'Darim - Litany - Timed Life Fate
+Effect/Name/TalDarimLocustReconstitute=Tal'Darim - Locust - Reconstitute
+Effect/Name/TalDarimMonitorDetonationDamage=Tal'Darim - Monitor - Detonation - Damage
+Effect/Name/TalDarimMonitorDetonationLM=Tal'Darim - Monitor - Detonation - LM
+Effect/Name/TalDarimMonitorDetonationSet=Tal'Darim - Monitor - Detonation - Set
+Effect/Name/TalDarimOutriderAirDamage=Tal'Darim - Outrider - Air Damage
+Effect/Name/TalDarimOutriderAirSet=Tal'Darim - Outrider - Air Set
+Effect/Name/TalDarimOutriderArmorReductionAB=Tal'Darim - Outrider - Armor Reduction AB
+Effect/Name/TalDarimOutriderGroundCP=Tal'Darim - Outrider - Ground CP
+Effect/Name/TalDarimOutriderGroundCPBuff=Tal'Darim - Outrider - Ground CP Buff
+Effect/Name/TalDarimOutriderGroundDamage=Tal'Darim - Outrider - Ground Damage
+Effect/Name/TalDarimOutriderGroundLeftLM=Tal'Darim - Outrider - Ground Left LM
+Effect/Name/TalDarimOutriderGroundLeftLM2=Tal'Darim - Outrider - Ground Left LM Buff
+Effect/Name/TalDarimOutriderGroundRightLM=Tal'Darim - Outrider - Ground Right LM
+Effect/Name/TalDarimOutriderGroundRightLMBuff=Tal'Darim - Outrider - Ground Right LM Buff
+Effect/Name/TalDarimOutriderGroundSet=Tal'Darim - Outrider - Ground Set
+Effect/Name/TalDarimOutriderSoulsWeaponRB=Tal'Darim - Outrider - Souls Weapon RB
+Effect/Name/TalDarimPariahDurationBoost=Tal'Darim - Pariah - Duration Boost
+Effect/Name/TalDarimPariahPsiBladesCP=Psi Blades
+Effect/Name/TalDarimPariahPsiBladesDamage=Psi Blades (Damage)
+Effect/Name/TalDarimParticleCannonParticleBeamCP=Tal'Darim - Particle Cannon - Particle Beam (CP)
+Effect/Name/TalDarimParticleCannonParticleBeamDamage=Tal'Darim - Particle Cannon - Particle Beam (Damage)
+Effect/Name/TalDarimParticleCannonParticleBeamDummy=Tal'Darim - Particle Cannon - Particle Beam (Dummy)
+Effect/Name/TalDarimParticleCannonParticleBeamMonoAACP=Tal'Darim - Particle Cannon - Particle Beam - Mono AA (CP)
+Effect/Name/TalDarimParticleCannonParticleBeamMonoAADamage=Tal'Darim - Particle Cannon - Particle Beam - Mono AA (Damage)
+Effect/Name/TalDarimParticleCannonParticleBeamMonoAADummy=Tal'Darim - Particle Cannon - Particle Beam - Mono AA (Dummy)
+Effect/Name/TalDarimParticleCannonParticleBeamMonoAARetarget=Tal'Darim - Particle Cannon - Particle Beam - Mono AA (Retarget)
+Effect/Name/TalDarimParticleCannonParticleBeamMultiAACP=Tal'Darim - Particle Cannon - Particle Beam - Multi AA (CP)
+Effect/Name/TalDarimParticleCannonParticleBeamMultiAADamage=Tal'Darim - Particle Cannon - Particle Beam - Multi AA (Damage)
+Effect/Name/TalDarimParticleCannonParticleBeamMultiAADummy=Tal'Darim - Particle Cannon - Particle Beam - Multi AA (Dummy)
+Effect/Name/TalDarimParticleCannonParticleBeamMultiAADummy2=Tal'Darim - Particle Cannon - Particle Beam - Multi AA (Dummy 2)
+Effect/Name/TalDarimParticleCannonParticleBeamMultiAADummy2Set=Tal'Darim - Particle Cannon - Particle Beam - Multi AA (Dummy 2 Set)
+Effect/Name/TalDarimParticleCannonParticleBeamMultiAARetarget1=Tal'Darim - Particle Cannon - Particle Beam - Multi AA (Retarget 1)
+Effect/Name/TalDarimParticleCannonParticleBeamMultiAARetarget2=Tal'Darim - Particle Cannon - Particle Beam - Multi AA (Retarget 2)
+Effect/Name/TalDarimPrismaticTowerMonoAB=Tal'Darim - Prismatic Tower - Mono - AB
+Effect/Name/TalDarimPrismaticTowerMonoAttackSelf=Tal'Darim - Prismatic Tower - Mono - Attack Self
+Effect/Name/TalDarimPrismaticTowerMonoAttackSelfSearch=Tal'Darim - Prismatic Tower - Mono - Attack Self Search
+Effect/Name/TalDarimPrismaticTowerMonoSet=Tal'Darim - Prismatic Tower - Mono - Set
+Effect/Name/TalDarimPrismaticTowerMultiAB=Tal'Darim - Prismatic Tower - Multi - AB 
+Effect/Name/TalDarimPrismaticTowerMultiAttackSelf=Tal'Darim - Prismatic Tower - Multi - Attack Self
+Effect/Name/TalDarimPrismaticTowerMultiAttackSelfSearch=Tal'Darim - Prismatic Tower - Multi - Attack Self Search 
+Effect/Name/TalDarimPrismaticTowerMultiSet=Tal'Darim - Prismatic Tower - Multi - Set
+Effect/Name/TalDarimPrismaticTowerTrack=Tal'Darim - Prismatic Tower - Track
+Effect/Name/TalDarimReliquaryLitanySpawnTrack=Tal'Darim - Reliquary - Litany Spawn Track
+Effect/Name/TalDarimReliquarySendDestroyers=Tal'Darim - Reliquary - Send Destroyers
+Effect/Name/TalDarimReliquarySendLitanies=Tal'Darim - Reliquary - Send Litanies
+Effect/Name/TalDarimRiddlerEnshroudApplyBehavior=Tal'Darim - Riddler - Enshroud Apply Behavior
+Effect/Name/TalDarimRiddlerEnshroudDestroy=Tal'Darim - Riddler - Enshroud (Destroy)
+Effect/Name/TalDarimRiddlerEnshroudDummyDamage=Tal'Darim - Riddler - Enshroud Dummy Damage
+Effect/Name/TalDarimRiddlerEnshroudPersistent=Tal'Darim - Riddler - Enshroud (Persistent)
+Effect/Name/TalDarimRiddlerEnshroudSearch=Tal'Darim - Riddler - Enshroud Search
+Effect/Name/TalDarimRiddlerEnshroudSet=Tal'Darim - Riddler - Enshroud (Set)
+Effect/Name/TalDarimRiddlerPlasmaBombActivateCP=Tal'Darim - Riddler - Plasma Bomb Activate CP
+Effect/Name/TalDarimRiddlerPlasmaBombActivateSet=Tal'Darim - Riddler - Plasma Bomb Activate Set
+Effect/Name/TalDarimRiddlerPlasmaBombBuildBeamOff=Tal'Darim - Riddler - Plasma Bomb Build Beam Off
+Effect/Name/TalDarimRiddlerPlasmaBombBuildBeamOn=Tal'Darim - Riddler - Plasma Bomb Build Beam On
+Effect/Name/TalDarimRiddlerPlasmaBombCasterAB=Tal'Darim - Riddler - Plasma Bomb Caster AB
+Effect/Name/TalDarimRiddlerPlasmaBombDamage=Tal'Darim - Riddler - Plasma Bomb Damage
+Effect/Name/TalDarimRiddlerPlasmaBombReveal=Tal'Darim - Riddler - Plasma Bomb Reveal
+Effect/Name/TalDarimRiddlerWeaponCreatePersistent=Tal'Darim - Riddler - Weapon Create Persistent
+Effect/Name/TalDarimRiddlerWeaponDamage=Tal'Darim - Riddler - Weapon Damage
+Effect/Name/TalDarimSlayerEntropicShieldActiveAB=Tal'Darim - Slayer - Entropic Shield Active AB
+Effect/Name/TalDarimSlayerEntropicShieldChargeRB=Tal'Darim - Slayer - Entropic Shield Charge RB
+Effect/Name/TalDarimSlayerEntropicShieldChargeSet=Tal'Darim - Slayer - Entropic Shield Charge Set
+Effect/Name/TalDarimSlayerEntropyLanceDamage=Tal'Darim - Slayer - Entropy Lance (Damage)
+Effect/Name/TalDarimSlayerEntropyLanceLM=Tal'Darim - Slayer - Entropy Lance (LM)
+Effect/Name/TalDarimSoulLeechAllDeathCP=Tal'Darim - Soul Leech - All - Death CP
+Effect/Name/TalDarimSoulLeechAllDeathRB=Tal'Darim - Soul Leech - All - Death RB
+Effect/Name/TalDarimSoulLeechAllDeathSearch=Tal'Darim - Soul Leech - All - Death Search
+Effect/Name/TalDarimSoulLeechAscendantSoulChargeAB=Tal'Darim - Soul Leech - Ascendant - Soul Charge AB
+Effect/Name/TalDarimSoulLeechAscendantSoulChargeAB2=Tal'Darim - Soul Leech - Ascendant - Soul Charge AB 2
+Effect/Name/TalDarimSoulLeechBloodHunterSoulShardABCharge=Tal'Darim - Soul Leech - Blood Hunter - Soul Shard AB (Charge)
+Effect/Name/TalDarimSoulLeechChampionBurstOfSpeedAB=Tal'Darim - Soul Leech - Champion - Burst Of Speed AB
+Effect/Name/TalDarimSoulLeechChampionBurstOfSpeedAB2=Tal'Darim - Soul Leech - Champion - Burst Of Speed AB 2
+Effect/Name/TalDarimSoulLeechCreatePariah=Tal'Darim - Soul Leech - Create Pariah
+Effect/Name/TalDarimSoulLeechCreatePariahCopy=Tal'Darim - Soul Leech - Create Pariah - Copy
+Effect/Name/TalDarimSoulLeechCreatePariahKillSupplicant=Tal'Darim - Soul Leech - Create Pariah - Kill Supplicant
+Effect/Name/TalDarimSoulLeechCreatePariahSet=Tal'Darim - Soul Leech - Create Pariah - Set
+Effect/Name/TalDarimSoulLeechCustodesRegenerate=Tal'Darim - Soul Leech - Custodes - Regenerate
+Effect/Name/TalDarimSoulLeechCustodesRegenerate2=Tal'Darim - Soul Leech - Custodes - Regenerate 2
+Effect/Name/TalDarimSoulLeechDeathStarDeathChargeAB=Tal'Darim - Soul Leech - Death Star - Death Charge AB
+Effect/Name/TalDarimSoulLeechDestroyerMultiTargetChargeAB=Tal'Darim - Soul Leech - Destroyer - Multi-Target Charge AB
+Effect/Name/TalDarimSoulLeechDestroyerMultiTargetChargeAB2=Tal'Darim - Soul Leech - Destroyer - Multi-Target Charge AB 2
+Effect/Name/TalDarimSoulLeechDreadnoughtBeetleArmedAB=Tal'Darim - Soul Leech - Dreadnought - Beetle Armed AB
+Effect/Name/TalDarimSoulLeechDreadnoughtBeetleArmedAB2=Tal'Darim - Soul Leech - Dreadnought - Beetle Armed AB 2
+Effect/Name/TalDarimSoulLeechHavocVoidCharge=Tal'Darim - Soul Leech - Havoc - Void Charge
+Effect/Name/TalDarimSoulLeechHavocVoidCharge2=Tal'Darim - Soul Leech - Havoc - Void Charge 2
+Effect/Name/TalDarimSoulLeechLocustEnergyChargedAB=Tal'Darim - Soul Leech - Locust - Energy Charged AB
+Effect/Name/TalDarimSoulLeechLocustEnergyChargedAB2=Tal'Darim - Soul Leech - Locust - Energy Charged AB 2
+Effect/Name/TalDarimSoulLeechLocustEnergyChargedTempAB=Tal'Darim - Soul Leech - Locust - Energy Charged Temp AB
+Effect/Name/TalDarimSoulLeechLocustEnergyChargedTempAB2=Tal'Darim - Soul Leech - Locust - Energy Charged Temp AB 2
+Effect/Name/TalDarimSoulLeechLocustGainEnergy20=Tal'Darim - Soul Leech - Locust - Gain Energy 20
+Effect/Name/TalDarimSoulLeechLocustGainEnergy40=Tal'Darim - Soul Leech - Locust - Gain Energy 40
+Effect/Name/TalDarimSoulLeechLocustSet=Tal'Darim - Soul Leech - Locust - Set
+Effect/Name/TalDarimSoulLeechLocustSet2=Tal'Darim - Soul Leech - Locust - Set 2
+Effect/Name/TalDarimSoulLeechMonitorDetonationChargeAB=Tal'Darim - Soul Leech - Monitor - Detonation Charge AB
+Effect/Name/TalDarimSoulLeechOutriderSoulsWeaponAB=Tal'Darim - Soul Leech - Outrider - Souls Weapon AB
+Effect/Name/TalDarimSoulLeechOutriderSoulsWeaponAB2=Tal'Darim - Soul Leech - Outrider - Souls Weapon AB 2
+Effect/Name/TalDarimSoulLeechPariahRefreshAB=Tal'Darim - Soul Leech - Pariah - Refresh AB
+Effect/Name/TalDarimSoulLeechPariahRefreshAB2=Tal'Darim - Soul Leech - Pariah - Refresh AB 2
+Effect/Name/TalDarimSoulLeechPariahRegenerate=Tal'Darim - Soul Leech - Pariah - Regenerate
+Effect/Name/TalDarimSoulLeechPariahRegenerate2=Tal'Darim - Soul Leech - Pariah - Regenerate 2
+Effect/Name/TalDarimSoulLeechPriorityHigh=Tal'Darim - Soul Leech Priority High
+Effect/Name/TalDarimSoulLeechPriorityLow=Tal'Darim - Soul Leech Priority Low
+Effect/Name/TalDarimSoulLeechPriorityMedium=Tal'Darim - Soul Leech Priority Medium
+Effect/Name/TalDarimSoulLeechRiddlerHarmonizationAB=Tal'Darim - Soul Leech - Riddler - Harmonization AB
+Effect/Name/TalDarimSoulLeechRiddlerHarmonizationAB2=Tal'Darim - Soul Leech - Riddler - Harmonization AB 2
+Effect/Name/TalDarimSoulLeechSetLitany=Tal'Darim - Soul Leech - Set Litany
+Effect/Name/TalDarimSoulLeechSetSupplicant=Tal'Darim - Soul Leech - Set Supplicant
+Effect/Name/TalDarimSoulLeechSlayerEntropicShieldCharge=Tal'Darim - Soul Leech - Slayer - Entropic Shield Charge
+Effect/Name/TalDarimSoulLeechSlayerEntropicShieldCharge2=Tal'Darim - Soul Leech - Slayer - Entropic Shield Charge 2
+Effect/Name/TalDarimSoulLeechSupplicantSearch=Tal'Darim - Soul Leech - Supplicant - Search
+Effect/Name/TalDarimSoulLeechSupplicantShieldAB=Tal'Darim - Soul Leech - Supplicant - Shield AB
+Effect/Name/TalDarimSoulLeechSwitch=Tal'Darim - Soul Leech - Switch
+Effect/Name/TalDarimSoulLeechVanguardSoulArmourAB=Tal'Darim - Soul Leech - Vanguard - Soul Armour AB
+Effect/Name/TalDarimSoulLeechVanguardSoulArmourAB2=Tal'Darim - Soul Leech - Vanguard - Soul Armour AB 2
+Effect/Name/TalDarimSoulLeechWarPrismBloodShieldAB=Tal'Darim - Soul Leech - War Prism - Blood Shield AB
+Effect/Name/TalDarimSoulLeechWarPrismBloodShieldAB2=Tal'Darim - Soul Leech - War Prism - Blood Shield AB 2
+Effect/Name/TalDarimSoulLeechWarPrismBloodShieldABSelf=Tal'Darim - Soul Leech - War Prism - Blood Shield AB Self
+Effect/Name/TalDarimSoulLeechWarPrismBloodShieldABSelf2=Tal'Darim - Soul Leech - War Prism - Blood Shield AB Self 2
+Effect/Name/TalDarimSoulLeechWarPrismIterateTransport=Tal'Darim - Soul Leech - War Prism - Iterate Transport
+Effect/Name/TalDarimSoulLeechWarPrismIterateTransport2=Tal'Darim - Soul Leech - War Prism - Iterate Transport 2
+Effect/Name/TalDarimSoulLeechWarPrismSet=Tal'Darim - Soul Leech - War Prism - Set
+Effect/Name/TalDarimSoulLeechWarPrismSet2=Tal'Darim - Soul Leech - War Prism - Set 2
+Effect/Name/TalDarimSoulLeechWarmistressSoulOverchargeAB=Tal'Darim - Soul Leech - Warmistress - Soul Overcharge AB
+Effect/Name/TalDarimSoulLeechWrathwalkerSoulsWeaponAB=Tal'Darim - Soul Leech - Wrathwalker - Souls Weapon AB
+Effect/Name/TalDarimSoulLeechWrathwalkerSoulsWeaponAB2=Tal'Darim - Soul Leech - Wrathwalker - Souls Weapon AB 2
+Effect/Name/TalDarimSupplicantDamage=Tal'Darim - Supplicant - Damage
+Effect/Name/TalDarimSupplicantDeathLargeReliquarySearch=Tal'Darim - Supplicant - Death (Large Reliquary Search)
+Effect/Name/TalDarimSupplicantDeathLargeSearch=Tal'Darim - Supplicant - Death (Large Search)
+Effect/Name/TalDarimSupplicantDeathLargeSearchSet=Tal'Darim - Supplicant - Death (Large Search Set)
+Effect/Name/TalDarimSupplicantDeathOrderEffect=Tal'Darim - Supplicant - Death (Order Effect)
+Effect/Name/TalDarimSupplicantDeathReliquaryOrder=Tal'Darim - Supplicant - Death (Reliquary Order)
+Effect/Name/TalDarimSupplicantDeathReliquaryOrderEmpty=Tal'Darim - Supplicant - Death (Reliquary Order (Empty))
+Effect/Name/TalDarimSupplicantDeathReliquarySearch=Tal'Darim - Supplicant - Death (Reliquary Search)
+Effect/Name/TalDarimSupplicantDeathSearch=Tal'Darim - Supplicant - Death (Search)
+Effect/Name/TalDarimSupplicantDeathSearchSet=Tal'Darim - Supplicant - Death (Search Set)
+Effect/Name/TalDarimSupplicantDeathSearchSwitch=Tal'Darim - Supplicant - Death (Search Switch)
+Effect/Name/TalDarimSupplicantLM=Tal'Darim - Supplicant - LM
+Effect/Name/TalDarimVanguardScatterCannonsDamage=Tal'Darim - Vanguard - Scatter Cannons - Damage
+Effect/Name/TalDarimVanguardScatterCannonsDamageSec=Tal'Darim - Vanguard - Scatter Cannons - Damage Sec
+Effect/Name/TalDarimVanguardScatterCannonsDamageTargeted=Tal'Darim - Vanguard - Scatter Cannons - Damage Targeted
+Effect/Name/TalDarimVanguardScatterCannonsLM=Tal'Darim - Vanguard - Scatter Cannons - LM
+Effect/Name/TalDarimVanguardScatterCannonsLMSec=Tal'Darim - Vanguard - Scatter Cannons - LM Sec
+Effect/Name/TalDarimVanguardScatterCannonsLMTargeted=Tal'Darim - Vanguard - Scatter Cannons - LM Targeted
+Effect/Name/TalDarimVanguardScatterCannonsRandom=Tal'Darim - Vanguard - Scatter Cannons - Random
+Effect/Name/TalDarimVanguardScatterCannonsRandomSec=Tal'Darim - Vanguard - Scatter Cannons - Random Sec
+Effect/Name/TalDarimVanguardScatterCannonsSearch=Tal'Darim - Vanguard - Scatter Cannons - Search
+Effect/Name/TalDarimVanguardScatterCannonsSearchSec=Tal'Darim - Vanguard - Scatter Cannons - Search Sec
+Effect/Name/TalDarimWarPrismPhotonicBarrageDamage=Tal'Darim - War Prism - Photonic Barrage (Damage)
+Effect/Name/TalDarimWarPrismPhotonicBarrageLaunchMissile=Tal'Darim - War Prism - Photonic Barrage (Launch Missile)
+Effect/Name/TalDarimWarmistressParticleBeamCP=Tal'Darim - Warmistress - Particle Beam (CP)
+Effect/Name/TalDarimWarmistressParticleBeamCPSec=Tal'Darim - Warmistress - Particle Beam (CP (Sec))
+Effect/Name/TalDarimWarmistressParticleBeamDamage=Tal'Darim - Warmistress - Particle Beam (Damage)
+Effect/Name/TalDarimWarmistressParticleBeamDummy=Tal'Darim - Warmistress - Particle Beam (Dummy)
+Effect/Name/TalDarimWarmistressParticleBeamSet=Tal'Darim - Warmistress - Particle Beam (Set)
+Effect/Name/TalDarimWarmistressSoulsOverchargeRB=Tal'Darim - Warmistress - Souls Overcharge (RB)
+Effect/Name/TalDarimWarmistressSoulsOverchargeSearch=Tal'Darim - Warmistress - Souls Overcharge (Search)
+Effect/Name/TalDarimWarmistressSoulsOverchargeSet=Tal'Darim - Warmistress - Souls Overcharge (Set)
+Effect/Name/TalDarimWrathwalkerDamageAir=Tal'Darim - Wrathwalker - Damage (Air)
+Effect/Name/TalDarimWrathwalkerDamageAirBonus=Tal'Darim - Wrathwalker - Damage (Air Bonus)
+Effect/Name/TalDarimWrathwalkerDamageGround=Tal'Darim - Wrathwalker - Damage (Ground)
+Effect/Name/TalDarimWrathwalkerDamageGroundBonus=Tal'Darim - Wrathwalker - Damage (Ground Bonus)
+Effect/Name/TalDarimWrathwalkerLMAir=Tal'Darim - Wrathwalker - LM (Air)
+Effect/Name/TalDarimWrathwalkerLMAirBuff=Tal'Darim - Wrathwalker - LM (Air Buff)
+Effect/Name/TalDarimWrathwalkerLMGround=Tal'Darim - Wrathwalker - LM (Ground)
+Effect/Name/TalDarimWrathwalkerLMGroundBuff=Tal'Darim - Wrathwalker - LM (Ground Buff)
+Effect/Name/TalDarimWrathwalkerSearchAir=Tal'Darim - Wrathwalker - Search (Air)
+Effect/Name/TalDarimWrathwalkerSearchGround=Tal'Darim - Wrathwalker - Search (Ground)
+Effect/Name/TalDarimWrathwalkerSetAir=Tal'Darim - Wrathwalker - Set (Air)
+Effect/Name/TalDarimWrathwalkerSetGround=Tal'Darim - Wrathwalker - Set (Ground)
+Effect/Name/TalDarimWrathwalkerSoulsWeaponRB=Tal'Darim - Wrathwalker - Souls Weapon RB
+Effect/Name/ZerDarimDisguiseAsSupplicantCU=Zer'Darim - DisguiseAsSupplicantCU
+Race/Name/PrTD=Tal'Darim
+RequirementNode/Tooltip/CountBehaviorTalDarimLocustEnergyChargedCompleteOnlyAtUnit78175013=Energy Charged
+RequirementNode/Tooltip/CountUpgradeTalDarimAscendantArchivesAscendantMindBlastCompleteOnly1235665448=Research Mind Blast at the Ascendant Archives
+RequirementNode/Tooltip/CountUpgradeTalDarimAutomationBayVanguardMatterDispersionCompleteOnly1051668991=Research Matter Dispersion at the Automation Bay
+RequirementNode/Tooltip/CountUpgradeTalDarimAutomationBayWarPrismGraviticDriveCompleteOnly2366166871=Research Gravitic Drive at the Automation Bay
+RequirementNode/Tooltip/CountUpgradeTalDarimAutomationBayWrathwalkerAirTargetingCompleteOnly259159487=Research Air Targeting at the Automation Bay
+RequirementNode/Tooltip/CountUpgradeTalDarimDeathCouncilChampionHegemonyCompleteOnly391097612=Research Hegemony at the Death Council
+RequirementNode/Tooltip/CountUpgradeTalDarimDeathCouncilSlayerFrameEnhancementCompleteOnly1232013551=Research Frame Enhancement at the Death Council
+RequirementNode/Tooltip/CountUpgradeTalDarimDeathCouncilSlayerFrameEnhancementCompleteOnly1557606976=Research Cloaking Module at the Cybernetic Kernel
+RequirementNode/Tooltip/CountUpgradeTalDarimDeathCouncilSupplicantBloodShieldsCompleteOnly3756393484=Research Blood Shields at the Death Council
+RequirementNode/Tooltip/CountUpgradeTalDarimDeathCouncilSupplicantSoulAugmentationCompleteOnly2770948149=Research Soul Augmentation at the Death Council
+RequirementNode/Tooltip/CountUpgradeTalDarimFleetLodestarDestroyerVoidAmplifierCompleteOnly2924413385=Research Void Amplifier at the Fleet Lodestar
+RequirementNode/Tooltip/CountUpgradeTalDarimFleetLodestarDreadnoughCloningVatCompleteOnly1805613357=Research Cloning Vat at the Fleet Lodestar
+RequirementNode/Tooltip/CountUpgradeTalDarimFleetLodestarOutriderGoliarPulseCrystalCompleteOnly3180002996=Research Goliar Pulse-Crystal at the Fleet Lodestar
+RequirementNode/Tooltip/Eq1014989270CountUpgradeTalDarimShieldsLevel2CompleteOnly1=Tal'Darim Shields Level 2
+RequirementNode/Tooltip/Eq1251210394CountUnitTalDarimDeathStarQueuedOrBetter0=No Death Star
+RequirementNode/Tooltip/Eq1297184705CountUpgradeTalDarimGroundArmorsLevel2CompleteOnly1=Tal'Darim Ground Armor Level 2
+RequirementNode/Tooltip/Eq140474246CountUpgradeTalDarimGroundWeaponsLevel2CompleteOnly1=Tal'Darim Ground Weapons Level 2
+RequirementNode/Tooltip/Eq1434375792CountUpgradeTalDarimAirWeaponsLevel2CompleteOnly1=Tal'Darim Air Weapons Level 2
+RequirementNode/Tooltip/Eq1638404485CountUnitTalDarimWarmistressQueuedOrBetter0=No Warmistress
+RequirementNode/Tooltip/Eq2343560081CountUpgradeTalDarimAirArmorsLevel2CompleteOnly1=Tal'Darim Air Armor Level 2
+RequirementNode/Tooltip/Eq3042748322CountUpgradeTalDarimGroundArmorsLevel1CompleteOnly1=Tal'Darim Ground Armor Level 1
+RequirementNode/Tooltip/Eq3109251884CountUpgradeTalDarimShieldsLevel1CompleteOnly1=Tal'Darim Shields Level 1
+RequirementNode/Tooltip/Eq3740906089CountBehaviorTalDarimMonitorDetonationChargeCompleteOnlyAtUnit0=Have no Detonation Charge
+RequirementNode/Tooltip/Eq785678381CountUpgradeTalDarimAirWeaponsLevel1CompleteOnly1=Tal'Darim Air Weapons Level 1
+RequirementNode/Tooltip/Eq841426029CountUpgradeTalDarimAirArmorsLevel1CompleteOnly1=Tal'Darim Air Armor Level 1
+RequirementNode/Tooltip/Eq94940388CountUpgradeTalDarimGroundWeaponsLevel1CompleteOnly1=Tal'Darim Ground Weapons Level 1
+RequirementNode/Tooltip/GT1333621204CountBehaviorTalDarimWarmistressSoulsOverchargeCompleteOnlyAtUnit3=Have a 4 Soul Shards
+RequirementNode/Tooltip/GT1351170555CountBehaviorTalDarimMonitorDetonationChargeCompleteOnlyAtUnit0=Have a Detonation Charge
+RequirementNode/Tooltip/GT1818745331CountBehaviorTalDarimDestroyerBloodChargeCompleteOnlyAtUnit0=Have a Blood Charge
+RequirementNode/Tooltip/GT1926611650CountUnitTalDarimDestroyerQueuedOrBetterAtUnit0=Death Star must have Destroyer escorts
+RequirementNode/Tooltip/GT631217625CountBehaviorTalDarimBloodHunterSoulShardChargeCompleteOnlyAtUnit0=Have a Soul Shard
+RequirementNode/Tooltip/LT1462268040CountUnitTalDarimDestroyerQueuedOrBetterAtUnit5=Death Star must have fewer than 5 Destroyer escort
+UI/Cloning=Cloning
+UI/HelpMenuDialogTechGlossary_Control_Unit/Category/TalDarimUnits=Tal'darim Army
+UI/ResourceSupplyToolTip_PrTD=All living units cost supply. Build Pylons to increase supply.
+Unit/Category/TalDarimUnits=Tal'Darim
+Unit/Name/TalDarimArchway=Archway
+Unit/Name/TalDarimAscendant=Ascendant
+Unit/Name/TalDarimAscendantArchives=Ascendant Archives
+Unit/Name/TalDarimAutomationBay=Automation Bay
+Unit/Name/TalDarimAutomationFacility=Automation Facility
+Unit/Name/TalDarimBloodHunter=Blood Hunter
+Unit/Name/TalDarimBloodShrine=Blood Shrine
+Unit/Name/TalDarimChampion=Champion
+Unit/Name/TalDarimCustodes=Custodes
+Unit/Name/TalDarimCyberneticsKernel=Cybernetics Kernel
+Unit/Name/TalDarimCynosure=Cynosure
+Unit/Name/TalDarimDeathCouncil=Death Council
+Unit/Name/TalDarimDeathStar=Death Star
+Unit/Name/TalDarimDestroyer=Destroyer
+Unit/Name/TalDarimDreadnought=Dreadnought
+Unit/Name/TalDarimDreadnoughtBeetleWeapon=Tal'Darim - Unit - Dreadnought - Beetle Weapon
+Unit/Name/TalDarimDuplicator=Duplicator
+Unit/Name/TalDarimFleetLodestar=Fleet Lodestar
+Unit/Name/TalDarimFracturer=Fracturer
+Unit/Name/TalDarimFracturerRich=Fracturer
+Unit/Name/TalDarimHavoc=Havoc
+Unit/Name/TalDarimLitany=Litany
+Unit/Name/TalDarimLocust=Locust
+Unit/Name/TalDarimMonitor=Monitor
+Unit/Name/TalDarimOutrider=Outrider
+Unit/Name/TalDarimOutriderGroundWeaponLeft=Tal'Darim - Unit - Outrider - Ground Weapon Left
+Unit/Name/TalDarimOutriderGroundWeaponRight=Tal'Darim - Unit - Outrider - Ground Weapon Right
+Unit/Name/TalDarimPariah=Pariah
+Unit/Name/TalDarimParticleCannon=Particle Cannon
+Unit/Name/TalDarimPeristyle=Peristyle
+Unit/Name/TalDarimPhotonicBarrageWeapon=Tal'Darim - Photonic Barrage Weapon
+Unit/Name/TalDarimPrismaticTower=Prismatic Tower
+Unit/Name/TalDarimReliquaryofSouls=Reliquary of Souls
+Unit/Name/TalDarimRiddler=Riddler
+Unit/Name/TalDarimRiddlerPlasmaBomb=Plasma Bomb
+Unit/Name/TalDarimSlayer=Slayer
+Unit/Name/TalDarimSlayerWeapon=Tal'Darim - Unit - Slayer - Weapon
+Unit/Name/TalDarimStararch=Stararch
+Unit/Name/TalDarimSupplicant=Supplicant
+Unit/Name/TalDarimSupplicantVoidShard=Supplicant
+Unit/Name/TalDarimSupplicantWeapon=Tal'Darim - Unit - Supplicant - Weapon
+Unit/Name/TalDarimUnitAscendantPsiOrbMissile=Tal'Darim - Unit - Ascendant - Psi Orb Missile
+Unit/Name/TalDarimUnitAscendantWeapon=Tal'Darim - Unit - Ascendant - Weapon
+Unit/Name/TalDarimUnitDeathStarWeapon1=Tal'Darim - Unit - Death Star - Weapon 1
+Unit/Name/TalDarimUnitDeathStarWeapon2=Tal'Darim - Unit - Death Star - Weapon 2
+Unit/Name/TalDarimUnitDeathStarWeapon3=Tal'Darim - Unit - Death Star - Weapon 3
+Unit/Name/TalDarimUnitDeathStarWeapon4=Tal'Darim - Unit - Death Star - Weapon 4
+Unit/Name/TalDarimUnitDeathStarWeapon5=Tal'Darim - Unit - Death Star - Weapon 5
+Unit/Name/TalDarimUnitDeathStarWeapon6=Tal'Darim - Unit - Death Star - Weapon 6
+Unit/Name/TalDarimUnitVanguardWeapon=Tal'Darim - Unit - Vanguard - Weapon
+Unit/Name/TalDarimUnitWrathwalkerWeapon=Tal'Darim - Unit - Wrathwalker - Weapon
+Unit/Name/TalDarimVanguard=Vanguard
+Unit/Name/TalDarimWarPrism=War Prism
+Unit/Name/TalDarimWarPrismTurret=War Prism
+Unit/Name/TalDarimWarmistress=Warmistress
+Unit/Name/TalDarimWrathwalker=Wrathwalker
+Unit/Name/ZerDarimChangelingSupplicant=Supplicant
+UnitKillRank/Rank1_PrTD=Neophyte
+UnitKillRank/Rank2_PrTD=Enlighten
+UnitKillRank/Rank3_PrTD=Exemplar
+UnitKillRank/Rank4_PrTD=Paradigm
+UnitKillRank/Rank5_PrTD=Ascendant
+UnitKillRank/TalDarimPariah=Pariah
+UnitKillRank/TalDarimSupplicant=Supplicant
+UnitKillRank/TalDarimSupplicantVoidShard=Supplicant
+UnitKillRank/ZerDarimChangelingSupplicant=Supplicant
+Upgrade/Name/TalDarimAirArmors=Tal'Darim - Air Armors
+Upgrade/Name/TalDarimAirArmorsLevel1=Tal'Darim - Air Armors Level 1
+Upgrade/Name/TalDarimAirArmorsLevel2=Tal'Darim - Air Armors Level 2
+Upgrade/Name/TalDarimAirArmorsLevel3=Tal'Darim - Air Armors Level 3
+Upgrade/Name/TalDarimAirWeapons=Tal'Darim - Air Weapons
+Upgrade/Name/TalDarimAirWeaponsLevel1=Tal'Darim - Air Weapons Level 1
+Upgrade/Name/TalDarimAirWeaponsLevel2=Tal'Darim - Air Weapons Level 2
+Upgrade/Name/TalDarimAirWeaponsLevel3=Tal'Darim - Air Weapons Level 3
+Upgrade/Name/TalDarimAscendantArchivesAscendantMindBlast=Tal'Darim - Ascendant Archives - Ascendant - Mind Blast
+Upgrade/Name/TalDarimAutomationBayVanguardMatterDispersion=Tal'Darim - Automation Bay - Vanguard - Matter Dispersion
+Upgrade/Name/TalDarimAutomationBayWarPrismGraviticDrive=Tal'Darim - Automation Bay - War Prism - Gravitic Drive
+Upgrade/Name/TalDarimAutomationBayWrathwalkerAirTargeting=Tal'Darim - Automation Bay - Wrathwalker - Air Targeting
+Upgrade/Name/TalDarimCyberneticKernelHavocCloakingModule=Tal'Darim - Cybernetic Kernel - Havoc - Cloaking Module
+Upgrade/Name/TalDarimDeathCouncilChampionHegemony=Tal'Darim - Death Council - Champion - Hegemony
+Upgrade/Name/TalDarimDeathCouncilSlayerFrameEnhancement=Tal'Darim - Death Council - Slayer - Frame Enhancement
+Upgrade/Name/TalDarimDeathCouncilSupplicantBloodShields=Tal'Darim - Death Council - Supplicant - Blood Shields
+Upgrade/Name/TalDarimDeathCouncilSupplicantSoulAugmentation=Tal'Darim - Death Council - Supplicant - Soul Augmentation
+Upgrade/Name/TalDarimFleetLodestarDestroyerVoidAmplifier=Tal'Darim - Fleet Lodestar - Destroyer - Void Amplifier
+Upgrade/Name/TalDarimFleetLodestarDreadnoughCloningVat=Tal'Darim - Fleet Lodestar - Dreadnough - Cloning Vat
+Upgrade/Name/TalDarimFleetLodestarOutriderGoliarPulseCrystal=Tal'Darim - Fleet Lodestar - Outrider - Goliar Pulse-Crystal
+Upgrade/Name/TalDarimGroundArmors=Tal'Darim - Ground Armors
+Upgrade/Name/TalDarimGroundArmorsLevel1=Tal'Darim - Ground Armors Level 1
+Upgrade/Name/TalDarimGroundArmorsLevel2=Tal'Darim - Ground Armors Level 2
+Upgrade/Name/TalDarimGroundArmorsLevel3=Tal'Darim - Ground Armors Level 3
+Upgrade/Name/TalDarimGroundWeapons=Tal'Darim - Ground Weapons
+Upgrade/Name/TalDarimGroundWeaponsLevel1=Tal'Darim - Ground Weapons Level 1
+Upgrade/Name/TalDarimGroundWeaponsLevel2=Tal'Darim - Ground Weapons Level 2
+Upgrade/Name/TalDarimGroundWeaponsLevel3=Tal'Darim - Ground Weapons Level 3
+Upgrade/Name/TalDarimShields=Tal'Darim - Shields
+Upgrade/Name/TalDarimShieldsLevel1=Tal'Darim - Shields Level 1
+Upgrade/Name/TalDarimShieldsLevel2=Tal'Darim - Shields Level 2
+Upgrade/Name/TalDarimShieldsLevel3=Tal'Darim - Shields Level 3
+Weapon/Name/Bloodhunter=Void Blade
+Weapon/Name/TalDarimAscendantAgonizingBlast=Agonizing Blast
+Weapon/Name/TalDarimBloodHunterVoidBlade=Blood Blade
+Weapon/Name/TalDarimCustodesVoidShock=Void Shock
+Weapon/Name/TalDarimCustodesVoidShockStasis=Psionic Shock
+Weapon/Name/TalDarimDestroyerDestructionBeam=Destruction Beam
+Weapon/Name/TalDarimDreadnoughtBeetle=Beetle
+Weapon/Name/TalDarimDreadnoughtBeetleExplode=Beetle
+Weapon/Name/TalDarimDreadnoughtParticleBeam=Particle Beam
+Weapon/Name/TalDarimHavocFakeWeapon=Tal'Darim - Havoc - Fake Weapon
+Weapon/Name/TalDarimLocustParticleBeam=Particle Beam
+Weapon/Name/TalDarimOutriderAir=Blasters
+Weapon/Name/TalDarimOutriderGround=Plasma Missiles
+Weapon/Name/TalDarimPariahPsiBlades=Psi Blades
+Weapon/Name/TalDarimParticleCannonParticleBeam=Particle Beam
+Weapon/Name/TalDarimParticleCannonParticleBeamAAMono=Particle Beam - AA - Mono
+Weapon/Name/TalDarimParticleCannonParticleBeamAAMulti=Particle Beam - AA - Multi
+Weapon/Name/TalDarimParticleCannonParticleBeamFake=Particle Beam
+Weapon/Name/TalDarimPhotonicBarrage=Photonic Barrage
+Weapon/Name/TalDarimPrismaticTowerTargetingWeaponMono=Tal'Darim - Prismatic Tower - Targeting Weapon Mono
+Weapon/Name/TalDarimPrismaticTowerTargetingWeaponMulti=Tal'Darim - Prismatic Tower - Targeting Weapon Multi
+Weapon/Name/TalDarimPsiEvicerator=Psi Evicerator
+Weapon/Name/TalDarimReliquaryDestroyers=Destroyers
+Weapon/Name/TalDarimReliquaryLitany=Litany
+Weapon/Name/TalDarimReliquarySendDestroyers=Send Destroyers
+Weapon/Name/TalDarimReliquarySendLitanies=Send Litanies
+Weapon/Name/TalDarimRiddler=Pulsar Beam
+Weapon/Name/TalDarimSlayerParticleDisruptors=Particle Disruptors
+Weapon/Name/TalDarimSupplicantWeapon=Blood Orb
+Weapon/Name/TalDarimUnitWrathwalkerAAChargedBlast=AA Charged Blast
+Weapon/Name/TalDarimUnitWrathwalkerAGChargedBlast=AG Charged Blast
+Weapon/Name/TalDarimVanguardScatterCannons=Scatter Cannons
+Weapon/Name/TalDarimWarmistressAnnihilationBeam=Annihilation Beam

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAccumulatorVitals id="UmojanBattleTankFocalisedMaxHealthattack">
+        <Ratio value="0.1"/>
+        <UnitSource Effect="UmojanBattleTankFocalisedRailCannonSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+        <MaxAccumulation value="100"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanTyphonFocalisedMaxHealthattack">
+        <Ratio value="0.1"/>
+        <UnitSource Effect="UmojanTyphonFocalisedRailCannonSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanTyphonMaxHealthattack">
+        <Ratio value="0.1"/>
+        <UnitSource Effect="UmojanTyphonsClawsSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanTyphonFocalisedMaxShieldattack">
+        <Ratio value="0.1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="UmojanTyphonFocalisedRailCannonSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattleTankMaxHealthattack">
+        <Ratio value="0.1"/>
+        <UnitSource Effect="UmojanBattleTankRailCannonSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+        <MaxAccumulation value="100"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattleTankFocalisedMaxShieldattack">
+        <Ratio value="0.1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="UmojanBattleTankFocalisedRailCannonSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+        <MaxAccumulation value="100"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattleTankMaxShieldattack">
+        <Ratio value="0.1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="UmojanBattleTankRailCannonSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+        <MaxAccumulation value="100"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountHealthDismount">
+        <Ratio value="1"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountEnergyDismount">
+        <Ratio value="1"/>
+        <VitalType value="Energy"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountHealthShadowguard">
+        <Ratio value="1"/>
+        <UnitSource Effect="UmojanBattlecatLancerGetShadowguard" Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountEnergyShadowguard">
+        <Ratio value="1"/>
+        <VitalType value="Energy"/>
+        <UnitSource Effect="UmojanBattlecatLancerGetShadowguard" Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountShieldDismount">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountShieldPlasmabat">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="UmojanBattlecatCuirassierGetPlasmabat" Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountHealthPretorian">
+        <Ratio value="1"/>
+        <UnitSource Effect="UmojanBattlecatSpahiGetPretorian" Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountHealthBattlecat">
+        <Ratio value="1"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountHealthPlasmabat">
+        <Ratio value="1"/>
+        <UnitSource Effect="UmojanBattlecatCuirassierGetPlasmabat" Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountShieldBattlecat">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountShieldPretorian">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="UmojanBattlecatSpahiGetPretorian" Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanBattlecatMountShieldShadowguard">
+        <Ratio value="1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="UmojanBattlecatLancerGetShadowguard" Value="Target"/>
+        <ModificationType value="PerUnit"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="UmojanTyphonMaxShieldattack">
+        <Ratio value="0.1"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="UmojanTyphonsClawsSet" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+    </CAccumulatorVitals>
+</Catalog>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TriggerData>
+    <Library Id="DRAG">
+        <Root>
+            <Item Type="Trigger" Library="DRAG" Id="8BC1E77B"/>
+            <Item Type="Category" Library="DRAG" Id="60FF476D"/>
+            <Item Type="Category" Library="DRAG" Id="89535979"/>
+            <Item Type="Category" Library="DRAG" Id="1264260B"/>
+        </Root>
+        <Element Type="Trigger" Id="8BC1E77B">
+            <Event Type="FunctionCall" Library="DRAG" Id="95C0E0D7"/>
+            <Action Type="FunctionCall" Library="DRAG" Id="1083D517"/>
+            <Action Type="FunctionCall" Library="DRAG" Id="4BACA602"/>
+        </Element>
+        <Element Type="FunctionCall" Id="95C0E0D7">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="B1A02C2E"/>
+            <Parameter Type="Param" Library="DRAG" Id="D043A382"/>
+        </Element>
+        <Element Type="Param" Id="D043A382">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="177B3837"/>
+            <Value>GAME START Dragon</Value>
+            <ValueType Type="string"/>
+        </Element>
+        <Element Type="FunctionCall" Id="1083D517">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000123"/>
+            <ScriptCode>
+                DragonRageI();
+                DragonAscendInit();
+                FissionI();
+                DragonArkwyrmTerritorialDiveInit();
+                BrimstoneDemolisherI();
+                HornedMagusI();
+                SunkenGuardianI();
+                UnseenBeastI();
+            </ScriptCode>
+        </Element>
+        <Element Type="FunctionCall" Id="4BACA602">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="5084725D"/>
+            <Parameter Type="Param" Library="DRAG" Id="931C4476"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="F09A8D6E"/>
+        </Element>
+        <Element Type="Param" Id="931C4476">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="42AB3EFD"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="0FC15519"/>
+        </Element>
+        <Element Type="FunctionCall" Id="0FC15519">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000192"/>
+        </Element>
+        <Element Type="FunctionCall" Id="F09A8D6E">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000137"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="DEA91B62"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="3C5D0742"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="FE550E8C"/>
+        </Element>
+        <Element Type="FunctionCall" Id="3C5D0742">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="02F55C7B"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
+            <Parameter Type="Param" Library="DRAG" Id="A1954090"/>
+            <Parameter Type="Param" Library="DRAG" Id="D2F40A8F"/>
+            <Parameter Type="Param" Library="DRAG" Id="BB1681EA"/>
+        </Element>
+        <Element Type="Param" Id="A1954090">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="6292EC93"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="8C2A089C"/>
+        </Element>
+        <Element Type="FunctionCall" Id="8C2A089C">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000057"/>
+            <Parameter Type="Param" Library="DRAG" Id="98EB24E0"/>
+        </Element>
+        <Element Type="Param" Id="98EB24E0">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000094"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="39B778F9"/>
+        </Element>
+        <Element Type="FunctionCall" Id="39B778F9">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="8570CA61"/>
+        </Element>
+        <Element Type="Param" Id="D2F40A8F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="221C9125"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000120"/>
+        </Element>
+        <Element Type="Param" Id="BB1681EA">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="52A15DDD"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="9C29E76A"/>
+        </Element>
+        <Element Type="FunctionCall" Id="FE550E8C">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="C439C375"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000003"/>
+            <Parameter Type="Param" Library="DRAG" Id="933D5C83"/>
+            <Parameter Type="Param" Library="DRAG" Id="276EC4FC"/>
+            <Parameter Type="Param" Library="DRAG" Id="F4A8B512"/>
+        </Element>
+        <Element Type="Param" Id="933D5C83">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="247D7B1E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="247D7B1E">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000155"/>
+            <Parameter Type="Param" Library="DRAG" Id="390D9CFE"/>
+        </Element>
+        <Element Type="Param" Id="390D9CFE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000248"/>
+            <FunctionCall Type="FunctionCall" Library="DRAG" Id="3F899E9A"/>
+        </Element>
+        <Element Type="FunctionCall" Id="3F899E9A">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="8570CA61"/>
+        </Element>
+        <Element Type="Param" Id="276EC4FC">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="1E7A4625"/>
+        </Element>
+        <Element Type="Param" Id="F4A8B512">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
+            <Value>Dragon</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Race"/>
+        </Element>
+        <Element Type="Category" Id="60FF476D">
+            <Label Type="Label" Library="Ntve" Id="196A8DD2"/>
+            <Item Type="CustomScript" Library="DRAG" Id="00E0D101"/>
+            <Item Type="CustomScript" Library="DRAG" Id="2D63E75E"/>
+        </Element>
+        <Element Type="CustomScript" Id="00E0D101">
+            <ScriptCode>
+                trigger DragonAscend;
+                bool DragonAscendFunc(bool testConds, bool runActions){
+                    unit u = EventUnit();
+                    string uType = UnitGetType(u);
+                    fixed life = UnitGetPropertyFixed(u, c_unitPropLife, c_unitPropCurrent);
+                    fixed lifeMax = UnitGetPropertyInt(u, c_unitPropLifeMax, c_unitPropCurrent);
+                    fixed lifeOld = CatalogFieldValueGetAsInt(c_gameCatalogUnit, StringSub(uType,9,StringLength(uType)), &quot;LifeMax&quot;, EventPlayer());
+                    UnitSetPropertyFixed(u, c_unitPropLife, FixedToInt(2*(life+(lifeMax-lifeOld)*(1-life/lifeMax))+0.5)/2.);
+                    
+                    return true;
+                }
+                void DragonAscendInit(){
+                    DragonAscend = TriggerCreate(&quot;DragonAscendFunc&quot;);
+                    TriggerAddEventUnitAbility(DragonAscend, null, AbilityCommand(&quot;AscendedFlamespitter&quot;, 0), c_abilMorphStageStatsEnd, true);
+                }
+            </ScriptCode>
+        </Element>
+        <Element Type="CustomScript" Id="2D63E75E">
+            <ScriptCode>
+                trigger Fission;
+                bool FissionF(bool testConds,bool runActions){
+                    unit Target=EventUnitTargetUnit();
+                    string TargetType=UnitGetType(Target);
+                    int TargetOwner=UnitGetOwner(Target);
+                    point TargetPoint=UnitGetPosition(Target);
+                    fixed TargetFacing=UnitGetFacing(Target);
+                    fixed TargetEnergy=UnitGetPropertyFixed(Target,c_unitPropEnergy,c_unitPropCurrent)/2;
+                    order TargetOrder=UnitOrder(Target,0);
+                    abilcmd TargetAbilityCommand=OrderGetAbilityCommand(TargetOrder);
+                    unit u1;
+                    unit u2;
+                    unitgroup Minerals;
+                    unit MineralField;
+                    UnitCreate(1,TargetType,c_unitCreateIgnorePlacement,TargetOwner,TargetPoint,TargetFacing);
+                    u1=UnitLastCreated();
+                    UnitCreate(1,TargetType,c_unitCreateIgnorePlacement,TargetOwner,TargetPoint,TargetFacing);
+                    u2=UnitLastCreated();
+                    UnitSetPropertyFixed(u1,c_unitPropLifePercent,40);
+                    UnitSetPropertyFixed(u2,c_unitPropLifePercent,40);
+                    UnitBehaviorAdd(u1,&quot;DragonFission&quot;,u1,1);
+                    UnitBehaviorAdd(u2,&quot;DragonFission&quot;,u2,1);
+                    UnitSetPropertyFixed(u1,c_unitPropEnergy,TargetEnergy);
+                    UnitSetPropertyFixed(u2,c_unitPropEnergy,TargetEnergy);
+                    if(TargetAbilityCommand==AbilityCommand(&quot;DroneHarvest&quot;,1)){
+                        Minerals=UnitGroupSearch(null,c_playerAny,TargetPoint,10,UnitFilter(1&lt;&lt;c_targetFilterHarvestableResource,0,0,0),0);
+                        MineralField=UnitGroupClosestToPoint(Minerals,TargetPoint);
+                        if(MineralField!=null){
+                            UnitIssueOrder(u1,OrderTargetingUnit(AbilityCommand(&quot;DroneHarvest&quot;,0),MineralField),c_orderQueueAddToEnd);
+                            UnitIssueOrder(u2,OrderTargetingUnit(AbilityCommand(&quot;DroneHarvest&quot;,0),MineralField),c_orderQueueAddToEnd);
+                        }
+                    }
+                    else{
+                        UnitIssueOrder(u1,TargetOrder,c_orderQueueReplace);
+                        UnitIssueOrder(u2,TargetOrder,c_orderQueueReplace);
+                    }
+                    if(UnitIsSelected(Target,TargetOwner)){
+                        UnitSelect(u1,TargetOwner,true);
+                        UnitSelect(u2,TargetOwner,true);
+                    }
+                    UnitCreateEffectUnit(Target,&quot;TimedLifeFate&quot;,Target);
+                    return true;
+                }
+                void FissionI(){
+                    Fission=TriggerCreate(&quot;FissionF&quot;);
+                    TriggerAddEventUnitAbility(Fission,null,AbilityCommand(&quot;DragonFission&quot;,0),c_abilEffectStageCast,true);
+                    TriggerAddEventUnitAbility(Fission,null,AbilityCommand(&quot;DragonAscendedFission&quot;,0),c_abilEffectStageCast,true);
+                }
+            </ScriptCode>
+        </Element>
+        <Element Type="Category" Id="89535979">
+            <Label Type="Label" Library="Ntve" Id="196A8DD2"/>
+            <Item Type="CustomScript" Library="DRAG" Id="B4104683"/>
+        </Element>
+        <Element Type="CustomScript" Id="B4104683">
+            <ScriptCode>
+                trigger DragonRageUnitDeath;
+                trigger DragonRageChangeOwner;
+                void DragonRageHide(int p){
+                    unitgroup g = UnitGroup(null, p, RegionEntireMap(), UnitFilter(0, 0, (1 &lt;&lt; c_targetFilterMissile), (1 &lt;&lt; (c_targetFilterDead - 32))), 0);
+                    int i;
+                    unit u;
+                    bool b=false;
+                    for (i=UnitGroupCount(g,c_unitCountAll); i&gt;=0 &amp;&amp; !b; i -= 1) {
+                        u = UnitGroupUnitFromEnd(g,i);
+                        if (u != null &amp;&amp; CatalogFieldValueGet(c_gameCatalogUnit,UnitGetType(u),&quot;Race&quot;,p)==&quot;Dragon&quot;){
+                            b=true;
+                        }
+                    }
+                    UISetResourceVisible(PlayerGroupSingle(p),c_resourceTypeCustom,b);
+                }
+                bool DragonRageUnitDeathF(bool testConds, bool runActions){
+                    int p=EventPlayer();
+                    bool pIsDragon;
+                    int q=EventUnitDamageSourcePlayer();
+                    unit u=EventUnit();
+                    string uType;
+                    bool uIsDragon;
+                    unit v;
+                    int rage;
+                    // Conditions
+                    if(testConds){
+                        if(p &lt;= 0){
+                            return false;
+                        }
+                        if(p &gt;= 16){
+                            return false;
+                        }
+                        if(q &lt;= 0){
+                            return false;
+                        }
+                        if(q &gt;= 16){
+                            return false;
+                        }
+                        if(p == q){
+                            return false;
+                        }
+                        if(PlayerGetAlliance(q,c_allianceIdPassive,p)){
+                            return false;
+                        }
+                        if(u == null){
+                            return false;
+                        }
+                        if(!UnitFilterMatch(u,q,UnitFilter(0,0,(1&lt;&lt;c_targetFilterMissile),(1&lt;&lt;(c_targetFilterHallucination-32))|(1&lt;&lt;(c_targetFilterSummoned-32))))){
+                            return false;
+                        }
+                    }
+                    // Actions
+                    if(!runActions){
+                        return true;
+                    }
+                    // Calculate Rage
+                    uType=UnitGetType(u);
+                    uIsDragon=CatalogFieldValueGet(c_gameCatalogUnit,uType,&quot;Race&quot;,p)==&quot;Dragon&quot;;
+                    if(uIsDragon){
+                        rage = RoundI(UnitTypeGetCost(uType,c_unitCostSumMineralsVespene)/25+UnitTypeGetCost(uType,c_unitCostCustomResource)/5);
+                    }
+                    else{
+                        rage = RoundI(UnitTypeGetCost(uType,c_unitCostSumMineralsVespene)/25);
+                    }
+                    // No Rage to Award
+                    if(rage == 0){
+                        return true;
+                    }
+                    // Give Loser Rage
+                    pIsDragon=PlayerRace(p)==&quot;Dragon&quot;;
+                    if(pIsDragon || uIsDragon){
+                        PlayerModifyPropertyInt(p,c_playerPropCustom,c_playerPropOperAdd,rage);
+                        //Hide Rage if no more dragons
+                        if(!pIsDragon){
+                            DragonRageHide(p);
+                        }
+                    }
+                    // Give Killer Rage
+                    v=EventUnitDamageSourceUnit();
+                    if(PlayerRace(q)==&quot;Dragon&quot; || (v!=null &amp;&amp; CatalogFieldValueGet(c_gameCatalogUnit,UnitGetType(v),&quot;Race&quot;,q)==&quot;Dragon&quot;)){
+                        PlayerModifyPropertyInt(q,c_playerPropCustom,c_playerPropOperAdd,rage);
+                        UISetResourceVisible(PlayerGroupSingle(q),c_resourceTypeCustom,true);
+                    }
+                    return true;
+                }
+                bool DragonRageChangeOwnerF(bool testConds, bool runActions){
+                    int p=EventUnitOwnerOld();
+                    int q=EventUnitOwnerNew();
+                    // Conditions
+                    if (testConds) {
+                        if(CatalogFieldValueGet(c_gameCatalogUnit,UnitGetType(EventUnit()),&quot;Race&quot;,p)!=&quot;Dragon&quot;){
+                            return false;
+                        }
+                    }
+                    // Actions
+                    if (!runActions) {
+                        return true;
+                    }
+                    if(PlayerRace(p)!=&quot;Dragon&quot;){
+                        DragonRageHide(p);
+                    }
+                    if(PlayerRace(q)!=&quot;Dragon&quot;){
+                        DragonRageHide(q);
+                    }
+                    return true;
+                }
+                void DragonRageI(){
+                    DragonRageUnitDeath=TriggerCreate(&quot;DragonRageUnitDeathF&quot;);
+                    TriggerAddEventUnitDied(DragonRageUnitDeath,null);
+                    DragonRageChangeOwner=TriggerCreate(&quot;DragonRageChangeOwnerF&quot;);
+                    TriggerAddEventUnitChangeOwner(DragonRageChangeOwner,null);
+                }
+            </ScriptCode>
+        </Element>
+        <Element Type="Category" Id="1264260B">
+            <Label Type="Label" Library="Ntve" Id="00000007"/>
+            <Item Type="CustomScript" Library="DRAG" Id="E18840D4"/>
+            <Item Type="CustomScript" Library="DRAG" Id="CD45CAC4"/>
+            <Item Type="CustomScript" Library="DRAG" Id="20BD79F0"/>
+            <Item Type="CustomScript" Library="DRAG" Id="BB08A628"/>
+            <Item Type="CustomScript" Library="DRAG" Id="5B3C6E31"/>
+        </Element>
+        <Element Type="CustomScript" Id="E18840D4">
+            <ScriptCode>
+                trigger DragonArkwyrmTerritorialDivePrep;
+                trigger DragonArkwyrmTerritorialDiveChannel;
+                bool DragonArkwyrmTerritorialDivePrepFunc (bool testConds, bool runActions) {
+                    VisRevealArea(EventPlayer(), RegionCircle(EventUnitTargetPoint(), 5), 0.5, false);
+                    return true;
+                }
+                bool DragonArkwyrmTerritorialDiveChannelFunc(bool testConds, bool runActions){
+                    unit u = EventUnit();
+                    actorscope scope=ActorScopeFromUnit(u);
+                    point p = UnitGetPosition(u);
+                    point q = EventUnitTargetPoint();
+                    fixed dMax = DistanceBetweenPoints(p, q);
+                    fixed dHalf = dMax / 2;
+                    fixed angle = AngleBetweenPoints(p, q);
+                    fixed a = 40; // Arbitrary
+                    fixed t = 0;
+                    fixed tStep = 0.0625;
+                    fixed tHalf = SquareRoot(dMax/a);
+                    UnitBehaviorSetDuration(u, &quot;ArkwyrmTerritorialDive&quot;, 2*tHalf);
+                    libNtve_gf_SendActorMessageToUnit(u, &quot;SetScale 1,2,1 &quot;+FixedToString(tHalf,5)+&quot; Spell&quot;);
+                    for (t=0; t &lt; tHalf; t += tStep) {
+                        UnitSetPosition(u, PointWithOffsetPolar(p, (a / 2) * (t * t), angle), true);
+                        Wait(tStep, c_timeGame);
+                    }
+                    libNtve_gf_SendActorMessageToUnit(u, &quot;ClearScale &quot;+FixedToString(tHalf,5)+&quot; Spell&quot;);
+                    for (t=0; t &lt; tHalf; t += tStep) {
+                        UnitSetPosition(u, PointWithOffsetPolar(p, dHalf + a*tHalf*t - (a / 2) * (t * t), angle), true);
+                        Wait(tStep, c_timeGame);
+                    }
+                    UnitSetPosition(u, q, true);
+                    
+                    return true;
+                }
+                void DragonArkwyrmTerritorialDiveInit(){
+                    DragonArkwyrmTerritorialDivePrep = TriggerCreate(&quot;DragonArkwyrmTerritorialDivePrepFunc&quot;);
+                    TriggerAddEventUnitAbility(DragonArkwyrmTerritorialDivePrep, null, AbilityCommand(&quot;ArkwyrmTerritorialDive&quot;, 0), c_abilEffectStagePrep, false);
+                    DragonArkwyrmTerritorialDiveChannel = TriggerCreate(&quot;DragonArkwyrmTerritorialDiveChannelFunc&quot;);
+                    TriggerAddEventUnitAbility(DragonArkwyrmTerritorialDiveChannel, null, AbilityCommand(&quot;ArkwyrmTerritorialDive&quot;, 0), c_abilEffectStageChannel, false);
+                }
+            </ScriptCode>
+        </Element>
+        <Element Type="CustomScript" Id="CD45CAC4">
+            <ScriptCode>
+                trigger AscendedBrimstoneDemolisher;
+                fixed ABD_Factor=0.014770507813;
+                bool AscendedBrimstoneDemolisherF(bool testConds,bool runActions){
+                    unit u=EventUnit();
+                    fixed d=EventUnitDamageAmount();
+                    if(d&gt;0&amp;&amp;UnitGetType(u)==&quot;AscendedBrimstoneDemolisher&quot;&amp;&amp;CatalogFieldValueGet(c_gameCatalogEffect,EventUnitDamageEffect(),&quot;Kind&quot;,c_playerAny)!=&quot;Spell&quot;){
+                        UnitSetPropertyFixed(u,c_unitPropLife,UnitGetPropertyFixed(u,c_unitPropLife,c_unitPropCurrent)+d-d*Pow2(-d*ABD_Factor));
+                        return true;
+                    }
+                    return false;
+                    
+                }
+                void BrimstoneDemolisherI(){
+                    AscendedBrimstoneDemolisher=TriggerCreate(&quot;AscendedBrimstoneDemolisherF&quot;);
+                    TriggerAddEventUnitDamaged(AscendedBrimstoneDemolisher,null,c_unitDamageTypeAny,c_unitDamageNonFatal,null);
+                }
+            </ScriptCode>
+        </Element>
+        <Element Type="CustomScript" Id="20BD79F0">
+            <ScriptCode>
+                trigger HornedMagus;
+                bool HornedMagusF(bool testConds,bool runActions){
+                    actorscope scope=ActorScopeFromUnit(EventUnit());
+                    string s=&quot;SetScale &quot;+FixedToString(UnitGetPropertyFixed(EventUnit(),c_unitPropRadius,c_unitPropCurrent)+1,5);
+                    ActorSend(ActorCreate(scope,&quot;HornedMagusFireShieldModel1&quot;,null,null,null),s);
+                    ActorSend(ActorCreate(scope,&quot;HornedMagusFireShieldModel2&quot;,null,null,null),s);
+                    ActorSend(ActorCreate(scope,&quot;HornedMagusFireShieldModel3&quot;,null,null,null),s);
+                    ActorSend(ActorCreate(scope,&quot;HornedMagusFireShieldModel4&quot;,null,null,null),s);
+                    return true;
+                }
+                void HornedMagusI(){
+                    HornedMagus=TriggerCreate(&quot;HornedMagusF&quot;);
+                    TriggerAddEventUnitBehaviorChange(HornedMagus,null,&quot;HornedMagusFireShield&quot;,c_unitBehaviorChangeCreate);
+                }
+            </ScriptCode>
+        </Element>
+        <Element Type="CustomScript" Id="BB08A628">
+            <ScriptCode>
+                unit SunkenGuardianCaster;
+                unit SunkenGuardianTarget;
+                trigger SunkenGuardianAttack;
+                trigger SunkenGuardianMissile;
+                bool SunkenGuardianAttackF(bool testConds,bool runActions){
+                    SunkenGuardianCaster=EventUnitTarget();
+                    SunkenGuardianTarget=EventUnit();
+                    return true;
+                }
+                void SunkenGuardian(unit u,unit v,unit m){
+                    actor a=ActorFromScope(ActorScopeFromUnit(u),&quot;::Main&quot;);
+                    point p=UnitGetPosition(v);
+                    fixed r=DistanceBetweenPoints(p,UnitGetPosition(m));
+                    UnitBehaviorAdd(u,&quot;SunkenGuardian&quot;,u,1);
+                    while(UnitIsAlive(u)&amp;&amp;UnitIsAlive(m)&amp;&amp;r&gt;.15){
+                        if(r&gt;=10.5){
+                            r=.5;
+                        }
+                        else{
+                            r=1-r/21;
+                        }
+                        ActorSend(a,&quot;AnimSetTime Attack &quot;+FixedToString(r,c_fixedPrecisionAny));
+                        Wait(.0625,c_timeGame);
+                        if(UnitIsAlive(v)){
+                            p=UnitGetPosition(v);
+                        }
+                        r=DistanceBetweenPoints(p,UnitGetPosition(m));
+                    }
+                    ActorSend(a,&quot;AnimSetTimeScale Attack .75&quot;);
+                    ActorSend(a,&quot;AnimSetTime Attack 1.046875&quot;);
+                    Wait(.4375,c_timeGame);
+                    ActorSend(a,&quot;AnimSetTimeScale Attack 1&quot;);
+                    while(UnitIsAlive(u)&amp;&amp;UnitIsAlive(m)&amp;&amp;r&lt;500){
+                        r=DistanceBetweenPoints(UnitGetPosition(u),UnitGetPosition(m));
+                        if(r&gt;0.15){
+                            if(r&gt;=10.5){
+                                r=1.375;
+                            }
+                            else{
+                                r=1.75-r/28;
+                            }
+                            ActorSend(a,&quot;AnimSetTime Attack &quot;+FixedToString(r,c_fixedPrecisionAny));
+                            Wait(.0625,c_timeGame);
+                        }
+                        else{
+                            r=500;
+                        }
+                    }
+                    Wait(.125,c_timeGame);
+                    ActorSend(a,&quot;AnimClear Attack .25&quot;);
+                    Wait(.0625,c_timeGame);
+                    UnitBehaviorRemove(u,&quot;SunkenGuardian&quot;,1);
+                }
+                bool SunkenGuardianMissileF(bool testConds,bool runActions){
+                    unit u=EventUnit();
+                    if(UnitGetType(u)!=&quot;SunkenGuardianAttackMissile&quot;){
+                        return false;
+                    }
+                    SunkenGuardian(SunkenGuardianCaster,SunkenGuardianTarget,u);
+                    return true;
+                }
+                void SunkenGuardianI(){
+                    SunkenGuardianAttack=TriggerCreate(&quot;SunkenGuardianAttackF&quot;);
+                    TriggerAddEventUnitAttacked2(SunkenGuardianAttack,null,&quot;SunkenGuardianImpale1&quot;);
+                    SunkenGuardianMissile=TriggerCreate(&quot;SunkenGuardianMissileF&quot;);
+                    TriggerAddEventUnitRegion(SunkenGuardianMissile,null,RegionEntireMap(),true);
+                }
+            </ScriptCode>
+        </Element>
+        <Element Type="CustomScript" Id="5B3C6E31">
+            <ScriptCode>
+                trigger UnseenBeast;
+                bool UnseenBeastF(bool testConds,bool runActions){
+                    unit u = EventUnit();
+                    unit v = EventUnitTargetUnit();
+                    point p = UnitGetPosition(v);
+                    fixed angle = AngleBetweenPoints(UnitGetPosition(u),p);
+                    // Actions
+                    if (!runActions) {
+                        return true;
+                    }
+                    UnitSetPosition(u,PointWithOffsetPolar(p,StringToFixed(CatalogFieldValueGet(c_gameCatalogUnit,UnitGetType(u),&quot;Radius&quot;,c_playerAny))+StringToFixed(CatalogFieldValueGet(c_gameCatalogUnit,UnitGetType(v),&quot;Radius&quot;,c_playerAny)), angle),false);
+                    UnitSetFacing(EventUnit(),angle+180,0);
+                    return true;
+                }
+                void UnseenBeastI(){
+                    UnseenBeast=TriggerCreate(&quot;UnseenBeastF&quot;);
+                    TriggerAddEventUnitAbility(UnseenBeast,null,AbilityCommand(&quot;UnseenBeastTeleportAssaultTrigger&quot;,0),c_unitAbilStageComplete,false);
+                }
+            </ScriptCode>
+        </Element>
+    </Library>
+</TriggerData>

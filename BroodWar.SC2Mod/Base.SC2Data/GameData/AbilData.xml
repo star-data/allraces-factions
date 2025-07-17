@@ -1,0 +1,4102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CAbilEffectTarget default="1" id="SCBW_AbilTarget">
+  <CmdButtonArray index="Execute" DefaultButtonFace="##id##" Requirements="##id##">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectTarget>
+<CAbilEffectInstant default="1" id="SCBW_AbilInstant">
+  <CmdButtonArray index="Execute" DefaultButtonFace="##id##" Requirements="##id##">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectInstant>
+<CAbilResearch default="1" id="SCBW_Research">
+  <EditorCategories value="Race:##race##,AbilityorEffectType:Structures"/>
+  <AbilityCategories index="CanBeIllusionDisabled" value="1"/>
+  <Flags index="SmartRequirement" value="1"/>
+  <InfoArray index="Research1" Time="1" Upgrade="##id##">
+    <Resource index="Minerals" value="1"/>
+    <Resource index="Vespene" value="1"/>
+    <Button DefaultButtonFace="##id##" State="Restricted" Requirements="##id##">
+      <Flags index="ShowInGlossary" value="1"/>
+      <Flags index="ToSelection" value="1"/>
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Research2" Time="1">
+    <Resource index="Minerals" value="1"/>
+    <Resource index="Vespene" value="1"/>
+    <Button State="Restricted">
+      <Flags index="ShowInGlossary" value="1"/>
+      <Flags index="ToSelection" value="1"/>
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Research3" Time="1">
+    <Resource index="Minerals" value="1"/>
+    <Resource index="Vespene" value="1"/>
+    <Button State="Restricted">
+      <Flags index="ShowInGlossary" value="1"/>
+      <Flags index="ToSelection" value="1"/>
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <?token id="race" value="Neutral" type="CStringLink"?>
+</CAbilResearch>
+<CAbilResearch default="1" id="SCBW_ResearchLeveled" parent="SCBW_Research">
+  <InfoArray index="Research1" Upgrade="##id##@Lvl1">
+    <Button DefaultButtonFace="##id##@Lvl1" Requirements="##id##@Lvl1"/>
+  </InfoArray>
+  <InfoArray index="Research2" Upgrade="##id##@Lvl2">
+    <Button DefaultButtonFace="##id##@Lvl2" Requirements="##id##@Lvl2"/>
+  </InfoArray>
+  <InfoArray index="Research3" Upgrade="##id##@Lvl3">
+    <Button DefaultButtonFace="##id##@Lvl3" Requirements="##id##@Lvl3"/>
+  </InfoArray>
+</CAbilResearch>
+<CAbilMorphPlacement default="1" id="TerranBuildingSCBW@Land">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="Land"/>
+  <ActorKey value="LiftOffLand"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="RallyReset" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="##unit##" CollideRange="0" index="0">
+    <SectionArray index="Abils">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <DurationArray index="Delay" value="0.5"/>
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Facing">
+      <DurationArray index="Duration" value="0.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Delay" value="0.5"/>
+      <DurationArray index="Duration" value="0.733"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <?token id="unit" value="" type="CStringLink"?>
+</CAbilMorphPlacement>
+<CAbilMorph default="1" id="TerranBuildingSCBW@LiftOff">
+  <ValidatorArray value="AddonIsNotWorkingSCBW"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="Lift"/>
+  <ActorKey value="LiftOffLand"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="RallyReset" value="1"/>
+  <InfoArray Unit="##unit##" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <?token id="unit" value="" type="CStringLink"?>
+</CAbilMorph>
+<CAbilBuild default="1" id="TerranBuildingSCBW@AddOns">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <FlagArray index="IgnoreUnitBuildTime" value="0"/>
+  <FlagArray index="InstantPlacement" value="1"/>
+  <FlagArray index="PeonDisableAbils" value="1"/>
+  <FlagArray index="ShowProgress" value="1"/>
+  <Alert value="AddOnComplete"/>
+  <InfoArray index="Build1" AddOnParentCmdPriority="-1">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build2" AddOnParentCmdPriority="1">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <Type value="AddOn"/>
+  <HaltCmdButton DefaultButtonFace="BuildCancelSCBW">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </HaltCmdButton>
+</CAbilBuild>
+<CAbilArmMagazine default="1" id="SCBW_ArmMagazine">
+  <InfoArray index="Ammo1" Unit="##Ammo1##">
+    <Charge Link="##Ammo1##" Location="Unit"/>
+    <Cooldown Link="##Ammo1##" TimeUse="0.01"/>
+    <Button DefaultButtonFace="##Ammo1##" Requirements="##id##@Arm">
+      <Flags index="ToSelection" value="1"/>
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <?token id="Ammo1" value="" type="CStringLink"?>
+</CAbilArmMagazine>
+<CAbilBuild default="1" id="SCBW_Build">
+  <DefaultButtonCardId value="Bld1"/>
+  <FlagArray index="IgnoreUnitBuildTime" value="0"/>
+  <FlagArray index="Interruptible" value="1"/>
+  <FlagArray index="PeonDisableCollision" value="1"/>
+  <FlagArray index="AutoHarvest" value="1"/>
+  <InfoArray index="Build1">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build2">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build3">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build4">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build5">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build6">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build7">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build8">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build9">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build10">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build11">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build12">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build13">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build14">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build15">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build16">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build17">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build18">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build19">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build20">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build21">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build22">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build23">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build24">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build25">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build26">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build27">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build28">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build29">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Build30">
+    <Button State="Suppressed">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+</CAbilBuild>
+<CAbilTrain default="1" id="SCBW_Train">
+  <AbilityCategories index="CanBeIllusionDisabled" value="1"/>
+  <Flags index="IgnoreUnitBuildTime" value="0"/>
+  <InfoArray index="Train1">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train2">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train3">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train4">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train5">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train6">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train7">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train8">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train9">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train10">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train11">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train12">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train13">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train14">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train15">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train16">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train17">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train18">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train19">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train20">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train21">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train22">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train23">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train24">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train25">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train26">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train27">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train28">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train29">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+  <InfoArray index="Train30">
+    <Button State="Restricted">
+      <Flags index="UseDefaultButton" value="1"/>
+      <Flags index="CreateDefaultButton" value="1"/>
+    </Button>
+  </InfoArray>
+</CAbilTrain>
+<CAbilTrain default="1" id="ProtossSCBWTrain" parent="SCBW_Train">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <Activity value="UI/Warping"/>
+</CAbilTrain>
+<CAbilEffectInstant id="GhostHoldFire">
+  <AbilSetId value="HoldFire"/>
+</CAbilEffectInstant>
+<CAbilEffectInstant id="GhostWeaponsFree">
+  <AbilSetId value="WeaponsFree"/>
+</CAbilEffectInstant>
+<CAbilBuildable id="MutateInProgressSCBW">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <TechAliasArray value="_BuildInProgress"/>
+  <Activity value="UI/Mutating"/>
+</CAbilBuildable>
+<CAbilBuildable id="WarpInProgressSCBW">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <TechAliasArray value="_BuildInProgress"/>
+  <Activity value="UI/Warping"/>
+</CAbilBuildable>
+<CAbilTransport id="BunkerTransport">
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+  <LoadValidatorArray index="0" value="RequiresTerranSCBWORTerran"/>
+</CAbilTransport>
+<CAbilTransport id="CommandCenterTransport">
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilTransport id="MedivacTransport">
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilTransport id="NydusCanalTransport">
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilTransport id="NydusWormTransport">
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilTransport id="OverlordTransport">
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilEffectInstant id="MedivacSpeedBoost">
+  <AbilSetId value="Boost"/>
+</CAbilEffectInstant>
+<CAbilRedirectInstant id="SalvageRedirect">
+  <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+  <Abil value="Salvage"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="SalvageRedirect">
+    <Flags index="AllowMinimap" value="0"/>
+  </CmdButtonArray>
+</CAbilRedirectInstant>
+<CAbilBuild id="TerranBuild">
+  <TechAliasArray value="_SCVBuild"/>
+</CAbilBuild>
+<CAbilTransport id="WarpPrismTransport">
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilStop id="BunkerSCBWStop">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Stop" DefaultButtonFace="StopBunker" Requirements="BunkerAttack"/>
+  <CmdButtonArray index="HoldFire" DefaultButtonFace="HoldFireSpecial"/>
+  <CmdButtonArray index="Cheer" DefaultButtonFace=""/>
+  <CmdButtonArray index="Dance" DefaultButtonFace=""/>
+</CAbilStop>
+<CAbilMorphPlacement id="CommandCenterSCBW@Land" parent="TerranBuildingSCBW@Land" unit="CommandCenterSCBW">
+  <InfoArray index="0">
+    <SectionArray index="Stats">
+      <EffectArray index="Finish" value="CommandStructureAutoRally"/>
+    </SectionArray>
+  </InfoArray>
+</CAbilMorphPlacement>
+<CAbilMorph id="DisguiseAsZealotSCBW">
+  <InfoArray Unit="ChangelingZealotSCBW" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Delay" value="0.5"/>
+    </SectionArray>
+  </InfoArray>
+</CAbilMorph>
+<CAbilMorph id="DisguiseAsMarineSCBW">
+  <InfoArray Unit="ChangelingMarineSCBW" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Delay" value="0.5"/>
+    </SectionArray>
+  </InfoArray>
+</CAbilMorph>
+<CAbilMorph id="DisguiseAsZerglingSCBW">
+  <InfoArray Unit="ZerglingSCBW" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Delay" value="0.5"/>
+    </SectionArray>
+  </InfoArray>
+</CAbilMorph>
+<CAbilEffectInstant id="ReaverSCBWWeapon@Stop">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="Stop" Requirements="ReaverSCBWWeapon@Stop">
+    <Flags index="AllowMinimap" value="0"/>
+    <Flags index="HidePath" value="1"/>
+    <Flags index="ShowInGlossary" value="0"/>
+  </CmdButtonArray>
+  <TechAliasArray value="_IllusionEnabled"/>
+</CAbilEffectInstant>
+<CAbilResearch id="GatewaySCBWResonantMatrixResearch" parent="SCBW_Research" race="Protoss">
+  <AbilityCategories index="User1" value="1"/>
+  <InfoArray index="Research1" Time="93.75">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ArbiterSCBWEnergyUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ArbiterSCBWRecallResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="110">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="ArbiterSCBWStasisFieldResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="ReaverSCBWWeaponRangeUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="169.4">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="CarrierSCBWHangarIncreaseUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="90">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="CorsairSCBWDisruptionWebResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="CorsairSCBWEnergyUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="DarkArchonSCBWEnergyUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="DarkArchonSCBWFeedbackResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="DarkArchonSCBWMaelstromResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="DarkArchonSCBWMindControlResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="DragoonSCBWRangeUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="150">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="HighTemplarSCBWEnergyUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="HighTemplarSCBWHallucinationResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="HighTemplarSCBWPsiStormResearch" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Developing"/>
+</CAbilResearch>
+<CAbilResearch id="ObserverSCBWSightUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="90">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ObserverSCBWSpeedUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ProtossAirArmorsSCBW" parent="SCBW_ResearchLeveled" race="Protoss">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="225"/>
+    <Resource index="Vespene" value="225"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="300"/>
+    <Resource index="Vespene" value="300"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ProtossAirWeaponsSCBW" parent="SCBW_ResearchLeveled" race="Protoss">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="175"/>
+    <Resource index="Vespene" value="175"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="250"/>
+    <Resource index="Vespene" value="250"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ProtossGroundArmorsSCBW" parent="SCBW_ResearchLeveled" race="Protoss">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ProtossGroundWeaponsSCBW" parent="SCBW_ResearchLeveled" race="Protoss">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ProtossShieldsSCBW" parent="SCBW_ResearchLeveled" race="Protoss">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="250"/>
+    <Resource index="Vespene" value="250"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ReaverSCBWHangarIncreaseUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ScarabSCBWWeaponDamageUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="110">
+    <Resource index="Minerals" value="125"/>
+    <Resource index="Vespene" value="125"/>
+  </InfoArray>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ScoutSCBWSightUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="50">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+    <Button>
+      <Flags index="UseDefaultButton" value="0"/>
+      <Flags index="CreateDefaultButton" value="0"/>
+    </Button>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ScoutSCBWSpeedUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ShuttleSCBWSpeedUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ZealotSCBWSpeedUpgrade" parent="SCBW_Research" race="Protoss">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilEffectTarget id="ReaverSCBWWeapon@Chase">
+  <OrderArray index="0" removed="1"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Flags index="Chase" value="1"/>
+  <Flags index="RangeUsePathing" value="1"/>
+  <Flags index="RequireTargetVision" value="0"/>
+  <Flags index="UpdateTarget" value="1"/>
+  <Range value="9"/>
+  <RangeSlop value="0"/>
+  <Arc value="360"/>
+  <TrackingArc value="360"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="Attack">
+    <Flags index="IgnoreUser" value="1"/>
+  </CmdButtonArray>
+  <TechAliasArray value="_IllusionEnabled"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="ArbiterSCBWStasisField" parent="SCBW_AbilTarget">
+  <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+  <Effect index="0" value="ArbiterSCBWStasisField@Search"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="100"/>
+  </Cost>
+  <Range value="9"/>
+  <Range index="0" value="8"/>
+  <CursorEffect value="ArbiterSCBWStasisField@Search"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="ArbiterSCBWRecall" parent="SCBW_AbilTarget">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Effect index="0" value="ArbiterSCBWRecall@CPDelayInitial"/>
+  <Cost>
+    <Vital index="Energy" value="150"/>
+    <Charge Link=""/>
+    <Cooldown Link=""/>
+  </Cost>
+  <Cost index="0">
+    <Vital index="Energy" value="125"/>
+  </Cost>
+  <Range value="500"/>
+  <Arc value="360"/>
+  <CursorEffect value="ArbiterSCBWRecall@Search"/>
+  <Flags index="Transient" value="1"/>
+</CAbilEffectTarget>
+<CAbilMerge id="ArchonSCBWMerge">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="SelectedUnits" DefaultButtonFace="ArchonSCBWMerge@Selection" State="Restricted">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="WithTarget" DefaultButtonFace="ArchonSCBWMerge@Target" State="Restricted"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Info Unit="ArchonSCBW" Time="12"/>
+  <Effect value="SCBW_MergeBegin"/>
+</CAbilMerge>
+<CAbilArmMagazine id="CarrierSCBWHangar" parent="SCBW_ArmMagazine" Ammo1="InterceptorSCBW">
+  <AbilSetId value="CarrierHanger"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Flags index="Retarget" value="1"/>
+  <Leash value="12"/>
+  <InfoArray index="Ammo1" Time="12" Manage="Recall">
+    <Flags index="AutoBuild" value="1"/>
+    <Flags index="AutoBuildOn" value="1"/>
+    <Flags index="LeashRetarget" value="1"/>
+  </InfoArray>
+  <Alert value="TrainComplete"/>
+  <EffectArray index="Create" value="InterceptorSCBW@CreateSet"/>
+  <EffectArray index="Return" value="InterceptorSCBW@ReturnSet"/>
+  <MaxCount value="4"/>
+  <Activity value="UI/Building"/>
+</CAbilArmMagazine>
+<CAbilEffectTarget id="CorsairSCBWDisruptionWeb">
+  <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+  <Effect index="0" value="CorsairSCBWDisruptionWeb@CP"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Flags index="NoDeceleration" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="125"/>
+    <Cooldown TimeUse="1.5"/>
+  </Cost>
+  <Cost index="0">
+    <Vital index="Energy" value="100"/>
+  </Cost>
+  <Range value="9"/>
+  <AutoCastFilters value="Visible;Player,Ally,Neutral"/>
+  <AutoCastRange value="9"/>
+  <AutoCastValidatorArray value="CorsairSCBWDisruptionWeb@HasNotBehavior"/>
+  <AutoCastValidatorArray value="TargetIsGround"/>
+  <AutoCastValidatorArray value="TargetCanAttack"/>
+  <AutoCastValidatorArray value="CorsairSCBWDisruptionWeb@Filters"/>
+  <CursorEffect value="CorsairSCBWDisruptionWeb@Search"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="CorsairSCBWDisruptionWeb" Requirements="CorsairSCBWDisruptionWeb"/>
+</CAbilEffectTarget>
+<CAbilMerge id="DarkArchonSCBWMerge">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="SelectedUnits" DefaultButtonFace="DarkArchonSCBWMerge@Selection">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="WithTarget" DefaultButtonFace="DarkArchonSCBWMerge@Target"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Info Unit="DarkArchonSCBW" Time="12"/>
+  <Effect value="SCBW_MergeBegin"/>
+</CAbilMerge>
+<CAbilEffectTarget id="DarkArchonSCBWMindControl" parent="SCBW_AbilTarget">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Effect index="0" value="DarkArchonSCBWMindControl@Set"/>
+  <Cost>
+    <Vital index="Energy" value="150"/>
+    <Cooldown TimeUse="1.375"/>
+  </Cost>
+  <TargetFilters value="Visible;Player,Ally,Structure,Heroic,Missile,Stasis,Dead,Invulnerable"/>
+  <Range value="8"/>
+  <Range index="0" value="9"/>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="DarkArchonSCBWMaelstrom" parent="SCBW_AbilTarget">
+  <Alignment value="Negative"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Effect index="0" value="DarkArchonSCBWMaelstrom@Search"/>
+  <Cost>
+    <Vital index="Energy" value="100"/>
+    <Cooldown TimeUse="0.0625"/>
+  </Cost>
+  <Cost index="0">
+    <Vital index="Energy" value="75"/>
+  </Cost>
+  <TargetFilters value="Biological,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <TargetFilters index="0" value="Biological,Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="10"/>
+  <FinishTime value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CursorEffect value="DarkArchonSCBWMaelstrom@Search"/>
+  <AINotifyEffect value="DarkArchonSCBWMaelstrom@Search"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="DarkArchonSCBWFeedback" parent="SCBW_AbilTarget">
+  <Alignment value="Negative"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Effect index="0" value="DarkArchonSCBWFeedback@Set"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="50"/>
+    <Cooldown TimeUse="1.375"/>
+  </Cost>
+  <TargetFilters value="CanHaveEnergy,Visible,HasEnergy;Self,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <TargetFilters index="0" value="CanHaveEnergy,Visible,HasEnergy;Self,Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="10"/>
+  <AINotifyEffect value=""/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="HighTemplarSCBWPsiStorm" parent="SCBW_AbilTarget">
+  <Alignment value="Negative"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Effect index="0" value="HighTemplarSCBWPsiStorm@CPDelayInital"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="75"/>
+    <Cooldown TimeUse="2.8125"/>
+  </Cost>
+  <Range value="9"/>
+  <CastIntroTime value="0.25"/>
+  <CastIntroTime index="0" value="0"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CursorEffect value="HighTemplarSCBWPsiStorm@Search"/>
+  <FinishTime value="0.3125"/>
+  <FinishTime index="0" value="0.5"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="HighTemplarSCBWHallucination" parent="SCBW_AbilTarget">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Effect index="0" value="HighTemplarSCBWHallucination@SetInitial"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="100"/>
+  </Cost>
+  <Cost index="0">
+    <Vital index="Energy" value="50"/>
+  </Cost>
+  <TargetFilters value="-;Self,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7"/>
+  <Range index="0" value="9"/>
+  <CastOutroTime value="0.0625"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CastIntroTime value="0.1875"/>
+</CAbilEffectTarget>
+<CAbilArmMagazine id="ReaverSCBWHangar" parent="SCBW_ArmMagazine" Ammo1="ScarabSCBW@Dummy">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Leash value="20"/>
+  <InfoArray index="Ammo1" Time="8">
+    <Button DefaultButtonFace="ScarabSCBW"/>
+    <Flags index="AutoBuild" value="0"/>
+    <Flags index="AutoBuildOn" value="0"/>
+  </InfoArray>
+  <Alert value="TrainComplete"/>
+  <MaxCount value="5"/>
+  <Activity value="UI/Building"/>
+</CAbilArmMagazine>
+<CAbilEffectTarget id="ShieldBatterySCBWRecharge">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Effect index="0" value="ShieldBatterySCBWRecharge@Healer"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="AutoCastOn" value="1"/>
+  <Flags index="BestUnit" value="0"/>
+  <Flags index="CancelResetAutoCast" value="0"/>
+  <Flags index="ReExecutable" value="1"/>
+  <Flags index="Smart" value="1"/>
+  <TargetFilters value="Visible;Self,Enemy,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+  <TargetFilters index="0" value="Visible;Self,Enemy,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+  <TargetSorts RequestCount="1">
+    <SortArray value="TSAlliancePassive"/>
+    <SortArray value="TSShieldsFraction"/>
+    <SortArray value="TSDistance"/>
+  </TargetSorts>
+  <Range value="4"/>
+  <Range index="0" value="5"/>
+  <Arc value="360"/>
+  <AutoCastAcquireLevel value="Defensive"/>
+  <AutoCastFilters value="Visible;Self,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden"/>
+  <AutoCastRange value="5"/>
+  <AutoCastValidatorArray value="ShieldBatterySCBWRecharge@Autocast"/>
+  <UseMarkerArray index="Approach" value="0"/>
+  <UseMarkerArray index="Prep" value="0"/>
+  <AINotifyEffect value="ShieldBatterySCBWRecharge@Healer"/>
+  <DefaultError value="RequiresHealTarget"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ShieldBatterySCBWRecharge"/>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Stop">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <Marker Link="Abil/ShieldBatteryRechargeEx5"/>
+</CAbilEffectTarget>
+<CAbilBattery id="ShieldBatterySCBWRecharge@Battery">
+  <Alignment value="Neutral"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <AbilityCategories index="CanBeDisabled" value="1"/>
+  <AbilityCategories index="CanBeIllusionDisabled" value="1"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ShieldBatterySCBWRecharge@Battery">
+    <Flags index="AllowMinimap" value="0"/>
+  </CmdButtonArray>
+  <TargetFilters value="CanHaveShields,Visible;Self,Enemy,Structure,RawResource,HarvestableResource,Missile,Stasis,Dead,Hidden,Decaying"/>
+  <Range value="4"/>
+  <Range value="5"/>
+  <EnumRange value="0"/>
+  <Effect value="ShieldBatterySCBWRecharge@BatterySet"/>
+  <SmartPriority value="14"/>
+</CAbilBattery>
+<CAbilTransport id="ShuttleSCBW@Transport">
+  <AbilSetId value="ULdM"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Load" DefaultButtonFace="ShuttleSCBW@Transport"/>
+  <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAt" DefaultButtonFace="MedivacUnloadAll">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadUnit">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="LoadAll">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <Flags index="CargoDeath" value="1"/>
+  <MaxCargoCount value="8"/>
+  <MaxCargoSize value="8"/>
+  <TotalCargoSpace value="8"/>
+  <UnloadPeriod value="0.9"/>
+  <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
+  <LoadValidatorArray value="NotWidowMineTarget"/>
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+  <Range value="2.5"/>
+</CAbilTransport>
+<CAbilMorph id="ObserverSCBWSieged@Morph">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <TechAliasArray value="_Unsiege"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ObserverSCBW@Morph">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <Flags index="IgnoreFacing" value="1"/>
+  <InfoArray Unit="ObserverSCBW" index="0">
+    <SectionArray index="Abils">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+  </InfoArray>
+</CAbilMorph>
+<CAbilMorph id="ObserverSCBW@Morph">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <TechAliasArray value="_Siege"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ObserverSCBWSieged@Morph">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <InfoArray Unit="ObserverSCBWSieged" index="0">
+    <SectionArray index="Abils">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Duration" value="0.75"/>
+    </SectionArray>
+  </InfoArray>
+</CAbilMorph>
+<CAbilRedirectInstant id="ShuttleSCBW@RedirectScarab">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Abil value="ReaverSCBWHangar"/>
+  <Flags index="IncludeSelf" value="0"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ShuttleSCBW@RedirectScarab">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+</CAbilRedirectInstant>
+<CAbilRedirectInstant id="ShuttleSCBW@RedirectScarabCancel">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Abil value="HangarQueue5"/>
+  <Flags index="IncludeSelf" value="0"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="Cancel">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+</CAbilRedirectInstant>
+<CAbilMergeable id="DarkArchonSCBW@Mergeable">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Cancelable value="0"/>
+</CAbilMergeable>
+<CAbilMergeable id="ArchonSCBW@Mergeable">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <Cancelable value="0"/>
+</CAbilMergeable>
+<CAbilHarvest id="ProbeSCBW@Harvest">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Gather" DefaultButtonFace="ProbeSCBW@Harvest">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Return" DefaultButtonFace="ProbeSCBW@ReturnCargo">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <TechAliasArray value="_Gather"/>
+  <CancelableArray index="ApproachResource" value="1"/>
+  <CancelableArray index="WaitAtResource" value="1"/>
+</CAbilHarvest>
+<CAbilHarvest id="ProbeSCBW@HarvestNoQue" parent="ProbeSCBW@Harvest">
+  <FlagArray index="BypassResourceQueue" value="1"/>
+</CAbilHarvest>
+<CAbilBuild id="ProbeSCBW@Build" parent="SCBW_Build">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <FlagArray index="Interruptible" value="0"/>
+  <FlagArray index="PeonMaintained" value="0"/>
+  <FlagArray index="AutoHarvest" value="0"/>
+  <InfoArray index="Build1" Unit="NexusSCBW">
+    <Button DefaultButtonFace="NexusSCBW" Requirements="NexusSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build2" Unit="PylonSCBW">
+    <Button DefaultButtonFace="PylonSCBW" Requirements="PylonSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build3" Unit="AssimilatorSCBW">
+    <Button DefaultButtonFace="AssimilatorSCBW" Requirements="AssimilatorSCBW"/>
+    <ValidatorArray value="HasVespene"/>
+  </InfoArray>
+  <InfoArray index="Build4" Unit="GatewaySCBW">
+    <Button DefaultButtonFace="GatewaySCBW" Requirements="GatewaySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build5" Unit="ForgeSCBW">
+    <Button DefaultButtonFace="ForgeSCBW" Requirements="ForgeSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build6" Unit="ShieldBatterySCBW">
+    <Button DefaultButtonFace="ShieldBatterySCBW" Requirements="ShieldBatterySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build7" Unit="CyberneticsCoreSCBW">
+    <Button DefaultButtonFace="CyberneticsCoreSCBW" Requirements="CyberneticsCoreSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build8" Unit="PhotonCannonSCBW">
+    <Button DefaultButtonFace="PhotonCannonSCBW" Requirements="PhotonCannonSCBW"/>
+  </InfoArray>
+  <ConstructionMover value="Construction"/>
+</CAbilBuild>
+<CAbilBuild id="ProbeSCBW@BuildAdv" parent="SCBW_Build">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <DefaultButtonCardId value="Bld2"/>
+  <FlagArray index="Interruptible" value="0"/>
+  <FlagArray index="PeonMaintained" value="0"/>
+  <FlagArray index="AutoHarvest" value="0"/>
+  <InfoArray index="Build9" Unit="RoboticsFacilitySCBW">
+    <Button DefaultButtonFace="RoboticsFacilitySCBW" Requirements="RoboticsFacilitySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build10" Unit="StargateSCBW">
+    <Button DefaultButtonFace="StargateSCBW" Requirements="StargateSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build11" Unit="TemplarArchiveSCBW">
+    <Button DefaultButtonFace="TemplarArchiveSCBW" Requirements="TemplarArchiveSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build12" Unit="CitadelOfAdunSCBW">
+    <Button DefaultButtonFace="CitadelOfAdunSCBW" Requirements="CitadelOfAdunSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build13" Unit="RoboticsBaySCBW">
+    <Button DefaultButtonFace="RoboticsBaySCBW" Requirements="RoboticsBaySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build14" Unit="ObservatorySCBW">
+    <Button DefaultButtonFace="ObservatorySCBW" Requirements="ObservatorySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build15" Unit="FleetBeaconSCBW">
+    <Button DefaultButtonFace="FleetBeaconSCBW" Requirements="FleetBeaconSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build16" Unit="ArbiterTribunalSCBW">
+    <Button DefaultButtonFace="ArbiterTribunalSCBW" Requirements="ArbiterTribunalSCBW"/>
+  </InfoArray>
+  <ConstructionMover value="Construction"/>
+</CAbilBuild>
+<CAbilTrain id="GatewaySCBW@Train" parent="ProtossSCBWTrain">
+  <InfoArray index="Train1">
+    <Button DefaultButtonFace="ZealotSCBW" Requirements="ZealotSCBW"/>
+    <Unit value="ZealotSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train2">
+    <Button DefaultButtonFace="DragoonSCBW" Requirements="DragoonSCBW"/>
+    <Unit value="DragoonSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train3">
+    <Button DefaultButtonFace="HighTemplarSCBW" Requirements="HighTemplarSCBW"/>
+    <Unit value="HighTemplarSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train4">
+    <Button DefaultButtonFace="DarkTemplarSCBW" Requirements="DarkTemplarSCBW"/>
+    <Unit value="DarkTemplarSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilTrain id="NexusSCBW@Train" parent="ProtossSCBWTrain">
+  <InfoArray index="Train1">
+    <Button DefaultButtonFace="ProbeSCBW" Requirements="ProbeSCBW"/>
+    <Unit value="ProbeSCBW"/>
+  </InfoArray>
+  <Alert value="TrainWorkerComplete"/>
+</CAbilTrain>
+<CAbilRally id="NexusSCBW@Rally">
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <OrderArray DisplayType="Rally" Color="255,245,140,70" Model="Assets\UI\Feedback\WayPointRally\WayPointRally.m3" LineTexture="Assets\Textures\WayPointLine.dds" index="0"/>
+</CAbilRally>
+<CAbilTrain id="RoboticsFacilitySCBW@Train" parent="ProtossSCBWTrain">
+  <InfoArray index="Train1" Effect="WarpInEffect15">
+    <Button DefaultButtonFace="ShuttleSCBW" Requirements="ShuttleSCBW"/>
+    <Unit value="ShuttleSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train2" Effect="WarpInEffect15">
+    <Button DefaultButtonFace="ObserverSCBW" Requirements="ObserverSCBW"/>
+    <Unit value="ObserverSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train3">
+    <Button DefaultButtonFace="ReaverSCBW" Requirements="ReaverSCBW"/>
+    <Unit value="ReaverSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilTrain id="StargateSCBW@Train" parent="ProtossSCBWTrain">
+  <InfoArray index="Train1" Effect="WarpInEffect">
+    <Button DefaultButtonFace="ScoutSCBW" Requirements="ScoutSCBW"/>
+    <Unit value="ScoutSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train2" Effect="WarpInEffect">
+    <Button DefaultButtonFace="CarrierSCBW" Requirements="CarrierSCBW"/>
+    <Unit value="CarrierSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train3" Effect="WarpInEffect">
+    <Button DefaultButtonFace="ArbiterSCBW" Requirements="ArbiterSCBW"/>
+    <Unit value="ArbiterSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train4" Effect="WarpInEffect">
+    <Button DefaultButtonFace="CorsairSCBW" Requirements="CorsairSCBW"/>
+    <Unit value="CorsairSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilResearch id="GhostSCBWSightUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="60">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="GoliathSCBWRangeUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="MarineSCBWRangeUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilArmMagazine id="NukeSCBWArm" parent="SCBW_ArmMagazine" Ammo1="NukeSCBW">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <Launch value="ReleaseAtSource"/>
+  <Flags index="BestUnit" value="1"/>
+  <InfoArray index="Ammo1" Time="60">
+    <Button DefaultButtonFace="NukeSCBWArm" Requirements="NukeSCBWArm"/>
+  </InfoArray>
+  <CalldownEffect value="GhostSCBWNuclearStrike@CalldownDummy"/>
+  <Activity value="UI/Building"/>
+</CAbilArmMagazine>
+<CAbilResearch id="BattlecruiserSCBWEnergyUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="BattlecruiserSCBWYamatoResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="112.5">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilEffectTarget id="ComsatStationSCBWScannerSweep">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="ComsatStationSCBWScannerSweep@Revealer"/>
+  <Flags index="RequireTargetVision" value="0"/>
+  <Flags index="Transient" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="50"/>
+  </Cost>
+  <Range value="500"/>
+  <Arc value="360"/>
+  <CursorEffect value="ComsatStationSCBWScannerSweep@Revealer"/>
+  <AINotifyEffect value="ComsatStationSCBWScannerSweep@Revealer"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ComsatStationSCBWScannerSweep">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectTarget>
+<CAbilResearch id="GhostSCBWEnergyUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="MedicSCBWEnergyUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="65">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="ScienceVesselSCBWEnergyUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="SiegeModeSCBWResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="55">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="TerranInfantryArmorsSCBW" parent="SCBW_ResearchLeveled" race="Terran">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="TerranInfantryWeaponsSCBW" parent="SCBW_ResearchLeveled" race="Terran">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="TerranVehiclePlatingSCBW" parent="SCBW_ResearchLeveled" race="Terran">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="175"/>
+    <Resource index="Vespene" value="175"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="250"/>
+    <Resource index="Vespene" value="250"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="TerranVehicleWeaponsSCBW" parent="SCBW_ResearchLeveled" race="Terran">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="175"/>
+    <Resource index="Vespene" value="175"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="250"/>
+    <Resource index="Vespene" value="250"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="TerranShipPlatingSCBW" parent="SCBW_ResearchLeveled" race="Terran">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="TerranShipWeaponsSCBW" parent="SCBW_ResearchLeveled" race="Terran">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="GhostSCBWCloakResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="49">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="GhostSCBWHoldFireResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="10">
+    <Resource index="Minerals" value="10"/>
+    <Resource index="Vespene" value="5"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="GhostSCBWLockdownResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="70">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="GhostSCBWWeaponsFreeResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="10">
+    <Resource index="Minerals" value="10"/>
+    <Resource index="Vespene" value="5"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="StimpackSCBWResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="76">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="MedicSCBWHealResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="10">
+    <Resource index="Minerals" value="10"/>
+    <Resource index="Vespene" value="5"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="MedicSCBWOpticFlareResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="60">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="MedicSCBWRestorationResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="75">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="ScienceVesselSCBWDefensiveMatrixResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="110">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="ScienceVesselSCBWEMPShockwaveResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="110">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="ScienceVesselSCBWIrradiateResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="83">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="VulturePlaceSpiderMineSCBWResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="75">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="VultureSCBWSpeedUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="75">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilResearch id="WraithSCBWCloakResearch" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+</CAbilResearch>
+<CAbilResearch id="WraithSCBWEnergyUpgrade" parent="SCBW_Research" race="Terran">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilEffectInstant id="DropshipSCBWSpeedBoost" parent="SCBW_AbilInstant">
+  <AbilSetId value="Boost"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <Cost>
+    <Cooldown TimeUse="20"/>
+  </Cost>
+  <CmdButtonArray index="Execute">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectInstant>
+<CAbilResearch id="DropshipSCBWSpeedBoostResearch" parent="SCBW_Research" race="Terran">
+  <AbilityCategories index="User1" value="1"/>
+  <InfoArray index="Research1" Time="93.75">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+</CAbilResearch>
+<CAbilEffectTarget id="GhostSCBWNuclearStrike">
+  <TechPlayer value="Owner"/>
+  <Alignment value="Negative"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="GhostSCBWNuclearStrike@Calldown"/>
+  <Effect index="0" value="GhostSCBWNuclearStrike@CalldownDummy"/>
+  <Range value="12"/>
+  <FinishTime value="2.5"/>
+  <CancelableArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <ValidatedArray index="Channel" value="0"/>
+  <AlertArray index="Cast" value="CalldownLaunch"/>
+  <CursorEffect value="GhostSCBWNuclearStrike@Damage"/>
+  <CalldownEffect value="GhostSCBWNuclearStrike@CalldownDummy"/>
+  <AINotifyEffect value="Nuke"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="GhostSCBWNuclearStrike" Requirements="GhostSCBWNuclearStrike">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+</CAbilEffectTarget>
+<CAbilBehavior id="WraithSCBWCloak">
+  <AbilSetId value="Clok"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="On" DefaultButtonFace="WraithSCBWCloak" Requirements="WraithSCBWCloak">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Off" DefaultButtonFace="WraithSCBWCloak@Decloak">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <Flags index="Toggle" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="25"/>
+  </Cost>
+  <BehaviorArray value="GhostSCBWCloak"/>
+</CAbilBehavior>
+<CAbilEffectTarget id="ScienceVesselSCBWDefensiveMatrix">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="ScienceVesselSCBWDefensiveMatrix@Set"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="100"/>
+  </Cost>
+  <TargetFilters value="-;Self,Structure,RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"/>
+  <TargetFilters index="0" value="-;Self,Enemy,Structure,RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"/>
+  <Range value="10"/>
+  <Arc value="360"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ScienceVesselSCBWDefensiveMatrix" State="Restricted" Requirements="ScienceVesselSCBWDefensiveMatrix">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="ScienceVesselSCBWIrradiate">
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <Effect index="0" value="ScienceVesselSCBWIrradiate@Set"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="75"/>
+    <Cooldown TimeUse="4.6875"/>
+  </Cost>
+  <TargetFilters value="-;Self,Structure,RawResource,HarvestableResource,Item,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="9"/>
+  <Arc value="360"/>
+  <CancelableArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <AINotifyEffect value=""/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ScienceVesselSCBWIrradiate" Requirements="ScienceVesselSCBWIrradiate">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <CastOutroTime value="0.625"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="ScienceVesselSCBWEMPShockwave">
+  <Alignment value="Negative"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="ScienceVesselSCBWEMPShockwave@LM"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="75"/>
+  </Cost>
+  <Range value="8"/>
+  <Range index="0" value="10"/>
+  <Arc value="360"/>
+  <PrepTime value="0.01"/>
+  <FinishTime value="0.0625"/>
+  <UninterruptibleArray index="Prep" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CursorEffect value="ScienceVesselSCBWEMPShockwave@Search"/>
+  <AINotifyEffect value="EMPLaunchMissile"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="ScienceVesselSCBWEMPShockwave" Requirements="ScienceVesselSCBWEMPShockwave">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectTarget>
+<CAbilEffectInstant id="FirebatSCBWStimpack">
+  <AbilSetId value="Stimpack"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <InfoTooltipPriority value="1"/>
+  <Effect index="0" value="FirebatSCBWStimpack@AB"/>
+  <Flags index="Transient" value="1"/>
+  <Cost>
+    <Vital index="Life" value="10"/>
+  </Cost>
+  <AINotifyEffect value="MarineSCBWStimpack@AB"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="FirebatSCBWStimpack" Requirements="FirebatSCBWStimpack">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectInstant>
+<CAbilRedirectInstant id="FirebatSCBWStimpack@Redirect">
+  <AbilSetId value="Stimpack"/>
+  <Abil value="FirebatSCBWStimpack"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="FirebatSCBWStimpack@Redirect" Requirements="FirebatSCBWStimpack">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+</CAbilRedirectInstant>
+<CAbilEffectInstant id="GhostSCBWHoldFire">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="GhostSCBWHoldFire@ABSetup"/>
+  <Flags index="Transient" value="1"/>
+  <AINotifyEffect value="GhostSCBWHoldFire@ABSetup"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="GhostSCBWHoldFire" Requirements="GhostSCBWHoldFire@NotActive">
+    <Flags index="ShowInGlossary" value="0"/>
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <AbilSetId value="HoldFire"/>
+</CAbilEffectInstant>
+<CAbilBehavior id="GhostSCBWCloak">
+  <AbilSetId value="Clok"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="On" DefaultButtonFace="GhostSCBWCloak" Requirements="GhostSCBWCloak">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Off" DefaultButtonFace="GhostSCBWCloak@Decloak">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <Flags index="Toggle" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="25"/>
+  </Cost>
+  <BehaviorArray value="GhostSCBWCloak"/>
+</CAbilBehavior>
+<CAbilEffectInstant id="GhostSCBWWeaponsFree">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Flags index="Transient" value="1"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="GhostSCBWWeaponsFree" Requirements="GhostSCBWWeaponsFree@HoldingFire">
+    <Flags index="ShowInGlossary" value="0"/>
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <AbilSetId value="WeaponsFree"/>
+</CAbilEffectInstant>
+<CAbilEffectTarget id="MedicSCBWRestoration">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="MedicSCBWRestoration@Set"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Flags index="NoDeceleration" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="50"/>
+  </Cost>
+  <TargetFilters value="Visible;Self,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+  <Range value="6"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="MedicSCBWRestoration" Requirements="MedicSCBWRestoration">
+    <Flags index="AllowMinimap" value="0"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CastIntroTime value="0.375"/>
+  <FinishTime value="0.125"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="GhostSCBWLockdown">
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <Effect index="0" value="GhostSCBWLockdown@LM"/>
+  <Cost>
+    <Vital index="Energy" value="100"/>
+  </Cost>
+  <Cost index="0">
+    <Vital index="Energy" value="75"/>
+  </Cost>
+  <TargetFilters value="Mechanical;Structure,Heroic,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+  <TargetFilters index="0" value="Mechanical;Player,Ally,Structure,Heroic,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+  <Range value="8"/>
+  <Range index="0" value="9"/>
+  <CastIntroTime value="0.25"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="GhostSCBWLockdown" Requirements="GhostSCBWLockdown">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="MedicSCBWOpticFlare">
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <Effect index="0" value="MedicSCBWOpticFlare@LM"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="50"/>
+  </Cost>
+  <TargetFilters value="-;Player,Ally,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="9"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="MedicSCBWOpticFlare" Requirements="MedicSCBWOpticFlare">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CastIntroTime value="0.375"/>
+  <FinishTime value="0.125"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+</CAbilEffectTarget>
+<CAbilEffectInstant id="MarineSCBWStimpack">
+  <AbilSetId value="Stimpack"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <InfoTooltipPriority value="1"/>
+  <Effect index="0" value="MarineSCBWStimpack@AB"/>
+  <Flags index="Transient" value="1"/>
+  <Cost>
+    <Vital index="Life" value="10"/>
+  </Cost>
+  <AINotifyEffect value="MarineSCBWStimpack@AB"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="MarineSCBWStimpack" Requirements="MarineSCBWStimpack">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectInstant>
+<CAbilRedirectInstant id="MarineSCBWStimpack@Redirect">
+  <AbilSetId value="Stimpack"/>
+  <Abil value="MarineSCBWStimpack"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="MarineSCBWStimpack@Redirect" Requirements="MarineSCBWStimpack">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+</CAbilRedirectInstant>
+<CAbilEffectTarget id="VulturePlaceSpiderMineSCBW">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="VulturePlaceSpiderMineSCBW@Set"/>
+  <Flags index="RangeUseCasterRadius" value="0"/>
+  <Cost>
+    <Charge CountMax="3" CountStart="3" CountUse="1" Location="Unit"/>
+  </Cost>
+  <Placeholder value="SpiderMineSCBW"/>
+  <Range value="0.5"/>
+  <CastIntroTime value="0.2"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="VulturePlaceSpiderMineSCBW" Requirements="VulturePlaceSpiderMineSCBW"/>
+  <PlaceUnit value="SpiderMineSCBW@Placement"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="MedicSCBWHeal">
+  <Alignment value="Positive"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="MedicSCBWHeal@Healer"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="AutoCastOn" value="1"/>
+  <Flags index="NoDeceleration" value="1"/>
+  <Flags index="ReExecutable" value="1"/>
+  <Flags index="Smart" value="1"/>
+  <Flags index="PassengerAcquirePassengers" value="1"/>
+  <TargetFilters value="Ground,Biological,Visible;Self,Enemy,Air,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+  <TargetSorts RequestCount="1">
+    <SortArray value="TSAlliancePassive"/>
+    <SortArray value="TSDistance"/>
+    <SortArray value="TSLifeFraction"/>
+  </TargetSorts>
+  <Range value="2"/>
+  <Range index="0" value="3"/>
+  <SmartValidatorArray value="MedicSCBWHeal@SmartTargetFilters"/>
+  <SmartValidatorArray value="NotWarpingIn"/>
+  <SmartValidatorArray value="MedicSCBWHeal@Disable"/>
+  <AutoCastAcquireLevel value="Defensive"/>
+  <AutoCastFilters value="Visible;Neutral,Enemy"/>
+  <AutoCastRange value="9"/>
+  <AutoCastValidatorArray value="MedicSCBWHeal@MininumEnergy"/>
+  <AutoCastValidatorArray value="NotWarpingIn"/>
+  <AutoCastValidatorArray value="MedicSCBWHeal@Disable"/>
+  <Marker Link="Abil/MedivacHeal"/>
+  <UseMarkerArray index="Approach" value="0"/>
+  <UseMarkerArray index="Prep" value="0"/>
+  <AINotifyEffect value="MedicSCBWHeal@Healer"/>
+  <DefaultError value="RequiresHealTarget"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="MedicSCBWHeal" Requirements="MedicSCBWHeal">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <AcquireAttackers value="1"/>
+  <FollowRange value="1.5"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="BattlecruiserSCBWYamato">
+  <TargetFilters value="Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Alignment value="Negative"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Effect index="0" value="BattlecruiserSCBWYamato@LM"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Flags index="NoDeceleration" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="150"/>
+    <Cooldown Link="BattlecruiserSCBWYamato"/>
+  </Cost>
+  <Cost index="0">
+    <Vital index="Energy" value="100"/>
+  </Cost>
+  <Range value="10"/>
+  <Range index="0" value="12"/>
+  <RangeSlop value="12"/>
+  <PrepTime value="3"/>
+  <ShowProgressArray index="Prep" value="1"/>
+  <UninterruptibleArray index="Prep" value="1"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <AINotifyEffect value="BattlecruiserSCBWYamato@LM"/>
+  <ProgressButtonArray index="Prep" value="YamatoGun"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BattlecruiserSCBWYamato" Requirements="BattlecruiserSCBWYamato">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <ValidatedArray index="Prep" value="0"/>
+  <ValidatedArray index="Cast" value="0"/>
+  <ValidatedArray index="Channel" value="0"/>
+</CAbilEffectTarget>
+<CAbilResearch id="MechPlating" parent="SCBW_ResearchLeveled" race="Terran">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="225"/>
+    <Resource index="Vespene" value="225"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="300"/>
+    <Resource index="Vespene" value="300"/>
+  </InfoArray>
+  <RefundFraction>
+    <Resource index="Minerals" value="-0.75"/>
+    <Resource index="Vespene" value="-0.75"/>
+    <Resource index="Terrazine" value="-0.75"/>
+    <Resource index="Custom" value="-0.75"/>
+  </RefundFraction>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilEffectTarget id="VulturePlaceSpiderMineSCBW@PH">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <DataCollection value="VulturePlaceSpiderMineSCBW"/>
+  <Effect index="0" value="VulturePlaceSpiderMineSCBW@PHRandomPoint"/>
+  <Flags index="BestUnit" value="0"/>
+  <Flags index="RangeUseCasterRadius" value="0"/>
+  <Cost>
+    <Charge CountMax="3" CountStart="3" Link="Abil/VulturePlaceSpiderMineSCBW" Location="Unit"/>
+    <Cooldown TimeUse="0.0625"/>
+  </Cost>
+  <Range value="500"/>
+  <Arc value="360"/>
+  <Marker Link="Abil/VulturePlaceSpiderMineSCBW"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="VulturePlaceSpiderMineSCBW" Requirements="VulturePlaceSpiderMineSCBW">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="SpiderMineSCBW@UnburrowRangeDummy">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Range value="3"/>
+  <Range index="0" value="2.75"/>
+</CAbilEffectTarget>
+<CAbilMorph id="SpiderMineSCBW@Burrow">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="AutoCastOn" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="SpiderMineSCBW@Burrowed" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Delay" value="0.875"/>
+      <DurationArray index="Duration" value="0.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Delay" value="0.875"/>
+      <DurationArray index="Duration" value="0.5"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.375"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastFilters value="Ground;Player,Ally,Neutral,Structure,Hover,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+  <AutoCastRange value="9"/>
+  <AutoCastValidatorArray value="SpiderMineSCBW@Burrow"/>
+  <TechAliasArray value="_BurrowDown"/>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+</CAbilMorph>
+<CAbilMorph id="SpiderMineSCBW@Unburrow">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="AutoCastOn" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="SpiderMineSCBW" RandomDelayMin="0.25" RandomDelayMax="0.375" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="0.5625"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="0.5625"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Duration" value="0.5625"/>
+      <EffectArray index="Start" value="SpiderMineSCBWWeapon@ScanTargets"/>
+      <EffectArray index="Finish" value="SpiderMineSCBWWeapon@UnburrowFinish"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastFilters value="Ground;Player,Ally,Neutral,Structure,Hover,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+  <AutoCastRange value="2.75"/>
+  <AutoCastCountMin value="1"/>
+  <AutoCastValidatorArray value="SpiderMineSCBW@Unburrow"/>
+</CAbilMorph>
+<CAbilTransport id="DropshipSCBW@Transport">
+  <AbilSetId value="ULdM"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Load" DefaultButtonFace="DropshipSCBW@Load">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAll">
+    <Flags index="Hidden" value="1"/>
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAt" DefaultButtonFace="DropshipSCBW@UnloadAll">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadUnit">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="LoadAll">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <Flags index="CargoDeath" value="1"/>
+  <MaxCargoCount value="8"/>
+  <MaxCargoSize value="8"/>
+  <TotalCargoSpace value="8"/>
+  <UnloadPeriod value="1"/>
+  <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
+  <LoadValidatorArray value="NotWidowMineTarget"/>
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilBuild id="SCVSCBW@BuildAdv" parent="SCBW_Build">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <DefaultButtonCardId value="Bld2"/>
+  <InfoArray index="Build11" Unit="FactorySCBW">
+    <Button DefaultButtonFace="FactorySCBW" Requirements="FactorySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build12" Unit="StarportSCBW">
+    <Button DefaultButtonFace="StarportSCBW" Requirements="StarportSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build13" Unit="ScienceFacilitySCBW">
+    <Button DefaultButtonFace="ScienceFacilitySCBW" Requirements="ScienceFacilitySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build14" Unit="ArmorySCBW">
+    <Button DefaultButtonFace="ArmorySCBW" Requirements="ArmorySCBW"/>
+  </InfoArray>
+  <FidgetDelayMin value="6.5"/>
+  <FidgetDelayMax value="8.5"/>
+  <ConstructionMover value="Construction"/>
+  <TechAliasArray value="_SCVBuild"/>
+</CAbilBuild>
+<CAbilEffectTarget id="SCVSCBW@Repair">
+  <Alignment value="Positive"/>
+  <AbilSetId value="Repair"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="AutoCastOffOwnerLeave" value="1"/>
+  <Flags index="BestUnit" value="0"/>
+  <Flags index="ReExecutable" value="1"/>
+  <Flags index="Smart" value="1"/>
+  <Flags index="PassengerAcquirePassengers" value="1"/>
+  <TargetFilters value="Mechanical,Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+  <RangeSlop value="0.2"/>
+  <AutoCastAcquireLevel value="Defensive"/>
+  <AutoCastFilters value="Visible;Neutral,Enemy"/>
+  <AutoCastRange value="7"/>
+  <Marker>
+    <MatchFlags index="Link" value="0"/>
+    <MismatchFlags index="Id" value="0"/>
+  </Marker>
+  <UseMarkerArray index="Approach" value="0"/>
+  <UseMarkerArray index="Prep" value="0"/>
+  <UseMarkerArray index="Cast" value="0"/>
+  <UseMarkerArray index="Channel" value="0"/>
+  <InheritAttackPriorityArray index="Prep" value="1"/>
+  <InheritAttackPriorityArray index="Cast" value="1"/>
+  <InheritAttackPriorityArray index="Channel" value="1"/>
+  <DefaultError value="RequiresRepairTarget"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="SCVSCBW@Repair">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectTarget>
+<CAbilHarvest id="SCVSCBW@Harvest">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Gather" DefaultButtonFace="SCVSCBW@Harvest">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Return" DefaultButtonFace="SCVSCBW@ReturnCargo">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <TechAliasArray value="_Gather"/>
+  <CancelableArray index="ApproachResource" value="1"/>
+  <CancelableArray index="WaitAtResource" value="1"/>
+</CAbilHarvest>
+<CAbilHarvest id="SCVSCBW@HarvestNoQue" parent="SCVSCBW@Harvest">
+  <FlagArray index="BypassResourceQueue" value="1"/>
+</CAbilHarvest>
+<CAbilMorph id="SiegeTankSCBW@Siege">
+  <OrderArray DisplayType="Confirm" Color="255,0,255,0" Model="Assets\UI\Cursors\WayPointAttack_Void\WayPointAttack_Void.m3" LineTexture="Assets\Textures\WayPointLine.dds" index="0"/>
+  <AbilSetId value="SiegeMode"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="SiegeTankSCBW@Siege" Requirements="SiegeTankSCBW@Siege">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="SiegeMode"/>
+  <Flags index="IgnoreCollision" value="0"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="SiegeTankSCBWSieged" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Abils">
+      <DurationArray index="Delay" value="0.5"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <DurationArray index="Delay" value="0.5"/>
+      <DurationArray index="Duration" value="3.5417"/>
+    </SectionArray>
+    <SectionArray index="Facing">
+      <DurationArray index="Duration" value="0.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Delay" value="0.5"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="0.5"/>
+      <DurationArray index="Duration" value="3.5417"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_Siege"/>
+</CAbilMorph>
+<CAbilMorph id="SiegeTankSCBWSieged@Unsiege">
+  <AbilSetId value="Unsieged"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <DataCollection value="Unsiege"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="SiegeTankSCBW@Unsiege">
+    <Flags index="ToSelection" value="1"/>
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="Unsiege"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <InfoArray Unit="SiegeTankSCBW" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="3.5417"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Duration" value="3.5417"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_Unsiege"/>
+</CAbilMorph>
+<CAbilBuild id="SCVSCBW@Build" parent="SCBW_Build">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <InfoArray index="Build1" Unit="CommandCenterSCBW">
+    <Button DefaultButtonFace="CommandCenterSCBW" Requirements="CommandCenterSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build2" Unit="SupplyDepotSCBW">
+    <Button DefaultButtonFace="SupplyDepotSCBW" Requirements="SupplyDepotSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build3" Unit="RefinerySCBW">
+    <Button DefaultButtonFace="RefinerySCBW" Requirements="RefinerySCBW"/>
+    <ValidatorArray value="HasVespene"/>
+  </InfoArray>
+  <InfoArray index="Build4" Unit="BarracksSCBW">
+    <Button DefaultButtonFace="BarracksSCBW" Requirements="BarracksSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build5" Unit="EngineeringBaySCBW">
+    <Button DefaultButtonFace="EngineeringBaySCBW" Requirements="EngineeringBaySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build6" Unit="MissileTurretSCBW">
+    <Button DefaultButtonFace="MissileTurretSCBW" State="Restricted" Requirements="MissileTurretSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build7" Unit="BunkerSCBW">
+    <Button DefaultButtonFace="BunkerSCBW" Requirements="BunkerSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build8" Unit="RefinerySCBW@Rich">
+    <Button DefaultButtonFace="RefinerySCBW" Requirements="RefinerySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build9" Unit="AcademySCBW">
+    <Button DefaultButtonFace="AcademySCBW" Requirements="AcademySCBW"/>
+  </InfoArray>
+  <FidgetDelayMin value="6.5"/>
+  <FidgetDelayMax value="8.5"/>
+  <ConstructionMover value="Construction"/>
+  <TechAliasArray value="_SCVBuild"/>
+</CAbilBuild>
+<CAbilBuild id="CommandCenterSCBW@AddOns" parent="TerranBuildingSCBW@AddOns">
+  <BuildMorphAbil value="CommandCenterSCBW@LiftOff"/>
+  <InfoArray index="Build1" Unit="ComsatStationSCBW">
+    <Button DefaultButtonFace="ComsatStationSCBW" Requirements="ComsatStationSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build2" Unit="NuclearSiloSCBW">
+    <Button DefaultButtonFace="NuclearSiloSCBW" Requirements="NuclearSiloSCBW"/>
+  </InfoArray>
+</CAbilBuild>
+<CAbilRedirectTarget id="BunkerSCBW@AttackRedirect">
+  <Alignment value="Negative"/>
+  <Abil value="attack"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="AttackRedirect">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+</CAbilRedirectTarget>
+<CAbilMorphPlacement id="BarracksSCBW@Land" parent="TerranBuildingSCBW@Land" unit="BarracksSCBW"/>
+<CAbilTransport id="BunkerSCBW@Transport">
+  <AbilSetId value="ULdS"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <CmdButtonArray index="Load" DefaultButtonFace="BunkerLoad"/>
+  <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAt">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadUnit">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="LoadAll">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <Range value="0"/>
+  <MaxCargoCount value="4"/>
+  <MaxCargoSize value="2"/>
+  <TotalCargoSpace value="4"/>
+  <LoadCargoBehavior value="BunkerSCBW@RangeBonus"/>
+  <TargetFilters value="Biological,Visible;Ally,Neutral,Enemy,Dead,Hidden"/>
+  <LoadValidatorArray value="RequiresTerranSCBW"/>
+  <LoadValidatorArray value="NotWidowMineTarget"/>
+  <LoadValidatorArray value="IsNotHellionTank"/>
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+  <LoadValidatorArray index="0" value="RequiresTerranSCBWORTerran"/>
+</CAbilTransport>
+<CAbilMorphPlacement id="EngineeringBaySCBW@Land" parent="TerranBuildingSCBW@Land" unit="EngineeringBaySCBW"/>
+<CAbilMorph id="BarracksSCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="BarracksSCBW@Flying"/>
+<CAbilMorph id="EngineeringBaySCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="EngineeringBaySCBW@Flying"/>
+<CAbilTrain id="BarracksSCBW@Train" parent="SCBW_Train">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <Range value="5"/>
+  <InfoArray index="Train1">
+    <Button DefaultButtonFace="MarineSCBW" Requirements="MarineSCBW"/>
+    <Unit value="MarineSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train2">
+    <Button DefaultButtonFace="FirebatSCBW" Requirements="FirebatSCBW"/>
+    <Unit value="FirebatSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train3">
+    <Button DefaultButtonFace="GhostSCBW" Requirements="GhostSCBW"/>
+    <Unit value="GhostSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train4">
+    <Button DefaultButtonFace="MedicSCBW" Requirements="MedicSCBW"/>
+    <Unit value="MedicSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilMorph id="CommandCenterSCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="CommandCenterSCBW@Flying"/>
+<CAbilTrain id="CommandCenterSCBW@Train" parent="SCBW_Train">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <InfoArray index="Train1">
+    <Button DefaultButtonFace="SCVSCBW" Requirements="SCVSCBW"/>
+    <Unit value="SCVSCBW"/>
+  </InfoArray>
+  <Alert value="TrainWorkerComplete"/>
+</CAbilTrain>
+<CAbilTransport id="CommandCenterSCBW@Transport">
+  <AbilSetId value="ULdS"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <CmdButtonArray index="Load">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAll" DefaultButtonFace="CommandCenterSCBW@UnloadAll">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAt">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadUnit">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="LoadAll" DefaultButtonFace="CommandCenterSCBW@Load"/>
+  <Flags index="AllowPassengerSmartCmd" value="0"/>
+  <Flags index="AllowSmartCmd" value="0"/>
+  <MaxCargoCount value="5"/>
+  <MaxCargoSize value="1"/>
+  <TotalCargoSpace value="5"/>
+  <LoadCargoBehavior value="CommandCenterSCBW@TransportDummy"/>
+  <LoadCargoEffect value="CCLoadDummy"/>
+  <UnloadCargoEffect value="CCUnloadDummy"/>
+  <SearchRadius value="8"/>
+  <LoadValidatorArray value="CommandCenterTransportCombine"/>
+  <LoadValidatorArray value="NotWidowMineTarget"/>
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+  <DeathUnloadEffect value="RemoveCommandCenterCargo"/>
+</CAbilTransport>
+<CAbilBuild id="ScienceFacilitySCBW@AddOns" parent="TerranBuildingSCBW@AddOns">
+  <BuildMorphAbil value="ScienceFacilitySCBW@LiftOff"/>
+  <InfoArray index="Build1" Unit="PhysicsLabSCBW">
+    <Button DefaultButtonFace="PhysicsLabSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build2" Unit="CovertOpsSCBW">
+    <Button DefaultButtonFace="CovertOpsSCBW"/>
+  </InfoArray>
+</CAbilBuild>
+<CAbilMorphPlacement id="ScienceFacilitySCBW@Land" parent="TerranBuildingSCBW@Land" unit="ScienceFacilitySCBW"/>
+<CAbilMorph id="ScienceFacilitySCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="ScienceFacilitySCBW@Flying"/>
+<CAbilBuild id="FactorySCBW@AddOns" parent="TerranBuildingSCBW@AddOns">
+  <BuildMorphAbil value="FactorySCBW@LiftOff"/>
+  <InfoArray index="Build1" Unit="MachineShopSCBW">
+    <Button DefaultButtonFace="MachineShopSCBW"/>
+  </InfoArray>
+</CAbilBuild>
+<CAbilMorphPlacement id="FactorySCBW@Land" parent="TerranBuildingSCBW@Land" unit="FactorySCBW"/>
+<CAbilMorph id="FactorySCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="FactorySCBW@Flying"/>
+<CAbilTrain id="FactorySCBW@Train" parent="SCBW_Train">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <Activity value="UI/Building"/>
+  <InfoArray index="Train1">
+    <Button DefaultButtonFace="VultureSCBW" Requirements="VultureSCBW"/>
+    <Unit value="VultureSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train2">
+    <Button DefaultButtonFace="SiegeTankSCBW" Requirements="SiegeTankSCBW"/>
+    <Unit value="SiegeTankSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train3">
+    <Button DefaultButtonFace="GoliathSCBW" Requirements="GoliathSCBW"/>
+    <Unit value="GoliathSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilRally id="CommandCenterSCBW@Rally">
+  <OrderArray DisplayType="Rally" Color="255,245,140,70" Model="Assets\UI\Feedback\WayPointRally\WayPointRally.m3" LineTexture="Assets\Textures\WayPointLine.dds" index="0"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+</CAbilRally>
+<CAbilRedirectInstant id="BunkerSCBW@StopRedirect">
+  <Abil value="stop"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="StopRedirect">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+</CAbilRedirectInstant>
+<CAbilRedirectTarget id="BunkerSCBW@HealRedirect">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+</CAbilRedirectTarget>
+<CAbilBuild id="StarportSCBW@AddOns" parent="TerranBuildingSCBW@AddOns">
+  <BuildMorphAbil value="StarportSCBW@LiftOff"/>
+  <InfoArray index="Build1" Unit="ControlTowerSCBW">
+    <Button DefaultButtonFace="ControlTowerSCBW"/>
+  </InfoArray>
+</CAbilBuild>
+<CAbilMorphPlacement id="StarportSCBW@Land" parent="TerranBuildingSCBW@Land" unit="StarportSCBW"/>
+<CAbilMorph id="StarportSCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="StarportSCBW@Flying"/>
+<CAbilTrain id="StarportSCBW@Train" parent="SCBW_Train">
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <Activity value="UI/Building"/>
+  <InfoArray index="Train1">
+    <Button DefaultButtonFace="WraithSCBW" Requirements="WraithSCBW"/>
+    <Unit value="WraithSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train2">
+    <Button DefaultButtonFace="ValkyrieSCBW" Requirements="ValkyrieSCBW"/>
+    <Unit value="ValkyrieSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train3">
+    <Button DefaultButtonFace="DropshipSCBW" Requirements="DropshipSCBW"/>
+    <Unit value="DropshipSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train4">
+    <Button DefaultButtonFace="ScienceVesselSCBW" Requirements="ScienceVesselSCBW"/>
+    <Unit value="ScienceVesselSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train5">
+    <Button DefaultButtonFace="BattlecruiserSCBW" Requirements="BattlecruiserSCBW"/>
+    <Unit value="BattlecruiserSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilBehavior id="BunkerSCBW@Salvage" parent="Salvage">
+  <CmdButtonArray index="On" DefaultButtonFace="BunkerSCBW@Salvage"/>
+</CAbilBehavior>
+<CAbilEffectInstant id="BunkerSCBW@SalvageRefund" parent="Refund">
+  <Name value="Abil/Name/SalvageBunkerRefund"/>
+  <Cost>
+    <Resource index="Minerals" value="-75"/>
+  </Cost>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BunkerSCBW@Salvage"/>
+</CAbilEffectInstant>
+<CAbilResearch id="DefilerSCBWConsumeResearch" parent="SCBW_Research">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <InfoArray index="Research1" Time="60">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="DefilerSCBWDarkSwarmResearch" parent="SCBW_Research">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="DefilerSCBWEnergyUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="DefilerSCBWPlagueResearch" parent="SCBW_Research">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <InfoArray index="Research1" Time="130">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="OverlordSCBWSightUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="60">
+    <Resource index="Minerals" value="50"/>
+    <Resource index="Vespene" value="50"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="OverlordSCBWSpeedUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="43">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="OverlordSCBWTransportResearch" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="99">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="QueenSCBWEnergyUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="QueenSCBWEnsnareResearch" parent="SCBW_Research">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <InfoArray index="Research1" Time="49">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="QueenSCBWParasiteResearch" parent="SCBW_Research">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="QueenSCBWSpawnBroodlingsResearch" parent="SCBW_Research">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <InfoArray index="Research1" Time="75">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="HydraliskSCBWRangeUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="140">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="HydraliskSCBWSpeedUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="LurkerSCBWResearch" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="80">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="UltraliskSCBWArmorUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="110">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="UltraliskSCBWSpeedUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="60">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZergFlyerAttacksSCBW" parent="SCBW_ResearchLeveled" race="Zerg">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="175"/>
+    <Resource index="Vespene" value="175"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="250"/>
+    <Resource index="Vespene" value="250"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZergFlyerCarapaceSCBW" parent="SCBW_ResearchLeveled" race="Zerg">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="175"/>
+    <Resource index="Vespene" value="175"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="250"/>
+    <Resource index="Vespene" value="250"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZergGroundCarapaceSCBW" parent="SCBW_ResearchLeveled" race="Zerg">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="250"/>
+    <Resource index="Vespene" value="250"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZergMeleeAttacksSCBW" parent="SCBW_ResearchLeveled" race="Zerg">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZergMissileAttacksSCBW" parent="SCBW_ResearchLeveled" race="Zerg">
+  <InfoArray index="Research1" Time="160">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <InfoArray index="Research2" Time="190">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <InfoArray index="Research3" Time="220">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZergSCBWBurrowResearch" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="100">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZerglingSCBWAttackSpeedUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="130">
+    <Resource index="Minerals" value="200"/>
+    <Resource index="Vespene" value="200"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilResearch id="ZerglingSCBWSpeedUpgrade" parent="SCBW_Research" race="Zerg">
+  <InfoArray index="Research1" Time="99">
+    <Resource index="Minerals" value="100"/>
+    <Resource index="Vespene" value="100"/>
+  </InfoArray>
+  <AbilityCategories index="User1" value="1"/>
+  <Activity value="UI/Evolving"/>
+</CAbilResearch>
+<CAbilEffectTarget id="DefilerSCBWConsume">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="DefilerSCBWConsume@AB"/>
+  <TargetFilters value="Biological;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Invulnerable"/>
+  <Range value="0.1"/>
+  <Range index="0" value="0.5"/>
+  <PrepTime value="0.0625"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="DefilerSCBWConsume" Requirements="DefilerSCBWConsume">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CastIntroTime value="0.33"/>
+  <FinishTime value="0.4"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="DefilerSCBWDarkSwarm">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="DefilerSCBWDarkSwarm@LM"/>
+  <Cost>
+    <Vital index="Energy" value="100"/>
+  </Cost>
+  <Range value="9"/>
+  <PrepTime value="0.12"/>
+  <CastIntroTime value="0.12"/>
+  <FinishTime value="0.1"/>
+  <UninterruptibleArray index="Prep" value="1"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CursorEffect value="DefilerSCBWDarkSwarm@Search"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="DefilerSCBWDarkSwarm">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="DefilerSCBWPlague">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="DefilerSCBWPlague@Search"/>
+  <Cost>
+    <Vital index="Energy" value="150"/>
+  </Cost>
+  <Range value="9"/>
+  <PrepTime value="0.0625"/>
+  <FinishTime value="0.25"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <CursorEffect value="DefilerSCBWPlague@Search"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="DefilerSCBWPlague" Requirements="DefilerSCBWPlague">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="QueenSCBWParasite">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="QueenSCBWParasite@LM"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="75"/>
+  </Cost>
+  <TargetFilters value="-;Player,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="12"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="QueenSCBWParasite">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CastIntroTime value="0.5"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="QueenSCBWEnsnare">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="QueenSCBWEnsnare@LM"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="75"/>
+  </Cost>
+  <Range value="9"/>
+  <CursorEffect value="QueenSCBWEnsnare@Search"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="QueenSCBWEnsnare" Requirements="QueenSCBWEnsnare">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CastIntroTime value="0.5"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="QueenSCBWSpawnBroodlings">
+  <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+  <Effect index="0" value="QueenSCBWSpawnBroodlings@LM"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Cost>
+    <Vital index="Energy" value="150"/>
+  </Cost>
+  <TargetFilters value="-;Air,Robotic,Psionic,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <TargetFilters index="0" value="Ground;Robotic,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="9"/>
+  <Range index="0" value="10"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="QueenSCBWSpawnBroodlings" Requirements="QueenSCBWSpawnBroodlings">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CastIntroTime value="0.5"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="QueenSCBWInfestCommandCenter">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="QueenSCBWInfestCommandCenter@InitialSwitch"/>
+  <Effect index="0" value="QueenSCBWInfestCommandCenter@InfestingStart"/>
+  <Flags index="AllowMovement" value="0"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="AutoCastOn" value="1"/>
+  <Flags index="ChannelingMinimum" value="0"/>
+  <Flags index="DeferCooldown" value="1"/>
+  <Flags index="RangeUseCasterRadius" value="1"/>
+  <Flags index="Smart" value="1"/>
+  <Flags index="HomogenousInterrupt" value="1"/>
+  <TargetFilters value="Structure,Visible;Self,Missile,Stasis,UnderConstruction,Dead,Invulnerable"/>
+  <Range value="0.5"/>
+  <SmartValidatorArray value="QueenSCBWInfestCommandCenter"/>
+  <SmartValidatorArray value="TargetIsEnemyOrNeutral"/>
+  <AutoCastValidatorArray value="QueenSCBWInfestCommandCenter"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="QueenSCBWInfestCommandCenter">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <UninterruptibleArray index="Cast" value="1"/>
+  <UninterruptibleArray index="Channel" value="1"/>
+  <UninterruptibleArray index="Finish" value="1"/>
+  <Cost/>
+  <Cost index="0">
+    <Cooldown TimeUse="10"/>
+  </Cost>
+  <RangeSlop value="7"/>
+  <TrackingArc value="0.9997"/>
+  <CancelableArray index="Channel" value="1"/>
+  <AutoCastRange value="1"/>
+</CAbilEffectTarget>
+<CAbilEffectInstant id="InfestedTerranSCBW@Explode">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="InfestedTerranSCBWWeapon@Impact"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="InfestedTerranSCBW@Explode"/>
+</CAbilEffectInstant>
+<CAbilEffectTarget id="InfestedTerranSCBW@SapStructure">
+  <Alignment value="Negative"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Effect index="0" value="SapStructureIssueAttackOrder"/>
+  <Flags index="AllowMovement" value="1"/>
+  <Flags index="AutoCast" value="1"/>
+  <TargetFilters value="Ground,Structure,Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <TargetSorts RequestCount="1">
+    <SortArray value="TSMarker"/>
+    <SortArray value="TSDistance"/>
+  </TargetSorts>
+  <Range value="0.25"/>
+  <AutoCastFilters value="Ground,Structure,Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AutoCastRange value="5"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="InfestedTerranSCBW@AttackStructure"/>
+</CAbilEffectTarget>
+<CAbilMorph id="DevourerSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <DataCollection value="DevourerSCBW"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="DevourerSCBW" Requirements="DevourerSCBW">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="DevourerAspect"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="Birth" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="RallyReset" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <Cost>
+    <Cooldown Link="Abil/MutaliskSCBW@Morph" Location="Unit" TimeUse="1"/>
+  </Cost>
+  <InfoArray Unit="DevourerSCBWEgg" RandomDelayMin="0.001" RandomDelayMax="0.001" index="0">
+    <SectionArray index="Stats">
+      <EffectArray index="Start" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Finish" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Cancel" value="SCBW_FractionalArmorUpdate"/>
+    </SectionArray>
+  </InfoArray>
+  <InfoArray Score="1" Unit="DevourerSCBW" index="1">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+      <EffectArray index="Finish" value="PostMorphHeal"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <AbilClassEnableArray index="CAbilMove" value="1"/>
+  <AbilClassEnableArray index="CAbilStop" value="1"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <RefundFraction Cooldown="0"/>
+</CAbilMorph>
+<CAbilMorph id="LurkerSCBW@MorphBurrowed">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="LurkerSCBW" Requirements="LurkerSCBW"/>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowUpMorph"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="Birth" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="RallyReset" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <CancelUnit value="HydraliskSCBW"/>
+  <InfoArray Unit="HydraliskSCBW" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="0.0556"/>
+    </SectionArray>
+  </InfoArray>
+  <InfoArray Unit="LurkerSCBWEgg" index="1">
+    <SectionArray index="Stats">
+      <EffectArray index="Start" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Finish" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Cancel" value="SCBW_FractionalArmorUpdate"/>
+    </SectionArray>
+  </InfoArray>
+  <InfoArray Score="1" Unit="LurkerSCBW" index="2">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+      <EffectArray index="Finish" value="PostMorphHeal"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <AbilClassEnableArray index="CAbilMove" value="1"/>
+  <AbilClassEnableArray index="CAbilStop" value="1"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <DataCollection value="LurkerSCBW"/>
+  <RefundFraction Cooldown="0"/>
+  <Cost>
+    <Cooldown Link="Abil/LurkerSCBW@Morph" Location="Unit" TimeUse="1"/>
+  </Cost>
+</CAbilMorph>
+<CAbilMorph id="LurkerSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="LurkerSCBW" Requirements="LurkerSCBW">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="Birth" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="RallyReset" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <InfoArray Unit="LurkerSCBWEgg" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Stats">
+      <EffectArray index="Start" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Finish" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Cancel" value="SCBW_FractionalArmorUpdate"/>
+    </SectionArray>
+  </InfoArray>
+  <InfoArray Score="1" Unit="LurkerSCBW" index="1">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+      <EffectArray index="Finish" value="PostMorphHeal"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <AbilClassEnableArray index="CAbilMove" value="1"/>
+  <AbilClassEnableArray index="CAbilStop" value="1"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <DataCollection value="LurkerSCBW"/>
+  <RefundFraction Cooldown="0"/>
+  <Cost>
+    <Cooldown Location="Unit" TimeUse="1"/>
+  </Cost>
+</CAbilMorph>
+<CAbilMorph id="LurkerSCBW@BurrowDown">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="LurkerSCBW@BurrowDown" Requirements="LurkerSCBW@BurrowDown">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="LurkerSCBW@Burrowed" RandomDelayMax="0.25" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="2.5"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="1.8332"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.8332"/>
+    </SectionArray>
+  </InfoArray>
+  <InfoArray index="1">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="2"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.5"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowDown"/>
+</CAbilMorph>
+<CAbilMorph id="LurkerSCBW@BurrowUp">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="LurkerSCBW@BurrowUp">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="LurkerSCBW" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="0.5"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowUp"/>
+</CAbilMorph>
+<CAbilMorph id="GuardianSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="GuardianSCBW" Requirements="GuardianSCBW">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="GuardianAspect"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="Birth" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="RallyReset" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <Cost>
+    <Cooldown Link="Abil/MutaliskSCBW@Morph" Location="Unit" TimeUse="1"/>
+  </Cost>
+  <InfoArray Unit="GuardianSCBWEgg" RandomDelayMin="0.001" RandomDelayMax="0.001" index="0">
+    <SectionArray index="Stats">
+      <EffectArray index="Start" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Finish" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Cancel" value="SCBW_FractionalArmorUpdate"/>
+    </SectionArray>
+  </InfoArray>
+  <InfoArray Score="1" Unit="GuardianSCBW" index="1">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+      <EffectArray index="Finish" value="PostMorphHeal"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <AbilClassEnableArray index="CAbilMove" value="1"/>
+  <AbilClassEnableArray index="CAbilStop" value="1"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <DataCollection value="GuardianSCBW"/>
+  <RefundFraction Cooldown="0"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedTerranSCBW@BurrowUp">
+  <AbilSetId value="BrwU"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="InfestedTerranSCBW" RandomDelayMax="0.37" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="2"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="0.1"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Air,Missile,Stasis,Dead,Hidden"/>
+  <AutoCastRange value="2"/>
+  <AutoCastCountMin value="1"/>
+  <TechAliasArray value="_BurrowUp"/>
+  <AutoCastValidatorArray value="TargetNotChangeling"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedTerranSCBW@BurrowDown">
+  <AbilSetId value="BrwD"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowDown" Requirements="InfestedTerranSCBW@BurrowDown">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="InfestedTerranSCBW@Burrowed" RandomDelayMax="0.37" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="0.5556"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Delay" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.333"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowDown"/>
+</CAbilMorph>
+<CAbilMorph id="DefilerSCBW@BurrowUp">
+  <AbilSetId value="BrwU"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="DefilerSCBW" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="0.3"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="0.3"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Duration" value="0.3"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden"/>
+  <AutoCastValidatorArray value="TargetNotChangeling"/>
+  <AutoCastRange value="5"/>
+  <AutoCastCountMin value="1"/>
+  <TechAliasArray value="_BurrowUp"/>
+</CAbilMorph>
+<CAbilMorph id="DefilerSCBW@BurrowDown">
+  <AbilSetId value="BrwD"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowDown" Requirements="DefilerSCBW@BurrowDown">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="DefilerSCBW@Burrowed" RandomDelayMax="0.3703" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="0.5556"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.166"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowDown"/>
+</CAbilMorph>
+<CAbilMorph id="UltraliskSCBW@BurrowUp">
+  <AbilSetId value="BrwU"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="UltraliskSCBW" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden"/>
+  <AutoCastValidatorArray value="TargetNotChangeling"/>
+  <AutoCastRange value="2"/>
+  <AutoCastCountMin value="1"/>
+  <TechAliasArray value="_BurrowUp"/>
+</CAbilMorph>
+<CAbilMorph id="UltraliskSCBW@BurrowDown">
+  <AbilSetId value="BrwD"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowDown" Requirements="UltraliskSCBW@BurrowDown">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="UltraliskSCBW@Burrowed" RandomDelayMax="0.25" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="2"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.8332"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowDown"/>
+</CAbilMorph>
+<CAbilHarvest id="DroneSCBW@Harvest">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Gather" DefaultButtonFace="DroneSCBW@Harvest">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Return" DefaultButtonFace="DroneSCBW@ReturnCargo">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <TechAliasArray value="_Gather"/>
+  <CancelableArray index="ApproachResource" value="1"/>
+  <CancelableArray index="WaitAtResource" value="1"/>
+</CAbilHarvest>
+<CAbilHarvest id="DroneSCBW@HarvestNoQue" parent="DroneSCBW@Harvest">
+  <FlagArray index="BypassResourceQueue" value="1"/>
+</CAbilHarvest>
+<CAbilMorph id="DroneSCBW@BurrowDown">
+  <AbilSetId value="BrwD"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowDown" Requirements="DroneSCBW@BurrowDown">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="DroneSCBW@Burrowed" RandomDelayMax="0.25" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="0.8332"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.1665"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowDown"/>
+</CAbilMorph>
+<CAbilMorph id="DroneSCBW@BurrowUp">
+  <AbilSetId value="BrwU"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="DroneSCBW" RandomDelayMax="0.25" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Duration" value="0.4443"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastValidatorArray value="TargetNotChangeling"/>
+  <TechAliasArray value="_BurrowUp"/>
+</CAbilMorph>
+<CAbilBuild id="DroneSCBW@Build" parent="SCBW_Build">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <FlagArray index="PeonHide" value="1"/>
+  <FlagArray index="PeonKillFinish" value="1"/>
+  <FlagArray index="RangeIncludesBuilding" value="0"/>
+  <InfoArray index="Build1" Unit="HatcherySCBW">
+    <Button DefaultButtonFace="HatcherySCBW" Requirements="HatcherySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build2" Unit="CreepColonySCBW">
+    <Button DefaultButtonFace="CreepColonySCBW" Requirements="CreepColonySCBW"/>
+  </InfoArray>
+  <InfoArray index="Build3" Unit="ExtractorSCBW">
+    <Button DefaultButtonFace="ExtractorSCBW" Requirements="ExtractorSCBW"/>
+    <ValidatorArray value="HasVespene"/>
+  </InfoArray>
+  <InfoArray index="Build4" Unit="SpawningPoolSCBW">
+    <Button DefaultButtonFace="SpawningPoolSCBW" Requirements="SpawningPoolSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build5" Unit="EvolutionChamberSCBW">
+    <Button DefaultButtonFace="EvolutionChamberSCBW" Requirements="EvolutionChamberSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build6" Unit="HydraliskDenSCBW">
+    <Button DefaultButtonFace="HydraliskDenSCBW" Requirements="HydraliskDenSCBW"/>
+  </InfoArray>
+</CAbilBuild>
+<CAbilBuild id="DroneSCBW@BuildAdv" parent="SCBW_Build">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <DefaultButtonCardId value="Bld2"/>
+  <FlagArray index="PeonHide" value="1"/>
+  <FlagArray index="PeonKillFinish" value="1"/>
+  <FlagArray index="RangeIncludesBuilding" value="0"/>
+  <InfoArray index="Build16" Unit="SpireSCBW">
+    <Button DefaultButtonFace="SpireSCBW" Requirements="SpireSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build17" Unit="QueensNestSCBW">
+    <Button DefaultButtonFace="QueensNestSCBW" Requirements="QueensNestSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build18" Unit="NydusCanalSCBW">
+    <Resource index="Minerals" value="150"/>
+    <Button DefaultButtonFace="NydusCanalSCBW" Requirements="NydusCanalSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build19" Unit="DefilerMoundSCBW">
+    <Button DefaultButtonFace="DefilerMoundSCBW" Requirements="DefilerMoundSCBW"/>
+  </InfoArray>
+  <InfoArray index="Build20" Unit="UltraliskCavernSCBW">
+    <Button DefaultButtonFace="UltraliskCavernSCBW" Requirements="DefilerMoundSCBW"/>
+  </InfoArray>
+</CAbilBuild>
+<CAbilTrain id="LarvaSCBW@Train" parent="SCBW_Train">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User3" value="1"/>
+  <Activity value="UI/Morphing"/>
+  <Flags index="DisableCollision" value="1"/>
+  <Flags index="KillOnCancel" value="1"/>
+  <Flags index="KillOnFinish" value="1"/>
+  <Flags index="Select" value="1"/>
+  <Flags index="WaitForFood" value="0"/>
+  <MorphUnit value="EggSCBW"/>
+  <Range value="4"/>
+  <InfoArray index="Train1" Alert="TrainWorkerComplete" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="DroneSCBW" State="Suppressed"/>
+    <Unit value="DroneSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train2" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="ZerglingSCBW" State="Suppressed" Requirements="ZerglingSCBW"/>
+    <Unit value="ZerglingSCBW"/>
+    <Unit value="ZerglingSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train3" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="OverlordSCBW" Requirements="OverlordSCBW"/>
+    <Unit value="OverlordSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train4" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="HydraliskSCBW" State="Suppressed" Requirements="HydraliskSCBW"/>
+    <Unit value="HydraliskSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train5" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="MutaliskSCBW" State="Suppressed" Requirements="MutaliskSCBW"/>
+    <Unit value="MutaliskSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train6" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="ScourgeSCBW" State="Suppressed" Requirements="MutaliskSCBW"/>
+    <Unit value="ScourgeSCBW"/>
+    <Unit value="ScourgeSCBW"/>
+    <Resource index="Minerals" value="25"/>
+    <Resource index="Vespene" value="75"/>
+  </InfoArray>
+  <InfoArray index="Train7" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="QueenSCBW" State="Suppressed" Requirements="QueenSCBW"/>
+    <Unit value="QueenSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train8" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="UltraliskSCBW" State="Suppressed" Requirements="UltraliskSCBW"/>
+    <Unit value="UltraliskSCBW"/>
+  </InfoArray>
+  <InfoArray index="Train9" Effect="LarvaSCBW@TrainFinish">
+    <Button DefaultButtonFace="DefilerSCBW" State="Suppressed" Requirements="DefilerSCBW"/>
+    <Unit value="DefilerSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilTransport id="OverlordSCBW@Transport">
+  <AbilSetId value="ULdM"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Load" DefaultButtonFace="OverlordSCBW@Load" Requirements="OverlordSCBW@Transport"/>
+  <CmdButtonArray index="UnloadAll">
+    <Flags index="Hidden" value="1"/>
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAt" DefaultButtonFace="OverlordSCBW@Unload">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadUnit">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="LoadAll">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <Flags index="CargoDeath" value="1"/>
+  <MaxCargoCount value="8"/>
+  <MaxCargoSize value="8"/>
+  <TotalCargoSpace value="8"/>
+  <LoadTransportBehavior value="OverlordSCBW@Transport"/>
+  <UnloadPeriod value="1"/>
+  <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
+  <LoadValidatorArray value="NotWidowMineTarget"/>
+  <LoadValidatorArray value="SCBW_IsTransportable"/>
+</CAbilTransport>
+<CAbilMorph id="ZerglingSCBW@BurrowDown">
+  <AbilSetId value="BrwD"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowDown" Requirements="ZerglingSCBW@BurrowDown">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="ZerglingSCBW@Burrowed" RandomDelayMax="0.3703" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="0.5556"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowDown"/>
+</CAbilMorph>
+<CAbilMorph id="ZerglingSCBW@BurrowUp">
+  <AbilSetId value="BrwU"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="ZerglingSCBW" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Abils">
+      <DurationArray index="Delay" value="1.0625"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden"/>
+  <AutoCastValidatorArray value="TargetNotChangeling"/>
+  <AutoCastRange value="2"/>
+  <AutoCastCountMin value="1"/>
+  <TechAliasArray value="_BurrowUp"/>
+</CAbilMorph>
+<CAbilMorph id="HydraliskSCBW@BurrowUp">
+  <AbilSetId value="BrwU"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <ActorKey value="BurrowUp"/>
+  <Flags index="AutoCast" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="HydraliskSCBW" RandomDelayMax="0.5" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Duration" value="0.4443"/>
+    </SectionArray>
+  </InfoArray>
+  <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden"/>
+  <AutoCastValidatorArray value="TargetNotChangeling"/>
+  <AutoCastRange value="5"/>
+  <AutoCastCountMin value="1"/>
+  <TechAliasArray value="_BurrowUp"/>
+</CAbilMorph>
+<CAbilMorph id="HydraliskSCBW@BurrowDown">
+  <AbilSetId value="BrwD"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="BurrowDown" Requirements="HydraliskSCBW@BurrowDown">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <ActorKey value="BurrowDown"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="IgnoreFacing" value="1"/>
+  <Flags index="IgnorePlacement" value="0"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <InfoArray Unit="HydraliskSCBW@Burrowed" RandomDelayMax="0.3703" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Collide">
+      <DurationArray index="Delay" value="0.5556"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Delay" value="1.333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="1.166"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_BurrowDown"/>
+</CAbilMorph>
+<CAbilBuildable id="NydusCanalSCBW@Mutate">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Activity value="UI/Mutating"/>
+  <Cancelable value="0"/>
+</CAbilBuildable>
+<CAbilRally id="NydusCanalSCBW@Rally">
+  <Name value="Abil/Name/Rally"/>
+  <OrderArray DisplayType="Rally" Color="255,255,255,128" Model="Assets\UI\Feedback\WayPointRally\WayPointRally.m3" LineTexture="Assets\Textures\WayPointLine.dds" index="1"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <CmdButtonArray index="Rally2">
+    <Flags index="AllowMinimap" value="0"/>
+    <Flags index="Hidden" value="1"/>
+    <Flags index="IgnoreUser" value="1"/>
+    <Flags index="ToSelection" value="0"/>
+  </CmdButtonArray>
+  <InfoArray index="0" AllowSetFilters="-;Self" SetFilters="-;Self"/>
+  <InfoArray AllowSetOnGround="0" SetOnGround="0" SetFilters="-;Player,Ally,Neutral,Enemy" UseFilters="-;Player,Ally,Neutral,Enemy" index="1"/>
+</CAbilRally>
+<CAbilMorphPlacement id="InfestedCommandCenterSCBW@Land" parent="TerranBuildingSCBW@Land" unit="InfestedCommandCenterSCBW">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+</CAbilMorphPlacement>
+<CAbilMorph id="InfestedCommandCenterSCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="InfestedCommandCenterSCBW@Flying">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+</CAbilMorph>
+<CAbilRally id="InfestedCommandCenterSCBW@Rally">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+</CAbilRally>
+<CAbilTrain id="InfestedCommandCenterSCBW@Train" parent="SCBW_Train">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <InfoArray index="Train1">
+    <Button DefaultButtonFace="InfestedTerranSCBW" Requirements="InfestedTerranSCBW"/>
+    <Unit value="InfestedTerranSCBW"/>
+  </InfoArray>
+</CAbilTrain>
+<CAbilTransport id="InfestedCommandCenterSCBW@Transport">
+  <AbilSetId value="ULdS"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <CmdButtonArray index="Load">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAll" DefaultButtonFace="InfestedCommandCenterSCBW@UnloadAll">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAt">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadUnit">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="LoadAll" DefaultButtonFace="InfestedCommandCenterSCBW@Load"/>
+  <Flags index="AllowPassengerSmartCmd" value="0"/>
+  <Flags index="AllowSmartCmd" value="0"/>
+  <MaxCargoCount value="5"/>
+  <MaxCargoSize value="1"/>
+  <TotalCargoSpace value="5"/>
+  <LoadCargoBehavior value="InfestedCommandCenterSCBW@TransportDummy"/>
+  <LoadCargoEffect value="CCLoadDummy"/>
+  <UnloadCargoEffect value="CCUnloadDummy"/>
+  <SearchRadius value="8"/>
+  <LoadValidatorArray value="CommandCenterTransportCombine"/>
+  <LoadValidatorArray value="NotWidowMineTarget"/>
+  <DeathUnloadEffect value="RemoveCommandCenterCargo"/>
+</CAbilTransport>
+<CAbilMorph id="InfestedCommandCenterSCBW@Morph">
+  <ActorKey value="Infest"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <InfoArray Unit="InfestedCommandCenterSCBW" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <TechAliasArray value="_InfestMorph"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedCommandCenterSCBW@MorphFlyer">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <ActorKey value="Infest"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <InfoArray Unit="InfestedCommandCenterSCBW@Flying" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_InfestMorph"/>
+</CAbilMorph>
+<CAbilBuild id="NydusCanalSCBW@Build">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <FlagArray index="Cancelable" value="0"/>
+  <InfoArray index="Build1" Unit="NydusCanalSCBW" Time="15">
+    <Button DefaultButtonFace="NydusCanalSCBW" Requirements="NydusCanalSCBW@Build"/>
+  </InfoArray>
+  <Range value="500"/>
+  <EffectArray index="Start" value="NydusCanalSCBW@AlertDummy"/>
+  <EffectArray index="Finish" value="NydusCanalSCBW@Build"/>
+</CAbilBuild>
+<CAbilTransport id="NydusCanalSCBW@Transport">
+  <AbilSetId value="ULdS"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <CmdButtonArray index="Load" DefaultButtonFace="NydusCanalSCBW@Load" Requirements="NydusCanalSCBW@Load"/>
+  <CmdButtonArray index="UnloadAll" DefaultButtonFace="NydusCanalSCBW@UnloadAll">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadAt">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="UnloadUnit" DefaultButtonFace="NydusCanalSCBW@UnloadUnit"/>
+  <CmdButtonArray index="LoadAll">
+    <Flags index="Hidden" value="1"/>
+  </CmdButtonArray>
+  <Flags index="CargoDeath" value="1"/>
+  <Flags index="PlayerHold" value="1"/>
+  <Flags index="ShowCargoSize" value="0"/>
+  <Range value="0.5"/>
+  <MaxCargoCount value="255"/>
+  <MaxCargoSize value="8"/>
+  <TotalCargoSpace value="1020"/>
+  <LoadPeriod value="0.5"/>
+  <LoadValidatorArray value="NydusCanalSCBW@Transport@Load"/>
+  <LoadValidatorArray value="NydusCanalSCBW@TransportNotBlocked"/>
+  <CargoFilter value="NydusCanalSCBW@Transport"/>
+  <LoadCargoEffect value="NydusCanalSCBW@TransportCargoLoad"/>
+  <UnloadCargoEffect value="NydusCanalSCBW@TransportCargoRB"/>
+  <UnloadValidatorArray value="NydusCanalSCBW@TransportCargoUnit"/>
+  <UnloadValidatorArray value="NydusCanalSCBW@TransportCorrectIdent"/>
+</CAbilTransport>
+<CAbilMorph id="SporeColonySCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="SporeColonySCBW" Requirements="SporeColonySCBW">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <InfoArray Score="1" Unit="SporeColonySCBW" index="0">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Facing">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+      <EffectArray index="Start" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Finish" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Cancel" value="SCBW_FractionalArmorUpdate"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <RefundFraction Cooldown="0"/>
+  <Cost>
+    <Cooldown Link="Abil/ColonySCBW@Morph" Location="Unit" TimeUse="1"/>
+  </Cost>
+  <Activity value="UI/Mutating"/>
+</CAbilMorph>
+<CAbilRally id="HatcherySCBW@Rally">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <CmdButtonArray index="Rally2" DefaultButtonFace="RallyEgg"/>
+  <InfoArray index="0">
+    <SetValidators value="HatcherySCBW@Rally@Set@1"/>
+    <UseValidators value="HatcherySCBW@Rally@Use@1"/>
+  </InfoArray>
+  <InfoArray SetOnGround="0" index="1">
+    <UseValidators value="HatcherySCBW@Rally@Use@2"/>
+  </InfoArray>
+  <InfoArray SetOnGround="0" index="2">
+    <SetValidators value="HatcherySCBW@Rally@Set@3"/>
+  </InfoArray>
+  <TechAliasArray value="_HatchRally"/>
+</CAbilRally>
+<CAbilMorph id="LairSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="LairSCBW" State="Suppressed" Requirements="LairSCBW"/>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="CancelMutateMorph"/>
+  <ActorKey value="LairUpgrade"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="Birth" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <InfoArray Score="1" Unit="LairSCBW" index="0">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <Activity value="UI/Mutating"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <RefundFraction Cooldown="0"/>
+  <Cost>
+    <Cooldown TimeUse="1"/>
+  </Cost>
+</CAbilMorph>
+<CAbilMorph id="GreaterSpireSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="GreaterSpireSCBW" State="Suppressed" Requirements="GreaterSpireSCBW">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="CancelMutateMorph"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <InfoArray Score="1" Unit="GreaterSpireSCBW" index="0">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Facing">
+      <DurationArray index="Delay" value="5"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <Activity value="UI/Mutating"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <RefundFraction Cooldown="0"/>
+  <Cost>
+    <Cooldown TimeUse="1"/>
+  </Cost>
+</CAbilMorph>
+<CAbilMorph id="HiveSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="HiveSCBW" State="Suppressed" Requirements="HiveSCBW"/>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="CancelMutateMorph"/>
+  <ActorKey value="HiveUpgrade"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="Birth" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <InfoArray Score="1" Unit="HiveSCBW" index="0">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <Activity value="UI/Mutating"/>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <RefundFraction Cooldown="0"/>
+  <Cost>
+    <Cooldown TimeUse="1"/>
+  </Cost>
+</CAbilMorph>
+<CAbilMorph id="SunkenColonySCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+  <CmdButtonArray index="Execute" DefaultButtonFace="SunkenColonySCBW" Requirements="SunkenColonySCBW">
+    <Flags index="UseDefaultButton" value="1"/>
+    <Flags index="CreateDefaultButton" value="1"/>
+  </CmdButtonArray>
+  <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+  <Flags index="BestUnit" value="1"/>
+  <Flags index="DisableAbils" value="1"/>
+  <Flags index="FastBuild" value="1"/>
+  <Flags index="Interruptible" value="1"/>
+  <Flags index="Produce" value="1"/>
+  <Flags index="ShowProgress" value="1"/>
+  <Flags index="WaitUntilStopped" value="0"/>
+  <InfoArray Score="1" Unit="SunkenColonySCBW" index="0">
+    <SectionArray index="Abils">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Actor">
+      <UseBuildTimeArray index="Duration" value="1"/>
+    </SectionArray>
+    <SectionArray index="Facing">
+      <UseBuildTimeArray index="Delay" value="1"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <UseBuildTimeArray index="Delay" value="1"/>
+      <EffectArray index="Start" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Finish" value="SCBW_FractionalArmorUpdate"/>
+      <EffectArray index="Cancel" value="SCBW_FractionalArmorUpdate"/>
+    </SectionArray>
+  </InfoArray>
+  <Alert value="MorphComplete_Zerg"/>
+  <Cost>
+    <Cooldown Link="Abil/ColonySCBW@Morph" Location="Unit" TimeUse="1"/>
+  </Cost>
+  <AbilityCategories index="User1" value="1"/>
+  <AbilityCategories index="User4" value="1"/>
+  <RefundFraction Cooldown="0"/>
+  <Activity value="UI/Mutating"/>
+</CAbilMorph>
+<CAbilMorphPlacement id="InfestedCommandCenterSC2@Land" parent="TerranBuildingSCBW@Land" unit="InfestedCommandCenterSC2">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+</CAbilMorphPlacement>
+<CAbilMorph id="InfestedCommandCenterSC2@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="InfestedCommandCenterSC2@Flying">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedCommandCenterSC2@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <ActorKey value="Infest"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <InfoArray Unit="InfestedCommandCenterSC2" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_InfestMorph"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedCommandCenterSC2@MorphFlyer">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <ActorKey value="Infest"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <InfoArray Unit="InfestedCommandCenterSC2@Flying" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_InfestMorph"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedPlanetaryFortressSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <ActorKey value="Infest"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <InfoArray Unit="InfestedPlanetaryFortressSCBW" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_InfestMorph"/>
+</CAbilMorph>
+<CAbilMorphPlacement id="InfestedOrbitalCommandSCBW@Land" parent="TerranBuildingSCBW@Land" unit="InfestedOrbitalCommandSCBW">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+</CAbilMorphPlacement>
+<CAbilMorph id="InfestedOrbitalCommandSCBW@LiftOff" parent="TerranBuildingSCBW@LiftOff" unit="InfestedOrbitalCommandSCBW@Flying">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedOrbitalCommandSCBW@Morph">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <ActorKey value="Infest"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <InfoArray Unit="InfestedOrbitalCommandSCBW" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_InfestMorph"/>
+</CAbilMorph>
+<CAbilMorph id="InfestedOrbitalCommandSCBW@MorphFlyer">
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <ActorKey value="Infest"/>
+  <Flags index="IgnoreFood" value="1"/>
+  <Flags index="IgnoreUnitCost" value="1"/>
+  <Flags index="SuppressMovement" value="1"/>
+  <Flags index="Transient" value="1"/>
+  <InfoArray Unit="InfestedOrbitalCommandSCBW@Flying" index="0">
+    <SectionArray index="Actor">
+      <DurationArray index="Duration" value="1.5"/>
+    </SectionArray>
+    <SectionArray index="Mover">
+      <DurationArray index="Duration" value="1.6333"/>
+    </SectionArray>
+    <SectionArray index="Stats">
+      <DurationArray index="Delay" value="2"/>
+    </SectionArray>
+  </InfoArray>
+  <TechAliasArray value="_InfestMorph"/>
+</CAbilMorph>
+<CAbilResearch id="StingerSCBWAttackMoveUpgrade" parent="SCBW_Research" race="Terran">
+  <AbilityCategories index="User1" value="1"/>
+  <InfoArray index="Research1" Time="150">
+    <Resource index="Minerals" value="150"/>
+    <Resource index="Vespene" value="150"/>
+  </InfoArray>
+  <Activity value="UI/Upgrading"/>
+</CAbilResearch>
+<CAbilRally id="RallyHatchery">
+  <TechAliasArray value="_HatchRally"/>
+</CAbilRally>
+<CAbilArmMagazine id="ArmSiloWithNuke">
+  <CalldownEffect value="GhostSCBWNuclearStrike@CalldownDummy"/>
+</CAbilArmMagazine>
+<CAbilEffectTarget id="Feedback">
+  <TargetFilters index="0" value="CanHaveEnergy,Visible,HasEnergy;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+</CAbilEffectTarget>
+<CAbilTrain id="LarvaTrain">
+  <InfoArray index="Train1" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train2" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train3" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train4" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train5" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train7" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train10" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train11" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train12" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train13" Effect="LarvaSCBW@TrainFinish"/>
+  <InfoArray index="Train15" Effect="LarvaSCBW@TrainFinish"/>
+</CAbilTrain>
+<CAbilEffectTarget id="LockOn">
+  <AutoCastValidatorArray value="NotLarvaSCBW"/>
+  <AutoCastValidatorArray value="NotEggSCBW"/>
+  <AutoCastValidatorArray value="NotInterceptorSCBW"/>
+</CAbilEffectTarget>
+<CAbilEffectTarget id="TacNukeStrike">
+  <Effect index="0" value="GhostSCBWNuclearStrike@CalldownDummy"/>
+  <CalldownEffect value="GhostSCBWNuclearStrike@CalldownDummy"/>
+</CAbilEffectTarget>
+<CAbilMorph id="Unsiege">
+  <CmdButtonArray index="Execute">
+    <Flags index="ToSelection" value="1"/>
+  </CmdButtonArray>
+</CAbilMorph>
+<CAbilEffectTarget id="WidowMineAttack">
+  <TechAliasArray value="_Disruptable"/>
+  <AutoCastValidatorArray value="NotEggSCBW"/>
+</CAbilEffectTarget>
+
+</Catalog>

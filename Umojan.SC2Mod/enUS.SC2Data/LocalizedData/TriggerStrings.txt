@@ -1,0 +1,10 @@
+﻿Library/Name/UMOJ=Factions - Umojan
+Trigger/Name/lib_UMOJ_2ED89DE6=Umojan - Init
+Trigger/Name/lib_UMOJ_4F3C81AA=Initialize Umojan Race
+Trigger/Name/lib_UMOJ_C122F4C5=Hexarem Stuck Raptor Fix
+Variable/Name/lib_UMOJ_1C815B59=Raptor
+Variable/Name/lib_UMOJ_304454B5=OrderCount
+Variable/Name/lib_UMOJ_83C113C0=Int
+Variable/Name/lib_UMOJ_92C9804D=Nearby Air
+Variable/Name/lib_UMOJ_9E9AB863=Orders
+Variable/Name/lib_UMOJ_B44F7C73=Hexarem

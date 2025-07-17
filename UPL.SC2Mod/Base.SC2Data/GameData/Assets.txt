@@ -1,0 +1,17 @@
+#UI/HotS_HeroUnit_Status_Bar=Assets\Textures\ui_ingame_hotscampaign_unitstatus_healthbar.dds
+#UI/LotV_HeroUnit_UnitStatusFrame_Protoss=Assets\Textures\ui_ingame_hotscampaign_kerriganframe_prot.dds
+UI/ResourceFrameArmyIcon_UPLL=Assets\Textures\btn-unit-upl-infantryrifle.dds
+UI/ResourceFrameWorkerIcon_UPLL=Assets\Textures\btn-unit-upl-miningdrone.dds
+UI/ResourceFrameSupplyIcon_UPLL=Assets\Textures\icon-supply-upl_nobg.dds
+UI/ArmyButtonIcon_UPLL=Assets\Textures\ui_console_helperbutton_icon_army_UPL.dds
+UI/IdleButtonIcon_UPLL=Assets\Textures\ui_console_helperbutton_icon_worker_UPL.dds
+UI/1v1PanelSupplyIcon_UPLL=Assets\Textures\btn-building-upl-uplgenerator.dds
+UI/1v1PanelRaceIcon_UPLL=Assets\Icons\upl.dds
+UI/LeaderPanelRaceIcon_UPLL=Assets\Icons\upl.dds
+UI/ObserverPreviewFrameRaceIcon_UPLL=Assets\Icons\upl.dds
+UI/ResourceIcon1_UPLL=Assets\Textures\icon-gas-upl-nobg.dds
+WCS/Race_UPLL=Assets\Icons\upl.dds
+WCS/SmallRace_UPLL=Assets\Icons\upl.dds
+WCS/PlayerBarRace_UPLL=Assets\Icons\upl.dds
+WCS/Supply_UPLL=Assets\Textures\btn-building-upl-uplgenerator.dds
+WCS/Workers_UPLL=Assets\Textures\btn-building-upl-uplgenerator.dds

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="HunterTongueLashNotLight">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <RemoveValidatorArray value="DragonHunterTongueLash"/>
+        <MaxStackCount value="65535"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.25"/>
+        <Period value="0.0625"/>
+        <InitialEffect value="HunterTongueLashForceNotLight"/>
+        <PeriodicEffect value="HunterTongueLashForceNotLight"/>
+        <Modification>
+            <ModifyFlags index="HideChangeUI" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VolcanicHarbingerOverload0">
+        <InfoIcon value="Assets\Textures\btn-border-queue-trainingslot01.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="VolcanicHarbingerOverload0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BerserkerMadnessActiveMelee">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-dehaka-intimidatingroar.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="TargetAttacksGround"/>
+        <RemoveValidatorArray value="CasterIsVisible"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1875"/>
+        <Modification MoveSpeedMultiplier="0.5">
+            <BehaviorLinkDisableArray value="BerserkerMadnessActiveRanged"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BerserkerMadnessInactive">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="TargetAttacksGround"/>
+        <RemoveValidatorArray value="CasterIsVisible"/>
+        <RemoveValidatorArray value="BerserkerMadnessInactive"/>
+        <MaxStackCount value="65535"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Duration value="0.1875"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="BerserkerMadnessActiveMelee"/>
+            <BehaviorLinkDisableArray value="BerserkerMadnessActiveRanged"/>
+        </Modification>
+        <TimeScaleSource Value="Global"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArkwyrmTerritorialDive">
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <BuffFlags index="Channeled" value="1"/>
+        <Duration value="1"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="Undetectable" value="1"/>
+            <StateFlags index="Unradarable" value="1"/>
+        </Modification>
+        <ExpireEffect value="ArkwyrmTerritorialDiveApplyBehaviorFinish"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArkwyrmTerritorialDiveFinish">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="1.4"/>
+        <Period value="0.0625"/>
+        <InitialEffect value="ArkwyrmTerritorialDiveSearchArea"/>
+        <PeriodicEffect value="ArkwyrmTerritorialDiveSearchArea"/>
+        <ExpireEffect value="ArkwyrmTerritorialDiveSearchArea"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonHunterRegenesis">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-dehaka-tyrannozor-tyrantprotection.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Modification>
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Bury" value="1"/>
+            <VitalRegenArray index="Life" value="1.4296"/>
+        </Modification>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonLineageRegeneration">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+        <Modification>
+            <VitalRegenArray index="Life" value="0.0117"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray value="NotFullLife"/>
+        <RemoveValidatorArray value="NotUnderConstruction"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrimGliderEmaciate">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\ui_tipicon_campaign_hyb02-lifedrain.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Duration value="0.1875"/>
+        <Modification MoveSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrimGliderEmaciateCaster">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="GrimGliderEmaciate"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrimGliderNullify">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="GrimGliderNullify"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="GrimGliderNullifyIssueOrder"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrimGliderNullifyTarget">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <InitialEffect value="GrimGliderNullifyModifiyUnit"/>
+        <ExpireEffect value="Kill"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Benign" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerPortalSickness">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-blackhole-redcolor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Dragon"/>
+        <RemoveValidatorArray value="NotFrenzied"/>
+        <Duration value="1.2"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerPortalStrength">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-blackhole-redcolor.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Duration value="2.8"/>
+        <DamageResponse ModifyFraction="0.5">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArkwyrmUnload">
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="NoDraw" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArkwyrmUnloadCaster">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="0.0625"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AugmentationPit">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="AugmentationPitCombine"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <MaxStackCount value="65535"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AuroraConduitNetherShock">
+        <Alignment value="Negative"/>
+        <MaxStackCount value="3"/>
+        <Duration value="14"/>
+        <Modification ShieldArmorBonus="-1">
+            <LifeArmorBonus value="-1"/>
+        </Modification>
+        <InfoIcon value="Assets\Textures\ui_tipicon_campaign_zerus03-zurvanlightning.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BerserkerBerserk">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="BerserkerBerserk"/>
+        <Modification MoveSpeedMultiplier="2" SnareMultiplier="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BrimstoneDemolisherInfernalBreath1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Requirements value="BrimstoneDemolisherInfernalBreath"/>
+        <Modification>
+            <WeaponEnableArray value="BrimstoneDemolisherInfernalBreath"/>
+        </Modification>
+        <DisableValidatorArray value="BrimstoneDemolisherInfernalBreathAutocast"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BrimstoneDemolisherInfernalBreath2" parent="BrimstoneDemolisherInfernalBreath1">
+        <Name value="Behavior/Name/BrimstoneDemolisherScorchingBlaze1"/>
+        <Requirements value=""/>
+        <RemoveValidatorArray value="CasterIsAttacking"/>
+        <DisableValidatorArray index="0" removed="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BrimstoneDemolisherInfernalBreath3">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterAttackingTarget"/>
+        <RemoveValidatorArray value="CasterHasEnergy"/>
+        <InitialEffect value="BrimstoneDemolisherInfernalBreathApplyBehavior2"/>
+        <FinalEffect value="BrimstoneDemolisherInfernalBreathRemoveBehavior"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DeepOne4x4">
+        <InitialEffect value="DeepOne4x4CreateUnit"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DeepOne5x5">
+        <InitialEffect value="DeepOne5x5CreateUnit"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DenizenoftheDeepRage">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <BehaviorCategories index="Permanent" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Period value="4.2"/>
+        <PeriodicEffect value="DenizenoftheDeepRageModifyPlayer"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonAscend">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonAscended">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-dehakaspawn.dds"/>
+        <Modification>
+            <ResourceHarvestAmountBonus index="Minerals" value="3"/>
+            <ResourceHarvestAmountBonus index="Vespene" value="2"/>
+            <DeathResponse Effect="DragonAscendedCreatePersistent">
+                <Type index="Timeout" value="0"/>
+            </DeathResponse>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonBuildApplyBehavior">
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray value="NotRazorback2"/>
+        <MaxStackCount value="65535"/>
+        <InitialEffect value="DragonBuildRemoveBehavior"/>
+        <RefreshEffect value="DragonBuildRemoveBehavior"/>
+        <FinalEffect value="KillCaster"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonBuildRemoveBehavior">
+        <Duration value="0.125"/>
+        <ExpireEffect value="KillCaster"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonFission">
+        <RemoveValidatorArray value="NotFullLife"/>
+        <Modification>
+            <DamageDealtFraction index="Melee" value="-0.6"/>
+            <DamageDealtFraction index="Ranged" value="-0.6"/>
+            <DamageDealtFraction index="Splash" value="-0.6"/>
+            <VitalRegenArray index="Life" value="1"/>
+        </Modification>
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-disguise.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonLineage">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Requirements value="DragonLineage"/>
+        <DisableValidatorArray value="NotFullLife"/>
+        <DisableValidatorArray value="NotUnderConstruction"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="DragonDragonLineageApplyBehavior"/>
+        <FinalEffect value="DragonDragonLineageRemoveBehavior"/>
+        <DamageResponse Handled="DragonDragonLineageRemoveBehavior">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FleshrenderInfernalAscend">
+        <Period value="0.0625"/>
+        <InitialEffect value="FleshrenderInfernalAscendIssueOrder"/>
+        <PeriodicEffect value="FleshrenderInfernalAscendIssueOrder"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FleshrenderInfernalEffigy">
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification>
+            <DeathResponse Chance="1" Effect="FleshrenderInfernalAscendSearchArea1">
+                <Type index="Timeout" value="0"/>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse Fatal="1" Handled="FleshrenderInfernalEffigySwitch1">
+            <Chance value="1"/>
+        </DamageResponse>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GenesisPit">
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <MaxStackCount value="65535"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HardenedShield">
+        <DamageResponse>
+            <ExcludeEffectArray value="BrimstoneDemolisherScorchingBlazeDamage2"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HornedMagusFireShieldDamage">
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray value="HornedMagusNoFireShield"/>
+        <RemoveValidatorArray value="HornedMagusNoFireShieldInitial"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.375"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="HornedMagusFireShieldDamage"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerShroud">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HandofPowerShroudDamageTakenTime"/>
+        <RemoveValidatorArray value="HandofPowerShroudWeaponAnimating"/>
+        <RemoveValidatorArray value="HandofPowerShroudWeaponFiring"/>
+        <Duration value="21"/>
+        <Modification MoveSpeedMultiplier="1.5">
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HornedMagusFireShieldInitial">
+        <InfoIcon value="Assets\Textures\btn-ability-stetmann-garytravelingdamageorb.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Duration value="2.8"/>
+        <ExpireEffect value="HornedMagusFireShieldApplyBehavior2"/>
+        <Modification ShieldArmorBonus="3">
+            <LifeArmorBonus value="3"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RazorbackBenign">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="RazorbackBenign"/>
+        <Modification>
+            <StateFlags index="Benign" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RazorbackAscendedSpikedCarapace">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="RazorbackSpikedCarapace"/>
+        </Modification>
+        <DamageResponse Handled="RazorbackAscendedSpikedCarapaceDamage">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RazorbackUrticatingQuills">
+        <InfoFlags index="Hidden" value="1"/>
+        <DamageResponse Handled="RazorbackUrticatingQuillsCreatePersistant" TargetFilters="Visible;Player,Ally,Air">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RazorbackAscendedUrticatingQuills">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="RazorbackUrticatingQuills"/>
+        </Modification>
+        <DamageResponse Handled="RazorbackAscendedUrticatingQuillsCreatePersistant" TargetFilters="Visible;Player,Ally,Air">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SunkenGuardian">
+        <Modification>
+            <WeaponArray Link="SunkenGuardianImpale2"/>
+            <WeaponDisableArray value="SunkenGuardianImpale1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SunkenGuardianImpale">
+        <Alignment value="Negative"/>
+        <Duration value="0.7"/>
+        <Modification MoveSpeedMaximum="0.0625"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoIcon value="Assets\Textures\btn-ability-stetmann-lurkerchannelingspines.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SunkenGuardianCracksModel">
+        <Period value="0.0625"/>
+        <PeriodicEffect value="SunkenGuardianCracksModel"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FlamespitterFervor">
+        <Duration value="2.1"/>
+        <Modification MoveSpeedMultiplier="1.5"/>
+        <InfoIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Fleshrender">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="FleshrenderRange"/>
+        <DisableValidatorArray value="FleshrenderTarget"/>
+        <Modification MoveSpeedMultiplier="2" AccelerationMultiplier="4">
+            <ModifyFlags index="HideChangeUI" value="1"/>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FrontierDeepOneInvigorateCaster">
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray value="CasterHasEnergy"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="FrontierDeepOneInvigorateSearchArea"/>
+        <Duration value="0.5625"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RemovewithCaster">
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <FinalEffect value="KillRemove"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonCracksModel">
+        <Period value="333"/>
+        <PeriodicEffect value="DragonBuildModel"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonTrain1">
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <Period value="0.0625"/>
+        <InitialEffect value="DragonTrainIssueOrder"/>
+        <PeriodicEffect value="DragonTrainIssueOrder"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="NoDraw" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FlamespitterOverheated">
+        <Duration value="2.1"/>
+        <Modification MoveSpeedMultiplier="0.75"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonTrain2">
+        <InitialEffect value="DragonTrainIssueOrder"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="NoDraw" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DeepOne3x3">
+        <InitialEffect value="DeepOne3x3CreateUnit"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrimGliderMortalitysEclipseCaster">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-amoncloud.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Duration value="7"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="GrimGliderMortalitysEclipseSearchArea"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrimGliderMortalitysEclipse">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="0.1875"/>
+        <DamageResponse Fatal="1" Handled="GrimGliderMortalitysEclipseCreateUnit">
+            <Chance value="1"/>
+        </DamageResponse>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrimGliderShade">
+        <Period value="0.25"/>
+        <PeriodicEffect value="GrimGliderShadeSet"/>
+        <Modification AttackSpeedMultiplier="0.5" WeaponScanBonus="500" UnitNameOverride="Behavior/Name/GrimGliderShade">
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <StateFlags index="Summoned" value="1"/>
+            <StateFlags index="SuppressFoodMade" value="1"/>
+            <StateFlags index="SuppressFoodUsed" value="1"/>
+            <StateFlags index="SuppressRequirements" value="1"/>
+            <StateFlags index="SuppressTech" value="1"/>
+            <StateFlags index="SuppressEnergy" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <VitalMaxFractionArray index="Energy" value="-1"/>
+            <AbilClassEnableArray index="CAbilAttack" value="1"/>
+            <AbilClassEnableArray index="CAbilMove" value="1"/>
+            <AbilClassEnableArray index="CAbilStop" value="1"/>
+        </Modification>
+        <KillCredit Effect="GrimGliderMortalitysEclipseCreateUnit" Value="Caster"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-amoncloud.dds"/>
+        <Player Effect="GrimGliderMortalitysEclipseCreateUnit" Value="Caster"/>
+        <InitialEffect value="HornedMagusFrenzyCreatePersistent"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <DeathType value="Blast"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerCrushingGravity">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-swarm-kerrigan-crushinggrip.dds"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1875"/>
+        <Modification>
+            <ModifyFlags index="Detected" value="1"/>
+            <AbilClassDisableArray index="CAbilMerge" value="1"/>
+            <AbilClassDisableArray index="CAbilMergeable" value="1"/>
+            <AbilClassDisableArray index="CAbilMorph" value="1"/>
+            <AbilClassDisableArray index="CAbilMorphPlacement" value="1"/>
+            <AbilClassDisableArray index="CAbilTransport" value="1"/>
+            <AbilLinkEnableArray value="TerranBuild"/>
+            <AbilLinkEnableArray value="BurrowBanelingUp"/>
+            <AbilLinkEnableArray value="DefilerMPUnburrow"/>
+            <AbilLinkEnableArray value="BurrowDroneUp"/>
+            <AbilLinkEnableArray value="BurrowHydraliskUp"/>
+            <AbilLinkEnableArray value="BurrowInfestorUp"/>
+            <AbilLinkEnableArray value="BurrowLurkerMPUp"/>
+            <AbilLinkEnableArray value="BurrowQueenUp"/>
+            <AbilLinkEnableArray value="BurrowRavagerUp"/>
+            <AbilLinkEnableArray value="BurrowRoachUp"/>
+            <AbilLinkEnableArray value="MorphToSwarmHostMP"/>
+            <AbilLinkEnableArray value="WidowMineUnburrow"/>
+            <AbilLinkEnableArray value="BurrowZerglingUp"/>
+        </Modification>
+        <MaxStackCount value="65535"/>
+        <MaxStackCountPerCaster value="1"/>
+        <InitialEffect value="HandofPowerCrushingGravitySet1"/>
+        <RemoveValidatorArray value="NotGravitonBeamd"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerCrushingGravityAir">
+        <RemoveValidatorArray value="HasCrushingGravity"/>
+        <RemoveValidatorArray value="TargetIsAir"/>
+        <TimeScaleSource Value="Global"/>
+        <InitialEffect value="HandofPowerCrushingGravityModifyUnit1"/>
+        <FinalEffect value="HandofPowerCrushingGravitySet2"/>
+        <Modification>
+            <PlaneDelta index="Ground" value="1"/>
+            <PlaneDelta index="Air" value="-1"/>
+        </Modification>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="HandofPowerCrushingGravitySearchArea2"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Alignment value="Negative"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerCrushingGravityGround">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasCrushingGravity"/>
+        <TimeScaleSource Value="Global"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="HandofPowerCrushingGravitySearchArea2"/>
+        <FinalEffect value="HandofPowerCrushingGravityApplyBehavior2"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerCrushingGravityPush">
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1875"/>
+        <FinalEffect value="HandofPowerCrushingGravityApplyBehavior2"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+            <BehaviorLinkDisableArray value="HandofPowerCrushingGravityGround"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerPortal">
+        <Duration value="14"/>
+        <ExpireEffect value="TimedLifeFate"/>
+        <Modification>
+            <StateFlags index="Bury" value="1"/>
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Undetectable" value="1"/>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerPortalActive">
+        <Duration value="18.2"/>
+        <ExpireEffect value="TimedLifeFate"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerPortalTarget1">
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.5"/>
+        <InitialEffect value="HandofPowerPortalApplyForce"/>
+        <PeriodicEffect value="HandofPowerPortalApplyForce"/>
+        <ExpireEffect value="HandofPowerPortalSet2"/>
+        <Modification MoveSpeedMaximum="3" MoveSpeedMinimum="3">
+            <ModifyFlags index="HideChangeUI" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Period value="0.0625"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HandofPowerPortalTarget2">
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.5"/>
+        <InitialEffect value="HandofPowerPortalTeleport"/>
+        <Modification MoveSpeedMinimum="6">
+            <ModifyFlags index="HideChangeUI" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HornedMagusFrenzy">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-dehaka-superroar.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Duration value="4.2"/>
+        <Period value="0.25"/>
+        <InitialEffect value="HornedMagusFrenzyIssueOrder1"/>
+        <PeriodicEffect value="HornedMagusFrenzyCreatePersistent"/>
+        <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5" WeaponScanBonus="500">
+            <StateFlags index="Uncommandable" value="1"/>
+            <LifeArmorBonus value="-2"/>
+        </Modification>
+        <RemoveValidatorArray value="NotFrenzied"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HornedMagusInvigorateCaster">
+        <InfoFlags index="Hidden" value="1"/>
+        <RemoveValidatorArray value="CasterHasEnergy"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="HornedMagusInvigorateSearchArea"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DragonInvigorateTarget">
+        <InfoFlags index="Hidden" value="1"/>
+        <TimeScaleSource Value="Caster"/>
+        <Duration value="1.375"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HornedMagusFireShield">
+        <InfoIcon value="Assets\Textures\btn-ability-stetmann-garytravelingdamageorb.dds"/>
+        <Duration value="14"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="HornedMagusFireShieldSet"/>
+        <Modification ShieldArmorBonus="3">
+            <LifeArmorBonus value="3"/>
+        </Modification>
+        <TimeScaleSource Value="Global"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorJump id="DragonHunter">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <TriggerHeightDeltaMin value="1.5"/>
+        <TriggerHeightDeltaMax value="4.5"/>
+        <InitiateRangeUp value="1.5"/>
+        <InitiateRangeDown value="0.5"/>
+        <JumpRangeMax value="12"/>
+        <Mover value="CliffJumper"/>
+        <MoverUp value="HunterJumpUp"/>
+        <MoverDown value="HunterJumpDown"/>
+        <LandAdjustmentDown value="1"/>
+        <LandArrivalRange value="0.05"/>
+        <LandCheckRadius value="5"/>
+    </CBehaviorJump>
+    <CBehaviorBuff id="HunterTongueLashLight">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <RemoveValidatorArray value="DragonHunterTongueLash"/>
+        <MaxStackCount value="65535"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.5"/>
+        <Period value="0.0625"/>
+        <InitialEffect value="HunterTongueLashForceLight"/>
+        <PeriodicEffect value="HunterTongueLashForceLight"/>
+        <Modification MoveSpeedMinimum="8" AccelerationBonus="1000">
+            <ModifyFlags index="HideChangeUI" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BerserkerMadnessActiveRanged">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-dehaka-intimidatingroar.dds"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="TargetAttacksGround"/>
+        <RemoveValidatorArray value="CasterIsVisible"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1875"/>
+        <Modification MoveSpeedMultiplier="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Negative1Armor">
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification>
+            <LifeArmorBonus value="-1"/>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BerserkerMadness">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Requirements value="BerserkerMadness"/>
+        <DisableValidatorArray value="BerserkerMadnessUnitFilter"/>
+        <DisableValidatorArray value="CasterIsAttacking"/>
+        <TimeScaleSource Value="Global"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="BerserkerMadnessSearchArea"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RazorbackSpikedCarapace">
+        <InfoFlags index="Hidden" value="1"/>
+        <DamageResponse Handled="RazorbackSpikedCarapaceDamage">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SuicidewithCaster">
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <FinalEffect value="Kill"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnseenBeast">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="CasterNotInCombat"/>
+        <DisableValidatorArray value="NoCloakingField"/>
+        <DisableValidatorArray value="NoShroud"/>
+        <DisableValidatorArray value="UnseenBeastDetectors"/>
+        <DisableValidatorArray value="UnseenBeastCombine"/>
+        <DisableValidatorArray value="UnseenBeastProwlAutocast"/>
+        <Modification MoveSpeedMultiplier="0.5">
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Requirements value="UnseenBeastProwl"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnseenBeastExploration">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="UnseenBeastExploration"/>
+            <WeaponDisableArray value="UnseenBeastSpiritSmash"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnseenBeastRadar">
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification Radar="13.625" RadarFilters="-;Player,Ally,Neutral,Missile,Buried,Cloaked,Stasis,Dead,Hidden"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VolcanicHarbingerAscended">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Queueable" value="2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VolcanicHarbingerOverload1" parent="VolcanicHarbingerOverload0">
+        <InfoIcon value="Assets\Textures\btn-border-queue-trainingslot02.dds"/>
+        <DisableValidatorArray index="0" value="VolcanicHarbingerOverload1"/>
+        <Tooltip value="Behavior/Tooltip/VolcanicHarbingerOverload1"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VolcanicHarbingerOverload2" parent="VolcanicHarbingerOverload0">
+        <InfoIcon value="Assets\Textures\btn-border-queue-trainingslot03.dds"/>
+        <DisableValidatorArray index="0" value="VolcanicHarbingerOverload2"/>
+        <Tooltip value="Behavior/Tooltip/VolcanicHarbingerOverload2"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VolcanicHarbingerOverload3" parent="VolcanicHarbingerOverload0">
+        <InfoIcon value="Assets\Textures\btn-border-queue-trainingslot04.dds"/>
+        <DisableValidatorArray index="0" value="VolcanicHarbingerOverload3"/>
+        <Tooltip value="Behavior/Tooltip/VolcanicHarbingerOverload3"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+</Catalog>

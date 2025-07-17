@@ -1,0 +1,2348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectSwitch id="ALLRACE2GriffonInterferenceMatrixAreaSwitch">
+        <ValidatorArray value="ALLRACE2NotSynoidGriffonAndNotEnemy"/>
+        <EditorCategories value="Race:Synoid"/>
+        <CaseArray Validator="TargetIsEnemy" Effect="SynoidGriffonInterferenceMatrixApplyNegativeAreaEffect"/>
+        <CaseArray Validator="TargetIsAllyorPlayer" Effect="SynoidGriffonInterferenceMatrixApplyPositiveAreaEffect"/>
+    </CEffectSwitch>
+    <CEffectEnumArea id="ALLRACE2GriffonInterferenceMatrixAuraSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="-;Self,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="ALLRACE2GriffonInterferenceMatrixAreaSwitch"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="SynoidChagedIronFletcher">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <ArmorReduction value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectSet id="ChargedIronFletcherImpactSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidChagedIronFletcher"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="SynoidChargedIronFletcherLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="ChargedIronFletcherImpactSet"/>
+        <AmmoUnit value="ChargedIronFletcherWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectModifyUnit id="SynoidBloodletterU">
+        <ValidatorArray value="TargetIsEnemy"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactUnit Value="Source"/>
+        <VitalArray index="Energy">
+            <Change value="10"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="SynoidBrainWashLinkApplyHiddenBehaviortoCaster">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Effect="SynoidBrainWashLinkSet" Value="Caster"/>
+        <Behavior value="SynoidCensorBrainWashHiddenCasterBehavior"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidCenserBrainwashApplyPermanentBehavior">
+        <ValidatorArray index="0" value="SynoidBrainwashLink2ndStageCombineNoCasterLinked"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <Behavior value="SynoidMindControlPermanentBehavior2"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="SynoidBrainwashControlLinkLaunchStageTwo">
+        <ValidatorArray index="0" value="SynoidRangeCheckLE9"/>
+        <ValidatorArray value="NotHidden"/>
+        <ValidatorArray value="NotOracleStasisTrapped"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="SynoidCensorBrainwashStage2LinkedBehavior"/>
+        <AmmoUnit value="SynoidBrainwashLinkMissile2ndStage"/>
+        <Movers Link="SynoidCenserBrainwashLink2ndStageMover" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="SynoidBrainWashLinkApplyBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <Behavior value="SynoidCensorBrainWash2ndstageBehavior"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidBrainWashLinkApplyBehaviortoCaster">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Effect="SynoidBrainWashLinkSet" Value="Caster"/>
+        <Behavior value="SynoidCensorBrainWash2ndstageCasterBehavior"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SynoidBrainwashLinkFinalSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SynoidBrainWashLinkApplyBehavior"/>
+        <EffectArray value="SynoidBrainWashLinkApplyBehaviortoCaster"/>
+        <EffectArray value="SynoidBrainwashLinkMindControllingStagePersistent"/>
+        <EffectArray value="SynoidBrainWashLinkApplyHiddenBehaviortoCaster"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="SynoidBrainwashLinkMindControllingStagePersistent">
+        <EditorCategories value=""/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodCount value="140"/>
+        <PeriodicEffectArray value="SynoidBrainwashControlLinkLaunchStageTwo"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodicValidator value="SynoidBrainwashLink2ndStageCombine"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <FinalEffect value="SynoidCenserBrainwashApplyPermanentBehavior"/>
+    </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="SynoidCenserWithdrawBrainwashLink">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SynoidCensorBrainWash2ndstageCasterBehavior"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="SynoidCensorBrainwashStage2LinkedBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Behavior value="SynoidCensorBrainWash2ndstageBehavior"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="SynoidEnthralledAttackSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <ExcludeArray Effect="RetributionFieldSet2" Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="180" Radius="1.25" Effect="Predator2"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="0"/>
+        <SearchFlags index="SameCliff" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="SynoidBrainWasjControlLinkFinalSwitch">
+        <EditorCategories value="Race:Synoid"/>
+        <CaseArray Validator="SynoidBrainwashLinkCombine" Effect="SynoidBrainwashLinkFinalSet"/>
+    </CEffectSwitch>
+    <CEffectLaunchMissile id="SynoidMindControlLinkLaunch">
+        <ValidatorArray index="0" value="SynoidRangeCheckLE13"/>
+        <ValidatorArray value="NotHidden"/>
+        <ValidatorArray value="NotOracleStasisTrapped"/>
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchOffset value="0,0,5"/>
+        <ImpactEffect value="SynoidMindControlTowerLinkedBehavior"/>
+        <AmmoUnit value="SynoidMindControlLinkMissile"/>
+        <Movers Link="Frenzy" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="SynoidBrainWashControlLinkLaunch">
+        <ValidatorArray index="0" value="SynoidRangeCheckLE9"/>
+        <ValidatorArray value="NotHidden"/>
+        <ValidatorArray value="NotOracleStasisTrapped"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="SynoidCensorBrainwashLinkedBehavior"/>
+        <AmmoUnit value="SynoidBrainwashLinkMissile"/>
+        <Movers Link="Frenzy" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="SynoidMindControlLinkPersistent">
+        <EditorCategories value=""/>
+        <InitialEffect value="SynoidMindControlLinkLaunch"/>
+        <FinalEffect value="SynoidMindControlLinkFinalSwitch"/>
+        <PeriodCount value="30"/>
+        <PeriodicEffectArray value="SynoidMindControlLinkLaunch"/>
+        <PeriodicPeriodArray value="0.28"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodicValidator value="SynoidMindControlLinkCombine"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="SynoidBrainWashLinkPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="SynoidBrainWashControlLinkLaunch"/>
+        <FinalEffect value="SynoidBrainWasjControlLinkFinalSwitch"/>
+        <PeriodCount value="30"/>
+        <PeriodicValidator value="SynoidBrainwashLinkCombine"/>
+        <PeriodicEffectArray value="SynoidBrainWashControlLinkLaunch"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="SynoidMindControlLinkSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidMindControlLinkPersistent"/>
+        <EffectArray value="SynoidMindControlTowerLinkedBehaviorInitializaton"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ValidatorArray value="NotFrenzied"/>
+    </CEffectSet>
+    <CEffectDamage id="MindControlStormAntiStructureDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="40"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="MindControlStormApplyBehavior">
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <Behavior value="SynoidMindControlPermanentBehavior"/>
+        <ValidatorArray index="0" value="NotFrenzied"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="SynoidBloodletterPsionicPulseTargetSwitch">
+        <EditorCategories value="Race:Synoid"/>
+        <CaseArray Validator="IsStructure" Effect="SynoidBloodletterPsionicPulseDamageStructure"/>
+        <CaseDefault value="PsionicPulseDamage"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="SynoidGriffonInterferenceMatrixApplyNegativeAreaEffect">
+        <ValidatorArray index="0" value="SourceNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidGriffonInterferenceMatrixUnfriendlyNegativeeffect"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="SynoidKaroleanWalkerAreaSearch2">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="PhalanxU"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="SynoidKaroleanWalkerLaserRetargetingSwitch">
+        <CaseArray Validator="SynoidValidatorTargetIsnotVisible" Effect="SynoidKaroleanWalkerAreaSearch"/>
+        <CaseDefault value="PhalanxU"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SynoidMindControlLinkFinalSwitch">
+        <EditorCategories value="Race:Synoid"/>
+        <CaseArray Validator="SynoidMindControlLinkCombine" Effect="MindControlStormApplyBehavior"/>
+    </CEffectSwitch>
+    <CEffectSet id="SynoidBrainWashLinkSet">
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <EffectArray value="SynoidBrainWashLinkPersistent"/>
+        <EffectArray value="SynoidCensorBrainwashLinkedBehavior"/>
+        <ValidatorArray value="NotFrenzied"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="SynoidMindControlStormPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <FinalEffect value="SynoidMindControlStormSearchAreaStructure"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="SynoidMindControlStormSearchArea"/>
+        <PeriodicPeriodArray value="9"/>
+        <RevealRadius value="2"/>
+        <AINotifyEffect value="Nuke"/>
+        <RevealFacing value="360"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="SynoidMindControlStormSearchArea">
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="MindControlStormApplyBehavior"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="SynoidMindControlStormSearchAreaStructure">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Structure;Player,Ally,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="12" Effect="MindControlStormAntiStructureDamage"/>
+    </CEffectEnumArea>
+    <CEffectSet id="SynoidMindControlStormSet">
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <EffectArray value="SynoidMindControlStormPersistent"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SynoidMindControlTowerLinkedBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Behavior value="SynoidMindControlTowerLinked"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidCensorBrainwashLinkedBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Behavior value="SynoidCensorBrainWashLinkedStageOne"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidMindControlTowerLinkedBehaviorInitializaton">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Behavior value="SynoidMindControlTowerLinked"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidPsionicPulseStunCasterAB">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SynoidBloodLetterCasterStunned"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="SynoidSatcomTowerSpybotCreatePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="SynoidSatcomTowerSpybotSearchArea"/>
+        <PeriodicPeriodArray value="3.5"/>
+        <RevealRadius value="2"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="SynoidSatcomTowerSpybotSearchArea">
+        <EditorCategories value="Race:Synoid"/>
+        <AreaArray Radius="2" Effect="SynoidSatcomeTowerSpybotApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectSet id="SynoidSatcomTowerSpybotSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidSatcomTowerSpybotCreatePersistent"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SynoidSatcomeTowerSpybotApplyBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="MinorDanger" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Behavior value="SatcomTowerSpybotRevealBehaviorTemporary"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidSatcomeTowerSpybotApplyBehaviorFinal">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SatcomTowerSpybotRevealBehaviorPermanent"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidUltrasonicPulseApplyBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Human"/>
+        <Behavior value="SynoidUltrasonicPulseStun"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SynoidUmpireMPDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Massive" value="8"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SynoidUmpireMPLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="SynoidUmpireMPDamage"/>
+        <AmmoUnit value="SynoidUmpireSwarmtMPWeapon"/>
+        <PeriodicPeriod value="0.125"/>
+        <ReturnDelay value="0.125"/>
+        <Movers Link="VikingFighterMissile" IfRangeLTE="6"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="ALLRACE2UmpireRushSpeedBoost">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidUmpireRushActive"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="SynoidBuoyWrapJumpCreatePrecursor">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="PlacementIgnoreBlockers" value="1"/>
+        <CreateFlags index="Precursor" value="1"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="SetFacing" value="1"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="SynoidBuoyWrapJumpTeleportOutABSet"/>
+        <SpawnUnit value="Buoy"/>
+        <SpawnRange value="10"/>
+    </CEffectCreateUnit>
+    <CEffectCreatePersistent id="SynoidBuoyWrapJumpInitialCP2">
+        <ValidatorArray value="CasterNotFungalGrowthed"/>
+        <ValidatorArray value="CasterIsNotYoinked"/>
+        <ValidatorArray value="CasterDoesNotHaveScramblerMissileBehavior"/>
+        <ValidatorArray value="BattlecruiserPlacementCheck"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="SynoidBuoyWrapJumpDelaySuppressWeaponAB"/>
+        <FinalEffect value="SynoidBuoyWrapJumpDelaySuppressWeaponRB2"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="SynoidBuoyWrapJumpCreatePrecursor"/>
+        <PeriodicPeriodArray value="1.4"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="SynoidBuoyWrapJumpDelaySuppressWeaponAB">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SynoidBuoyWrapJumpInitialDelaySuppressWeapon"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="SynoidBuoyWrapJumpDelaySuppressWeaponRB2">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SynoidBuoyWrapJumpInitialDelaySuppressWeapon"/>
+    </CEffectRemoveBehavior>
+    <CEffectTeleport id="SynoidBuoyWrapJumpTeleport">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <ClearQueuedOrders value="0"/>
+        <PlacementAround Effect="SynoidBuoyWrapJumpCreatePrecursor"/>
+        <PlacementRange value="15"/>
+        <TargetLocation Effect="SynoidBuoyWrapJumpCreatePrecursor" Value="TargetPoint"/>
+        <TeleportFlags index="TestFog" value="0"/>
+        <TeleportFlags index="TestZone" value="1"/>
+    </CEffectTeleport>
+    <CEffectApplyBehavior id="SynoidBuoyWrapJumpTeleportAB">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SynoidBuoyTeleport"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidBuoyWrapJumpTeleportInAB">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SynoidWrapJumpTeleportIn"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidBuoyWrapJumpTeleportOutAB2">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SynoidBuoyWrapJumpTeleportOut"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SynoidBuoyWrapJumpTeleportOutABSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidBuoyWrapJumpTeleportOutAB2"/>
+        <EffectArray value="SynoidBuoyWrapJumpTeleportOutTargetAB2"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SynoidBuoyWrapJumpTeleportOutTargetAB2">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidBuoyWrapTeleportOutTargetSuppressCollision"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SynoidBuoyWrapJumpTeleportSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidBuoyWrapJumpTeleport"/>
+        <EffectArray value="SynoidBuoyWrapJumpTeleportAB"/>
+    </CEffectSet>
+    <CEffectDamage id="SynoidBuoyWrapJumpSuicideRemove2">
+        <ImpactLocation Value="SourceUnit"/>
+        <Flags index="Kill" value="1"/>
+        <Death value="Remove"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="SynoidKaroleanWalkerAreaSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="PhalanxU"/>
+        <ImpactLocation Value="TargetUnit"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="SynoidGriffonInterferenceMatrixApplyPositiveAreaEffect">
+        <ValidatorArray index="0" value="SourceNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidGriffonInterferenceMatrixFriendlyBuffEffect"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SynoidCrematorInterceptionBeam" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="6"/>
+        <ExcludeArray Value="Outer"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PsionicPulseCreatePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <InitialDelay value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="PsionicPulseSearchArea"/>
+        <PeriodicPeriodArray value="2"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="PsionicPulseDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="140"/>
+    </CEffectDamage>
+    <CEffectDamage id="SynoidBloodletterPsionicPulseDamageStructure">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="PsionicPulseSearchArea">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="-;Player,Ally,Air,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.4" Effect="SynoidBloodletterPsionicPulseTargetSwitch"/>
+        <RevealerParams Duration="6"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="PsionicPulseSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="PsionicPulseCreatePersistent"/>
+        <EffectArray value="SynoidPsionicPulseStunCasterAB"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectRandomPointInCircle id="SynoidSatComGreaterWarDronesRP2">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <Effect value="SynoidSatComGreaterWarDronesCU2"/>
+        <Radius value="1.2"/>
+    </CEffectRandomPointInCircle>
+    <CEffectSet id="SynoidSatComGreaterWarDronesSet2">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="MercAirDrop"/>
+        <EffectArray value="SynoidGreaterWarDronesTimedLife"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="SynoidSatComGreaterWarDronesCU2">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnEffect value="SynoidSatComGreaterWarDronesSet2"/>
+        <SpawnUnit value="SynoidWarDrone2"/>
+    </CEffectCreateUnit>
+    <CEffectCreatePersistent id="SynoidALLRACE2SatComGreaterWarDronesCP2">
+        <ValidatorArray value="BREitherOr"/>
+        <EditorCategories value="Race:Synoid"/>
+        <InitialEffect value="WarDronesBehaviorCost"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="SynoidSatComGreaterWarDronesRP2"/>
+        <PeriodicPeriodArray value="0.35"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="SynoidARESWeaponsA">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="SynoidWarbotA"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidARESWeaponsB">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="SynoidWarbotB"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SynoidARESWeaponsC">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="SynoidWarbotC"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="BallistaU">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Armored" value="30"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="FireTankCreatePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="SourcePoint"/>
+        <OffsetVectorStartLocation Value="SourcePoint"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="8"/>
+        <PeriodicEffectArray value="FireTankSearchArea"/>
+        <PeriodicOffsetArray value="0,-0.5,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="0,-1.5,0"/>
+        <PeriodicOffsetArray value="0,-2,0"/>
+        <PeriodicOffsetArray value="0,-2.5,0"/>
+        <PeriodicOffsetArray value="0,-3,0"/>
+        <PeriodicOffsetArray value="0,-3.5,0"/>
+        <PeriodicOffsetArray value="0,-4,0"/>
+        <PeriodicOffsetArray value="0,-4.5,0"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicPeriodArray value="0.022"/>
+        <PeriodicPeriodArray value="0.022"/>
+        <PeriodicPeriodArray value="0.022"/>
+        <PeriodicPeriodArray value="0.022"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="FireTankDamage" parent="DU_WEAP_SPLASH">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Light" value="8"/>
+        <Amount value="12"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="FireTankSearchArea" parent="EA_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.65" Effect="FireTankDamage"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FireTankSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="FireTankCreatePersistent"/>
+        <EffectArray value="FireTankDamage"/>
+    </CEffectSet>
+    <CEffectDamage id="PiercerU" parent="DU_WEAP">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Kind value="Ranged"/>
+        <Amount value="12"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PiercerWepPer">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="PiercerU"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="InfernalFlameThrower2" parent="DU_WEAP">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Light" value="6"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="9"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="InfernalFlameThrowerCP2">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="SourcePoint"/>
+        <InitialEffect value="InfernalFlameThrower2"/>
+        <PeriodCount value="20"/>
+        <PeriodicEffectArray value="InfernalFlameThrowerE2"/>
+        <PeriodicOffsetArray value="0,-0.25,0"/>
+        <PeriodicOffsetArray value="0,-0.5,0"/>
+        <PeriodicOffsetArray value="0,-0.75,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="0,-1.25,0"/>
+        <PeriodicOffsetArray value="0,-1.5,0"/>
+        <PeriodicOffsetArray value="0,-1.75,0"/>
+        <PeriodicOffsetArray value="0,-2,0"/>
+        <PeriodicOffsetArray value="0,-2.25,0"/>
+        <PeriodicOffsetArray value="0,-2.5,0"/>
+        <PeriodicOffsetArray value="0,-2.75,0"/>
+        <PeriodicOffsetArray value="0,-3,0"/>
+        <PeriodicOffsetArray value="0,-3.25,0"/>
+        <PeriodicOffsetArray value="0,-3.5,0"/>
+        <PeriodicOffsetArray value="0,-3.75,0"/>
+        <PeriodicOffsetArray value="0,-4,0"/>
+        <PeriodicOffsetArray value="0,-4.25,0"/>
+        <PeriodicOffsetArray value="0,-4.5,0"/>
+        <PeriodicOffsetArray value="0,-4.75,0"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicOffsetArray value="0,-5.25,0"/>
+        <PeriodicOffsetArray value="0,-5.5,0"/>
+        <PeriodicOffsetArray value="0,-5.75,0"/>
+        <PeriodicOffsetArray value="0,-6,0"/>
+        <PeriodicOffsetArray value="0,-6.5,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="InfernalFlameThrowerE2">
+        <EditorCategories value="Race:Synoid"/>
+        <ExcludeArray Value="Target"/>
+        <IncludeArray Effect="InfernalFlameThrowerCP2" Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Effect="InfernalFlameThrower2"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="PhalanxSpellU" parent="DU_WEAP">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="2"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PhalanxSpellPer">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetOuterUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialDelay value="1"/>
+        <PeriodCount value="12"/>
+        <PeriodicEffectArray value="PhalanxSpellU"/>
+        <PeriodicPeriodArray value="0.1"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="CrematorDefenseApplyBehavior">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SynoidPointDefenseReady"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="CrematorDefenseDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <Marker Link="Weapon/SJPointDefenseLaser">
+            <MatchFlags index="Link" value="1"/>
+        </Marker>
+        <ModifyFlags index="Hide" value="1"/>
+        <ModifyFlags index="NullifyMissile" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="CrematorDefenseDummy">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="CrematorDefenseSet">
+        <ValidatorArray value="SynoidPointDefenseDroneUnitFilter"/>
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="CrematorDefenseDamage"/>
+        <EffectArray value="CrematorDefenseDummy"/>
+        <EffectArray value="CrematorDefenseApplyBehavior"/>
+    </CEffectSet>
+    <CEffectDamage id="OscilatorLaser" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="ServitorBU">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="4"/>
+        <AreaArray Radius="0.8" Fraction="1"/>
+        <IncludeArray Effect="SynoidHailstormMissilePodsCreatePersistent2" Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Ground,Missile,Stasis,Dead,Invulnerable,Benign,Passive"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="HellchoirMissilePodsLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="ServitorBU"/>
+        <AmmoUnit value="HellchoirMissiles"/>
+        <Movers Link="HellchoirWeaponMover" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="HellchoirMissilePodsCreatePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="MakePrecursor"/>
+        <EffectArray value="HellchoirMissilePodsLM"/>
+        <EffectArray value="KillTargetDeathNormal"/>
+    </CEffectSet>
+    <CEffectDamage id="MagMineDetonationDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchLocation Value="CasterUnitOrPoint"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <ArmorReduction value="1"/>
+        <Type value="Normal"/>
+        <Amount value="25"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="4" Fraction="1"/>
+        <AreaArray Radius="3" Fraction="3"/>
+        <AreaArray Radius="1.25" Fraction="5"/>
+        <SearchFilters value="-;Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <DamageInheritEffect value="Suicide"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="PhalanxProtectAB">
+        <ValidatorArray index="0" value="NotPhalanx"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="PhalanxProtect"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="PhalanxProtectSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Ground,Visible;Self,Neutral,Enemy,Structure,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="PhalanxProtectAB"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="PhalanxU" parent="DU_WEAP">
+        <ValidatorArray value="CasterNotDead"/>
+        <ValidatorArray value="TargetIsVisible"/>
+        <ValidatorArray value="CasterisLessorEqual14"/>
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <Kind value="Ranged"/>
+        <Amount value="65"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PhalanxWeapPer">
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialDelay value="1.7"/>
+        <InitialEffect value="SynoidKaroleanWalkerLaserRetargetingSwitch"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="HealEmitterCost">
+        <EditorCategories value="Race:Synoid"/>
+        <VitalArray index="Energy">
+            <Change value="-2"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectCreatePersistent id="HealEmitterPersistentcost">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="CasterUnit"/>
+        <ExpireEffect value="HealEmitterCost"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="AutoTurretReleaseLM2">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <FinishEffect value="RemovePrecursor"/>
+        <AmmoUnit value="MycoChoirReleaseWeapon"/>
+        <PlaceholderUnit value="AutoTurret"/>
+    </CEffectLaunchMissile>
+    <CEffectModifyUnit id="BirthDefaultFacing">
+        <EditorCategories value="Race:Synoid"/>
+        <FacingLocation Value="CasterUnit"/>
+        <FacingType value="LookAt"/>
+        <FacingAdjustment value="180"/>
+    </CEffectModifyUnit>
+    <CEffectCreatePersistent id="BlimpSpotlightPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <OwningPlayer Value="Source"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="30"/>
+        <PeriodicEffectArray value="BlimpSpotlightSearchArea"/>
+        <PeriodicPeriodArray value="0.3"/>
+        <RevealRadius value="3"/>
+        <RevealFlags index="Unfog" value="1"/>
+        <RevealFlags index="Detect" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="BloodletterBleedU">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Amount value="2"/>
+        <Death value="Silentkill"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="BloodletterBleedAB">
+        <ValidatorArray index="0" value="NotStructureTarget"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="BloodletterBleed"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="7.265"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="BloodletterBleedSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="BloodletterU"/>
+        <EffectArray value="BloodletterBleedAB"/>
+        <EffectArray value="SynoidBloodletterU"/>
+    </CEffectSet>
+    <CEffectSet id="BombBotPiercingCharge">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="PiercingCharge"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="BlimpSplotlightAB">
+        <ValidatorArray index="0" value=""/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="Spotted"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="BlimpSpotlightSearchArea">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="BlimpSplotlightAB"/>
+    </CEffectEnumArea>
+    <CEffectModifyUnit id="AnathemaAshigaraWeaponCost">
+        <EditorCategories value="Race:Synoid"/>
+        <VitalArray index="Energy">
+            <Change value="-2"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectCreateUnit id="BuildMagMineCU">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="MagMineSynoid"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="BuoyStunInitial">
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ChopperSharpshooterASearch">
+        <EditorCategories value="Race:Synoid"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <LaunchLocation Value="CasterUnit"/>
+        <ExcludeArray/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSMarker"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="6" Effect="ChopperSharpshooterBPersistent"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="ChopperSharpshooterASet">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="ChopperSharpshooterAU"/>
+        <ExpireDelay value="0.25"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <ExpireEffect value="ChopperSharpshooterASearch"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="ChopperSharpshooterAU">
+        <EditorCategories value="Race:Synoid"/>
+        <OwningPlayer Value="Source"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Amount value="41"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="ChopperSharpshooterBPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="ChopperSharpshooterAU"/>
+        <ExpireDelay value="0.25"/>
+        <ExpireEffect value="ChopperSharpshooterBSearch"/>
+        <ValidatorArray value="noMarkers"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ChopperSharpshooterBSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ExcludeArray/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="6" Effect="ChopperSharpshooterCPersistent"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <TargetSorts>
+            <SortArray value="TSMarker"/>
+        </TargetSorts>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ChopperSharpshooterCFinalSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ExcludeArray/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="6" Effect="ChopperSharpshooterAU"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <TargetSorts>
+            <SortArray value="TSMarker"/>
+        </TargetSorts>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="ChopperSharpshooterCPersistent">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="ChopperSharpshooterAU"/>
+        <ExpireDelay value="0.25"/>
+        <ExpireEffect value="ChopperSharpshooterCFinalSearch"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="ChopperU" parent="DU_WEAP">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="4"/>
+        <Kind value="Ranged"/>
+        <Amount value="18"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="ChopperWeapPer">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="ChopperU"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="SynoidBioBattery">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <InitialEffect value="SynoidBioBatteryDamage"/>
+        <PeriodicEffectArray value="SynoidBioBatteryDamage"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SynoidBioBatteryDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <DamageModifierSource Value="Caster"/>
+        <AttributeBonus index="Light" value="7"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="7"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="SynoidMineWeaponSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Air;Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSDistanceToTarget"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="1" Effect="SynoidMineWeaponSearchSet"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="SynoidMineWeaponSearchDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="60"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectSet id="SynoidMineWeaponSearchSet">
+        <EffectArray value="SynoidMineWeaponSearchDamage"/>
+        <EffectArray value="Suicide"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="SynoidMineAttack">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="CasterPoint"/>
+        <InitialEffect value="SynoidMineAttackLM"/>
+        <InitialOffset value="0,-25,0"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+    </CEffectCreatePersistent>
+    <CEffectSet id="SynoidMineAttackImpactDummy">
+        <TargetLocationType value="Point"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="SynoidMineAttackLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="SynoidMineAttackImpactDummy"/>
+        <AmmoUnit value="SynoidMineWeapon"/>
+        <Movers Link="SynoidMagMineMover" IfRangeLTE="25"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="SynoidMineAttackSet">
+        <EffectArray value="SynoidMineAttackLM"/>
+        <EffectArray value="SynoidMineDie"/>
+        <TargetLocationType value="Point"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectSet>
+    <CEffectDamage id="SynoidMineDie">
+        <ImpactLocation Value="SourceUnit"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+        <Death value="Timeout"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="UltrasonicPulsePersistent">
+        <EditorCategories value="Race:Human"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="UltrasonicPulseSearchArea"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="UltrasonicPulseSearchArea">
+        <EditorCategories value="Race:Human"/>
+        <SearchFilters value="-;Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="SynoidUltrasonicPulseApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="VarangianU" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="7"/>
+        <Kind value="Ranged"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="SynoidGreaterWarDroneDamage2" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Splash"/>
+        <Amount value="3"/>
+        <Death value="Fire"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <SearchFilters value="-;Self,Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="ALLRACE2GreaterWarDroneImpactDamage2">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <SearchFilters value="-;Self,Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SynoidGreaterWarDroneLM2">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="SynoidGreaterWarDroneSet2"/>
+        <AmmoUnit value="SynoidSJGriffonWeapon22"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="SynoidGreaterWarDronePersistent2">
+        <EditorCategories value="Race:Synoid"/>
+        <ExpireEffect value="SynoidGreaterWarDroneDamage2"/>
+        <PeriodCount value="1"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="SynoidGreaterWarDroneSet2">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="ALLRACE2GreaterWarDroneImpactDamage2"/>
+        <EffectArray value="SynoidGreaterWarDronePersistent2"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SynoidGreaterWarDronesTimedLife">
+        <ValidatorArray index="0" value="CalldownMULETimedLifeTargetFilters"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="MULETimedLife"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="42"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="VarangianBLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="VarangianU"/>
+        <AmmoUnit value="SynoidWarbotBMissile2"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="VarangianBPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="VarangianBLM"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="WarDronesTimedLife2">
+        <ValidatorArray index="0" value="CalldownMULETimedLifeTargetFilters"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="MULETimedLife"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="89"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="ZerglingHoloReleaseLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="HoloZerglingArrival"/>
+        <AmmoUnit value="ZerglingHoloRelease"/>
+        <Movers Link="SynoidConsumeDNAFeedback"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="HoloZerglingSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="HoloZerglingAB"/>
+        <EffectArray value="ZerglingHoloReleaseLM"/>
+        <EffectArray value="MakePrecursor"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="HellRoundsBuildingFireAB">
+        <ValidatorArray index="0" value="IsStructure"/>
+        <ValidatorArray value="IsNotFriendly"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SetBuildingBurndown"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="15"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="HellRoundsImpactSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="HellRoundsU"/>
+        <EffectArray value="HellRoundsBuildingFireAB"/>
+    </CEffectSet>
+    <CEffectDamage id="HellRoundsU" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Visibility value="Visible"/>
+        <Amount value="6"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="HellRoundsLLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="HellRoundsU"/>
+        <AmmoUnit value="MengskWraithAirWeaponLeft2"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="HellRoundsPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="HellRoundsLLM"/>
+        <PeriodicEffectArray value="HellRoundsRLM"/>
+        <PeriodicPeriodArray value="0.15"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="HellRoundsRLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="HellRoundsU"/>
+        <AmmoUnit value="MengskWraithAirWeaponRight2"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="AnathemaHomingWeaponLMSet">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="3"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="AnathemaHomingWeaponLeftLM"/>
+        <PeriodicEffectArray value="AnathemaHomingWeaponRightLM"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.3"/>
+        <PeriodicPeriodArray value="0.3"/>
+        <PeriodicPeriodArray value="0.3"/>
+        <PeriodicPeriodArray value="0.3"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="AnathemaHomingWeaponLeftLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="AnathemaHomingWeaponDamage"/>
+        <AmmoUnit value="AnathemaHomingWeaponLM"/>
+        <Movers Link="AnathemaSlowLeftLMWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="AnathemaHomingWeaponRightLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="AnathemaHomingWeaponDamage"/>
+        <AmmoUnit value="AnathemaHomingWeaponLM"/>
+        <Movers Link="AnathemaSlowRightLMWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="AnathemaHomingWeaponDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="4.5"/>
+        <Visibility value="Visible"/>
+        <Amount value="14"/>
+        <Death value="Fire"/>
+        <IncludeArray Value="Target"/>
+        <SearchFilters value="Ground;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="AnathemaClusterWeaponDebugLaunchCostCP">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="CasterUnit"/>
+        <ExpireEffect value="AnathemaAshigaraWeaponCost"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="AnathemaLightsOut">
+        <ValidatorArray index="0" value="CasterLT10Energy"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="LightsOut"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MycoChoirBuildImpactDummy">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="CreepTumorBuildRB"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="MycoChoirBuildLaunchMissile">
+        <ValidatorArray value="NotDead"/>
+        <EditorCategories value="Race:Synoid"/>
+        <FinishEffect value="CreepTumorBuildRB"/>
+        <Flags index="TravelValidation" value="1"/>
+        <AmmoUnit value="MycoChoirBuildMissile"/>
+        <Movers Link="MycoChoirBuildWeaponMover"/>
+        <ImpactEffect value="MycoChoirBuildImpactDummy"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="MycoChoirLaunchMissileSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="CreepTumorBuildAB"/>
+        <EffectArray value="MycoChoirBuildLaunchMissile"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="HealEmitter">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="HealEmitterChargeLaunch"/>
+        <SpawnUnit value="HealEmitter"/>
+        <SpawnRange value="1.5"/>
+        <ValidatorArray value="BREitherOr"/>
+    </CEffectCreateUnit>
+    <CEffectLaunchMissile id="HealEmitterLM">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <FinishEffect value="RemovePrecursor"/>
+        <AmmoUnit value="WeaponHealEmitter"/>
+        <Movers Link="D8ChargeWeaponCloseRange" IfRangeLTE="1"/>
+        <Movers Link="D8ChargeWeapon" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="HealEmitterChargeLaunch">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="HealEmitterLM"/>
+        <EffectArray value="MakePrecursor"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="HealEmitterAB">
+        <ValidatorArray index="0" value="LifeNotFull"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="HealingEmitterImpact"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="HealEmitteMU">
+        <EditorCategories value="Race:Synoid"/>
+        <VitalArray index="Life">
+            <Change value="10"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="HealEmitterSA">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Visible;Self,Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4.5" Effect="HealEmitterSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="HealEmitterSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="HealEmitterAB"/>
+        <EffectArray value="HealEmitteMU"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="HoloZergling">
+        <EditorCategories value="Race:Synoid"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="HoloZerglingCE"/>
+        <PeriodicPeriodArray value="0.09"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="HoloZerglingAB">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="AutoTurretTimedLife"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="25"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="HoloZerglingCE">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnEffect value="HoloZerglingSet"/>
+        <SpawnUnit value="ZerglingHolo"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="PlasmaCutter" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="Prospector" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="ReqSA">
+        <EditorCategories value="Race:Synoid"/>
+        <AreaArray Radius="5" Effect="ReqAB"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="Suicide2">
+        <ImpactLocation Value="SourceUnit"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectDamage>
+    <CEffectRemoveBehavior id="SatCinSpyBotsCost">
+        <ValidatorArray index="0" value="UnknownEffect2TargetFilters"/>
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="RequisitionRes"/>
+        <Count value="25"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="AnathemaEMPStunApply">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="LightsOut"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="BuoySiegeSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="BuoyStunInitial"/>
+    </CEffectSet>
+    <CEffectDamage id="WarDroneDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="3"/>
+        <Death value="Fire"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <SearchFilters value="-;Self,Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AttributeBonus index="Light" value="2"/>
+        <ArmorReduction value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarDroneImpactDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Light" value="2"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="3"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+        <SearchFilters value="-;Self,Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="WarDroneLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="WarDroneSet"/>
+        <AmmoUnit value="SJGriffonWeapon2"/>
+    </CEffectLaunchMissile>
+    <CEffectCreateUnit id="SatComWarDronesCU">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnEffect value="SatComWarDronesSet"/>
+        <SpawnUnit value="WarDrone"/>
+    </CEffectCreateUnit>
+    <CEffectRandomPointInCircle id="SatComWarDronesRP">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <Effect value="SatComWarDronesCU"/>
+        <Radius value="1.5"/>
+    </CEffectRandomPointInCircle>
+    <CEffectCreatePersistent id="SatComWarDronesCP">
+        <ValidatorArray value="BREitherOr"/>
+        <EditorCategories value="Race:Synoid"/>
+        <InitialEffect value="WarDronesBehaviorCost"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="SatComWarDronesRP"/>
+        <PeriodicPeriodArray value="0.35"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="SatComWarDronesSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="MercAirDrop"/>
+        <EffectArray value="WarDronesTimedLife2"/>
+    </CEffectSet>
+    <CEffectDamage id="InterceptorDroneImpactU">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="40"/>
+        <AreaArray Radius="1" Fraction="0.75" Validator="TargetIsGround"/>
+        <AreaArray Radius="2" Fraction="1" Validator="TargetIsAir"/>
+        <AreaArray Radius="4" Fraction="0.5" Validator="TargetIsAir"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Stasis,Dead,Hidden,Invulnerable"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="MidasTouchPrep">
+        <EditorCategories value="Race:Synoid"/>
+        <ExpireDelay value="1"/>
+        <ExpireEffect value="MidasTouchSet"/>
+        <PeriodCount value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MidasTouchSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="MidasTouchSA"/>
+        <EffectArray value="Suicide"/>
+    </CEffectSet>
+    <CEffectEnumArea id="MidasTouchSA">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4" Effect="midastouch"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="CorsairMPDisruptionWebApply2">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Behavior value="CorsairMPDisruptionWeb"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="CorsairMPDisruptionWebCreatePersistent2">
+        <EditorCategories value="Race:Synoid"/>
+        <InitialEffect value="CorsairMPDisruptionWebSearch2"/>
+        <PeriodCount value="40"/>
+        <PeriodicEffectArray value="CorsairMPDisruptionWebSearch2"/>
+        <PeriodicPeriodArray value="0.25"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumTransport id="CorsairMPDisruptionWebIterateTransport2">
+        <ValidatorArray value="IsBunker"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Marker Link="Effect/DisablingCloudIterateTransport"/>
+        <Effect value="CorsairMPDisruptionWebApply2"/>
+    </CEffectEnumTransport>
+    <CEffectEnumArea id="CorsairMPDisruptionWebSearch2">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Ground;Player,Ally,Item,Dead,Hidden"/>
+        <AreaArray Radius="1.8" Effect="CorsairMPDisruptionWebSet2"/>
+    </CEffectEnumArea>
+    <CEffectSet id="CorsairMPDisruptionWebSet2">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="CorsairMPDisruptionWebApply2"/>
+        <EffectArray value="CorsairMPDisruptionWebIterateTransport2"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="EMPEmitterAB">
+        <ValidatorArray index="0" value=""/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="EMPEmitterDrain"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="EMPEmitterMU">
+        <EditorCategories value="Race:Synoid"/>
+        <VitalArray index="Shields">
+            <Change value="-1"/>
+        </VitalArray>
+        <VitalArray index="Energy">
+            <Change value="-1.5"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectSet id="EMPEmitterSet">
+        <ValidatorArray value="CanHaveShieldsOrEnergy"/>
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="EMPEmitterAB"/>
+        <EffectArray value="EMPEmitterMU"/>
+    </CEffectSet>
+    <CEffectEnumArea id="EMPEmitterSA">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="EMPEmitterSet"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="ExplosiveGeneratorDropAB">
+        <ValidatorArray index="0" value="UnknownValidator"/>
+        <ValidatorArray value="NotExplosiveGenerator"/>
+        <ValidatorArray value="NotExplosiveGeneratorTimer"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="ExplosiveGeneratorTimer"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="HailfireMissileOrdinanceCU">
+        <EditorCategories value="Race:Synoid"/>
+        <CreateFlags index="Birth" value="0"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <CreateFlags index="NormalizeSpawnOffset" value="0"/>
+        <SpawnEffect value="HailfireMissileOrdinanceDummySet"/>
+        <SpawnUnit value="DummyUnit"/>
+    </CEffectCreateUnit>
+    <CEffectCreatePersistent id="HailfireMissileOrdinanceDummy">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Effect="HailfireMissileOrdinanceLM"/>
+        <ExpireDelay value="5"/>
+        <PeriodicValidator value="SourceNotDead"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="HailfireMissileOrdinanceDummySet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="MakePrecursor"/>
+        <EffectArray value="HailfireMissileOrdinanceRPIC"/>
+        <EffectArray value="KillTargetDeathNormal"/>
+    </CEffectSet>
+    <CEffectRandomPointInCircle id="HailfireMissileOrdinanceRPIC">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <Effect value="HailfireMissileOrdinanceLM"/>
+        <Radius value="1.5"/>
+    </CEffectRandomPointInCircle>
+    <CEffectSet id="IronFletcherImpactSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="IronFletcher"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="IronFletcherStackAB">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="IronFletcherStack"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="MissileBuild">
+        <EditorCategories value="Race:Synoid"/>
+        <Cost Abil="MissileStrike,Execute" ChargeCountUse="-1"/>
+    </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="MortarArtilleryMissileSpeedStackRBUnnamed">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ImmortalTaldarimMissileSpeedStack"/>
+        <Count value="16"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="HailfireMissileOrdinanceDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Light" value="27"/>
+        <AttributeBonus index="Armored" value="7"/>
+        <Amount value="17"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <IncludeArray Effect="HailfireMissileOrdinanceCreatePersistent" Value="Target"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="HailfireMissileOrdinanceLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="HailfireMissileOrdinanceDamage"/>
+        <AmmoUnit value="MortarArtilleryWeaponMissile"/>
+        <Movers Link="HailfireArtilleryWeaponMover" IfRangeLTE="500"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <LaunchEffect value="HailfireMissileOrdinanceDummy"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="HailfireMissileOrdinanceCreatePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <InitialEffect value="HailfireMissileOrdinanceLM"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="HailfireMissileOrdinanceCU"/>
+        <PeriodicPeriodArray value="0.17"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="SeverPsiLinkABA">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="PsiLinkSeveredCT"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpybotsApplyBehavior">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SpyBotRevelation"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SpybotsDummyDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Flags index="NoDamageTimerReset" value="1"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="SpyBotsSearch">
+        <ValidatorArray value="BREitherOr"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="SpybotsSet"/>
+        <AreaArray>
+            <MaxCount value="1"/>
+            <Radius value="6"/>
+            <RadiusBonus value="6"/>
+            <Effect value="SatCinSpyBotsCost"/>
+        </AreaArray>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="SatComWarDronesPsiLink">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="WarDronesPsiLink"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="40"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="Predator2">
+        <EditorCategories value="Race:Synoid"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="35"/>
+        <Death value="Eviscerate"/>
+        <AttributeBonus index="Armored" value="28"/>
+        <ExcludeArray Value="Target"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="PsiIndoctrinatorAOEAbilAB">
+        <ValidatorArray index="0" value="TargetIsAllyorPlayer"/>
+        <EditorCategories value="Race:Synoid"/>
+        <OwningPlayer Value="Source"/>
+        <Behavior value="PsionicFrenzy"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="10"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PsiIndoctrinatorAOEAbilABNeg">
+        <ValidatorArray index="0" value="TargetIsEnemy"/>
+        <EditorCategories value="Race:Synoid"/>
+        <OwningPlayer Value="Source"/>
+        <Behavior value="PsionicInhibition"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="7"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="PsiIndoctrinatorAOEAbilPrep">
+        <ValidatorArray value="BREitherOr"/>
+        <EditorCategories value="Race:Synoid"/>
+        <FinalEffect value="PsiIndoctrinatorAOEAbilSA"/>
+        <PeriodCount value="1"/>
+        <PeriodicPeriodArray value="3"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="PsiIndoctrinatorAOEAbilSA">
+        <ValidatorArray value="BREitherOr"/>
+        <EditorCategories value="Race:Synoid"/>
+        <OwningPlayer Value="Source"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="Visible;Self,Ally,Neutral,Robotic,Structure,Missile,Stasis,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="PsiIndoctrinatorAOEAbilAB"/>
+        <AreaArray Radius="2.5" Effect="PsiIndoctrinatorAOEAbilABNeg"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="RetributionFieldDamage2">
+        <EditorCategories value="Race:Synoid"/>
+        <ShieldBonus value="25"/>
+        <VitalBonus index="Energy" value="25"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="RetributionFieldSearch2">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="RetributionFieldDamage2"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="RetributionFieldSet2">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidEnthralledAttackSearch"/>
+        <EffectArray value="Predator2"/>
+    </CEffectSet>
+    <CEffectDestroyPersistent id="SpybotsDestroy">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Effect value="RevelationPersistent"/>
+        <Count value="1"/>
+        <Radius value="0.5"/>
+    </CEffectDestroyPersistent>
+    <CEffectCreatePersistent id="SpybotsPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <ExpireDelay value="28"/>
+        <RevealRadius value="3"/>
+        <RevealFlags index="Unfog" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="SpybotsSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SpybotsApplyBehavior"/>
+        <EffectArray value="SpybotsPersistent"/>
+        <EffectArray value="SpybotsDummyDamage"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="AnathemaClusterWeaponPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="CasterUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="120"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="AnathemaClusterWeaponLeftSearch"/>
+        <PeriodicEffectArray value="AnathemaClusterWeaponRightSearch"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.05"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="AnathemaClusterWeaponLeftLM">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchEffect value="AnathemaClusterWeaponDebugLaunchCostCP"/>
+        <ImpactEffect value="AnathemaClusterWeaponDamage"/>
+        <Flags index="ValidateWeapon" value="0"/>
+        <AmmoUnit value="AnathemaClusterWeapon"/>
+        <Movers Link="AnathemaLeftLMWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="AnathemaClusterWeaponLeftSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <IncludeArray Value="Target"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="6" Effect="AnathemaClusterWeaponLeftLM"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="AnathemaLightningStorm">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <InitialDelay value="0.5"/>
+        <InitialEffect value="AnathemaEMPStunApply"/>
+        <PeriodCount value="13"/>
+        <PeriodicEffectArray value="AnathemaLightningStormSearch"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="SynoidYamato2">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidYamatoA2"/>
+        <EffectArray value="SynoidYamatoB2"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="SynoidYamatoA2">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value="SynoidFirepoolAAOE"/>
+        <AmmoUnit value="SynoidYamatoAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="BloodletterU" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Kind value="Ranged"/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="InterceptorDroneAB">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SynoidPointDefenseReady"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="InterceptorDroneMissileDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <Marker Link="Weapon/SJPointDefenseLaser">
+            <MatchFlags index="Link" value="1"/>
+        </Marker>
+        <ModifyFlags index="Hide" value="1"/>
+        <ModifyFlags index="NullifyMissile" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="InterceptorDroneDummy">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="InterceptorDroneSet">
+        <ValidatorArray value="SynoidPointDefenseDroneUnitFilter"/>
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="InterceptorDroneImpactU"/>
+        <EffectArray value="InterceptorDroneMissileDamage"/>
+        <EffectArray value="InterceptorDroneDummy"/>
+        <EffectArray value="InterceptorDroneAB"/>
+    </CEffectSet>
+    <CEffectDamage id="SynoidFirepoolAAOE">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="90"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1.5" Fraction="1"/>
+        <SearchFilters value="Ground;Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SynoidYamatoB2">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value="SynoidYamatoBAOE"/>
+        <AmmoUnit value="SynoidYamatoBWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="SynoidYamatoBAOE">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <PeriodCount value="36"/>
+        <PeriodicEffectArray value="SynoidFirePoolU"/>
+        <PeriodicPeriodArray value="0.8"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="SynoidLightningStormAB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="AnathemaLightningStormStun"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="AnathemaLightningStormDamage" parent="DU_WEAP">
+        <ValidatorArray value="IsMissile"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="AnathemaLightningStormSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" RadiusBonus="0.5" Effect="AnathemaLightningStormSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="AnathemaLightningStormSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="AnathemaLightningStormDamage"/>
+        <EffectArray value="SynoidLightningStormAB"/>
+    </CEffectSet>
+    <CEffectDamage id="AnathemaClusterWeaponDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Light" value="12"/>
+        <Visibility value="Visible"/>
+        <Amount value="12"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="AnathemaClusterWeaponRightLM">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchEffect value="AnathemaClusterWeaponDebugLaunchCostCP"/>
+        <ImpactEffect value="AnathemaClusterWeaponDamage"/>
+        <Flags index="ValidateWeapon" value="0"/>
+        <AmmoUnit value="AnathemaClusterWeapon"/>
+        <Movers Link="AnathemaRightLMWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="AnathemaClusterWeaponRightSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <IncludeArray Value="Target"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="6" Effect="AnathemaClusterWeaponRightLM"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="SynoidFirePoolU" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Light" value="5"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="10"/>
+        <Death value="Fire"/>
+        <AreaArray Radius="1.5" Fraction="1"/>
+        <SearchFilters value="Ground;Ally,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="UmpireBombotDisruptionAB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="BombDisruption"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="UmpireShieldingEndSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="UmpireShieldingBeamEnd"/>
+        <EffectArray value="ShieldingEndCost"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="ShieldingEndCost">
+        <ValidatorArray value="ShieldGZero"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="-50"/>
+        </VitalArray>
+        <Chance value="0"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="IronFletcher">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+        <AttributeBonus index="Light" value="15"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="IronFletcherLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="IronFletcherImpactSet"/>
+        <AmmoUnit value="IronFletcherWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="ReqAB">
+        <ValidatorArray index="0" value="RequisitionUser"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="RequisitionRes"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="WarDronesBehaviorCost">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="RequisitionRes"/>
+        <Count value="75"/>
+    </CEffectRemoveBehavior>
+    <CEffectCreatePersistent id="WarDronePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <ExpireEffect value="WarDroneDamage"/>
+        <PeriodCount value="1"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="WarDroneSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="WarDroneImpactDamage"/>
+        <EffectArray value="WarDronePersistent"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="WarhoundSawbladeAB">
+        <ValidatorArray index="0" value="TargetIsGround"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="WarhoundSawblade"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="UnpoweredApplyBehavior">
+        <ValidatorArray index="0" value="BuildRangeUnpoweredAlias"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidPowered"/>
+    </CEffectApplyBehavior>
+    <CEffectAddTrackedUnit id="BuildRangeTrackLarge">
+        <EditorCategories value="Race:Synoid"/>
+        <BehaviorLink value="SynoidLargeBuild"/>
+        <TrackedUnit Value="Origin"/>
+    </CEffectAddTrackedUnit>
+    <CEffectAddTrackedUnit id="BuildRangeTrackLarge2">
+        <EditorCategories value="Race:Synoid"/>
+        <BehaviorLink value="SynoidMediumBuild"/>
+        <TrackedUnit Value="Origin"/>
+    </CEffectAddTrackedUnit>
+    <CEffectApplyBehavior id="ExplosiveGeneratorAB">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="ExplosiveGenerator"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="ExplosiveGeneratorDmg">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Light" value="20"/>
+        <KindSplash value="Splash"/>
+        <Amount value="45"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="3.5" Fraction="1"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Buried,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="CK27Rifle" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Kind value="Ranged"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="HellstormAAM">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="HellstormAAMLM"/>
+        <PeriodicPeriodArray value="0.1"/>
+        <PeriodicPeriodArray value="0.3"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="HellstormAAMLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="HellstormAAMDmg"/>
+        <AmmoUnit value="HellstormTurretAirWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="HellstormAAMDmg" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="2"/>
+        <Amount value="11"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="SynoidHailstormMissilePodsCreatePersistent2">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="SynoidHailstormMissilePodsLaunchMissile2"/>
+        <PeriodicPeriodArray value="0.1"/>
+        <Flags index="Channeled" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SynoidHailstormMissilePodsDamage2">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+        <AreaArray Radius="0.8" Fraction="1"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable,Benign,Passive"/>
+        <IncludeArray Effect="SynoidHailstormMissilePodsCreatePersistent2" Value="Target"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SynoidHailstormMissilePodsLaunchMissile2">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="SynoidHailstormMissilePodsDamage2"/>
+        <AmmoUnit value="SynoidHailstormMissilesWeapon2"/>
+        <Movers Link="SynoidDrunkenMissile" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectCreateUnit id="ExplosiveStriderReleaseCE">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnEffect value="ExplosiveStriderReleaseSet"/>
+        <SpawnUnit value="BomberBot"/>
+    </CEffectCreateUnit>
+    <CEffectLaunchMissile id="ExplosiveStriderReleaseLM">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <FinishEffect value="RemovePrecursor"/>
+        <AmmoUnit value="ExplosiveStriderReleaseWeapon"/>
+        <PlaceholderUnit value="BomberBot"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="ExplosiveStriderReleaseSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="PointDefenseDroneTimedLife2"/>
+        <EffectArray value="ExplosiveStriderReleaseLM"/>
+        <EffectArray value="MakePrecursor"/>
+        <EffectArray value="UmpireBombotDisruptionAB"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="HellstormMissilePodsCU">
+        <EditorCategories value="Race:Synoid"/>
+        <CreateFlags index="Birth" value="0"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <CreateFlags index="NormalizeSpawnOffset" value="0"/>
+        <SpawnEffect value="HellstormMissilePodsCreatePersistent"/>
+        <SpawnUnit value="DummyUnit"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="HellstormMissilePodsCreatePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="MakePrecursor"/>
+        <EffectArray value="SynoidHailstormMissilePodsLaunchMissile2"/>
+        <EffectArray value="KillTargetDeathNormal"/>
+    </CEffectSet>
+    <CEffectDamage id="PiercingCharge">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Massive" value="60"/>
+        <AttributeBonus index="Structure" value="75"/>
+        <ArmorReduction value="1"/>
+        <KindSplash value="Splash"/>
+        <Amount value="75"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="1.2" Fraction="1"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <DamageInheritEffect value="Suicide"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="PointDefenseDroneTimedLife2">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="ExplosiveStriderTimedLife"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="UmpireLockdownAB">
+        <ValidatorArray index="0" value="UmpireNotShielded2"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="UmpireLockdown"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="UmpireShieldingAB2">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="UmpireShielding"/>
+        <ValidatorArray index="0" value="UmpireNotShielded"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="UmpireLockdownCaster">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="UmpireShieldingCaster">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="UmpireShieldingCaster2"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="UnpoweredPersistentSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Structure;Self,Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <AreaArray Radius="6.5" Effect="UnpoweredApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="UnpoweredPersistentSearchLarge">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Structure;Self,Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <AreaArray Radius="15" Effect="UnpoweredApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="WarhoundSawbladeABAir">
+        <ValidatorArray index="0" value="SynoidRancorSawBladeAirCombine"/>
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="WarhoundSawbladeAir"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WarhoundSawbladeSet">
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectSet>
+    <CEffectSet id="WarhoundSawbladeABSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="WarhoundSawbladeABAir"/>
+        <EffectArray value="WarhoundSawbladeAB"/>
+    </CEffectSet>
+    <CEffectDamage id="WarhoundSawbladeU">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="10"/>
+        <AreaArray Radius="1.6" Fraction="1"/>
+        <SearchFilters value="Ground;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarhoundSawbladeUAir">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="10"/>
+        <AreaArray Radius="1.6" Fraction="1"/>
+        <SearchFilters value="Air;Ally,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="WarhoundStingerLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="WarhoundStingerU"/>
+        <AmmoUnit value="WarhoundStinger"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="WarhoundSawbladeLM">
+        <ValidatorArray index="0" value="WarhoundStingerLMTargetFilters"/>
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="WarhoundSawbladeABSet"/>
+        <AmmoUnit value="WarhoundSawblade"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="WarhoundStingerU" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Synoid"/>
+        <AttributeBonus index="Armored" value="25"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectSet id="HoloZerglingArrival">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="RemovePrecursor"/>
+    </CEffectSet>
+    <CEffectSet id="lockdownbeamend">
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectSet>
+    <CEffectSet id="UmpireShieldingBeamEnd">
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="RepairBots">
+        <ValidatorArray index="0" value="NotRepairBot"/>
+        <ValidatorArray value="NotFullLife"/>
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="midastouch">
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="SynoidWarbotA">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="SynoidWarbotARight"/>
+        <ExpireDelay value="0.4"/>
+        <FinalEffect value="SynoidWarbotALeft"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SynoidWarbotALeft">
+        <EditorCategories value="Race:Synoid"/>
+        <ArmorReduction value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="15"/>
+        <AttributeBonus index="Armored" value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="SynoidWarbotBDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <ArmorReduction value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="6"/>
+        <AttributeBonus index="Armored" value="3.75"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SynoidWarbotBLM">
+        <EditorCategories value="Race:Synoid"/>
+        <ImpactEffect value="SynoidWarbotBDamage"/>
+        <AmmoUnit value="SynoidWarbotBMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="SynoidWarbotBPersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="8"/>
+        <PeriodicEffectArray value="SynoidWarbotBLM"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SynoidWarbotARight" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Kind value="Ranged"/>
+        <Amount value="15"/>
+        <AttributeBonus index="Armored" value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="SynoidWarbotC" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <Kind value="Splash"/>
+        <KindSplash value="Splash"/>
+        <Amount value="8"/>
+        <ValidatorArray value="noMarkers"/>
+        <Death value="Fire"/>
+        <AttributeBonus index="Light" value="16"/>
+        <AttributeBonus index="Biological" value="20"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="SynoidWarbotCE">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <ExcludeArray Value="Target"/>
+        <AreaArray Radius="0.6" Effect="SynoidWarbotC"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <IncludeArray Effect="SynoidWarbotCCP" Value="Target"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="SynoidWarbotCCP">
+        <EditorCategories value="Race:Synoid"/>
+        <InitialEffect value="SynoidWarbotC"/>
+        <PeriodCount value="6"/>
+        <WhichLocation Value="SourcePoint"/>
+        <PeriodicEffectArray value="SynoidWarbotCE"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="0,-2,0"/>
+        <PeriodicOffsetArray value="0,-3,0"/>
+        <PeriodicOffsetArray value="0,-4,0"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicOffsetArray value="0,-6,0"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="SynoidWarbotCSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidWarbotC"/>
+        <EffectArray value="SynoidWarbotCCP"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="SynoidWarbotCharge">
+        <EditorCategories value="Race:Synoid"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialDelay value="0.6"/>
+        <InitialEffect value="ApplyWarbotChargeSpeed"/>
+        <FinalEffect value="RemoveWarbotChargeSpeed"/>
+        <PeriodCount value="7"/>
+        <PeriodicEffectArray value="SynoidWarbotChargeSet"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <PeriodicValidator value="SynoidWarbotChargeTargetCloseAndWarbotChargeAbort"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ApplyWarbotChargeSpeed">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidWarbotChargeSpeed"/>
+        <WhichUnit Value="Source"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="RemoveWarbotChargeSpeed">
+        <EditorCategories value="Race:Synoid"/>
+        <BehaviorLink value="SynoidWarbotChargeSpeed"/>
+        <WhichUnit Value="Source"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="SynoidWarbotChargeSet">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidWarbotChargePersistent2"/>
+        <EffectArray value="SynoidWarbotChargeTargetSearch"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="SynoidWarbotChargePersistent2">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="SourceUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="SynoidWarbotChargeCasterApplyForce"/>
+        <FinalEffect value="SynoidWarbotChargeCheckRange"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyForce id="SynoidWarbotChargeCasterApplyForce">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="-10"/>
+        <WhichLocation Effect="SynoidWarbotChargePersistent2" Value="TargetPoint"/>
+    </CEffectApplyForce>
+    <CEffectEnumArea id="SynoidWarbotChargeTargetSearch">
+        <EditorCategories value="Race:Synoid"/>
+        <SearchFilters value="Ground,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="90" Radius="3" Effect="SynoidWarbotChargeTargetSet"/>
+        <ImpactLocation Value="SourceUnit"/>
+    </CEffectEnumArea>
+    <CEffectSet id="SynoidWarbotChargeTargetSet">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <ValidatorArray value="SynoidWarbotChargeAbort"/>
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidWarbotChargeDamage"/>
+        <EffectArray value="SynoidWarbotChargeForcePersistent"/>
+        <EffectArray value="SynoidWarbotChargeCheckTarget"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="SynoidWarbotChargeForcePersistent">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="ApplySynoidWarbotChargeKnockback"/>
+        <FinalEffect value="RemoveSynoidWarbotChargeKnockback"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="SynoidWarbotChargeApplyForce"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <ValidatorArray value="SynoidWarbotChargeKnockbackValidators"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ApplySynoidWarbotChargeKnockback">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidWarbotChargeKnockback"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="RemoveSynoidWarbotChargeKnockback">
+        <EditorCategories value="Race:Synoid"/>
+        <BehaviorLink value="SynoidWarbotChargeKnockback"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyForce id="SynoidWarbotChargeApplyForce">
+        <EditorCategories value="Race:Synoid"/>
+        <Amount value="10"/>
+        <WhichLocation Value="SourceUnit"/>
+    </CEffectApplyForce>
+    <CEffectDamage id="SynoidWarbotChargeDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Synoid"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Splash"/>
+        <Amount value="100"/>
+        <Death value="Blast"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <ValidatorArray value="EnemyTarget"/>
+        <ValidatorArray value="NotSynoidWarbotCharged"/>
+        <ValidatorArray value="noMarkers"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="SynoidWarbotChargeCheckTarget">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="ApplyWarbotChargeAbort"/>
+        <ValidatorArray value="IsStructure"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ApplyWarbotChargeAbort">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidWarbotChargeAbort"/>
+        <WhichUnit Value="Source"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SynoidWarbotDummyWeapon">
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectDamage>
+    <CEffectSet id="SynoidWarbotSpawnSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidARESTimedLifeAB"/>
+        <EffectArray value="NoScrapDropAB"/>
+        <EffectArray value="RemovePrecursorMerc"/>
+        <EffectArray value="SynoidWarbotAIssueOrder"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="SynoidWarbotCIssueOrder">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichUnit Value="Source"/>
+        <Abil value="SynoidWarbotC"/>
+        <CmdFlags index="Preempt" value="1"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="SynoidWarbotWeaponDisableAB">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidWarbotWeaponDisable"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="SynoidWarbotARemove">
+        <EditorCategories value="Race:Synoid"/>
+        <BehaviorLink value="SynoidWarbotA"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="SynoidWarbotBRemove">
+        <EditorCategories value="Race:Synoid"/>
+        <BehaviorLink value="SynoidWarbotB"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="SynoidWarbotCRemove">
+        <EditorCategories value="Race:Synoid"/>
+        <BehaviorLink value="SynoidWarbotC"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="SynoidWarbotAInitialSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidWarbotBRemove"/>
+        <EffectArray value="SynoidWarbotCRemove"/>
+        <EffectArray value="SynoidWarbotWeaponDisableAB"/>
+    </CEffectSet>
+    <CEffectSet id="SynoidWarbotBInitialSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidWarbotARemove"/>
+        <EffectArray value="SynoidWarbotCRemove"/>
+        <EffectArray value="SynoidWarbotWeaponDisableAB"/>
+    </CEffectSet>
+    <CEffectSet id="SynoidWarbotCInitialSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidWarbotARemove"/>
+        <EffectArray value="SynoidWarbotBRemove"/>
+        <EffectArray value="SynoidWarbotWeaponDisableAB"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="SynoidPointDefenseDroneReleaseCreateUnit">
+        <EditorCategories value="Race:Synoid"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnEffect value="SynoidPointDefenseDroneReleaseSet"/>
+        <SpawnUnit value="SynoidPointDefenseDrone"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="SynoidPointDefenseDroneReleaseSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidPointDefenseDroneTimedLife"/>
+        <EffectArray value="SynoidPointDefenseDroneReleaseLaunchMissile"/>
+        <EffectArray value="MakePrecursor"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="SynoidPointDefenseDroneReleaseLaunchMissile">
+        <EditorCategories value="Race:Synoid"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <FinishEffect value="RemovePrecursor"/>
+        <AmmoUnit value="SynoidPointDefenseDroneReleaseWeapon"/>
+        <PlaceholderUnit value="SynoidPointDefenseDrone"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="SynoidPointDefenseDroneTimedLife">
+        <EditorCategories value="Race:Synoid"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="SynoidPointDefenseLaserDamage">
+        <EditorCategories value="Race:Synoid"/>
+        <ModifyFlags index="Hide" value="1"/>
+        <ModifyFlags index="NullifyMissile" value="1"/>
+        <Marker Link="Weapon/SJPointDefenseLaser">
+            <MatchFlags index="Link" value="1"/>
+        </Marker>
+    </CEffectModifyUnit>
+    <CEffectDamage id="SynoidPointDefenseLaserDummy">
+        <EditorCategories value="Race:Synoid"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="SynoidPointDefenseLaserSet">
+        <EditorCategories value="Race:Synoid"/>
+        <EffectArray value="SynoidPointDefenseLaserDamage"/>
+        <EffectArray value="SynoidPointDefenseLaserDummy"/>
+        <EffectArray value="SynoidPointDefenseApplyBehavior"/>
+        <ValidatorArray value="SynoidPointDefenseDroneUnitFilter"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SynoidPointDefenseApplyBehavior">
+        <EditorCategories value="Race:Synoid"/>
+        <Behavior value="SynoidPointDefenseReady"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+</Catalog>

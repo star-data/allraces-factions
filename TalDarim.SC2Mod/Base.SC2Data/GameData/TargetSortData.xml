@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTargetSortValidator id="TalDarimSoulLeechSortHigh">
+        <Validator value="TalDarimSoulLeechHigh"/>
+    </CTargetSortValidator>
+    <CTargetSortValidator id="TalDarimSoulLeechSortNotLow">
+        <Validator value="TalDarimSoulLeechNotLow"/>
+    </CTargetSortValidator>
+    <CTargetSortValidator id="TalDarimSoulLeechSortLow">
+        <Validator value="TalDarimSoulLeechLow"/>
+    </CTargetSortValidator>
+</Catalog>

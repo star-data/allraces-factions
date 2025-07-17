@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRace id="UPLL">
+        <AttributeId value="UPL"/>
+        <Icon value="Assets\Icons\upl.dds"/>
+        <RaceIcon value="Assets\Icons\upl.dds"/>
+        <GameMusic value="Music_TerrLow_SCI"/>
+        <Flags index="Selectable" value="1"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="UPLHeadquarters">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="12" Unit="MiningDrone">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <DefaultConsoleSkin value="ConsoleTerran_Default"/>
+    </CRace>
+</Catalog>

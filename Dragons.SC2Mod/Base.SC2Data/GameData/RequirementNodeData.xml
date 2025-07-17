@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementAnd id="And3695770947CountBehaviorDragonFissionCompleteOnlyAtUnitNotCountBehaviorDragonFissionCompleteOnlyAtUnit">
+        <OperandArray value="CountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorAugmentationPitCompleteOnlyAtUnit4009903090CountUpgradeRazorbackMigratoryEnduranceCompleteOnly2219638757">
+        <OperandArray value="CountBehaviorAugmentationPitCompleteOnlyAtUnit4009903090"/>
+        <OperandArray value="CountUpgradeRazorbackMigratoryEnduranceCompleteOnly2219638757"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorDragonAscendedCompleteOnlyAtUnitNotCountBehaviorDragonFissionCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorDragonAscendedCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNot1428214258CountBehaviorGrimGliderMortalitysEclipseCasterCompleteOnlyAtUnitCountUpgradeGrimGliderMortalitysEclipseCompleteOnly6048925TechTreeCheat">
+        <OperandArray value="Not1428214258CountBehaviorGrimGliderMortalitysEclipseCasterCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUpgradeGrimGliderMortalitysEclipseCompleteOnly6048925TechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorArkwyrmUnloadCasterCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="ArkwyrmUnloadCaster" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorAugmentationPitCompleteOnlyAtUnit2977094741">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AugmentationPit" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorAugmentationPitCompleteOnlyAtUnit4009903090">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AugmentationPit" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDragonAscendedCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonAscended" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDragonFissionCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonFission" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDragonHunterRegenesisCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="DragonHunterRegenesis" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorGrimGliderMortalitysEclipseCasterCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="GrimGliderMortalitysEclipseCaster" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitFrontierDeepOneCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="FrontierDeepOne" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitLesserDeepOneNoFootprintCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="LesserDeepOneNoFootprint" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="VolcanicHarbingerOverload" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitVolcanicHarbingerOverloadQueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="VolcanicHarbingerOverload" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeAuroraConduitConductionCompleteOnly596238187">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AuroraConduitConduction" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAuroraConduitConductionQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AuroraConduitConduction" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBerserkerMadnessCompleteOnly3248460708">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BerserkerMadness" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBerserkerMadnessQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BerserkerMadness" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBrimstoneDemolisherInfernalBreathCompleteOnly375886769">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BrimstoneDemolisherInfernalBreath" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBrimstoneDemolisherInfernalBreathQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="BrimstoneDemolisherInfernalBreath" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonCommanderCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="DragonCommander" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonFireAttacksLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonFireAttacksLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonFireAttacksLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonFireAttacksLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonFireAttacksLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonFireAttacksLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonFireAttacksLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonFireAttacksLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonFireAttacksLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonFireAttacksLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonLineageCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonLineage" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonLineageQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonLineage" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonMeleeAttacksLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonMeleeAttacksLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonMeleeAttacksLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonMeleeAttacksLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonMeleeAttacksLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonMeleeAttacksLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonMeleeAttacksLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonMeleeAttacksLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonMeleeAttacksLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonMeleeAttacksLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonPlateArmorLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonPlateArmorLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonPlateArmorLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonPlateArmorLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonPlateArmorLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonPlateArmorLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonPlateArmorLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonPlateArmorLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonPlateArmorLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonPlateArmorLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonScaleArmorLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonScaleArmorLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonScaleArmorLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonScaleArmorLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonScaleArmorLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonScaleArmorLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonScaleArmorLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonScaleArmorLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDragonScaleArmorLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DragonScaleArmorLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeFlamespitterFervidReconstitutionCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="FlamespitterFervidReconstitution" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeFlamespitterFervidReconstitutionQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="FlamespitterFervidReconstitution" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeFleshrenderProliferationQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="FleshrenderProliferation" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeGrimGliderMortalitysEclipseCompleteOnly6048925TechTreeCheat">
+        <Count Link="GrimGliderMortalitysEclipse" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeGrimGliderMortalitysEclipseQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="GrimGliderMortalitysEclipse" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHandofPowerPortalCompleteOnly4045012870">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HandofPowerPortal" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHandofPowerPortalQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HandofPowerPortal" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHornedMagusFrenzyCompleteOnly1072627216TechTreeCheat">
+        <Count Link="HornedMagusFrenzy" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHornedMagusFrenzyQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HornedMagusFrenzy" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHunterWickedBarbsCompleteOnly909739678">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HunterWickedBarbs" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHunterWickedBarbsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HunterWickedBarbs" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeRazorbackMigratoryEnduranceCompleteOnly2219638757">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="RazorbackMigratoryEndurance" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeRazorbackMigratoryEnduranceQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="RazorbackMigratoryEndurance" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSkyrazerEmberCoreCompleteOnly4150053550">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="SkyrazerEmberCore" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSkyrazerEmberCoreQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SkyrazerEmberCore" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnseenBeastProwlCompleteOnly32849316TechTreeCheat">
+        <Count Link="UnseenBeastProwl" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnseenBeastProwlQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="UnseenBeastProwl" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeVolcanicHarbingerPlasmaCatalystCompleteOnly1697154577TechTreeCheat">
+        <Count Link="VolcanicHarbingerPlasmaCatalyst" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeVolcanicHarbingerPlasmaCatalystQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="VolcanicHarbingerPlasmaCatalyst" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="EqCountBehaviorArkwyrmUnloadCasterCompleteOnlyAtUnit0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorArkwyrmUnloadCasterCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit2">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit3">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementEq>
+    <CRequirementGT id="GTCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementGT>
+    <CRequirementLT id="LT2695958664CountUnitVolcanicHarbingerOverloadQueuedOrBetterAtUnit3">
+        <OperandArray index="0" value="CountUnitVolcanicHarbingerOverloadQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementLT>
+    <CRequirementNot id="Not1428214258CountBehaviorGrimGliderMortalitysEclipseCasterCompleteOnlyAtUnit">
+        <OperandArray index="0" value="CountBehaviorGrimGliderMortalitysEclipseCasterCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorDragonAscendedCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorDragonAscendedCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorDragonFissionCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorDragonHunterRegenesisCompleteOnlyAtUnit">
+        <OperandArray index="0" value="CountBehaviorDragonHunterRegenesisCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAuroraConduitConductionQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeAuroraConduitConductionQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeBerserkerMadnessQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeBerserkerMadnessQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeBrimstoneDemolisherInfernalBreathQueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeBrimstoneDemolisherInfernalBreathQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonFireAttacksLevel1QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonFireAttacksLevel1QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonFireAttacksLevel2QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonFireAttacksLevel2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonFireAttacksLevel3QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonFireAttacksLevel3QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonLineageQueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonLineageQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonMeleeAttacksLevel1QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonMeleeAttacksLevel1QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonMeleeAttacksLevel2QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonMeleeAttacksLevel2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonMeleeAttacksLevel3QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonMeleeAttacksLevel3QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonPlateArmorLevel1QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonPlateArmorLevel1QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonPlateArmorLevel2QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonPlateArmorLevel2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonPlateArmorLevel3QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonPlateArmorLevel3QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonScaleArmorLevel1QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonScaleArmorLevel1QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonScaleArmorLevel2QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonScaleArmorLevel2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDragonScaleArmorLevel3QueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeDragonScaleArmorLevel3QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeFlamespitterFervidReconstitutionCompleteOnly">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeFlamespitterFervidReconstitutionCompleteOnly"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeFlamespitterFervidReconstitutionQueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeFlamespitterFervidReconstitutionQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeFleshrenderProliferationQueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeFleshrenderProliferationQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeGrimGliderMortalitysEclipseQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeGrimGliderMortalitysEclipseQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeHandofPowerPortalQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeHandofPowerPortalQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeHornedMagusFrenzyQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeHornedMagusFrenzyQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeHunterWickedBarbsQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeHunterWickedBarbsQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeRazorbackMigratoryEnduranceQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeRazorbackMigratoryEnduranceQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeSkyrazerEmberCoreQueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeSkyrazerEmberCoreQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeUnseenBeastProwlQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeUnseenBeastProwlQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeVolcanicHarbingerPlasmaCatalystQueuedOrBetter">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUpgradeVolcanicHarbingerPlasmaCatalystQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotOrCountBehaviorDragonAscendedCompleteOnlyAtUnitCountBehaviorDragonFissionCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="OrCountBehaviorDragonAscendedCompleteOnlyAtUnitCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrCountBehaviorDragonAscendedCompleteOnlyAtUnitCountBehaviorDragonFissionCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorDragonAscendedCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+    </CRequirementOr>
+</Catalog>

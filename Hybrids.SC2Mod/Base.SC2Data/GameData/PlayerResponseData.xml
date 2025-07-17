@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CPlayerResponseUnitDamage id="ZHBRVoid@DamageResponse">
+        <Handled value="ZHBRVoid@ApplySuppressedRegenerationCaster"/>
+        <ValidatorArray value="ZHBRCommon@CasterIsVoidForcesRace"/>
+        <ValidatorArray value="ZHBRPowerField@CasterNotInPowerField"/>
+    </CPlayerResponseUnitDamage>
+</Catalog>

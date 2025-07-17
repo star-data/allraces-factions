@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilMorph default="1" id="DragonAscend">
+        <AbilSetId value="DragonAscend"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <InfoArray Unit="##id##"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="##id##" Requirements="NotAscended">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilMorph>
+    <CAbilBuild default="1" id="DragonBuild">
+        <OrderArray index="0">
+            <DisplayType value="Confirm"/>
+            <Color value="255,0,255,0"/>
+            <Model value="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <FlagArray index="PeonDisableAbils" value="1"/>
+        <FlagArray index="ShowProgress" value="1"/>
+        <Range value="7"/>
+        <EffectArray index="Start" value="DragonBuildSet"/>
+        <EffectArray index="Finish" value="DragonFinishSet"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilBuild>
+    <CAbilMorph default="1" id="DragonBuilding">
+        <Flags index="Automatic" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <InfoArray Unit="##id##NoFootprint"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilMorph>
+    <CAbilEffectInstant id="HunterDeactivateRegenesis">
+        <AbilSetId value="BrwU"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="HunterRegenesisRemoveBehavior"/>
+        <FinishTime value="2.8"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DragonHunterDeactivateRegenesis" Requirements="DragonHunterDeactivateRegenesis"/>
+    </CAbilEffectInstant>
+    <CAbilResearch id="GreaterDeepOneResearchSkyrazer">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="105" Upgrade="SkyrazerEmberCore">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GreaterDeepOneEmberCore" Requirements="AugmentEmberCore">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="GreaterDeepOneResearchHandofPower">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="105" Upgrade="HandofPowerPortal">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GreaterDeepOnePortal" Requirements="AugmentPortal">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="GreaterDeepOneResearchBrimstoneDemolisher">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="140" Upgrade="BrimstoneDemolisherInfernalBreath">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="GreaterDeepOneInfernalBreath" Requirements="AugmentInfernalBreath">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="ArkwyrmTerritorialDive">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArkwyrmTerritorialDiveSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CastIntroTime value="4.2"/>
+        <FinishTime value="1.4"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <ProgressButtonArray index="Cast" value="ArkwyrmTerritorialDive"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArkwyrmTerritorialDive" Requirements="Ascended">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Cost>
+            <Cooldown TimeUse="42"/>
+        </Cost>
+        <InterruptArray index="Cast" value="1"/>
+        <InterruptCost>
+            <Cooldown TimeUse="42"/>
+        </InterruptCost>
+    </CAbilEffectTarget>
+    <CAbilAugment id="GrimGliderEmaciate">
+        <Alignment value="Negative"/>
+        <OrderArray index="0">
+            <DisplayType value="Confirm"/>
+            <Color value="255,0,255,0"/>
+            <Model value="Assets\UI\Cursors\WayPointAttack_Void\WayPointAttack_Void.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GrimGliderEmaciate"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AbilCmd value="attack,Execute"/>
+        <Effect value=""/>
+    </CAbilAugment>
+    <CAbilEffectInstant id="GrimGliderNullify">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="GrimGliderNullifyApplyBehavior"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="UninterruptibleTurn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="10"/>
+            <Cooldown TimeUse="1.4"/>
+        </Cost>
+        <TargetFilters value="Missile,Visible;Self,Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GrimGliderNullify"/>
+        <TargetSorts RequestCount="1" RequestPercentage="1">
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="4"/>
+        <Arc value="360"/>
+        <AutoCastRange value="4"/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="AscendedArkwyrm" parent="DragonAscend"/>
+    <CAbilEffectTarget id="ArkwyrmUnload">
+        <Effect index="0" value="ArkwyrmUnloadCreatePersistent"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArkwyrmUnloadAll"/>
+        <CastIntroTime value="0.5"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilTransport id="ArkwyrmTransport">
+        <OrderArray index="0">
+            <DisplayType value="Confirm"/>
+            <Color value="255,0,255,0"/>
+            <Model value="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <CmdButtonArray index="Load" DefaultButtonFace="ArkwyrmLoad"/>
+        <CmdButtonArray index="UnloadAll" Requirements="ArkwyrmTransport"/>
+        <MaxCargoCount value="8"/>
+        <MaxCargoSize value="8"/>
+        <TotalCargoSpace value="8"/>
+        <UnloadCargoBehavior value="ArkwyrmUnload"/>
+        <LoadValidatorArray value="NotWidowMineTarget"/>
+        <MaxUnloadRange value="8"/>
+        <UnloadTransportBehavior value="ArkwyrmUnloadCaster"/>
+        <UnloadPeriod value="0.5"/>
+        <UnloadCargoEffect value="ArkwyrmTransportCreatePersistent"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilTransport>
+    <CAbilMorph id="AscendedAuroraConduit" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedBrimstoneDemolisher" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedFlamespitter" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedRazorback" parent="DragonAscend"/>
+    <CAbilEffectInstant id="AugmentationPit">
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="BrimstoneDemolisherInfernalBreath">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="BrimstoneDemolisherInfernalBreathSet2"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AutoCastFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BrimstoneDemolisherInfernalBreath" Requirements="BrimstoneDemolisherInfernalBreath"/>
+        <TargetFilters value="Ground,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CAbilEffectTarget>
+<!--    <CAbilMorph id="DenizenoftheDeep" parent="DragonBuilding"/>-->
+    <CAbilEffectInstant id="DragonBuildApplyBehavior">
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="AscendedFleshrender" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedFleshrenderFree" parent="AscendedFleshrender">
+        <Name value="Abil/Name/AscendedFleshrenderFree2"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <InfoArray index="0" Unit="AscendedFleshrender">
+            <SectionArray index="Stats">
+                <EffectArray index="Finish" value="FleshrenderInfernalAscendRemoveBehavior"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilEffectInstant id="DragonFission">
+        <AbilSetId value="Fission"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeStart="1" TimeUse="1"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DragonFission" Requirements="Fission">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ArkwyrmFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="30"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="DragonFissionDisabled" parent="DragonFission">
+        <AbilSetId value=""/>
+        <CmdButtonArray index="Execute" Requirements="FissionDisabled"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HunterActivateRegenesis">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <AbilSetId value="BrwD"/>
+        <Effect index="0" value="HunterRegenesisApplyBehavior"/>
+        <CastIntroTime value="1.4"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DragonHunterActivateRegenesis" Requirements="DragonHunterActivateRegenesis"/>
+        <FinishTime value="1"/>
+    </CAbilEffectInstant>
+    <CAbilResearch id="LesserDeepOneResearchUnseenBeast">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="140" Upgrade="UnseenBeastProwl">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="LesserDeepOneProwl" Requirements="AugmentProwl">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="LesserDeepOneResearchHunter">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="140" Upgrade="HunterWickedBarbs">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="LesserDeepOneWickedBarbs" Requirements="AugmentWickedBarbs">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="LesserDeepOneResearchHornedMagus">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="105" Upgrade="HornedMagusFrenzy">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="GreaterDeepOneFrenzy" Requirements="AugmentFrenzy">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectInstant id="RazorbackFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="40"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GrimGliderFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="140"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilResearch id="ToweringDeepOneResearchAuroraConduit">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="105" Upgrade="AuroraConduitConduction">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ToweringDeepOneConduction" Requirements="AugmentConduction">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ToweringDeepOneResearchVolcanicHarbinger">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="140" Upgrade="VolcanicHarbingerPlasmaCatalyst">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ToweringDeepOnePlasmaCatalyst" Requirements="AugmentPlasmaCatalyst">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ToweringDeepOneResearchGrimGlider">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="105" Upgrade="GrimGliderMortalitysEclipse">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ToweringDeepOneMortalitysEclipse" Requirements="AugmentWraithNight">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilBehavior id="UnseenBeastExploration">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="UnseenBeastActivateExploration"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="UnseenBeastDeactivateExploration"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="UnseenBeastExploration"/>
+    </CAbilBehavior>
+    <CAbilEffectInstant id="UnseenBeastProwl">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="UnseenBeastProwl" Requirements="UnseenBeastProwl"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="UnseenBeastTeleportAssaultTrigger">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="UnseenBeastTeleportAssaultSet"/>
+        <Range value="6"/>
+        <PrepTime value="0.25"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="UnseenBeastTeleportAssault" Requirements="Ascended">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+        <OrderArray index="0" DisplayType="Attack" Color="255,255,0,0"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="VolcanicHarbingerFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="100"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="DragonAscendedFission" parent="DragonFission">
+        <AbilSetId value="FissionAscended"/>
+        <CmdButtonArray index="Execute" Requirements="FissionAscended"/>
+        <Cost index="0">
+            <Resource index="Custom" value="1"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedArkwyrmFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="60"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedGrimGliderFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="280"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedRazorbackFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="80"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedVolcanicHarbingerFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="200"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedBrimstoneDemolisherFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="280"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedFleshrenderFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="30"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedAuroraConduitFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="120"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedSkyrazerFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="100"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedHandofPowerFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="150"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedUnseenBeastFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="100"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedHunterFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="60"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedHornedMagusFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="70"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedPlodderFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="40"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedFlamespitterFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="40"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AscendedBerserkerFission" parent="DragonAscendedFission">
+        <Cost index="0">
+            <Resource index="Custom" value="140"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BrimstoneDemolisherFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="140"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="FleshrenderFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="15"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="AuroraConduitFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="60"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SkyrazerFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="50"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HandofPowerFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="75"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="UnseenBeastFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="50"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HunterFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="30"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilBuild id="FrontierDeepOneBuild" parent="DragonBuild">
+        <InfoArray index="Build1" Unit="Razorback" Time="21">
+            <Button DefaultButtonFace="Razorback" Requirements="LearnTerranVehicleAndShipArmor1"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="AugmentationPitFrontier" Time="56">
+            <Button DefaultButtonFace="AugmentationPitFrontier" Requirements="LearnTerranVehicleAndShipArmor1"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="SunkenGuardian" Time="28">
+            <Button DefaultButtonFace="SunkenGuardian"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="PhlogistonGuardian" Time="21">
+            <Button DefaultButtonFace="PhlogistonGuardian" Requirements="LearnTerranVehicleAndShipArmor1"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <AbilSetId value="DenizenoftheDeepBuild"/>
+        <Range value="9"/>
+    </CAbilBuild>
+    <CAbilResearch id="FrontierDeepOneResearch">
+        <InfoArray index="Research1" Time="160" Upgrade="DragonMeleeAttacksLevel1">
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="AugmentDragonMeleeAttacksLevel1" Requirements="AugmentDragonMeleeAttacksLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="190" Upgrade="DragonMeleeAttacksLevel2">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="75"/>
+            <Button DefaultButtonFace="AugmentDragonMeleeAttacksLevel2" Requirements="AugmentDragonMeleeAttacksLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="220" Upgrade="DragonMeleeAttacksLevel3">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="AugmentDragonMeleeAttacksLevel3" Requirements="AugmentDragonMeleeAttacksLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="160" Upgrade="DragonFireAttacksLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="AugmentDragonFireAttacksLevel1" Requirements="AugmentDragonFireAttacksLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="190" Upgrade="DragonFireAttacksLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="AugmentDragonFireAttacksLevel2" Requirements="AugmentDragonFireAttacksLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="220" Upgrade="DragonFireAttacksLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="AugmentDragonFireAttacksLevel3" Requirements="AugmentDragonFireAttacksLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="160" Upgrade="DragonScaleArmorLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="AugmentDragonScaleArmorLevel1" Requirements="AugmentDragonScaleArmorLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="190" Upgrade="DragonScaleArmorLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="AugmentDragonScaleArmorLevel2" Requirements="AugmentDragonScaleArmorLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="220" Upgrade="DragonScaleArmorLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="AugmentDragonScaleArmorLevel3" Requirements="AugmentDragonScaleArmorLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="160" Upgrade="DragonPlateArmorLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="AugmentDragonPlateArmorLevel1" Requirements="AugmentDragonPlateArmorLevel1"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="190" Upgrade="DragonPlateArmorLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="AugmentDragonPlateArmorLevel2" Requirements="AugmentDragonPlateArmorLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="220" Upgrade="DragonPlateArmorLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="AugmentDragonPlateArmorLevel3" Requirements="AugmentDragonPlateArmorLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research13" Time="56" Upgrade="RazorbackMigratoryEndurance">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="FrontierDeepOneMigratoryEndurance" Requirements="AugmentMigratoryEndurance">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research14" Time="140" Upgrade="DragonLineage">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="FrontierDeepOneDragonLineage" Requirements="AugmentDragonLineage"/>
+        </InfoArray>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilResearch>
+    <CAbilEffectInstant id="GenesisPit">
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilBuild id="GreaterDeepOneBuild" parent="DragonBuild">
+        <InfoArray index="Build1" Unit="GenesisPitGreater" Time="21">
+            <Button DefaultButtonFace="GenesisPitGreater"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="AugmentationPitGreater" Time="56">
+            <Button DefaultButtonFace="AugmentationPitGreater"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilResearch id="GreaterDeepOneResearchBerserker">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="56" Upgrade="BerserkerMadness">
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Charge Link="Abil/GreaterDeepOneResearchSkyrazer"/>
+            <Cooldown Link="Abil/GreaterDeepOneResearchSkyrazer"/>
+            <Button DefaultButtonFace="GreaterDeepOneMadness" Requirements="AugmentMadness">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilMorph id="AscendedGrimGlider" parent="DragonAscend"/>
+    <CAbilEffectInstant id="GrimGliderMortalitysEclipse">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="GrimGliderMortalitysEclipseApplyBehaviorCaster"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="150"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GrimGliderMortalitysEclipse" Requirements="GrimGliderMortalitysEclipse"/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="AscendedHandofPower" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedHornedMagus" parent="DragonAscend"/>
+    <CAbilEffectTarget id="HandofPowerShroud">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="HandofPowerShroudSearchArea"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+        </Cost>
+        <Range value="9"/>
+        <CastIntroTime value="0.25"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="HandofPowerShroudSearchArea"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HandofPowerShroud"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="AscendedHunter" parent="DragonAscend">
+        <InfoArray index="0" Unit="AscendedDragonHunter"/>
+    </CAbilMorph>
+    <CAbilEffectInstant id="HornedMagusFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="35"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilBuild id="LesserDeepOneBuild" parent="DragonBuild">
+        <InfoArray index="Build1" Unit="GenesisPitLesser" Time="21">
+            <Button DefaultButtonFace="GenesisPitLesser"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="AugmentationPitLesser" Time="63">
+            <Button DefaultButtonFace="AugmentationPitLesser"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilResearch id="LesserDeepOneResearchFlamespitter">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="105" Upgrade="FlamespitterFervidReconstitution">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="LesserDeepOneFervidReconstitution" Requirements="AugmentFervidReconstitution">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilMorph id="AscendedPlodder" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedBerserker" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedSkyrazer" parent="DragonAscend"/>
+    <CAbilEffectInstant id="PlodderFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="20"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="FlamespitterFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="20"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BerserkerFission" parent="DragonFission">
+        <Cost index="0">
+            <Resource index="Custom" value="70"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilAugment id="UnseenBeastTeleportAssault">
+        <Alignment value="Negative"/>
+        <OrderArray index="0">
+            <DisplayType value="Confirm"/>
+            <Color value="255,0,255,0"/>
+            <Model value="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <CmdButtonArray index="Execute" DefaultButtonFace="UnseenBeastTeleportAssault" Requirements="Ascended"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AbilCmd value="attack,Execute"/>
+        <Cost>
+            <Cooldown Link="Charge" Location="Unit" TimeUse="2.8"/>
+        </Cost>
+        <Effect value="UnseenBeastTeleportAssaultIssueOrder"/>
+        <AutoCastFilters value="Ground,Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AutoCastValidatorArray value="CasterNotHoldingPosition"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilAugment>
+    <CAbilBuild id="ToweringDeepOneBuild" parent="DragonBuild">
+        <InfoArray index="Build1" Unit="GenesisPitTowering" Time="21">
+            <Button DefaultButtonFace="GenesisPitTowering"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="AugmentationPitTowering" Time="56">
+            <Button DefaultButtonFace="AugmentationPitTowering"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilEffectInstant id="FrontierDeepOneInvigorate">
+        <AbilSetId value="Invigorate"/>
+        <Effect index="0" value="FrontierDeepOneInvigorateApplyBehavior"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <AutoCastFilters value="Self;-"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FrontierDeepOneActivateInvigorate"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilBuild id="DenizenoftheDeepBuild" parent="DragonBuild">
+        <InfoArray index="Build1" Unit="Razorback" Time="21">
+            <Button DefaultButtonFace="Razorback"/>
+            <ValidatorArray value="HasVision"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="Coagulator" Time="14">
+            <Button DefaultButtonFace="Coagulator"/>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="HasVespene"/>
+        </InfoArray>
+        <AbilSetId value="DenizenoftheDeepBuild"/>
+    </CAbilBuild>
+    <CAbilMorph id="Razorback" parent="DragonBuilding"/>
+    <CAbilTrain id="DenizenoftheDeepTrain">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <InfoArray index="Train1" Time="17" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="Plodder"/>
+            <Unit value="Plodder"/>
+        </InfoArray>
+        <Alert value="TrainWorkerComplete"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilTrain>
+    <CAbilEffectTarget id="DragonTrain">
+        <Effect index="0" value="DragonTrainSet"/>
+        <Range value="500"/>
+        <CastIntroTime value="0.25"/>
+        <CastOutroTime value="0.25"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
+        <Flags index="AllowMovement" value="1"/>
+        <AbilSetId value="DragonTrain"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GenesisPitTrain" parent="DragonTrain">
+        <Name value="Abil/Name/GenesisPitTrain"/>
+        <Arc value="360"/>
+    </CAbilEffectTarget>
+    <CAbilTrain id="GreaterDeepOneTrain">
+        <InfoArray index="Train1" Time="49" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="Berserker"/>
+            <Unit value="Berserker"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="42" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="Skyrazer"/>
+            <Unit value="Skyrazer"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="56" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="HandofPower" Requirements="AugmentationPit"/>
+            <Unit value="HandofPower"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="84" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="BrimstoneDemolisher" Requirements="AugmentationPit"/>
+            <Unit value="BrimstoneDemolisher"/>
+        </InfoArray>
+        <AbilSetId value="GreaterDeepOneTrain"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilTrain>
+    <CAbilEffectTarget id="HandofPowerCrushingGravity">
+        <Effect index="0" value="HandofPowerCrushingGravityCreatePersistent"/>
+        <Range value="8"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HandofPowerCrushingGravity"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="HandofPowerCrushingGravitySearchArea1"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+        </Cost>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <CastIntroTime value="0.25"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="HandofPowerPortalEntrance">
+        <Effect index="0" value="HandofPowerPortalEntranceCreateUnit"/>
+        <Range value="10"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HandofPowerPortalEntrance" Requirements="HandofPowerPortal"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="HandofPowerPortalSearchArea"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+        </Cost>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <CastIntroTime value="0.25"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="HandofPowerPortalExit">
+        <Effect index="0" value="HandofPowerPortalExitSearchArea"/>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HandofPowerPortalExit" Requirements="HandofPowerPortal">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+        <Arc value="360"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="HornedMagusFrenzy">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <Effect index="0" value="HornedMagusFrenzySearchArea"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+        </Cost>
+        <Range value="7"/>
+        <CastIntroTime value="0.25"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="HornedMagusFrenzySearchArea"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HornedMagusFrenzy" Requirements="HornedMagusFrenzy"/>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="HornedMagusInvigorate">
+        <AbilSetId value="Invigorate"/>
+        <CmdButtonArray index="On" DefaultButtonFace="HornedMagusActivateInvigorate"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="HornedMagusDeactivateInvigorate"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="HornedMagusInvigorateCaster"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilBehavior>
+    <CAbilEffectTarget id="HornedMagusFireShield">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <Effect index="0" value="HornedMagusFireShieldSwitch"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Charge Link="Abil/HornedMagusLightningField"/>
+            <Cooldown Link="Abil/HornedMagusLightningField"/>
+        </Cost>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <CastIntroTime value="0.25"/>
+        <CastOutroTime value="0.5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HornedMagusFireShield"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <!--    <CAbilHarvest id="PlodderHarvest">-->
+    <!--        <OrderArray index="0">-->
+    <!--            <DisplayType value="Confirm"/>-->
+    <!--            <Color value="255,0,255,0"/>-->
+    <!--            <Model value="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>-->
+    <!--            <LineTexture value="Assets\Textures\WayPointLine.dds"/>-->
+    <!--        </OrderArray>-->
+    <!--        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>-->
+    <!--    </CAbilHarvest>-->
+    <CAbilMorph id="LesserDeepOne" parent="DragonBuilding"/>
+    <CAbilMorph id="GreaterDeepOne" parent="DragonBuilding"/>
+    <CAbilTrain id="LesserDeepOneTrain">
+        <InfoArray index="Train1" Time="28" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="Flamespitter"/>
+            <Unit value="Flamespitter"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="49" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="DragonHunter"/>
+            <Unit value="DragonHunter"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="42" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="HornedMagus" Requirements="AugmentationPit"/>
+            <Unit value="HornedMagus"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="56">
+            <Button DefaultButtonFace="UnseenBeast" Requirements="AugmentationPit"/>
+            <Unit value="UnseenBeast"/>
+        </InfoArray>
+        <AbilSetId value="LesserDeepOneTrain"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilTrain>
+    <CAbilMorph id="ToweringDeepOne" parent="DragonBuilding"/>
+    <CAbilBuild id="PlodderBuild">
+        <OrderArray index="0">
+            <DisplayType value="Confirm"/>
+            <Color value="255,0,255,0"/>
+            <Model value="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <FlagArray index="Interruptible" value="1"/>
+        <FlagArray index="PeonHide" value="1"/>
+        <FlagArray index="RangeIncludesBuilding" value="0"/>
+        <InfoArray index="Build1" Unit="DenizenoftheDeep" Time="100">
+            <Button DefaultButtonFace="DenizenoftheDeep"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="FrontierDeepOne" Time="28">
+            <Button DefaultButtonFace="FrontierDeepOne"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="LesserDeepOne" Time="56">
+            <Button DefaultButtonFace="LesserDeepOne" Requirements="HaveFrontierDeepOne"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="GreaterDeepOne" Time="70">
+            <Button DefaultButtonFace="GreaterDeepOne" Requirements="HaveLesserDeepOne"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="ToweringDeepOne" Time="84">
+            <Button DefaultButtonFace="ToweringDeepOne" Requirements="HaveLesserDeepOne"/>
+        </InfoArray>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilBuild>
+    <CAbilRally id="DenizenoftheDeepRally">
+        <OrderArray index="0">
+            <DisplayType value="Rally"/>
+            <Color value="255,245,140,70"/>
+            <Model value="Assets\UI\Feedback\WayPointRally\WayPointRally.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilRally>
+    <CAbilResearch id="ToweringDeepOneResearchFleshrender">
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="56" Upgrade="FleshrenderProliferation">
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="ToweringDeepOneProliferation" Requirements="AugmentProliferation">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilMorph id="AscendedUnseenBeast" parent="DragonAscend"/>
+    <CAbilMorph id="AscendedVolcanicHarbinger" parent="DragonAscend"/>
+    <CAbilTrain id="ToweringDeepOneTrain">
+        <InfoArray index="Train1" Time="21" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="Fleshrender"/>
+            <Unit value="Fleshrender"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="49" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="AuroraConduit"/>
+            <Unit value="AuroraConduit"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="28" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="Arkwyrm"/>
+            <Unit value="Arkwyrm"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="70" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="VolcanicHarbinger" Requirements="AugmentationPit"/>
+            <Unit value="VolcanicHarbinger"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="84" Effect="DragonTrainApplyBehavior1">
+            <Button DefaultButtonFace="GrimGlider" Requirements="AugmentationPit"/>
+            <Unit value="GrimGlider"/>
+        </InfoArray>
+        <AbilSetId value="ToweringDeepOneTrain"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilTrain>
+    <CAbilArmMagazine id="VolcanicHarbingerOverload">
+        <InfoArray index="Ammo1" Time="5" Unit="VolcanicHarbingerOverload">
+            <Button DefaultButtonFace="VolcanicHarbingerOverload" Requirements="VolcanicHarbingerOverload"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+        </InfoArray>
+        <MaxCount value="3"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Units"/>
+    </CAbilArmMagazine>
+    <CAbilQueue id="VolcanicHarbingerQueue" parent="HangarQueue5">
+        <Name value="Abil/Name/VolcanicHarbingerQueue"/>
+        <QueueSize value="3"/>
+        <EditorCategories value="Race:Dragon,AbilityorEffectType:Structures"/>
+    </CAbilQueue>
+</Catalog>

@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectSwitch id="Disguise">
+        <CaseArray Validator="ZerDarimDisguiseAsSupplicant" Effect="ZerDarimChangelingDisguiseAsSupplicant"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="TalDarimAscendantPsiOrbABBeamCaster">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimAscendantPsionicOrbBeamCaster"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TalDarimAscendantPsiOrbFakeDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="CasterUnit"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="TalDarimAscendantPsiOrbSearchBeamCaster">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="5" Effect="TalDarimAscendantPsiOrbABBeamCaster"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="TalDarimCynosurePhotonicOverchargeAB">
+        <ValidatorArray index="0" value="TalDarimTargetisPeristyle"/>
+        <ValidatorArray value="TalDarimCynosureNearbyCynosure"/>
+        <ValidatorArray value="IsNotConstructing"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Marker Link="Effect/MothershipCorePurifyNexusApply"/>
+        <Behavior value="TalDarimCynosurePhotonicOvercharge"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TalDarimOutriderAirSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimOutriderAirDamage"/>
+        <EffectArray value="TalDarimOutriderArmorReductionAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimOutriderArmorReductionAB">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimOutriderArmorReduction"/>
+        <ValidatorArray index="0" value="TalDarimFleetLodestarOutriderLearnedGoliarPulseCrystal"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TalDarimOutriderGroundSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimOutriderGroundDamage"/>
+        <EffectArray value="TalDarimOutriderArmorReductionAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimSoulLeechLocustEnergyChargedTempAB2">
+        <ValidatorArray index="0" value="TalDarimCasterHasNoEnergy"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimLocustEnergyChargedTemp"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="TalDarimSoulLeechLocustGainEnergy20">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="20"/>
+        </VitalArray>
+        <ModifyFlags index="IsHeal" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectCreateHealer id="TalDarimLocustReconstitute">
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="HiddenCompareBA"/>
+        <ValidatorArray value="HiddenCompareAB"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NotStasis"/>
+        <ValidatorArray value="TalDarimTargetisStructureorMechanical"/>
+        <EditorCategories value="Race:PrTD"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="1"/>
+        <RechargeVitalRate value="10"/>
+    </CEffectCreateHealer>
+    <CEffectModifyUnit id="TalDarimSoulLeechLocustGainEnergy40">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="40"/>
+        </VitalArray>
+        <ModifyFlags index="IsHeal" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="TalDarimSoulLeechLocustSet2">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSoulLeechLocustEnergyChargedTempAB2"/>
+        <EffectArray value="TalDarimSoulLeechLocustEnergyChargedAB2"/>
+        <EffectArray value="TalDarimSoulLeechLocustGainEnergy40"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="TalDarimSoulLeechPriorityLow">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Source"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="TalDarimSoulLeechLocustEnergyChargedAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimLocustEnergyCharged"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechLocustEnergyChargedAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimLocustEnergyCharged"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechLocustEnergyChargedTempAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimLocustEnergyChargedTemp"/>
+        <ValidatorArray index="0" value="TalDarimCasterHasNoEnergy"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="TalDarimCustodesAnchorLinkCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="TalDarimCustodesAnchorLinkAB"/>
+        <PeriodicValidator value="TalDarimCustodesAnchoredbyCasterandBothNotDead"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="TalDarimCustodesAnchorLinkAB">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimCustodesAnchorLink"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyForce id="TalDarimCustodesAnchorLinkPull">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <Amount value="-0.25"/>
+        <ValidatorArray value="TalDarimRangeCheckGE1"/>
+    </CEffectApplyForce>
+    <CEffectEnumArea id="TalDarimCustodesPsionicShockChainSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="TalDarimCustodesPsionicShockChainStasisDamage"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="TalDarimCustodesPsionicShockChainDamage"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimCustodesPsionicShockChainStasisSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="TalDarimCustodesPsionicShockChainStasisDamage"/>
+        <AreaArray MaxCount="2" Radius="4" Effect="TalDarimCustodesPsionicShockChainDamage"/>
+        <MaxCount value="2"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TalDarimCustodesPsionicShockSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimCustodesPsionicShockDamage"/>
+        <EffectArray value="TalDarimCustodesPsionicShockChainSearch"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimCustodesPsionicShockStasisSet">
+        <ValidatorArray value="TalDarimBloodHunterVoidStased"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimCustodesPsionicShockDamage"/>
+        <EffectArray value="TalDarimCustodesPsionicShockChainStasisSearch"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimSoulLeechLocustSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSoulLeechLocustEnergyChargedTempAB"/>
+        <EffectArray value="TalDarimSoulLeechLocustEnergyChargedAB"/>
+        <EffectArray value="TalDarimSoulLeechLocustGainEnergy20"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="TalDarimSoulLeechPriorityMedium">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Source"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="TalDarimSoulLeechPriorityHigh">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Source"/>
+    </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="TalDarimWarmistressSoulsOverchargeRB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimWarmistressSoulsOvercharge"/>
+        <Count value="4"/>
+    </CEffectRemoveBehavior>
+    <CEffectLaunchMissile id="TalDarimMonitorDetonationLM">
+        <ValidatorArray index="0" value="TalDarimMonitorTargetisStructureorAir"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimMonitorDetonationSet"/>
+        <Movers Link="TalDarimMonitorDetonationMover"/>
+        <DeathType value="Unknown"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimWarPrismPhotonicBarrageLaunchMissile">
+        <ValidatorArray index="0" value="PhotonCannonTargetFilters"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimWarPrismPhotonicBarrageDamage"/>
+        <AmmoUnit value="TalDarimPhotonicBarrageWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TalDarimWarPrismPhotonicBarrageDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectUseMagazine id="TalDarimReliquarySendDestroyers">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectUseMagazine>
+    <CEffectCreatePersistent id="TalDarimSoulLeechAllDeathCP">
+        <ValidatorArray value="TalDarimCasterHaveSouls"/>
+        <EditorCategories value="Race:PrTD"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="TalDarimSoulLeechAllDeathSearch"/>
+        <PeriodicEffectArray value="TalDarimSoulLeechAllDeathRB"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="TalDarimSoulLeechAllDeathRB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorCategories index="PassiveMagic" value="1"/>
+        <BehaviorAlignment value="Positive"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechWarPrismBloodShieldAB">
+        <ValidatorArray index="0" value="TalDarimTargetisSupplicant"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimWarPrismBloodShield"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechWarPrismBloodShieldAB2">
+        <ValidatorArray index="0" value="TalDarimTargetisSupplicant"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimWarPrismBloodShield"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechWarPrismBloodShieldABSelf2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimWarPrismBloodShield"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechWarPrismBloodShieldABSelf">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimWarPrismBloodShield"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumTransport id="TalDarimSoulLeechWarPrismIterateTransport">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Effect value="TalDarimSoulLeechWarPrismBloodShieldAB"/>
+    </CEffectEnumTransport>
+    <CEffectEnumTransport id="TalDarimSoulLeechWarPrismIterateTransport2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Effect value="TalDarimSoulLeechWarPrismBloodShieldAB2"/>
+    </CEffectEnumTransport>
+    <CEffectSet id="TalDarimSoulLeechWarPrismSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSoulLeechWarPrismBloodShieldABSelf"/>
+        <EffectArray value="TalDarimSoulLeechWarPrismIterateTransport"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimSoulLeechWarPrismSet2">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSoulLeechWarPrismBloodShieldABSelf2"/>
+        <EffectArray value="TalDarimSoulLeechWarPrismIterateTransport2"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimSoulLeechWarmistressSoulOverchargeAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimWarmistressSoulsOvercharge"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TalDarimSupplicantDeathLargeReliquarySearch">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="SourcePoint"/>
+        <ImpactLocation Value="SourcePoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Summoned"/>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimSupplicantDeathReliquaryOrderEmpty"/>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimSupplicantDeathReliquaryOrder"/>
+        <MaxCount value="1"/>
+        <TargetSorts>
+            <SortArray value="TalDarimSoulLeechSortHigh"/>
+            <SortArray value="TalDarimSoulLeechSortNotLow"/>
+            <SortArray value="TalDarimSoulLeechSortLow"/>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimSupplicantDeathLargeSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="SourcePoint"/>
+        <ImpactLocation Value="SourcePoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Summoned"/>
+        <AreaArray Radius="8" Effect="TalDarimSupplicantDeathOrderEffect"/>
+        <TargetSorts>
+            <SortArray value="TalDarimSoulLeechSortHigh"/>
+            <SortArray value="TalDarimSoulLeechSortNotLow"/>
+            <SortArray value="TalDarimSoulLeechSortLow"/>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <MaxCount value="3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimSoulLeechAllDeathSearch">
+        <ValidatorArray value="TalDarimCasterHaveSouls"/>
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="SourcePoint"/>
+        <ImpactLocation Value="SourcePoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Summoned"/>
+        <TargetSorts>
+            <SortArray value="TalDarimSoulLeechSortHigh"/>
+            <SortArray value="TalDarimSoulLeechSortNotLow"/>
+            <SortArray value="TalDarimSoulLeechSortLow"/>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="6" Effect="TalDarimSupplicantDeathOrderEffect"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimWarmistressSoulsOverchargeSearch">
+        <ValidatorArray value="TalDarimWarmistressHave4Souls"/>
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="SourcePoint"/>
+        <ImpactLocation Value="SourcePoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Summoned"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="8" Effect="TalDarimSupplicantDeathOrderEffect"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TalDarimSupplicantDeathSearchSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSupplicantDeathSearch"/>
+        <EffectArray value="TalDarimSupplicantDeathReliquarySearch"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimSupplicantDeathLargeSearchSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSupplicantDeathLargeSearch"/>
+        <EffectArray value="TalDarimSupplicantDeathLargeReliquarySearch"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimWarmistressSoulsOverchargeSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimWarmistressSoulsOverchargeSearch"/>
+        <EffectArray value="TalDarimWarmistressSoulsOverchargeRB"/>
+    </CEffectSet>
+    <CEffectDamage id="TalDarimWrathwalkerDamageAirBonus" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Massive" value="30"/>
+        <AttributeBonus index="Structure" value="30"/>
+        <Kind value="Ranged"/>
+        <Amount value="40"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimWrathwalkerDamageGroundBonus" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Massive" value="50"/>
+        <AttributeBonus index="Structure" value="50"/>
+        <Kind value="Ranged"/>
+        <Amount value="50"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="TalDarimDreadnougthWarpInSupplicant">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="TalDarimBloodHunterWeaponDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Amount value="45"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="ZerDarimDisguiseAsSupplicantCU" parent="DisguiseEx3CU">
+        <SpawnUnit value="ZerDarimChangelingSupplicant"/>
+    </CEffectCreateUnit>
+    <CEffectSwitch id="DisguiseEx3">
+        <CaseArray Validator="ZerDarimDisguiseAsSupplicant" Effect="ZerDarimDisguiseAsSupplicantCU"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="TalDarimAscendantPsiOrbABDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimAscendantPsionicOrbDamage"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TalDarimChampionHegemonySet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimChampionHegemonyRegen"/>
+        <EffectArray value="TalDarimChampionHegemonyBurstOfSpeedAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimCustodesTerrazineFogApplyBuff">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimCustodesTerrazineFog"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="TalDarimCustodesTerrazineFogPersistent">
+        <EditorCategories value="Race:PrTD"/>
+        <InitialEffect value="TalDarimCustodesTerrazineFogSearch"/>
+        <PeriodCount value="6"/>
+        <PeriodicEffectArray value="TalDarimCustodesTerrazineFogSearch"/>
+        <PeriodicPeriodArray value="0.5712"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="TalDarimCustodesTerrazineFogSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="-;Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="TalDarimCustodesTerrazineFogApplyBuff"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumMagazine id="TalDarimDeathStarReleaseCommandIterate">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="TalDarimDeathStarReleaseCommandSet"/>
+        <EffectExternal value="TalDarimDeathStarReleaseCommandSet"/>
+    </CEffectEnumMagazine>
+    <CEffectModifyUnit id="TalDarimParticleCannonParticleBeamMultiAADummy">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectCreatePersistent id="TalDarimParticleCannonParticleBeamMultiAACP">
+        <ValidatorArray value="TalDarimTargetisPlayerPrismaticTower"/>
+        <ValidatorArray value="TalDarimPrismaticTowerActivatedMulti"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="TalDarimParticleCannonParticleBeamMultiAADummy"/>
+        <PeriodCount value="3"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="TalDarimParticleCannonParticleBeamMultiAARetarget1"/>
+        <PeriodicPeriodArray value="0.3"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TalDarimParticleCannonParticleBeamMultiAADamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Amount value="20"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectEnumTrackedUnits id="TalDarimParticleCannonParticleBeamMonoAARetarget">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimPrismaticTowerTargetTracking"/>
+        <TrackerUnit Value="Target"/>
+        <Effect value="TalDarimParticleCannonParticleBeamMonoAADamage"/>
+    </CEffectEnumTrackedUnits>
+    <CEffectCreatePersistent id="TalDarimParticleCannonParticleBeamCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="TalDarimParticleCannonParticleBeamDummy"/>
+        <PeriodCount value="3"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="TalDarimParticleCannonParticleBeamDamage"/>
+        <PeriodicPeriodArray value="0.3"/>
+        <ValidatorArray value="TalDarimTargetisNotPlayerPrismaticTower"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TalDarimParticleCannonParticleBeamMonoAACP">
+        <ValidatorArray value="TalDarimTargetisPlayerPrismaticTower"/>
+        <ValidatorArray value="TalDarimPrismaticTowerActivatedMono"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="TalDarimParticleCannonParticleBeamMonoAADummy"/>
+        <PeriodCount value="3"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="TalDarimParticleCannonParticleBeamMonoAARetarget"/>
+        <PeriodicPeriodArray value="0.3"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TalDarimParticleCannonParticleBeamDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Amount value="15"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimParticleCannonParticleBeamMonoAADamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Armored" value="5"/>
+        <Amount value="20"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="TalDarimParticleCannonParticleBeamDummy">
+        <ValidatorArray value="MothershipRangeCheck"/>
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="TalDarimHavocVoidShardABVoidShardSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimHavocVoidShardABVoidShardTimer"/>
+        <EffectArray value="TalDarimHavocVoidShardABVoidShard"/>
+    </CEffectSet>
+    <CEffectDamage id="TalDarimCustodesPsionicShockDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimCustodesPsionicShockChainDamage" parent="TalDarimCustodesPsionicShockDamage">
+        <Name value="Effect/Name/TalDarimCustodesPsionicShockChainDamage"/>
+        <ValidatorArray value="NotStasis"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimCustodesPsionicShockChainStasisDamage" parent="TalDarimCustodesPsionicShockDamage">
+        <Name value="Effect/Name/TalDarimCustodesPsionicShockChainStasisDamage"/>
+        <ValidatorArray value="TalDarimBloodHunterVoidStased"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="TalDarimHavocVoidShardABVoidShardTimer">
+        <ValidatorArray index="0" value="TalDarimHavocVoidShardABVoidShardTargetFilters"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimVoidShardTimer"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="TalDarimHavocVoidShardChampionRB">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimChampionHegemony"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TalDarimHavocVoidShardChampionSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <EffectArray value="TalDarimHavocVoidShardChampionRB"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateBloodHunter">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimBloodHunter"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateSupplicant">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimSupplicantVoidShard"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateDestroyer">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimDestroyer"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateRiddler">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimRiddler"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateOutrider">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimOutrider"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateWrathwalker">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimWrathwalker"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateVanguard">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimVanguard"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateSlayer">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimSlayer"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="TalDarimHavocVoidShardABVoidShard">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimHavocVoidShard"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TalDarimHavocKillVoidShard">
+        <ValidatorArray value="KillHallucinationTargetFilters"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateChampion">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardChampionSet"/>
+        <SpawnUnit value="TalDarimChampion"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateCollector">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimLocust"/>
+        <SpawnCount value="2"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="TalDarimHavocVoidShardCreateDreadnought">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="TalDarimHavocVoidShardABVoidShardSet"/>
+        <SpawnUnit value="TalDarimDreadnought"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="TalDarimMonitorDetonationDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="150"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="SameCliff" value="0"/>
+        <Visibility value="Visible"/>
+        <AttributeBonus index="Structure" value="150"/>
+    </CEffectDamage>
+    <CEffectSet id="TalDarimMonitorDetonationSet">
+        <ValidatorArray value="CasterAndTargetNotDead"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimMonitorDetonationDamage"/>
+        <EffectArray value="Suicide"/>
+    </CEffectSet>
+    <CEffectTransferBehavior id="TalDarimDeathStarReleaseCommandCopyBeha">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchUnit Effect="TalDarimDeathStarReleaseCommandSet"/>
+        <ImpactUnit Value="Target"/>
+        <Count value="99"/>
+    </CEffectTransferBehavior>
+    <CEffectModifyUnit id="TalDarimDeathStarReleaseCommandCopy">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchUnit Effect="TalDarimDeathStarReleaseCommandSet" Value="Target"/>
+        <VitalArray index="Life">
+            <Change value="0.01"/>
+            <ChangeFraction value="0">
+                <AccumulatorArray value="TaDarimDeathStarReleasedDestroyerHealth"/>
+            </ChangeFraction>
+        </VitalArray>
+        <VitalArray index="Shields">
+            <Change value="0.01"/>
+            <ChangeFraction value="0">
+                <AccumulatorArray value="TaDarimDeathStarReleasedDestroyerShield"/>
+            </ChangeFraction>
+        </VitalArray>
+        <ModifyFlags index="SetVitals" value="1"/>
+        <RallyUnit Effect="TalDarimDeathStarReleaseCommandSet"/>
+        <SelectTransferUnit Effect="TalDarimDeathStarReleaseCommandSet" Value="Target"/>
+        <SelectTransferFlags index="IncludeControlGroups" value="1"/>
+        <FacingLocation Effect="TalDarimDeathStarReleaseCommandSet" Value="TargetUnit"/>
+    </CEffectModifyUnit>
+    <CEffectCreateUnit id="TalDarimDeathStarReleaseCommandCreate">
+        <EditorCategories value="Race:PrTD"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="NormalizeSpawnOffset" value="0"/>
+        <SpawnEffect value="TalDarimDeathStarReleaseCommandSetCopy"/>
+        <SpawnUnit value="TalDarimDestroyer"/>
+        <SelectUnit Value="Target"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="TalDarimDeathStarReleaseCommandSetCopy">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimDeathStarReleaseCommandCopyBeha"/>
+        <EffectArray value="TalDarimDeathStarReleaseCommandCopy"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimDeathStarReleaseCommandSet">
+        <ValidatorArray value="TalDarimTargetisDestroyer"/>
+        <ValidatorArray value="TalDarimDeathStarTracked"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimDeathStarReleaseCommandTrack"/>
+        <EffectArray value="TalDarimDeathStarReleaseCommandCreate"/>
+        <EffectArray value="KillRemove"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="TalDarimDeathStarReleaseCommandTrack">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimDeathStarTrack"/>
+    </CEffectRemoveBehavior>
+    <CEffectIssueOrder id="TalDarimDeathStarVaporizeIniOrderBoost">
+        <EditorCategories value="Race:PrTD"/>
+        <Abil value="TalDarimDestroyerFakeBoost"/>
+        <Target Value="CasterUnit"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="TalDarimDeathStarVaporizeFinOrderStop2">
+        <EditorCategories value="Race:PrTD"/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectEnumMagazine id="TalDarimDeathStarVaporizeIniOrderBoostIterate">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="TalDarimDeathStarVaporizeIniOrderBoost"/>
+        <EffectExternal value="TalDarimDeathStarVaporizeIniOrderBoost"/>
+    </CEffectEnumMagazine>
+    <CEffectApplyBehavior id="TalDarimDeathStarVaporizeIniAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimDeathStarVaporiseBar"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="TalDarimDeathStarVaporizeCP1">
+        <EditorCategories value="Race:PrTD"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <Alert value="CalldownLaunch"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="TalDarimDeathStarVaporizeIniSet"/>
+        <ExpireEffect value="TalDarimDeathStarWeaponLaunchMissile1"/>
+        <FinalEffect value="TalDarimDeathStarVaporizeFinSet"/>
+        <PeriodCount value="30"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <AINotifyEffect value="TalDarimDeathStarVaporizeSearch1"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TalDarimDeathStarVaporizeCP2" parent="TalDarimDeathStarVaporizeCP1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeCP2"/>
+        <ExpireEffect value="TalDarimDeathStarWeaponLaunchMissile2"/>
+        <AINotifyEffect value="TalDarimDeathStarVaporizeSearch2"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TalDarimDeathStarVaporizeCP3" parent="TalDarimDeathStarVaporizeCP1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeCP3"/>
+        <ExpireEffect value="TalDarimDeathStarWeaponLaunchMissile3"/>
+        <AINotifyEffect value="TalDarimDeathStarVaporizeSearch3"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TalDarimDeathStarVaporizeCP4" parent="TalDarimDeathStarVaporizeCP1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeCP4"/>
+        <ExpireEffect value="TalDarimDeathStarWeaponLaunchMissile4"/>
+        <AINotifyEffect value="TalDarimDeathStarVaporizeSearch4"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TalDarimDeathStarVaporizeCP5" parent="TalDarimDeathStarVaporizeCP1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeCP5"/>
+        <ExpireEffect value="TalDarimDeathStarWeaponLaunchMissile5"/>
+        <AINotifyEffect value="TalDarimDeathStarVaporizeSearch5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TalDarimDeathStarVaporizeCP6" parent="TalDarimDeathStarVaporizeCP1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeCP6"/>
+        <ExpireEffect value="TalDarimDeathStarWeaponLaunchMissile6"/>
+        <AINotifyEffect value="TalDarimDeathStarVaporizeSearch6"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumMagazine id="TalDarimDeathStarVaporizeFinOrderStopIterate">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="TalDarimDeathStarVaporizeFinOrderStop2"/>
+        <EffectExternal value="TalDarimDeathStarVaporizeFinOrderStop2"/>
+    </CEffectEnumMagazine>
+    <CEffectSet id="TalDarimDeathStarVaporizeIniSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimDeathStarVaporizeIniOrderBoostIterate"/>
+        <EffectArray value="TalDarimDeathStarVaporizeIniAB"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimDeathStarVaporizeFinSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimDeathStarVaporizeFinOrderStopIterate"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimDestroyerDestructionSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimDestroyerDestructionDamage"/>
+        <EffectArray value="TalDarimDestroyerDestructionAutoCast"/>
+        <EffectArray value="TalDarimDestroyerDestructionBounceSearch"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="TalDarimDestroyerFakeBoost">
+        <ValidatorArray value="TalDarimTargetisDeathStar"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="TalDarimDestroyerFakeBoostTick"/>
+        <PeriodicEffectArray value="TalDarimDestroyerFakeBoostTick"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectTeleport id="TalDarimDeathStarAssumeCommandTP">
+        <EditorCategories value="Race:PrTD"/>
+        <TargetLocation Value="TargetPoint"/>
+    </CEffectTeleport>
+    <CEffectLoadContainer id="TalDarimDeathStarAssumeCommandLC">
+        <EditorCategories value="Race:PrTD"/>
+        <ContainerType value="Magazine"/>
+        <ContainerAbil value="TalDarimDeathStarDestroyerEscort"/>
+    </CEffectLoadContainer>
+    <CEffectCreatePersistent id="TalDarimDeathStarAssumeCommandCP">
+        <ValidatorArray value="TalDarimTargetisDestroyer"/>
+        <ValidatorArray value="TalDarimDeathStarNotTracked"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="TalDarimDeathStarAssumeCommandTrack"/>
+        <PeriodicEffectArray value="TalDarimDeathStarAssumeCommandLC"/>
+        <PeriodicEffectArray value="TalDarimDeathStarAssumeCommandTP"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="TalDarimDeathStarAssumeCommandTrack">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimDeathStarTrack"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TalDarimDeathStarVaporizeDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Structure" value="25"/>
+        <Visibility value="Visible"/>
+        <Amount value="40"/>
+        <Death value="Blast"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+    </CEffectDamage>
+    <CEffectRemoveBehavior id="TalDarimDeathStarVaporizeFinRB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimDeathStarDeathCharge"/>
+    </CEffectRemoveBehavior>
+    <CEffectEnumArea id="TalDarimDeathStarVaporizeSearch1">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="TalDarimDeathStarVaporizeDamage"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimDeathStarVaporizeSearch2" parent="TalDarimDeathStarVaporizeSearch1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeSearch2"/>
+        <AreaArray index="0" Radius="3" Effect="TalDarimDeathStarVaporizeDamage"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimDeathStarVaporizeSearch3" parent="TalDarimDeathStarVaporizeSearch1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeSearch3"/>
+        <AreaArray index="0" Radius="3.8" Effect="TalDarimDeathStarVaporizeDamage"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimDeathStarVaporizeSearch4" parent="TalDarimDeathStarVaporizeSearch1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeSearch4"/>
+        <AreaArray index="0" Radius="4.4" Effect="TalDarimDeathStarVaporizeDamage"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimDeathStarVaporizeSearch5" parent="TalDarimDeathStarVaporizeSearch1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeSearch5"/>
+        <AreaArray index="0" Radius="4.8" Effect="TalDarimDeathStarVaporizeDamage"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimDeathStarVaporizeSearch6" parent="TalDarimDeathStarVaporizeSearch1">
+        <Name value="Effect/Name/TalDarimDeathStarVaporizeSearch6"/>
+        <AreaArray index="0" Radius="5" Effect="TalDarimDeathStarVaporizeDamage"/>
+    </CEffectEnumArea>
+    <CEffectIssueOrder id="TalDarimDestroyerDestructionAutoCast">
+        <ValidatorArray value="TalDarimDestroyerCasterHaveBloodCharge"/>
+        <ValidatorArray value="TalDarimDestroyerBeamAutoCast"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="TalDarimDestroyerMultiTargetBoost"/>
+    </CEffectIssueOrder>
+    <CEffectModifyUnit id="TalDarimDestroyerDestructionBounceOff">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="TalDarimDestroyerDestructionBounceSearch">
+        <ValidatorArray value="TalDarimDestroyerMultiTargetBoost"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ExcludeArray Value="Target"/>
+        <AreaArray MaxCount="2" Radius="3" Effect="TalDarimDestroyerDestructionDamageBounce"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="TalDarimDestroyerDestructionBounceSwitch">
+        <EditorCategories value="Race:PrTD"/>
+        <CaseArray Validator="TalDarimDestroyerMultiTargetBoost" Effect="TalDarimDestroyerDestructionBounceSearch"/>
+        <CaseDefault value="TalDarimDestroyerDestructionBounceOff"/>
+    </CEffectSwitch>
+    <CEffectDamage id="TalDarimDestroyerDestructionDamageBounce" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <DamageModifierSource Value="Caster"/>
+        <AttributeBonus index="Light" value="4"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="TalDarimDestroyerFakeBoostTick">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="TalDarimDestroyerMultiTargetChargeRB">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimDestroyerBloodCharge"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TalDarimDestroyerMultiTargetSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimDestroyerMultiTargetBoostAB"/>
+        <EffectArray value="TalDarimDestroyerMultiTargetChargeRB"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="TalDarimHavocTargetLockFakeCD">
+        <ValidatorArray value="TalDarimHavocTargetLockNotLocked"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="TalDarimHavocTargetLock,Execute" CooldownOperation="Add">
+            <Fraction Cooldown="1"/>
+        </Cost>
+    </CEffectModifyUnit>
+    <CEffectSet id="TalDarimHavocTargetLockFakeSet">
+        <ValidatorArray value="TalDarimNotUnselectable"/>
+        <ValidatorArray value="TalDarimNotUntargetable"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimHavocTargetLockFakeCD"/>
+        <EffectArray value="TalDarimHavocTargetLockCP"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="TalDarimParticleCannonParticleBeamMonoAADummy">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="TalDarimParticleCannonParticleBeamMultiAADummy2">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="TalDarimParticleCannonParticleBeamMultiAADummy2Set">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimParticleCannonParticleBeamMultiAADummy2"/>
+        <EffectArray value="TalDarimParticleCannonParticleBeamMultiAARetarget2"/>
+    </CEffectSet>
+    <CEffectEnumTrackedUnits id="TalDarimParticleCannonParticleBeamMultiAARetarget1">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimPrismaticTowerTargetTracking"/>
+        <TrackerUnit Value="Target"/>
+        <Effect value="TalDarimParticleCannonParticleBeamMultiAADummy2Set"/>
+    </CEffectEnumTrackedUnits>
+    <CEffectEnumTrackedUnits id="TalDarimParticleCannonParticleBeamMultiAARetarget2">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimPrismaticTowerTargetTracking"/>
+        <TrackerUnit Value="Target"/>
+        <Effect value="TalDarimParticleCannonParticleBeamMultiAADamage"/>
+    </CEffectEnumTrackedUnits>
+    <CEffectApplyBehavior id="TalDarimPrismaticTowerMultiAB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimPrismaticTowerActivatedBouncer"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimPrismaticTowerMonoAB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimPrismaticTowerActivatedMono"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="TalDarimPrismaticTowerMonoAttackSelf">
+        <ValidatorArray value="TalDarimTargetisParticleCannon"/>
+        <ValidatorArray value="TalDarimTargetisNotAttacking"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Abil value="attack"/>
+        <Target Value="CasterUnit"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="TalDarimPrismaticTowerMultiAttackSelf">
+        <ValidatorArray value="TalDarimTargetisPrismaticTower"/>
+        <ValidatorArray value="TalDarimTargetisNotAttacking"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Abil value="attack"/>
+        <Target Value="CasterUnit"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="TalDarimPrismaticTowerMonoAttackSelfSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="Structure;Self,Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Hidden,Stunned"/>
+        <AreaArray Radius="9.5" Effect="TalDarimPrismaticTowerMonoAttackSelf"/>
+        <AreaArray Radius="9.5" Effect="TalDarimPrismaticTowerMultiAttackSelf"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimPrismaticTowerMultiAttackSelfSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="Structure;Self,Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Hidden,Stunned"/>
+        <AreaArray Radius="9.5" Effect="TalDarimPrismaticTowerMonoAttackSelf"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TalDarimPrismaticTowerMonoSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimPrismaticTowerTrack"/>
+        <EffectArray value="TalDarimPrismaticTowerMonoAB"/>
+        <EffectArray value="TalDarimPrismaticTowerMonoAttackSelfSearch"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimPrismaticTowerMultiSet">
+        <ValidatorArray value="TalDarimTargetisPlayerPrismaticTower"/>
+        <ValidatorArray value="TalDarimPrismaticTowerActivatedMono"/>
+        <ValidatorArray value="TalDarimNoEnemiesNearbyAir"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimPrismaticTowerTrack"/>
+        <EffectArray value="TalDarimPrismaticTowerMultiAB"/>
+        <EffectArray value="TalDarimPrismaticTowerMultiAttackSelfSearch"/>
+    </CEffectSet>
+    <CEffectAddTrackedUnit id="TalDarimPrismaticTowerTrack">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimPrismaticTowerTargetTracking"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectAddTrackedUnit>
+    <CEffectRemoveBehavior id="TalDarimSlayerEntropicShieldChargeRB">
+        <ValidatorArray index="0" value="TalDarimCasterNotInvulnerable"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimSlayerEntropicShieldCharge"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TalDarimSlayerEntropicShieldChargeSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSlayerEntropicShieldChargeRB"/>
+        <EffectArray value="TalDarimSlayerEntropicShieldActiveAB"/>
+        <ValidatorArray value="TalDarimCasterHavenoActiveEntropicShield"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimSoulLeechAscendantSoulChargeAB2">
+        <ValidatorArray index="0" value="TalDarimSoulLeechAscendantSoulChargeABTargetFilters"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimAscendantSoulPower"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechChampionBurstOfSpeedAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimChampionBurstofSpeed"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechVanguardSoulArmourAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimVanguardSoulArmour"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechVanguardSoulArmourAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimVanguardSoulArmour"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="TalDarimSoulLeechCustodesRegenerate2">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
+            <Change value="50"/>
+        </VitalArray>
+        <ModifyFlags index="IsHeal" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="TalDarimSoulLeechAscendantSoulChargeAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimAscendantSoulPower"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="TalDarimSoulLeechHavocVoidCharge">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="TalDarimHavocVoidShardChampion,Execute" ChargeCountUse="-1"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="TalDarimSoulLeechHavocVoidCharge2">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="TalDarimHavocVoidShardChampion,Execute" ChargeCountUse="-2"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="TalDarimSoulLeechCustodesRegenerate">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
+            <Change value="25"/>
+        </VitalArray>
+        <ModifyFlags index="IsHeal" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="TalDarimSoulLeechDestroyerMultiTargetChargeAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimDestroyerBloodCharge"/>
+        <Count value="2"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimDestroyerMultiTargetBoostAB">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimDestroyerBloodSeeker"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechDeathStarDeathChargeAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimDeathStarDeathCharge"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechMonitorDetonationChargeAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimMonitorDetonationCharge"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="TalDarimSoulLeechPariahRegenerate2">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
+            <Change value="150"/>
+        </VitalArray>
+        <ModifyFlags index="IsHeal" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="TalDarimSoulLeechSlayerEntropicShieldCharge2">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimSlayerEntropicShieldCharge"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechSlayerEntropicShieldCharge">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimSlayerEntropicShieldCharge"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="TalDarimSoulLeechSwitch">
+        <EditorCategories value="Race:PrTD"/>
+        <CaseArray Validator="TalDarimCasterisBloodHunter" Effect="TalDarimSoulLeechBloodHunterSoulShardABCharge"/>
+        <CaseArray Validator="TalDarimCasterisChampion" Effect="TalDarimSoulLeechChampionBurstOfSpeedAB2"/>
+        <CaseArray Validator="TalDarimCasterisSupplicant" Effect="TalDarimSoulLeechCreatePariah"/>
+        <CaseArray Validator="TalDarimCasterisDreadnought" Effect="TalDarimSoulLeechDreadnoughtBeetleArmedAB2"/>
+        <CaseArray Validator="TalDarimCasterisDestroyer" Effect="TalDarimSoulLeechDestroyerMultiTargetChargeAB2"/>
+        <CaseArray Validator="TalDarimCasterisOutrider" Effect="TalDarimSoulLeechOutriderSoulsWeaponAB2"/>
+        <CaseArray Validator="TalDarimCasterisRiddler" Effect="TalDarimSoulLeechRiddlerHarmonizationAB2"/>
+        <CaseArray Validator="TalDarimCasterisPariah" Effect="TalDarimSoulLeechPariahRegenerate"/>
+        <CaseArray Validator="TalDarimCasterisSlayer" Effect="TalDarimSoulLeechSlayerEntropicShieldCharge2"/>
+        <CaseArray Validator="TalDarimCasterisWrathwalker" Effect="TalDarimSoulLeechWrathwalkerSoulsWeaponAB2"/>
+        <CaseArray Validator="TalDarimCasterisDeathStar" Effect="TalDarimSoulLeechDeathStarDeathChargeAB"/>
+        <CaseArray Validator="TalDarimCasterisMonitor" Effect="TalDarimSoulLeechMonitorDetonationChargeAB"/>
+        <CaseArray Validator="TalDarimCasterisHavoc" Effect="TalDarimSoulLeechHavocVoidCharge2"/>
+        <CaseArray Validator="TalDarimCasterisCustodes" Effect="TalDarimSoulLeechCustodesRegenerate2"/>
+        <CaseArray Validator="TalDarimCasterisAscendant" Effect="TalDarimSoulLeechAscendantSoulChargeAB2"/>
+        <CaseArray Validator="TalDarimCasterisVanguard" Effect="TalDarimSoulLeechVanguardSoulArmourAB2"/>
+        <CaseArray Validator="TalDarimCasterisWarPrism" Effect="TalDarimSoulLeechWarPrismSet2"/>
+        <CaseArray Validator="TalDarimCasterisWarmistress" Effect="TalDarimSoulLeechWarmistressSoulOverchargeAB"/>
+        <CaseArray Validator="TalDarimCasterisLocust" Effect="TalDarimSoulLeechLocustSet2"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="TalDarimSoulLeechWrathwalkerSoulsWeaponAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimWrathwalkerSoulsWeapon"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechDreadnoughtBeetleArmedAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimDreadnoughtBeetlesArmed"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechDreadnoughtBeetleArmedAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimDreadnoughtBeetlesArmed"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TalDarimVanguardScatterCannonsDamageTargeted" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:PrTD"/>
+        <Amount value="10"/>
+        <Kind value="Splash"/>
+        <Death value="Blast"/>
+        <AttributeBonus index="Light" value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimVanguardScatterCannonsDamageSec" parent="DU_WEAP_MISSILE">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Amount value="10"/>
+        <Kind value="Splash"/>
+        <Death value="Blast"/>
+        <AttributeBonus index="Light" value="5"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="TalDarimVanguardScatterCannonsLMTargeted">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimVanguardScatterCannonsDamageTargeted"/>
+        <AmmoUnit value="TalDarimUnitVanguardWeapon"/>
+        <ImpactRange value="0.5"/>
+        <Movers Link="TalDarimVanguardScatterCannonsMover" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimVanguardScatterCannonsLMSec">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value="TalDarimVanguardScatterCannonsSearchSec"/>
+        <AmmoUnit value="TalDarimUnitVanguardWeapon"/>
+        <ImpactRange value="0.5"/>
+        <Movers Link="TalDarimVanguardScatterCannonsMover" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="TalDarimVanguardScatterCannonsRandomSec">
+        <EditorCategories value="Race:PrTD"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="TalDarimVanguardScatterCannonsLMTargeted"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="TalDarimVanguardScatterCannonsLMSec"/>
+        <PeriodicOffsetArray value="-0.75,-0.75,0"/>
+        <PeriodicOffsetArray value="0.75,0.75,0"/>
+        <PeriodicOffsetArray value="0.75,-0.75,0"/>
+        <PeriodicOffsetArray value="-0.75,0.75,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="TalDarimVanguardScatterCannonsSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.65" Effect="TalDarimVanguardScatterCannonsDamage"/>
+        <ExcludeArray Effect="TalDarimVanguardScatterCannonsRandom" Value="Target"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimVanguardScatterCannonsSearchSec">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.65" Effect="TalDarimVanguardScatterCannonsDamageSec"/>
+        <ExcludeArray Effect="TalDarimVanguardScatterCannonsRandomSec" Value="Target"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TalDarimWrathwalkerSetAir">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimWrathwalkerLMAir"/>
+        <EffectArray value="TalDarimWrathwalkerSearchAir"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimWrathwalkerSetGround">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimWrathwalkerLMGround"/>
+        <EffectArray value="TalDarimWrathwalkerSearchGround"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="TalDarimWrathwalkerSoulsWeaponRB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimWrathwalkerSoulsWeapon"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechChampionBurstOfSpeedAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimChampionBurstofSpeed"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="TalDarimSoulLeechCreatePariahCopy">
+        <EditorCategories value="Race:PrTD"/>
+        <SelectTransferFlags index="IncludeControlGroups" value="1"/>
+        <SelectTransferUnit Value="Caster"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="TalDarimSoulLeechCreatePariahKillSupplicant">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimPariahPsiBladesDamage" parent="DU_WEAP">
+        <ValidatorArray value="NotHidden"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Amount value="8"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TalDarimPariahPsiBladesCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="TalDarimPariahPsiBladesDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="TalDarimBloodHunterSoulShardAB">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimBloodHunterSoulShard"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimHavocTargetLockAB">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimHavocTargetLocked"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="TalDarimHavocTargetLockCP">
+        <ValidatorArray value="TalDarimHavocTargetLockNotLocked"/>
+        <EditorCategories value="Race:PrTD"/>
+        <InitialEffect value="TalDarimHavocTargetLockSet"/>
+        <PeriodicValidator value="TalDarimHavocTargetLockIsLocked"/>
+        <WhichLocation Value="TargetUnit"/>
+        <OffsetVectorEndLocation Value="TargetUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumTrackedUnits id="TalDarimHavocTargetLockDeathEnumTracked">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimHavocTargetLockTrack"/>
+        <Effect value="TalDarimHavocTargetLockRB"/>
+    </CEffectEnumTrackedUnits>
+    <CEffectRemoveBehavior id="TalDarimHavocTargetLockRB">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimHavocTargetLocked"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TalDarimHavocTargetLockSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimHavocTargetLockAB"/>
+        <EffectArray value="TalDarimHavocTargetLockTrack"/>
+        <ValidatorArray value="TalDarimHavocTargetLockValidTarget"/>
+    </CEffectSet>
+    <CEffectAddTrackedUnit id="TalDarimHavocTargetLockTrack">
+        <EditorCategories value="Race:PrTD"/>
+        <BehaviorLink value="TalDarimHavocTargetLockTrack"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectAddTrackedUnit>
+    <CEffectApplyBehavior id="TalDarimSoulLeechRiddlerHarmonizationAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimRiddlerHarmonization"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="TalDarimBloodHunterSoulShardRBCharge">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimBloodHunterSoulShardCharge"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TalDarimBloodHunterSoulShard">
+        <ValidatorArray value="TalDarimBloodHunterCasterSoulShard"/>
+        <ValidatorArray value="TalDarimBloodHunterTargetNoSoulShard"/>
+        <ValidatorArray value="NotStructureTarget"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimBloodHunterSoulShardAB"/>
+        <EffectArray value="TalDarimBloodHunterSoulShardRBCharge"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimBloodHunterWeaponSetStasis">
+        <ValidatorArray value="TalDarimBloodHunterVoidStased"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimBloodHunterSoulShard"/>
+        <EffectArray value="TalDarimBloodHunterWeaponDamage"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="TalDarimChampionPsiEviceratorBurstOfSpeedRB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimChampionBurstofSpeed"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TalDarimChampionPsiEviceratorSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimChampionPsiEviceratorDamage"/>
+        <EffectArray value="TalDarimChampionPsiEviceratorBurstOfSpeedRB"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="TalDarimOutriderGroundLeftLM2">
+        <ValidatorArray index="0" value="TalDarimOutriderHaveAdditionnalAmmos"/>
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchEffect value="TalDarimOutriderSoulsWeaponRB"/>
+        <ImpactEffect value="TalDarimOutriderGroundSet"/>
+        <AmmoUnit value="TalDarimOutriderGroundWeaponLeft"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="ScoutMPAirWeaponLeft" IfRangeLTE="4"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimOutriderGroundRightLMBuff">
+        <ValidatorArray index="0" value="TalDarimOutriderHaveAdditionnalAmmos"/>
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchEffect value="TalDarimOutriderSoulsWeaponRB"/>
+        <ImpactEffect value="TalDarimOutriderGroundSet"/>
+        <AmmoUnit value="TalDarimOutriderGroundWeaponRight"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="ScoutMPAirWeaponRight" IfRangeLTE="4"/>
+    </CEffectLaunchMissile>
+    <CEffectRemoveBehavior id="TalDarimOutriderSoulsWeaponRB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimOutriderSoulsWeapon"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectCreatePersistent id="TalDarimOutriderGroundCPBuff">
+        <ValidatorArray value="TalDarimOutriderHaveAdditionnalAmmos"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <PeriodicValidator value="TalDarimOutriderHaveAdditionnalAmmos"/>
+        <PeriodicEffectArray value="TalDarimOutriderGroundLeftLM2"/>
+        <PeriodicEffectArray value="TalDarimOutriderGroundRightLMBuff"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="TalDarimSoulLeechCreatePariahSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSoulLeechCreatePariahCopy"/>
+        <EffectArray value="TalDarimSoulLeechCreatePariahKillSupplicant"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimSoulLeechOutriderSoulsWeaponAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimOutriderSoulsWeapon"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechRiddlerHarmonizationAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimRiddlerHarmonization"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TalDarimDrainSupplicantSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Missile,Stasis,Dead,Hallucination,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSLife"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimSoulLeechSetLitany"/>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimSoulLeechSetSupplicant"/>
+        <MinCount value="1"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreateUnit id="TalDarimSoulLeechCreatePariah">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <RallyUnit Value="Caster"/>
+        <SpawnEffect value="TalDarimSoulLeechCreatePariahSet"/>
+        <SpawnUnit value="TalDarimPariah"/>
+        <SelectUnit Value="Caster"/>
+    </CEffectCreateUnit>
+    <CEffectEnumArea id="TalDarimSoulLeechSupplicantSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSShields"/>
+            <SortArray value="TSLife"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimSoulLeechCreatePariah"/>
+        <MinCount value="1"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="TalDarimPariahDurationBoost">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimPariahTimedLife"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="TalDarimSupplicantDeathOrderEffect">
+        <ValidatorArray value="TalDarimTargetNotFullofSouls"/>
+        <ValidatorArray value="TalDarimTargetisNotHavocorNotFullofSoulsHavoc"/>
+        <ValidatorArray value="TalDarimTargetisSoulDrinkerOrDamagedCustodes"/>
+        <ValidatorArray value="TalDarimTargetNotChargedMonitor"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Abil value="TalDarimSoulLeech"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="TalDarimSoulLeechSupplicantShieldAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimSupplicantBloodShield"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechWrathwalkerSoulsWeaponAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimWrathwalkerSoulsWeapon"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechBloodHunterSoulShardABCharge">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimBloodHunterSoulShardCharge"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TalDarimSoulLeechOutriderSoulsWeaponAB2">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimOutriderSoulsWeapon"/>
+        <Count value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TalDarimSoulLeechSetLitany">
+        <ValidatorArray value="TalDarimTargetisLitany"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSoulLeechSwitch"/>
+        <EffectArray value="TalDarimKillSupplicant"/>
+    </CEffectSet>
+    <CEffectSet id="TalDarimSoulLeechSetSupplicant">
+        <ValidatorArray value="TalDarimTargetisSupplicant"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimSoulLeechSwitch"/>
+        <EffectArray value="TalDarimKillSupplicant"/>
+    </CEffectSet>
+    <CEffectEnumArea id="TalDarimDrainSupplicantReliquarySearch">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSLife"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimDrainSupplicantReliquarySetSupplicant"/>
+        <MinCount value="1"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TalDarimDrainSupplicantReliquarySetSupplicant">
+        <ValidatorArray value="TalDarimTargetisSupplicant"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimDrainSupplicantReliquaryOrder"/>
+        <EffectArray value="TalDarimKillSupplicant"/>
+    </CEffectSet>
+    <CEffectUseMagazine id="TalDarimReliquarySendLitanies">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectUseMagazine>
+    <CEffectSet id="TalDarimChampionHegemonySetLitany">
+        <ValidatorArray value="TalDarimTargetisLitany"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimChampionHegemonySet"/>
+        <EffectArray value="TalDarimKillSupplicant"/>
+    </CEffectSet>
+    <CEffectDamage id="TalDarimCollectorParticleBeam" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="TalDarimCynosureDestructiveHarvestSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy,UnderConstruction,Dead,Hidden,Hallucination"/>
+        <TargetSorts RequestPercentage="1">
+            <SortArray value="TSDistanceToTarget"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="10" Effect="TalDarimCynosureDestructiveHarvestTick"/>
+    </CEffectEnumArea>
+    <CEffectModifyUnit id="TalDarimCynosureDestructiveHarvestTick">
+        <EditorCategories value="Race:PrTD"/>
+        <ValidatorArray value="TalDarimTargetisBuiltCynosure"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="TalDarimRiddlerPlasmaBombBuildBeamOff">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourcePoint"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimRiddlerPlasmaBombBuildBeamOn">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="TargetUnit"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TalDarimRiddlerPlasmaBombActivateCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterPoint"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="TalDarimRiddlerPlasmaBombReveal"/>
+        <PeriodicEffectArray value="TalDarimRiddlerPlasmaBombDamage"/>
+        <PeriodicEffectArray value="SuicideRemove"/>
+        <PeriodicPeriodArray value="0.5"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="1.66"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="TalDarimRiddlerPlasmaBombActivateSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimRiddlerPlasmaBombActivateCP"/>
+        <EffectArray value="TalDarimRiddlerPlasmaBombCasterAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimRiddlerPlasmaBombCasterAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimRiddlerPlasmaBombCaster"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TalDarimRiddlerPlasmaBombDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <Amount value="60"/>
+        <AreaArray Radius="2.5" Fraction="1"/>
+        <SearchFilters value="Air;Player,Ally,Neutral,Missile,Stasis,Hidden,Invulnerable"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TalDarimRiddlerPlasmaBombReveal">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="CasterUnit"/>
+        <ExpireDelay value="4"/>
+        <RevealRadius value="4"/>
+        <RevealFlags index="Unfog" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="TalDarimRiddlerEnshroudApplyBehavior">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimRiddlerEnshrouded"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TalDarimRiddlerEnshroudDummyDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Flags index="NoDamageTimerReset" value="1"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="TalDarimRiddlerEnshroudSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="TalDarimRiddlerEnshroudSet"/>
+    </CEffectEnumArea>
+    <CEffectDestroyPersistent id="TalDarimRiddlerEnshroudDestroy">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Effect value="RevelationPersistent"/>
+        <Count value="1"/>
+        <Radius value="0.5"/>
+    </CEffectDestroyPersistent>
+    <CEffectCreatePersistent id="TalDarimRiddlerEnshroudPersistent">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <ExpireDelay value="60"/>
+        <RevealRadius value="3"/>
+        <RevealFlags index="Unfog" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="TalDarimRiddlerEnshroudSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimRiddlerEnshroudApplyBehavior"/>
+        <EffectArray value="TalDarimRiddlerEnshroudPersistent"/>
+        <EffectArray value="TalDarimRiddlerEnshroudDummyDamage"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="TalDarimRiddlerWeaponCreatePersistent">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="TalDarimRiddlerWeaponDamage"/>
+        <PeriodicValidator value="OracleHasEnergy"/>
+        <PeriodicEffectArray value="TalDarimRiddlerWeaponDamage"/>
+        <PeriodicPeriodArray value="0.86"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TalDarimRiddlerWeaponDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Armored" value="8"/>
+        <Kind value="Spell"/>
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TalDarimOutriderGroundCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="TalDarimOutriderGroundLeftLM"/>
+        <PeriodicEffectArray value="TalDarimOutriderGroundRightLM"/>
+        <PeriodicEffectArray value="TalDarimOutriderGroundCPBuff"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="TalDarimOutriderGroundLeftLM">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimOutriderGroundSet"/>
+        <AmmoUnit value="TalDarimOutriderGroundWeaponLeft"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="ScoutMPAirWeaponLeft" IfRangeLTE="4"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimOutriderGroundRightLM">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimOutriderGroundSet"/>
+        <AmmoUnit value="TalDarimOutriderGroundWeaponRight"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="ScoutMPAirWeaponRight" IfRangeLTE="4"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TalDarimOutriderGroundDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Armored" value="7"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="7"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimOutriderAirDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="12"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="TalDarimChampionHegemonyBurstOfSpeedAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TalDarimChampionBurstofSpeed"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="TalDarimCynosureDestructiveHarvest">
+        <EditorCategories value="Race:PrTD"/>
+        <Resources value="-6"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="TalDarimCynosureDestructiveHarvestMineralSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimCynosureDestructiveHarvest"/>
+        <EffectArray value="TalDarimCynosureDestructiveHarvestPlayerMineral"/>
+        <EffectArray value="TalDarimCynosureDestructiveHarvestSearch"/>
+        <ValidatorArray value="HarvestableResources"/>
+        <ValidatorArray value="HasVespene"/>
+        <ValidatorArray value="TalDarimCynosureNearbyCynosure"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimCynosureDestructiveHarvestABGas">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimCynosureDestructiveHarvestGas"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TalDarimCynosureDestructiveHarvestGasSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimCynosureDestructiveHarvest"/>
+        <EffectArray value="TalDarimCynosureDestructiveHarvestPlayerGas"/>
+        <EffectArray value="TalDarimCynosureDestructiveHarvestSearch"/>
+        <ValidatorArray value="HarvestableResources"/>
+        <ValidatorArray value="HasVespene"/>
+        <ValidatorArray value="TalDarimCynosureNearbyCynosure"/>
+    </CEffectSet>
+    <CEffectModifyPlayer id="TalDarimCynosureDestructiveHarvestPlayerMineral">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichPlayer Value="Caster"/>
+        <Resources index="Minerals" value="4"/>
+        <ResourcesCollected index="Minerals" value="4"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="TalDarimCynosureDestructiveHarvestPlayerGas">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichPlayer Value="Caster"/>
+        <Resources index="Vespene" value="4"/>
+        <ResourcesCollected index="Vespene" value="4"/>
+    </CEffectModifyPlayer>
+    <CEffectApplyBehavior id="TalDarimCynosureDestructiveHarvestABMineral">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimCynosureDestructiveHarvestMineral"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="TalDarimCynosureDestructiveHarvestSwitch">
+        <ValidatorArray value="HarvestableResources"/>
+        <ValidatorArray value="HasVespene"/>
+        <ValidatorArray value="TalDarimCynosureNearbyCynosure"/>
+        <EditorCategories value="Race:PrTD"/>
+        <CaseArray Validator="TalDarimIsResourceTypeVespene" Effect="TalDarimCynosureDestructiveHarvestABGas"/>
+        <CaseDefault value="TalDarimCynosureDestructiveHarvestABMineral"/>
+    </CEffectSwitch>
+    <CEffectDamage id="TalDarimKillSupplicant">
+        <EditorCategories value="Race:PrTD"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+    </CEffectDamage>
+    <CEffectIssueOrder id="TalDarimDrainSupplicantReliquaryOrder">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Source"/>
+        <Abil value="TalDarimReliquaryLitanyEscort"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="TalDarimBloodHunterSoulShardDeathSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Summoned"/>
+        <AreaArray MaxCount="3" Radius="6" Effect="TalDarimSupplicantDeathOrderEffect"/>
+    </CEffectEnumArea>
+    <CEffectLaunchMissile id="TalDarimSlayerEntropyLanceLM">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimSlayerEntropyLanceDamage"/>
+        <AmmoUnit value="TalDarimSlayerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="TalDarimSlayerEntropicShieldActiveAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="TalDarimSlayerEntropicShieldActive"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TalDarimSlayerEntropyLanceDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Light" value="8"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="TalDarimChampionHegemonyRegen">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Source"/>
+        <VitalArray index="Life">
+            <ChangeFraction value="1"/>
+        </VitalArray>
+        <VitalArray index="Shields">
+            <ChangeFraction value="1"/>
+        </VitalArray>
+        <ModifyFlags index="SetVitals" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="TalDarimChampionHegemonySearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Missile,Stasis,Dead,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimChampionHegemonySetLitany"/>
+        <AreaArray MaxCount="1" Radius="8" Effect="TalDarimChampionHegemonySetSupplicant"/>
+        <MaxCount value="1"/>
+        <MinCount value="1"/>
+        <TargetSorts>
+            <SortArray value="TSShields"/>
+            <SortArray value="TSLife"/>
+        </TargetSorts>
+    </CEffectEnumArea>
+    <CEffectSet id="TalDarimChampionHegemonySetSupplicant">
+        <ValidatorArray value="TalDarimTargetisSupplicant"/>
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimChampionHegemonySet"/>
+        <EffectArray value="TalDarimKillSupplicant"/>
+    </CEffectSet>
+    <CEffectDamage id="TalDarimChampionPsiEviceratorDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Armored" value="15"/>
+        <Amount value="10"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimSupplicantDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectAddTrackedUnit id="TalDarimReliquaryLitanySpawnTrack">
+        <EditorCategories value="Race:PrTD"/>
+        <DebugTrace value="1"/>
+        <BehaviorLink value="TalDarimReliquaryTracking"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectAddTrackedUnit>
+    <CEffectIssueOrder id="TalDarimSupplicantDeathReliquaryOrder">
+        <ValidatorArray value="TalDarimTargetisReliquary"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Abil value="TalDarimReliquaryLitanyEscort"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="TalDarimSupplicantDeathReliquaryOrderEmpty">
+        <ValidatorArray value="TalDarimTargetisReliquary"/>
+        <ValidatorArray value="TalDarimReliquaryNotAt3"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Abil value="TalDarimReliquaryLitanyEscort"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="TalDarimSupplicantDeathSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourcePoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Summoned"/>
+        <AreaArray Radius="6" Effect="TalDarimSupplicantDeathOrderEffect"/>
+        <LaunchLocation Value="SourcePoint"/>
+        <TargetSorts>
+            <SortArray value="TalDarimSoulLeechSortHigh"/>
+            <SortArray value="TalDarimSoulLeechSortNotLow"/>
+            <SortArray value="TalDarimSoulLeechSortLow"/>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <MaxCount value="3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimSupplicantDeathReliquarySearch">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="SourcePoint"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination,Summoned"/>
+        <AreaArray MaxCount="1" Radius="6" Effect="TalDarimSupplicantDeathReliquaryOrderEmpty"/>
+        <AreaArray MaxCount="1" Radius="6" Effect="TalDarimSupplicantDeathReliquaryOrder"/>
+        <MaxCount value="1"/>
+        <LaunchLocation Value="SourcePoint"/>
+        <TargetSorts>
+            <SortArray value="TalDarimSoulLeechSortHigh"/>
+            <SortArray value="TalDarimSoulLeechSortNotLow"/>
+            <SortArray value="TalDarimSoulLeechSortLow"/>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+    </CEffectEnumArea>
+    <CEffectSwitch id="TalDarimSupplicantDeathSearchSwitch">
+        <EditorCategories value="Race:PrTD"/>
+        <CaseArray Validator="TalDarimCasterisHidden" Effect="TalDarimSupplicantDeathLargeSearchSet"/>
+        <CaseDefault value="TalDarimSupplicantDeathSearchSet"/>
+    </CEffectSwitch>
+    <CEffectModifyUnit id="TalDarimSoulLeechPariahRegenerate">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
+            <Change value="75"/>
+        </VitalArray>
+        <ModifyFlags index="IsHeal" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectLaunchMissile id="TalDarimSupplicantLM">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimSupplicantDamage"/>
+        <AmmoUnit value="TalDarimSupplicantWeapon"/>
+        <Movers Link="AdeptWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TalDarimLitanyTimedLifeFate">
+        <EditorCategories value="Race:PrTD"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+        <Death value="Timeout"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TalDarimDreadnoughtParticleBeamCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="TalDarimDreadnoughtParticleBeamDummy"/>
+        <PeriodCount value="6"/>
+        <PeriodicValidator value="TalDarimRangeCheckLT10andCasterNotDead"/>
+        <PeriodicEffectArray value="TalDarimDreadnoughtParticleBeamDamage"/>
+        <PeriodicPeriodArray value="0.15"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TalDarimDreadnoughtParticleBeamDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:PrTD"/>
+        <Visibility value="Visible"/>
+        <Amount value="6"/>
+        <Death value="Fire"/>
+        <AttributeBonus index="Massive" value="6"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="TalDarimWarmistressParticleBeamDummy">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="TalDarimDreadnoughtParticleBeamDummy">
+        <EditorCategories value="Race:PrTD"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="TalDarimWarmistressParticleBeamSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimWarmistressParticleBeamCP"/>
+        <EffectArray value="TalDarimWarmistressParticleBeamCPSec"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="TalDarimWarmistressParticleBeamCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="TalDarimWarmistressParticleBeamDummy"/>
+        <PeriodCount value="3"/>
+        <PeriodicValidator value="TalDarimRangeCheckLT10andCasterNotDead"/>
+        <PeriodicEffectArray value="TalDarimWarmistressParticleBeamDamage"/>
+        <PeriodicPeriodArray value="0.375"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TalDarimWarmistressParticleBeamCPSec">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialDelay value="0.25"/>
+        <InitialEffect value="TalDarimWarmistressParticleBeamDummy"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="TalDarimWarmistressParticleBeamDamage"/>
+        <PeriodicPeriodArray value="0.375"/>
+        <PeriodicValidator value="TalDarimRangeCheckLT10andCasterNotDead"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TalDarimWarmistressParticleBeamDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:PrTD"/>
+        <Visibility value="Visible"/>
+        <Amount value="12"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TalDarimDreadnoughtBeetleCP">
+        <ValidatorArray value="TalDarimDreadnoughtBeetlesArmed"/>
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <!--InitialEffect value="ScarabLaunchSet"/-->
+        <PeriodicEffectArray value="TalDarimDreadnoughtBeetleLM"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="TalDarimDreadnoughtBeetleLM">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimDreadnoughtBeetleDamageTarget"/>
+        <AmmoUnit value="TalDarimDreadnoughtBeetleWeapon"/>
+        <ImpactRange value="1"/>
+        <ValidatorArray index="0" value="TalDarimDreadnoughtBeetlesArmed"/>
+        <LaunchEffect value="TalDarimDreadnoughtBeetleArmedRB"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TalDarimDreadnoughtBeetleDamageTarget" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="50"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="0.25" Fraction="0.8"/>
+        <AreaArray Radius="0.5" Fraction="0.6"/>
+        <AreaArray Radius="1" Fraction="0.5"/>
+        <AreaArray Radius="1.5" Fraction="0.25"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Visibility value="Visible"/>
+    </CEffectDamage>
+    <CEffectSet id="TalDarimBloodHunterWeaponSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimBloodHunterSoulShard"/>
+        <EffectArray value="TalDarimBloodHunterWeaponDamage"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TalDarimBloodHunterVoidStasisAB">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimBloodHunterVoidStasis"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumTransport id="DarkTemplarVoidStasisIterateTransport">
+        <EditorCategories value="Race:PrTD"/>
+        <Effect value="TalDarimBloodHunterVoidStasisAB"/>
+    </CEffectEnumTransport>
+    <CEffectSet id="TalDarimBloodHunterVoidStasisSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimBloodHunterVoidStasisAB"/>
+        <EffectArray value="DarkTemplarVoidStasisIterateTransport"/>
+        <EffectArray value="TalDarimBloodHunterSoulShardAB"/>
+        <EffectArray value="TalDarimBloodHunterSoulShardRBCharge"/>
+        <ValidatorArray value="NotFrenzied"/>
+    </CEffectSet>
+    <CEffectDamage id="TalDarimWrathwalkerDamageAir" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Massive" value="30"/>
+        <AttributeBonus index="Structure" value="30"/>
+        <Kind value="Ranged"/>
+        <Amount value="40"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="TalDarimWrathwalkerLMAirBuff">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchEffect value="TalDarimWrathwalkerSoulsWeaponRB"/>
+        <ImpactEffect value="TalDarimWrathwalkerDamageAirBonus"/>
+        <AmmoUnit value="TalDarimUnitWrathwalkerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimWrathwalkerLMGround">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimWrathwalkerDamageGround"/>
+        <AmmoUnit value="TalDarimUnitWrathwalkerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TalDarimWrathwalkerDamageGround" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <AttributeBonus index="Massive" value="50"/>
+        <AttributeBonus index="Structure" value="50"/>
+        <Kind value="Ranged"/>
+        <Amount value="50"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="TalDarimWrathwalkerLMAir">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimWrathwalkerDamageAir"/>
+        <AmmoUnit value="TalDarimUnitWrathwalkerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="TalDarimHavocSquadSightAB">
+        <!--ValidatorArray index="0" value="ObserverSquadSightTargetExclusion"/>
+        <ValidatorArray value="NotMonitor"/-->
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimHavocSquadSight"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TalDarimHavocSquadSightSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="Visible;Neutral,Enemy,Structure,Missile,Stasis,Dead,Invulnerable"/>
+        <AreaArray Radius="4" Effect="TalDarimHavocSquadSightAB"/>
+    </CEffectEnumArea>
+    <CEffectLaunchMissile id="TalDarimWrathwalkerLMGroundBuff">
+        <EditorCategories value="Race:PrTD"/>
+        <LaunchEffect value="TalDarimWrathwalkerSoulsWeaponRB"/>
+        <ImpactEffect value="TalDarimWrathwalkerDamageGroundBonus"/>
+        <AmmoUnit value="TalDarimUnitWrathwalkerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="TalDarimWrathwalkerSearchAir">
+        <ValidatorArray value="TargetIsEnemy"/>
+        <ValidatorArray value="TalDarimWrathwalkerHaveAdditionnalAmmos"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="TalDarimWrathwalkerLMAirBuff"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TalDarimWrathwalkerSearchGround">
+        <ValidatorArray value="TargetIsEnemy"/>
+        <ValidatorArray value="TalDarimWrathwalkerHaveAdditionnalAmmos"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="TalDarimWrathwalkerLMGroundBuff"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="TalDarimDestroyerDestructionCP">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="TalDarimDestroyerDestructionSet"/>
+        <PeriodicEffectArray value="TalDarimDestroyerDestructionSet"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TalDarimDestroyerDestructionDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <DamageModifierSource Value="Caster"/>
+        <AttributeBonus index="Light" value="4"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="TalDarimSoulLeechDestroyerMultiTargetChargeAB">
+        <EditorCategories value="Race:PrTD"/>
+        <Behavior value="TalDarimDestroyerBloodCharge"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="TalDarimDreadnoughtBeetleArmedRB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TalDarimDreadnoughtBeetlesArmed"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectLaunchMissile id="TalDarimDeathStarWeaponLaunchMissile1">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimDeathStarVaporizeSearch1"/>
+        <AmmoUnit value="TalDarimUnitDeathStarWeapon1"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <Flags index="ValidateWeapon" value="0"/>
+        <FinishEffect value="TalDarimDeathStarVaporizeFinRB"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimDeathStarWeaponLaunchMissile2" parent="TalDarimDeathStarWeaponLaunchMissile1">
+        <Name value="Effect/Name/TalDarimDeathStarWeaponLaunchMissile2"/>
+        <ImpactEffect value="TalDarimDeathStarVaporizeSearch2"/>
+        <AmmoUnit value="TalDarimUnitDeathStarWeapon2"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimDeathStarWeaponLaunchMissile3" parent="TalDarimDeathStarWeaponLaunchMissile1">
+        <Name value="Effect/Name/TalDarimDeathStarWeaponLaunchMissile3"/>
+        <ImpactEffect value="TalDarimDeathStarVaporizeSearch3"/>
+        <AmmoUnit value="TalDarimUnitDeathStarWeapon3"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimDeathStarWeaponLaunchMissile4" parent="TalDarimDeathStarWeaponLaunchMissile1">
+        <Name value="Effect/Name/TalDarimDeathStarWeaponLaunchMissile4"/>
+        <ImpactEffect value="TalDarimDeathStarVaporizeSearch4"/>
+        <AmmoUnit value="TalDarimUnitDeathStarWeapon4"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimDeathStarWeaponLaunchMissile5" parent="TalDarimDeathStarWeaponLaunchMissile1">
+        <Name value="Effect/Name/TalDarimDeathStarWeaponLaunchMissile5"/>
+        <ImpactEffect value="TalDarimDeathStarVaporizeSearch5"/>
+        <AmmoUnit value="TalDarimUnitDeathStarWeapon5"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TalDarimDeathStarWeaponLaunchMissile6" parent="TalDarimDeathStarWeaponLaunchMissile1">
+        <Name value="Effect/Name/TalDarimDeathStarWeaponLaunchMissile6"/>
+        <ImpactEffect value="TalDarimDeathStarVaporizeSearch6"/>
+        <AmmoUnit value="TalDarimUnitDeathStarWeapon6"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="TalDarimVanguardScatterCannonsRandom">
+        <EditorCategories value="Race:PrTD"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="TalDarimVanguardScatterCannonsLMTargeted"/>
+        <ExpireEffect value="TalDarimVanguardScatterCannonsRandomSec"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="TalDarimVanguardScatterCannonsLM"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="TalDarimVanguardScatterCannonsLM">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value="TalDarimVanguardScatterCannonsSearch"/>
+        <AmmoUnit value="TalDarimUnitVanguardWeapon"/>
+        <ImpactRange value="0.5"/>
+        <Movers Link="TalDarimVanguardScatterCannonsMover" IfRangeLTE="500"/>
+        <!--LaunchEffect value="ImmortalTaldarimMissileSpeedStackSwitch"/-->
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TalDarimVanguardScatterCannonsDamage" parent="DU_WEAP_MISSILE">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:PrTD"/>
+        <Amount value="10"/>
+        <Kind value="Splash"/>
+        <Death value="Blast"/>
+        <AttributeBonus index="Light" value="5"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="TalDarimAscendantWeaponLM">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactEffect value="TalDarimAscendantWeapon"/>
+        <AmmoUnit value="TalDarimUnitAscendantWeapon"/>
+        <Movers Link="MissileDefault"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TalDarimAscendantWeapon" parent="DU_WEAP">
+        <EditorCategories value="Race:PrTD"/>
+        <Kind value="Ranged"/>
+        <Amount value="12"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalDarimAscendantMindBlastDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="100"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TalDarimAscendantPsiOrbInitialPersistent">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="SourcePoint"/>
+        <InitialEffect value="TalDarimAscendantPsiOrbLaunchMissile"/>
+        <InitialOffset value="0,-13,0"/>
+        <PeriodCount value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TalDarimAscendantPsiOrbDamage">
+        <EditorCategories value="Race:PrTD"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="7"/>
+    </CEffectDamage>
+    <CEffectDestroyPersistent id="TalDarimAscendantPsiOrbDestroyPersistent">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="TargetPoint"/>
+        <Effect value="TalDarimAscendantPsiOrbPersistent"/>
+        <Count value="1"/>
+        <Radius value="1"/>
+    </CEffectDestroyPersistent>
+    <CEffectLaunchMissile id="TalDarimAscendantPsiOrbLaunchMissile">
+        <EditorCategories value="Race:PrTD"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <LaunchEffect value="TalDarimAscendantPsiOrbAB"/>
+        <ImpactEffect value="TalDarimAscendantPsiOrbSet"/>
+        <AmmoUnit value="TalDarimUnitAscendantPsiOrbMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="TalDarimAscendantPsiOrbAB">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="TalDarimAscendantPsiOrb"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="TalDarimAscendantPsiOrbPersistent">
+        <EditorCategories value="Race:PrTD"/>
+        <WhichLocation Value="SourceUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <PeriodicEffectArray value="TalDarimAscendantPsiOrbSearch"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="TalDarimAscendantPsiOrbSearch">
+        <EditorCategories value="Race:PrTD"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="5" Effect="TalDarimAscendantPsiOrbABDamage"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TalDarimAscendantPsiOrbSet">
+        <EditorCategories value="Race:PrTD"/>
+        <EffectArray value="TalDarimAscendantPsiOrbDestroyPersistent"/>
+        <!--EffectArray value="VoidHighTemplarPsiOrbFinalSearch"/-->
+    </CEffectSet>
+</Catalog>

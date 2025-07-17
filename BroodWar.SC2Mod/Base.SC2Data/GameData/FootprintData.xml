@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CFootprint id="Footprint2x2CreepNoFog" parent="Footprint2x2Creep2">
+  <Layers index="Check">
+    <Sets index="0">
+      <Negative index="Fogged" value="0"/>
+    </Sets>
+  </Layers>
+</CFootprint>
+<CFootprint id="ZergBuildingSCBW@CreepGrowthSmallGrown">
+  <Layers index="Check" Area="-4,-4,4,4">
+    <Sets Character="o">
+      <Negative index="NoCreep" value="1"/>
+    </Sets>
+    <Rows value="..oooo.."/>
+    <Rows value=".oooooo."/>
+    <Rows value="oooooooo"/>
+    <Rows value="oooooooo"/>
+    <Rows value="oooooooo"/>
+    <Rows value="oooooooo"/>
+    <Rows value=".oooooo."/>
+    <Rows value="..oooo.."/>
+  </Layers>
+  <Layers index="Place" Area="-4,-4,4,4">
+    <Sets Character="o">
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="........"/>
+    <Rows value="........"/>
+    <Rows value="...oo..."/>
+    <Rows value="..oooo.."/>
+    <Rows value="..oooo.."/>
+    <Rows value="...oo..."/>
+    <Rows value="........"/>
+    <Rows value="........"/>
+  </Layers>
+</CFootprint>
+<CFootprint id="ZergBuildingSCBW@CreepGrowthSmallStart">
+  <Layers index="Check">
+    <Sets Character="c">
+      <Negative index="NoCreep" value="1"/>
+    </Sets>
+    <Rows value="cc"/>
+    <Rows value="cc"/>
+  </Layers>
+  <Layers index="Place">
+    <Sets Character="c">
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="cc"/>
+    <Rows value="cc"/>
+  </Layers>
+  <Shape Radius="1.4143"/>
+</CFootprint>
+<CFootprint id="SCBW_Footprint2x2Contour">
+  <Layers index="Check">
+    <Sets index="0">
+      <Positive index="Creep" value="1"/>
+      <Negative index="Creep" value="0"/>
+    </Sets>
+    <Rows value="xx"/>
+    <Rows value="xx"/>
+  </Layers>
+  <Layers index="Place">
+    <Sets index="0">
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="xx"/>
+    <Rows value="xx"/>
+  </Layers>
+  <Shape Radius="0.9016" Offsets="-0.5,-0.75;0.5,-0.75;-0.5,0.75;0.5,0.75;-0.75,-0.5;-0.75,0.5;0.75,-0.5;0.75,0.5" Borders="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
+</CFootprint>
+<CFootprint id="Footprint5x5CreepContourSCBW">
+  <Layers index="Check" Area="-2,-2,3,3">
+    <Sets index="0">
+      <Positive index="Creep" value="1"/>
+      <Negative index="Creep" value="0"/>
+    </Sets>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Layers index="Place" Area="-2,-2,3,3">
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Shape Radius="2.6926" Offsets="-1,-2.5;1,-2.5;-1,2.5;1,2.5;-2.5,-1;-2.5,1;2.5,-1;2.5,1" Borders="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
+</CFootprint>
+<CFootprint id="Footprint5x5AddOn2x2SCBW">
+  <Layers index="Check" Area="-4,-2,5,3">
+    <Sets index="0">
+      <Negative index="NearResources" value="1"/>
+      <Negative index="NoCreep" value="1"/>
+    </Sets>
+    <Sets Character="o">
+      <Negative index="NoBuild" value="1"/>
+      <Negative index="Creep" value="1"/>
+      <Negative index="Masked" value="1"/>
+    </Sets>
+    <Rows value="..xxxxx.."/>
+    <Rows value="..xxxxx.."/>
+    <Rows value="..xxxxx.."/>
+    <Rows value="..xxxxxoo"/>
+    <Rows value="..xxxxxoo"/>
+  </Layers>
+  <Layers index="Place" Area="-4,-2,5,3">
+    <Sets index="0">
+      <Positive index="DropOff" value="1"/>
+    </Sets>
+    <Sets Character="o">
+      <Positive index="GroundNoSpawn" value="1"/>
+      <Positive index="NoBuild" value="1"/>
+    </Sets>
+    <Rows value="..xxxxx.."/>
+    <Rows value="..xxxxx.."/>
+    <Rows value="..xxxxx.."/>
+    <Rows value="..xxxxxoo"/>
+    <Rows value="..xxxxxoo"/>
+  </Layers>
+  <Shape Radius="5.148" Offsets="-2.5,-2.5;4.5,-2.5;2.5,-0.5;4.5,-0.5;-2.5,2.5;2.5,2.5" Borders="0,4,2;1,0,2;2,3,2;3,1,2;4,5,2;5,2,2"/>
+</CFootprint>
+<CFootprint id="Footprint5x5CreepIgnoreContourSCBW">
+  <Layers index="Check" Area="-2,-2,3,3">
+    <Sets index="0">
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Layers index="Place" Area="-2,-2,3,3">
+    <Sets index="0">
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Shape Radius="2.6926" Offsets="-1,-2.5;1,-2.5;-1,2.5;1,2.5;-2.5,-1;-2.5,1;2.5,-1;2.5,1" Borders="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
+</CFootprint>
+<CFootprint id="Footprint5x5DropOffSCBW">
+  <Layers index="Check" Area="-2,-2,3,3">
+    <Sets index="0">
+      <Negative index="NearResources" value="1"/>
+      <Negative index="Creep" value="0"/>
+    </Sets>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Layers index="Place" Area="-2,-2,3,3">
+    <Sets index="0">
+      <Positive index="DropOff" value="1"/>
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Shape Radius="3.5356" Offsets="-2.5,-2.5;2.5,-2.5;-2.5,2.5;2.5,2.5" Borders="0,2,2;1,0,2;2,3,2;3,1,2"/>
+</CFootprint>
+<CFootprint id="Footprint5x5NormalCreepContour">
+  <Layers index="Check" Area="-2,-2,3,3">
+    <Sets index="0">
+      <Negative index="Creep" value="0"/>
+    </Sets>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Layers index="Place" Area="-2,-2,3,3">
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Shape Radius="2.6926" Offsets="-1,-2.5;1,-2.5;-1,2.5;1,2.5;-2.5,-1;-2.5,1;2.5,-1;2.5,1" Borders="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
+</CFootprint>
+<CFootprint id="Footrpint5x5CreepNormal">
+  <Layers index="Check" Area="-2,-2,3,3">
+    <Sets index="0">
+      <Negative index="Creep" value="0"/>
+    </Sets>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Layers index="Place" Area="-2,-2,3,3">
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+    <Rows value="xxxxx"/>
+  </Layers>
+  <Shape Radius="3.5356" Offsets="-2.5,-2.5;2.5,-2.5;-2.5,2.5;2.5,2.5" Borders="0,2,2;1,0,2;2,3,2;3,1,2"/>
+</CFootprint>
+<CFootprint id="QueenSCBWEnsnare@CreepGrown">
+  <Layers index="Check" Area="-4,-4,5,5">
+    <Sets Character="o">
+      <Negative index="NoCreep" value="1"/>
+    </Sets>
+    <Rows value="..ooooo.."/>
+    <Rows value=".ooooooo."/>
+    <Rows value="ooooooooo"/>
+    <Rows value="ooooooooo"/>
+    <Rows value="ooooooooo"/>
+    <Rows value="ooooooooo"/>
+    <Rows value="ooooooooo"/>
+    <Rows value=".ooooooo."/>
+    <Rows value="..ooooo.."/>
+  </Layers>
+  <Layers index="Place" Area="-4,-4,5,5">
+    <Sets Character="o">
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="........."/>
+    <Rows value="........."/>
+    <Rows value="...ooo..."/>
+    <Rows value="..ooooo.."/>
+    <Rows value="..ooooo.."/>
+    <Rows value="..ooooo.."/>
+    <Rows value="...ooo..."/>
+    <Rows value="........."/>
+    <Rows value="........."/>
+  </Layers>
+</CFootprint>
+<CFootprint id="QueenSCBWEnsnare@CreepStart">
+  <Layers index="Check">
+    <Sets Character="c">
+      <Negative index="NoCreep" value="1"/>
+    </Sets>
+    <Rows value="cc"/>
+    <Rows value="cc"/>
+  </Layers>
+  <Layers index="Place">
+    <Sets Character="c">
+      <Positive index="Creep" value="1"/>
+    </Sets>
+    <Rows value="cc"/>
+    <Rows value="cc"/>
+  </Layers>
+  <Shape Radius="1.4143"/>
+</CFootprint>
+
+</Catalog>

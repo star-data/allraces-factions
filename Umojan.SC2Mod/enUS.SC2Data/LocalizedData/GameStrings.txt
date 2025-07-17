@@ -1,0 +1,1201 @@
+﻿Abil/Name/UmojanAloeHealUnit=Heal Unit
+Abil/Name/UmojanArmSiloWithNuke=Arm Magazine (Nuke)
+Abil/Name/UmojanAskForMountPlasmabat=Ask For Mount (Plasmabat)
+Abil/Name/UmojanAskForMountPretorian=Ask For Mount (Pretorian)
+Abil/Name/UmojanAskForMountShadowguard=Ask For Mount (Shadowguard)
+Abil/Name/UmojanBarracksTrain=Train
+Abil/Name/UmojanBlink=Blink
+Abil/Name/UmojanBuild=Build (MCS)
+Abil/Name/UmojanBuildNorns=Build (Norns)
+Abil/Name/UmojanBuildTower=Build (Tower)
+Abil/Name/UmojanBunkerTransport=Load-Unload (Bunker)
+Abil/Name/UmojanChargeEnemies=Charge Enemies
+Abil/Name/UmojanCloakingField=Cloaking Field
+Abil/Name/UmojanCommandCenterTrain=Train (Command Hub)
+Abil/Name/UmojanCommandoFlashGrenade=Flash Grenade
+Abil/Name/UmojanCommandoFlashGrenadeRedirect=Flash Grenade Redirect
+Abil/Name/UmojanCrowRecall=Recall
+Abil/Name/UmojanDeepCloak=Deep Cloak
+Abil/Name/UmojanDeepDive=Umojan - Deep Dive
+Abil/Name/UmojanDeepDiveSpec=Umojan - Deep Dive
+Abil/Name/UmojanDefensiveMatrixTarget=Defensive Matrix
+Abil/Name/UmojanDeployFlak=Deploy Flak
+Abil/Name/UmojanDeployGroundSensor=Deploy Ground Sensor
+Abil/Name/UmojanDeployStrikeMines=Deploy Strike Mines
+Abil/Name/UmojanDiraAirburst=Umojan - Dira Airburst
+Abil/Name/UmojanDiraAirstrike=Umojan - Dira Airstrike
+Abil/Name/UmojanDismountPlasmabat=Dismount Plasmabat
+Abil/Name/UmojanDismountPretorian=Dismount Pretorian
+Abil/Name/UmojanDismountShadowguard=Dismount Shadowguard
+Abil/Name/UmojanEnergyBarricadeAutoMorphOFF=Umojan - Energy Barricade Auto Morph OFF
+Abil/Name/UmojanEnergyBarricadeAutoMorphON=Umojan - Energy Barricade Auto Morph ON
+Abil/Name/UmojanFactoryTrain=Train
+Abil/Name/UmojanFrenrirNormalMode=Typhon Normal Mode
+Abil/Name/UmojanFrenrirSiegeMode=Typhon Siege Mode
+Abil/Name/UmojanGroundDetectorBurrow=Ground Detector Burrow
+Abil/Name/UmojanGroundDetectorUnburrow=Ground Detector Unburrow
+Abil/Name/UmojanHexaremeHangar=Hangar
+Abil/Name/UmojanHexaremeMorphtoAA=Morph to AA
+Abil/Name/UmojanHexaremeMorphtoAG=Morph to AG
+Abil/Name/UmojanHyperjump=Tactical Jump
+Abil/Name/UmojanLockdown=Lockdown
+Abil/Name/UmojanLockdownRedirect=Lockdown Redirect
+Abil/Name/UmojanMCSHarvest=Gather (MCS)
+Abil/Name/UmojanMissileBarrage=Missile Barrage
+Abil/Name/UmojanMissileBarrageAI=Missile Barrage
+Abil/Name/UmojanMissileStrike=Missile Strike
+Abil/Name/UmojanMissileStrikeAI=Missile Strike
+Abil/Name/UmojanPlasmabatCorrosiveBlast=Plasmabat Corrosive Blast
+Abil/Name/UmojanPlasmabatCorrosiveBlastRedirect=Plasmabat Corrosive Blast Redirect
+Abil/Name/UmojanRecallSpotter=Recall Spotter
+Abil/Name/UmojanRepairMCS=Repair
+Abil/Name/UmojanRepairNorns=Repair
+Abil/Name/UmojanRepairTower=Repair
+Abil/Name/UmojanResearchArmory=Umojan - Research (Armory)
+Abil/Name/UmojanResearchEngineeringBay=Umojan - Research (Engineering Bay)
+Abil/Name/UmojanResearchFleetCore=Umojan - Research (Fleet Core)
+Abil/Name/UmojanResearchScienceAll=Umojan - Research (Science All)
+Abil/Name/UmojanResearchScienceBlue=Umojan - Research (Science Blue)
+Abil/Name/UmojanResearchScienceGreen=Umojan - Research (Science Green)
+Abil/Name/UmojanResearchScienceRed=Umojan - Research (Science Red)
+Abil/Name/UmojanResearchShadowOps=Umojan - Research (Shadow Ops)
+Abil/Name/UmojanRetractFlak=Retract Flak
+Abil/Name/UmojanReturnCraftToHangarBomber=Return Craft To Hangar
+Abil/Name/UmojanReturnCraftToHangarRecon=Return Craft To Hangar
+Abil/Name/UmojanSabotage=Sabotage
+Abil/Name/UmojanScienceBase=Science! (Base)
+Abil/Name/UmojanScienceBlue=Science! (Blue)
+Abil/Name/UmojanScienceGreen=Science! (Green)
+Abil/Name/UmojanScienceRed=Science! (Red)
+Abil/Name/UmojanSearchPlasmabat=Search Plasmabat
+Abil/Name/UmojanSearchPretorian=Search Pretorian
+Abil/Name/UmojanSearchShadowguard=Search Shadowguard
+Abil/Name/UmojanSendSpotter=Send Spotter
+Abil/Name/UmojanSendTimeBomber=Send Time Bomber
+Abil/Name/UmojanSentryGunBurrow=Sentry Gun Burrow
+Abil/Name/UmojanSentryGunUnburrow=Sentry Gun Unburrow
+Abil/Name/UmojanSnipe=Sniper
+Abil/Name/UmojanSniperRedirect=Sniper Redirect
+Abil/Name/UmojanSpecOpsDropshipLoadUnload=Umojan - Spec Ops Dropship - Load-Unload
+Abil/Name/UmojanStarportTrain=Train
+Abil/Name/UmojanStasisGun=Stasis Gun
+Abil/Name/UmojanStayatRange=Stay at Range
+Abil/Name/UmojanStrikeMineBurrow=Strike Mine Burrow
+Abil/Name/UmojanStrikeMineUnburrow=Strike Mine Unburrow
+Abil/Name/UmojanStrikeMineUnburrowRangeDummy=Umojan - Strike Mine Unburrow Range Dummy
+Abil/Name/UmojanStrikefoxShockwaveMissile=Umojan - Strikefox - Shockwave Missile
+Abil/Name/UmojanSupplyCacheLower=Lower
+Abil/Name/UmojanSupplyCacheRaise=Raise
+Abil/Name/UmojanTacNukeStrike=Nuclear Strike
+Abil/Name/UmojanTimeBomb=Time Bomb
+Abil/Name/UmojanTrackingTarget=Umojan - Tracking Target
+Abil/Name/UmojanTransferShieldPower=Transfer Shield Power
+Abil/Name/UmojanTransferShieldPowerRedirect=Transfer Shield Power Redirect
+Abil/Name/UmojanTyphonWarpAssault=Warp Assault
+Abil/Name/UmojanUpgradetoEnergyGenerator=Umojan - Upgrade to Energy Generator
+Abil/Name/UmojanWarpAcademy=Warp Academy
+Abil/Name/UmojanWarpBattletank=Warp
+Abil/Name/UmojanWarpBunker=Warp Bunker
+Abil/Name/UmojanWarpCommandHub=Warp Command Hub
+Abil/Name/UmojanWarpShipyard=Warp Shipyard
+Abil/Name/UmojanWarpWorkshop=Warp Workshop
+Alert/Text/AmmoComplete_TerU=Ammo complete.
+Alert/Text/BuildComplete_TerU=Structure complete.
+Alert/Text/MergeComplete_TerU=Merge complete.
+Alert/Text/MorphComplete_TerU=Morph complete.
+Alert/Text/ResearchComplete_TerU=Research complete.
+Alert/Text/ResourceExhausted_HighYieldMineral_TerU=Rich Mineral Fields have been exhausted.
+Alert/Text/SpecializeComplete_TerU=Specialization complete.
+Alert/Text/TrainComplete_TerU=Unit complete.
+Alert/Text/TrainWorkerComplete_TerU=Unit complete.
+Alert/Text/UpgradeComplete_TerU=Upgrade complete.
+Alert/Text/WarpTrainComplete_TerU=Warp complete.
+Behavior/Name/UmojanBattlecatStayatRange=Stay at Range
+Behavior/Name/UmojanCloakFieldEffect=Cloaking Field
+Behavior/Name/UmojanCommandoAmbush=Ambush
+Behavior/Name/UmojanCommandoAmbushBuff=Ambush
+Behavior/Name/UmojanCommandoFlashGrenadeBlind=Blind
+Behavior/Name/UmojanCrowTimeBomb=Time Bomb
+Behavior/Name/UmojanDeepCloak=Deep Cloak
+Behavior/Name/UmojanDeepCloakEnergy=Deep Cloak
+Behavior/Name/UmojanDefensiveMatrix=Defensive Matrix
+Behavior/Name/UmojanLockdown=Lockdown
+Behavior/Name/UmojanPlasmaBurn=Plasma Burn
+Behavior/Name/UmojanRaptorIdle=Umojan - Raptor - Idle
+Behavior/Name/UmojanSabotageTarget=Sabotage
+Behavior/Name/UmojanScienceConsumerValidatorBlue=Science Facility (Vehicle Specialised) (Blue)
+Behavior/Name/UmojanScienceConsumerValidatorGreen=Science Facility (Starship Specialised) (Green)
+Behavior/Name/UmojanScienceConsumerValidatorRed=Science Facility (Infantry Specialised) (Red)
+Behavior/Name/UmojanShieldTransferGiver=Shield Transfer Giver
+Behavior/Name/UmojanShieldTransferReceiver=Shield Transfer Receiver
+Behavior/Name/UmojanStasisField=Stasis Field
+Behavior/Name/UmojanStasisFieldProtection=Stasis Field Protection
+Behavior/Name/UmojanStasisMine=Stasis Mine
+Behavior/Name/UmojanStasisMineProtection=Stasis Mine Protection
+Behavior/Name/UmojanWeaponPowerAccumulator=Weapon Power Accumulator
+Behavior/Name/UmojanWhirlwindWeaponMissileSearch=Umojan - Whirlwind Weapon Missile Search
+Behavior/Tooltip/UmojanBattlecatStayatRange=The Battlecat will not charge enemies.
+Behavior/Tooltip/UmojanCloakFieldEffect=This unit is cloaked unless revealed by <c val="FFE303">Detectors</c> or effects.
+Behavior/Tooltip/UmojanCommandoAmbush=When the Commando break cloak, it will gain movement and attack speed.
+Behavior/Tooltip/UmojanCommandoAmbushBuff=The Commando have increased movement and attack speed.
+Behavior/Tooltip/UmojanCommandoFlashGrenadeBlind=The unit attack and sight range is reduced.
+Behavior/Tooltip/UmojanCrowTimeBomb=This unit's movement and attack speed is reduced by <d ref="(1 - Behavior,UmojanCrowTimeBomb,Modification.MoveSpeedMultiplier) * 100"/>%.
+Behavior/Tooltip/UmojanDeepCloak=Unit is in deep cloak and can't be revealed by normal means.
+Behavior/Tooltip/UmojanDeepCloakEnergy=Unit is in deep cloak and can't be revealed by normal means.
+Behavior/Tooltip/UmojanLockdown=This unit is locked up and can't act.
+Behavior/Tooltip/UmojanMarineWeaponPowerAccumulator=
+Behavior/Tooltip/UmojanPlasmaBurn=Target take periodical damage and it's movement speed is reduced for a short period of time.
+Behavior/Tooltip/UmojanSabotageTarget=Target is been sabotaged, is unable to work and will take massive damage at the end.
+Behavior/Tooltip/UmojanShieldTransferGiver=Unit is currently giving it's shield to an other, it can't receive shield for a time.
+Behavior/Tooltip/UmojanShieldTransferReceiver=Unit is currently receiving shield from an other, it can't receive shield again for a time.
+Behavior/Tooltip/UmojanStasisField=Unit can't take any action and is invulnerable.
+Behavior/Tooltip/UmojanStasisFieldProtection=Unit can't be stased again for a few seconds.
+Behavior/Tooltip/UmojanStasisMine=Unit can't take any action and is invulnerable.
+Behavior/Tooltip/UmojanStasisMineProtection=Unit can't be stased again by mines for a few seconds.
+Behavior/Tooltip/UmojanWeaponPowerAccumulator=This Pretorian next attack will shoot more bullets.
+Button/Name/GatherTerU=Gather
+Button/Name/UmojanAirMissileBarrage=Air Missile Barrage
+Button/Name/UmojanAloeAAMode=Mobile Mode
+Button/Name/UmojanAloeAGMode=Defender Mode
+Button/Name/UmojanAloeHeal=Heal
+Button/Name/UmojanArmory=Build Foundry
+Button/Name/UmojanBarracks=Build Academy
+Button/Name/UmojanBattleTank=Build Battle Tank
+Button/Name/UmojanBattlecat=Build Battlecat
+Button/Name/UmojanBattleship=Build Battleship
+Button/Name/UmojanBattleshipMaginotLineShielding=Maginot Line Shielding
+Button/Name/UmojanBattleshipRapidDeployment=Rapid Deployment
+Button/Name/UmojanBlink=Blink
+Button/Name/UmojanBuildAuxiliaryGenerator=Build Auxiliary Generator
+Button/Name/UmojanBunker=Build Bunker
+Button/Name/UmojanBunker2=Build Bunker
+Button/Name/UmojanBunkerUpgraded2=Build Bunker
+Button/Name/UmojanBurrowTurret=Burrow
+Button/Name/UmojanCancelMissileBarrage=Cancel
+Button/Name/UmojanCancelMissileStrike=Cancel
+Button/Name/UmojanChargeEnemies=Charge Enemies
+Button/Name/UmojanCloakingField=Cloaking Field
+Button/Name/UmojanCommandCenter=Build Command Hub
+Button/Name/UmojanCommandoAmbush=Ambush
+Button/Name/UmojanCommandoFlashGrenade=Flash Grenade
+Button/Name/UmojanCommandoFlashGrenadeRedirect=Flash Grenade
+Button/Name/UmojanCorrosiveBlast=Corrosive Blast
+Button/Name/UmojanCorrosiveBlastRedirect=Corrosive Blast
+Button/Name/UmojanCrow=Build Crow
+Button/Name/UmojanDeepCloak=Deep Cloak
+Button/Name/UmojanDeepDive=Deep Dive
+Button/Name/UmojanDefensiveMatrixTarget=Defensive Matrix
+Button/Name/UmojanDeployAntiAerospace=Deploy Anti-Aerospace
+Button/Name/UmojanDeployGroundSensor=Deploy Ground Sensor
+Button/Name/UmojanDeployStasisMine=Deploy Stasis Mine
+Button/Name/UmojanDira=Build Dira
+Button/Name/UmojanDismountPlasmabat=Dismount Plasmabat
+Button/Name/UmojanDismountPretorian=Dismount Pretorian
+Button/Name/UmojanDismountShadowguard=Dismount Shadowguard
+Button/Name/UmojanEnergyBarricade=Build Energy Barricade
+Button/Name/UmojanEngineeringBay=Build Mechanics Bay
+Button/Name/UmojanEngineeringSuit=Engineering Suit
+Button/Name/UmojanEngineeringTower=Build Engineering Tower
+Button/Name/UmojanFactory=Build Workshop
+Button/Name/UmojanFrenrir=Build Typhon
+Button/Name/UmojanFusionCore=Build Fleet Core
+Button/Name/UmojanGetPlasmabat=Get Plasmabat
+Button/Name/UmojanGetPretorian=Get Pretorian
+Button/Name/UmojanGetShadowguard=Get Shadowguard
+Button/Name/UmojanGhost=Train Shadowguard
+Button/Name/UmojanGhostAcademy=Build Shadow Ops
+Button/Name/UmojanGroundMissileBarrage=Ground Missile Barrage
+Button/Name/UmojanHexareme=Build Hexareme
+Button/Name/UmojanHyperjump=Tactical Jump
+Button/Name/UmojanInfantryArmorLevel1=Upgrade Infantry Armor Level 1
+Button/Name/UmojanInfantryArmorLevel2=Upgrade Infantry Armor Level 2
+Button/Name/UmojanInfantryArmorLevel3=Upgrade Infantry Armor Level 3
+Button/Name/UmojanInfantryWeaponsLevel1=Upgrade Infantry Weapons Level 1
+Button/Name/UmojanInfantryWeaponsLevel2=Upgrade Infantry Weapons Level 2
+Button/Name/UmojanInfantryWeaponsLevel3=Upgrade Infantry Weapons Level 3
+Button/Name/UmojanJetPack=Jet Pack
+Button/Name/UmojanLockdown=Lockdown
+Button/Name/UmojanLockdownRedirect=Lockdown
+Button/Name/UmojanLower=Lower
+Button/Name/UmojanMarine=Train Pretorian
+Button/Name/UmojanMedic=Train Aloe
+Button/Name/UmojanMissileBarrage=Missile Barrage
+Button/Name/UmojanMissileStrike=Missile Strike
+Button/Name/UmojanMissileTurret=Build Anti-Air Turret
+Button/Name/UmojanMist=Build Mist
+Button/Name/UmojanMobileTargeting=Mobile Targeting
+Button/Name/UmojanMoira=Build Moira
+Button/Name/UmojanNukeArm=Arm Silo with Nuke
+Button/Name/UmojanPathfinder=Build Pathfinder
+Button/Name/UmojanPermanantlyCloakedDirae=Permanantly Cloaked
+Button/Name/UmojanPermanantlyCloakedMist=Permanantly Cloaked
+Button/Name/UmojanPermanentlyCloakedShadowguard=Permanently Cloaked
+Button/Name/UmojanPermanentlyCloakedSpySatellite=Permanently Cloaked
+Button/Name/UmojanPlasmabat=Train Plasmabat
+Button/Name/UmojanPowerGenerator=Power Generator
+Button/Name/UmojanPowerLevel1=Normal Power Level
+Button/Name/UmojanPowerLevel1Barricade=Normal Power Level
+Button/Name/UmojanPowerLevel1CH=Normal Power Level
+Button/Name/UmojanPowerLevel1MCS=Normal Power Level
+Button/Name/UmojanPowerLevel2=Power Overcharge 1
+Button/Name/UmojanPowerLevel2Barricade=Power Overcharge 1
+Button/Name/UmojanPowerLevel2CH=Power Overcharge 1
+Button/Name/UmojanPowerLevel2MCS=Power Overcharge 1
+Button/Name/UmojanPowerLevel3=Power Overcharge 2
+Button/Name/UmojanPowerLevel3Barricade=Power Overcharge 2
+Button/Name/UmojanPowerLevel3CH=Power Overcharge 2
+Button/Name/UmojanPowerLevel3MCS=Power Overcharge 2
+Button/Name/UmojanPowerLevel4=Power Overcharge 3
+Button/Name/UmojanPowerLevel4Barricade=Power Overcharge 3
+Button/Name/UmojanPowerLevel4CH=Power Overcharge 3
+Button/Name/UmojanPowerLevel4MCS=Power Overcharge 3
+Button/Name/UmojanRaise=Raise
+Button/Name/UmojanRapidReignitionSystem=Rapid Reignition System
+Button/Name/UmojanRaptor=Build Raptor
+Button/Name/UmojanReaper=Train Commando
+Button/Name/UmojanRecall=Recall
+Button/Name/UmojanRecallSpotter=Recall Spotter
+Button/Name/UmojanRefinery=Build Distillery
+Button/Name/UmojanRepairMCS=Repair
+Button/Name/UmojanRepairNorns=Repair
+Button/Name/UmojanResearchBattlelinkSystem=Research Battlelink System
+Button/Name/UmojanResearchBattletankWarp=Research Battletank Warp
+Button/Name/UmojanResearchBlink=Research Blink
+Button/Name/UmojanResearchCloak=Research Cloaking Field
+Button/Name/UmojanResearchCombatShield=Research Combat Shield
+Button/Name/UmojanResearchEngineeringSuit=Research Engineering Suit
+Button/Name/UmojanResearchHiSecAutoTracking=Research Hi-Sec Auto Tracking
+Button/Name/UmojanResearchHighOutputThruster=Research High Output Thruster
+Button/Name/UmojanResearchLockdown=Research Lockdown
+Button/Name/UmojanResearchMobileTargeting=Research Mobile Targeting
+Button/Name/UmojanResearchOverloadWeapons=Research Overload Weapons
+Button/Name/UmojanResearchPersonalCloaking=Research Personal Cloaking
+Button/Name/UmojanResearchPlasmaRecycler=Research Plasma Recycler
+Button/Name/UmojanResearchRangeFinder=Research Range Finder
+Button/Name/UmojanResearchRavenEnergyUpgrade=Research Corvid Reactor
+Button/Name/UmojanResearchSecondaryHangar=Research Secondary Hangar
+Button/Name/UmojanResearchSelfGuidedMissile=Research Self Guided Missile
+Button/Name/UmojanResearchStasisGun=Research Stasis Gun
+Button/Name/UmojanResearchStasisMineReserve=Research Stasis Mine Reserve
+Button/Name/UmojanResearchVigilantTurret=Research Vigilant Turret
+Button/Name/UmojanResearchWeaponPowerAccumulator=Research Weapon Power Accumulator
+Button/Name/UmojanRetributionField=Lightning Field
+Button/Name/UmojanReturnCraftToHangar=Return Craft To Hangar
+Button/Name/UmojanSabotage=Sabotage
+Button/Name/UmojanScienceBlue=Specialize in Vehicle
+Button/Name/UmojanScienceFacilityBase=Build Science Facility
+Button/Name/UmojanScienceGreen=Specialize in Starship
+Button/Name/UmojanScienceRed=Specialize in Infantry
+Button/Name/UmojanSelfGuidedMissile=Self Guided Missile
+Button/Name/UmojanSendSpotter=Send Spotter
+Button/Name/UmojanSendTimeBombers=Send Time Bombers
+Button/Name/UmojanSentryGun=Build Sentry Gun
+Button/Name/UmojanShieldsLevel1=Upgrade Shields Level 1
+Button/Name/UmojanShieldsLevel2=Upgrade Shields Level 2
+Button/Name/UmojanShieldsLevel3=Upgrade Shields Level 3
+Button/Name/UmojanShipPlatingLevel1=Upgrade Ship Plating Level 1
+Button/Name/UmojanShipPlatingLevel2=Upgrade Ship Plating Level 2
+Button/Name/UmojanShipPlatingLevel3=Upgrade Ship Plating Level 3
+Button/Name/UmojanShipWeaponsLevel1=Upgrade Ship Weapons Level 1
+Button/Name/UmojanShipWeaponsLevel2=Upgrade Ship Weapons Level 2
+Button/Name/UmojanShipWeaponsLevel3=Upgrade Ship Weapons Level 3
+Button/Name/UmojanShockwaveMissiles=Shockwave Missiles
+Button/Name/UmojanSniperRound=Psionic Snipe
+Button/Name/UmojanSniperRoundRedirect=Sniper Psi-Round
+Button/Name/UmojanSpecOpsDropship=Build SpecOps Dropship
+Button/Name/UmojanSpecOpsDropshipLoad=Load
+Button/Name/UmojanSpecOpsDropshipUnloadAt=Unload All
+Button/Name/UmojanSpySatellite=Build Spy Satellite
+Button/Name/UmojanStarport=Build Shipyard
+Button/Name/UmojanStasisField=Stasis Gun
+Button/Name/UmojanStayatRange=Stay at Range
+Button/Name/UmojanStopCloakingField=Stop Cloaking Field
+Button/Name/UmojanStopDeepDiveFull=Stop Deep Dive
+Button/Name/UmojanStopDeepDivePartial=Stop Deep Dive
+Button/Name/UmojanStrikefox=Build Strikefox
+Button/Name/UmojanSupplyDepot=Build Supply Cache
+Button/Name/UmojanTimeBomb=Time Bomb
+Button/Name/UmojanTitanKillerAmmunition=Titan Killer Ammunition
+Button/Name/UmojanTitanKillerAmmunitionFrenrir=Titan Killer Ammunition
+Button/Name/UmojanTrainMCS=Train MCS
+Button/Name/UmojanTransferShieldPower=Transfer Shield Power
+Button/Name/UmojanTransferShieldPowerRedirect=Transfer Shield Power
+Button/Name/UmojanTyphonAntiAerospaceMode=Anti-Aerospace Mode
+Button/Name/UmojanTyphonHighExplosiveMode=High Explosive Mode
+Button/Name/UmojanUnburrowTurret=Unburrow Turret
+Button/Name/UmojanUnsiege=Tank Mode
+Button/Name/UmojanUpgradetoEnergyGenerator=Upgrade to Energy Generator
+Button/Name/UmojanVehiclePlatingLevel1=Upgrade Vehicle Plating Level 1
+Button/Name/UmojanVehiclePlatingLevel2=Upgrade Vehicle Plating Level 2
+Button/Name/UmojanVehiclePlatingLevel3=Upgrade Vehicle Plating Level 3
+Button/Name/UmojanVehicleWeaponsLevel1=Upgrade Vehicle Weapons Level 1
+Button/Name/UmojanVehicleWeaponsLevel2=Upgrade Vehicle Weapons Level 2
+Button/Name/UmojanVehicleWeaponsLevel3=Upgrade Vehicle Weapons Level 3
+Button/Name/UmojanVehicleandShipPlatingLevel1=Upgrade Vehicle and Ship Plating Level 1
+Button/Name/UmojanVehicleandShipPlatingLevel2=Upgrade Vehicle and Ship Plating Level 2
+Button/Name/UmojanVehicleandShipPlatingLevel3=Upgrade Vehicle and Ship Plating Level 3
+Button/Name/UmojanVibrationdetector=Vibration Detector
+Button/Name/UmojanWarpAssault=Warp Assault
+Button/Name/UmojanWarptoLocation=Warp to Location
+Button/Name/UmojanWarptoLocationBattletank=Warp to Location
+Button/Name/UmojanWeaponPowerAccumulator=Weapon Power Accumulator
+Button/Name/UmojanWhirlwind=Build Whirlwind
+Button/Tooltip/AttackBarrage=Deals damage to ground units in the target area.
+Button/Tooltip/GatherTerU=Orders SCV to gather resources from a selected Mineral Field or Vespene Geyser.
+Button/Tooltip/SentryUmojan=Robotic support unit. Can use Protective Field and Phasing Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanAATurret=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/UmojanAirMissileBarrage=Deals <d ref="Effect,UmojanDiraeAirburstCP,PeriodCount * Effect,UmojanDiraeAirburstDamage,Amount"/> damage (<d ref="Effect,UmojanDiraeAirburstCP,PeriodCount * (Effect,UmojanDiraeAirburstDamage,AttributeBonus[Light] + Effect,UmojanDiraeAirburstDamage,Amount)"/> against light) to <c val="0080FF">air</c> units in the target area over <d ref="Effect,UmojanDiraeAirburstCP,PeriodCount * Effect,UmojanDiraeAirburstCP,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/UmojanAloeAAMode=Reverts to Mobile Mode. In this mode Hexareme can move, but can only attack air targets.
+Button/Tooltip/UmojanAloeAGMode=Deploys into Defender Mode. In this mode Hexareme can also inflict single target damage to ground units. Hexareme in this mode cannot move.
+Button/Tooltip/UmojanAloeHeal=Heals one nearby friendly biological units.<n/>Can move and attack while healing.<n/><n/><c val="f078ff">Heals <d ref="Effect,UmojanAloeHealSolo,RechargeVitalRate"/> life per seconds, at a rate of <d ref="10*Effect,UmojanAloeHealSolo,DrainVitalCostFactor" precision="2"/> energy per 10 life.</c>
+Button/Tooltip/UmojanArmory=Contains weapon and armor upgrades for Workshop and Shipyard units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battle Tanks at the Workshop<n/>- Strikefox at the Workshop<n/>- Whirlwinds at the Workshop
+Button/Tooltip/UmojanBarracks=Infantry-production facility.<n/><n/><c val="ffff8a">Enables:</c><n/>- Pretorians<n/>- Commandos<n/>- Bunkers from MCSs<n/>- Science Facilities from MCSs<n/>- Shadow Ops from MCSs<n/>- Workshops from MCSs<n/>- Energy Generators from Supply Caches
+Button/Tooltip/UmojanBarracks2=Infantry-production facility.<n/><n/><c val="ffff8a">Enables:</c><n/>- Pretorian<n/>- Commando<n/>- Bunkers from MCSs<n/>- Science Facilities from MCSs
+Button/Tooltip/UmojanBattleTank=Massive tank. Can switch into Anti-Aerospace Mode to provide long-range anti air support. Can be upgraded to use Warp to location.<n/><n/><c val="FFFF8A">Can attack ground units.</c><n/><c val="FFFF8A">Can attack air units if deployed.</c><n/><n/>Role: Anti-endgame unit/Air area denial<n/>Strong: Massive<n/>Weak: Light
+Button/Tooltip/UmojanBattleTankAA=Massive anti-air turret. Can switch into Tank Mode to provide mobile tank support. Can be upgraded to use Warp to location.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFFF8A">Can attack ground units if undeployed.</c>Role: Anti-endgame unit/Air area denial<n/>Strong: Air Massive<n/>Weak: Ground
+Button/Tooltip/UmojanBattlecat=Anti-infantry specialist that deals area damage with each attack. Can be upgraded to use Blink and be mounted by infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/>Role:Brawler<n/>Strong: Light(AoE)<n/>Weak: Anti-heavy
+Button/Tooltip/UmojanBattlecatCuirassier=Anti-infantry specialist that deals area damage with each attack with a Plasmabat riding it. Can be upgraded to use Blink<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Tank<n/>Strong: Ground (AoE)<n/>Weak: Anti-heavy
+Button/Tooltip/UmojanBattlecatLancer=Anti-infantry specialist that deals area damage with each attack with a Shadowguard riding it. Can be upgraded to use Blink<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Harass Spellcaster<n/>Strong: Light/Buildings<n/>Weak: Detector/Anti-heavy
+Button/Tooltip/UmojanBattlecatPretorianRider=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanBattlecatSpahi=Anti-infantry specialist that deals area damage with each attack with a Pretorian riding it. Can be upgraded to use Blink<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>Role:Generalist<n/>Strong: -<n/>Weak: Anti-heavy
+Button/Tooltip/UmojanBattleship=Powerful capital ship. Can use Stasis Gun and Tactical Jump.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role: Playmaker<n/>Strong: Heavy/Bunched up army<n/>Weak: Light
+Button/Tooltip/UmojanBattleshipMaginotLineShielding=Reduces incoming damage to a maximum of <d ref="Behavior,UmojanBattleshipMaginotLineShielding,DamageResponse.ClampMaximum"/> while the Battleship still has shields.
+Button/Tooltip/UmojanBattleshipRapidDeployment=The Battleship deploys loaded troops <d ref="1 / Abil,UmojanBattleshipLoadUnload,UnloadPeriod"/> times as fast as a normal transport.
+Button/Tooltip/UmojanBlink=Teleports the Battlecat to a nearby target location.
+Button/Tooltip/UmojanBuildAuxiliaryGenerator=Equip the Command Hub with external generators, increasing nearby <c val="00FFFF">Power Level</c> by 2.
+Button/Tooltip/UmojanBunker=Defensive structure. <n/>Infantry fights and cast abilities from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +1 range to units inside.</c>
+Button/Tooltip/UmojanBunker2=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +1 range to units inside.</c>
+Button/Tooltip/UmojanBunkerUpgraded=Defensive structure. <n/>Infantry fights and cast abilities from inside.<n/>Equiped with a Vigilant Turret<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><c val="#ColorAttackInfo">Bonus: +1 range to units inside.</c>
+Button/Tooltip/UmojanBurrowTurret=Buries the Sentry Gun underground. Burrowed Sentry Guns are unable to attack, but they cannot be seen without detection.
+Button/Tooltip/UmojanCancelMissileBarrage=Drops the current order without performing it, and allows you to select a different order.
+Button/Tooltip/UmojanCancelMissileStrike=Drops the current order without performing it, and allows you to select a different order.
+Button/Tooltip/UmojanChangelingMarine=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanChangelingMarineShield=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Core infantry<n/>Strong: -<n/>Weak: Anti-light
+Button/Tooltip/UmojanChargeEnemies=The units will charge the enemies.<n/><n/><c val="#ColorAttackInfo">Click to make it only use ranged weapons.</c>
+Button/Tooltip/UmojanCloakingField=Cloaks nearby units, preventing enemy units from seeing or attacking them. A cloaked unit will only be revealed by detectors or effects.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,UmojanCloakField,Modification.VitalRegenArray[2] + Unit,UmojanCrow,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/UmojanCommandCenter=Primary structure. Used to receive gathered resources. Can use the Warp to Location ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- MCSs
+Button/Tooltip/UmojanCommando=Raider. Can jump up and down cliffs. Can use Flash grenades and use bombs against structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/>Role: Harass and Ambush<n/>Strong: Light/Building<n/>Weak: Anti-light
+Button/Tooltip/UmojanCommandoAmbush=If the Commando did not move nor attack in the last <d ref="Behavior,UmojanCommandoAmbushCD,Period"/> seconds, it will cloak.<n/><n/>When breaking cloak, the Commando will gain <d ref="(Behavior,UmojanCommandoAmbushBuff,Modification.AttackSpeedMultiplier - 1) * 100"/>% attack and movement speed for <d ref="Behavior,UmojanCommandoAmbushBuff,Duration"/> seconds.
+Button/Tooltip/UmojanCommandoFlashGrenade=Throw a grenade that hit enemies in a small area, deals <d ref="Effect,UmojanCommandoFlashGrenadeDamage,Amount"/> damage and reduces their attack and sight ranges by <d ref="-Behavior,UmojanCommandoFlashGrenadeBlind,Modification.SightBonus"/> for <d ref="Behavior,UmojanCommandoFlashGrenadeBlind,Duration"/> seconds.
+Button/Tooltip/UmojanCorrosiveBlast=Deals <d ref="Behavior,UmojanPlasmaBurn,Duration / Behavior,UmojanPlasmaBurn,Period * Effect,UmojanPlasmabatCorrosiveBlastDoTEffect,Amount"/> damage (<d ref="Behavior,UmojanPlasmaBurn,Duration / Behavior,UmojanPlasmaBurn,Period * (Effect,UmojanPlasmabatCorrosiveBlastDoTEffect,AttributeBonus[Armored] + Effect,UmojanPlasmabatCorrosiveBlastDoTEffect,Amount)"/> against armored/massive) to target enemy ground unit over <d ref="Behavior,UmojanPlasmaBurn,Duration"/> seconds and slows them down by <d ref="(1 - Behavior,UmojanPlasmaBurn,Modification.MoveSpeedMultiplier) * 100"/>%.
+Button/Tooltip/UmojanCrow=Aerial support unit. Can use Defense Matrix, Recall and can be upgraded to cloak nearby ally units or use Time Bomb.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Defensive Spellcaster<n/>Strong: Immobile/Slow armies<n/>Weak: Anti-air/Energy damage
+Button/Tooltip/UmojanDeepCloak=Enter deep cloaking mode for <d ref="Behavior,UmojanDeepCloak,Duration"/> seconds, becoming fully undetectable by normal means.
+Button/Tooltip/UmojanDeepDive=Enter deep cloaking mode, becoming fully undetectable by normal means and gaining <d ref="(Behavior,UmojanDeepCloakEnergy,Modification.MoveSpeedMultiplier - 1) * 100"/>% move speed.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,UmojanDeepCloakEnergy,Modification.VitalRegenArray[2] + Unit,UmojanMist,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/UmojanDefensiveMatrixTarget=Surrounds the target with a shield that can absorb up to <d ref="Behavior,UmojanDefensiveMatrix,DamageResponse.ModifyLimit"/> damage. Effect lasts for <d ref="Behavior,UmojanDefensiveMatrix,Duration"/> seconds.
+Button/Tooltip/UmojanDeployAntiAerospace=Deploys into Anti-Aerospace Mode. In this mode Battle Tanks have very long range but can only target air units. Battle Tanks in this mode cannot move.
+Button/Tooltip/UmojanDeployGroundSensor=Ground Sensors detect nearby ground enemy movement, but do not reveal the area. Buried Ground Sensors can only be seen by enemy Detectors.
+Button/Tooltip/UmojanDeployStasisMine=Stasis Mines pursue enemy units that come in range, and detonate to stase all units for <d ref="Behavior,UmojanStasisMine,Duration" precision="1"/>s in an area. Buried Stasis Mines can only be seen by enemy Detectors.<n/>Units get a <d ref="Behavior,UmojanStasisMineProtection,Duration" precision="1"/>s immunity to further stasis.
+Button/Tooltip/UmojanDira=Cloaked tactical-strike aircraft. Can be upgraded to use Air Missile Barrage and Ground Missile Barrage.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Harass/Splash support<n/>Strong: Light/Worker<n/>Weak: Detector/Anti-air
+Button/Tooltip/UmojanDismountPlasmabat=Dismount the Plasmabat rider.
+Button/Tooltip/UmojanDismountPretorian=Dismount the Pretorian rider.
+Button/Tooltip/UmojanDismountShadowguard=Dismount the Shadowguard rider.
+Button/Tooltip/UmojanEnergyBarricade=Small defensive structure that blocks movements and vision of ground units.
+Button/Tooltip/UmojanEnergyBarricadePassthrough=Small defensive structure that blocks movements and vision of ground units.
+Button/Tooltip/UmojanEnergyGenerator=Provides power and supply.<n/>Supply allows you to create more units.<n/>Power increase nearby structure production speed and grant them a shield.
+Button/Tooltip/UmojanEngineeringBay=Contains upgrades for Umojan infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Anti-Air Turrets from MCSs<n/>- Engineering Tower from MCSs
+Button/Tooltip/UmojanEngineeringSuit=Repair mechanical allies at 3 times the normal speed.
+Button/Tooltip/UmojanEngineeringTower=Support defensive structure, can repair nearby mechanical allies and build defensive structures.
+Button/Tooltip/UmojanFactory=Vehicle-production facility.<n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecats<n/>- Moirai<n/>- Pathfinders<n/>- Foundry at the MCSs
+Button/Tooltip/UmojanFrenrir=The Typhon is a massive siege walker capable of leveling entire cities. Can enter Anti-Aerospace mode to gain a long range attack anti-air attack.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanFrenrir2=The Typhon is a massive siege walker capable of leveling entire cities.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanFrenrirFortress=The Typhon is a massive siege walker capable of leveling entire cities.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/UmojanFusionCore=Contains Battle Tank, Crow, Hexareme and Whirlwind upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Crows at the Shipyard<n/>- Hexareme at the Shipyard<n/>- Typhon at the Command Hub<n/>- Battleship at the Command Hub
+Button/Tooltip/UmojanGetPlasmabat=Get a Plasmabat to be a rider.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/UmojanGetPretorian=Get a Pretorian to be a rider.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanGetShadowguard=Get a Shadowguard to be a rider.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanGhost=Infiltration unit. Can use Snipe, Sabotage, and be upgraded to use Lockdown and be permanently Cloaked. Can call down Tactical Nukes built at the Shadow Ops.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanGhostAcademy=Contains upgrades for Shadowguards and Commandos. Can build Nukes for Shadowguards.<n/><n/><c val="ffff8a">Enables:</c><n/>- Shadowguards at the Academy
+Button/Tooltip/UmojanGroundMissileBarrage=Deals <d ref="Effect,UmojanDiraeAirstrikeCP,PeriodCount * Effect,UmojanDiraeAirstrikeDamage,Amount"/> damage (<d ref="Effect,UmojanDiraeAirstrikeCP,PeriodCount * (Effect,UmojanDiraeAirstrikeDamage,AttributeBonus[Light] + Effect,UmojanDiraeAirstrikeDamage,Amount)"/> against light) to <c val="0080FF">ground</c> units in the target area over <d ref="Effect,UmojanDiraeAirstrikeCP,PeriodCount * Effect,UmojanDiraeAirstrikeCP,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/UmojanGroundSensor=Robotic sensor. Can show the presence of any enemy ground unit nearby. Burrow.
+Button/Tooltip/UmojanHexareme=Support carrier. Loaded with Raptor fighter to attack air targets and rocket to attack ground ones.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Capital Ship<n/>Strong: Ground light (Aoe)/Air<n/>Weak: Heavy anti-air
+Button/Tooltip/UmojanHexaremeAG=Immobile defender. Deals heavy single target damage to ground units. Can switch into Transport mode to provide air support.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/UmojanHyperjump=After <d ref="Abil,UmojanHyperjump,FinishTime[0]"/> seconds, warps to the target location. Battleship is invulnerable while warping. Stuns and puts the Battleship into a 1 second vulnerability phase before it teleports. In this state, the Battleship can be damaged, but Tactical Jump may not be canceled.<n/><n/><c val="#ColorAttackInfo">Does not require vision.</c>
+Button/Tooltip/UmojanInfantryArmorLevel1=Upgrades the armor of infantry units.
+Button/Tooltip/UmojanInfantryArmorLevel2=Further upgrades the armor of infantry units.
+Button/Tooltip/UmojanInfantryArmorLevel3=Maximizes the armor of infantry units.
+Button/Tooltip/UmojanInfantryWeaponsLevel1=Upgrades the damage dealt by infantry units.
+Button/Tooltip/UmojanInfantryWeaponsLevel2=Further upgrades the damage dealt by infantry units.
+Button/Tooltip/UmojanInfantryWeaponsLevel3=Maximizes the damage dealt by infantry units.
+Button/Tooltip/UmojanJetPack=Commandos can jump up and down cliffs.  
+Button/Tooltip/UmojanLockdown=Targeted unit is stunned for <d ref="Behavior,UmojanLockdown,Duration"/> seconds (<d ref="Behavior,UmojanLockdown,DurationOverride[0].Duration"/> seconds against heroic units).
+Button/Tooltip/UmojanLockdownRedirect=Targeted unit is stunned for <d ref="Behavior,UmojanLockdown,Duration"/> seconds (<d ref="Behavior,UmojanLockdown,DurationOverride[0].Duration"/> seconds against heroic units).
+Button/Tooltip/UmojanLower=Lowers the structure, allowing ground units to move across it.
+Button/Tooltip/UmojanMCS=Basic worker unit. Can gather resources, build Umojan structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/UmojanMarine=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Core infantry<n/>Strong: Low range/Lack of splash<n/>Weak: Anti-light
+Button/Tooltip/UmojanMedic=Support trooper. Heals nearby biological units, can be upgraded to use Transfer Shield Power.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role: Healer<n/>Strong: Low burst damage<n/>Weak: High burst damage
+Button/Tooltip/UmojanMissileBarrage=Fire at a large targeted area, with a volley of <d ref="Effect,UmojanWhirlwindMissileBarrageVolley,PeriodCount"/> missiles every <d ref="Effect,UmojanWhirlwindMissileBarragePersistent,PeriodicPeriodArray[1]"/> seconds.<n/><n/><c val="FF0000">Must have it's Nightwish spotter in the area.</c>
+Button/Tooltip/UmojanMissileStrike=Fire at targeted point every <d ref="Effect,UmojanWhirlwindMissileStrikePersistent,PeriodicPeriodArray[1]"/> seconds.<n/><n/><c val="FF0000">Must have it's Nightwish spotter in the area.</c>
+Button/Tooltip/UmojanMissileTurret=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/UmojanMist=Cloaked support fighter. Loaded with strong anti-capital air missiles. Can be upgraded to use Deep Dive.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Interceptor<n/>Strong: Heavy<n/>Weak: Detector/Anti-light
+Button/Tooltip/UmojanMobileTargeting=The Pathfinder can fire while moving.
+Button/Tooltip/UmojanMoira=Support mech. Can repair mechanical allies and be upgraded to build defensive buildings.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role:Support Mech<n/>Strong: Heavy Air<n/>Weak: Anti-heavy
+Button/Tooltip/UmojanNightwishUnit=Whirlwind's spotter drone.
+Button/Tooltip/UmojanNukeArm=Arms the Silo with a Tactical Nuke.<n/><n/>Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in a large radius.<n/><n/>Use a Shadowguard to designate the target.
+Button/Tooltip/UmojanPathfinder=Fast scout, equiped with anti-armour missiles. Can place down Ground Sensors. Can be upgraded to fire on the move and to place Strike Mines.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/>Role:Scout<n/>Strong: Heavy/Map vision<n/>Weak: Detector/Anti-light
+Button/Tooltip/UmojanPermanantlyCloakedDirae=The Dira is permanently cloaked.
+Button/Tooltip/UmojanPermanantlyCloakedMist=The Mist is permanently cloaked.
+Button/Tooltip/UmojanPermanentlyCloakedShadowguard=The Shadowguard is permanently cloaked.
+Button/Tooltip/UmojanPermanentlyCloakedSpySatellite=The Spy Satellite is permanently cloaked.
+Button/Tooltip/UmojanPlasmabat=Heavy close combat anti-armor infantry, can use Corrosive Blast.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/>Role:Tank/Low-range splash<n/>Strong: Heavy/Clumps of small melee units<n/>Weak: Anti-heavy
+Button/Tooltip/UmojanPowerGenerator=Produce <c val="00FFFF">Power Level</c> for nearby building and units.
+Button/Tooltip/UmojanPowerLevel1=<c val="55FFFF">Normal Power Level: Normal operation speed, no shield.</c><n/>Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel1Barricade=<c val="55FFFF">Normal Power Level: normal max shield.</c><n/>Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.<n/>Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.<n/>Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.
+Button/Tooltip/UmojanPowerLevel1CH=<c val="55FFFF">Normal Power Level: No shield.</c><n/>Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel1MCS=<c val="55FFFF">Normal Power Level: Normal operation speed, no shield.</c><n/>Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel2=Normal Power Level: Normal operation speed, no shield.<n/><c val="55FFFF">Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c><n/>Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel2Barricade=Normal Power Level: normal max shield.<n/><c val="00FFFF">Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.</c><n/>Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.<n/>Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.
+Button/Tooltip/UmojanPowerLevel2CH=Normal Power Level: No shield.<n/><c val="55FFFF">Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c><n/>Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel2MCS=Normal Power Level: Normal operation speed, no shield.<n/><c val="55FFFF">Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c><n/>Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel3=Normal Power Level: Normal operation speed, no shield.<n/>Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/><c val="55FFFF">Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c><n/>Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel3Barricade=Normal Power Level: normal max shield.<n/>Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.<n/><c val="00FFFF">Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.</c><n/>Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.
+Button/Tooltip/UmojanPowerLevel3CH=Normal Power Level: No shield.<n/>Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/><c val="55FFFF">Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c><n/>Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel3MCS=Normal Power Level: Normal operation speed, no shield.<n/>Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/><c val="55FFFF">Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c><n/>Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.
+Button/Tooltip/UmojanPowerLevel4=Normal Power Level: Normal operation speed, no shield.<n/>Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/><c val="55FFFF">Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c>
+Button/Tooltip/UmojanPowerLevel4Barricade=Normal Power Level: normal max shield.<n/>Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.<n/>Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.<n/><c val="00FFFF">Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeBarricade,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% max shield.</c>
+Button/Tooltip/UmojanPowerLevel4CH=Normal Power Level: No shield.<n/>Power Overcharge 1: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 2: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/><c val="55FFFF">Power Overcharge 3: <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c>
+Button/Tooltip/UmojanPowerLevel4MCS=Normal Power Level: Normal operation speed, no shield.<n/>Power Overcharge 1: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[1].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/>Power Overcharge 2: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[2].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.<n/><c val="55FFFF">Power Overcharge 3: Operate +<d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.TimeScale * 100 - 100"/>% faster. <d ref="Behavior,UmojanPowerUpgradeUtilityUnits,PowerStageArray[3].Modification.VitalMaxAdditiveMultiplierArray[Shields] * 100 + 100"/>% of max HP as max shield.</c>
+Button/Tooltip/UmojanRaise=Raises the structure, preventing ground units from moving across it.
+Button/Tooltip/UmojanRapidReignitionSystem=Reduces the cooldown of Medivac's Ignite Afterburners by <d time="[d ref='$UpgradeEffectArrayValue:UmojanMedivacIncreaseSpeedBoost:Abil,MedivacSpeedBoost,Cost[0].Cooldown.TimeUse$'/]"/> and increases the movement speed of Medivacs.
+Button/Tooltip/UmojanRaptor=Builds Raptor that automatically attack the Hexareme's target. Hexareme may not attack air targets without Raptors.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/UmojanRaptorUnit=Combat drones that automatically strafe their Hexareme's target. Hexareme may not attack air targets without Raptors.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/UmojanReaper=Anti-light Raider. Can jump up and down cliffs and cloak when immobile. Use K8 Charge against buildings.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/UmojanRecall=Teleports all friendly units in the target area to the location of the Crow.<n/><n/><c val="FF0000">Share a global cooldown with all Crows.</c>
+Button/Tooltip/UmojanRecallSpotter=Recall the Nightwish.
+Button/Tooltip/UmojanRefinery=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/UmojanRefineryRich=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/UmojanRepairMCS=Restores life to mechanical units and structures at the cost of resources.
+Button/Tooltip/UmojanRepairNorns=Restores life to mechanical units and structures at the cost of resources. (for only 20% of unit cost)
+Button/Tooltip/UmojanRepairNornsUpgraded=Restores life to mechanical units and structures at the cost of resources. (30% faster than MCS and only 20% of unit cost)
+Button/Tooltip/UmojanResearchBattlelinkSystem=Allows <c val="ffff8a">Battlecats</c> to interface with a rider, granting them a bonus depending on your research and rider.<n/><c val="ffff8a">Preatorian</c>'s Weapon Power Accumulator research grants a permanent 0.5 speed boost to its <c val="ffff8a">Battlecat</c>.<n/><c val="ffff8a">Plasmabat</c>'s Plasma Recycler research makes Corrosive Blast effect to be applied against the primary target of the <c val="ffff8a">Battlecat</c>'s attacks.<n/><c val="ffff8a">Shadowguard</c>'s Cloak research is applied to the <c val="ffff8a">Battlecat</c>.
+Button/Tooltip/UmojanResearchBattletankWarp=Allows <c val="ffff8a">Battle Tanks</c> to warp from a powered location to another one.
+Button/Tooltip/UmojanResearchBlink=Allows <c val="ffff8a">Battlecats</c> to teleport to a nearby target location.
+Button/Tooltip/UmojanResearchCloak=Allow <c val="ffff8a">Mists</c> to deep cloak and allow <c val="ffff8a">Crows</c> to cloak nearby allies. <n/>Cloak renders the unit invisible to enemies unless the unit is revealed by detectors or effects.<n/>Deep cloak renders the unit invisible to enemies even when nearby detectors (But are still revealed by effects).
+Button/Tooltip/UmojanResearchCombatShield=<c val="ffff8a">Preatorians</c> gain +5 life and +15 shield.
+Button/Tooltip/UmojanResearchEngineeringSuit=Allows <c val="ffff8a">Moirai</c> to build structures like an Engineering Tower.<n/>Enhance <c val="ffff8a">Moirai</c> and <c val="ffff8a">Engineering Towers</c> repair rate to 3 times the normal speed.
+Button/Tooltip/UmojanResearchHiSecAutoTracking=Adds +1 range to <c val="ffff8a">Sentry Guns</c>, <c val="ffff8a">AA Turrets</c> and <c val="ffff8a">Vigilant Turrets</c>.
+Button/Tooltip/UmojanResearchHighOutputThruster=Increases the movement speed of <c val="ffff8a">Mists</c> and <c val="ffff8a">Diraes</c>.
+Button/Tooltip/UmojanResearchLockdown=Allows <c val="ffff8a">Shadowguards</c> to use Lockdown.
+Button/Tooltip/UmojanResearchMobileTargeting=Allows <c val="ffff8a">Pathfinders</c> to fire on the move.
+Button/Tooltip/UmojanResearchOverloadWeapons=Allows <c val="ffff8a">Dirae</c> to fire a Missile Barrage at either ground or air targets.
+Button/Tooltip/UmojanResearchPersonalCloaking=Permanently cloak <c val="ffff8a">Shadowguards</c>. Cloak renders a unit invisible to enemies unless it's revealed by detectors or effects.<n/>Allow <c val="ffff8a">Commandos</c> to cloak when they don't move or attack. When breaking cloak they gain an increase of movement and attack speed.
+Button/Tooltip/UmojanResearchPlasmaRecycler=Allows <c val="ffff8a">Plasmabats</c> to fire 2 additional Corrosive Blast before reloading. All charges are refueled at the same time.
+Button/Tooltip/UmojanResearchRangeFinder=Increase <c val="ffff8a">Aloe</c> sight radius by +2 and weapon range by +1.
+Button/Tooltip/UmojanResearchRavenEnergyUpgrade=Increases the starting energy of <c val="ffff8a">Crows</c> by <d ref="Upgrade,UmojanCorvidReactor,EffectArray[0].Value"/>.
+Button/Tooltip/UmojanResearchSecondaryHangar=Increase <c val="ffff8a">Hexareme</c>'s Raptors count by 2<n/>Allows <c val="ffff8a">Crows</c> to use Time Bomber.
+Button/Tooltip/UmojanResearchSelfGuidedMissile=Allows <c val="ffff8a">Whirlwinds</c> missiles to more precisely target enemies in the area and miss allied one.
+Button/Tooltip/UmojanResearchStasisGun=Allows the <c val="ffff8a">Battleship</c> to use Stasis Gun.
+Button/Tooltip/UmojanResearchStasisMineReserve=Allows <c val="ffff8a">Pathfinders</c> to deploy up to <d ref="Abil,UmojanDeployStrikeMines,Cost[0].Charge.CountMax"/> <c val="ffff8a">Stasis Mines</c>.
+Button/Tooltip/UmojanResearchVigilantTurret=Add an automated turret to the top of <c val="ffff8a">Bunkers</c>.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
+Button/Tooltip/UmojanResearchWeaponPowerAccumulator=Allows <c val="ffff8a">Preatorians</c> to attack <d ref="Effect,UmojanK14RailriflePersistantAcc,PeriodCount - Effect,UmojanK14RailriflePersistant,PeriodCount - 2"/> more times once every <d ref="Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[0] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[1] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[2] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[3] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[4] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[5] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[6]" precision="1"/> seconds.
+Button/Tooltip/UmojanRetributionField=The Battlecat unleashes a deadly field of electricity each time it attacks. Deals <d ref="Effect,UmojanRetributionFieldDamage,Amount"/> damage (<d ref="Effect,UmojanRetributionFieldDamage,AttributeBonus[Light] + Effect,UmojanRetributionFieldDamage,Amount"/> against light) to nearby ground enemies.<n/><n/><c val="FF0000">DOES NOT AFFECT HOVERING UNITS (LIKE WORKERS)</c>
+Button/Tooltip/UmojanReturnCraftToHangar=Returns in the owner hangar.
+Button/Tooltip/UmojanSabotage=Sabotage the targeted building for <d ref="Behavior,UmojanSabotageTarget,Duration" precision="1"/> seconds. The building is deactivated during the sabotage and will take <d ref="Effect,UmojanShadowguardSabotageDamage,Amount"/> damage at the end.
+Button/Tooltip/UmojanScienceBlue=Specialize this Science Facility in Vehicle Researches.
+Button/Tooltip/UmojanScienceFacility2=Contains upgrades for all Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Energy Generator from Supply Cache<n/>- Advanced units at all nearby production facilities
+Button/Tooltip/UmojanScienceFacility3=Contains upgrades for all Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Energy Generator from Supply Cache<n/>- Advanced units at all nearby production facilities
+Button/Tooltip/UmojanScienceFacilityBase=Contains upgrades for most of Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Advanced units at nearby production facilities
+Button/Tooltip/UmojanScienceFacilityBase2=Contains upgrades for all Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Energy Generator from Supply Cache<n/>- Advanced units at all nearby production facilities
+Button/Tooltip/UmojanScienceFacilityBlue=Contains upgrades for all Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Energy Generator from Supply Cache<n/>- Advanced units at all nearby production facilities
+Button/Tooltip/UmojanScienceFacilityGreen2=Contains upgrades for all Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Energy Generator from Supply Cache<n/>- Advanced units at all nearby production facilities
+Button/Tooltip/UmojanScienceFacilityRed=Contains upgrades for all Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Energy Generator from Supply Cache<n/>- Advanced units at all nearby production facilities
+Button/Tooltip/UmojanScienceFacilityRed42=Contains upgrades for all Umojan Units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Energy Generator from Supply Cache<n/>- Advanced units at all nearby production facilities
+Button/Tooltip/UmojanScienceGreen=Specialize this Science Facility in Starship Researches.
+Button/Tooltip/UmojanScienceRed=Specialize this Science Facility in Infantry Researches.
+Button/Tooltip/UmojanSelfGuidedMissile=Missiles will more precisely target enemies in the area and miss allied one.
+Button/Tooltip/UmojanSendSpotter=Send a Nightwish stealth spotter craft to the targeted position.<n/>The Nightwish will circle the area until recalled, destroyed or at more than <d ref="Validator,UmojanWhirlwindAtRange,Range"/> units.<n/>Nightwishs are necessaries for the Whirlwind to fire missiles.
+Button/Tooltip/UmojanSendTimeBombers=Send a Thunderbird time bomber to targeted position.<n/>If the bomber reach the destination, all enemy unit in the area will be slowed by <d ref="1 - Behavior,UmojanCrowTimeBomb,Modification.MoveSpeedMultiplier *100"/>%. <n/>Last <d ref="Effect,UmojanCrowTemporalFieldCreatePersistent,PeriodCount * Effect,UmojanCrowTemporalFieldCreatePersistent,PeriodicPeriodArray[0]"/> seconds.
+Button/Tooltip/UmojanSentryGun=Anti-ground defensive structure. Can burrow to conceal itself. <n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/UmojanShadowguard=Infiltration unit. Can use Psionic Snipe and Sabotage and can be upgraded to use Lockdown and be cloaked. Can also call down Tactical Nukes.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Role: Battle support/Harass<n/>Strong: Light/Psionic/High value units/(Buildings)<n/>Weak: Detector
+Button/Tooltip/UmojanShieldsLevel1=Upgrades the shields of all Umojan units and structures.
+Button/Tooltip/UmojanShieldsLevel2=Further upgrades the shields of all Umojan units and structures.
+Button/Tooltip/UmojanShieldsLevel3=Maximizes the shields of all Umojan units and structures.
+Button/Tooltip/UmojanShipPlatingLevel1=Upgrades the armor of air vehicles.
+Button/Tooltip/UmojanShipPlatingLevel2=Further upgrades the armor of air vehicles.
+Button/Tooltip/UmojanShipPlatingLevel3=Maximizes the armor of air vehicles.
+Button/Tooltip/UmojanShipWeaponsLevel1=Upgrades the damage dealt by air vehicles.
+Button/Tooltip/UmojanShipWeaponsLevel2=Further upgrades the damage dealt by air vehicles.
+Button/Tooltip/UmojanShipWeaponsLevel3=Maximizes the damage dealt by air vehicles.
+Button/Tooltip/UmojanShockwaveMissiles=When attacking a unit, the Strikefox launches a missile at its target, dealing <d ref="Effect,UmojanStrikefoxMissileDamage,Amount"/> damage in a line.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c> 
+Button/Tooltip/UmojanSniperRound=An anti-psionic shot, dealing <d ref="Effect,UmojanSnipeDamage,Amount"/> damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target psionic.</c>
+Button/Tooltip/UmojanSniperRoundRedirect=A careful shot, dealing <d ref="Effect,UmojanSnipeDamage,Amount"/> damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target psionic.</c>
+Button/Tooltip/UmojanSpecOpsDropship=Air transport. Can use Deep Dive.<n/><n/>Role:Transport (NOT A MEDIVAC)<n/>Strong: Slow anti-air<n/>Weak: Fast anti-air
+Button/Tooltip/UmojanSpecOpsDropshipLoad=Loads units into the Spec Ops Dropship hold.
+Button/Tooltip/UmojanSpecOpsDropshipUnloadAt=Unloads all units.
+Button/Tooltip/UmojanSpySatellite=Flying spy. Cloak renders the unit invisible to enemies without detection. Can use Deep Cloak.<n/><n/><c val="FFE303">Detector</c><n/><n/>Role:Scout/Detector<n/>Strong: Cloak<n/>Weak: Detector
+Button/Tooltip/UmojanStarport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Mists
+Button/Tooltip/UmojanStasisField=Puts enemies in target area into stasis. Units in Stasis cannot be attacked or affected by abilities for <d ref="Behavior,UmojanStasisField,Duration"/> seconds.
+Button/Tooltip/UmojanStasisMine=Stasis Mines pursue enemy units that come in range, and detonate for area stasis. Buried Stasis Mines can only be seen by enemy Detectors.
+Button/Tooltip/UmojanStasisMineBurrowed=Strike Mines pursue enemy units that come in range, and detonate for heavy area damage. Buried Strike Mines can only be seen by enemy Detectors.
+Button/Tooltip/UmojanStayatRange=The unit attack enemies with ranged weapon only.<n/><n/><c val="#ColorAttackInfo">Click to make it charge enemies.</c>
+Button/Tooltip/UmojanStopCloakingField=Stop the cloaking field.
+Button/Tooltip/UmojanStopDeepDiveFull=Stop the deep cloaking of the selected unit, making it visible to enemies.
+Button/Tooltip/UmojanStopDeepDivePartial=Stop the deep cloaking of the selected unit, making it "only" cloaked to enemies if able to do so.
+Button/Tooltip/UmojanStrikefox=Anti-light mech. Shockwave missiles do bonus damage to units in a line. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/>Role: Kiting<n/>Strong: Light (AoE)<n/>Weak: Anti-heavy
+Button/Tooltip/UmojanSupplyCache=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Cache can be lowered to allow units to walk over them.<n/>Can be upgraded into Energy Generator to provide <c val="00FFFF">Power Levels</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Academy from MCSs
+Button/Tooltip/UmojanSupplyCacheLowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
+Button/Tooltip/UmojanSupplyDepot=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Cache can be lowered to allow units to walk over them.<n/>Can be upgraded into Energy Generator to provide <c val="00FFFF">Power Levels</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Academy from MCSs
+Button/Tooltip/UmojanThunderbirdUnit=Crow's bomb delivery drone.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/UmojanTimeBomb=Warps spacetime within the target area for <d ref="Effect,TemporalFieldCreatePersistent,PeriodCount*Effect,TemporalFieldCreatePersistent,PeriodicPeriodArray[0]"/> seconds. Enemy ground units that enter the field have their movement and attack speed reduced by <d ref="(1-Behavior,UmojanCrowTimeBomb,Modification.MoveSpeedMultiplier)*100"/>%.
+Button/Tooltip/UmojanTitanKillerAmmunition=The unit Railgun deals 10% of the target health and shield as bonus damage. (Up to a total of <d ref="Accumulator,UmojanBattleTankFocalisedMaxHealthattack,MaxAccumulation"/> damage)
+Button/Tooltip/UmojanTitanKillerAmmunitionFrenrir=The unit Railgun deals 10% of the target health and shield as bonus damage. (Up to a total of <d ref="Effect,UmojanFrenrirsClawsDamage,Maximum"/> damage)
+Button/Tooltip/UmojanTrainMCS=Basic worker unit. Can gather resources, build Umojan structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/UmojanTransferShieldPower=Drain a nearby ally shield to recharge up to <d ref="Effect,UmojanShieldTransferTransferEffect,RechargeVitalRate * Effect,UmojanShieldTransferTransferEffect,PeriodicPeriod"/> shield points of the target.
+Button/Tooltip/UmojanTransferShieldPowerRedirect=Drain a nearby ally shield to recharge up to <d ref="Effect,UmojanShieldTransferTransferEffect,RechargeVitalRate * Effect,UmojanShieldTransferTransferEffect,PeriodicPeriod"/> shield points of the target.
+Button/Tooltip/UmojanTyphonAntiAerospaceMode=Activates the Typhon's Bite anti-aerospace cannons. They deal heavy damage to air targets.
+Button/Tooltip/UmojanTyphonHighExplosiveMode=Arms the Typhon's Dagger missile launchers. Dagger missiles deal splash damage to nearby air units and additional damage vs. light units.
+Button/Tooltip/UmojanUnburrowTurret=Returns the Sentry Gun to the surface.
+Button/Tooltip/UmojanUnsiege=Reverts to Tank Mode. In this mode Battle Tanks can move and only attack ground targets.
+Button/Tooltip/UmojanUpgradetoEnergyGenerator=Provide energy to nearby structure, increasing shield and production speed.
+Button/Tooltip/UmojanVehiclePlatingLevel1=Upgrades the armor of ground vehicles.
+Button/Tooltip/UmojanVehiclePlatingLevel2=Further upgrades the armor of ground vehicles.
+Button/Tooltip/UmojanVehiclePlatingLevel3=Maximizes the armor of ground vehicles.
+Button/Tooltip/UmojanVehicleWeaponsLevel1=Upgrades the damage dealt by ground vehicles.
+Button/Tooltip/UmojanVehicleWeaponsLevel2=Further upgrades the damage dealt by ground vehicles.
+Button/Tooltip/UmojanVehicleWeaponsLevel3=Maximizes the damage dealt by ground vehicles.
+Button/Tooltip/UmojanVehicleandShipPlatingLevel1=Upgrades the armor of vehicles.
+Button/Tooltip/UmojanVehicleandShipPlatingLevel2=Further upgrades the armor of vehicles.
+Button/Tooltip/UmojanVehicleandShipPlatingLevel3=Maximizes the armor of vehicles.
+Button/Tooltip/UmojanVibrationdetector=Able to expose ground enemy movements within its sensor capability. Does not reveal the area.
+Button/Tooltip/UmojanWarpAssault=Teleports all friendly units around the Typhon to the target location.
+Button/Tooltip/UmojanWarpingSignatureAcademy=A structure is warping in here from elsewhere.
+Button/Tooltip/UmojanWarpingSignatureBunker=A structure is warping in here from elsewhere.
+Button/Tooltip/UmojanWarpingSignatureCommandHub=A structure is warping in here from elsewhere.
+Button/Tooltip/UmojanWarpingSignatureShipyard=A structure is warping in here from elsewhere.
+Button/Tooltip/UmojanWarpingSignatureWorkshop=A structure is warping in here from elsewhere.
+Button/Tooltip/UmojanWarptoLocation=Warp the building to the targeted powered location. <n/>Takes <d ref="Abil,UmojanWarpCommandHub,PrepTime[0]" precision="1"/>/<d ref="Abil,UmojanWarpCommandHub,PrepTime[0] / Behavior,UmojanPowerUpgrade,PowerStageArray[2].Modification.TimeScale" precision="1"/>/<d ref="Abil,UmojanWarpCommandHub,PrepTime[0] / Behavior,UmojanPowerUpgrade,PowerStageArray[3].Modification.TimeScale" precision="1"/> seconds to finish at <c val="00FFFF">Power Level 1/2/3</c>.<n/><n/><c val="FF0000">Warning: once Warping is triggered, it cannot be canceled.<n/>This will also cancel any ongoing production.</c>
+Button/Tooltip/UmojanWarptoLocationBattletank=Warp the Battletank from a powered location to the targeted powered location after a delay of <d ref="Abil,UmojanWarpBattletank,PrepTime[0]" precision="1"/> seconds.
+Button/Tooltip/UmojanWeaponPowerAccumulator=Once every <d ref="Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[0] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[1] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[2] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[3] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[4] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[5] + Effect,UmojanK14RailriflePersistantAcc,PeriodicPeriodArray[6]" precision="1"/> seconds, the Pretorian will attack <d ref="Effect,UmojanK14RailriflePersistantAcc,PeriodCount - Effect,UmojanK14RailriflePersistant,PeriodCount - 2"/> more times.
+Button/Tooltip/UmojanWhirlwind=Slow missile artillery. With the help of a spotter can bombard at extreme range.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><n/>Role:Siege/Area denial<n/>Strong: Ground<n/>Weak: Bad positioning
+Button/Tooltip/WidowMine=Robotic mine. Can launch self at nearby enemy units when burrowed, dealing damage in a small area around the target. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/YamatoGun2=Blasts a target with a devastating plasma cannon, causing 300 damage.
+ConsoleSkin/Description/ConsoleTerran_Silver=Polish up your console with the gleaming styling of Tyrador.
+DocInfo/Name=[AR2] Umojan
+Effect/Name/UmojanATAPlasmaBatteryCP=ATA Plasma Battery
+Effect/Name/UmojanATAPlasmaBatteryLM=ATA Plasma Battery
+Effect/Name/UmojanATAPlasmaBatteryU=ATA Plasma Battery
+Effect/Name/UmojanATSPlasmaBatteryCP=ATS Plasma Battery
+Effect/Name/UmojanATSPlasmaBatteryLM=ATS Plasma Battery
+Effect/Name/UmojanATSPlasmaBatteryU=ATS Plasma Battery
+Effect/Name/UmojanAloeAGDamage=Aloe AG Damage
+Effect/Name/UmojanAloeAGMissileLM=Aloe AG Missile LM
+Effect/Name/UmojanAloeAGMissileLMSet=Aloe AG Missile LM Set
+Effect/Name/UmojanAloeDamageMissileLM=Aloe Damage Missile LM
+Effect/Name/UmojanAloeHealArea=Umojan - Aloe - Heal Area
+Effect/Name/UmojanAloeHealAreaApplyIsBeeingHealed=Umojan - Aloe - Heal Area Apply Is Beeing Healed
+Effect/Name/UmojanAloeHealAreaRemoveIsBeeingHealed=Umojan - Aloe - Heal Area Remove Is Beeing Healed
+Effect/Name/UmojanAloeHealAreaTrackUnit=Umojan - Aloe - Heal Area Track Unit
+Effect/Name/UmojanAloeHealSolo=Umojan - Aloe - Heal Solo
+Effect/Name/UmojanAloeHealSoloAutocastSecondarySearch=Umojan - Aloe - Heal Solo Autocast Secondary Search
+Effect/Name/UmojanAloeHealSoloIsHealingAB=Umojan - Aloe - Heal Solo Is Healing AB
+Effect/Name/UmojanAloeHealSoloIsHealingRB=Umojan - Aloe - Heal Solo Is Healing RB
+Effect/Name/UmojanAloeHealSoloSet=Umojan - Aloe - Heal Solo Set
+Effect/Name/UmojanAloeHealSoloTrack=Umojan - Aloe - Heal Solo Track
+Effect/Name/UmojanAloeHealSoloTrackedAB=Umojan - Aloe - Heal Solo Tracked AB
+Effect/Name/UmojanAloeHealSoloTrackedRB=Umojan - Aloe - Heal Solo Tracked RB
+Effect/Name/UmojanAloeMissileBurstPersistent=Aloe Missile Burst Persistent
+Effect/Name/UmojanAloeMissileDamage=Aloe Missile Damage
+Effect/Name/UmojanAloeRaptor=Launch Raptor (Magazine)
+Effect/Name/UmojanAloeSendBomberReturnCraftToCarrier=Umojan - Aloe - Send Bomber - Return Craft To Carrier
+Effect/Name/UmojanAloeSendBomberReturnCraftToHangarAB=Umojan - Aloe - Send Bomber - Return Craft To Hangar AB
+Effect/Name/UmojanAloeSendBomberReturnCraftToHangarCP=Umojan - Aloe - Send Bomber - Return Craft To Hangar CP
+Effect/Name/UmojanAloeSendCarrierKillOf=Umojan - Aloe - Send - Carrier Kill Of
+Effect/Name/UmojanAskForMountPlasmabat=Ask For Mount (Plasmabat)
+Effect/Name/UmojanAskForMountPretorian=Ask For Mount (Pretorian)
+Effect/Name/UmojanAskForMountShadowguard=Ask For Mount (Shadowguard)
+Effect/Name/UmojanBattleTankFocalisedRailCannonDamage=Umojan - Battle Tank - Focalised Rail Cannon (Damage)
+Effect/Name/UmojanBattleTankFocalisedRailCannonDamageDisplay=Umojan - Battle Tank - Focalised Rail Cannon (Damage Display)
+Effect/Name/UmojanBattleTankFocalisedRailCannonDamageNoShield=Umojan - Battle Tank - Focalised Rail Cannon (Damage No Shield)
+Effect/Name/UmojanBattleTankFocalisedRailCannonSet=Umojan - Battle Tank - Focalised Rail Cannon (Set)
+Effect/Name/UmojanBattleTankRailCannonDamage=Umojan - Battle Tank - Rail Cannon (Damage)
+Effect/Name/UmojanBattleTankRailCannonDamageDisplay=Umojan - Battle Tank - Rail Cannon (Damage Display)
+Effect/Name/UmojanBattleTankRailCannonDamageNoShield=Umojan - Battle Tank - Rail Cannon (Damage No Shield)
+Effect/Name/UmojanBattleTankRailCannonSet=Umojan - Battle Tank - Rail Cannon (Set)
+Effect/Name/UmojanBattleTankWarpTeleport=Umojan - Battle Tank - Warp Teleport
+Effect/Name/UmojanBattlecat=Titanium Claws
+Effect/Name/UmojanBattlecatCuirassierAttackDoT=Umojan - Battlecat - Cuirassier - Attack DoT
+Effect/Name/UmojanBattlecatCuirassierCreateCuirassier=Umojan - Battlecat - Cuirassier - Create Cuirassier
+Effect/Name/UmojanBattlecatCuirassierGetPlasmabat=Battlecat - Cuirassier - Get Plasmabat
+Effect/Name/UmojanBattlecatCuirrasierCreatePlasmabat=Battlecat - Cuirrasier - Create Plasmabat
+Effect/Name/UmojanBattlecatCuirrasierDismountPlasmabat=Battlecat - Cuirrasier - Dismount Plasmabat
+Effect/Name/UmojanBattlecatCuirrasierSetHealth=Umojan - Battlecat - Cuirrasier - Set Health
+Effect/Name/UmojanBattlecatDismountCreateBattlecat=Umojan - Battlecat - Dismount - Create Battlecat
+Effect/Name/UmojanBattlecatDismountCreateBattlecatSet=Umojan - Battlecat - Dismount - Create Battlecat Set
+Effect/Name/UmojanBattlecatDismountSetHealth=Battlecat - Dismount - Set Health
+Effect/Name/UmojanBattlecatDismountSetHealthEnergy=Battlecat - Dismount - Set Health/Energy
+Effect/Name/UmojanBattlecatLancerCreateLancer=Umojan - Battlecat - Lancer - Create Lancer
+Effect/Name/UmojanBattlecatLancerCreateShadowguard=Umojan - Battlecat - Lancer - Create Shadowguard
+Effect/Name/UmojanBattlecatLancerDismountShadowguard=Battlecat - Lancer - Dismount Shadowguard
+Effect/Name/UmojanBattlecatLancerGetShadowguard=Battlecat - Lancer - Get Shadowguard
+Effect/Name/UmojanBattlecatLancerSetHealth=Umojan - Battlecat - Lancer - Set Health
+Effect/Name/UmojanBattlecatMountRemoveBattlecat=Battlecat - Mount - Remove Battlecat
+Effect/Name/UmojanBattlecatMountRemoveRider=Battlecat - Mount - Remove Rider
+Effect/Name/UmojanBattlecatSpahiCreatePretorian=Battlecat - Spahi - Create Pretorian
+Effect/Name/UmojanBattlecatSpahiCreateSpahi=Battlecat - Spahi - Create Spahi
+Effect/Name/UmojanBattlecatSpahiDismountPretorian=Battlecat - Spahi - Dismount Pretorian
+Effect/Name/UmojanBattlecatSpahiGetPretorian=Battlecat - Spahi - Get Pretorian
+Effect/Name/UmojanBattlecatSpahiSetHealth=Umojan - Battlecat - Spahi - Set Health
+Effect/Name/UmojanBattleshipWeaponSwitch=Umojan - Battleship - Weapon Switch
+Effect/Name/UmojanBuildingRemoveConstructionSpeedBonus=Umojan - Building - Remove Construction Speed Bonus
+Effect/Name/UmojanBunkerK14RailrifleDamage=Umojan - Bunker - K-14 Railrifle (Damage)
+Effect/Name/UmojanBunkerK14RailriflePersistant=Umojan - Bunker - K-14 Railrifle (Persistant)
+Effect/Name/UmojanBunkerK14RailrifleSearch=Umojan - Bunker - K-14 Railrifle (Search)
+Effect/Name/UmojanBunkerK14RailrifleSwitch=Umojan - Bunker - K-14 Railrifle (Switch)
+Effect/Name/UmojanChargeEnemies=Charge Enemies
+Effect/Name/UmojanCloakingFieldApply=Umojan - Cloaking Field (Apply)
+Effect/Name/UmojanCloakingFieldSearch=Umojan - Cloaking Field (Search)
+Effect/Name/UmojanCommandHubGeneratorAB=Umojan - Command Hub Generator (AB)
+Effect/Name/UmojanCommandHubGeneratorSet=Umojan - Command Hub Generator (Set)
+Effect/Name/UmojanCommandoAmbushAB=Umojan - Commando - Ambush AB
+Effect/Name/UmojanCommandoAmbushBuffAB=Umojan - Commando - Ambush Buff AB
+Effect/Name/UmojanCommandoAmbushCDAB=Umojan - Commando - Ambush CD AB
+Effect/Name/UmojanCommandoFlashGrenadeAB=Umojan - Commando - Flash Grenade AB
+Effect/Name/UmojanCommandoFlashGrenadeDamage=Umojan - Commando - Flash Grenade Damage
+Effect/Name/UmojanCommandoFlashGrenadeLM=Umojan - Commando - Flash Grenade LM
+Effect/Name/UmojanCommandoFlashGrenadeSearchArea=Umojan - Commando - Flash Grenade Search Area
+Effect/Name/UmojanCommandoFlashGrenadeSet=Umojan - Commando - Flash Grenade Set
+Effect/Name/UmojanConstructionFinishedSet=Umojan - Construction Finished Set
+Effect/Name/UmojanCrowRecallApplyPostRecallBehavior=Umojan - Crow - Recall (Apply Post-Recall Behavior)
+Effect/Name/UmojanCrowRecallApplyPreRecallBehavior=Umojan - Crow - Recall (Apply Pre-Recall Behavior)
+Effect/Name/UmojanCrowRecallSearch=Umojan - Crow - Recall (Search)
+Effect/Name/UmojanCrowRecallSet=Umojan - Crow - Recall (Set)
+Effect/Name/UmojanCrowRecallTeleport=Umojan - Crow - Recall (Teleport)
+Effect/Name/UmojanCrowSendBomberCarrierTrackCarrier=Umojan - Crow - Send Bomber - Carrier Track (Carrier)
+Effect/Name/UmojanCrowSendBomberCarrierTrackCraft=Umojan - Crow - Send Bomber - Carrier Track (Craft)
+Effect/Name/UmojanCrowSendBomberCarrierTrackSet=Umojan - Crow - Send Bomber - Carrier Track (Set)
+Effect/Name/UmojanCrowSendBomberCreateBomber=Umojan - Crow - Send Bomber - Create Bomber
+Effect/Name/UmojanCrowSendBomberDummyCP=Umojan - Crow - Send Bomber - Dummy CP
+Effect/Name/UmojanCrowSendBomberMove=Umojan - Crow - Send Bomber - Move
+Effect/Name/UmojanCrowSendBomberOrderBomberCP=Umojan - Crow - Send Bomber - Order Bomber CP
+Effect/Name/UmojanCrowSendBomberOrderBomberStrikeArea=Umojan - Crow - Send Bomber - Order Bomber Strike Area
+Effect/Name/UmojanCrowSendBomberReturnCraftToHangar=Umojan - Crow - Send Bomber - Return Craft To Hangar
+Effect/Name/UmojanCrowTemporalFieldApplyBehavior=Umojan - Crow - Temporal Field (Apply Behavior)
+Effect/Name/UmojanCrowTemporalFieldCreatePersistent=Umojan - Crow - Temporal Field (Create Persistent)
+Effect/Name/UmojanCrowTemporalFieldSearchArea=Umojan - Crow - Temporal Field (Search Area)
+Effect/Name/UmojanCrowWeaponDamage=Umojan - Crow Weapon Damage
+Effect/Name/UmojanCrowWeaponLaunch=Umojan - Crow Weapon Launch
+Effect/Name/UmojanD8ChargeDamage=Umojan - D-8 Charge
+Effect/Name/UmojanD8ChargeLaunchMissile2=Umojan - D-8 Charge
+Effect/Name/UmojanDeepCloak=Deep Cloak
+Effect/Name/UmojanDefensiveMatrix=Defensive Matrix
+Effect/Name/UmojanDiraeAirburstCP=Umojan - Dirae Airburst CP
+Effect/Name/UmojanDiraeAirburstDamage=Umojan - Dirae Airburst Damage
+Effect/Name/UmojanDiraeAirburstLM=Umojan - Dirae Airburst LM
+Effect/Name/UmojanDiraeAirburstSearch=Umojan - Dirae Airburst Search
+Effect/Name/UmojanDiraeAirburstSet=Umojan - Dirae Airburst Set
+Effect/Name/UmojanDiraeAirstrikeCP=Umojan - Dirae Airstrike CP
+Effect/Name/UmojanDiraeAirstrikeDamage=Umojan - Dirae Airstrike Damage
+Effect/Name/UmojanDiraeAirstrikeLM=Umojan - Dirae Airstrike LM
+Effect/Name/UmojanDiraeAirstrikeSearch=Umojan - Dirae Airstrike Search
+Effect/Name/UmojanDiraeAirstrikeSet=Umojan - Dirae Airstrike Set
+Effect/Name/UmojanDroneConstruction=Umojan - Drone Construction
+Effect/Name/UmojanDroneConstructionBeam=Umojan - Drone Construction Beam
+Effect/Name/UmojanDroneConstructionCancel=Umojan - Drone Construction Cancel
+Effect/Name/UmojanDroneConstructionSet=Umojan - Drone Construction Set
+Effect/Name/UmojanDroneConstructionSetStart=Umojan - Drone Construction Set Start
+Effect/Name/UmojanFrenrirAntiAirDamage=Umojan - Typhon Anti Air (Damage)
+Effect/Name/UmojanFrenrirAntiAirLaunchMissile=Umojan - Typhon Anti Air (Launch Missile)
+Effect/Name/UmojanFrenrirAntiAirPersistent=Umojan - Typhon Anti Air (Persistent)
+Effect/Name/UmojanGroundDetectorBurrowOrder=Umojan - Ground Detector Burrow Order
+Effect/Name/UmojanGroundSensorDeployAB=Umojan - Ground Sensor Deploy (AB)
+Effect/Name/UmojanGroundSensorDeployCreate=Umojan - Ground Sensor Deploy (Create)
+Effect/Name/UmojanGroundSensorDeployLM=Umojan - Ground Sensor Deploy (LM)
+Effect/Name/UmojanGroundSensorDeploySet=Umojan - Ground Sensor Deploy (Set)
+Effect/Name/UmojanHellfireMissileALM=Umojan - Moira - Hellfire Missile ALM
+Effect/Name/UmojanHellfireMissilePackCP=Hellfire Missile Pack CP
+Effect/Name/UmojanHexaremCarrierTrack=Umojan - Hexarem - Carrier Track
+Effect/Name/UmojanHexaremRaptorDummyRecallETU=Umojan - Hexarem - Raptor Dummy Recall (ETU)
+Effect/Name/UmojanHexaremRaptorDummyRecallMU=Umojan - Hexarem - Raptor Dummy Recall (MU)
+Effect/Name/UmojanHexaremTargetTrack=Umojan - Hexarem - Target Track
+Effect/Name/UmojanHyperJumpBattleshipTargetTriggerCD=Umojan - Hyperjump Battleship Target Trigger CD
+Effect/Name/UmojanHyperjumpCreatePrecursor=Umojan - Hyperjump Create Precursor
+Effect/Name/UmojanHyperjumpInitialCP=Umojan - Hyperjump Initial CP
+Effect/Name/UmojanHyperjumpInitialDelaySuppressWeaponAB=Umojan - Hyperjump Initial Delay Suppress Weapon AB
+Effect/Name/UmojanHyperjumpInitialDelaySuppressWeaponRB=Umojan - Hyperjump Initial Delay Suppress Weapon RB
+Effect/Name/UmojanHyperjumpTeleport=Umojan - Hyperjump Teleport
+Effect/Name/UmojanHyperjumpTeleportAB=Umojan - Hyperjump Teleport AB
+Effect/Name/UmojanHyperjumpTeleportInAB=Umojan - Hyperjump Teleport In AB
+Effect/Name/UmojanHyperjumpTeleportOutAB=Umojan - Hyperjump Teleport Out AB
+Effect/Name/UmojanHyperjumpTeleportOutABSet=Umojan - Hyperjump Teleport Out AB Set
+Effect/Name/UmojanHyperjumpTeleportOutTargetAB=Umojan - Hyperjump Teleport Out Target AB
+Effect/Name/UmojanHyperjumpTeleportSet=Umojan - Hyperjump Teleport Set
+Effect/Name/UmojanK14Railpistol=K-14 Railpistol
+Effect/Name/UmojanK14Railrifle=K-14 Railrifle
+Effect/Name/UmojanK14RailriflePersistant=K-14 Railrifle
+Effect/Name/UmojanK14RailriflePersistantAcc=K-14 Railrifle
+Effect/Name/UmojanK14RailrifleSearch=K-14 Railrifle
+Effect/Name/UmojanK14RailrifleSwitch=K-14 Railrifle
+Effect/Name/UmojanK14RailrifleSwitchAcc=K-14 Railrifle
+Effect/Name/UmojanK1XCanisterRifle=K-1X Canister Rifle
+Effect/Name/UmojanK38ScytheRailPistol=K-38 Scythe Rail Pistol
+Effect/Name/UmojanK38ScytheRailPistolPersistant=K-38 Scythe Rail Pistol
+Effect/Name/UmojanK38ScytheRailPistolRight=K-38 Scythe Rail Pistol Right
+Effect/Name/UmojanLockOnTowerTurretClear=Umojan - Lock On Tower Turret Clear
+Effect/Name/UmojanLockOnTowerTurretStart=Umojan - Lock On Tower Turret Start
+Effect/Name/UmojanLockdownAB=Lockdown AB
+Effect/Name/UmojanLockdownLM=Lockdown LM
+Effect/Name/UmojanMarineWeaponPowerAccumulatorApplyBuff=Umojan - Marine - Weapon Power Accumulator (Apply Buff)
+Effect/Name/UmojanMarineWeaponPowerAccumulatorConsumeBuff=Umojan - Marine - Weapon Power Accumulator (Consume Buff)
+Effect/Name/UmojanMicroBuildingHeal=Umojan - Micro Building Heal
+Effect/Name/UmojanMistDeepDiveCD=Umojan - Mist - Deep Dive CD
+Effect/Name/UmojanMistDeepDiveRB=Umojan - Mist - Deep Dive RB
+Effect/Name/UmojanMistK24RailgunDamage=Umojan - Mist - K-24 Railgun (Damage)
+Effect/Name/UmojanMistK24RailgunPersistant=Umojan - Mist - K-24 Railgun (Persistant)
+Effect/Name/UmojanMistK24RailgunSearch=Umojan - Mist - K-24 Railgun (Search)
+Effect/Name/UmojanMistK24RailgunSwitch=Umojan - Mist - K-24 Railgun (Switch)
+Effect/Name/UmojanMistRomaMissiles=Umojan - Mist - Roma Missiles
+Effect/Name/UmojanMistRomaMissilesLaunchMissileLeft=Umojan - Mist - Roma Missiles (Launch Missile)(Left)
+Effect/Name/UmojanMistRomaMissilesLaunchMissileRight=Umojan - Mist - Roma Missiles (Launch Missile)(Right)
+Effect/Name/UmojanMistRomaMissilesPersistent=Umojan - Mist - Roma Missiles (Persistent)
+Effect/Name/UmojanMoiraHellfireMissilePack=Umojan - Moira - Hellfire Missile Pack
+Effect/Name/UmojanMoiraTwinGatlingCannonAGDamage=Umojan - Moira - Twin Gatling Cannon AG (Damage)
+Effect/Name/UmojanNightScreamRockets=Night Scream Rockets
+Effect/Name/UmojanNightScreamRocketsLM=Night Scream Rockets
+Effect/Name/UmojanNightScreamRocketsU=Night Scream RocketsU
+Effect/Name/UmojanPathfinderGladiusMissileDamage=Umojan - Pathfinder - Gladius Missile (Damage)
+Effect/Name/UmojanPathfinderGladiusMissileLM=Umojan - Pathfinder - Gladius Missile (LM)
+Effect/Name/UmojanPhaseDisruptors=Phase Disruptors
+Effect/Name/UmojanPlasmaThrowerDamageArmoured=Plasma Thrower (Damage Armoured)
+Effect/Name/UmojanPlasmaThrowerDamageMassive=Plasma Thrower (Damage Massive)
+Effect/Name/UmojanPlasmaThrowerDamageShow=Plasma Thrower (Damage Show)
+Effect/Name/UmojanPlasmaThrowerDamageSwitch=Plasma Thrower (Damage Switch)
+Effect/Name/UmojanPlasmaThrowerPersistant=Plasma Thrower (Persistant)
+Effect/Name/UmojanPlasmaThrowerSearch=Plasma Thrower (Search)
+Effect/Name/UmojanPlasmaThrowerSet=Plasma Thrower (Set)
+Effect/Name/UmojanPlasmabatCorrosiveBlastDoT=Umojan - Plasmabat Corrosive Blast DoT
+Effect/Name/UmojanPlasmabatCorrosiveBlastDoTEffect=Umojan - Plasmabat Corrosive Blast DoT Effect
+Effect/Name/UmojanPlasmabatCorrosiveBlastLaunchMissile=Umojan - Plasmabat Corrosive Blast Launch Missile
+Effect/Name/UmojanPlasmabatPlasmaThrowerDamage=Umojan - Plasmabat - Plasma Thrower (Damage)
+Effect/Name/UmojanPowerLevel0=Umojan - Power Level 0
+Effect/Name/UmojanPowerLevel1=Umojan - Power Level 1
+Effect/Name/UmojanPowerLevel2=Umojan - Power Level 2
+Effect/Name/UmojanPowerLevel3=Umojan - Power Level 3
+Effect/Name/UmojanRaptorBeamDamage=Umojan - Raptor Beam (Damage)
+Effect/Name/UmojanRaptorBeamPersistent=Umojan - Raptor Beam (Persistent)
+Effect/Name/UmojanRepairMCS=Repair
+Effect/Name/UmojanRepairNorns=Repair
+Effect/Name/UmojanRepairTower=Repair
+Effect/Name/UmojanRetributionFieldDamage=Retribution Field Damage
+Effect/Name/UmojanRetributionFieldSearch=Retribution Field (Search)
+Effect/Name/UmojanRetributionFieldSet=Retribution Field (Set)
+Effect/Name/UmojanSalvageBunker=Bunker
+Effect/Name/UmojanScienceBlue=Umojan - Science! Blue
+Effect/Name/UmojanScienceBlueContinue=Umojan - Science! Blue Continue
+Effect/Name/UmojanScienceGreen=Umojan - Science! Green
+Effect/Name/UmojanScienceGreenContinue=Umojan - Science! Green Continue
+Effect/Name/UmojanScienceRed=Umojan - Science! Red
+Effect/Name/UmojanScienceRedContinue=Umojan - Science! Red Continue
+Effect/Name/UmojanScienceRemoveAllSet=Umojan - Science! Remove All Set
+Effect/Name/UmojanScienceRemoveBlue=Umojan - Science! Remove Blue
+Effect/Name/UmojanScienceRemoveGreen=Umojan - Science! Remove Green
+Effect/Name/UmojanScienceRemoveRed=Umojan - Science! Remove Red
+Effect/Name/UmojanSentryGun=Sentry Gun (Damage)
+Effect/Name/UmojanShadowguardBlinkTeleport=Umojan - Shadowguard - Blink Teleport
+Effect/Name/UmojanShadowguardSabotageDamage=Umojan - Shadowguard - Sabotage Damage
+Effect/Name/UmojanShadowguardSabotageTarget=Umojan - Shadowguard - Sabotage Target
+Effect/Name/UmojanShieldTransferGiverAB=Umojan - Shield Transfer Giver AB
+Effect/Name/UmojanShieldTransferGiverSet=Umojan - Shield Transfer AB Set
+Effect/Name/UmojanShieldTransferReceiveAB=Umojan - Shield Transfer Receive AB
+Effect/Name/UmojanShieldTransferSearchGiver=Umojan - Shield Transfer Search Giver
+Effect/Name/UmojanShieldTransferTransferEffect=Umojan - Shield Transfer Transfer Effect
+Effect/Name/UmojanSnipeDamage=Snipe (Damage)
+Effect/Name/UmojanStasisFieldApply=Umojan - Stasis Field (Apply)
+Effect/Name/UmojanStasisFieldMissile=Umojan - Stasis Field (Missile)
+Effect/Name/UmojanStasisFieldProtectionApply=Umojan - Stasis Field Protection (Apply)
+Effect/Name/UmojanStasisFieldSearch=Umojan - Stasis Field (Search)
+Effect/Name/UmojanStasisMineApply=Umojan - Stasis Mine (Apply)
+Effect/Name/UmojanStasisMineDeployAB=Umojan - Stasis Mine Deploy (AB)
+Effect/Name/UmojanStasisMineDeployCreate=Umojan - Stasis Mine Deploy (Create)
+Effect/Name/UmojanStasisMineDeployLM=Umojan - Stasis Mine Deploy (LM)
+Effect/Name/UmojanStasisMineDeploySet=Umojan - Stasis Mine Deploy (Set)
+Effect/Name/UmojanStasisMineProtectionApply=Umojan - Stasis Mine Protection (Apply)
+Effect/Name/UmojanStasisMineSearch=Umojan - Stasis Mine (Search)
+Effect/Name/UmojanStayatRange=Stay at Range
+Effect/Name/UmojanStrikeMineBurrowOrder=Umojan - Strike Mine Burrow Order
+Effect/Name/UmojanStrikeMinesDamage=Umojan - Strike Mine Damage
+Effect/Name/UmojanStrikeMinesSet=Umojan - Strike Mine Set
+Effect/Name/UmojanStrikefoxBeamDamage=Umojan - Strikefox - Beam (Damage)
+Effect/Name/UmojanStrikefoxMeleeDamage=Umojan - Strikefox - Melee (Damage)
+Effect/Name/UmojanStrikefoxMissileCP=Umojan - Strikefox - Missile (CP)
+Effect/Name/UmojanStrikefoxMissileDamage=Umojan - Strikefox - Missile (Damage)
+Effect/Name/UmojanStrikefoxMissileLM=Umojan - Strikefox - Missile (LM)
+Effect/Name/UmojanStrikefoxMissileSearch=Umojan - Strikefox - Missile (Search)
+Effect/Name/UmojanSuicideRemoveSource=Umojan - Suicide Remove Source
+Effect/Name/UmojanSuicideRemoveTarget=Umojan - Suicide Remove Target
+Effect/Name/UmojanTrancientWeaponTrackerAB=Umojan - Trancient - Weapon Tracker AB
+Effect/Name/UmojanTrancientWeaponTrackerRB=Umojan - Trancient - Weapon Tracker RB
+Effect/Name/UmojanTrancientWeaponTrackerSet=Umojan - Trancient - Weapon Tracker Set
+Effect/Name/UmojanTrancientWeaponTrackerSetBattlecat=Umojan - Trancient - Weapon Tracker Set (Battlecat)
+Effect/Name/UmojanTrancientWeaponTrackerTrack=Umojan - Trancient - Weapon Tracker Track
+Effect/Name/UmojanTwinGatlingCannonAGPersistant=Umojan - Moira - Twin Gatling Cannon AG (Persistant)
+Effect/Name/UmojanTyphonFocalisedRailCannonDamage=Umojan - Typhon - Focalised Rail Cannon (Damage)
+Effect/Name/UmojanTyphonFocalisedRailCannonDamageBonus=Umojan - Typhon - Focalised Rail Cannon (Damage Bonus)
+Effect/Name/UmojanTyphonFocalisedRailCannonDamageNoShield=Umojan - Typhon - Focalised Rail Cannon (Damage No Shield)
+Effect/Name/UmojanTyphonFocalisedRailCannonDisplay1=Umojan - Typhon - Focalised Rail Cannon (Display 1)
+Effect/Name/UmojanTyphonFocalisedRailCannonDisplay2=Umojan - Typhon - Focalised Rail Cannon (Display 2)
+Effect/Name/UmojanTyphonFocalisedRailCannonDisplay3=Umojan - Typhon - Focalised Rail Cannon (Display 3)
+Effect/Name/UmojanTyphonFocalisedRailCannonDisplay4=Umojan - Typhon - Focalised Rail Cannon (Display 4)
+Effect/Name/UmojanTyphonFocalisedRailCannonDisplayAB=Umojan - Typhon - Focalised Rail Cannon (Display AB)
+Effect/Name/UmojanTyphonFocalisedRailCannonDisplayRB=Umojan - Typhon - Focalised Rail Cannon (Display RB)
+Effect/Name/UmojanTyphonFocalisedRailCannonDisplaySwitch=Umojan - Typhon - Focalised Rail Cannon (Display Switch)
+Effect/Name/UmojanTyphonFocalisedRailCannonSet=Umojan - Typhon - Focalised Rail Cannon (Set)
+Effect/Name/UmojanTyphonWarpAssaultApplyPostRecallBehavior=Umojan - Typhon - Warp Assault (Apply Post-Recall Behavior)
+Effect/Name/UmojanTyphonWarpAssaultApplyPreRecallBehavior=Umojan - Typhon - Warp Assault (Apply Pre-Recall Behavior)
+Effect/Name/UmojanTyphonWarpAssaultFakeSet=Umojan - Typhon - Warp Assault (Fake Set)
+Effect/Name/UmojanTyphonWarpAssaultSearch=Umojan - Typhon - Warp Assault (Search)
+Effect/Name/UmojanTyphonWarpAssaultTeleport=Umojan - Typhon - Warp Assault (Teleport)
+Effect/Name/UmojanTyphonWarpAssaultWarpSet=Umojan - Typhon - Warp Assault (Warp Set)
+Effect/Name/UmojanTyphonsClawsDamage=Umojan - Typhon's Claws (Damage)
+Effect/Name/UmojanTyphonsClawsDamageBonus=Umojan - Typhon's Claws (Damage Bonus)
+Effect/Name/UmojanTyphonsClawsDamageNoShield=Umojan - Typhon's Claws (Damage No Shield)
+Effect/Name/UmojanTyphonsClawsPersistent=Umojan - Typhon's Claws (Persistent)
+Effect/Name/UmojanTyphonsClawsSet=Umojan - Typhon's Claws (Set)
+Effect/Name/UmojanWarpSignatureLink=Umojan - Warp Signature Link
+Effect/Name/UmojanWarpSignatureSet=Umojan - Warp Signature Set
+Effect/Name/UmojanWarpSignatureTrack=Umojan - Warp Signature Track
+Effect/Name/UmojanWarptoLocationDisplayEffect=Umojan - Warp to Location Display Effect
+Effect/Name/UmojanWarptoLocationRemoveEffect=Umojan - Warp to Location Remove Effect
+Effect/Name/UmojanWarptoLocationSet=Umojan - Warp to Location Set
+Effect/Name/UmojanWarptoLocationSignatureAcademy=Umojan - Warp to Location Signature (Academy)
+Effect/Name/UmojanWarptoLocationSignatureBunker=Umojan - Warp to Location Signature (Bunker)
+Effect/Name/UmojanWarptoLocationSignatureCommandHub=Umojan - Warp to Location Signature (Command Hub)
+Effect/Name/UmojanWarptoLocationSignatureRemove=Umojan - Warp to Location Signature Remove
+Effect/Name/UmojanWarptoLocationSignatureRemoveTracked=Umojan - Warp to Location Signature Remove Tracked
+Effect/Name/UmojanWarptoLocationSignatureSetAcademy=Umojan - Warp to Location Signature Set (Academy)
+Effect/Name/UmojanWarptoLocationSignatureSetBunker=Umojan - Warp to Location Signature Set (Bunker)
+Effect/Name/UmojanWarptoLocationSignatureSetCommandHub=Umojan - Warp to Location Signature Set (Command Hub)
+Effect/Name/UmojanWarptoLocationSignatureSetShipyard=Umojan - Warp to Location Signature Set (Shipyard)
+Effect/Name/UmojanWarptoLocationSignatureSetWorkshop=Umojan - Warp to Location Signature Set (Workshop)
+Effect/Name/UmojanWarptoLocationSignatureShipyard=Umojan - Warp to Location Signature (Shipyard)
+Effect/Name/UmojanWarptoLocationSignatureWorkshop=Umojan - Warp to Location Signature (Workshop)
+Effect/Name/UmojanWarptoLocationTP=Umojan - Warp to Location TP
+Effect/Name/UmojanWarptoLocationTPOut=Umojan - Warp to Location TP Out
+Effect/Name/UmojanWarptoLocationTPOutSearch=Umojan - Warp to Location TP Out Search
+Effect/Name/UmojanWhirlwindAttackWeaponDamage=Umojan - Whirlwind Attack Weapon Damage
+Effect/Name/UmojanWhirlwindAttackWeaponDummyArea=Umojan - Whirlwind Attack Weapon Dummy Area
+Effect/Name/UmojanWhirlwindAttackWeaponLaunchMissileLeft=Umojan - Whirlwind Attack Weapon Launch Missile Left
+Effect/Name/UmojanWhirlwindAttackWeaponLaunchMissileLeftSet=Umojan - Whirlwind Attack Weapon Launch Missile Left Set
+Effect/Name/UmojanWhirlwindAttackWeaponLaunchMissileRight=Umojan - Whirlwind Attack Weapon Launch Missile Right
+Effect/Name/UmojanWhirlwindAttackWeaponLaunchMissileRightSet=Umojan - Whirlwind Attack Weapon Launch Missile Right Set
+Effect/Name/UmojanWhirlwindAttackWeaponLaunchMissileSideSwitch=Umojan - Whirlwind Attack Weapon Launch Missile Side Switch
+Effect/Name/UmojanWhirlwindAttackWeaponLaunchMissileTargetImmobile22=Umojan - Whirlwind Attack Weapon Launch Missile Target Mobile
+Effect/Name/UmojanWhirlwindAttackWeaponLaunchMissileTargetMobile=Umojan - Whirlwind Attack Weapon Launch Missile Target Immobile
+Effect/Name/UmojanWhirlwindAttackWeaponMissileSearch=Umojan - Whirlwind Attack Weapon Missile Search
+Effect/Name/UmojanWhirlwindAttackWeaponMissileSearchMove=Umojan - Whirlwind Attack Weapon Missile Search Move
+Effect/Name/UmojanWhirlwindAttackWeaponMissileSearchMoveAlly=Umojan - Whirlwind Attack Weapon Missile Search Move Ally
+Effect/Name/UmojanWhirlwindAttackWeaponMissileSearchMoveEnemy=Umojan - Whirlwind Attack Weapon Missile Search Move Enemy
+Effect/Name/UmojanWhirlwindAttackWeaponMissileSearchMoveSwitch=Umojan - Whirlwind Attack Weapon Missile Search Move Switch
+Effect/Name/UmojanWhirlwindAttackWeaponMissileTargetImmobile=Umojan - Whirlwind Attack Weapon Missile Target Immobile
+Effect/Name/UmojanWhirlwindAttackWeaponMissileTargetKill=Umojan - Whirlwind Attack Weapon Missile Target Kill
+Effect/Name/UmojanWhirlwindAttackWeaponMissileTargetMobile2=Umojan - Whirlwind Attack Weapon Missile Target Mobile
+Effect/Name/UmojanWhirlwindAttackWeaponMissileTargetSwitch=Umojan - Whirlwind Attack Weapon Missile Target Switch
+Effect/Name/UmojanWhirlwindDeathSet=Umojan - Whirlwind Death Set
+Effect/Name/UmojanWhirlwindMissileBarrageAIPersistent=Umojan - Whirlwind Missile Barrage AI (Persistent)
+Effect/Name/UmojanWhirlwindMissileBarrageAIStop=Umojan - Whirlwind Missile Barrage AI Stop
+Effect/Name/UmojanWhirlwindMissileBarrageAIStopSet=Umojan - Whirlwind Missile Barrage AI Set
+Effect/Name/UmojanWhirlwindMissileBarrageCooldown=Umojan - Whirlwind Missile Barrage (Cooldown)
+Effect/Name/UmojanWhirlwindMissileBarragePersistent=Umojan - Whirlwind Missile Barrage (Persistent)
+Effect/Name/UmojanWhirlwindMissileBarrageRandomPoint=Umojan - Whirlwind Missile Barrage (Random Point)
+Effect/Name/UmojanWhirlwindMissileBarrageVolley=Umojan - Whirlwind Missile Barrage (Volley)
+Effect/Name/UmojanWhirlwindMissileStrikeAIPersistent=Umojan - Whirlwind Missile Strike AI (Persistent)
+Effect/Name/UmojanWhirlwindMissileStrikeAISet=Umojan - Whirlwind Missile Strike AI Set
+Effect/Name/UmojanWhirlwindMissileStrikeAIStop=Umojan - Whirlwind Missile Strike AI Stop
+Effect/Name/UmojanWhirlwindMissileStrikeCooldown=Umojan - Whirlwind Missile Strike (Cooldown)
+Effect/Name/UmojanWhirlwindMissileStrikeOne=Umojan - Whirlwind Missile Strike (One)
+Effect/Name/UmojanWhirlwindMissileStrikePersistent=Umojan - Whirlwind Missile Strike (Persistent)
+Effect/Name/UmojanWhirlwindSendReconActiveReconAB=Umojan - Whirlwind - Send Recon - Active Recon AB
+Effect/Name/UmojanWhirlwindSendReconActiveReconCDIniSource=Umojan - Whirlwind - Send Recon - Active Recon CD Ini Source
+Effect/Name/UmojanWhirlwindSendReconActiveReconCDIniTarget=Umojan - Whirlwind - Send Recon - Active Recon CD Ini Target
+Effect/Name/UmojanWhirlwindSendReconActiveReconCDSucces=Umojan - Whirlwind - Send Recon - Active Recon CD Succes
+Effect/Name/UmojanWhirlwindSendReconActiveReconEndSet=Umojan - Whirlwind - Send Recon - Active Recon End Set
+Effect/Name/UmojanWhirlwindSendReconActiveReconRB=Umojan - Whirlwind - Send Recon - Active Recon RB
+Effect/Name/UmojanWhirlwindSendReconCarrierTrackCarrier=Umojan - Whirlwind - Send Recon - Carrier Track (Carrier)
+Effect/Name/UmojanWhirlwindSendReconCarrierTrackCraft=Umojan - Whirlwind - Send Recon - Carrier Track (Craft)
+Effect/Name/UmojanWhirlwindSendReconCarrierTrackSet=Umojan - Whirlwind - Send Recon - Carrier Track (Set)
+Effect/Name/UmojanWhirlwindSendReconCreateRecon=Umojan - Whirlwind - Send Recon - Create Recon
+Effect/Name/UmojanWhirlwindSendReconDummyCP=Umojan - Whirlwind - Send Recon - Dummy CP
+Effect/Name/UmojanWhirlwindSendReconFakeSearch=Umojan - Whirlwind - Send Recon - Fake Search
+Effect/Name/UmojanWhirlwindSendReconMove=Umojan - Whirlwind - Send Recon - Move
+Effect/Name/UmojanWhirlwindSendReconOrderReconCP=Umojan - Whirlwind - Send Recon - Order Recon CP
+Effect/Name/UmojanWhirlwindSendReconReconEndSet=Umojan - Whirlwind - Send Recon - Recon End Set
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToCarrier=Umojan - Whirlwind - Send Recon - Return Craft To Carrier
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToCarrierSet=Umojan - Whirlwind - Send Recon - Return Craft To Carrier Set
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToHangar=Umojan - Whirlwind - Send Recon - Return Craft To Hangar
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToHangarAB=Umojan - Whirlwind - Send Recon - Return Craft To Hangar AB
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToHangarBis=Umojan - Whirlwind - Send Recon - Return Craft To Hangar Bis
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToHangarCP=Umojan - Whirlwind - Send Recon - Return Craft To Hangar CP
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToHangarSet=Umojan - Whirlwind - Send Recon - Return Craft To Hangar Set
+Effect/Name/UmojanWhirlwindSendReconReturnCraftToHangarfromWW=Umojan - Whirlwind - Send Recon - Return Craft To Hangar from WW
+Effect/Name/UmojanWhirlwindSpotCreateSpot=Umojan - Whirlwind - Spot - Create Spot
+Effect/Name/UmojanWhirlwindSpotKillOf=Umojan - Whirlwind - Spot Kill Of
+Effect/Name/UmojanWhirlwindSpotTrackCarrier=Umojan - Whirlwind - Spot - Track (Carrier)
+Effect/Name/UmojanWhirlwindSpotTrackCraft=Umojan - Whirlwind - Spot - Track (Craft)
+Effect/Name/UmojanWhirlwindSpotTrackSet=Umojan - Whirlwind - Spot - Track (Set)
+Effect/Name/UmojanWhirlwindWeaponLaunchMissileAlternateAB=Umojan - Whirlwind Weapon Launch Missile Alternate AB
+Effect/Name/UmojanWhirlwindWeaponLaunchMissileAlternateRB=Umojan - Whirlwind Weapon Launch Missile Alternate RB
+Effect/Name/ZerojanDisguiseAsPretorianWithShieldCU=Zerojan - DisguiseAsPretorianWithShieldCU
+Effect/Name/ZerojanDisguiseAsPretorianWithoutShieldCU=Zerojan - DisguiseAsPretorianWithoutShieldCU
+Error\UmojanScramblerTargetLock=Already scrambled target
+Error\UmojanTooManyLockTargets=Too may scrambled targets
+Race/Name/TerU=Umojan
+RequirementNode/Tooltip/CountBehaviorUmojanAloeSendReconActiveReconCompleteOnlyAtUnit1673332186=Nightwish on patrol
+RequirementNode/Tooltip/CountBehaviorUmojanPowerLevel1CompleteOnlyAtUnit759495325=<c val="00FFFF">Power Level</c> at 1 or more.
+RequirementNode/Tooltip/CountBehaviorUmojanPowerLevel2CompleteOnlyAtUnit=<c val="00FFFF">Power Level</c> at 2 or more.
+RequirementNode/Tooltip/CountBehaviorUmojanWeaponPowerAccumulatorCompleteOnlyAtUnit286254288TechTreeCheat=Recharging
+RequirementNode/Tooltip/CountUnitAlias_Umojan_ScienceFacilityCompleteOnly2661977898TechTreeCheat=Science Facility
+RequirementNode/Tooltip/CountUnitAlias_Umojan_SupplyCacheCompleteOnly1812716294TechTreeCheat=Supply Cache
+RequirementNode/Tooltip/CountUnitNukeCompleteOnly3748442553=Build Nuke at the Shadow Ops
+RequirementNode/Tooltip/CountUpgradeUmojanBattlelinkSystemCompleteOnly4198994775=Research Battlelink System at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanBlinkCompleteOnly168788081=Research Blink at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanCloakingFieldCompleteOnly1368482278=Research Cloaking Field at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanCombatShieldCompleteOnly3441060099TechTreeCheat=Research Combat Shield at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanLockdownCompleteOnly3535647452=Research Lockdown at the Shadow Ops
+RequirementNode/Tooltip/CountUpgradeUmojanMobileTargetingCompleteOnly421508784=Research Mobile Targeting at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanOverchargeGeneratorCompleteOnly1523737165=Research Overcharge Generator at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanOverloadWeaponsCompleteOnly361988169TechTreeCheat=Research Overload Weapons at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanPersonalCloakingCompleteOnly1350349511=Research Personal Cloaking at the Shadow Ops
+RequirementNode/Tooltip/CountUpgradeUmojanRangeFinderCompleteOnly2993519311TechTreeCheat=Research Transfer Shield Power at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanSecondaryHangarCompleteOnly205992868=Research Secondary Hangar at the Fleet Core
+RequirementNode/Tooltip/CountUpgradeUmojanSelfGuidedMissileCompleteOnly2547495955=Research Self Guided Missile at the Fleet Core
+RequirementNode/Tooltip/CountUpgradeUmojanStrikeMineReserveCompleteOnly2331502941=Research Strike Mine Reserve at the Science Facility
+RequirementNode/Tooltip/CountUpgradeUmojanVigilantTurretCompleteOnly478627300=Research Vigilant Turret at the Mechanics Bay
+RequirementNode/Tooltip/CountUpgradeUmojanWarpBattletankCompleteOnly615931837=Research Battle Tank Warp at the Fleet Core
+RequirementNode/Tooltip/CountUpgradeUmojanWeaponPowerAccumulatorCompleteOnly296250993TechTreeCheat=Research Weapon Power Accumulator at the Science Facility
+RequirementNode/Tooltip/Eq1094801651CountUpgradeUmojanShipWeaponsLevel2CompleteOnly1=Umojan Ship Weapons Level 2
+RequirementNode/Tooltip/Eq1200743483CountUpgradeUmojanInfantryArmorLevel1CompleteOnly1=Umojan Infantry Armor Level 1
+RequirementNode/Tooltip/Eq1460904571CountUpgradeUmojanShipWeaponsLevel1CompleteOnly1=Umojan Ship Weapons Level 1
+RequirementNode/Tooltip/Eq1638599757CountUpgradeUmojanInfantryWeaponsLevel1CompleteOnly1=Umojan Infantry Weapons Level 1
+RequirementNode/Tooltip/Eq2417677087CountUpgradeUmojanVehicleWeaponsLevel1CompleteOnly1=Umojan Vehicle Weapons Level 1
+RequirementNode/Tooltip/Eq2632066860CountUpgradeUmojanInfantryArmorLevel2CompleteOnly1=Umojan Infantry Armor Level 2
+RequirementNode/Tooltip/Eq2632350612CountUnitUmojanBattleshipQueuedOrBetter0=No Battleship
+RequirementNode/Tooltip/Eq2632350612CountUnitUmojanFrenrirQueuedOrBetter0=No Battleship
+RequirementNode/Tooltip/Eq2685709117CountUpgradeUmojanShieldsLevel1CompleteOnly1=Umojan Shields Level 1
+RequirementNode/Tooltip/Eq2932063418CountUpgradeUmojanVehiclePlatingLevel1CompleteOnly1=Umojan Vehicle Plating Level 1
+RequirementNode/Tooltip/Eq3149671509CountUpgradeUmojanVehicleWeaponsLevel2CompleteOnly1=Umojan Vehicle Weapons Level 2
+RequirementNode/Tooltip/Eq3687220821CountUpgradeUmojanShipPlatingLevel2CompleteOnly1=Umojan Ship Plating Level 2
+RequirementNode/Tooltip/Eq3687220821CountUpgradeUmojanVehicleandShipPlatingLevel2CompleteOnly1=Umojan Ship Plating Level 2
+RequirementNode/Tooltip/Eq3880980680CountUpgradeUmojanShipPlatingLevel1CompleteOnly1=Umojan Ship Plating Level 1
+RequirementNode/Tooltip/Eq3880980680CountUpgradeUmojanVehicleandShipPlatingLevel1CompleteOnly1=Umojan Ship Plating Level 1
+RequirementNode/Tooltip/Eq4185165080CountUpgradeUmojanVehiclePlatingLevel2CompleteOnly1=Umojan Vehicle Plating Level 2
+RequirementNode/Tooltip/Eq419287888CountUpgradeUmojanShieldsLevel2CompleteOnly1=Umojan Shields Level 2
+RequirementNode/Tooltip/Eq4255153237CountUpgradeUmojanInfantryWeaponsLevel2CompleteOnly1=Umojan Infantry Weapons Level 2
+RequirementNode/Tooltip/LT3369360179CountUnitUmojanRaptorQueuedOrBetterAtUnit6=Hexareme must have fewer than 6 Raptor
+RequirementNode/Tooltip/LT979712484CountUnitUmojanRaptorQueuedOrBetterAtUnit8=Hexareme must have fewer than 8 Raptor
+RequirementNode/Tooltip/Not221391944CountBehaviorUmojanAloeSendReconActiveReconCompleteOnlyAtUnit=No active Spotters
+RequirementNode/Tooltip/Not83801426CountUnitNukeQueuedOrBetterAtUnit=No Nuke in this Shadow Ops
+RequirementNode/Tooltip/Not866976074CountUnitNukeQueuedOrBetterAtUnit=No Nuke in this Ghost Academy
+Texterror/PowerLevel1=Need power level 1+
+Texterror/PowerLevel2=Need power level 2+
+Texterror/PowerLevel3=Need power level 3
+UI/HelpMenuDialogTechGlossary_Control_Unit/Category/UmojanUnits=Umojan Units
+UI/ResourceSupplyToolTip_TerU=All living units cost supply. Build Supply Cache to increase supply. 
+Unit/Category/UmojanUnits=Umojan
+Unit/LifeArmorName/UmojanBuildingPlating=Umojan Building Plating
+Unit/LifeArmorName/UmojanInfantryArmor=Umojan Infantry Armor
+Unit/LifeArmorName/UmojanShipPlating=Umojan Ship Plating
+Unit/LifeArmorName/UmojanVehiclePlating=Umojan Vehicle Plating
+Unit/Name/BattleTank=Battle Tank
+Unit/Name/Bogus=Energy Generator
+Unit/Name/SpiderMine=StrikeMine
+Unit/Name/UmojanAATurret=Anti-Air Turret
+Unit/Name/UmojanATAPlasmaBatteryLMWeapon=ATA Plasma Battery
+Unit/Name/UmojanATSPlasmaBatteryLMWeapon=ATS Plasma Battery
+Unit/Name/UmojanAloeAGMissile=Aloe AG Missile
+Unit/Name/UmojanAloeDamageMissile=Aloe Damage Missile
+Unit/Name/UmojanArmory=Foundry
+Unit/Name/UmojanBarracks=Academy
+Unit/Name/UmojanBattleTank=Battle Tank
+Unit/Name/UmojanBattlecat=Battlecat
+Unit/Name/UmojanBattlecatCuirassier=Cuirassier
+Unit/Name/UmojanBattlecatLancer=Lancer
+Unit/Name/UmojanBattlecatLancerPretorian=Spahi
+Unit/Name/UmojanBattlecatRiderPretorianDummy=Cube
+Unit/Name/UmojanBattlecatSpahi=Spahi
+Unit/Name/UmojanBattleship=Battleship
+Unit/Name/UmojanBunker=Bunker
+Unit/Name/UmojanChangelingMarine=Pretorian
+Unit/Name/UmojanChangelingMarine2=Pretorian
+Unit/Name/UmojanCommandCenter=Command Hub
+Unit/Name/UmojanCommando=Commando
+Unit/Name/UmojanCrow=Crow
+Unit/Name/UmojanD8ChargeWeapon=Umojan - Weapon - D8 Charge
+Unit/Name/UmojanDira=Dira
+Unit/Name/UmojanDiraeAttackWeapon=Dirae Attack Weapon
+Unit/Name/UmojanEnergyBarricade=Energy Barricade
+Unit/Name/UmojanEnergyBarricadePassthrough=Energy Barricade
+Unit/Name/UmojanEnergyGenerator=Energy Generator
+Unit/Name/UmojanEngineeringBay=Mechanics Bay
+Unit/Name/UmojanEngineeringTower=Engineering Tower
+Unit/Name/UmojanFactory=Workshop
+Unit/Name/UmojanFakeUnitCHPowerGenerator=Umojan - Fake Unit - CH Power Generator
+Unit/Name/UmojanFrenrir=Typhon
+Unit/Name/UmojanFrenrir2=Typhon
+Unit/Name/UmojanFrenrirFortress=Typhon
+Unit/Name/UmojanFusionCore=Fleet Core
+Unit/Name/UmojanGhostAcademy=Shadow Ops
+Unit/Name/UmojanGroundSensor=Ground Sensor
+Unit/Name/UmojanGroundSensorBurrowed=Ground Sensor
+Unit/Name/UmojanHexareme=Hexareme
+Unit/Name/UmojanHexaremeAG=Hexareme
+Unit/Name/UmojanLockdownWeapon=Lockdown Weapon
+Unit/Name/UmojanMCS=MCS
+Unit/Name/UmojanMarine=Pretorian
+Unit/Name/UmojanMedic=Aloe
+Unit/Name/UmojanMist=Mist
+Unit/Name/UmojanMistAirLeft=Mist Air Left
+Unit/Name/UmojanMistAirWeaponRight=Mist Air Right
+Unit/Name/UmojanMoira=Moira
+Unit/Name/UmojanNightwish=Nightwish
+Unit/Name/UmojanPathfinder=Pathfinder
+Unit/Name/UmojanPlasmabat=Plasmabat
+Unit/Name/UmojanPlasmabatCorrosiveBlastMissile=Plasmabat Corrosive Blast Missile
+Unit/Name/UmojanRaptor=Raptor
+Unit/Name/UmojanRefinery=Distillery
+Unit/Name/UmojanRefineryRich=Distillery
+Unit/Name/UmojanScienceFacilityBase=Science Facility
+Unit/Name/UmojanScienceFacilityBase2=Science Facility
+Unit/Name/UmojanScienceFacilityBlue=Science Facility
+Unit/Name/UmojanScienceFacilityGreen2=Science Facility
+Unit/Name/UmojanScienceFacilityRed2=Science Facility
+Unit/Name/UmojanSentryGun=Sentry Gun
+Unit/Name/UmojanSentryGunUnderground=Sentry Gun
+Unit/Name/UmojanShadowguard=Shadowguard
+Unit/Name/UmojanSpecOpsDropship=SpecOps Dropship
+Unit/Name/UmojanSpySatellite=Spy Satellite
+Unit/Name/UmojanStarport=Shipyard
+Unit/Name/UmojanStasisFieldWeapon=Stasis Field
+Unit/Name/UmojanStasisMine=Stasis Mine
+Unit/Name/UmojanStasisMineBurrowed=Stasis Mine
+Unit/Name/UmojanStrikefox=Strikefox
+Unit/Name/UmojanSupplyCache=Supply Cache
+Unit/Name/UmojanSupplyCacheLowered=Supply Cache
+Unit/Name/UmojanThunderbird=Thunderbird
+Unit/Name/UmojanWarpAcademy=Warping Signature
+Unit/Name/UmojanWarpBunker=Warping Signature
+Unit/Name/UmojanWarpCommandHub=Warping Signature
+Unit/Name/UmojanWarpShipyard=Warping Signature
+Unit/Name/UmojanWarpWorkshop=Warping Signature
+Unit/Name/UmojanWarpingSignatureAcademy=Warping Signature
+Unit/Name/UmojanWarpingSignatureBunker=Warping Signature
+Unit/Name/UmojanWarpingSignatureCommandHub=Warping Signature
+Unit/Name/UmojanWarpingSignatureShipyard=Warping Signature
+Unit/Name/UmojanWarpingSignatureWorkshop=Warping Signature
+Unit/Name/UmojanWeaponAloeThunderbirdDropBomb=Umojan - Weapon - Aloe - Thunderbird - Drop Bomb
+Unit/Name/UmojanWeaponCrowWeaponMissile=Umojan - Weapon - Crow Weapon Missile
+Unit/Name/UmojanWeaponFlashGrenadeWeapon=Umojan - Weapon - Flash Grenade Weapon
+Unit/Name/UmojanWeaponGladiusMissile=Umojan - Weapon - Gladius Missile
+Unit/Name/UmojanWeaponGroundSensor=Ground Sensor
+Unit/Name/UmojanWeaponMoiraAirWeapon=Umojan - Weapon - Moira Air Weapon
+Unit/Name/UmojanWeaponStasisMine=Stasis Mine
+Unit/Name/UmojanWeaponStrikefoxMissile=Umojan - Weapon - Strikefox Missile
+Unit/Name/UmojanWeaponUnitWhirlwindMissileTargetImmobile=Umojan - Weapon Unit - Whirlwind Missile Target (Immobile)
+Unit/Name/UmojanWeaponUnitWhirlwindMissileTargetMobile=Umojan - Weapon Unit - Whirlwind Missile Target (Mobile)
+Unit/Name/UmojanWeaponUnitWhirlwindSpot=Umojan - Weapon Unit - Whirlwind Spot
+Unit/Name/UmojanWhirlwind=Whirlwind
+Unit/Name/UmojanWhirlwindMissile=Whirlwind Missile
+Unit/ShieldArmorName/UmojanPlasmaShields=Umojan Plasma Shields
+UnitKillRank/Rank1_TerU=First Class
+UnitKillRank/Rank2_TerU=Sergeant
+UnitKillRank/Rank3_TerU=Major
+UnitKillRank/Rank4_TerU=Lieutenant
+UnitKillRank/Rank5_TerU=Commandant
+Upgrade/Name/UmojanBattlelinkSystem=Battlelink System
+Upgrade/Name/UmojanBlink=Blink
+Upgrade/Name/UmojanCloakingField=Cloaking Field
+Upgrade/Name/UmojanCombatShield=Combat Shield
+Upgrade/Name/UmojanCorvidReactor=Corvid Reactor
+Upgrade/Name/UmojanEngineeringSuit=Engineering Suit
+Upgrade/Name/UmojanHiSecAutoTracking=Hi-Sec Auto Tracking
+Upgrade/Name/UmojanHighOutputThruster=High Output Thruster
+Upgrade/Name/UmojanInfantryArmor=Umojan Infantry Armor
+Upgrade/Name/UmojanInfantryArmorLevel1=Umojan Infantry Armor Level 1
+Upgrade/Name/UmojanInfantryArmorLevel2=Umojan Infantry Armor Level 2
+Upgrade/Name/UmojanInfantryArmorLevel3=Umojan Infantry Armor Level 3
+Upgrade/Name/UmojanInfantryWeapons=Umojan Infantry Weapons
+Upgrade/Name/UmojanInfantryWeaponsLevel1=Umojan Infantry Weapons Level 1
+Upgrade/Name/UmojanInfantryWeaponsLevel2=Umojan Infantry Weapons Level 2
+Upgrade/Name/UmojanInfantryWeaponsLevel3=Umojan Infantry Weapons Level 3
+Upgrade/Name/UmojanLockdown=Lockdown
+Upgrade/Name/UmojanMedivacIncreaseSpeedBoost=Rapid Reignition System
+Upgrade/Name/UmojanMobileTargeting=Mobile Targeting
+Upgrade/Name/UmojanOverchargeGenerator=Overcharge Generator
+Upgrade/Name/UmojanOverloadWeapons=Overload Weapons
+Upgrade/Name/UmojanPersonalCloaking=Personal Cloaking
+Upgrade/Name/UmojanPlasmaRecycler=Plasma Recycler
+Upgrade/Name/UmojanRangeFinder=Range Finder
+Upgrade/Name/UmojanSecondaryHangar=Secondary Hangar
+Upgrade/Name/UmojanSelfGuidedMissile=Self Guided Missile
+Upgrade/Name/UmojanShields=Umojan Shields
+Upgrade/Name/UmojanShieldsLevel1=Umojan Shields Level 1
+Upgrade/Name/UmojanShieldsLevel2=Umojan Shields Level 2
+Upgrade/Name/UmojanShieldsLevel3=Umojan Shields Level 3
+Upgrade/Name/UmojanShipPlating=Umojan Ship Plating
+Upgrade/Name/UmojanShipPlatingLevel1=Umojan Ship Plating Level 1
+Upgrade/Name/UmojanShipPlatingLevel2=Umojan Ship Plating Level 2
+Upgrade/Name/UmojanShipPlatingLevel3=Umojan Ship Plating Level 3
+Upgrade/Name/UmojanShipWeapons=Umojan Ship Weapons
+Upgrade/Name/UmojanShipWeaponsLevel1=Umojan Ship Weapons Level 1
+Upgrade/Name/UmojanShipWeaponsLevel2=Umojan Ship Weapons Level 2
+Upgrade/Name/UmojanShipWeaponsLevel3=Umojan Ship Weapons Level 3
+Upgrade/Name/UmojanShipandVehiclePlating2=Umojan Ship and Vehicle Plating
+Upgrade/Name/UmojanStasisGun=Stasis Gun
+Upgrade/Name/UmojanStrikeMineReserve=Strike Mine Reserve
+Upgrade/Name/UmojanVehiclePlating=Umojan Vehicle Plating
+Upgrade/Name/UmojanVehiclePlatingLevel1=Umojan Vehicle Plating Level 1
+Upgrade/Name/UmojanVehiclePlatingLevel2=Umojan Vehicle Plating Level 2
+Upgrade/Name/UmojanVehiclePlatingLevel3=Umojan Vehicle Plating Level 3
+Upgrade/Name/UmojanVehicleWeapons=Umojan Vehicle Weapons
+Upgrade/Name/UmojanVehicleWeaponsLevel1=Umojan Vehicle Weapons Level 1
+Upgrade/Name/UmojanVehicleWeaponsLevel2=Umojan Vehicle Weapons Level 2
+Upgrade/Name/UmojanVehicleWeaponsLevel3=Umojan Vehicle Weapons Level 3
+Upgrade/Name/UmojanVehicleandShipPlating=Umojan Vehicle and Ship Plating
+Upgrade/Name/UmojanVehicleandShipPlatingLevel12=Umojan Vehicle and Ship Plating Level 1
+Upgrade/Name/UmojanVehicleandShipPlatingLevel2=Umojan Vehicle and Ship Plating Level 2
+Upgrade/Name/UmojanVehicleandShipPlatingLevel32=Umojan Vehicle and Ship Plating Level 3
+Upgrade/Name/UmojanVigilantTurret=Vigilant Turret
+Upgrade/Name/UmojanWarpBattletank=Warp
+Upgrade/Name/UmojanWeaponPowerAccumulator=Weapon Power Accumulator
+Weapon/Name/Umojan60mmRailcannon=K-60 Railcannon
+Weapon/Name/UmojanATAPlasmaBattery=ATA Plasma Battery
+Weapon/Name/UmojanATSPlasmaBattery=ATS Plasma Battery
+Weapon/Name/UmojanBattlecat=Titanium Claws
+Weapon/Name/UmojanBattlecatCuirassier=Titanium Claws
+Weapon/Name/UmojanBattleshipWeaponSet=Battleship Weapon Set
+Weapon/Name/UmojanCrowPlasmaCannon=Plasma Cannon 
+Weapon/Name/UmojanD8Charge=D-8 Charge
+Weapon/Name/UmojanDaggerMissileLaunchers=Dagger Missile Launchers
+Weapon/Name/UmojanElysianCannon=Elysian Cannon
+Weapon/Name/UmojanFocalised60mmRailcannon=Focalised K-60 Railcannon
+Weapon/Name/UmojanFrenrirsBite=Typhon's Bite
+Weapon/Name/UmojanFrenrirsClaws=Typhon's Claws
+Weapon/Name/UmojanGladiusMissile=Gladius Missile
+Weapon/Name/UmojanGladiusMissileMove=Gladius Missile
+Weapon/Name/UmojanHeliosMissilePod=Helios Missile Pod
+Weapon/Name/UmojanHellfireMissiles=Hellfire Missiles
+Weapon/Name/UmojanK14Railrifle=K-14 Railrifle
+Weapon/Name/UmojanK14RailrifleFake=K-14 Railrifle Fake
+Weapon/Name/UmojanK14RailrifleSpahi=K-14 Railrifle
+Weapon/Name/UmojanK14RailrifleSpahiLookAt=K-14 Railrifle Look At
+Weapon/Name/UmojanK14dRailpistol=K-14d Railpistol
+Weapon/Name/UmojanK1XCanisterRifle=K-1X Canister Rifle
+Weapon/Name/UmojanK1XCanisterRifleLancer=K-1X Canister Rifle
+Weapon/Name/UmojanK1XCanisterRifleLancerFake=K-1X Canister Rifle Fake
+Weapon/Name/UmojanK1XCanisterRifleLancerLookAt=K-1X Canister Rifle Look At
+Weapon/Name/UmojanK24LightRailgunMist=K-24 Light Railgun
+Weapon/Name/UmojanK38ScytheRailPistol=K-8 Railpistol
+Weapon/Name/UmojanLutetiaRockets=Lutetia Rockets
+Weapon/Name/UmojanMoiraTwinGatlingCannonAG=Gatling Cannon AG
+Weapon/Name/UmojanNightScreamRockets=Night Scream Rockets
+Weapon/Name/UmojanPhaseDisruptors=Phase Disruptors
+Weapon/Name/UmojanPlasmabat=Prometheum Plasmathrower
+Weapon/Name/UmojanPlasmabatCuirassier=Prometheum Plasmathrower
+Weapon/Name/UmojanPlasmabatCuirassierLookAt=Prometheum Plasmathrower Look At
+Weapon/Name/UmojanRaptorBeam=Raptor Beam
+Weapon/Name/UmojanRaptorLaunch=Raptor Launch
+Weapon/Name/UmojanRaptors=Raptors
+Weapon/Name/UmojanRomaMissiles=Roma Missiles
+Weapon/Name/UmojanSentryGun=Sentry Gun
+Weapon/Name/UmojanStrikeMines=Strike Mines
+Weapon/Name/UmojanStrikefoxMelee=Melee
+Weapon/Name/UmojanStrikefoxRailgun=K-36 Railgun
+Weapon/Name/UmojanVigilantTurret=Vigilant Turret
+Weapon/Tip/UmojanD8Charge=Only used against structures.

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAttachMethodPattern id="TalDarimPatternWarmistressBeam">
+        <Keyword value="Weapon"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="TalDarimWarmistressParticleBeamDummy"/>
+    </CAttachMethodPattern>
+</Catalog>

@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementAnd id="AndCountUpgradeZHBRAirArmorUpgradeLevel1CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRAirArmorUpgradeLevel1CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRTombCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRProjectorCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeZHBRAirArmorUpgradeLevel2CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRAirArmorUpgradeLevel2CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRTombCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRProjectorCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRVoidForgeCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeZHBRAirWeaponUpgradeLevel1CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRAirWeaponUpgradeLevel1CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRTombCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRProjectorCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeZHBRAirWeaponUpgradeLevel2CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRAirWeaponUpgradeLevel2CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRTombCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRProjectorCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRVoidForgeCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeZHBRGroundArmorUpgradeLevel1CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRGroundArmorUpgradeLevel1CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRCryptCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRKeystoneCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeZHBRGroundArmorUpgradeLevel2CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRGroundArmorUpgradeLevel2CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRCryptCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRKeystoneCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRCapsuleCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeZHBRGroundWeaponUpgradeLevel1CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRGroundWeaponUpgradeLevel1CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRCryptCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRKeystoneCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeZHBRGroundWeaponUpgradeLevel2CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly">
+        <OperandArray value="CountUpgradeZHBRGroundWeaponUpgradeLevel2CompleteOnly"/>
+        <OperandArray value="CountUnitZHBRCryptCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRKeystoneCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRCapsuleCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorZHBRCommon@RequiresCrystallicShrineCompleteOnlyAtUnit3760657428TechTreeCheat">
+        <Count Link="ZHBRCommon@RequiresCrystallicShrine" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorZHBRPowerField@SuppressionBehaviorCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRPowerField@SuppressionBehavior" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorZHBRPrimeSummoning@ControllerCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRPrimeSummoning@Controller" State="CompleteOnly"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorZHBRPrimeSummoning@ControllerCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRPrimeSummoning@Controller" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitAlias_ZHBRIonicCrystalCompleteOnly2766371930TechTreeCheat">
+        <Count Link="Alias_ZHBRIonicCrystal" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitTechAlias_ZHBR_HarvesterCompleteOnly4064654695">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TechAlias_ZHBR_Harvester" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRCapsuleCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRCapsule" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRCryptCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRCrypt" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRHoldingCellCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRHoldingCell" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRKeystoneCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRKeystone" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRMinionCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRMinion" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRProjectorCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRProjector" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRTempleCompleteOnlyTechTreeCheat">
+        <Count Link="ZHBRTemple" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRTombCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRTomb" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRVoidForgeCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidForge" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAccelerationCompleteOnly3995139899">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAcceleration" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAccelerationQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAcceleration" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirArmorUpgradeLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirArmorUpgradeLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirArmorUpgradeLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirArmorUpgradeLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirArmorUpgradeLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirArmorUpgradeLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirArmorUpgradeLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirArmorUpgradeLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirArmorUpgradeLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirArmorUpgradeLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirWeaponUpgradeLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirWeaponUpgradeLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirWeaponUpgradeLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirWeaponUpgradeLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirWeaponUpgradeLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirWeaponUpgradeLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirWeaponUpgradeLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirWeaponUpgradeLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRAirWeaponUpgradeLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirWeaponUpgradeLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRBrokenDNACompleteOnly2538930120">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRBrokenDNA" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRBrokenDNAQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRBrokenDNA" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRCloakedSpiritCompleteOnly3516416024">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRCloakedSpirit" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRCloakedSpiritQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRCloakedSpirit" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRCrystallicShrineCompleteOnly3760657428TechTreeCheat">
+        <Count Link="ZHBRProjector" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRDeepTunnelCompleteOnly3826630383">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRDeepTunnel" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRDeepTunnelQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRDeepTunnel" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRDestructionOrbCompleteOnly1500912908">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRDestructionOrb" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRDestructionOrbQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRDestructionOrb" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRDisappearanceCompleteOnly1585767443">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRDisappearance" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRDisappearanceQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRDisappearance" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBREnhancedArmor@UpgradeCompleteOnly4257213191">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBREnhancedArmor@Upgrade" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBREnhancedArmor@UpgradeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBREnhancedArmor@Upgrade" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRFlayerBerserker@BerserkerCompleteOnly840449553">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRFlayerBerserker@Berserker" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRFlayerFuryCompleteOnly431183636">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRFlayerFury" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundArmorUpgradeLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundArmorUpgradeLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundArmorUpgradeLevel1QueuedOrBetter539044291">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundArmorUpgradeLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundArmorUpgradeLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundArmorUpgradeLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundArmorUpgradeLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundArmorUpgradeLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundArmorUpgradeLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundArmorUpgradeLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundWeaponUpgradeLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundWeaponUpgradeLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundWeaponUpgradeLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundWeaponUpgradeLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundWeaponUpgradeLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundWeaponUpgradeLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundWeaponUpgradeLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundWeaponUpgradeLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRGroundWeaponUpgradeLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRGroundWeaponUpgradeLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRIndestructibleCompleteOnly3103326302">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRIndestructible" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRIndestructibleQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRIndestructible" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRIonicFieldCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRIonicField" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRIonicFieldCompleteOnly1472742402">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRIonicField" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRIonicFieldQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRIonicField" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRKeystone@ConnectionCompleteOnly1036980592">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRKeystone@Connection" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRPhaseShiftCompleteOnly1593847152">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRPhaseShift" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRPhaseShiftQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRPhaseShift" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRPrimeSummoningCompleteOnly4121997442">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRPrimeSummoning" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRPrimeSummoningQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRPrimeSummoning" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementAnd id="AndCountBehaviorZHBRCommon@RequiresCrystallicShrineCompleteOnlyAtUnitCountUnitZHBRNemesisCatacombCompleteOnly">
+        <OperandArray value="CountBehaviorZHBRCommon@RequiresCrystallicShrineCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUnitZHBRNemesisCatacombCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorZHBRCommon@RequiresCrystallicShrineCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/CrystallicShrineinNetwork"/>
+        <Count Link="ZHBRCommon@RequiresCrystallicShrine" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitZHBRNemesisCatacombCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRNemesisCatacomb" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRStasisCellCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRStasisCell" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitZHBRVoidRiftCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidRift" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRProjector@ConnectionCompleteOnly4096833109">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRProjector@Connection" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRProtectionJump@ZHBRProtectionJumpCompleteOnly2928385730">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRProtectionJump@ZHBRProtectionJump" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRProtectionJump@ZHBRProtectionJumpQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRProtectionJump@ZHBRProtectionJump" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRRestorationShieldCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRRestorationShield" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRRestorationShieldQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRRestorationShield" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRSprayCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRSpray" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRStasisCell@ConnectionCompleteOnly669515756">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRStasisCell@Connection" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRStasisCell@StasisCellCompleteOnly3229616992TechTreeCheat">
+        <Count Link="ZHBRStasisCell@Connection" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRStructureTeleport@ControllerCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRStructureTeleport@Controller" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpCompleteOnly2928385730">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRSubjugationJump@ZHBRSubjugationJump" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ZHBRSubjugationJump@ZHBRSubjugationJump" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRToxicityCompleteOnly198870487">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRToxicity" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRToxicityQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRToxicity" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUltimateUnitOfTransfusionCompleteOnly1091555285">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUltimateUnitOfTransfusion" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUltimateUnitOfTransfusionQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUltimateUnitOfTransfusion" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUpgradeToAdvancedBehemothCompleteOnly1333653123">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUpgradeToAdvancedBehemoth" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUpgradeToAdvancedBehemothQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUpgradeToAdvancedBehemoth" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUpgradeToAdvancedDominatorCompleteOnly1837506799">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUpgradeToAdvancedDominator" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUpgradeToAdvancedDominatorQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUpgradeToAdvancedDominator" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUpgradeToAdvancedNemesisCompleteOnly2988682573">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUpgradeToAdvancedNemesis" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRUpgradeToAdvancedNemesisQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRUpgradeToAdvancedNemesis" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidBonusCompleteOnly2571165972">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidBonus" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidBonusInProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidBonus" State="InProgressOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidBonusQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidBonus" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidChasmCompleteOnly2054791450">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidChasm" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidChasmQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidChasm" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidShieldCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidShield" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidShieldQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRVoidShield" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRWarbringerOrbitalGuidanceCompleteOnly1011428171">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRWarbringerOrbitalGuidance" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="Eq599990200CountUpgradeZHBRWarriorDeconstruction@DeconstructionCompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeZHBRWarriorDeconstruction@DeconstructionCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorZHBRPowerField@SuppressionBehaviorCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountBehaviorZHBRPowerField@SuppressionBehaviorCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorZHBRPowerField@SuppressionBehaviorCompleteOnlyAtUnit1">
+        <OperandArray index="0" value="CountBehaviorZHBRPowerField@SuppressionBehaviorCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorZHBRPrimeSummoning@ControllerCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountBehaviorZHBRPrimeSummoning@ControllerCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRAccelerationQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRAccelerationQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRAirArmorUpgradeLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRAirArmorUpgradeLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRAirArmorUpgradeLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRAirArmorUpgradeLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRAirArmorUpgradeLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRAirArmorUpgradeLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRAirWeaponUpgradeLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRAirWeaponUpgradeLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRAirWeaponUpgradeLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRAirWeaponUpgradeLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRAirWeaponUpgradeLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRAirWeaponUpgradeLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRBrokenDNAQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRBrokenDNAQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRDeepTunnelQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRDeepTunnelQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRDestructionOrbQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRDestructionOrbQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRGroundArmorUpgradeLevel1QueuedOrBetter5390442910">
+        <OperandArray index="0" value="CountUpgradeZHBRGroundArmorUpgradeLevel1QueuedOrBetter539044291"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRGroundArmorUpgradeLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRGroundArmorUpgradeLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRGroundArmorUpgradeLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRGroundArmorUpgradeLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRGroundWeaponUpgradeLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRGroundWeaponUpgradeLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRGroundWeaponUpgradeLevel2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRGroundWeaponUpgradeLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRGroundWeaponUpgradeLevel3QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRGroundWeaponUpgradeLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRIndestructibleQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRIndestructibleQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRIonicFieldCompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeZHBRIonicFieldCompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRPrimeSummoningQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRPrimeSummoningQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRRestorationShieldQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRRestorationShieldQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRToxicityQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRToxicityQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRUltimateUnitOfTransfusionQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRUltimateUnitOfTransfusionQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRUpgradeToAdvancedBehemothQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRUpgradeToAdvancedBehemothQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRUpgradeToAdvancedDominatorQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRUpgradeToAdvancedDominatorQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRUpgradeToAdvancedNemesisQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRUpgradeToAdvancedNemesisQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZHBRVoidShieldQueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidShieldQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementGT id="GTCountUpgradeZHBRRestorationShieldCompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeZHBRRestorationShieldCompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementGT>
+    <CRequirementGT id="GTCountUpgradeZHBRVoidShieldCompleteOnly0">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidShieldCompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementGT>
+    <CRequirementLT id="LTCountUpgradeZHBRCloakedSpiritQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRCloakedSpiritQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeZHBREnhancedArmor@UpgradeQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBREnhancedArmor@UpgradeQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeZHBRIonicFieldQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRIonicFieldQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeZHBRProtectionJump@ZHBRProtectionJumpQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRProtectionJump@ZHBRProtectionJumpQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpQueuedOrBetter1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeZHBRWarriorDeconstruction@DeconstructionQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRWarriorDeconstruction@DeconstructionQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRShrineResearch@ExpressMantleQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRShrineResearch@ExpressMantle" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementLT id="LTCountUpgradeZHBRShrineResearch@ExpressMantleQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRShrineResearch@ExpressMantleQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountUnit id="CountUnitZHBRNemesisCatacombCompleteOnly1132973752">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRNemesisCatacomb" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <!--    <CRequirementEq id="EqCountUpgradeZHBREngineUpgrades@ArmorsLevel1QueuedOrBetter0">-->
+    <!--        <OperandArray index="0" value="CountUpgradeZHBREngineUpgrades@ArmorsLevel1QueuedOrBetter"/>-->
+    <!--        <OperandArray index="1" value="0"/>-->
+    <!--    </CRequirementEq>-->
+    <CRequirementAnd id="AndEq3569156689CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel1CompleteOnly1">
+        <OperandArray value="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel1CompleteOnly1"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq3569156689CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel2CompleteOnly1CountUnitZHBRNemesisCatacombCompleteOnly">
+        <OperandArray value="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel2CompleteOnly1"/>
+        <OperandArray value="CountUnitZHBRNemesisCatacombCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq3569156689CountUpgradeZHBRVoidPortalUpgrades@GroundWeaponsLevel1CompleteOnly1">
+        <OperandArray value="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@GroundWeaponsLevel1CompleteOnly1"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq3569156689CountUpgradeZHBRVoidPortalUpgrades@WeaponsLevel2CompleteOnly1CountUnitZHBRNemesisCatacombCompleteOnly1132973752">
+        <OperandArray value="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@WeaponsLevel2CompleteOnly1"/>
+        <OperandArray value="CountUnitZHBRNemesisCatacombCompleteOnly1132973752"/>
+    </CRequirementAnd>
+    <CRequirementEq id="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel2CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel2CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@GroundWeaponsLevel1CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidPortalUpgrades@GroundWeaponsLevel1CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3569156689CountUpgradeZHBRVoidPortalUpgrades@WeaponsLevel2CompleteOnly1">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidPortalUpgrades@WeaponsLevel2CompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirArmorUpgradeLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidPortalUpgrades@ArmorsLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirArmorUpgradeLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidPortalUpgrades@GroundWeaponsLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirWeaponUpgradeLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRVoidPortalUpgrades@WeaponsLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRAirWeaponUpgradeLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRFlayerFuryQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRFlayerFury" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementLT id="LTCountUpgradeZHBRFlayerFuryQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRFlayerFuryQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementAnd id="AndEqCountBehaviorZHBRFlayerFury@CooldownCompleteOnlyAtUnit1">
+        <OperandArray value="EqCountBehaviorZHBRFlayerFury@CooldownCompleteOnlyAtUnit1"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorZHBRFlayerFury@CooldownCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRFlayerFury@Cooldown" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementEq id="EqCountBehaviorZHBRFlayerFury@CooldownCompleteOnlyAtUnit1">
+        <OperandArray index="0" value="CountBehaviorZHBRFlayerFury@CooldownCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementCountBehavior id="CountBehaviorZHBRWarbringerMaceStrikeCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRWarbringerMaceStrike" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRWarbringerOrbitalGuidanceQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRWarbringerOrbitalGuidance" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="EqCountBehaviorZHBRWarbringerMaceStrikeCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountBehaviorZHBRWarbringerMaceStrikeCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementLT id="LTCountUpgradeZHBRWarbringerOrbitalGuidanceQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRWarbringerOrbitalGuidanceQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRWarriorDeconstruction@DeconstructionCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRWarriorDeconstruction@Deconstruction" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRFlayerBerserker@BerserkerQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRFlayerBerserker@Berserker" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementLT id="LTCountUpgradeZHBRFlayerBerserker@BerserkerQueuedOrBetter1">
+        <OperandArray index="0" value="CountUpgradeZHBRFlayerBerserker@BerserkerQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountUpgrade id="CountUpgradeZHBRWarriorDeconstruction@DeconstructionQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZHBRWarriorDeconstruction@Deconstruction" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementNot id="NotCountUpgradeZHBRDisappearanceQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeZHBRDisappearanceQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeZHBRPhaseShiftQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeZHBRPhaseShiftQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeZHBRVoidBonusQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidBonusQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeZHBRVoidChasmQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeZHBRVoidChasmQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRTombCompleteOnly">
+        <OperandArray value="CountUnitZHBRCryptCompleteOnly"/>
+        <OperandArray value="CountUnitZHBRTombCompleteOnly"/>
+    </CRequirementOr>
+</Catalog>

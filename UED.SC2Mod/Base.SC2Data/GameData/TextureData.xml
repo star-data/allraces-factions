@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTexture id="Decal_Spray_0059_01">
+        <File value="Assets\Textures\UnitedEarthDirectorate_SC1_Logo1.dds"/>
+    </CTexture>
+    <CTexture id="UEDGarmrDiffuse">
+        <File value="Assets\Textures\redstonelavacritterfatUED.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+</Catalog>

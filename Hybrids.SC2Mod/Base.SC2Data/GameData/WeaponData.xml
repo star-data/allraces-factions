@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="HybridPsyon@FragmentumCorrosion">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="assets\Textures\btn-Hybrid-Fragmentum-Corrosion.dds"/>
+        <DisplayEffect value="HybridPsyon@FragmentumCorrosionDamage"/>
+        <TargetFilters value="Structure,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <Period value="3.3"/>
+        <Effect value="HybridPsyon@FragmentumCorrosionLaunchMissile"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRShapeshifterWeapon2">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-plasmashot.dds"/>
+        <DisplayEffect value="ZHBRShapeshifterWeapon2@Damage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="2"/>
+        <DamagePoint value="0.34"/>
+        <Effect value="ZHBRShapeshifterWeapon2@LM"/>
+        <AllowedMovement value="Slowing"/>
+        <MinScanRange value="9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRPsyonWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-oraclepulsarcannonon.dds"/>
+        <DisplayEffect value="ZHBRPsyonWeapon@Damage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <RangeSlop value="0"/>
+        <TeleportResetRange value="0"/>
+        <Arc value="360"/>
+        <Period value="0.175"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="ZHBRPsyonWeapon@CastSwitch"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <UninterruptibleDuration value="0"/>
+        <MinScanRange value="6"/>
+        <Range value="6"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRShapeshifterWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
+        <DisplayEffect value="ZHBRShapeshifterWeapon@MainTargetDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="2"/>
+        <Effect value="ZHBRShapeshifterWeapon@InitialSet"/>
+        <DamagePoint value="0.34"/>
+        <Options index="Disabled" value="1"/>
+        <AllowedMovement value="Slowing"/>
+        <MinScanRange value="9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRNemesisWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-vengeanceofthevoid.dds"/>
+        <DisplayEffect value="ZHBRNemesisWeapon@Damage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <TeleportResetRange value="0"/>
+        <ArcSlop value="9.9975"/>
+        <Backswing value="0"/>
+        <Effect value="ZHBRNemesisWeapon@Persistent"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
+        <Period value="0.25"/>
+        <DamagePoint value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRPollinatorWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-stetmann-corruptorcausticspray.dds"/>
+        <DisplayEffect value="ZHBRPollinatorWeapon@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="6"/>
+        <Period value="1"/>
+        <DamagePoint value="0.25"/>
+        <Effect value="ZHBRPollinatorWeapon@LM"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBREnergatorWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-shadowstun.dds"/>
+        <DisplayEffect value="ZHBREnergatorWeapon@Damage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="0.89"/>
+        <DamagePoint value="0.25"/>
+        <Effect value="ZHBREnergatorWeapon@LM"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRConstructWeaponAntiGround">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="ZHBRConstructWeaponAntiGround@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="1.5"/>
+        <Effect value="ZHBRConstructWeaponAntiGround@CreatePersistent"/>
+        <Arc value="360"/>
+        <DamagePoint value="0"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRConstructWeaponAntiAir">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="ZHBRConstructWeaponAntiAir@Damage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="1.5"/>
+        <Effect value="ZHBRConstructWeaponAntiAir@CreatePersistent"/>
+        <Arc value="360"/>
+        <DamagePoint value="0"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRChimeraMeleeWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ZHBRChimeraMeleeWeapon@Damage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.98"/>
+        <DamagePoint value="0"/>
+        <Effect value="ZHBRChimeraMeleeWeapon@InitialPersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRDominatorWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ZHBRDominatorWeapon@Damage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="2.08"/>
+        <Effect value="ZHBRDominatorWeapon@Damage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRDreadnokWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
+        <DisplayEffect value="ZHBRDreadnokWeapon@Damage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.1"/>
+        <DamagePoint value="0.23"/>
+        <Effect value="ZHBRDreadnokWeapon@LM"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRFlayerWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="ZHBRFlayerWeapon@Damage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.75"/>
+        <Period value="0.85"/>
+        <DamagePoint value="0"/>
+        <Effect value="ZHBRFlayerWeapon@InitialSwitch"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <RangeSlop value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRMinionWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ZHBRMinionWeapon@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.5"/>
+        <Effect value="ZHBRMinionWeapon@Damage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRBehemothWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="ZHBRBehemothWeapon@Damage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <Period value="1.2"/>
+        <Effect value="ZHBRBehemothWeapon@InitialSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRBehemothWeaponAntiAir">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="ZHBRBehemothWeaponAntiAir@Damage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.8"/>
+        <Effect value="ZHBRBehemothWeaponAntiAir@LaunchMissile"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRSentinelWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="ZHBRSentinelWeapon@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <Period value="0.7"/>
+        <Effect value="ZHBRSentinelWeapon@Damage"/>
+        <DamagePoint value="0.3125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRProteusWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="ZHBRProteusWeapon@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <Period value="1"/>
+        <DamagePoint value="0.125"/>
+        <Effect value="ZHBRProteusWeapon@Damage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRStriderWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-spearofadun-solarlance.dds"/>
+        <DisplayEffect value="ZHBRStriderWeapon@Damage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="1.05"/>
+        <DamagePoint value="0"/>
+        <Effect value="ZHBRStriderWeapon@InitialSet"/>
+        <DisplayAttackCount value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRWarbringerWeaponMaceCannon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-shadowcannon.dds"/>
+        <DisplayEffect value="ZHBRWarbringerWeaponMaceCannon@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="3"/>
+        <Effect value="ZHBRWarbringerWeaponMaceCannon@LM"/>
+        <Range value="6.5"/>
+        <Options index="LinkedCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRWarbringerWeaponMaceStrike">
+        <EditorCategories value="Race:ZHBR"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <DisplayEffect value="ZHBRWarbringerWeaponMaceStrike@Damage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Period value="3"/>
+        <Effect value="ZHBRWarbringerWeaponMaceStrike@InitialSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRWarriorWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-phasedisruptor.dds"/>
+        <DisplayEffect value="ZHBRWarriorWeapon@Damage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.26"/>
+        <DamagePoint value="0.275"/>
+        <Effect value="ZHBRWarriorWeapon@LM"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZHBRChimeraRangedWeapon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-terran-electricfield.dds"/>
+        <DisplayEffect value="ZHBRChimeraRangedWeapon@Damage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0.35"/>
+        <Effect value="ZHBRChimeraRangedWeapon@LM"/>
+        <MinScanRange value="6"/>
+        <Range value="6"/>
+    </CWeaponLegacy>
+</Catalog>

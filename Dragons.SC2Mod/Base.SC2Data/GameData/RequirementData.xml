@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="ArkwyrmTransport">
+        <NodeArray index="Use" Link="EqCountBehaviorArkwyrmUnloadCasterCompleteOnlyAtUnit0"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="Ascended">
+        <NodeArray index="Use" Link="CountBehaviorDragonAscendedCompleteOnlyAtUnit"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentProliferation">
+        <NodeArray index="Show" Link="NotCountUpgradeFleshrenderProliferationQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonFireAttacksLevel1">
+        <NodeArray index="Show" Link="NotCountUpgradeDragonFireAttacksLevel1QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonFireAttacksLevel2">
+        <NodeArray index="Use" Link="CountUpgradeDragonFireAttacksLevel1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonFireAttacksLevel2QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonFireAttacksLevel3">
+        <NodeArray index="Use" Link="CountUpgradeDragonFireAttacksLevel2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonFireAttacksLevel3QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonMeleeAttacksLevel1">
+        <NodeArray index="Show" Link="NotCountUpgradeDragonMeleeAttacksLevel1QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonMeleeAttacksLevel2">
+        <NodeArray index="Use" Link="CountUpgradeDragonMeleeAttacksLevel1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonMeleeAttacksLevel2QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonMeleeAttacksLevel3">
+        <NodeArray index="Use" Link="CountUpgradeDragonMeleeAttacksLevel2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonMeleeAttacksLevel3QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonPlateArmorLevel1">
+        <NodeArray index="Show" Link="NotCountUpgradeDragonPlateArmorLevel1QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonPlateArmorLevel2">
+        <NodeArray index="Use" Link="CountUpgradeDragonPlateArmorLevel1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonPlateArmorLevel2QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonPlateArmorLevel3">
+        <NodeArray index="Use" Link="CountUpgradeDragonPlateArmorLevel2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonPlateArmorLevel3QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonScaleArmorLevel1">
+        <NodeArray index="Show" Link="NotCountUpgradeDragonScaleArmorLevel1QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonScaleArmorLevel2">
+        <NodeArray index="Use" Link="CountUpgradeDragonScaleArmorLevel1CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonScaleArmorLevel2QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonScaleArmorLevel3">
+        <NodeArray index="Use" Link="CountUpgradeDragonScaleArmorLevel2CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDragonScaleArmorLevel3QueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentEmberCore">
+        <NodeArray index="Show" Link="NotCountUpgradeSkyrazerEmberCoreQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentWickedBarbs">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeHunterWickedBarbsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="AugmentFervidReconstitution">
+        <NodeArray index="Show" Link="NotCountUpgradeFlamespitterFervidReconstitutionQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentDragonLineage">
+        <NodeArray index="Show" Link="NotCountUpgradeDragonLineageQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentFrenzy">
+        <NodeArray index="Show" Link="NotCountUpgradeHornedMagusFrenzyQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentInfernalBreath">
+        <NodeArray index="Show" Link="NotCountUpgradeBrimstoneDemolisherInfernalBreathQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentMadness">
+        <NodeArray index="Show" Link="NotCountUpgradeBerserkerMadnessQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentPortal">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeHandofPowerPortalQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="AugmentConduction">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAuroraConduitConductionQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="AugmentPlasmaCatalyst">
+        <NodeArray index="Show" Link="NotCountUpgradeVolcanicHarbingerPlasmaCatalystQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentMigratoryEndurance">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeRazorbackMigratoryEnduranceQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="AugmentProwl">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUnseenBeastProwlQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="AugmentWraithNight">
+        <NodeArray index="Show" Link="NotCountUpgradeGrimGliderMortalitysEclipseQueuedOrBetter"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AugmentationPit">
+        <NodeArray index="Use" Link="CountBehaviorAugmentationPitCompleteOnlyAtUnit2977094741"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="AuroraConduitConduction">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeAuroraConduitConductionCompleteOnly596238187"/>
+    </CRequirement>
+    <CRequirement id="BrimstoneDemolisherInfernalBreath">
+        <NodeArray index="Use" Link="CountUpgradeBrimstoneDemolisherInfernalBreathCompleteOnly375886769"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="Coagulator">
+        <NodeArray index="Use" Link="AndCountBehaviorAugmentationPitCompleteOnlyAtUnit4009903090CountUpgradeRazorbackMigratoryEnduranceCompleteOnly2219638757"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="DragonHunterActivateRegenesis">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountBehaviorDragonHunterRegenesisCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDragonHunterRegenesisCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="DragonHunterDeactivateRegenesis">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountBehaviorDragonHunterRegenesisCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorDragonHunterRegenesisCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="VolcanicHarbingerOverload0">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="VolcanicHarbingerOverloadGT0">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="GTCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="VolcanicHarbingerPlasmaCatalyst">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeVolcanicHarbingerPlasmaCatalystCompleteOnly1697154577TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HasDragonCommander">
+        <EditorCategories value="Race:Dragon,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="CountUpgradeDragonCommanderCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="FissionAscended">
+        <NodeArray index="Use" Link="AndCountBehaviorDragonAscendedCompleteOnlyAtUnitNotCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorDragonAscendedCompleteOnlyAtUnitNotCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="FissionDisabled">
+        <NodeArray index="Use" Link="And3695770947CountBehaviorDragonFissionCompleteOnlyAtUnitNotCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="FlamespitterFervidReconstitution">
+        <NodeArray index="Show" Link="CountUpgradeFlamespitterFervidReconstitutionCompleteOnly"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="FlamespitterFervidReconstitutionNegate">
+        <NodeArray index="Show" Link="NotCountUpgradeFlamespitterFervidReconstitutionCompleteOnly"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="HaveLesserDeepOne">
+        <NodeArray index="Use" Link="CountUnitLesserDeepOneNoFootprintCompleteOnly"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="GrimGliderMortalitysEclipse">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndNot1428214258CountBehaviorGrimGliderMortalitysEclipseCasterCompleteOnlyAtUnitCountUpgradeGrimGliderMortalitysEclipseCompleteOnly6048925TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HornedMagusFrenzy">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeHornedMagusFrenzyCompleteOnly1072627216TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HandofPowerPortal">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeHandofPowerPortalCompleteOnly4045012870"/>
+    </CRequirement>
+    <CRequirement id="HunterWickedBarbs">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeHunterWickedBarbsCompleteOnly909739678"/>
+    </CRequirement>
+    <CRequirement id="HaveFrontierDeepOne">
+        <NodeArray index="Use" Link="CountUnitFrontierDeepOneCompleteOnly"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="NotAscended">
+        <NodeArray index="Use" Link="NotCountBehaviorDragonAscendedCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDragonAscendedCompleteOnlyAtUnit"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="Fission">
+        <NodeArray index="Use" Link="NotOrCountBehaviorDragonAscendedCompleteOnlyAtUnitCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotOrCountBehaviorDragonAscendedCompleteOnlyAtUnitCountBehaviorDragonFissionCompleteOnlyAtUnit"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="BerserkerMadness">
+        <NodeArray index="Use" Link="CountUpgradeBerserkerMadnessCompleteOnly3248460708"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="DragonLineage">
+        <NodeArray index="Use" Link="CountUpgradeDragonLineageCompleteOnly"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="SkyrazerEmberCore">
+        <NodeArray index="Use" Link="CountUpgradeSkyrazerEmberCoreCompleteOnly4150053550"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="UnseenBeastProwl">
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeUnseenBeastProwlCompleteOnly32849316TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="VolcanicHarbingerOverload">
+        <NodeArray index="Use" Link="LT2695958664CountUnitVolcanicHarbingerOverloadQueuedOrBetterAtUnit3"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="VolcanicHarbingerOverload1">
+        <NodeArray index="Use" Link="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit1"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="VolcanicHarbingerOverload2">
+        <NodeArray index="Use" Link="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit2"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+    <CRequirement id="VolcanicHarbingerOverload3">
+        <NodeArray index="Use" Link="EqCountUnitVolcanicHarbingerOverloadCompleteOnlyAtUnit3"/>
+        <EditorCategories value="Race:Dragon,TechType:Ability"/>
+    </CRequirement>
+</Catalog>

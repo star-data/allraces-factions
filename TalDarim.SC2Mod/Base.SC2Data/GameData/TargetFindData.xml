@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTargetFindBestPoint id="TalDarimTerrazineFogBestPointNormal">
+        <Flags index="EvaluateCmd" value="1"/>
+        <DamageBase value="20"/>
+        <Effect value="TalDarimCustodesTerrazineFogSearch"/>
+        <MinCount value="3"/>
+        <MinScore value="2.5"/>
+    </CTargetFindBestPoint>
+    <CTargetFindSet id="TalDarimTerrazineFog">
+        <Type value="Sequential"/>
+        <Array value="TalDarimTerrazineFogSearch"/>
+        <Array value="TalDarimTerrazineFogBestPointNormal"/>
+    </CTargetFindSet>
+    <CTargetFindEffect id="TalDarimTerrazineFogSearch">
+        <TargetValidator value="TalDarimTerrazineFogTestBuff"/>
+        <Effect value="TalDarimCustodesTerrazineFogSearch"/>
+    </CTargetFindEffect>
+    <CTargetFindBestPoint id="TalDarimEnshroudBestPoint">
+        <Flags index="EvaluateCmd" value="1"/>
+        <Effect value="TalDarimRiddlerEnshroudSearch"/>
+    </CTargetFindBestPoint>
+    <CTargetFindSet id="TalDarimEnshroud">
+        <Type value="Sequential"/>
+        <Array value="TalDarimEnshroudSearch"/>
+        <Array value="TalDarimEnshroudBestPoint"/>
+    </CTargetFindSet>
+    <CTargetFindEffect id="TalDarimEnshroudSearch">
+        <TargetValidator value="TalDarimNotEnshrouded"/>
+        <Effect value="TalDarimRiddlerEnshroudSearch"/>
+    </CTargetFindEffect>
+</Catalog>

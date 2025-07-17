@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="HybridDeformerDestructionArise">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-fleethyperjump.dds"/>
+    </CButton>
+    <CButton id="ImmunetoAttackSpeedChange">
+        <Icon value="Assets\Textures\btn-ability-zerg-frenzy.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-frenzy.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CButton>
+    <CButton id="ZHBRAcceleration">
+        <Icon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAcceleration@Extended">
+        <Name value="Button/Name/ZHBRAcceleration"/>
+        <Tooltip value="Button/Tooltip/ZHBRAcceleration"/>
+        <Icon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
+        <AlertName value="Button/Name/ZHBRAcceleration"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRAcceleration"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAcceleration@Research">
+        <Name value="Button/Name/ZHBRAcceleration"/>
+        <Tooltip value="Button/Tooltip/ZHBRAcceleration"/>
+        <Icon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
+        <AlertName value="Button/Name/ZHBRAcceleration"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRAcceleration"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRChimera@Cloak">
+        <Icon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRConstruct@ClusterNova">
+        <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDreadnokWeapon">
+        <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBREnergationDeformer">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNavigator@FromTheVoid">
+        <Icon value="Assets\Textures\btn-ability-zeratul-hero-propheticvision.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-hero-propheticvision.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRSubjugationJumpPassive">
+        <Icon value="assets\Textures\btn-Hybrid-Sentinel-Subjugate.dds"/>
+        <AlertIcon value="assets\Textures\btn-Hybrid-Sentinel-Subjugate.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@AirBattleUnitPage">
+        <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-novabattery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-disruptor-novabattery.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@AirBattleUnitPageVoidRift">
+        <Name value="Button/Name/ZHBRHybridRaceControl@AirBattleUnitPage"/>
+        <Tooltip value="Button/Tooltip/ZHBRRaceControl@AirBattleUnitPage"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-novabattery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-disruptor-novabattery.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@AirBattleUnitPageExtended">
+        <Name value="Button/Name/ZHBRHybridRaceControl@AirBattleUnitPage"/>
+        <Tooltip value="Button/Tooltip/ZHBRRaceControl@AirBattleUnitPage"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-novabattery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-disruptor-novabattery.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseAmplifier">
+        <Tooltip value="Button/Tooltip/ZHBRAmplifier"/>
+        <Icon value="assets\textures\btn-building-zhybrid-amplifier.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonAmplifier"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseCapsule">
+        <Tooltip value="Button/Tooltip/ZHBRCapsule"/>
+        <Icon value="assets\textures\btn-building-zhybrid-capsule.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonCapsule"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseConstructAntiAir">
+        <Tooltip value="Button/Tooltip/ZHBRConstruct@AntiAir"/>
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiair.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonConstructAntiAir"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseConstructAntiGround">
+        <Tooltip value="Button/Tooltip/ZHBRConstruct@AntiGround"/>
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiground.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonConstructAntiGround"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseCrypt">
+        <Tooltip value="Button/Tooltip/ZHBRCrypt"/>
+        <Icon value="assets\textures\btn-building-zhybrid-crypt.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonCrypt"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseDeformer">
+        <Tooltip value="Button/Tooltip/ZHBRDeformer"/>
+        <Icon value="assets\textures\btn-building-zhybrid-deformer.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonDeformer"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseHarvester">
+        <Tooltip value="Button/Tooltip/ZHBRHarvester"/>
+        <Icon value="assets\textures\btn-building-zhybrid-harvester.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonHarvester"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseHoldingCell">
+        <Tooltip value="Button/Tooltip/ZHBRHoldingCell"/>
+        <Icon value="assets\textures\btn-building-zhybrid-holdingcell.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonHoldingCell"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseIonicCrystal">
+        <Tooltip value="Button/Tooltip/ZHBRIonicCrystal"/>
+        <Icon value="assets\textures\btn-building-zhybrid-ioniccrystal.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonIonicCrystal"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseKeystone">
+        <Tooltip value="Button/Tooltip/ZHBRKeystone"/>
+        <Icon value="assets\textures\btn-building-zhybrid-keystone.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonKeystone"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseProjector">
+        <Tooltip value="Button/Tooltip/ZHBRProjector"/>
+        <Icon value="assets\textures\btn-building-zhybrid-projector.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonProjector"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseTomb">
+        <Tooltip value="Button/Tooltip/ZHBRTomb"/>
+        <Icon value="assets\textures\btn-building-zhybrid-tomb.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonTomb"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseVespeneConcentrator">
+        <Tooltip value="Button/Tooltip/ZHBRVespeneConcentrator"/>
+        <Icon value="assets\textures\btn-building-zhybrid-vespeneconcentrator.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonVespeneConcentrator"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseVoidForge">
+        <Tooltip value="Button/Tooltip/ZHBRVoidForge"/>
+        <Icon value="assets\textures\btn-building-zhybrid-voidforge.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonVoidForge"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseVoidRift">
+        <Tooltip value="Button/Tooltip/ZHBRVoidRift"/>
+        <Icon value="assets\textures\btn-building-zhybrid-voidrift.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonVoidRift"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseStasisCell">
+        <Tooltip value="Button/Tooltip/ZHBRStasisCell"/>
+        <Icon value="assets\textures\btn-building-zhybrid-stasiscell.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonStasisCell"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ResearchPage">
+        <Icon value="Assets\Textures\btn-tips-researchunlocked.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@ChooseTemple">
+        <Tooltip value="Button/Tooltip/ZHBRTemple"/>
+        <Icon value="assets\textures\btn-building-zhybrid-temple.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRMinionBuild@SummonTemple"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@SwapPage">
+        <Tooltip value="Button/Name/ZHBRRaceControl@SwapPage"/>
+        <Icon value="Assets\Textures\btn-ability-stetmann-topbar-speedconfiguration.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPermanentPower">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPhaseShift">
+        <Icon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPhaseShift@Extended">
+        <Name value="Button/Name/ZHBRPhaseShift"/>
+        <Tooltip value="Button/Tooltip/ZHBRPhaseShift"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <AlertName value="Button/Name/ZHBRPhaseShift"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPhaseShift"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPhaseShift@Research">
+        <Name value="Button/Name/ZHBRPhaseShift"/>
+        <Tooltip value="Button/Tooltip/ZHBRPhaseShift"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <AlertName value="Button/Name/ZHBRPhaseShift"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPhaseShift"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRBrokenDNA">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-hydralisk-muscularaugments.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-hydralisk-muscularaugments.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRBrokenDNA@Passive">
+        <Name value="Button/Name/ZHBRBrokenDNA"/>
+        <Tooltip value="Button/Tooltip/ZHBRBrokenDNA"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-hydralisk-muscularaugments.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-hydralisk-muscularaugments.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDestructionOrb">
+        <Icon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDestructionOrb@Passive">
+        <Name value="Button/Name/ZHBRDestructionOrb"/>
+        <Tooltip value="Button/Tooltip/ZHBRDestructionOrb"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPlasmaticBlast">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPlasmaticBlast@Extended">
+        <Name value="Button/Name/ZHBRPlasmaticBlast"/>
+        <Tooltip value="Button/Tooltip/ZHBRPlasmaticBlast"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
+        <AlertName value="Button/Name/ZHBRPlasmaticBlast"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPlasmaticBlast"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPlasmaticBlast@Passive">
+        <Name value="Button/Name/ZHBRPlasmaticBlast"/>
+        <Tooltip value="Button/Tooltip/ZHBRPlasmaticBlast"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRIndestructible">
+        <Icon value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRIndestructible@Passive">
+        <Name value="Button/Name/ZHBRIndestructible"/>
+        <Tooltip value="Button/Tooltip/ZHBRIndestructible"/>
+        <Icon value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMineralMining">
+        <Icon value="Assets\Textures\mineralshields_coop.dds"/>
+        <AlertIcon value="Assets\Textures\mineralshields_coop.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonCapsule">
+        <Icon value="assets\textures\btn-building-zhybrid-capsule.dds"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-capsule.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Tooltip value="Button/Tooltip/ZHBRCapsule"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRCapsule"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonTomb">
+        <Tooltip value="Button/Tooltip/ZHBRTomb"/>
+        <Icon value="assets\textures\btn-building-zhybrid-tomb.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRTomb"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-tomb.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonCrypt">
+        <Tooltip value="Button/Tooltip/ZHBRCrypt"/>
+        <Icon value="assets\textures\btn-building-zhybrid-crypt.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRCrypt"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-crypt.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonDeformer">
+        <Tooltip value="Button/Tooltip/ZHBRDeformer"/>
+        <Icon value="assets\textures\btn-building-zhybrid-deformer.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDeformer"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-deformer.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonHoldingCell">
+        <Tooltip value="Button/Tooltip/ZHBRHoldingCell"/>
+        <Icon value="assets\textures\btn-building-zhybrid-holdingcell.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRHoldingCell"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-holdingcell.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonKeystone">
+        <Tooltip value="Button/Tooltip/ZHBRKeystone"/>
+        <Icon value="assets\textures\btn-building-zhybrid-keystone.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRKeystone"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-keystone.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNavigatorLoad@UnloadAll">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNavigatorLoad@UnloadAllExtended">
+        <Name value="Button/Name/ZHBRNavigatorLoad@UnloadAll"/>
+        <Tooltip value="Button/Tooltip/ZHBRNavigatorLoad@UnloadAll"/>
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <AlertName value="Button/Name/ZHBRNavigatorLoad@UnloadAll"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRNavigatorLoad@UnloadAll"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNavigatorLoad@Load">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="BunkerLoad"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNavigatorLoad@UnloadAllM">
+        <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="BunkerUnloadAll"/>
+        <Universal value="1"/>
+        <Hotkey value="Button/Hotkey/ZHBRNavigatorLoad@UnloadAll"/>
+    </CButton>
+    <CButton id="ZHBRInterdimensionalOverload@Extended">
+        <Name value="Button/Name/ZHBRInterdimensionalOverload"/>
+        <Tooltip value="Button/Tooltip/ZHBRInterdimensionalOverload"/>
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertName value="Button/Name/ZHBRInterdimensionalOverload"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRInterdimensionalOverload"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRInterdimensionalOverload">
+        <Icon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNemesisDisintegrator@Disintegrator">
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-stasisbeam.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNemesisDisintegrator@DisintegratorExtended">
+        <Name value="Button/Name/ZHBRNemesisDisintegrator@Disintegrator"/>
+        <Tooltip value="Button/Tooltip/ZHBRNemesisDisintegrator@Disintegrator"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-stasisbeam.dds"/>
+        <AlertName value="Button/Name/ZHBRNemesisDisintegrator@Disintegrator"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRNemesisDisintegrator@Disintegrator"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNemesisDisintegrator@DisintegratorPassive">
+        <Name value="Button/Name/ZHBRNemesisDisintegrator@Disintegrator"/>
+        <Tooltip value="Button/Tooltip/ZHBRNemesisDisintegrator@Disintegrator"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-stasisbeam.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNemesisDisintegrator@Ionizer">
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-vengeanceofthevoid.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNemesisDisintegrator@IonizerExtended">
+        <Name value="Button/Name/ZHBRNemesisDisintegrator@Ionizer"/>
+        <Tooltip value="Button/Tooltip/ZHBRNemesisDisintegrator@Ionizer"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-vengeanceofthevoid.dds"/>
+        <AlertName value="Button/Name/ZHBRNemesisDisintegrator@Ionizer"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRNemesisDisintegrator@Ionizer"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRNemesisDisintegrator@IonizerPassive">
+        <Name value="Button/Name/ZHBRNemesisDisintegrator@Ionizer"/>
+        <Tooltip value="Button/Tooltip/ZHBRNemesisDisintegrator@Ionizer"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-vengeanceofthevoid.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRStructureTeleport">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadon.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRSubjugationJump2">
+        <Icon value="assets\Textures\btn-Hybrid-Sentinel-Subjugate.dds"/>
+        <AlertIcon value="assets\Textures\btn-Hybrid-Sentinel-Subjugate.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWatcher">
+        <Icon value="assets\Textures\btn-Hybrid-Sentinel-Watcher.dds"/>
+        <AlertIcon value="assets\Textures\btn-Hybrid-Sentinel-Watcher.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidToxin">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUpgradeToAdvancedNemesis">
+        <Icon value="Assets\Textures\tip_hybridnemesis.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\tip_hybridnemesis.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUpgradeToAdvancedNemesis@Research">
+        <Name value="Button/Name/ZHBRUpgradeToAdvancedNemesis"/>
+        <Tooltip value="Button/Tooltip/ZHBRUpgradeToAdvancedNemesis"/>
+        <Icon value="Assets\Textures\tip_hybridnemesis.dds"/>
+        <AlertName value="Button/Name/ZHBRUpgradeToAdvancedNemesis"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRUpgradeToAdvancedNemesis"/>
+        <AlertIcon value="Assets\Textures\tip_hybridnemesis.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPlasmaticBlast@PlasmaticCharge">
+        <Icon value="Assets\Textures\btn-upgrade-terran-plasmashot.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPlasmaticBlast@PlasmaticChargeExtended">
+        <Name value="Button/Name/ZHBRPlasmaticBlast@PlasmaticCharge"/>
+        <Tooltip value="Button/Tooltip/ZHBRPlasmaticBlast@PlasmaticCharge"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-plasmashot.dds"/>
+        <AlertName value="Button/Name/ZHBRPlasmaticBlast@PlasmaticCharge"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPlasmaticBlast@PlasmaticCharge"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPlasmaticBlast@PlasmaticChargePassive">
+        <Name value="Button/Name/ZHBRPlasmaticBlast@PlasmaticCharge"/>
+        <Tooltip value="Button/Tooltip/ZHBRPlasmaticBlast@PlasmaticCharge"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-plasmashot.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRToxicity">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRToxicity@Research">
+        <Name value="Button/Name/ZHBRToxicity"/>
+        <Tooltip value="Button/Tooltip/ZHBRToxicity"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
+        <AlertName value="Button/Name/ZHBRToxicity"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRToxicity"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPollinatorShadowMantle@Off">
+        <Icon value="Assets\Textures\BTN-Ability-Terran-Decloak-color.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Terran-Decloak-color.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPollinatorShadowMantle@OffExtended">
+        <Name value="Button/Name/ZHBRPollinatorShadowMantle@Off"/>
+        <Tooltip value="Button/Tooltip/ZHBRPollinatorShadowMantle@Off"/>
+        <Icon value="Assets\Textures\BTN-Ability-Terran-Decloak-color.dds"/>
+        <AlertName value="Button/Name/ZHBRPollinatorShadowMantle@Off"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPollinatorShadowMantle@Off"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Terran-Decloak-color.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPollinatorShadowMantle@On">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPollinatorShadowMantle@OnExtended">
+        <Name value="Button/Name/ZHBRPollinatorShadowMantle@On"/>
+        <Tooltip value="Button/Tooltip/ZHBRPollinatorShadowMantle@On"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertName value="Button/Name/ZHBRPollinatorShadowMantle@On"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPollinatorShadowMantle@On"/>
+        <AlertIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPowerField">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPowerField@Extended">
+        <Name value="Button/Name/ZHBRPowerField"/>
+        <Tooltip value="Button/Tooltip/ZHBRPowerField"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
+        <AlertName value="Button/Name/ZHBRPowerField"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPowerField"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPowerField@Cancel">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-cancel.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPowerField@CancelExtended">
+        <Name value="Button/Name/ZHBRPowerField@Cancel"/>
+        <Tooltip value="Button/Tooltip/ZHBRPowerField@Cancel"/>
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <AlertName value="Button/Name/ZHBRPowerField@Cancel"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPowerField@Cancel"/>
+        <AlertIcon value="Assets\Textures\btn-command-cancel.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPrimeSummoning">
+        <Icon value="Assets\Textures\tip_voidrift.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\tip_voidrift.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPrimeSummoning@Research">
+        <Name value="Button/Name/ZHBRPrimeSummoning"/>
+        <Tooltip value="Button/Tooltip/ZHBRPrimeSummoning"/>
+        <Icon value="Assets\Textures\tip_voidrift.dds"/>
+        <AlertName value="Button/Name/ZHBRPrimeSummoning"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPrimeSummoning"/>
+        <AlertIcon value="Assets\Textures\tip_voidrift.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRestorationShield">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidBonus">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidBonus@Research">
+        <Name value="Button/Name/ZHBRVoidBonus"/>
+        <Tooltip value="Button/Tooltip/ZHBRVoidBonus"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+        <AlertName value="Button/Name/ZHBRVoidBonus"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidBonus"/>
+        <AlertIcon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidChasm">
+        <Icon value="assets\Textures\btn-Hybrid-Void-Chasm.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidChasm@Extended">
+        <Name value="Button/Name/ZHBRVoidChasm"/>
+        <Tooltip value="Button/Tooltip/ZHBRVoidChasm"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
+        <AlertName value="Button/Name/ZHBRVoidChasm"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidChasm"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidChasm@Research">
+        <Name value="Button/Name/ZHBRVoidChasm"/>
+        <Tooltip value="Button/Tooltip/ZHBRVoidChasm"/>
+        <Icon value="assets\Textures\btn-Hybrid-Void-Chasm.dds"/>
+        <AlertName value="Button/Name/ZHBRVoidChasm"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidChasm"/>
+        <AlertIcon value="assets\Textures\btn-Hybrid-Void-Chasm.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRTransfusion">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUltimateUnitOfTransfusion">
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUltimateUnitOfTransfusion@Passive">
+        <Name value="Button/Name/ZHBRUltimateUnitOfTransfusion"/>
+        <Tooltip value="Button/Tooltip/ZHBRUltimateUnitOfTransfusion"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonConductor">
+        <Icon value="assets\textures\btn-unit-zhybrid-conductor.dds"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-conductor.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Tooltip value="Button/Tooltip/ZHBRConductor"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRConductor"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonProteus">
+        <Tooltip value="Button/Tooltip/ZHBRProteus"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-proteus.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRProteus"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-proteus.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonPsyon">
+        <Icon value="assets\textures\btn-unit-zhybrid-psyon.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Tooltip value="Button/Tooltip/ZHBRPsyon"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPsyon"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidShield">
+        <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBREnergation">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBREnergation@Extended">
+        <Name value="Button/Name/ZHBREnergation"/>
+        <Tooltip value="Button/Tooltip/ZHBREnergation"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <AlertName value="Button/Name/ZHBREnergation"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREnergation"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDisappearance">
+        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDisappearance@Extended">
+        <Name value="Button/Name/ZHBRDisappearance"/>
+        <Tooltip value="Button/Tooltip/ZHBRDisappearance"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <AlertName value="Button/Name/ZHBRDisappearance"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDisappearance"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDisappearance@Research">
+        <Name value="Button/Name/ZHBRDisappearance"/>
+        <Tooltip value="Button/Tooltip/ZHBRDisappearance"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <AlertName value="Button/Name/ZHBRDisappearance"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDisappearance"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRevealingSacrifice">
+        <Icon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRevealingSacrifice@Extended">
+        <Name value="Button/Name/ZHBRRevealingSacrifice"/>
+        <Tooltip value="Button/Tooltip/ZHBRRevealingSacrifice"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <AlertName value="Button/Name/ZHBRRevealingSacrifice"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRRevealingSacrifice"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRCloakedSpirit">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRCloakedSpirit@Research">
+        <Name value="Button/Name/ZHBRCloakedSpirit"/>
+        <Tooltip value="Button/Tooltip/ZHBRCloakedSpirit"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <AlertName value="Button/Name/ZHBRCloakedSpirit"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRCloakedSpirit"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRConstruct@TransformToConstructAntiAir">
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiair.dds"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-constructantiair.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRConstruct@TransformToConstructAntiGround">
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiground.dds"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-constructantiground.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRIonicField">
+        <Icon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRIonicField@Passive">
+        <Name value="Button/Name/ZHBRIonicField"/>
+        <Tooltip value="Button/Tooltip/ZHBRIonicField"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal">
+        <Icon value="Assets\Textures\btn-ability-terran-liftoff.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-liftoff.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal">
+        <Icon value="Assets\Textures\btn-ability-terran-land.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-land.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBREnhancedArmor">
+        <Icon value="Assets\Textures\btn-ability-zerg-armoraura.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-armoraura.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBREnhancedArmor@Research">
+        <Name value="Button/Name/ZHBREnhancedArmor"/>
+        <Tooltip value="Button/Tooltip/ZHBREnhancedArmor"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-armoraura.dds"/>
+        <AlertName value="Button/Name/ZHBREnhancedArmor"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREnhancedArmor"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-armoraura.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRGroundArmorUpgradeLevel1">
+        <Tooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level1.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level1.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRGroundArmorUpgradeLevel"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRGroundArmorUpgradeLevel2">
+        <Tooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level2.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level2.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRGroundArmorUpgradeLevel"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRGroundArmorUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRGroundArmorUpgradeLevel3">
+        <Tooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level3.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level3.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRGroundArmorUpgradeLevel"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRGroundArmorUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRGroundWeaponUpgradeLevel1">
+        <Tooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level1.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level1.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRGroundWeaponUpgradeLevel"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRGroundWeaponUpgradeLevel2">
+        <Tooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level2.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level2.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRGroundWeaponUpgradeLevel"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRGroundWeaponUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRGroundWeaponUpgradeLevel3">
+        <Tooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level3.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level3.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRGroundWeaponUpgradeLevel"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRGroundWeaponUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidImmunity">
+        <Icon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRTempleTrain@SummonMinion">
+        <Tooltip value="Button/Tooltip/ZHBRMinion"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-minion.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRMinion"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-minion.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVespeneMining">
+        <Icon value="Assets\Textures\btn-ability-kerrigan-vespeneefficiency.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-kerrigan-vespeneefficiency.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAirArmorUpgradeLevel1">
+        <Tooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAirArmorUpgradeLevel2">
+        <Tooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRAirArmorUpgradeLevel1"/>
+        <Hotkey value="Button/Hotkey/ZHBRAirArmorUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAirArmorUpgradeLevel3">
+        <Tooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRAirArmorUpgradeLevel1"/>
+        <Hotkey value="Button/Hotkey/ZHBRAirArmorUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAirWeaponUpgradeLevel1">
+        <Tooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level1.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level1.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAirWeaponUpgradeLevel2">
+        <Tooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level2.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level2.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRAirWeaponUpgradeLevel1"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRAirWeaponUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRAirWeaponUpgradeLevel3">
+        <Tooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level3.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level3.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRAirWeaponUpgradeLevel1"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <HotkeyAlias value="ZHBRAirWeaponUpgradeLevel1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonAdvancedNemesis">
+        <Tooltip value="Button/Tooltip/ZHBRNemesis"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-AdvancedNemesis.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRNemesis"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-AdvancedNemesis.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonStrider">
+        <Tooltip value="Button/Tooltip/ZHBRStrider"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-strider.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRStrider"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-strider.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonAdvancedDominator">
+        <Tooltip value="Button/Tooltip/ZHBRDominator"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-AdvancedProtoss.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDominator"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-AdvancedProtoss.DDS"/>
+        <Hotkey value="Button/Hotkey/ZHBRVoidRiftTrain@SummonDominator"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonDominator">
+        <Tooltip value="Button/Tooltip/ZHBRDominator"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-dominator.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDominator"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-dominator.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonAdvancedBehemoth">
+        <Tooltip value="Button/Tooltip/ZHBRBehemoth"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-AdvancedZerg.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRBehemoth"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-AdvancedZerg.DDS"/>
+        <Hotkey value="Button/Hotkey/ZHBRVoidRiftTrain@SummonBehemoth"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonBehemoth">
+        <Tooltip value="Button/Tooltip/ZHBRBehemoth"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-behemoth.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRBehemoth"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-behemoth.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonDreadnok">
+        <Tooltip value="Button/Tooltip/ZHBRDreadnok"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-Dreadnok.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDreadnok"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-Dreadnok.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@GroundUnitPage">
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-predectiveblink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-stalker-predectiveblink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@GroundUnitPageVoidRift">
+        <Name value="Button/Name/ZHBRHybridRaceControl@GroundUnitPage"/>
+        <Tooltip value="Button/Tooltip/ZHBRRaceControl@GroundUnitPage"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-predectiveblink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-stalker-predectiveblink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@GroundUnitPageExtended">
+        <Name value="Button/Name/ZHBRHybridRaceControl@GroundUnitPage"/>
+        <Tooltip value="Button/Tooltip/ZHBRRaceControl@GroundUnitPage"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-predectiveblink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-stalker-predectiveblink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonNavigator">
+        <Tooltip value="Button/Tooltip/ZHBRNavigator"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-navigator.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRNavigator"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-navigator.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonEnergator">
+        <Tooltip value="Button/Tooltip/ZHBREnergator"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-energator.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBREnergator"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-energator.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonPollinator">
+        <Tooltip value="Button/Tooltip/ZHBRPollinator"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-Pollinator.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPollinator"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-Pollinator.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@AirSupportUnitPage">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@AirSupportUnitPageVoidRift">
+        <Name value="Button/Name/ZHBRHybridRaceControl@AirSupportUnitPage"/>
+        <Tooltip value="Button/Tooltip/ZHBRRaceControl@AirSupportUnitPage"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRRaceControl@AirSupportUnitPageExtended">
+        <Name value="Button/Name/ZHBRHybridRaceControl@AirSupportUnitPage"/>
+        <Tooltip value="Button/Tooltip/ZHBRRaceControl@AirSupportUnitPage"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonShapeshifter">
+        <Tooltip value="Button/Tooltip/ZHBRShapeshifter"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-shapeshifter.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRShapeshifter"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-shapeshifter.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonNemesis">
+        <Tooltip value="Button/Tooltip/ZHBRNemesis"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-Nemesis.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRNemesis"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-Nemesis.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonWarrior">
+        <Tooltip value="Button/Tooltip/ZHBRWarrior"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-warrior.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRWarrior"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-warrior.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonFlayer">
+        <Tooltip value="Button/Tooltip/ZHBRFlayer"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-flayer.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRFlayer"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-flayer.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonChimera">
+        <Icon value="assets\textures\btn-unit-zhybrid-Chimera.DDS"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-Chimera.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Tooltip value="Button/Tooltip/ZHBRChimera"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRChimera"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonWarbringer">
+        <Tooltip value="Button/Tooltip/ZHBRWarbringer"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-warbringer.DDS"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRWarbringer"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-warbringer.DDS"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRVoidRiftTrain@SummonSentinel">
+        <Tooltip value="Button/Tooltip/ZHBRSentinel"/>
+        <Icon value="assets\textures\btn-unit-zhybrid-sentinel.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRSentinel"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-sentinel.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUpgradeToAdvancedDominator">
+        <Icon value="Assets\Textures\tip_Hybriddominator.dds"/>
+        <AlertIcon value="Assets\Textures\tip_Hybriddominator.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUpgradeToAdvancedDominator@Passive">
+        <Name value="Button/Name/ZHBRUpgradeToAdvancedDominator"/>
+        <Tooltip value="Button/Tooltip/ZHBRUpgradeToAdvancedDominator"/>
+        <Icon value="Assets\Textures\tip_Hybriddominator.dds"/>
+        <AlertIcon value="Assets\Textures\tip_Hybriddominator.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRTimeWarp">
+        <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRTimeWarp@Extended">
+        <Name value="Button/Name/ZHBRTimeWarp"/>
+        <Tooltip value="Button/Tooltip/ZHBRTimeWarp"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <AlertName value="Button/Name/ZHBRTimeWarp"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRTimeWarp"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRConfusion">
+        <Icon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRConfusion@Extended">
+        <Name value="Button/Name/ZHBRConfusion"/>
+        <Tooltip value="Button/Tooltip/ZHBRConfusion"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
+        <AlertName value="Button/Name/ZHBRConfusion"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRConfusion"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPsionicTornado">
+        <Icon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPsionicTornado@Extended">
+        <Name value="Button/Name/ZHBRPsionicTornado"/>
+        <Tooltip value="Button/Tooltip/ZHBRPsionicTornado"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <AlertName value="Button/Name/ZHBRPsionicTornado"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPsionicTornado"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRFlayerFury@Research">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRFlayerFury">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TooltipCooldownOverrideText value="Button/CooldownOverrider/ZHBRFlayerFury"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRFlayerBerserker">
+        <Icon value="Assets\Textures\btn-upgrade-kerrigan-broodlordspeed.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-kerrigan-broodlordspeed.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRFlayerBerserker@Passive">
+        <Name value="Button/Name/ZHBRFlayerBerserker"/>
+        <Tooltip value="Button/Tooltip/ZHBRFlayerBerserker"/>
+        <Icon value="Assets\Textures\btn-upgrade-kerrigan-broodlordspeed.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-kerrigan-broodlordspeed.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonStructure">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadoff.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadoff.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonAdvancedStructured">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadon.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionMorph">
+        <Icon value="assets\textures\btn-unit-zhybrid-spirit.dds"/>
+        <AlertIcon value="assets\textures\btn-unit-zhybrid-spirit.dds"/>
+        <Hotkey value="Button/Hotkey/ZHBRIonicPylonMorph"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonProjector">
+        <Tooltip value="Button/Tooltip/ZHBRProjector"/>
+        <Icon value="assets\textures\btn-building-zhybrid-projector.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRProjector"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-projector.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonVespeneConcentrator">
+        <Tooltip value="Button/Tooltip/ZHBRVespeneConcentrator"/>
+        <Icon value="assets\textures\btn-building-zhybrid-vespeneconcentrator.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVespeneConcentrator"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-vespeneconcentrator.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonVoidForge">
+        <Tooltip value="Button/Tooltip/ZHBRVoidForge"/>
+        <Icon value="assets\textures\btn-building-zhybrid-voidforge.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidForge"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-voidforge.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonStasisCell">
+        <Tooltip value="Button/Tooltip/ZHBRStasisCell"/>
+        <Icon value="assets\textures\btn-building-zhybrid-stasiscell.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRStasisCell"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-stasiscell.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonConstructAntiAir">
+        <Tooltip value="Button/Tooltip/ZHBRConstruct@AntiAir"/>
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiair.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRConstruct@AntiAir"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-constructantiair.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonConstructAntiGround">
+        <Tooltip value="Button/Tooltip/ZHBRConstruct@AntiGround"/>
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiground.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRConstruct@AntiGround"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-constructantiground.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonVoidRift">
+        <Tooltip value="Button/Tooltip/ZHBRVoidRift"/>
+        <Icon value="assets\textures\btn-building-zhybrid-voidrift.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRVoidRift"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-voidrift.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonAmplifier">
+        <Tooltip value="Button/Tooltip/ZHBRAmplifier"/>
+        <Icon value="assets\textures\btn-building-zhybrid-amplifier.dds"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-amplifier.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionHarvest@Gather">
+        <Icon value="Assets\Textures\btn-ability-protoss-gather.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-gather.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="GatherProt"/>
+        <Universal value="1"/>
+        <SimpleDisplayText value="SimpleDisplay/ZHBRMinionHarvest@Gather"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonHarvester">
+        <Tooltip value="Button/Tooltip/ZHBRHarvester"/>
+        <Icon value="assets\textures\btn-building-zhybrid-harvester.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRHarvester"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-harvester.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonTemple">
+        <Tooltip value="Button/Tooltip/ZHBRTemple"/>
+        <Icon value="assets\textures\btn-building-zhybrid-temple.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRTemple"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-temple.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@SummonIonicCrystal">
+        <Tooltip value="Button/Tooltip/ZHBRIonicCrystal"/>
+        <Icon value="assets\textures\btn-building-zhybrid-ioniccrystal.dds"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRIonicCrystal"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-ioniccrystal.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionHarvest@Return">
+        <Icon value="Assets\Textures\btn-command-returncargo.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-returncargo.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@ConstructAntiAir">
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiair.dds"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-constructantiair.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Tooltip value="Button/Tooltip/ZHBRConstruct@AntiAir"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRConstruct@AntiAir"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@ConstructAntiGround">
+        <Icon value="assets\textures\btn-building-zhybrid-constructantiground.dds"/>
+        <AlertIcon value="assets\textures\btn-building-zhybrid-constructantiground.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Tooltip value="Button/Tooltip/ZHBRConstruct@AntiGround"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRConstruct@AntiGround"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRMinionBuild@ConstructUniversal">
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUpgradeToAdvancedBehemoth">
+        <Icon value="Assets\Textures\tip_Hybridbehemoth.dds"/>
+        <AlertIcon value="Assets\Textures\tip_Hybridbehemoth.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRUpgradeToAdvancedBehemoth@Passive">
+        <Name value="Button/Name/ZHBRUpgradeToAdvancedBehemoth"/>
+        <Tooltip value="Button/Tooltip/ZHBRUpgradeToAdvancedBehemoth"/>
+        <Icon value="Assets\Textures\tip_Hybridbehemoth.dds"/>
+        <AlertName value="Button/Name/ZHBRUpgradeToAdvancedBehemoth"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRUpgradeToAdvancedBehemoth"/>
+        <AlertIcon value="Assets\Textures\tip_Hybridbehemoth.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRConsumeDNA">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRConsumeDNA@Extended">
+        <Name value="Button/Name/ZHBRConsumeDNA"/>
+        <Tooltip value="Button/Tooltip/ZHBRConsumeDNA"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
+        <AlertName value="Button/Name/ZHBRConsumeDNA"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRConsumeDNA"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRProtectionJump">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehakaspawn.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehakaspawn.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRProtectionJump@Passive">
+        <Name value="Button/Name/ZHBRProtectionJump"/>
+        <Tooltip value="Button/Tooltip/ZHBRProtectionJump"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-dehakaspawn.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehakaspawn.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRSentinelJump">
+        <EditorCategories value="Race:ZHBR"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-leapattack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-leapattack.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRSentinelJump@Extended">
+        <Name value="Button/Name/ZHBRSentinelJump"/>
+        <Tooltip value="Button/Tooltip/ZHBRSentinelJump"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-leapattack.dds"/>
+        <AlertName value="Button/Name/ZHBRSentinelJump"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRSentinelJump"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-leapattack.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBREvaporator">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-solarlance.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerMaceStrike@MaceCannonPassive">
+        <Icon value="Assets\Textures\btn-ability-protoss-shadowcannon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phasedisruptor.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Name value="Button/Name/ZHBRWarbringerMaceStrike@MaceCannon"/>
+        <Tooltip value="Button/Tooltip/ZHBRWarbringerMaceStrike@MaceCannon"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerMaceStrike@Passive">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Name value="Button/Name/ZHBRWarbringerMaceStrike"/>
+        <Tooltip value="Button/Tooltip/ZHBRWarbringerMaceStrike"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerMaceStrike">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerMaceStrike@Extended">
+        <Name value="Button/Name/ZHBRWarbringerMaceStrike"/>
+        <Tooltip value="Button/Tooltip/ZHBRWarbringerMaceStrike"/>
+        <Icon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <AlertName value="Button/Name/ZHBRWarbringerMaceStrike"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRWarbringerMaceStrike"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerMaceStrike@MaceCannon">
+        <Icon value="Assets\Textures\btn-ability-protoss-shadowcannon.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phasedisruptor.dds"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerMaceStrike@MaceCannonExtended">
+        <Name value="Button/Name/ZHBRWarbringerMaceStrike@MaceCannon"/>
+        <Tooltip value="Button/Tooltip/ZHBRWarbringerMaceStrike@MaceCannon"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-shadowcannon.dds"/>
+        <AlertName value="Button/Name/ZHBRWarbringerMaceStrike@MaceCannon"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRWarbringerMaceStrike@MaceCannon"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phasedisruptor.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerOrbitalGuidance">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarbringerOrbitalGuidance@Passive">
+        <Name value="Button/Name/ZHBRWarbringerOrbitalGuidance"/>
+        <Tooltip value="Button/Tooltip/ZHBRWarbringerOrbitalGuidance"/>
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarriorDeconstruction">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-terrandefendermodestructureattack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-terrandefendermodestructureattack.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWarriorDeconstruction@Passive">
+        <Name value="Button/Name/ZHBRWarriorDeconstruction"/>
+        <Tooltip value="Button/Tooltip/ZHBRWarriorDeconstruction"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-terrandefendermodestructureattack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-terrandefendermodestructureattack.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPsiOrb">
+        <Icon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRPsiOrb@Extended">
+        <Name value="Button/Name/ZHBRPsiOrb"/>
+        <Tooltip value="Button/Tooltip/ZHBRPsiOrb"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <AlertName value="Button/Name/ZHBRPsiOrb"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRPsiOrb"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDeepTunnel">
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDeepTunnel@Extended">
+        <Name value="Button/Name/ZHBRDeepTunnel"/>
+        <Tooltip value="Button/Tooltip/ZHBRDeepTunnel"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <AlertName value="Button/Name/ZHBRDeepTunnel"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDeepTunnel"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRDeepTunnel@Research">
+        <Name value="Button/Name/ZHBRDeepTunnel"/>
+        <Tooltip value="Button/Tooltip/ZHBRDeepTunnel"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AlertName value="Button/Name/ZHBRDeepTunnel"/>
+        <AlertTooltip value="Button/Tooltip/ZHBRDeepTunnel"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="ZHBRWatcherPassive">
+        <Icon value="assets\Textures\btn-Hybrid-Sentinel-Watcher.dds"/>
+        <AlertIcon value="assets\Textures\btn-Hybrid-Sentinel-Watcher.dds"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Universal value="1"/>
+    </CButton>
+</Catalog>

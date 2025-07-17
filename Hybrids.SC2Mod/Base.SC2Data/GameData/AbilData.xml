@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilResearch default="1" id="ZCRResearchParent">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <InfoArray index="Research1">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research4">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research5">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research6">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research7">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research8">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research9">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research10">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research11">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research12">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research13">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research14">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research15">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research16">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research17">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research18">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research19">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research20">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research21">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research22">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research23">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research24">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research25">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research26">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research27">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research28">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research29">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research30">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilBuild default="1" id="ZHBRStructureTeleport@Parent">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DataCollection value="ZHBRStructureTeleport"/>
+        <FlagArray index="IgnoreFood" value="1"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <FlagArray index="PeonHide" value="1"/>
+        <FlagArray index="PeonKillCancel" value="1"/>
+        <FlagArray index="PeonKillFinish" value="1"/>
+        <FlagArray index="PeonMaintained" value="0"/>
+        <InfoArray index="Build1" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <Range value="500"/>
+        <EffectArray index="Start" value="ZHBRStructureTeleport@StartSet"/>
+        <EffectArray index="Finish" value="ZHBRStructureTeleport@FinishSet"/>
+        <EffectArray index="Cancel" value="ZHBRStructureTeleport@CancelSet"/>
+    </CAbilBuild>
+    <CAbilEffectInstant id="ZHBRAcceleration">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRAcceleration@ApplyBehavior"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="35"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRAcceleration">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ZHBREnergation@EnergationDeformer">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBREnergation@RestoreDeformer"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="CancelResetAutoCast" value="0"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <TargetFilters value="CanHaveEnergy,Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Structure,Worker,Missile,UnderConstruction,Dead,Hidden"/>
+        <AutoCastRange value="7"/>
+        <AutoCastValidatorArray value="ZHBREnergation@CasterHasEnergyDeformer"/>
+        <AutoCastValidatorArray value="ZHBREnergation@AutocastCheckCombineDeformer"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <CancelableArray index="Channel" value="1"/>
+        <AINotifyEffect value="ZHBREnergation@Restore"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBREnergationDeformer">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Stop">
+            <Flags index="ToSelection" value="1"/>
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZHBRPermanentPower">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRPermanentPower@CastSet"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="150"/>
+        </Cost>
+        <TargetFilters value="Visible;Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPermanentPower">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="ZHBRPlasmaticBlast">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="ZHBRPlasmaticBlast">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="ZHBRPlasmaticBlast@PlasmaticCharge">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="ZHBRPlasmaticBlast"/>
+        <ValidatorArray value="ZHBRPlasmaticBlast@CasterHasRequiredEnergy"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+    </CAbilBehavior>
+    <CAbilEffectInstant id="ZHBRPrimeSummoning@Instant">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRPrimeSummoning@CastSet"/>
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPrimeSummoning">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Cost>
+            <Cooldown Location="Player" TimeUse="5"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilTransport id="ZHBRPrimeSummoning@Transport">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Load" DefaultButtonFace="BunkerLoad"/>
+        <CmdButtonArray index="UnloadAll" DefaultButtonFace="OverlordTransportUnload"/>
+        <CmdButtonArray index="UnloadAt" DefaultButtonFace="CommandCenterUnloadAll"/>
+        <CmdButtonArray index="UnloadUnit" DefaultButtonFace="BunkerUnloadAll"/>
+        <Flags index="AllowPassengerSmartCmd" value="0"/>
+        <Flags index="AllowSmartCmd" value="0"/>
+        <Flags index="CargoDeath" value="1"/>
+        <Flags index="PlayerHold" value="1"/>
+        <Flags index="ShowCargoSize" value="0"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Range value="500"/>
+        <MaxUnloadRange value="50"/>
+        <MaxCargoCount value="999999"/>
+        <MaxCargoSize value="8"/>
+        <TotalCargoSpace value="16959"/>
+        <UnloadCargoEffect value="ZHBRVoidRiftTrain@Set"/>
+    </CAbilTransport>
+    <CAbilStop id="ZHBRPsyon@Stop">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+    </CAbilStop>
+    <CAbilEffectTarget id="ZHBRPhaseShift">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRPhaseShift@CastSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Neutral,Missile,Stasis,UnderConstruction,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <Range value="9"/>
+        <AINotifyEffect value="ZHBRPhaseShift@ApplyStasisBehavior"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPhaseShift">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <FinishTime value="0.5"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+    </CAbilEffectTarget>
+    <CAbilWarpTrain id="ZHBRCommon@SelectAllStructured">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+    </CAbilWarpTrain>
+    <CAbilResearch id="ZHBRHoldingCell@Research" parent="ZCRResearchParent">
+        <InfoArray index="Research1" Time="140" Upgrade="ZHBRPrimeSummoning">
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="ZHBRPrimeSummoning@Research" Requirements="ZHBRPrimeSummoning@Research"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="84" Upgrade="ZHBRIonicField">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRIonicField" Requirements="ZHBRIonicField@Research"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="203" Upgrade="ZHBRRestorationShield">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRRestorationShield" Requirements="ZHBRRestorationShield@Research"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="250" Upgrade="ZHBRVoidShield">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ZHBRVoidShield" Requirements="ZHBRVoidShield@Research"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="140" Upgrade="ZHBRGroundWeaponUpgradeLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRGroundWeaponUpgradeLevel1" Requirements="ZHBRGroundWeaponUpgradeLevel1@Research"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="160" Upgrade="ZHBRGroundWeaponUpgradeLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRGroundWeaponUpgradeLevel2" Requirements="ZHBRGroundWeaponUpgradeLevel2@Research"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="180" Upgrade="ZHBRGroundWeaponUpgradeLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ZHBRGroundWeaponUpgradeLevel3" Requirements="ZHBRGroundWeaponUpgradeLevel3@Research"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="140" Upgrade="ZHBRAirWeaponUpgradeLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRAirWeaponUpgradeLevel1" Requirements="ZHBRAirWeaponUpgradeLevel1@Research"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="160" Upgrade="ZHBRAirWeaponUpgradeLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRAirWeaponUpgradeLevel2" Requirements="ZHBRAirWeaponUpgradeLevel2@Research"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="180" Upgrade="ZHBRAirWeaponUpgradeLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ZHBRAirWeaponUpgradeLevel3" Requirements="ZHBRAirWeaponUpgradeLevel3@Research"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="140" Upgrade="ZHBRGroundArmorUpgradeLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRGroundArmorUpgradeLevel1" Requirements="ZHBRGroundArmorUpgradeLevel1@Research"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="160" Upgrade="ZHBRGroundArmorUpgradeLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRGroundArmorUpgradeLevel2" Requirements="ZHBRGroundArmorUpgradeLevel2"/>
+        </InfoArray>
+        <InfoArray index="Research13" Time="180" Upgrade="ZHBRGroundArmorUpgradeLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ZHBRGroundArmorUpgradeLevel3" Requirements="ZHBRGroundArmorUpgradeLevel3"/>
+        </InfoArray>
+        <InfoArray index="Research14" Time="140" Upgrade="ZHBRAirArmorUpgradeLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRAirArmorUpgradeLevel1" Requirements="ZHBRAirArmorUpgradeLevel1@Research"/>
+        </InfoArray>
+        <InfoArray index="Research15" Time="160" Upgrade="ZHBRAirArmorUpgradeLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRAirArmorUpgradeLevel2" Requirements="ZHBRAirArmorUpgradeLevel2@Research"/>
+        </InfoArray>
+        <InfoArray index="Research16" Time="180" Upgrade="ZHBRAirArmorUpgradeLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ZHBRAirArmorUpgradeLevel3" Requirements="ZHBRAirArmorUpgradeLevel3@Research"/>
+        </InfoArray>
+        <InfoArray index="Research17" Time="224" Upgrade="ZHBRVoidBonus">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="300"/>
+            <Button DefaultButtonFace="ZHBRVoidBonus@Research" Requirements="ZHBRVoidBonus@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="ZHBRPowerField">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRPowerField@CreatePersistent"/>
+        <Range value="11.5"/>
+        <CastIntroTime value="1.5"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPowerField"/>
+        <Flags index="RequireTargetVision" value="0"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ZHBRPowerField@Cancel">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRPowerField@RemoveCasterSuppressionBehavior"/>
+        <FinishTime value="1.5"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPowerField@Cancel" Requirements="ZHBRPowerField@CancelShow">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ZHBRPowerField@DummyAbility">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRPowerField@IssueDummyOrder"/>
+        <Range value="10"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPowerField" Requirements="ZHBRPowerField@Show">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <PlaceUnit value="ZHBRPowerField@DummyUnit"/>
+    </CAbilEffectTarget>
+    <CAbilBuild id="ZHBRStructureTeleport">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <FlagArray index="PeonHide" value="1"/>
+        <FlagArray index="PeonKillCancel" value="1"/>
+        <FlagArray index="PeonKillFinish" value="1"/>
+        <InfoArray index="Build1" Unit="ZHBRTemple" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonTemple">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="ZHBRIonicCrystal" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonIonicCrystal">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="ZHBRHarvester" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonHarvester">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="ZHBRVoidRift" Time="0.5">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVoidRift">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="ZHBRHoldingCell" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonHoldingCell">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="ZHBRAmplifier" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonAmplifier">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="ZHBRVespeneConcentrator" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVespeneConcentrator">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="ZHBRStasisCell" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonStasisCell">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="ZHBRConstruct@AntiAir" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonConstructAntiAir">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="ZHBRConstruct@AntiGround" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonConstructAntiGround">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="ZHBRDeformer" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonDeformer">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="ZHBRCrypt" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonCrypt">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build13" Unit="ZHBRTomb" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonTomb">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="ZHBRKeystone" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonKeystone">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build15" Unit="ZHBRProjector" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonProjector">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build16" Unit="ZHBRCapsule" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonCapsule">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <InfoArray index="Build17" Unit="ZHBRVoidForge" Time="14">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="140"/>
+            </Charge>
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVoidForge">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVision"/>
+            <ValidatorArray value="ZHBRVoid@TargetPointWithinPowerRange"/>
+        </InfoArray>
+        <Range value="500"/>
+        <EffectArray index="Start" value="ZHBRStructureTeleport@StartSet"/>
+        <EffectArray index="Finish" value="ZHBRStructureTeleport@FinishSet"/>
+        <EffectArray index="Cancel" value="ZHBRStructureTeleport@CancelSet"/>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@VoidForge" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRVoidForge">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVoidForge"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@ConstructAntiAir" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRConstruct@AntiAir">
+            <Button DefaultButtonFace="ZHBRMinionBuild@ConstructAntiAir"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@ConstructAntiGround" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRConstruct@AntiGround">
+            <Button DefaultButtonFace="ZHBRMinionBuild@ConstructAntiGround"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Capsule" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRCapsule">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonCapsule"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Projector" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRProjector">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonProjector"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Tomb" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRTomb">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonTomb"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Deformer" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRDeformer">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonDeformer"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Keystone" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRKeystone">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonKeystone"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@VespeneConcentrator" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRVespeneConcentrator">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVespeneConcentrator"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Harvester" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRHarvester">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonHarvester"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Amplifier" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRAmplifier">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonAmplifier"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@VoidRift" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRVoidRift">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVoidRift"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Temple" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRTemple">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonTemple"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@IonicCrystal" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRIonicCrystal">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonIonicCrystal"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@HoldingCell" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRHoldingCell">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonHoldingCell"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@StasisCell" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRStasisCell">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonStasisCell"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRStructureTeleport@Crypt" parent="ZHBRStructureTeleport@Parent">
+        <InfoArray index="Build1" Unit="ZHBRCrypt">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonCrypt"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilEffectTarget id="ZHBRVoidChasm">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRVoidChasm@InitialPersistent"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="200"/>
+            <Cooldown TimeUse="14"/>
+        </Cost>
+        <Range value="7"/>
+        <CursorEffect value="ZHBRVoidChasm@Search"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRVoidChasm">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilResearch id="ZHBRTomb@Research" parent="ZCRResearchParent">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <InfoArray index="Research2" Time="140" Upgrade="ZHBRDisappearance">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ZHBRDisappearance@Research" Requirements="ZHBRDisappearance@Research"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="100" Upgrade="ZHBRPhaseShift">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="ZHBRPhaseShift@Research" Requirements="ZHBRPhaseShift@Research"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="56" Upgrade="ZHBRCloakedSpirit">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="ZHBRCloakedSpirit@Research" Requirements="ZHBRCloakedSpirit@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ZHBRKeystone@Research" parent="ZCRResearchParent">
+        <InfoArray index="Research2" Time="112" Upgrade="ZHBRIndestructible">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRIndestructible" Requirements="ZHBRIndestructible@Research"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="100" Upgrade="ZHBRDeepTunnel">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRDeepTunnel@Research" Requirements="ZHBRDeepTunnel@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ZHBRCrypt@Research" parent="ZCRResearchParent">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <InfoArray index="Research1" Time="98" Upgrade="ZHBRProtectionJump@ZHBRProtectionJump">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRProtectionJump" Requirements="ZHBRCloakedSpirit@Research"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="252" Upgrade="ZHBRWarbringerOrbitalGuidance">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRWarbringerOrbitalGuidance" Requirements="ZHBRWarbringerOrbitalGuidance@OrbitalGuidance"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="126" Upgrade="ZHBRUltimateUnitOfTransfusion">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRUltimateUnitOfTransfusion" Requirements="ZHBRUltimateUnitOfTransfusion@Research"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="98" Upgrade="ZHBRSubjugationJump@ZHBRSubjugationJump">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRSubjugationJumpPassive" Requirements="ZHBRSubjugationJump@Research"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="98" Upgrade="ZHBRWatcher@ZHBRWatcher">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRWatcher" Requirements="ZHBRSentinelWatcher@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="ZHBRSpray" parent="SprayParent">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <AINotifyEffect value="SprayProtoss"/>
+        <CmdButtonArray index="Execute" Requirements="ZHBRSpray@HaveSprayZHBR"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZHBRInterdimensionalOverload">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <Activity value="UI/Teleporting"/>
+        <Effect index="0" value="ZHBRInterdimensionalOverload@Teleport"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="100"/>
+        </Cost>
+        <InterruptCost>
+            <Cooldown TimeUse="9"/>
+        </InterruptCost>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden"/>
+        <Range value="500"/>
+        <CastIntroTime value="4.2"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ShowProgressArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="ZHBRInterdimensionalOverload"/>
+        <CancelEffect index="Prep" value="ZHBRNavigatorNavigation@JumpCD"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRInterdimensionalOverload">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilTransport id="ZHBRNavigatorLoad">
+        <AbilSetId value="ULdM"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Load" DefaultButtonFace="ZHBRNavigatorLoad@Load"/>
+        <CmdButtonArray index="UnloadAll" DefaultButtonFace="ZHBRNavigatorLoad@UnloadAll">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadAt" DefaultButtonFace="ZHBRNavigatorLoad@UnloadAllM"/>
+        <CmdButtonArray index="UnloadUnit">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="LoadAll">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <Flags index="CargoDeath" value="1"/>
+        <Range value="3"/>
+        <MaxCargoCount value="8"/>
+        <MaxCargoSize value="8"/>
+        <TotalCargoSpace value="8"/>
+        <LoadCargoEffect value="ZHBRNavigatorLoad@LoadDummy"/>
+        <UnloadCargoEffect value="ZHBRNavigatorLoad@Set"/>
+        <UnloadPeriod value="1"/>
+        <TargetFilters value="Ground,Visible;Ally,Neutral,Enemy,Air,Buried,UnderConstruction,Dead,Hidden"/>
+        <LoadValidatorArray value="ZHBRNavigatorLoad@TargetValidator"/>
+    </CAbilTransport>
+    <CAbilBehavior id="ZHBRNemesisDisintegrator">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <CmdButtonArray index="On" DefaultButtonFace="ZHBRNemesisDisintegrator@Disintegrator">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="ZHBRNemesisDisintegrator@Ionizer">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="ZHBRNemesisDisintegrator"/>
+        <ValidatorArray value="ZHBRNemesisDisintegrator@HasEnergy"/>
+        <Cost>
+            <Vital index="Energy" value="10"/>
+        </Cost>
+    </CAbilBehavior>
+    <CAbilBehavior id="ZHBRPollinatorShadowMantle@ShadowMantle">
+        <AbilSetId value="Clok"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="ZHBRPollinatorShadowMantle@On">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="ZHBRPollinatorShadowMantle@Off">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Cooldown Operation="Multiply"/>
+        </Cost>
+        <BehaviorArray value="ZHBRPollinatorShadowMantle@ShadowMantle"/>
+        <ExpireCost>
+            <Cooldown Operation="Set" TimeUse="14"/>
+        </ExpireCost>
+    </CAbilBehavior>
+    <CAbilEffectTarget id="ZHBREnergation@Energation">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBREnergation@Restore"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="CancelResetAutoCast" value="0"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <TargetFilters value="CanHaveEnergy,Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Structure,Worker,Missile,UnderConstruction,Dead,Hidden"/>
+        <AutoCastRange value="7"/>
+        <AutoCastValidatorArray value="ZHBREnergation@CasterHasEnergyDeformer"/>
+        <AutoCastValidatorArray value="ZHBREnergation@AutocastCheckCombineDeformer"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <CancelableArray index="Channel" value="1"/>
+        <AINotifyEffect value="ZHBREnergation@Restore"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBREnergation">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Stop">
+            <Flags index="ToSelection" value="1"/>
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ZHBRDisappearance">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRDisappearance@Persistent"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="35"/>
+        </Cost>
+        <CastOutroTime value="0.5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRDisappearance" Requirements="ZHBRDisappearance@Use">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ZHBRRevealingSacrifice">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRRevealingSacrifice@Set"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.125"/>
+        </Cost>
+        <TargetFilters value="-;Self,Missile,Destructible,Item,Dead,Hidden"/>
+        <Range value="12"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRRevealingSacrifice">
+            <Flags index="AllowMinimap" value="0"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilMorph id="ZHBRConstruct@TransformToAntiGround">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRConstruct@TransformToConstructAntiGround"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <InfoArray Unit="ZHBRConstruct@AntiGround">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="3"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="3"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="3"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="ZHBRConstruct@TransformToAntiAir">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRConstruct@TransformToConstructAntiAir"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <InfoArray Unit="ZHBRConstruct@AntiAir">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="3"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="3"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="3"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilResearch id="ZHBRProjector@Research" parent="ZCRResearchParent">
+        <InfoArray index="Research1" Time="120" Upgrade="ZHBRToxicity">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRToxicity@Research" Requirements="ZHBRToxicity@Research"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="150" Upgrade="ZHBRAcceleration">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRAcceleration@Research" Requirements="ZHBRAcceleration@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ZHBRCapsule@Research" parent="ZCRResearchParent">
+        <DataCollection value="ZHBRWorkshopResearch"/>
+        <InfoArray index="Research1" Time="140" Upgrade="ZHBRUpgradeToAdvancedBehemoth">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="300"/>
+            <Button DefaultButtonFace="ZHBRUpgradeToAdvancedBehemoth" Requirements="ZHBRUpgradeToAdvancedBehemoth@Show"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="140" Upgrade="ZHBRUpgradeToAdvancedDominator">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="300"/>
+            <Button DefaultButtonFace="ZHBRUpgradeToAdvancedDominator" Requirements="ZHBRUpgradeToAdvancedDominator@Show"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="100" Upgrade="ZHBRDestructionOrb">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRDestructionOrb" Requirements="ZHBRDestructionOrb@Research"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="120" Upgrade="ZHBRBrokenDNA">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ZHBRBrokenDNA" Requirements="ZHBRBrokenDNA@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilMorphPlacement id="ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="LiftOffLand"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="RallyReset" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="ZHBRIonicCrystal" CollideRange="0"/>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="ZHBRIonicCrystalMorph@TransfromToMoveableIonicCrystal">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="RallyReset" value="1"/>
+        <InfoArray Unit="ZHBRIonicCrystal@Moveable"/>
+    </CAbilMorph>
+    <CAbilResearch id="ZHBRStasisCell@Research" parent="ZCRResearchParent">
+        <InfoArray index="Research1" Time="96" Upgrade="ZHBRFlayerFury">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRFlayerFury@Research" Requirements="ZHBRFlayerFury@Research"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="84" Upgrade="ZHBRProtectionJump@ZHBRProtectionJump">
+            <Resource index="Minerals" value="125"/>
+            <Resource index="Vespene" value="125"/>
+            <Button DefaultButtonFace="ZHBRProtectionJump" Requirements="ZHBRProtectionJump@Research"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="140" Upgrade="ZHBRWarriorDeconstruction@Deconstruction">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ZHBRWarriorDeconstruction" Requirements="ZHBRWarriorDeconstruction@Research"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="80" Upgrade="ZHBRFlayerBerserker@Berserker">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRFlayerBerserker" Requirements="ZHBRFlayerBerserker@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="ZHBRVoidImmunity">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRVoidImmunity@ApplyBuff"/>
+        <Cost>
+            <Vital index="Energy" value="150"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRVoidImmunity">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <TargetFilters value="CanHaveShields,Visible;Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+    </CAbilEffectTarget>
+    <CAbilRally id="ZHBRTemple@Rally">
+        <OrderArray index="0">
+            <DisplayType value="Rally"/>
+            <Color value="255,245,140,70"/>
+            <Model value="Assets\UI\Feedback\WayPointRally\WayPointRally.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Structures"/>
+    </CAbilRally>
+    <CAbilTrain id="ZHBRTempleTrain">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <InfoArray index="Train1" Time="17">
+            <Button DefaultButtonFace="ZHBRTempleTrain@SummonMinion">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRMinion"/>
+        </InfoArray>
+        <Alert value="TrainWorkerComplete"/>
+    </CAbilTrain>
+    <CAbilResearch id="ZHBRVoidForge@Research" parent="ZCRResearchParent">
+        <InfoArray index="Research1" Time="136" Upgrade="ZHBREnhancedArmor@Upgrade">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBREnhancedArmor" Requirements="ZHBREnhancedArmor@Research"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="168" Upgrade="ZHBRUpgradeToAdvancedNemesis">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="300"/>
+            <Button DefaultButtonFace="ZHBRUpgradeToAdvancedNemesis" Requirements="ZHBRUpgradeToAdvancedNemesis@Research"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="150" Upgrade="ZHBRVoidChasm">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ZHBRVoidChasm@Research" Requirements="ZHBRVoidChasm@Research"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilTrain id="ZHBRVoidRiftTrain">
+        <EditorCategories value="Race:ZHBR"/>
+        <InfoArray index="Train1" Time="41" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonChimera" Requirements="ZHBRCommon@RequiresKeystoneUseUpgrade">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRChimera"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="30.8" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonWarrior">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRWarrior"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="36.4" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonFlayer" Requirements="ZHBRCommon@RequiresStasisCellUseUpgrade">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRFlayer"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="42" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonWarbringer" Requirements="ZHBRCommon@RequiresCryptUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRWarbringer"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="49" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonSentinel" Requirements="ZHBRCommon@RequiresCryptUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRSentinel"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="49" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonProteus" Requirements="ZHBRCommon@RequiresCryptUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRProteus"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="42" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonStrider" Requirements="ZHBRCommon@RequiresKeystoneUseUpgrade">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRStrider"/>
+        </InfoArray>
+        <InfoArray index="Train8" Time="56" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonBehemoth" Requirements="ZHBRCommon@RequiresCapsuleUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRBehemoth"/>
+        </InfoArray>
+        <InfoArray index="Train9" Time="50" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonDominator" Requirements="ZHBRCommon@RequiresCapsuleUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRDominator"/>
+        </InfoArray>
+        <InfoArray index="Train10" Time="49" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonDreadnok" Requirements="ZHBRCommon@RequiresKeystoneUseUpgrade">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRDreadnok"/>
+        </InfoArray>
+        <InfoArray index="Train15" Time="25" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonNavigator" Requirements="ZHBRCommon@RequiresTombUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRNavigator"/>
+        </InfoArray>
+        <InfoArray index="Train16" Time="25" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonEnergator" Requirements="ZHBRCommon@RequiresTombUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBREnergator"/>
+        </InfoArray>
+        <InfoArray index="Train17" Time="42" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonPollinator" Requirements="ZHBRCommon@RequiresProjectorUseUpgrade">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRPollinator"/>
+        </InfoArray>
+        <InfoArray index="Train18" Time="49" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonShapeshifter" Requirements="ZHBRCommon@RequiresProjectorUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRShapeshifter"/>
+        </InfoArray>
+        <InfoArray index="Train19" Time="85" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonNemesis" Requirements="ZHBRCommon@RequiresVoidForgeUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRNemesis"/>
+        </InfoArray>
+        <InfoArray index="Train20" Time="28" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonConductor" Requirements="ZHBRCommon@RequiresTombUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRConductor"/>
+        </InfoArray>
+        <InfoArray index="Train21" Time="35" Effect="ZHBRVoidRiftTrain@InitialSet">
+            <Button DefaultButtonFace="ZHBRVoidRiftTrain@SummonPsyon" Requirements="ZHBRCommon@RequiresProjectorUseUpgrade">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="ZHBRPsyon"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilEffectTarget id="ZHBRTimeWarp">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRTimeWarp@Persistent"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="200"/>
+            <Cooldown TimeUse="2"/>
+        </Cost>
+        <Range value="7"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="ZHBRTimeWarp@Search"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRTimeWarp">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <UninterruptibleArray index="Finish" value="1"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZHBRConfusion">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRConfusion@SearchArea"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="200"/>
+            <Cooldown TimeUse="2"/>
+        </Cost>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
+        <Range value="9"/>
+        <CursorEffect value="ZHBRConfusion@SearchArea"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRConfusion">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZHBRPsionicTornado">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRPsionicTornado@CertainDirection"/>
+        <Flags index="CancelResetAutoCast" value="0"/>
+        <Flags index="ChannelingMinimum" value="0"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="200"/>
+            <Cooldown TimeUse="2"/>
+        </Cost>
+        <Range value="20"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPsionicTornado">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Stop">
+            <Flags index="ToSelection" value="1"/>
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+        <CursorEffect value="ZHBRPsionicTornado@Search"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="ZHBRMinionMorph@MechanicalReincarnation">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRMinionMorph"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="Rally" value="1"/>
+        <Flags index="RallyReset" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <InfoArray Unit="ZHBRSpirit">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="4.2"/>
+                <EffectArray index="Start" value="ZHBRMinionBuild@ApplyBehavior"/>
+                <EffectArray index="Finish" value="ZHBRMinionBuild@RemoveBehavior"/>
+                <EffectArray index="Cancel" value="ZHBRMinionBuild@RemoveBehavior"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="4.2"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Duration" value="4.2"/>
+            </SectionArray>
+            <SectionArray index="Facing">
+                <DurationArray index="Duration" value="4.2"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="4.2"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="4.2"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilBuild id="ZHBRMinionBuild">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <FlagArray index="Interruptible" value="1"/>
+        <FlagArray index="PeonDisableCollision" value="1"/>
+        <FlagArray index="RequireFacing" value="1"/>
+        <InfoArray index="Build1" Unit="ZHBRTemple" Time="100">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonTemple">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="ZHBRIonicCrystal" Time="11.2">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonIonicCrystal">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="ZHBRHarvester" Time="30">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonHarvester">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVespene"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="ZHBRDeformer" Time="25">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonDeformer" Requirements="ZHBRCommon@RequiresHoldingCellUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="ZHBRStasisCell" Time="50.4">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonStasisCell" Requirements="ZHBRCommon@RequiresVoidRiftUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="ZHBRVespeneConcentrator" Time="42">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVespeneConcentrator" State="Suppressed" Requirements="ZHBRCommon@RequiresHarvesterUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="HasVespene"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="ZHBRVoidForge" Time="87">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVoidForge" State="Suppressed" Requirements="ZHBRCommon@RequiresTombUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="ZHBRHoldingCell" Time="35">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonHoldingCell" Requirements="ZHBRCommon@RequiresIonicCrystalUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="ZHBRVoidRift" Time="67">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonVoidRift" Requirements="ZHBRCommon@RequiresIonicCrystalUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="ZHBRProjector" Time="140">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonProjector" Requirements="ZHBRCommon@RequiresCryptOrTombUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build15" Unit="ZHBRCrypt" Time="65">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonCrypt" Requirements="ZHBRCommon@RequiresVoidRiftUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build16" Unit="ZHBRTomb" Time="65">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonTomb" Requirements="ZHBRCommon@RequiresVoidRiftUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build17" Unit="ZHBRConstruct@AntiGround" Time="48">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonConstructAntiGround" Requirements="ZHBRCommon@RequiresHoldingCellUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build18" Unit="ZHBRConstruct@AntiAir" Time="48">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonConstructAntiAir" Requirements="ZHBRCommon@RequiresHoldingCellUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build19" Unit="ZHBRCapsule" Time="87">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonCapsule" Requirements="ZHBRCommon@RequiresCryptUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Build21" Unit="ZHBRAmplifier" Time="28">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonAmplifier" Requirements="ZHBRCommon@RequiresHarvesterUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <ValidatorArray value="ZHBRAmplifier@TargetHasNotSuppressionBehavior"/>
+        </InfoArray>
+        <InfoArray index="Build22" Unit="ZHBRKeystone" Time="140">
+            <Button DefaultButtonFace="ZHBRMinionBuild@SummonKeystone" Requirements="ZHBRCommon@RequiresCryptOrTombUse">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <EffectArray index="Start" value="ZHBRMinionBuild@Start"/>
+        <EffectArray index="Finish" value="ZHBRMinionBuild@Finish"/>
+        <EffectArray index="Cancel" value="ZHBRMinionBuild@Cancel"/>
+        <SmartPriority value="10"/>
+    </CAbilBuild>
+    <CAbilBuild id="ZHBRMinionBuild@Main" parent="ZHBRMinionBuild">
+        <Range value="8"/>
+        <Name value="Abil/Name/ZHBRMinionBuild@Main"/>
+        <SmartPriority value="17"/>
+        <InfoArray index="Build4">
+            <Button Requirements="ZHBRCommon@RequiresVoidRiftUse"/>
+        </InfoArray>
+        <InfoArray index="Build10" Time="42"/>
+        <InfoArray index="Build22" Time="42"/>
+    </CAbilBuild>
+    <CAbilHarvest id="ZHBRMinionHarvest">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Gather" DefaultButtonFace="ZHBRMinionHarvest@Gather"/>
+        <CmdButtonArray index="Return" DefaultButtonFace="ZHBRMinionHarvest@Return"/>
+    </CAbilHarvest>
+    <CAbilEffectInstant id="ZHBRConsumeDNA">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRConsumeDNA@ApplyPeriodicBuff"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="ChannelingMinimum" value="0"/>
+        <Flags index="RangeUseCasterRadius" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="150"/>
+            <Cooldown TimeUse="5.6"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRConsumeDNA">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ZHBRSentinelJump">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRSentinelJump@InitialSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="7"/>
+        </Cost>
+        <Range value="8"/>
+        <AutoCastFilters value="Ground;Player,Ally,Neutral,Structure,RawResource,HarvestableResource,Missile,Dead,Hidden,Invulnerable"/>
+        <AutoCastRange value="9"/>
+        <AutoCastValidatorArray value="CasterIsAttacking"/>
+        <AutoCastValidatorArray value="ZHBRSentinelJump@CasterNotAttacking"/>
+        <AutoCastValidatorArray value="ZHBRSentinelJump@NoEnemiesNearby"/>
+        <AINotifyEffect value="ZHBRSentinelJump@LM"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRSentinelJump">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <SharedFlags index="TargetCursorHiddenForInvalidTargets" value="1"/>
+        <TargetFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Dead,Hidden,Invulnerable"/>
+        <Arc value="90"/>
+        <FinishCommand value="attack,Execute"/>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="ZHBRWarbringerMaceStrike">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="ZHBRWarbringerMaceStrike">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="ZHBRWarbringerMaceStrike@MaceCannon">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="ZHBRWarbringerMaceStrike"/>
+        <ValidatorArray value="ZHBRWarbringerMaceStrike@CasterEnergyIsValid"/>
+        <Cost/>
+    </CAbilBehavior>
+    <CAbilEffectTarget id="ZHBRPsiOrb">
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <Effect index="0" value="ZHBRPsiOrb@InitialPersistent"/>
+        <Cost>
+            <Vital index="Energy" value="200"/>
+            <Cooldown TimeUse="2"/>
+        </Cost>
+        <Range value="13"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRPsiOrb">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="RequireTargetVision" value="0"/>
+        <CursorRangeMode value="ForceToMax"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZHBRDeepTunnel">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ZHBRDeepTunnel@Teleport"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <InterruptArray index="Cast" value="1"/>
+        <InterruptCost>
+            <Cooldown Operation="Set" TimeUse="60"/>
+        </InterruptCost>
+        <Range value="500"/>
+        <CastIntroTime value="1.5"/>
+        <FinishTime value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZHBRDeepTunnel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+</Catalog>

@@ -1,0 +1,6 @@
+﻿Category/Name/lib_03673618_7E34F632=Startup
+Library/Name/03673618=Synoid
+Library/Name/Synd=Factions - Synoid
+Trigger/Name/lib_03673618_3116A5E1=Selected Race
+Trigger/Name/lib_03673618_7638088B=RaceTest
+Trigger/Name/lib_Synd_512302E7=Synoid init

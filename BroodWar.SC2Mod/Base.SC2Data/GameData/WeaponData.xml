@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CWeaponLegacy id="CarrierSCBWWeapon@Dummy">
+  <EditorCategories value="Race:Protoss"/>
+  <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+  <DisplayEffect value="InterceptorSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Player,Ally,Neutral,Enemy"/>
+  <Range value="8"/>
+  <Arc value="360"/>
+  <Period value="1.6875"/>
+  <DamagePoint value="0"/>
+  <Backswing value="0"/>
+  <Effect value="CarrierSCBWWeapon@CP"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="DarkArchonSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+  <DisplayEffect value="DarkArchonSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="2"/>
+  <TeleportResetRange value="0"/>
+  <Cost>
+    <Cooldown Location="Unit"/>
+  </Cost>
+  <Period value="1.25"/>
+  <Effect value="DarkArchonSCBWWeapon@Damage"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ArbiterSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+  <DisplayEffect value="ArbiterSCBWWeapon@DamageExpl"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="2.8125"/>
+  <Effect value="ArbiterSCBWWeapon@LM"/>
+  <AllowedMovement value="Slowing"/>
+  <Options index="NeverMiss" value="0"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <MinScanRange value="5.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="DragoonSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+  <DisplayEffect value="DragoonSCBWWeapon@DamageExpl"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="6"/>
+  <Period value="1.875"/>
+  <Effect value="DragoonSCBWWeapon@LM"/>
+  <Options index="NeverMiss" value="0"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <DamagePoint value="0.167"/>
+  <LegacyOptions index="Uninterruptible" value="0"/>
+  <RandomDelayMax value="0.0625"/>
+  <UninterruptibleDuration value="0.625"/>
+  <MinScanRange value="6.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="CarrierSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Options index="Hidden" value="1"/>
+  <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+  <DisplayEffect value="InterceptorSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="8"/>
+  <Arc value="360"/>
+  <Period value="0.5"/>
+  <DamagePoint value="0"/>
+  <Backswing value="0"/>
+  <Effect value="CarrierSCBWWeapon@CP"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponStrafe id="InterceptorSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+  <DisplayEffect value="InterceptorSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="4"/>
+  <TeleportResetRange value="0"/>
+  <Arc value="19.6875"/>
+  <Period value="1.6875"/>
+  <Effect value="InterceptorSCBWWeapon@CP"/>
+  <Options index="NeverMiss" value="0"/>
+  <LoiterInnerRadius value="2.5"/>
+  <LoiterRadius value="6.5"/>
+</CWeaponStrafe>
+<CWeaponLegacy id="CorsairSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+  <DisplayEffect value="CorsairSCBWWeapon@DamageExpl"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <ArcSlop value="0"/>
+  <Period value="0.5"/>
+  <DamagePoint value="0"/>
+  <Effect value="CorsairSCBWWeapon@Impact"/>
+  <LegacyOptions index="Uninterruptible" value="1"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Slowing"/>
+  <RandomDelayMax value="0.0625"/>
+  <UninterruptibleDuration value="0.125"/>
+  <MinScanRange value="6.5"/>
+  <Range value="6"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="PhotonCannonSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Icon value="Assets\Textures\btn-building-protoss-photoncannon@scbw.dds"/>
+  <DisplayEffect value="PhotonCannonSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7"/>
+  <RangeSlop value="0"/>
+  <Period value="1.25"/>
+  <Effect value="PhotonCannonSCBWWeapon@LM"/>
+  <Options index="NeverMiss" value="0"/>
+  <RandomDelayMax value="0.0625"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ZealotSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+  <DisplayEffect value="ZealotSCBWWeapon@Damage"/>
+  <DisplayAttackCount value="2"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.1"/>
+  <Period value="1.25"/>
+  <DamagePoint value="0.25"/>
+  <Effect value="ZealotSCBWWeapon@Set"/>
+  <LegacyOptions index="Uninterruptible" value="1"/>
+  <UninterruptibleDelay value="0.1875"/>
+  <UninterruptibleDuration value="0.28"/>
+  <RangeSlop value="1"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ProbeSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+  <DisplayEffect value="ProbeSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.5"/>
+  <Period value="1.5"/>
+  <Effect value="ProbeSCBWWeapon@Damage"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ArchonSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+  <DisplayEffect value="ArchonSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="2"/>
+  <TeleportResetRange value="0"/>
+  <Cost>
+    <Cooldown Location="Unit"/>
+  </Cost>
+  <Period value="1.25"/>
+  <Effect value="ArchonSCBWWeapon@InitialSet"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ScarabSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="Melee" value="1"/>
+  <Options index="LinkedCooldown" value="0"/>
+  <Options index="RequireEnabledAttackAbil" value="0"/>
+  <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
+  <DisplayEffect value="ScarabSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <MinScanRange value="0"/>
+  <Range value="0.1"/>
+  <TeleportResetRange value="0"/>
+  <Arc value="360"/>
+  <Marker>
+    <MatchFlags index="Id" value="1"/>
+  </Marker>
+  <Period value="3.5"/>
+  <DamagePoint value="0"/>
+  <Effect value="ScarabSCBWWeapon@Impact"/>
+  <LegacyOptions index="Uninterruptible" value="1"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Moving"/>
+  <RandomDelayMin value="0"/>
+  <RandomDelayMax value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ScoutSCBWWeaponGround">
+  <EditorCategories value="Race:Protoss"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+  <DisplayEffect value="ScoutSCBWWeaponGround@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="4"/>
+  <Period value="1.6875"/>
+  <Effect value="ScoutSCBWWeaponGround@Damage"/>
+  <AllowedMovement value="Slowing"/>
+  <Options index="NeverMiss" value="0"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ScoutSCBWWeaponAir">
+  <EditorCategories value="Race:Protoss"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+  <DisplayEffect value="ScoutSCBWWeaponAir@DamageExpl"/>
+  <DisplayAttackCount value="2"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="6"/>
+  <Period value="1.375"/>
+  <Effect value="ScoutSCBWWeaponAir@CP"/>
+  <AllowedMovement value="Slowing"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <DamagePoint value="0.0625"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="DarkTemplarSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+  <DisplayEffect value="DarkTemplarSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.1"/>
+  <Period value="1.694"/>
+  <DamagePoint value="0.361"/>
+  <Backswing value="1.333"/>
+  <Effect value="DarkTemplarSCBWWeapon@Damage"/>
+  <RangeSlop value="1"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ReaverSCBWWeapon">
+  <EditorCategories value="Race:Protoss"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="ContinuousScan" value="1"/>
+  <Options index="LinkedCooldown" value="0"/>
+  <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
+  <DisplayEffect value="ScarabSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <MinScanRange value="8"/>
+  <Range value="8"/>
+  <TeleportResetRange value="5"/>
+  <Arc value="9.9975"/>
+  <Period value="1"/>
+  <DamagePoint value="0"/>
+  <Effect value="ReaverSCBWWeapon@LaunchCheck"/>
+  <RandomDelayMin value="0"/>
+  <RandomDelayMax value="0"/>
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+  <Backswing value="0"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="HighTemplarSCBWWeapon">
+  <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+  <EditorCategories value="Race:Protoss"/>
+  <DisplayEffect value="HighTemplarSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <MinScanRange value="6.5"/>
+  <Range value="6"/>
+  <Period value="1.754"/>
+  <Effect value="HighTemplarSCBWWeapon@LM"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ReaverSCBWWeapon@NoScan" parent="ReaverSCBWWeapon">
+  <AcquireScanFilters value="-;Player,Ally,Neutral,Enemy"/>
+  <Effect value="ReaverSCBWWeapon@Launch"/>
+  <Period value="3.75"/>
+  <DamagePoint value="0.0625"/>
+  <Options index="Hidden" value="0"/>
+  <Options index="ContinuousScan" value="0"/>
+  <Options index="DisplayCooldown" value="1"/>
+  <MinScanRange value="0"/>
+  <Backswing value="0.5"/>
+  <RandomDelayMin value="-0.0312"/>
+  <RandomDelayMax value="0.0625"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ReaverSCBWWeapon@Dummy" parent="ReaverSCBWWeapon">
+  <Options index="ContinuousScan" value="0"/>
+  <AcquireScanFilters value="-;Player,Ally,Neutral,Enemy"/>
+  <MinScanRange value="0"/>
+  <Period value="3.75"/>
+  <Effect value=""/>
+</CWeaponLegacy>
+<CWeaponLegacy id="BattlecruiserSCBWWeaponAir">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+  <DisplayEffect value="BattlecruiserSCBWWeaponAir@Damage"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7"/>
+  <Period value="1.175"/>
+  <Effect value="BattlecruiserSCBWWeaponAir@LM"/>
+  <AllowedMovement value="Slowing"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <RandomDelayMax value="0.0625"/>
+  <MinScanRange value="7.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="BattlecruiserSCBWWeaponGround">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+  <DisplayEffect value="BattlecruiserSCBWWeaponGround@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="1.175"/>
+  <Effect value="BattlecruiserSCBWWeaponGround@LM"/>
+  <AllowedMovement value="Slowing"/>
+  <Range value="7"/>
+  <Options index="NeverMiss" value="0"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <RandomDelayMax value="0.0625"/>
+  <MinScanRange value="7.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GoliathSCBWWeaponAir">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="GoliathSCBWWeaponAir@DamageExpl"/>
+  <DisplayAttackCount value="2"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Arc value="144.9975"/>
+  <Period value="1.375"/>
+  <Effect value="GoliathSCBWWeaponAir@CP"/>
+  <LegacyOptions index="Uninterruptible" value="1"/>
+  <UninterruptibleDuration value="0.3"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <MinScanRange value="6.5"/>
+  <Range value="6"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GoliathSCBWWeaponGround">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="GoliathSCBWWeaponGround@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="6"/>
+  <Arc value="29.9926"/>
+  <Period value="1.3125"/>
+  <Effect value="GoliathSCBWWeaponGround@Damage"/>
+  <Options index="NeverMiss" value="0"/>
+  <DamagePoint value="0.0834"/>
+  <MinScanRange value="6.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GoliathSCBWWeaponGround@Fake">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="CanInitiateAttackOrder" value="0"/>
+  <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+  <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+  <Options index="LinkedCooldown" value="0"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AcquirePrioritization value="ByDistanceFromTarget"/>
+  <Range value="6"/>
+  <Period value="1.04"/>
+  <Effect value="FakeWeaponDummy"/>
+  <MinScanRange value="6.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GoliathSCBWWeaponAir@Fake">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="CanInitiateAttackOrder" value="0"/>
+  <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+  <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+  <Options index="LinkedCooldown" value="0"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AcquirePrioritization value="ByDistanceFromTarget"/>
+  <Period value="1.04"/>
+  <Effect value="FakeWeaponDummy"/>
+  <MinScanRange value="6.5"/>
+  <Range value="6"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="MissileTurretSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
+  <DisplayEffect value="MissileTurretSCBWWeapon@Damage"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7"/>
+  <RangeSlop value="0"/>
+  <Period value="0.8608"/>
+  <Effect value="MissileTurretSCBWWeapon@CP"/>
+  <RandomDelayMax value="0.0625"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ValkyrieSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <Options index="DisplayCooldown" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+  <DisplayEffect value="ValkyrieSCBWWeapon@DamageExpl"/>
+  <DisplayAttackCount value="8"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="6"/>
+  <RangeSlop value="7"/>
+  <Period value="3.7631"/>
+  <DamagePoint value="0.0625"/>
+  <Backswing value="1.4"/>
+  <Effect value="ValkyrieSCBWWeapon@CP"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="SCVSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+  <DisplayEffect value="SCVSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.3125"/>
+  <Period value="1.5"/>
+  <Effect value="SCVSCBWWeapon@Damage"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GhostSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+  <DisplayEffect value="GhostSCBWWeapon@DamageConc"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7"/>
+  <Period value="1.375"/>
+  <DamagePoint value="0.083"/>
+  <Backswing value="1.167"/>
+  <Effect value="GhostSCBWWeapon@Impact"/>
+  <Options index="NeverMiss" value="0"/>
+  <Tip value="Weapon/Tip/ConcussiveWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="FirebatSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Tip value="Weapon/Tip/ConcussiveWeapon"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+  <DisplayEffect value="FirebatSCBWWeapon@DamageConc"/>
+  <DisplayAttackCount value="3"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <MinScanRange value="5"/>
+  <Range value="1"/>
+  <Marker>
+    <MatchFlags index="Id" value="1"/>
+  </Marker>
+  <Period value="1.375"/>
+  <DamagePoint value="0.01"/>
+  <Backswing value="1"/>
+  <Effect value="FirebatSCBWWeapon@CP"/>
+  <LegacyOptions index="Uninterruptible" value="1"/>
+  <UninterruptibleDuration value="0.125"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="FirebatSCBWWeapon@Bunker" parent="FirebatSCBWWeapon">
+  <Options index="Disabled" value="1"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="Melee" value="0"/>
+  <AcquireCliffLevelRange value="-0.5,0.5"/>
+  <MinScanRange value="5"/>
+  <AttackType value="Chaos"/>
+  <Effect value="FirebatSCBWWeapon@BunkerCliffCheck"/>
+  <Period value="1.375"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="MarineSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="NeverMiss" value="0"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+  <DisplayEffect value="MarineSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="5"/>
+  <Period value="0.9375"/>
+  <DamagePoint value="0.05"/>
+  <Backswing value="0.75"/>
+  <Effect value="MarineSCBWWeapon@Damage"/>
+  <MinScanRange value="5.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="SiegeTankSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="SiegeTankSCBWWeapon@DamageExpl"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7"/>
+  <Period value="2.212"/>
+  <Effect value="SiegeTankSCBWWeapon@Impact"/>
+  <DamagePoint value="0.0834"/>
+  <Options index="NeverMiss" value="0"/>
+  <AcquirePrioritization value="ByDistanceFromTarget"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <MinScanRange value="7.5"/>
+  <Arc value="360"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="SiegeTankSCBWWeapon@Fake">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="CanInitiateAttackOrder" value="0"/>
+  <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+  <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+  <Options index="LinkedCooldown" value="0"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AcquirePrioritization value="ByDistanceFromTarget"/>
+  <MinScanRange value="7.5"/>
+  <Range value="7"/>
+  <Period value="1.04"/>
+  <Effect value="FakeWeaponDummy"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="SiegeTankSCBWSiegedWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <Options index="DisplayCooldown" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="SiegeTankSCBWSiegedWeapon@DamageExpl"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="13.5"/>
+  <MinimumRange value="2"/>
+  <Period value="3.78"/>
+  <DamagePoint value="0.0834"/>
+  <Effect value="SiegeTankSCBWSiegedWeapon@InitialSet"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="VultureSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="VultureSCBWWeapon@DamageConc"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="1.9"/>
+  <Backswing value="0"/>
+  <Effect value="VultureSCBWWeapon@Set"/>
+  <DamagePoint value="0"/>
+  <Options index="NeverMiss" value="0"/>
+  <Tip value="Weapon/Tip/ConcussiveWeapon"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <RandomDelayMax value="0.0625"/>
+  <MinScanRange value="5.5"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="SpiderMineSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-spidermineex3.dds"/>
+  <DisplayEffect value="SpiderMineSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground;Player,Ally,Neutral,Structure,Hover,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AcquireScanFilters value="Visible;-"/>
+  <AcquireTargetSorts>
+    <SortArray value="SpiderMineSCBWWeapon@TargetSort"/>
+    <SortArray value="SpiderMineSCBWWeapon@TargetMarker"/>
+    <SortArray value="TSDistanceToTarget"/>
+  </AcquireTargetSorts>
+  <MinScanRange value="9"/>
+  <Range value="0.3125"/>
+  <RangeSlop value="1.5"/>
+  <TeleportResetRange value="2"/>
+  <Arc value="360"/>
+  <Period value="0.833"/>
+  <AttackType value="Chaos"/>
+  <Effect value="SpiderMineSCBWWeapon@Impact"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Moving"/>
+  <RandomDelayMin value="0"/>
+  <RandomDelayMax value="0.15"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="WraithSCBWWeaponAir">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+  <DisplayEffect value="WraithSCBWWeaponAir@DamageExpl"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="1.375"/>
+  <Effect value="WraithSCBWWeaponAir@CP"/>
+  <AllowedMovement value="Slowing"/>
+  <DamagePoint value="0.05"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <MinScanRange value="6.5"/>
+  <Range value="6"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="WraithSCBWWeaponGround">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+  <DisplayEffect value="WraithSCBWWeaponGround@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="1.675"/>
+  <Effect value="WraithSCBWWeaponGround@LM"/>
+  <AllowedMovement value="Slowing"/>
+  <Options index="NeverMiss" value="0"/>
+  <DamagePoint value="0.05"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <MinScanRange value="5.5"/>
+</CWeaponLegacy>
+<CWeaponStrafe id="VultureSCBWWeapon@StrafingWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Tip value="Weapon/Tip/ConcussiveWeapon"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="NeverMiss" value="0"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="VultureSCBWWeapon@DamageConc"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <ArcSlop value="0"/>
+  <Cost>
+    <Cooldown Link="Weapon/VultureSCBWWeapon"/>
+  </Cost>
+  <Period value="1.9"/>
+  <DamagePoint value="0"/>
+  <Backswing value="0"/>
+  <Effect value="VultureSCBWWeapon@StrafingSet"/>
+  <MinScanRange value="5.5"/>
+  <RangeSlop value="0"/>
+  <LoiterInnerRadius value="5"/>
+  <LoiterRadius value="5"/>
+</CWeaponStrafe>
+<CWeaponLegacy id="BroodlingSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+  <DisplayEffect value="BroodlingSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <MinScanRange value="15"/>
+  <Range value="0.1"/>
+  <Period value="0.9375"/>
+  <Effect value="BroodlingSCBWWeapon@Damage"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="InfestedTerranSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Options index="Melee" value="1"/>
+  <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+  <Icon value="Assets\Textures\btn-ability-zerg-banelingspooge.dds"/>
+  <DisplayEffect value="InfestedTerranSCBWWeapon@DamageExpl"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AcquireFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.0937"/>
+  <Period value="0.0625"/>
+  <DamagePoint value="0"/>
+  <Effect value="InfestedTerranSCBWWeapon@Impact"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Moving"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="LurkerSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+  <DisplayEffect value="LurkerSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7"/>
+  <Marker>
+    <MatchFlags index="Id" value="1"/>
+  </Marker>
+  <Period value="2.3125"/>
+  <DamagePoint value="0"/>
+  <Effect value="LurkerSCBWWeapon@CP"/>
+  <LegacyOptions index="KeepChanneling" value="1"/>
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+  <MinScanRange value="7"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="LurkerSCBWWeaponAlt" parent="LurkerSCBWWeapon">
+  <Options index="Disabled" value="1"/>
+  <MinScanRange value="7"/>
+  <Range value="7"/>
+  <Period value="2.3125"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="DroneSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+  <DisplayEffect value="DroneSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.5"/>
+  <Period value="1.5"/>
+  <Effect value="DroneSCBWWeapon@Damage"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Slowing"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="SporeColonySCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+  <DisplayEffect value="SporeColonySCBWWeapon@Damage"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="8"/>
+  <RangeSlop value="0"/>
+  <Period value="0.9375"/>
+  <Effect value="SporeColonySCBWWeapon@LM"/>
+  <RandomDelayMax value="0.0625"/>
+  <Arc value="360"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="DevourerSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+  <DisplayEffect value="DevourerSCBWWeapon@DamageExpl"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="6.25"/>
+  <Effect value="DevourerSCBWWeapon@LM"/>
+  <AllowedMovement value="Slowing"/>
+  <Range value="6"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <DamagePoint value="0.0625"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="MutaliskSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+  <DisplayEffect value="MutaliskSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="4"/>
+  <RangeSlop value="2"/>
+  <ArcSlop value="45"/>
+  <Marker>
+    <MatchFlags index="Id" value="1"/>
+  </Marker>
+  <Period value="1.6875"/>
+  <DamagePoint value="0"/>
+  <Effect value="MutaliskSCBWWeapon@InitialSet"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Slowing"/>
+  <AttackType value="Chaos"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GuardianSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+  <DisplayEffect value="GuardianSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="10"/>
+  <Period value="1.875"/>
+  <Effect value="GuardianSCBWWeapon@LM"/>
+  <AllowedMovement value="Slowing"/>
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="SunkenColonySCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+  <DisplayEffect value="SunkenColonySCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="7.5"/>
+  <ArcSlop value="45"/>
+  <Period value="2.125"/>
+  <DamagePoint value="0"/>
+  <Effect value="SunkenColonySCBWWeapon@CP"/>
+  <Options index="NeverMiss" value="0"/>
+  <RandomDelayMax value="0.0625"/>
+  <Arc value="360"/>
+  <LegacyOptions index="Uninterruptible" value="1"/>
+  <UninterruptibleDuration value="1.5625"/>
+  <Backswing value="1.5625"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="UltraliskSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+  <DisplayEffect value="UltraliskSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AcquirePrioritization value="ByAngle"/>
+  <Range value="1"/>
+  <Cost>
+    <Cooldown Link="Abil/UltraliskWeaponCooldown" Location="Unit" TimeUse="0.86"/>
+  </Cost>
+  <Period value="0.8437"/>
+  <DamagePoint value="0.25"/>
+  <Effect value="UltraliskSCBWWeapon@Damage"/>
+  <RangeSlop value="1.25"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ScourgeSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+  <DisplayEffect value="ScourgeSCBWWeapon@Damage"/>
+  <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.1"/>
+  <DamagePoint value="0.0625"/>
+  <Effect value="ScourgeSCBWWeapon@Set"/>
+  <LegacyOptions index="NoDeceleration" value="1"/>
+  <AllowedMovement value="Moving"/>
+  <AcquireFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="0.0625"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ZerglingSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Options index="Melee" value="1"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+  <DisplayEffect value="ZerglingSCBWWeapon@Damage"/>
+  <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="0.1"/>
+  <Period value="0.6"/>
+  <Effect value="ZerglingSCBWWeapon@Damage"/>
+  <RangeSlop value="1"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="HydraliskSCBWWeapon">
+  <EditorCategories value="Race:Zerg"/>
+  <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+  <DisplayEffect value="HydraliskSCBWWeapon@DamageExpl"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Period value="1.0312"/>
+  <DamagePoint value="0.08"/>
+  <Effect value="HydraliskSCBWWeapon@LM"/>
+  <Range value="5"/>
+  <Options index="NeverMiss" value="0"/>
+  <Tip value="Weapon/Tip/ExplosiveWeapon"/>
+  <MinScanRange value="5.5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="HydraliskSCBWWeaponAlt" parent="HydraliskSCBWWeapon">
+  <Marker Link="Weapon/HydraliskSCBWWeaponAlt"/>
+  <Cost>
+    <Cooldown Link="Weapon/HydraliskSCBWWeaponAlt"/>
+  </Cost>
+  <Effect value="HydraliskSCBWWeaponAlt@Impact"/>
+  <MinScanRange value="5.5"/>
+  <Period value="1.0312"/>
+  <DamagePoint value="0.08"/>
+  <Range value="5"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="StingerSCBWWeaponGround">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="NeverMiss" value="0"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="StingerSCBWWeaponGround@Damage"/>
+  <TargetFilters value="Ground,Structure,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="6"/>
+  <Period value="1.5"/>
+  <DamagePoint value="0.0625"/>
+  <Effect value="StingerSCBWWeaponGround@LM"/>
+  <AcquirePrioritization value="ByDistanceFromTarget"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="StingerSCBWWeapon">
+  <EditorCategories value="Race:Terran"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <DisplayEffect value="StingerSCBWWeapon@Damage"/>
+  <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <Range value="6"/>
+  <Period value="0.8"/>
+  <DamagePoint value="0.0625"/>
+  <Effect value="StingerSCBWWeapon@Damage"/>
+  <Options index="NeverMiss" value="0"/>
+  <AcquirePrioritization value="ByDistanceFromTarget"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="StingerSCBWWeapon@Air" parent="StingerSCBWWeapon">
+  <Options index="Hidden" value="1"/>
+  <TargetFilters value="Air,Structure,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="StingerSCBWWeapon@Fake">
+  <EditorCategories value="Race:Terran"/>
+  <Options index="Hidden" value="1"/>
+  <Options index="CanInitiateAttackOrder" value="0"/>
+  <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+  <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+  <Options index="LinkedCooldown" value="0"/>
+  <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+  <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+  <AcquirePrioritization value="ByDistanceFromTarget"/>
+  <Range value="6"/>
+  <Period value="1.04"/>
+  <Effect value="FakeWeaponDummy"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="LurkerMP">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+  <AttackType value="Chaos"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="Oracle">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="Spinesdisabled">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="VoidRaySwarmDisplayDummy">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="DisruptionBeam">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+  <AttackType value="Chaos"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="MothershipBeam">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+  <AttackType value="Chaos"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="VoidRaySwarm">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+  <AttackType value="Chaos"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="CrucioShockCannon">
+  <Effect value="SiegeTankSiegedWeapon@InitialSet"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GlaiveWurm">
+  <AttackType value="Chaos"/>
+  <Effect value="GlaiveWurm@InitialSet"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="BattlecruiserWeaponSwitch">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="BroodlingEscort">
+  <Effect value="BroodlordEscort@MissCheck"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ImpalerTentacle">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="PsionicShockwave">
+  <Effect value="ArchonWeapon@InitialSet"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="TalonsMissile">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="TwinIbiksCannon">
+  <Effect value="PlanetaryFortressWeapon@MissCheck"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="AcidSaliva">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="Adept">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="BacklashRockets">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="HellionTank">
+  <AttackType value="Chaos"/>
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="HighTemplarWeapon">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="HydraliskMelee">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="InfernalFlameThrower">
+  <AttackType value="Chaos"/>
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+</CWeaponLegacy>
+<CWeaponStrafe id="InterceptorBeam">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponStrafe>
+<CWeaponLegacy id="LocustMP">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="LocustMPMelee">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="NeedleSpines">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="P38ScytheGuassPistol">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ParticleDisruptors">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="PhaseDisruptors">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="PhotonCannon">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="RavagerWeapon">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="RoachMelee">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="Talons">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="TempestGround">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ThermalBeam">
+  <AttackType value="Chaos"/>
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ThermalLances">
+  <AttackType value="Chaos"/>
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="WidowMineDummy">
+  <AttackType value="Chaos"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="90mmCannons">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="AutoTurret">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="C10CanisterRifle">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="GuassRifle">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="LiberatorAGWeapon">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="PunisherGrenades">
+  <Effect value="MarauderWeapon@MissCheck"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="ThorsHammer">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="TwinGatlingCannon">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="TyphoonMissilePod">
+  <Options index="NeverMiss" value="0"/>
+</CWeaponLegacy>
+<CWeaponLegacy id="DisruptionBeamDisplayDummy">
+  <Tip value="Weapon/Tip/PierceWeapon"/>
+  <AttackType value="Chaos"/>
+</CWeaponLegacy>
+
+</Catalog>

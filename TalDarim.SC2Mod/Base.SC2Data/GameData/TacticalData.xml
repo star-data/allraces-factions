@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTacticalOrder id="TalDarimCustodesTerrazineFog">
+        <Abil value="TalDarimCustodesTerrazineFog"/>
+        <TargetFind value="TalDarimTerrazineFog"/>
+        <Validator value="CasterLifeGT60Percent"/>
+    </CTacticalOrder>
+    <CTacticalSet id="TalDarimCustodes">
+        <Array value="TalDarimCustodesDrainSupplicant"/>
+        <Array value="TalDarimCustodesTerrazineFog"/>
+    </CTacticalSet>
+    <CTacticalOrder id="TalDarimRiddlerDrainSupplicant">
+        <Abil value="TalDarimDrainSupplicant"/>
+        <Validator value="TalDarimAIRiddlerSoulLeech"/>
+    </CTacticalOrder>
+    <CTacticalOrder id="TalDarimCustodesDrainSupplicant">
+        <Abil value="TalDarimDrainSupplicant"/>
+        <Validator value="CasterLifeLT50Percent"/>
+    </CTacticalOrder>
+    <CTacticalOrder id="TalDarimRiddlerEnshroud">
+        <Abil value="TalDarimRiddlerEnshroud"/>
+        <TargetFind value="TalDarimEnshroud"/>
+    </CTacticalOrder>
+    <CTacticalOrder id="TalDarimSupplicant">
+        <Abil value="TalDarimDrainSupplicant"/>
+        <Validator value="TalDarimAISupplicantSoulLeech"/>
+    </CTacticalOrder>
+    <CTacticalSet id="TalDarimRiddler">
+        <Array value="TalDarimRiddlerDrainSupplicant"/>
+        <Array value="TalDarimRiddlerEnshroud"/>
+    </CTacticalSet>
+</Catalog>

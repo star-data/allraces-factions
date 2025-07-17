@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTurret id="CitadelAAT">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="360"/>
+        <YawRate value="299.8828"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="UEDTurretSpartan">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="159.994"/>
+        <YawRate value="720"/>
+        <YawIdleRate value="360"/>
+        <Fidget DelayMax="12" DelayMin="5" TurnAngle="29.9816" TurningRate="34.9804"/>
+    </CTurret>
+    <CTurret id="NapoleonMBT">
+        <Idle value="ResetIfMoving"/>
+        <YawArc value="360"/>
+        <YawRate value="499.9218"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="HeavyTower">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="299.8828"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="DrakkarAPC">
+        <YawArc value="360"/>
+        <YawRate value="720.879"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="MissileTower">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="499.9218"/>
+        <YawIdleRate value="45"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+    <CTurret id="SuppressionTower">
+        <Idle value="Hold"/>
+        <YawArc value="360"/>
+        <YawRate value="499.746"/>
+        <Fidget DelayMax="30" DelayMin="10"/>
+    </CTurret>
+</Catalog>

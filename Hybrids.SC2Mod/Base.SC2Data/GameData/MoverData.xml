@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CMoverMissile id="HybridSpiritSacrificingRevealMover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="300"/>
+            <MaxSpeed value="56"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="HybridPsionicTornadoMover">
+        <MotionPhases>
+            <Driver value="Throw"/>
+            <Acceleration value="210"/>
+            <Speed value="6"/>
+            <MaxSpeed value="60"/>
+            <Clearance value="0.5"/>
+            <ClearanceLookahead value="3"/>
+            <ClearanceAcceleration value="75"/>
+            <ClearanceIgnoresTargetProximity value="1"/>
+            <TurnType value="Optimal"/>
+            <Outro value="5"/>
+            <Timeout value="0.9"/>
+            <ThrowVector value="0,-1,0"/>
+            <FlightTime value="0.9"/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Throw"/>
+            <Speed value="0.0078"/>
+            <MaxSpeed value="0.0078"/>
+            <Clearance value="0.5"/>
+            <ClearanceLookahead value="3"/>
+            <ClearanceAcceleration value="75"/>
+            <ClearanceIgnoresTargetProximity value="1"/>
+            <TurnType value="Optimal"/>
+            <Outro value="0.1"/>
+            <Timeout value="1"/>
+            <ThrowVector value="0,-1,0"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+            <FlightTime value="1"/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Throw"/>
+            <Acceleration value="0.25"/>
+            <Speed value="0.0078"/>
+            <MaxSpeed value="4"/>
+            <Clearance value="0.5"/>
+            <ClearanceLookahead value="3"/>
+            <Outro value="5"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+            <FlightTime value="2"/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Throw"/>
+            <Acceleration value="0.25"/>
+            <Speed value="0.0078"/>
+            <MaxSpeed value="4"/>
+            <Clearance value="0.5"/>
+            <ClearanceLookahead value="3"/>
+            <Outro value="-2.25,-2"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+            <FlightTime value="2"/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Throw"/>
+            <Acceleration value="0.25"/>
+            <Speed value="0.0078"/>
+            <MaxSpeed value="4"/>
+            <Clearance value="0.25"/>
+            <ClearanceLookahead value="3"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+            <FlightTime value="2"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="LiberatorAGMissile2">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="40"/>
+            <ClearanceAcceleration value="75"/>
+            <ActorTracking value="Actual"/>
+            <Outro value="-1"/>
+            <RotationLaunchActorType value="LaunchToTarget"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRConstructWeaponAntiAir@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="18"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRVoidRiftTrain@Mover">
+        <MotionPhases>
+            <Driver value="Throw"/>
+            <Acceleration value="1"/>
+            <Speed value="12"/>
+            <MaxSpeed value="12"/>
+            <Outro value="2,4"/>
+            <ThrowVector value="0,0,1"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="1"/>
+            <Speed value="6"/>
+            <MaxSpeed value="12"/>
+            <ActorTracking value="Actual"/>
+            <YawPitchRoll value="119.8828"/>
+            <YawPitchRollAccel value="180"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRDreadnokWeapon@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="18.75"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRConsumeDNA@Mover">
+        <MotionPhases>
+            <Driver value="Throw"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="7"/>
+            <ArrivalTestType value="2D"/>
+            <BlendType value="Linear"/>
+            <Outro value="4,4.5"/>
+            <ThrowVector value="0,-1,0"/>
+            <ThrowBandYaw value="180,-180,14.9963,-14.9963"/>
+            <ThrowBandPitch value="90,4.9987"/>
+        </MotionPhases>
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="10"/>
+            <TurnType value="Optimal"/>
+            <ArrivalTestType value="2D"/>
+            <BlendType value="Linear"/>
+            <RotationActorType value="LookAtTarget"/>
+            <YawPitchRoll value="MAX"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRSentinelJump@Mover">
+        <Flags index="RestoreHeight" value="1"/>
+        <MotionPhases>
+            <Driver value="AdaptableParabola"/>
+            <MinSpeed value="16"/>
+            <MaxSpeed value="10"/>
+            <ActorTracking value="Actual"/>
+            <Outro value="-0.5,-0.1"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <AdaptableParabolaIsUpright value="1"/>
+            <AdaptableParabolaClearance value="3,0.1"/>
+            <AdaptableParabolaDistances index="Launch" value="1"/>
+            <AdaptableParabolaDistances index="PreApex" value="0.3"/>
+            <AdaptableParabolaDistances index="PostApex" value="0.3"/>
+            <AdaptableParabolaDistances index="Land" value="1"/>
+            <AdaptableParabolaAccels index="Launch" value="0"/>
+            <AdaptableParabolaAccels index="Ascent" value="0"/>
+            <AdaptableParabolaAccels index="Apex" value="0"/>
+            <AdaptableParabolaAccels index="Descent" value="0"/>
+            <AdaptableParabolaAccels index="Land" value="0"/>
+        </MotionPhases>
+        <MotionPhases Driver="Guidance" MaxSpeed="40" YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRStriderWeapon@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MinSpeed value="5"/>
+            <MaxSpeed value="30"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRWarbringerWeaponMaceCannon@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="20"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRChimeraRangedWeapon@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="18.75"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRWarriorWeapon@Mover">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="18.75"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
+    </CMoverMissile>
+    <CMoverMissile id="ZHBRPsiOrb@Missile" parent="MissileDefault">
+        <MotionPhases index="0">
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="10"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+    </CMoverMissile>
+</Catalog>

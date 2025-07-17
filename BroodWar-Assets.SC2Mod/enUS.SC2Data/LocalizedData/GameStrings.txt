@@ -1,0 +1,2 @@
+﻿DocInfo/DescLong=Online version of the SC Evolution Complete Assets
+DocInfo/Name=[AR3] BroodWar-Assets
