@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocInfo>
-    <Dependencies>
-        <Value>bnet:Void (Mod)/0.0/999,file:Mods/Void.SC2Mod</Value>
-        <Value>bnet:[AR2] BroodWar Assets/0.0/455593,file:Assets\all-races-factions-assets\BroodWar-Assets.SC2Mod</Value>
-    </Dependencies>
     <Icon>
         <Value>logo-small.png</Value>
     </Icon>
+    <Dependencies>
+        <Value>bnet:Void (Mod)/0.0/999,file:Mods/Void.SC2Mod</Value>
+        <Value>bnet:[AR2] BroodWar Assets/0.0/455593,file:Mods\allraces-factions\BroodWar-Assets.SC2Mod</Value>
+    </Dependencies>
 </DocInfo>

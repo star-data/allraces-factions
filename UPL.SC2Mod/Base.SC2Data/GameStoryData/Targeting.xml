@@ -302,16 +302,16 @@
         <DataRecord Entry="Effect,Test_HornerAirFleetTargetingDummy"/>
         <DataRecord Entry="Unit,Test_HornerAirFleetTargeter"/>
     </CDataCollectionAbil>
-    <CUnit id="Marine">
-        <BehaviorArray Link="ClaymoreMineHaveCharges"/>
-        <AbilArray Link="ClaymoreMineDummy"/>
-        <AbilArray Link="ClaymoreMineExecute"/>
-        <AbilArray Link="ClaymoreMinePlace"/>
-        <CardLayouts index="0">
-            <LayoutButtons Face="ClaymoreMinePlace" Type="AbilCmd" AbilCmd="ClaymoreMineDummy,Execute" Row="2" Column="1"/>
-        </CardLayouts>
-        <HotkeyCategory value=""/>
-    </CUnit>
+<!--    <CUnit id="Marine">-->
+<!--        <BehaviorArray Link="ClaymoreMineHaveCharges"/>-->
+<!--        <AbilArray Link="ClaymoreMineDummy"/>-->
+<!--        <AbilArray Link="ClaymoreMineExecute"/>-->
+<!--        <AbilArray Link="ClaymoreMinePlace"/>-->
+<!--        <CardLayouts index="0">-->
+<!--            <LayoutButtons Face="ClaymoreMinePlace" Type="AbilCmd" AbilCmd="ClaymoreMineDummy,Execute" Row="2" Column="1"/>-->
+<!--        </CardLayouts>-->
+<!--        <HotkeyCategory value=""/>-->
+<!--    </CUnit>-->
     <CUnit id="Test_HornerAirFleetTargeter">
         <Race value="Terr"/>
         <FlagArray index="Turnable" value="0"/>

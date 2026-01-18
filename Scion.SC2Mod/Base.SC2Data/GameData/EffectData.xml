@@ -3934,7 +3934,10 @@
     </CEffectSet>
     <CEffectApplyBehavior id="IncendiaryInfusionAA" parent="ScionApplyBehavior" Race="Xayid"/>
     <CEffectApplyBehavior id="IncendiaryInfusionAG" parent="ScionApplyBehavior" Race="Xayid"/>
-    <CEffectSet id="InstantUnburrow">
+<!--    <CEffectSet id="InstantUnburrow">-->
+<!--        <EffectArray value="MoleUnburrowSet"/>-->
+<!--    </CEffectSet>-->
+    <CEffectSet id="InstantUnburrowScion">
         <EffectArray value="MoleUnburrowSet"/>
     </CEffectSet>
     <CEffectSet id="JupiterHeatAddPoint">

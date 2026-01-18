@@ -39,7 +39,10 @@
         <WhichLocation Value="CasterUnit"/>
         <Amount value="-0.25"/>
     </CEffectApplyForce>
-    <CEffectSet id="InstantUnburrow">
+<!--    <CEffectSet id="InstantUnburrow">-->
+<!--        <EffectArray value="HunterRegenesisRemoveBehavior"/>-->
+<!--    </CEffectSet>-->
+    <CEffectSet id="InstantUnburrowDragons">
         <EffectArray value="HunterRegenesisRemoveBehavior"/>
     </CEffectSet>
     <CEffectApplyBehavior id="ArkwyrmTerritorialDiveApplyBehavior">

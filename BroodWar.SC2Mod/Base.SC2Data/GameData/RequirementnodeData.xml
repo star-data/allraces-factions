@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Catalog>
-<CRequirementAllowUpgrade default="1" id="SCBW_AllowUpgrade">
-  <Link value="##x##"/>
-  <?token id="x" value="Ball" type="CStringLink"?>
-</CRequirementAllowUpgrade>
-<CRequirementCountUpgrade default="1" id="SCBW_UpgradeCount">
-  <Count Link="##x##" State="CompleteOnly"/>
-  <?token id="x" value="Research" type="CUpgradeLink"?>
-</CRequirementCountUpgrade>
+    <CRequirementAllowUpgrade default="1" id="SCBW_AllowUpgrade">
+      <Link value="##x##"/>
+      <?token id="x" value="Ball" type="CStringLink"?>
+    </CRequirementAllowUpgrade>
+    <CRequirementCountUpgrade default="1" id="SCBW_UpgradeCount">
+      <Count Link="##x##" State="CompleteOnly"/>
+      <?token id="x" value="Research" type="CUpgradeLink"?>
+    </CRequirementCountUpgrade>
+    <CRequirementAllowUnit default="1" id="SCBW_AllowUnit">
+        <Link value="##x##"/>
+        <?token id="x" value="Ball" type="CUnitLink"?>
+    </CRequirementAllowUnit>
+
+
+<CRequirementAllowUpgrade id="##x##@Allow" parent="SCBW_AllowUpgrade"/>
+<CRequirementCountUpgrade id="##x##@Count" parent="SCBW_UpgradeCount"/>
+<CRequirementAllowUnit id="##x##@AllowUnit" parent="SCBW_AllowUnit"/>
+<CRequirementAnd id="##id##@Show"/>
+<CRequirementAnd id="##id##"/>
+<CRequirementAnd id="##x##"/>
+
 <CRequirementCountUpgrade default="1" id="SCBW_UpgradeQoB">
   <Count Link="##x##" State="QueuedOrBetter"/>
   <?token id="x" value="Research" type="CUpgradeLink"?>
 </CRequirementCountUpgrade>
-<CRequirementAllowUnit default="1" id="SCBW_AllowUnit">
-  <Link value="##x##"/>
-  <?token id="x" value="Ball" type="CUnitLink"?>
-</CRequirementAllowUnit>
 <CRequirementAnd default="1" id="SCBW_UnitReq">
   <OperandArray value="##x##@AllowUnit" index="0"/>
   <?token id="x" value="##id##" type="CUnitLink"?>

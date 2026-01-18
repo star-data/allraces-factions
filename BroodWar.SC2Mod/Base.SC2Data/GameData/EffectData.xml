@@ -4251,18 +4251,17 @@
   <ValidatorArray value="NotLarvaSCBW"/>
 </CEffectCreateUnit>
 <CEffectSet id="InstantUnburrow">
-  <EffectArray value="InstantUnburrowMore"/>
+  <EffectArray value="InstantUnburrowBW"/>
 </CEffectSet>
-<CEffectSet id="InstantUnburrowMore" parent="DisguiseSetDefault">
-  <EditorCategories value="Race:Neutral"/>
-  <EffectArray index="0" value="LurkerSCBW@BurrowCancel"/>
-  <EffectArray index="1" value="LurkerSCBW@Unburrow"/>
+<CEffectSet id="InstantUnburrowBW">
+  <EffectArray value="LurkerSCBW@BurrowCancel"/>
+  <EffectArray value="LurkerSCBW@Unburrow"/>
   <EffectArray value="ZergSCBW@BurrowCancel"/>
   <EffectArray value="ZergSCBW@Unburrow"/>
   <EffectArray value="SpiderMineSCBW@BurrowClearMorph"/>
 </CEffectSet>
 <CEffectSet id="GravitonBeamUnburrowTake2Set">
-  <EffectArray value="InstantUnburrowMore"/>
+  <EffectArray value="InstantUnburrowBW"/>
 </CEffectSet>
 <CEffectLaunchMissile id="ParasiticBombLM">
   <ValidatorArray value="IsNotInterceptor"/>
