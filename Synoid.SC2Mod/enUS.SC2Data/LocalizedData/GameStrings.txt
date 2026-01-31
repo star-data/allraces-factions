@@ -442,7 +442,7 @@ Button/Tooltip/WarhoundSawblade=The Rancor will throw an energy sawblade that wi
 Button/Tooltip/ZerglingHolo=Fast melee creature. Lasts 20 seconds.<n/><n/><c val="80FFFF">TIP: This unit has reduced collision radius to allow for slightly more DPS, go nuts.</c><n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/ZerglingHolo2=Fast melee creature. Can morph into a Baneling.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/ZerglingProjection=Creates one psionic projections of zerglings which has similar attack to Zergling, but more shield.<n/><n/>Lasts 40 seconds.
-DocInfo/DescLong=Synoid, Eschaton race<n/>Author: Hinestraza
+DocInfo/DescLong=Synoid, Eschaton race<n/>Author: Hinestraza 
 DocInfo/Name=[AR2] Synoid
 DocInfo/PatchNote001=Just found out about this section of the map editor, expect more info from here soon!
 DocInfo/PatchNote002=Just added screenshots to to make the mod page more apealing.

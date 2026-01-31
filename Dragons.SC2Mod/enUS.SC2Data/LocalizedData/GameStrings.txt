@@ -396,7 +396,7 @@ Button/Tooltip/VolcanicHarbinger=Heavy siege flyer that charges up attacks. Can 
 Button/Tooltip/VolcanicHarbingerOverload=Overloads the next attack to hit an additional time for each charge.<n/><c val="#ColorAttackInfo">Maximum of 3 charges.</c></n><c val="FF0000">Cannot charge while attacking.</c>
 Button/Tooltip/VolcanicHarbingerOverloadPlasmaCatalyst=Overloads the next attack to hit an additional time for each charge.<n/><c val="#ColorAttackInfo">Maximum of 3 charges.</c>
 Commander/Name/DragonCommander=Dragon Commander
-DocInfo/DescLong=Includes Dragons Race For All Races Mods<n/>Author: SkeletalHammer <n/>SC2 All Races: Visceroid#0249 
+DocInfo/DescLong=Includes Dragons Race For All Races Mods<n/>Author: SkeletalHammer <n/>SC2 All Races: Visceroid#0249  
 DocInfo/HowToPlayAdvanced00=Dragon workers can only construct primary production structures.
 DocInfo/HowToPlayAdvanced01=Primary production structures can propogate tech structures and secondary production structures.
 DocInfo/HowToPlayAdvanced02=Utilize propogated structures to maximize the effect of Deep Ones.
@@ -852,6 +852,7 @@ Race/Name/Dragon=Dragon
 RequirementNode/Tooltip/CountBehaviorAugmentationPitCompleteOnlyAtUnit2977094741=Augmentation Pit
 RequirementNode/Tooltip/CountUpgradeRazorbackMigratoryEnduranceCompleteOnly2219638757=Augment Migratory Endurance at a Frontier Deep One Augmentation Pit
 RequirementNode/Tooltip/LT2695958664CountUnitVolcanicHarbingerOverloadQueuedOrBetterAtUnit3=Overload cannot exceed level 3
+UI/HelpMenuDialogTechGlossary_Control_Unit/Category/DragonUnits=Dragon Units
 UI/ResourceName3=Rage
 UI/ResourceSupplyToolTip_Dragon=All living units cost supply. Propogate Razorbacks to increase supply.
 UI/ResourceToolTip3=Rage is used to Ascend Dragon units and by certain Dragon abilities. Gain Rageby spending resources or killing enemies. Ascended Dragons return some of the Rage spent to make them when they die in battle.
@@ -1006,4 +1007,3 @@ Weapon/Name/UnseenBeastExploration=Unseen Beast - Exploration
 Weapon/Name/UnseenBeastSpiritSmash=Spirit Smash
 Weapon/Name/VolcanicHarbingerAscendedPlasmaFlare=Plasma Flare
 Weapon/Name/VolcanicHarbingerPlasmaFlare=Plasma Flare
-UI/HelpMenuDialogTechGlossary_Control_Unit/Category/DragonUnits=Dragon Units

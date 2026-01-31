@@ -569,6 +569,7 @@ Button/Tooltip/UmojanWhirlwind=Slow missile artillery. With the help of a spotte
 Button/Tooltip/WidowMine=Robotic mine. Can launch self at nearby enemy units when burrowed, dealing damage in a small area around the target. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/YamatoGun2=Blasts a target with a devastating plasma cannon, causing 300 damage.
 ConsoleSkin/Description/ConsoleTerran_Silver=Polish up your console with the gleaming styling of Tyrador.
+DocInfo/DescLong= 
 DocInfo/Name=[AR2] Umojan
 Effect/Name/UmojanATAPlasmaBatteryCP=ATA Plasma Battery
 Effect/Name/UmojanATAPlasmaBatteryLM=ATA Plasma Battery

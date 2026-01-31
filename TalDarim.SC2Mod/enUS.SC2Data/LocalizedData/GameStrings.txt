@@ -476,7 +476,7 @@ Button/Tooltip/TalDarimWrathwalkerAirTargeting=The Wrathwalker can attack air un
 Button/Tooltip/TalDarimWrathwalkerCliffWalk=The Wrathwalker can walk up and down cliffs.
 Button/Tooltip/WarpInTalDarimChampionVoidShard=Melee anti-armour specialist. Can use Psionic Resurrection.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 ConsoleSkin/Description/ConsoleProtoss_Forged=Enhance your console with the brooding style of Tal'darim chic.
-DocInfo/DescLong=Tal'Darim Faction mod<n/>by Cornebre 
+DocInfo/DescLong=Tal'Darim Faction mod<n/>by Cornebre  
 DocInfo/Name=[AR2] Taldarim
 Effect/Name/DarkTemplarVoidStasisIterateTransport=Tal'Darim - Blood Hunter - Void Stasis Iterate Transport
 Effect/Name/TalDarimAscendantMindBlastDamage=Tal'Darim - Ascendant - Mind Blast Damage

@@ -3205,13 +3205,25 @@
         <EffectSuccess value="MirrorGenetronPowerSupplyGeneratorAB"/>
         <EffectFailure value="MirrorGenetronPowerSupplyGeneratorRBSet"/>
     </CEffectUserData>
+
+    <!-- Required Modifications if Used With Scion Races-->
     <CEffectSet id="MirrorGenetronPowerSupplyRBSet">
-        <EditorCategories value="Race:Genetron"/>
+        <EffectArray value="MirrorGenetronPowerSupplyRBSetUnits"/>
+        <EffectArray value="MirrorGenetronPowerSupplyStoreEnergyDataSet0"/>
+    </CEffectSet>
+    <!-- Required Modifications if Used With Scion Races-->
+    <CEffectSet  id="MirrorGenetronPowerSupplyRBSetUnits">
         <EffectArray value="MirrorGenetronPowerSupplyProcessingCoreRB"/>
         <EffectArray value="MirrorGenetronPowerSupplyRelayTowerRB"/>
         <EffectArray value="MirrorGenetronPowerSupplyGeneratorRB"/>
-        <EffectArray value="MirrorGenetronPowerSupplyStoreEnergyDataSet0"/>
     </CEffectSet>
+<!--    <CEffectSet id="MirrorGenetronPowerSupplyRBSet">-->
+<!--        <EditorCategories value="Race:Genetron"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyProcessingCoreRB"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyRelayTowerRB"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyGeneratorRB"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyStoreEnergyDataSet0"/>-->
+<!--    </CEffectSet>-->
     <CEffectSet id="MirrorGenetronPowerSupplyRelayTowerRBSet">
         <EditorCategories value="Race:Genetron"/>
         <EffectArray value="MirrorGenetronPowerSupplyRelayTowerRB"/>
@@ -3261,13 +3273,25 @@
         <EffectArray value="MirrorGenetronPowerSupplyProcessingCoreData"/>
     </CEffectSet>
     <CEffectSet id="MirrorGenetronPowerSupplySet">
-        <EditorCategories value="Race:Genetron"/>
         <EffectArray value="MirrorGenetronPowerSupplyEnergyLossMU"/>
-        <EffectArray value="MirrorGenetronPowerSupplyProcessingCoreData"/>
-        <EffectArray value="MirrorGenetronPowerSupplyRelayTowerData"/>
+        <EffectArray value="MirrorGenetronPowerSupplySetUnits"/>
         <EffectArray value="MirrorGenetronPowerSupplyMU"/>
         <EffectArray value="MirrorGenetronPowerSupplyStoreEnergyData"/>
     </CEffectSet>
+    <!-- Required Modifications if Used With Scion Races-->
+    <CEffectSet id="MirrorGenetronPowerSupplySetUnits">
+        <EffectArray value="MirrorGenetronPowerSupplyProcessingCoreData"/>
+        <EffectArray value="MirrorGenetronPowerSupplyRelayTowerData"/>
+    </CEffectSet>
+
+<!--    <CEffectSet id="MirrorGenetronPowerSupplySet">-->
+<!--        <EditorCategories value="Race:Genetron"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyEnergyLossMU"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyProcessingCoreData"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyRelayTowerData"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyMU"/>-->
+<!--        <EffectArray value="MirrorGenetronPowerSupplyStoreEnergyData"/>-->
+<!--    </CEffectSet>-->
     <CEffectUserData id="MirrorGenetronPowerSupplyStoreEnergyData">
         <EditorCategories value="Race:Genetron"/>
         <Key value="Energy"/>

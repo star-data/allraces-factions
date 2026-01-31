@@ -5,7 +5,7 @@
     </Icon>
     <Dependencies>
         <Value>bnet:Void (Mod)/0.0/999,file:Mods/Void.SC2Mod</Value>
-        <Value>bnet:[AR3] AllRaces-Assets/0.0/332433,file:Mods\allraces-factions\Hybrids-Assets.SC2Mod</Value>  
+        <Value>bnet:[AR3] AllRaces-Assets/0.0/332433,file:Mods\allraces-factions\Hybrids-Assets.SC2Mod</Value>
     </Dependencies>
     <Preload>
         <Value>GameLink:Unit;ZHBRRaceControl</Value>

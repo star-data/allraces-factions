@@ -1976,9 +1976,9 @@ Error/MustTargetBiologicalOrMechanicalUnits=Must target biological or mechanical
 Error/TargetUnderInfestation=Target structure is already under infestation
 LookAtType/SunkenColonySCBW=SunkenColonySCBW
 Name/SCBW_Build=SCBW_Build
-Race/Name/BWPr=BW Protoss
-Race/Name/BWTe=BW Terran
-Race/Name/BWZe=BW Zerg
+Race/Name/BWPr=Protoss
+Race/Name/BWTe=Terran
+Race/Name/BWZe=Zerg
 RequirementNode/Tooltip/ArbiterSCBWEnergyUpgrade@Count=<d stringRef="Button,ArbiterSCBWEnergyUpgrade,Name"/> at the <d stringRef="Unit,ArbiterTribunalSCBW,Name"/>
 RequirementNode/Tooltip/ArbiterSCBWRecallResearch@Count=<d stringRef="Button,ArbiterSCBWRecallResearch,Name"/> at the <d stringRef="Unit,ArbiterTribunalSCBW,Name"/>
 RequirementNode/Tooltip/ArbiterSCBWStasisFieldResearch@Count=<d stringRef="Button,ArbiterSCBWStasisFieldResearch,Name"/> at the <d stringRef="Unit,ArbiterTribunalSCBW,Name"/>
