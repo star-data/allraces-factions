@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CDataCollectionAbil id="HybridSpiritSiegeMod">
+        <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
+        <TechInfoAbil value="ZHBRSpiritSiegeMode"/>
+        <Button value="HybridSpiritSiegeMode"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="ZHBRAcceleration">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
         <DataRecord Entry="Abil,ZHBRAcceleration"/>
@@ -9,6 +14,18 @@
         <DataRecord Entry="Requirement,ZHBRAcceleration@Use"/>
         <DataRecord Entry="Requirement,ZHBRAcceleration@Research"/>
         <DataRecord Entry="Upgrade,ZHBRAcceleration"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="ZHBRWormhole">
+        <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
+        <DataRecord Entry="Abil,ZHBRWormhole"/>
+        <DataRecord Entry="Button,ZHBRWormhole"/>
+        <DataRecord Entry="Effect,ZHBRWormhole@Teleport"/>
+        <DataRecord Entry="Actor,ZHBRWormhole@TeleportOriginModel"/>
+        <DataRecord Entry="Actor,ZHBRWormhole@TeleportStopModel"/>
+        <DataRecord Entry="Actor,ZHBRWormhole@TeleportSound"/>
+        <DataRecord Entry="Model,ZHBRWormhole@TeleportOriginModel"/>
+        <DataRecord Entry="Model,ZHBRWormhole@TeleportStopModel"/>
+        <DataRecord Entry="Sound,ZHBRWormhole@Teleport"/>
     </CDataCollectionAbil>
     <CDataCollectionUpgrade id="ZHBRAirArmorUpgradeLevel2">
         <EditorCategories value="DataGroup:Research,Race:ZHBR"/>
@@ -75,11 +92,71 @@
         <DataRecord Entry="Unit,ZHBRConductor"/>
         <DataRecord Entry="Sound,ZHBRConductor@DeathExplosion"/>
         <DataRecord Entry="Model,ZHBRConductor@Portrait"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
     </CDataCollectionUnit>
+    <CDataCollectionAbil id="ZHBRDeactivateEvaporator">
+        <EditorCategories value="Race:ZHBR,DataGroup:Ability"/>
+        <DataRecord Entry="Abil,ZHBRStriderActivateEvaporator"/>
+        <DataRecord Entry="Actor,ZHBRDeactivateEvaporator@LaunchSound"/>
+        <DataRecord Entry="Actor,ZHBRDeactivateEvaporator@BehaviorModelUI"/>
+        <DataRecord Entry="Actor,ZHBRDeactivateEvaporator@Launch"/>
+        <DataRecord Entry="Actor,ZHBRDeactivateEvaporator@Range"/>
+        <DataRecord Entry="Behavior,ZHBRDeactivateEvaporator"/>
+        <DataRecord Entry="Button,HybridStriderDeactivateEvaporator"/>
+        <DataRecord Entry="Effect,ZHBRDeactivateEvaporator@ApplyBehavior"/>
+        <DataRecord Entry="Effect,ZHBRDeactivateEvaporator@Set"/>
+        <DataRecord Entry="Model,ZHBRDeactivateEvaporator@BehaviorModelUI"/>
+        <DataRecord Entry="Model,ZHBRDeactivateEvaporator@Launch"/>
+        <DataRecord Entry="Sound,ZHBRDeactivateEvaporator@LaunchSound"/>
+        <Button value="HybridStriderDeactivateEvaporator"/>
+        <TechInfoAbil value="ZHBRStriderActivateEvaporator"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="ZHBRPounce">
+        <EditorCategories value="Race:ZHBR,DataGroup:Ability"/>
+        <DataRecord Entry="Abil,ZHBRChimeraPounce"/>
+        <DataRecord Entry="Actor,ZHBRPounce@LaunchSound"/>
+        <DataRecord Entry="Actor,ZHBRPounce@BehaviorModelUI"/>
+        <DataRecord Entry="Actor,ZHBRPounce@Launch"/>
+        <DataRecord Entry="Actor,ZHBRPounce@Range"/>
+        <DataRecord Entry="Behavior,ZHBRChimera@Pounce"/>
+        <DataRecord Entry="Button,ZHBRChimera@Pounce"/>
+        <DataRecord Entry="Effect,ZHBRPounce@ApplyBehavior"/>
+        <DataRecord Entry="Effect,ZHBRPounce@Set"/>
+        <DataRecord Entry="Model,ZHBRPounce@BehaviorModelUI"/>
+        <DataRecord Entry="Model,ZHBRPounce@Launch"/>
+        <DataRecord Entry="Sound,ZHBRPounce@LaunchSound"/>
+        <Button value="ZHBRChimera@Pounce"/>
+        <TechInfoAbil value="ZHBRChimeraPounce"/>
+    </CDataCollectionAbil>
+    <CDataCollectionAbil id="ZHBRDomination">
+        <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
+        <DataRecord Entry="Abil,ZHBRDominatorDomination@ZHBRDomination"/>
+        <DataRecord Entry="Actor,ZHBRDomination@Beam"/>
+        <DataRecord Entry="Actor,ZHBRDomination@SoundStart"/>
+        <DataRecord Entry="Actor,ZHBRDomination@SoundImpact"/>
+        <DataRecord Entry="Actor,ZHBRDomination@Range"/>
+        <DataRecord Entry="Behavior,ZHBRDomination"/>
+        <DataRecord Entry="Button,ZHBRDomination"/>
+        <DataRecord Entry="Effect,ZHBRDomination@ApplyBuff"/>
+        <DataRecord Entry="Model,ZHBRDomination@Beam"/>
+        <DataRecord Entry="Sound,ZHBRDomination@Start"/>
+        <DataRecord Entry="Sound,ZHBRDomination@Impact"/>
+        <DataRecord Entry="Validator,ZHBRWeakMind@TargetHasNoBuff"/>
+        <DataRecord Entry="Validator,ZHBRWeakMind@TargetHasBuff"/>
+        <DataRecord Entry="Actor,ZHBRDomination@CursorSplat"/>
+        <DataRecord Entry="Effect,ZHBRDomination@SearchArea"/>
+        <DataRecord Entry="Effect,ZHBRDomination@ImpactSet"/>
+        <DataRecord Entry="Effect,ZHBRWeakMind@ApplyPowerUserBehavior"/>
+        <DataRecord Entry="Actor,ZHBRDomination@BeamToThePoint"/>
+        <DataRecord Entry="Actor,ZHBRDomination@MarkerFX"/>
+        <DataRecord Entry="Model,ZHBRDomination@Marker"/>
+        <DataRecord Entry="Actor,ZHBRDomination@Glaze"/>
+        <DataRecord Entry="Model,ZHBRDomination@Glaze"/>
+        <TechInfoAbil value="ZHBRDominatorDomination@ZHBRDomination"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="ZHBRDeepTunnel">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
         <DataRecord Entry="Abil,ZHBRDeepTunnel"/>
@@ -96,18 +173,19 @@
         <DataRecord Entry="Sound,ZHBRDeepTunnel@Unburrow"/>
         <DataRecord Entry="Sound,ZHBRDeepTunnel@Burrow"/>
         <DataRecord Entry="Validator,ZHBRDeepTunnel@IsCasting"/>
+        <DataRecord Entry="Validator,ZHBRDeepTunnel@IsNotCasting"/>
         <DataRecord Entry="Requirement,ZHBRDeepTunnel@Research"/>
         <DataRecord Entry="Requirement,ZHBRDeepTunnel@Use"/>
         <DataRecord Entry="Upgrade,ZHBRDeepTunnel"/>
         <DataRecord Entry="Button,ZHBRDeepTunnel@Research"/>
     </CDataCollectionAbil>
-    <CDataCollectionUpgrade id="ZHBRDestructionOrb">
+    <CDataCollectionUpgrade id="ZHBRAnnihilation">
         <EditorCategories value="DataGroup:Research,Race:ZHBR"/>
-        <DataRecord Entry="Button,ZHBRDestructionOrb"/>
+        <DataRecord Entry="Button,ZHBRAnnihilation"/>
         <DataRecord Entry="Requirement,ZHBRDestructionOrb@Research"/>
         <DataRecord Entry="Requirement,ZHBRDestructionOrb@Use"/>
-        <DataRecord Entry="Upgrade,ZHBRDestructionOrb"/>
-        <DataRecord Entry="Button,ZHBRDestructionOrb@Passive"/>
+        <DataRecord Entry="Upgrade,ZHBRAnnihilation"/>
+        <DataRecord Entry="Button,ZHBRAnnihilation@Passive"/>
     </CDataCollectionUpgrade>
     <CDataCollection id="ZHBREvaporator">
         <EditorCategories value="DataGroup:Buff,Race:ZHBR"/>
@@ -117,6 +195,7 @@
         <DataRecord Entry="Effect,ZHBREvaporator@ReduceEnergy"/>
         <DataRecord Entry="Effect,ZHBREvaporator@StoreUserData"/>
         <DataRecord Entry="Validator,ZHBREvaporator@CasterHasRequiredEnergy"/>
+        <DataRecord Entry="Validator,ZHBREvaporator@CasterHasNotRequiredEnergy"/>
         <DataRecord Entry="Accumulator,ZHBREvaporator@EvaporatorUserData"/>
     </CDataCollection>
     <CDataCollectionUpgrade id="ZHBRGroundArmorUpgradeLevel1">
@@ -199,6 +278,47 @@
         <DataRecord Entry="Actor,ZHBRPermanentPower@Glaze"/>
         <DataRecord Entry="Model,ZHBRPermanentPower@Glaze"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="ZHBRSentinelLeap">
+        <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
+        <DataRecord Entry="Abil,ZHBRSentinelLeap@ZHBRSentinelSubjugationJump"/>
+        <DataRecord Entry="Actor,ZHBRSentinelLeap@Stun"/>
+        <DataRecord Entry="Actor,ZHBRSentinelLeap@LandDownModel"/>
+        <DataRecord Entry="Actor,ZHBRSentinelLeap@JumpLaunchModel"/>
+        <DataRecord Entry="Actor,ZHBRSentinelLeap@LandSound"/>
+        <DataRecord Entry="Actor,ZHBRSentinelLeap@LaunchSound"/>
+        <DataRecord Entry="Behavior,ZHBRSentinelLeap@Stun"/>
+        <DataRecord Entry="Behavior,ZHBRSentinelLeap@JumpBuff"/>
+        <DataRecord Entry="Button,ZHBRSentinelLeap@ZHBRSentinelSubjugationJump"/>
+        <DataRecord Entry="Effect,ZHBRSentinelJump@Stun"/>
+        <DataRecord Entry="Effect,ZHBRSentinelLeap@InitialSet"/>
+        <DataRecord Entry="Effect,ZHBRSentinelLeap@Damage"/>
+        <DataRecord Entry="Effect,ZHBRSentinelLeap@ImpactSet"/>
+        <DataRecord Entry="Effect,ZHBRSentinelLeap@RemoveJumpBuff"/>
+        <DataRecord Entry="Effect,ZHBRSentinelLeap@LM"/>
+        <DataRecord Entry="Effect,ZHBRSentinelLeap@ApplyJumpBuff"/>
+        <DataRecord Entry="Model,ZHBRSentinelLeap@Stun"/>
+        <DataRecord Entry="Model,ZHBRSentinelLeap@LandDownModel"/>
+        <DataRecord Entry="Model,ZHBRSentinelLeap@JumpLaunchModel"/>
+        <DataRecord Entry="Mover,ZHBRSentinelLeap@Mover"/>
+        <DataRecord Entry="Sound,ZHBRSentinelLeap@Land"/>
+        <DataRecord Entry="Sound,ZHBRSentinelLeap@Launch"/>
+        <DataRecord Entry="Validator,ZHBRSentinelLeap@CasterNotAttacking"/>
+        <DataRecord Entry="Validator,ZHBRSentinelLeap@NoEnemiesNearby"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckCasterLevel1"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckCasterLevel2"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckCasterLevel3"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckTargetLevel1"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckTargetLevel"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckTargetLevel3"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCompare"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckEqualLevel"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCompare12"/>
+        <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCompare32"/>
+        <DataRecord Entry="Effect,ZHBRSentinelLeap@ApplyStun"/>
+        <DataRecord Entry="Validator,ZHBRSentinelLeap@StunFilter"/>
+        <Button value="ZHBRSentinelLeap@ZHBRSentinelSubjugationJump"/>
+        <TechInfoAbil value="ZHBRSentinelLeap@ZHBRSentinelSubjugationJump"/>
+    </CDataCollectionAbil>
     <CDataCollectionAbil id="ZHBRShapeshifterWeapon2">
         <EditorCategories value="DataGroup:Weapon,Race:ZHBR"/>
         <DataRecord Entry="Actor,ZHBRShapeshifterWeapon2@Attack"/>
@@ -257,6 +377,7 @@
         <DataRecord Entry="Button,ZHBRRaceControl@ChooseCapsule"/>
         <DataRecord Entry="Button,ZHBRRaceControl@ChooseVoidForge"/>
         <DataRecord Entry="Button,ZHBRRaceControl@ResearchPage"/>
+        <DataRecord Entry="Button,ZHBRRaceControl@TeleportPage"/>
         <DataRecord Entry="Button,ZHBRHybridRaceControl@ChooseSentinel"/>
         <DataRecord Entry="Button,ZHBRHybridRaceControl@ChooseWarbringer"/>
         <DataRecord Entry="Button,ZHBRHybridRaceControl@ChooseChimera"/>
@@ -353,6 +474,36 @@
         <DataRecord Entry="Sound,ZHBRPowerField@Cast"/>
         <DataRecord Entry="Sound,ZHBRPowerField@End"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="ZHBRVoidBarrier">
+        <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
+        <DataRecord Entry="Abil,ZHBRVoidBarrier"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@Beam"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@ImpactModel"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@ImpactModelDreadnok"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@ImpactModelFlayer"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@ImpactModelMinion"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@ImpactModelPartStructure"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@ImpactModelPollinator"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@ImpactModelSentinel"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@LaunchSound"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@StopSound"/>
+        <DataRecord Entry="Actor,ZHBRVoidBarrier@Range"/>
+        <DataRecord Entry="Behavior,ZHBRVoidBarrier"/>
+        <DataRecord Entry="Behavior,ZHBRVoidBarrier@Marker"/>
+        <DataRecord Entry="Button,ZHBRVoidBarrier"/>
+        <DataRecord Entry="Effect,ZHBRVoidBarrier@AttackReact"/>
+        <DataRecord Entry="Effect,ZHBRTConductorVoidBarrier@ApplyBehavior"/>
+        <DataRecord Entry="Effect,ZHBRTConductorVoidBarrier@ApplyBehaviorMarker"/>
+        <DataRecord Entry="Model,ZHBRVoidBarrier@Beam"/>
+        <DataRecord Entry="Model,ZHBRVoidBarrier@ImpactModel"/>
+        <DataRecord Entry="Requirement,ZHBRVoidBarrier@Use"/>
+        <DataRecord Entry="Sound,ZHBRVoidBarrier@Launch"/>
+        <DataRecord Entry="Sound,ZHBRVoidBarrier@Stop"/>
+        <DataRecord Entry="Validator,ZHBRVoidBarrier@ConditionApply"/>
+        <DataRecord Entry="Validator,ZHBRVoidBarrier@HasVoidEfficiencyUpgrade"/>
+        <DataRecord Entry="Validator,ZHBRVoidBarrier@TargetHasNotMarkerBehavior"/>
+        <DataRecord Entry="Validator,ZHBRVoidBarrier@TargetHasNotMainBehavior"/>
+    </CDataCollectionAbil>
     <CDataCollectionUnit id="ZHBRProteus">
         <EditorCategories value="DataGroup:Unit,Race:ZHBR"/>
         <EditorIconSource value="Actor"/>
@@ -370,7 +521,7 @@
         <DataRecord Entry="Sound,ZHBRProteus@Ready"/>
         <DataRecord Entry="Sound,ZHBRProteus@Attack"/>
         <DataRecord Entry="Sound,ZHBRProteus@Death"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -384,34 +535,34 @@
         <DataRecord Entry="Sound,ZHBRProteusWeapon@Whoosh"/>
         <DataRecord Entry="Weapon,ZHBRProteusWeapon"/>
     </CDataCollectionAbil>
-    <CDataCollectionAbil id="ZHBRPsiOrb">
+    <CDataCollectionAbil id="ZHBRDestructionOrb">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
-        <DataRecord Entry="Abil,ZHBRPsiOrb"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@Beam"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@BeamAttack"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@Attack"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@ImpactOffset"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@AttackGuide"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@CursorSplat"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@Missile"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@Range"/>
-        <DataRecord Entry="Actor,ZHBRPsiOrb@AttackImpactModel"/>
-        <DataRecord Entry="Behavior,ZHBRPsiOrb@SearchBehavior"/>
-        <DataRecord Entry="Button,ZHBRPsiOrb"/>
-        <DataRecord Entry="Effect,ZHBRPsiOrb@InitialPersistent"/>
-        <DataRecord Entry="Effect,ZHBRPsiOrb@LaunchMissile"/>
-        <DataRecord Entry="Effect,ZHBRPsiOrb@Search"/>
-        <DataRecord Entry="Effect,ZHBRPsiOrb@Damage"/>
-        <DataRecord Entry="Model,ZHBRPsiOrb@Missile"/>
-        <DataRecord Entry="Model,ZHBRPsiOrb@Beam"/>
-        <DataRecord Entry="Model,ZHBRPsiOrb@CursorSplat"/>
-        <DataRecord Entry="Model,ZHBRPsiOrb@FinalImpactModel"/>
-        <DataRecord Entry="Mover,ZHBRPsiOrb@Missile"/>
-        <DataRecord Entry="Sound,ZHBRPsiOrb@Launch"/>
-        <DataRecord Entry="Sound,ZHBRPsiOrb@BeamImpact"/>
-        <DataRecord Entry="Sound,ZHBRPsiOrb@Impact"/>
-        <DataRecord Entry="Unit,ZHBRPsiOrb@Missile"/>
-        <DataRecord Entry="Effect,ZHBRPsiOrb@FinalSet"/>
+        <DataRecord Entry="Abil,ZHBRDestructionOrb"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@Beam"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@BeamAttack"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@Attack"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@ImpactOffset"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@AttackGuide"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@CursorSplat"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@Missile"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@Range"/>
+        <DataRecord Entry="Actor,ZHBRDestructionOrb@AttackImpactModel"/>
+        <DataRecord Entry="Behavior,ZHBRDestructionOrb@SearchBehavior"/>
+        <DataRecord Entry="Button,ZHBRDestructionOrb"/>
+        <DataRecord Entry="Effect,ZHBRDestructionOrb@InitialPersistent"/>
+        <DataRecord Entry="Effect,ZHBRDestructionOrb@LaunchMissile"/>
+        <DataRecord Entry="Effect,ZHBRDestructionOrb@Search"/>
+        <DataRecord Entry="Effect,ZHBRDestructionOrb@Damage"/>
+        <DataRecord Entry="Model,ZHBRDestructionOrb@Missile"/>
+        <DataRecord Entry="Model,ZHBRDestructionOrb@Beam"/>
+        <DataRecord Entry="Model,ZHBRDestructionOrb@CursorSplat"/>
+        <DataRecord Entry="Model,ZHBRDestructionOrb@FinalImpactModel"/>
+        <DataRecord Entry="Mover,ZHBRDestructionOrb@Missile"/>
+        <DataRecord Entry="Sound,ZHBRDestructionOrb@Launch"/>
+        <DataRecord Entry="Sound,ZHBRDestructionOrb@BeamImpact"/>
+        <DataRecord Entry="Sound,ZHBRDestructionOrb@Impact"/>
+        <DataRecord Entry="Unit,ZHBRDestructionOrb@Missile"/>
+        <DataRecord Entry="Effect,ZHBRDestructionOrb@FinalSet"/>
     </CDataCollectionAbil>
     <CDataCollectionUnit id="ZHBRPsyon">
         <EditorCategories value="DataGroup:Unit,Race:ZHBR"/>
@@ -432,7 +583,7 @@
         <DataRecord Entry="Sound,ZHBRPsyon@Help"/>
         <DataRecord Entry="Unit,ZHBRPsyon"/>
         <DataRecord Entry="Sound,ZHBRPsyon@Death"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
@@ -596,7 +747,7 @@
         <DataRecord Entry="Validator,ZHBRSilentCrawler@UDIsValid"/>
         <DataRecord Entry="Accumulator,ZHBRSilentCrawler@DamageMultiplier"/>
         <DataRecord Entry="Accumulator,ZHBRSilentCrawler@Switch"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -615,13 +766,14 @@
     </CDataCollectionUnit>
     <CDataCollectionUpgrade id="ZHBRRestorationShield">
         <EditorCategories value="DataGroup:Research,Race:ZHBR"/>
-        <DataRecord Entry="Behavior,ZHBRRestorationShield"/>
+        <DataRecord Entry="Behavior,ZHBRRestorationHealthHight"/>
         <DataRecord Entry="Button,ZHBRRestorationShield"/>
-        <DataRecord Entry="Requirement,ZHBRRestorationShield@Use"/>
-        <DataRecord Entry="Requirement,ZHBRRestorationShield@Research"/>
-        <DataRecord Entry="Upgrade,ZHBRRestorationShield"/>
+        <DataRecord Entry="Requirement,ZHBRRestorationHealth@Use"/>
+        <DataRecord Entry="Requirement,ZHBRRestorationHealth@Research"/>
+        <DataRecord Entry="Upgrade,ZHBRVoidShield"/>
         <DataRecord Entry="Actor,ZHBRRestorationShield@HealTick"/>
         <DataRecord Entry="Model,ZHBRRestorationShield@HealTick"/>
+        <TechInfoUpgrade value="ZHBRVoidShield"/>
     </CDataCollectionUpgrade>
     <CDataCollectionUnit id="ZHBRKeystone">
         <EditorCategories value="DataGroup:Structure,Race:ZHBR"/>
@@ -636,7 +788,7 @@
         <DataRecord Entry="Upgrade,ZHBRKeystone@Connection"/>
         <DataRecord Entry="Sound,ZHBRKeystone@Ready"/>
         <DataRecord Entry="Sound,ZHBRKeystone@What"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="ZHBRHoldingCell">
         <EditorCategories value="DataGroup:Structure,Race:ZHBR"/>
@@ -649,7 +801,7 @@
         <DataRecord Entry="Abil,ZHBRHoldingCell@Research"/>
         <DataRecord Entry="Sound,ZHBRHoldingCell@Ready"/>
         <DataRecord Entry="Sound,ZHBRHoldingCell@What"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionUpgrade id="ZHBRPrimeSummoning">
         <EditorCategories value="DataGroup:Research,Race:ZHBR"/>
@@ -710,9 +862,10 @@
         <DataRecord Entry="Button,ZHBRVoidShield"/>
         <DataRecord Entry="Requirement,ZHBRVoidShield@Research"/>
         <DataRecord Entry="Requirement,ZHBRVoidShield@Use"/>
-        <DataRecord Entry="Upgrade,ZHBRVoidShield"/>
+        <DataRecord Entry="Upgrade,ZHBRRestorationHealth"/>
         <DataRecord Entry="Validator,ZHBRVoidShield@UpgradeCompleted"/>
         <DataRecord Entry="Validator,ZHBRVoidShield@UpgradeNotCompleted"/>
+        <TechInfoUpgrade value="ZHBRRestorationHealth"/>
     </CDataCollectionUpgrade>
     <CDataCollection id="ZHBRVespeneMining">
         <EditorCategories value="DataGroup:Buff,Race:ZHBR"/>
@@ -741,7 +894,7 @@
         <DataRecord Entry="Behavior,ZHBRAmplifier@PathingBlockerController"/>
         <DataRecord Entry="Effect,ZHBRAmplifier@ApplyPathingBlockerController"/>
         <DataRecord Entry="Unit,ZHBRAmplifier@PathingBlocker"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollection id="ZHBRMineralMining">
         <EditorCategories value="DataGroup:Buff,Race:ZHBR"/>
@@ -829,12 +982,12 @@
         <DataRecord Entry="Validator,ZHBRCommon@IsCapsule"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsReaver"/>
         <DataRecord Entry="Validator,ZHBRCommon@TargetIsVoidForcesRace"/>
-        <DataRecord Entry="Validator,ZHBRCommon@IsSilentCrawler"/>
-        <DataRecord Entry="Validator,ZHBRCommon@IsSilentCrawlerCaster"/>
+        <DataRecord Entry="Validator,ZHBRCommon@IsStriderCrawler"/>
+        <DataRecord Entry="Validator,ZHBRCommon@IsStriderCrawlerCaster"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsNemesisAdvanced"/>
         <DataRecord Entry="Validator,ZHBRCommon@CasterIsVoidForcesRace"/>
         <DataRecord Entry="Validator,ZHBRCommon@UnitisVoidRiftOrTemple"/>
-        <DataRecord Entry="Validator,ZHBRCommon@IsSilent"/>
+        <DataRecord Entry="Validator,ZHBRCommon@IsStrider"/>
         <DataRecord Entry="Validator,ZHBRCommon@NotScreamerCaster"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsHarvester"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsHarvesterRich"/>
@@ -843,7 +996,7 @@
         <DataRecord Entry="Validator,ZHBRCommon@IsNemesis"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsReaverAdvanced"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsNemesisCatacomb"/>
-        <DataRecord Entry="Validator,ZHBRCommon@IsEngine"/>
+        <DataRecord Entry="Validator,ZHBRCommon@IsEnergator"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsNavigator"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsChimera"/>
         <DataRecord Entry="Validator,ZHBRCommon@IsDreadnok"/>
@@ -896,7 +1049,7 @@
         <DataRecord Entry="Sound,ZHBRShapeshifter@What"/>
         <DataRecord Entry="Sound,ZHBRShapeshifter@Yes"/>
         <DataRecord Entry="Unit,ZHBRShapeshifter"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
@@ -945,6 +1098,25 @@
         <DataRecord Entry="Button,ZHBRInterdimensionalOverload@Research"/>
         <DataRecord Entry="Requirement,ZHBRInterdimensionalOverload@Research"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="ZHBRStationarity">
+        <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
+        <DataRecord Entry="Abil,ZHBRStationarity"/>
+        <DataRecord Entry="Abil,ZHBRCancelStationarity"/>
+        <DataRecord Entry="Actor,ZHBRNavigatorStationarityRadar"/>
+        <DataRecord Entry="Actor,ZHBRNavigatorStationarity"/>
+        <DataRecord Entry="Actor,ZHBRStationarity@SoundStart"/>
+        <DataRecord Entry="Actor,ZHBRStationarity@SoundStop"/>
+        <DataRecord Entry="Button,ZHBRStationarity"/>
+        <DataRecord Entry="Button,ZHBRCancelStationarity"/>
+        <DataRecord Entry="Effect,ZHBRNavigatorApplyStationarityMod"/>
+        <DataRecord Entry="Effect,ZHBRNavigatorCancelStationarityMod"/>
+        <DataRecord Entry="Model,ZHBRNavigatorStationarity"/>
+        <DataRecord Entry="Requirement,ZHBRNavigatorStationarity"/>
+        <DataRecord Entry="Requirement,ZHBRNavigatorCancelStationarity"/>
+        <DataRecord Entry="Sound,ZHBRNavigatorStationarity@Start"/>
+        <DataRecord Entry="Sound,ZHBRNavigatorStationarity@Stop"/>
+        <DataRecord Entry="Validator,ZHBRNavigator@CasterHasNotStationarity"/>
+    </CDataCollectionAbil>
     <CDataCollectionUnit id="ZHBRNavigator">
         <EditorCategories value="DataGroup:Unit,Race:ZHBR"/>
         <DataRecord Entry="Actor,ZHBRNavigator"/>
@@ -961,7 +1133,7 @@
         <DataRecord Entry="Behavior,ZHBRNavigator@FromTheVoid"/>
         <DataRecord Entry="Button,ZHBRNavigator@FromTheVoid"/>
         <EditorIconSource value="Actor"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
@@ -974,7 +1146,7 @@
         <DataRecord Entry="Model,ZHBRNemesisAdvanced@Portrait"/>
         <DataRecord Entry="Model,ZHBRNemesisAdvanced@Model"/>
         <DataRecord Entry="Unit,ZHBRNemesisAdvanced"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
@@ -1002,7 +1174,7 @@
         <DataRecord Entry="Effect,ZHBRNemesisDisintegrator@Set"/>
         <DataRecord Entry="Requirement,ZHBRNemesisDisintegrator@HasDisintegratorShow"/>
         <DataRecord Entry="Requirement,ZHBRNemesisDisintegrator@HasNoDisintegratorShow"/>
-        <DataRecord Entry="Validator,ZHBRNemesisDisintegrator@HasEnergy"/>
+        <DataRecord Entry="Validator,ZHBRNemesisDisintegrator@HasEnergyForShoot"/>
         <DataRecord Entry="Actor,ZHBRNemesisDisintegrator@Range"/>
         <DataRecord Entry="Validator,ZHBRNemesisDisintegrator@TargetHasBuff"/>
         <Button value="ZHBRNemesisDisintegrator@Disintegrator"/>
@@ -1023,7 +1195,7 @@
         <DataRecord Entry="Effect,ZHBRNemesisWeapon@DamageSet"/>
         <DataRecord Entry="Effect,ZHBRNemesisWeapon@ApplyCooldown"/>
         <DataRecord Entry="Effect,ZHBRNemesisWeapon@Damage"/>
-        <DataRecord Entry="Effect,ZHBRNemesisWeapon@Persistent"/>
+        <DataRecord Entry="Effect,ZHBRNemesisWeaponHidden@Persistent"/>
         <DataRecord Entry="Model,ZHBRNemesisWeapon@BuffedBeam"/>
         <DataRecord Entry="Model,ZHBRNemesisWeapon@Beam"/>
         <DataRecord Entry="Sound,ZHBRNemesisWeapon@WeaponLoop"/>
@@ -1063,7 +1235,7 @@
         <DataRecord Entry="Sound,ZHBRNemesis@Death_Missile"/>
         <DataRecord Entry="Sound,ZHBRNemesis@DeathScreams"/>
         <EditorIconSource value="Actor"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
@@ -1078,7 +1250,7 @@
         <DataRecord Entry="Button,ZHBRPollinatorShadowMantle@Off"/>
         <DataRecord Entry="Model,ZHBRPollinatorShadowMantle@ShadowMantleOn"/>
         <DataRecord Entry="Model,ZHBRPollinatorShadowMantle@ShadowMantleOff"/>
-        <DataRecord Entry="Effect,ZHBRPollinatorShadowMantle@Restore5Energy"/>
+        <DataRecord Entry="Effect,ZHBRPollinatorShadowMantle@RestoreEnergy"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="ZHBRPollinatorWeapon">
         <EditorCategories value="DataGroup:Weapon,Race:ZHBR"/>
@@ -1114,7 +1286,7 @@
         <DataRecord Entry="Unit,ZHBRPollinator"/>
         <DataRecord Entry="Sound,ZHBRPollinator@Help"/>
         <EditorIconSource value="Actor"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
@@ -1148,6 +1320,8 @@
         <DataRecord Entry="Validator,ZHBRScreamerEnergation@HasNotParalyzingGirth"/>
         <DataRecord Entry="Validator,ZHBRScreamerEnergation@IsNotScreamer"/>
         <DataRecord Entry="Validator,ZHBREnergation@EnergyRegenNotSuppressed"/>
+        <DataRecord Entry="Validator,ZHBREnergation@DeformerRestoreUnitBelowHalfEnergy"/>
+        <DataRecord Entry="Validator,ZHBREnergation@DeformerHasAttackingUnitInArea"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="ZHBRDisappearance">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
@@ -1180,7 +1354,7 @@
         <DataRecord Entry="Sound,ZHBREnergator@What"/>
         <DataRecord Entry="Sound,ZHBREnergator@Yes"/>
         <DataRecord Entry="Unit,ZHBREnergator"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
@@ -1200,6 +1374,39 @@
         <DataRecord Entry="Model,ZHBRRevealingSacrifice@Launch"/>
         <DataRecord Entry="Sound,ZHBRRevealingSacrifice@LaunchSound"/>
     </CDataCollectionAbil>
+    <CDataCollectionAbil id="ZHBRVoidPhantom">
+        <EditorCategories value="Race:ZHBR,DataGroup:Ability"/>
+        <DataRecord Entry="Abil,ZHBRVoidPhantom"/>
+        <DataRecord Entry="Abil,ZHBRVoidPhantom@Cancel"/>
+        <DataRecord Entry="Abil,ZHBRVoidPhantom@PhantasmCancel"/>
+        <DataRecord Entry="Actor,ZHBRVoidPhantom@Phantasm"/>
+        <DataRecord Entry="Behavior,ZHBRVoidPhantom"/>
+        <DataRecord Entry="Behavior,ZHBRVoidPhantom@CancelDummyBehavior"/>
+        <DataRecord Entry="Behavior,ZHBRVoidPhantom@Caster"/>
+        <DataRecord Entry="Behavior,ZHBRVoidPhantom@Timer"/>
+        <DataRecord Entry="Button,ZHBRVoidPhantom"/>
+        <DataRecord Entry="Button,ZHBRVoidPhantom@Extended"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@Cancel"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@CancelAB"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@PhantasmCancelRB"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@TimerCancelSet"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@TimerSpawnAB"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@PhantasmCancelCasterBehaviorRB"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@CU"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@SpawnSet"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@InitialSet"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@IssueOrder"/>
+        <DataRecord Entry="Effect,ZHBRVoidPhantom@KillDummy"/>
+        <DataRecord Entry="Model,ZHBRVoidPhantom@Phantasm"/>
+        <DataRecord Entry="Model,ZHBRVoidPhantom@PhantasmIn"/>
+        <DataRecord Entry="Model,ZHBRVoidPhantom@PhantasmOut"/>
+        <DataRecord Entry="Model,ZHBRVoidPhantom@PhantasmSpawn"/>
+        <DataRecord Entry="Requirement,ZHBRVoidPhantom@Phantasming"/>
+        <DataRecord Entry="Sound,ZHBRVoidPhantom@LaunchSound"/>
+        <DataRecord Entry="Sound,ZHBRVoidPhantom@EndSound"/>
+        <DataRecord Entry="Sound,ZHBRVoidPhantom@VO"/>
+        <DataRecord Entry="Validator,ZHBRVoidPhantom@CasterIsNotPhantasming"/>
+    </CDataCollectionAbil>
     <CDataCollectionUnit id="ZHBRSpirit">
         <EditorCategories value="DataGroup:Unit,Race:ZHBR"/>
         <EditorIconSource value="Actor"/>
@@ -1213,28 +1420,31 @@
         <DataRecord Entry="Sound,ZHBRSpirit@What"/>
         <DataRecord Entry="Sound,ZHBRSpirit@Yes"/>
         <DataRecord Entry="Unit,ZHBRSpirit"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <DataRecord Entry="Unit,ZHBRSpirit@Phantasm"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRAirArmorUpgradeLevel3"/>
     </CDataCollectionUnit>
     <CDataCollectionUpgrade id="ZHBRCloakedSpirit">
         <EditorCategories value="DataGroup:Research,Race:ZHBR"/>
-        <DataRecord Entry="Button,ZHBRCloakedSpirit"/>
+        <DataRecord Entry="Button,ZHBRMoveSpirit"/>
         <DataRecord Entry="Requirement,ZHBRCloakedSpirit@Use"/>
         <DataRecord Entry="Requirement,ZHBRCloakedSpirit@Research"/>
-        <DataRecord Entry="Upgrade,ZHBRCloakedSpirit"/>
+        <DataRecord Entry="Upgrade,ZHBRMoveSpirit"/>
         <DataRecord Entry="Behavior,ZHBRCloakedSpirit@Cloak"/>
-        <DataRecord Entry="Button,ZHBRCloakedSpirit@Research"/>
+        <DataRecord Entry="Button,ZHBRMoveSpirit@Research"/>
+        <Button value="ZHBRMoveSpirit"/>
+        <TechInfoUpgrade value="ZHBRMoveSpirit"/>
     </CDataCollectionUpgrade>
     <CDataCollectionAbil id="ZHBRConstructWeaponAntiGround">
         <EditorCategories value="DataGroup:Weapon,Race:ZHBR"/>
         <DataRecord Entry="Actor,ZHBRConstructWeaponAntiGround@BeamAttackImpactSound"/>
         <DataRecord Entry="Actor,ZHBRConstructWeaponAntiGround@BeamAttackLaunchSound"/>
-        <DataRecord Entry="Actor,ZHBRConstructWeaponAntiGround@Beam"/>
+        <DataRecord Entry="Actor,ZHBRConstructWeaponAntiGround@BeamCentre"/>
         <DataRecord Entry="Effect,ZHBRConstructWeaponAntiGround@CreatePersistent"/>
         <DataRecord Entry="Effect,ZHBRConstructWeaponAntiGround@PeriodicSet"/>
-        <DataRecord Entry="Effect,ZHBRConstructWeaponAntiGround@Damage"/>
+        <DataRecord Entry="Effect,ZHBRConstructWeaponAntiGround@DamageHight"/>
         <DataRecord Entry="Effect,ZHBRConstructWeaponAntiGround@TargetAllySwitch"/>
         <DataRecord Entry="Effect,ZHBRConstructWeaponAntiGround@SearchIncludeAlly"/>
         <DataRecord Entry="Effect,ZHBRConstructWeaponAntiGround@Search"/>
@@ -1316,9 +1526,9 @@
         <DataRecord Entry="Sound,ZHBRConstruct@What"/>
         <DataRecord Entry="Unit,ZHBRConstruct@AntiGround"/>
         <DataRecord Entry="Unit,ZHBRConstruct@AntiAir"/>
-        <DataRecord Entry="Button,ZHBRConstruct@ClusterNova"/>
+        <DataRecord Entry="Button,ZHBRConstruct@ClusterNovaAG"/>
         <TechInfoUnit value="ZHBRConstruct@AntiGround"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="ZHBRVespeneConcentrator">
         <EditorCategories value="Race:ZHBR,DataGroup:Structure"/>
@@ -1334,7 +1544,7 @@
         <DataRecord Entry="Sound,ZHBRVespeneConcentrator@Ready"/>
         <DataRecord Entry="Sound,ZHBRVespeneConcentrator@What"/>
         <DataRecord Entry="Unit,ZHBRVespeneConcentrator"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionUpgrade id="ZHBRIonicField">
         <EditorCategories value="DataGroup:Research,Race:ZHBR"/>
@@ -1360,7 +1570,7 @@
         <DataRecord Entry="Unit,ZHBRProjector"/>
         <DataRecord Entry="Upgrade,ZHBRProjector"/>
         <DataRecord Entry="Abil,ZHBRProjector@Research"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="ZHBRHarvesterRich">
         <EditorCategories value="DataGroup:Structure,Race:ZHBR"/>
@@ -1380,7 +1590,7 @@
         <DataRecord Entry="Unit,ZHBRHarvesterRich"/>
         <DataRecord Entry="Behavior,ZHBRHarvesterRich@HarvestableVespeneGeyserGasZHBR"/>
         <DataRecord Entry="Behavior,ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="ZHBRHarvester">
         <EditorCategories value="DataGroup:Structure,Race:ZHBR"/>
@@ -1400,7 +1610,7 @@
         <DataRecord Entry="Unit,ZHBRHarvester"/>
         <DataRecord Entry="Behavior,ZHBRHarvester@HarvestableVespeneGeyserGasZHBR"/>
         <DataRecord Entry="Behavior,ZHBRHarvester@CarryHarvestableVespeneGeyserGasZHBR"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollection id="ZHBRVoid">
         <EditorCategories value="DataGroup:Mechanic,Race:ZHBR"/>
@@ -1457,7 +1667,7 @@
         <DataRecord Entry="Turret,ZHBRIonicCrystal@RingRotate"/>
         <DataRecord Entry="Unit,ZHBRIonicCrystal@Moveable"/>
         <DataRecord Entry="Unit,ZHBRIonicCrystal"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionAbil id="ZHBREnhancedArmor">
         <EditorCategories value="DataGroup:Research,Race:ZHBR"/>
@@ -1486,7 +1696,7 @@
         <DataRecord Entry="Behavior,ZHBRStasisCell@Connection"/>
         <DataRecord Entry="Effect,ZHBRStasisCell@BirthSet"/>
         <DataRecord Entry="Effect,ZHBRStasisCell@DeathSet"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionAbil id="ZHBRVoidImmunity">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
@@ -1520,7 +1730,7 @@
         <DataRecord Entry="Sound,ZHBRTemple@What"/>
         <DataRecord Entry="Unit,ZHBRTemple"/>
         <DataRecord Entry="Actor,ZHBRTemple@Range"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionAbil id="ZHBRTempleTrain">
         <EditorCategories value="DataGroup:AbilityBuildTrain,Race:ZHBR"/>
@@ -1547,7 +1757,7 @@
         <DataRecord Entry="Sound,ZHBRVoidForge@What"/>
         <DataRecord Entry="Unit,ZHBRVoidForge"/>
         <DataRecord Entry="Abil,ZHBRVoidForge@Research"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollectionAbil id="ZHBRVoidRiftTrain">
         <EditorCategories value="DataGroup:AbilityBuildTrain,Race:ZHBR"/>
@@ -1607,7 +1817,7 @@
         <DataRecord Entry="Unit,ZHBRVoidRift"/>
         <DataRecord Entry="Behavior,ZHBRVoidRift@Conjoined"/>
         <DataRecord Entry="Abil,ZHBRVoidRift@Rally"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
     </CDataCollectionUnit>
     <CDataCollection id="ZHBRChimeraMeleeWeapon">
         <EditorCategories value="DataGroup:Weapon,Race:ZHBR"/>
@@ -1627,8 +1837,8 @@
         <DataRecord Entry="Model,ZHBRChimera@Portrait"/>
         <DataRecord Entry="Model,ZHBRChimera@Model"/>
         <DataRecord Entry="Unit,ZHBRChimera"/>
-        <DataRecord Entry="Behavior,ZHBRChimera@Cloak"/>
-        <DataRecord Entry="Button,ZHBRChimera@Cloak"/>
+        <DataRecord Entry="Behavior,ZHBRChimera@Fade"/>
+        <DataRecord Entry="Button,ZHBRChimera@Fade"/>
         <DataRecord Entry="Sound,ZHBRChimera@Help"/>
         <DataRecord Entry="Sound,ZHBRChimera@Death"/>
         <DataRecord Entry="Sound,ZHBRChimera@Pissed"/>
@@ -1636,7 +1846,7 @@
         <DataRecord Entry="Sound,ZHBRChimera@Yes"/>
         <DataRecord Entry="Sound,ZHBRChimera@Ready"/>
         <DataRecord Entry="Sound,ZHBRChimera@Attack"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -1661,13 +1871,13 @@
         <DataRecord Entry="Actor,ZHBRTimeWarp@CursorSplat"/>
         <DataRecord Entry="Actor,ZHBRTimeWarp@Range"/>
         <DataRecord Entry="Actor,ZHBRTimeWarp@SoundLoop"/>
-        <DataRecord Entry="Behavior,ZHBRTimeWarp"/>
+        <DataRecord Entry="Behavior,ZHBRTimeWarp@Start"/>
         <DataRecord Entry="Button,ZHBRTimeWarp"/>
-        <DataRecord Entry="Effect,ZHBRTimeWarp@Persistent"/>
-        <DataRecord Entry="Effect,ZHBRTimeWarp@Search"/>
+        <DataRecord Entry="Effect,ZHBRTimeWarp@PersistentStart"/>
+        <DataRecord Entry="Effect,ZHBRTimeWarp@SearchStart"/>
         <DataRecord Entry="Effect,ZHBRTimeWarp@SearchInitial"/>
         <DataRecord Entry="Effect,ZHBRTimeWarp@ImpactSet"/>
-        <DataRecord Entry="Effect,ZHBRTimeWarp@ApplyDebuff"/>
+        <DataRecord Entry="Effect,ZHBRTimeWarp@ApplyDebuffStart"/>
         <DataRecord Entry="Model,ZHBRTimeWarp@Impact"/>
         <DataRecord Entry="Model,ZHBRTimeWarp@Model"/>
         <DataRecord Entry="Sound,ZHBRTimeWarp@Impact"/>
@@ -1703,7 +1913,7 @@
         <DataRecord Entry="Sound,ZHBRDominator@Yes"/>
         <DataRecord Entry="Sound,ZHBRDominator@Attack"/>
         <DataRecord Entry="Unit,ZHBRDominator"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -1717,7 +1927,7 @@
         <DataRecord Entry="Model,ZHBRDominatorAdvanced@Death"/>
         <DataRecord Entry="Model,ZHBRDominatorAdvanced@Portrait"/>
         <DataRecord Entry="Unit,ZHBRDominatorAdvanced"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -1764,7 +1974,7 @@
         <DataRecord Entry="Sound,ZHBRDreadnok@Yes"/>
         <DataRecord Entry="Sound,ZHBRDreadnok@Attack"/>
         <DataRecord Entry="Unit,ZHBRDreadnok"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -1781,13 +1991,13 @@
         <DataRecord Entry="Actor,ZHBRPsionicTornado"/>
         <DataRecord Entry="Actor,ZHBRPsionicTornado@TargetImpact"/>
         <DataRecord Entry="Behavior,ZHBRPsionicTornado@Wander"/>
-        <DataRecord Entry="Behavior,ZHBRPsionicTornado@TornadoBehavior"/>
+        <DataRecord Entry="Behavior,ZHBRPsionicTornado@TornadoBehaviorStart"/>
         <DataRecord Entry="Button,ZHBRPsionicTornado"/>
         <DataRecord Entry="Effect,ZHBRPsionicTornado@SearchSet"/>
         <DataRecord Entry="Effect,ZHBRPsionicTornado@Search"/>
         <DataRecord Entry="Effect,ZHBRPsionicTornado@CreateUnit"/>
-        <DataRecord Entry="Effect,ZHBRPsionicTornado@ApplyTornadoBehavior"/>
-        <DataRecord Entry="Effect,ZHBRPsionicTornado@Damage"/>
+        <DataRecord Entry="Effect,ZHBRPsionicTornado@ApplyTornadoBehaviorStart"/>
+        <DataRecord Entry="Effect,ZHBRPsionicTornado@DamageStart"/>
         <DataRecord Entry="Model,ZHBRPsionicTornado@Tornado"/>
         <DataRecord Entry="Model,ZHBRPsionicTornado@TargetImpact"/>
         <DataRecord Entry="Sound,ZHBRPsionicTornado@Start"/>
@@ -1856,7 +2066,7 @@
         <DataRecord Entry="Sound,ZHBRFlayer@Yes"/>
         <DataRecord Entry="Actor,ZHBRFlayer@Death"/>
         <DataRecord Entry="Sound,ZHBRFlayer@Death"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -1908,7 +2118,7 @@
         <DataRecord Entry="Sound,ZHBRMinion@Pissed"/>
         <DataRecord Entry="Sound,ZHBRMinion@Attack"/>
         <DataRecord Entry="Unit,ZHBRMinion"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -2013,7 +2223,7 @@
         <DataRecord Entry="Sound,ZHBRBehemothAdvanced@AttackLaunch"/>
         <DataRecord Entry="Sound,ZHBRBehemothAdvanced@Roar"/>
         <DataRecord Entry="Unit,ZHBRBehemothAdvanced"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -2021,7 +2231,7 @@
     <CDataCollectionAbil id="ZHBRConsumeDNA">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
         <DataRecord Entry="Abil,ZHBRConsumeDNA"/>
-        <DataRecord Entry="Actor,ZHBRConsumeDNA@Stun"/>
+        <DataRecord Entry="Actor,ZHBRConsumeDNA@LifeSteal"/>
         <DataRecord Entry="Actor,ZHBRConsumeDNA@ImpactArea"/>
         <DataRecord Entry="Actor,ZHBRConsumeDNA@ImpactSound"/>
         <DataRecord Entry="Actor,ZHBRConsumeDNA@Range"/>
@@ -2029,13 +2239,13 @@
         <DataRecord Entry="Actor,ZHBRConsumeDNA@AttackMissile"/>
         <DataRecord Entry="Actor,ZHBRConsumeDNA@Impact"/>
         <DataRecord Entry="Actor,ZHBRConsumeDNA@Launch"/>
-        <DataRecord Entry="Behavior,ZHBRConsumeDNA@Stun"/>
+        <DataRecord Entry="Behavior,ZHBRConsumeDNA@LifeStealMain"/>
         <DataRecord Entry="Behavior,ZHBRConsumeDNA@PeriodicBuff"/>
         <DataRecord Entry="Button,ZHBRConsumeDNA"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@ApplyPeriodicBuff"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@LaunchMissile"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@Search"/>
-        <DataRecord Entry="Effect,ZHBRConsumeDNA@ApplyStun"/>
+        <DataRecord Entry="Effect,ZHBRConsumeDNA@ApplyLifeStealMain"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@HealSet"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@UDTotalVital"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@UDLifeToRestore"/>
@@ -2044,7 +2254,7 @@
         <DataRecord Entry="Effect,ZHBRConsumeDNA@ImpactSet"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@LaunchSet"/>
         <DataRecord Entry="Effect,ZHBRConsumeDNA@Damage"/>
-        <DataRecord Entry="Model,ZHBRConsumeDNA@Stun"/>
+        <DataRecord Entry="Model,ZHBRConsumeDNA@LifeSteal"/>
         <DataRecord Entry="Model,ZHBRConsumeDNA@ImpactArea"/>
         <DataRecord Entry="Model,ZHBRConsumeDNA@Missile"/>
         <DataRecord Entry="Mover,ZHBRConsumeDNA@Mover"/>
@@ -2052,7 +2262,7 @@
         <DataRecord Entry="Sound,ZHBRConsumeDNA@Impact"/>
         <DataRecord Entry="Sound,ZHBRConsumeDNA@Launch"/>
         <DataRecord Entry="Unit,ZHBRConsumeDNA@Missile"/>
-        <DataRecord Entry="Validator,ZHBRConsumeDNA@@StunFilter"/>
+        <DataRecord Entry="Validator,ZHBRConsumeDNA@@SlowingdownFilter"/>
         <DataRecord Entry="Accumulator,ZHBRConsumeDNA@LifeToRestoreArithmetic"/>
         <DataRecord Entry="Accumulator,ZHBRConsumeDNA@ShieldToRestoreArithmetic"/>
         <DataRecord Entry="Accumulator,ZHBRConsumeDNA@LifeToRestore"/>
@@ -2081,7 +2291,7 @@
         <DataRecord Entry="Sound,ZHBRBehemoth@Death"/>
         <DataRecord Entry="Sound,ZHBRBehemoth@Attack"/>
         <DataRecord Entry="Unit,ZHBRBehemoth"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -2107,32 +2317,32 @@
         <DataRecord Entry="Upgrade,ZHBRProtectionJump@ZHBRProtectionJump"/>
         <TechInfoUpgrade value="ZHBRProtectionJump@ZHBRProtectionJump"/>
     </CDataCollectionUpgrade>
-    <CDataCollectionAbil id="ZHBRSentinelJump">
+    <CDataCollectionAbil id="ZHBRSentinelSubjugationJump">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
-        <DataRecord Entry="Abil,ZHBRSentinelJump"/>
-        <DataRecord Entry="Actor,ZHBRSentinelJump@Stun"/>
-        <DataRecord Entry="Actor,ZHBRSentinelJump@LandDownModel"/>
-        <DataRecord Entry="Actor,ZHBRSentinelJump@JumpLaunchModel"/>
-        <DataRecord Entry="Actor,ZHBRSentinelJump@LandSound"/>
-        <DataRecord Entry="Actor,ZHBRSentinelJump@LaunchSound"/>
-        <DataRecord Entry="Behavior,ZHBRSentinelJump@Stun"/>
-        <DataRecord Entry="Behavior,ZHBRSentinelJump@JumpBuff"/>
-        <DataRecord Entry="Button,ZHBRSentinelJump"/>
+        <DataRecord Entry="Abil,ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump"/>
+        <DataRecord Entry="Actor,ZHBRSentinelSubjugationJump@Stun"/>
+        <DataRecord Entry="Actor,ZHBRSentinelSubjugationJump@LandDownModel"/>
+        <DataRecord Entry="Actor,ZHBRSentinelSubjugationJump@JumpLaunchModel"/>
+        <DataRecord Entry="Actor,ZHBRSentinelSubjugationJump@LandSound"/>
+        <DataRecord Entry="Actor,ZHBRSentinelSubjugationJump@LaunchSound"/>
+        <DataRecord Entry="Behavior,ZHBRSentinelSubjugationJump@Stun"/>
+        <DataRecord Entry="Behavior,ZHBRSentinelSubjugationJump@JumpBuff"/>
+        <DataRecord Entry="Button,ZHBRSentinelSubjugationJump@SubjugationJump"/>
         <DataRecord Entry="Effect,ZHBRSentinelJump@Stun"/>
-        <DataRecord Entry="Effect,ZHBRSentinelJump@InitialSet"/>
-        <DataRecord Entry="Effect,ZHBRSentinelJump@Damage"/>
-        <DataRecord Entry="Effect,ZHBRSentinelJump@ImpactSet"/>
-        <DataRecord Entry="Effect,ZHBRSentinelJump@RemoveJumpBuff"/>
-        <DataRecord Entry="Effect,ZHBRSentinelJump@LM"/>
-        <DataRecord Entry="Effect,ZHBRSentinelJump@ApplyJumpBuff"/>
-        <DataRecord Entry="Model,ZHBRSentinelJump@Stun"/>
-        <DataRecord Entry="Model,ZHBRSentinelJump@LandDownModel"/>
-        <DataRecord Entry="Model,ZHBRSentinelJump@JumpLaunchModel"/>
-        <DataRecord Entry="Mover,ZHBRSentinelJump@Mover"/>
-        <DataRecord Entry="Sound,ZHBRSentinelJump@Land"/>
-        <DataRecord Entry="Sound,ZHBRSentinelJump@Launch"/>
-        <DataRecord Entry="Validator,ZHBRSentinelJump@CasterNotAttacking"/>
-        <DataRecord Entry="Validator,ZHBRSentinelJump@NoEnemiesNearby"/>
+        <DataRecord Entry="Effect,ZHBRSentinelSubjugationJump@InitialSet"/>
+        <DataRecord Entry="Effect,ZHBRSentinelSubjugationJump@Damage"/>
+        <DataRecord Entry="Effect,ZHBRSentinelSubjugationJump@ImpactSet"/>
+        <DataRecord Entry="Effect,ZHBRSentinelSubjugationJump@RemoveJumpBuff"/>
+        <DataRecord Entry="Effect,ZHBRSentinelSubjugationJump@LM"/>
+        <DataRecord Entry="Effect,ZHBRSentinelSubjugationJump@ApplyJumpBuff"/>
+        <DataRecord Entry="Model,ZHBRSentinelSubjugationJump@Stun"/>
+        <DataRecord Entry="Model,ZHBRSentinelSubjugationJump@LandDownModel"/>
+        <DataRecord Entry="Model,ZHBRSentinelSubjugationJump@JumpLaunchModel"/>
+        <DataRecord Entry="Mover,ZHBRSentinelSubjugationJump@Mover"/>
+        <DataRecord Entry="Sound,ZHBRSentinelSubjugationJump@Land"/>
+        <DataRecord Entry="Sound,ZHBRSentinelSubjugationJump@Launch"/>
+        <DataRecord Entry="Validator,ZHBRSentinelSubjugationJump@CasterNotAttacking"/>
+        <DataRecord Entry="Validator,ZHBRSentinelSubjugationJump@NoEnemiesNearby"/>
         <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckCasterLevel1"/>
         <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckCasterLevel2"/>
         <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckCasterLevel3"/>
@@ -2143,8 +2353,10 @@
         <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCheckEqualLevel"/>
         <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCompare12"/>
         <DataRecord Entry="Validator,ZHBRSentinelJump@CliffCompare32"/>
-        <DataRecord Entry="Effect,ZHBRSentinelJump@ApplyStun"/>
-        <DataRecord Entry="Validator,ZHBRSentinelJump@StunFilter"/>
+        <DataRecord Entry="Effect,ZHBRSentinelSubjugationJump@ApplyStun"/>
+        <DataRecord Entry="Validator,ZHBRSentinelSubjugationJump@StunFilter"/>
+        <Button value="ZHBRSentinelSubjugationJump@SubjugationJump"/>
+        <TechInfoAbil value="ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="ZHBRSentinelWeapon">
         <EditorCategories value="DataGroup:Weapon,Race:ZHBR"/>
@@ -2168,7 +2380,7 @@
         <DataRecord Entry="Sound,ZHBRSentinel@Yes"/>
         <DataRecord Entry="Sound,ZHBRSentinel@Attack"/>
         <DataRecord Entry="Sound,ZHBRSentinel@Pissed"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -2205,7 +2417,7 @@
         <DataRecord Entry="Sound,ZHBRStrider@Pissed"/>
         <DataRecord Entry="Sound,ZHBRStrider@Death"/>
         <DataRecord Entry="Unit,ZHBRStrider"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
@@ -2226,14 +2438,14 @@
         <DataRecord Entry="Sound,ZHBRWarbringer@Pissed"/>
         <DataRecord Entry="Sound,ZHBRWarbringer@Death"/>
         <DataRecord Entry="Actor,ZHBRWarbringer@Death"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>
     </CDataCollectionUnit>
     <CDataCollectionAbil id="ZHBRWarbringerMaceStrike">
         <EditorCategories value="DataGroup:Ability,Race:ZHBR"/>
-        <DataRecord Entry="Abil,ZHBRWarbringerMaceStrike"/>
+        <DataRecord Entry="Abil,ZHBRWarbringerMaceStrike111"/>
         <DataRecord Entry="Actor,ZHBRWarbringerMaceStrike@Warning"/>
         <DataRecord Entry="Behavior,ZHBRWarbringerMaceStrike"/>
         <DataRecord Entry="Button,ZHBRWarbringerMaceStrike"/>
@@ -2247,6 +2459,7 @@
         <DataRecord Entry="Validator,ZHBRWarbringerMaceStrike@TargetHasBuff"/>
         <DataRecord Entry="Validator,ZHBRWarbringerMaceStrike@FriendlyFireCondition"/>
         <DataRecord Entry="Effect,ZHBRWarbringerMaceStrike@ModifyUnit"/>
+        <TechInfoAbil value="ZHBRWarbringerMaceStrike111"/>
     </CDataCollectionAbil>
     <CDataCollectionAbil id="ZHBRWarbringerWeaponMaceCannon">
         <EditorCategories value="DataGroup:Weapon,Race:ZHBR"/>
@@ -2315,7 +2528,7 @@
         <DataRecord Entry="Unit,ZHBRWarrior"/>
         <DataRecord Entry="Actor,ZHBRWarrior@Death"/>
         <DataRecord Entry="Sound,ZHBRWarrior@Death"/>
-        <TechInfoUpgradeUsed value="ZHBRVoidShield"/>
+        <TechInfoUpgradeUsed value="ZHBRRestorationHealth"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel1"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel2"/>
         <TechInfoUpgradeUsed value="ZHBRGroundArmorUpgradeLevel3"/>

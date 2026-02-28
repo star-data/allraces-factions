@@ -282,6 +282,38 @@ void libZHBR_gt_InitializeHybrids_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Nuke Alert
+//--------------------------------------------------------------------------------------------------
+bool libZHBR_gt_NukeAlert_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup autoB91CCFC8_g;
+    int autoB91CCFC8_var;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    autoB91CCFC8_g = PlayerGroupAll();
+    autoB91CCFC8_var = -1;
+    while (true) {
+        autoB91CCFC8_var = PlayerGroupNextPlayer(autoB91CCFC8_g, autoB91CCFC8_var);
+        if (autoB91CCFC8_var < 0) { break; }
+        if ((PlayerRace(autoB91CCFC8_var) == "ZHBR") && (((PlayerGroupCount(PlayerGroupAlliance(c_playerGroupAlly, autoB91CCFC8_var)) > 0) && (PlayerGroupAlliance(c_playerGroupEnemy, autoB91CCFC8_var) != PlayerGroupAlliance(c_playerGroupEnemy, EventPlayer()))) || ((PlayerGroupCount(PlayerGroupAlliance(c_playerGroupAlly, autoB91CCFC8_var)) == 0) && (EventPlayer() != autoB91CCFC8_var)))) {
+            UIAlert("CalldownLaunch_ProtVoidForces", autoB91CCFC8_var, StringExternal("Param/Value/lib_ZHBR_3085DBC8"), "Assets\\Textures\\btn-progression-hornerhan-14-nukefortelefrag.dds");
+        }
+
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libZHBR_gt_NukeAlert_Init () {
+    libZHBR_gt_NukeAlert = TriggerCreate("libZHBR_gt_NukeAlert_Func");
+    TriggerAddEventAlert(libZHBR_gt_NukeAlert, c_playerAny, "CalldownLaunch");
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Race Control - Unit Selection
 //--------------------------------------------------------------------------------------------------
 bool libZHBR_gt_RaceControlUnitSelection_Func (bool testConds, bool runActions) {
@@ -360,7 +392,6 @@ bool libZHBR_gt_RaceControlButtonInitialization_Func (bool testConds, bool runAc
 
     DialogControlHookupStandard(c_triggerControlTypeButton, "UIContainer/ConsoleUIContainer/RaceControlButton");
     libZHBR_gv_raceControlButton = DialogControlLastCreated();
-    libNtve_gf_SetDialogItemHotkey(DialogControlLastCreated(), c_hotkeyWarpIn, PlayerGroupAll());
     DialogControlSetObservedType(DialogControlLastCreated(), c_triggerObservedTypeSelectedOrObservedPlayerId);
     DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), false);
     auto4D69A9AD_g = PlayerGroupAll();
@@ -369,6 +400,7 @@ bool libZHBR_gt_RaceControlButtonInitialization_Func (bool testConds, bool runAc
         lv_itPlayer = PlayerGroupNextPlayer(auto4D69A9AD_g, lv_itPlayer);
         if (lv_itPlayer < 0) { break; }
         if ((PlayerRace(lv_itPlayer) == "ZHBR")) {
+            libNtve_gf_SetDialogItemHotkey(DialogControlLastCreated(), c_hotkeyWarpIn, libZHBR_gv_playerGroupFromPlayer[lv_itPlayer]);
             DialogControlSetVisible(DialogControlLastCreated(), libZHBR_gv_playerGroupFromPlayer[lv_itPlayer], true);
         }
 
@@ -1473,6 +1505,92 @@ void libZHBR_gt_HybridVespeneConcentratorConstructionCompleted_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Hybrid - Shapeshifter - Void Chasm Up
+//--------------------------------------------------------------------------------------------------
+bool libZHBR_gt_HybridShapeshifterVoidChasmUp_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    fixed lv_hightStep;
+    int lv_periodCount;
+    unit lv_targetUnit;
+
+    // Automatic Variable Declarations
+    int auto5802BA95_n;
+    int auto5802BA95_i;
+
+    // Variable Initialization
+    lv_periodCount = 96;
+    lv_targetUnit = EventUnit();
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((EventUnitBehaviorChange() == c_unitBehaviorChangeActivate)) {
+        lv_hightStep = (UnitGetHeight(lv_targetUnit)/lv_periodCount);
+        lv_hightStep *= -1.0;
+    }
+    else {
+        lv_hightStep = (libNtve_gf_CatalogFieldValueGetAsReal(c_gameCatalogUnit, UnitGetType(lv_targetUnit), "Height", c_playerAny)/lv_periodCount);
+    }
+    auto5802BA95_n = lv_periodCount;
+    for (auto5802BA95_i = 1; auto5802BA95_i <= auto5802BA95_n; auto5802BA95_i += 1) {
+        UnitSetPropertyFixed(lv_targetUnit, c_unitPropHeight, (UnitGetHeight(lv_targetUnit) + lv_hightStep));
+        Wait(0.0625, c_timeGame);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libZHBR_gt_HybridShapeshifterVoidChasmUp_Init () {
+    libZHBR_gt_HybridShapeshifterVoidChasmUp = TriggerCreate("libZHBR_gt_HybridShapeshifterVoidChasmUp_Func");
+    TriggerAddEventUnitBehaviorChange(libZHBR_gt_HybridShapeshifterVoidChasmUp, null, "ZHBRVoidChasm", c_unitBehaviorChangeActivate);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Hybrid - Shapeshifter - Void Chasm  Down
+//--------------------------------------------------------------------------------------------------
+bool libZHBR_gt_HybridShapeshifterVoidChasmDown_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    fixed lv_hightStep;
+    int lv_periodCount;
+    unit lv_targetUnit;
+
+    // Automatic Variable Declarations
+    int auto5605551C_n;
+    int auto5605551C_i;
+
+    // Variable Initialization
+    lv_periodCount = 6;
+    lv_targetUnit = EventUnit();
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((EventUnitBehaviorChange() == c_unitBehaviorChangeActivate)) {
+        lv_hightStep = (UnitGetHeight(lv_targetUnit)/lv_periodCount);
+        lv_hightStep *= -1.0;
+    }
+    else {
+        lv_hightStep = (libNtve_gf_CatalogFieldValueGetAsReal(c_gameCatalogUnit, UnitGetType(lv_targetUnit), "Height", c_playerAny)/lv_periodCount);
+    }
+    auto5605551C_n = lv_periodCount;
+    for (auto5605551C_i = 1; auto5605551C_i <= auto5605551C_n; auto5605551C_i += 1) {
+        UnitSetPropertyFixed(lv_targetUnit, c_unitPropHeight, (UnitGetHeight(lv_targetUnit) + lv_hightStep));
+        Wait(0.0625, c_timeGame);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libZHBR_gt_HybridShapeshifterVoidChasmDown_Init () {
+    libZHBR_gt_HybridShapeshifterVoidChasmDown = TriggerCreate("libZHBR_gt_HybridShapeshifterVoidChasmDown_Func");
+    TriggerAddEventUnitBehaviorChange(libZHBR_gt_HybridShapeshifterVoidChasmDown, null, "ZHBRVoidChasm", c_unitBehaviorChangeDeactivate);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Hybrid - Navigator - Cargo UI
 //--------------------------------------------------------------------------------------------------
 bool libZHBR_gt_HybridNavigatorCargoUI_Func (bool testConds, bool runActions) {
@@ -1610,6 +1728,7 @@ void libZHBR_gt_HybridNavigatorCargoUI_Init () {
 void libZHBR_InitTriggers () {
     libZHBR_gt_OfflineInitialization_Init();
     libZHBR_gt_InitializeHybrids_Init();
+    libZHBR_gt_NukeAlert_Init();
     libZHBR_gt_RaceControlUnitSelection_Init();
     libZHBR_gt_RaceControlButtonInitialization_Init();
     libZHBR_gt_RaceControlButtonUsed_Init();
@@ -1625,6 +1744,8 @@ void libZHBR_InitTriggers () {
     libZHBR_gt_HybridKeystoneConnection_Init();
     libZHBR_gt_HybridProjectorConnection_Init();
     libZHBR_gt_HybridVespeneConcentratorConstructionCompleted_Init();
+    libZHBR_gt_HybridShapeshifterVoidChasmUp_Init();
+    libZHBR_gt_HybridShapeshifterVoidChasmDown_Init();
     libZHBR_gt_HybridNavigatorCargoUI_Init();
 }
 

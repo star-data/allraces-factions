@@ -1,0 +1,642 @@
+﻿Abil/Name/ZHBRDominatorDomination@ZHBRDomination=Domination
+Abil/Name/ZHBREnergatorVoidTrance2=Void Trance Копия
+Abil/Name/ZHBRPrimeSummoning@Cancel=Cancel
+Abil/Name/ZHBRSentinelLeap=Leap
+Abil/Name/ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump=Subjugation Jump
+Abil/Name/ZHBRSpiritSiegeMod=Siege mod
+Abil/Name/ZHBRVoidBarrier=Void Barrier
+Abil/Name/ZHBRWarbringerMaceStrike=Mace Strike
+Abil/Name/ZHBRWormhole=Червоточина
+Behavior/Name/HybridPollinatorVoidToxin=Пустотная токсичность
+Behavior/Name/HybridPsyon@FragmentumCorrosion=Коррозия строений
+Behavior/Name/ZHBRChimera@Fade=Cloak
+Behavior/Name/ZHBRChimera@Fade=Скрытность
+Behavior/Name/ZHBRVoidBarrier2=Void Barrier Копия
+Behavior/Name/ZHBRDomination=Confusion
+Behavior/Name/ZHBRDominatorDomination=Подавленность
+Behavior/Name/ZHBRPollinatorShadowMantle@ShadowMantle=Плащ невидимка
+Behavior/Name/ZHBRPsionicTornado@StartSpeedUp=Start Speed Up
+Behavior/Name/ZHBRRevealingSacrifice=Раскрывающая жертва
+Behavior/Name/ZHBRRevealingSacrificeForSelf=Раскрывающая жертва
+Behavior/Name/ZHBRVoidChasmInterruptAbility=Interrupt Ability
+Behavior/Name/ZHBRWarbringerMarkerAnimation=Marker Animation
+Behavior/Name/ZHBRVoidPhantom=Фантазм
+Behavior/Name/ZHBRVoidPhantom@Caster=Пустотный Фантом
+Behavior/Tooltip/HybridPollinatorVoidToxin=Юнит постоянно получает урон некоторое время.
+Behavior/Tooltip/HybridPsyon@FragmentumCorrosion=Это строение теряет здоровье и может наносить только 50% урона воздушным целям.
+Behavior/Tooltip/ZHBRChimera@Fade=Химера может быть невидимой в поле пустоты.
+Behavior/Tooltip/ZHBRDisappearance@Cloak=Этот юнит невидим из за исчезновения энергатора.
+Behavior/Tooltip/ZHBRDominatorDomination=Этот юнит подавлен Доминатором, он не воспринимает команды и наносит в 2 раза меньше урона.
+Behavior/Tooltip/ZHBRPollinatorShadowMantle@ShadowMantle=Этот юнит невидим для противников.
+Behavior/Tooltip/ZHBRRevealingSacrifice=Этот юнит обеспечивает полное видение и обнаружение для противника.
+Behavior/Tooltip/ZHBRRevealingSacrificeForSelf=Этому воину дух дает способность обнаружения.
+Behavior/Tooltip/ZHBRVoidChasmInterruptAbility=___
+Behavior/Tooltip/ZHBRVoidPhantom=Неуязвимый разведывательный дроид, исчезающий через <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> секунды. Осталось <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRVoidPhantom@Timer$)/1.4" precision="0"/></c> секунды.
+Behavior/Tooltip/ZHBRVoidPhantom@Caster=В данный момент активируется неуязвимое летающее <c val="FFFF80">Фантомное</c> заклинание, которое длится до <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> секунд или до тех пор, пока не будет отменено выходом из режима осады <c val="FFFF80">Трансценденции</c>, ручным прерыванием способности или смертью <c val="FFFF80">Духа</c>.
+Button/Name/ConductorPhaseShiftResearch=Эффективность пустоты
+Button/Name/HybridButtonNemesisAttackPassive=Атака Немезиса
+Button/Name/HybridCloakedSpiritW=Невидимость Духа
+Button/Name/HybridDeformerDestructionArise=Энергетическая волна
+Button/Name/HybridDeformerSelfDestruction=Самоуничтожение
+Button/Name/HybridDominatorDomination=Подавление
+Button/Name/HybridDominatorDomination@Extended=Подавление
+Button/Name/ZHBRCancelStationarity=Отменить стационарный режим
+Button/Name/ZHBRStationarity=Стационарный режим
+Button/Name/HybridPsyonCorrosionOfStructurePassive=Коррозия строений
+Button/Name/HybridPsyonImmunetoAttackSpeedChangePassive=Иммунитет к медленной атаке
+Button/Name/HybridSpiritCancelSiegeMod=Отменить стационарный режим
+Button/Name/HybridSpiritSiegeMod=Стационарный режим
+Button/Name/HybridSpiritSiegeMode=Стационарный режим
+Button/Name/HybridStriderActivateEvaporator=Активировать Испаритель
+Button/Name/HybridStriderActivateEvaporator@Extended=Активировать Испаритель
+Button/Name/HybridStriderDeactivateEvaporator=Деактивировать Испаритель
+Button/Name/HybridStriderDeactivateEvaporator@Extended=Деактивировать Испаритель
+Button/Name/HybridUniversalButtonCancelSiegeMod=Отменить Стационарный режим
+Button/Name/HybridUniversalButtonCancelSiegeMode=Отменить Стационарный режим
+Button/Name/HybridUniversalButtonSiegeMod=Стационарный режим
+Button/Name/HybridUniversalButtonSiegeMode=Стационарный режим
+Button/Name/ImmunetoAttackSpeedChange=Immune to Attack Speed Change
+Button/Name/ZHBRAcceleration=Ускорение
+Button/Name/ZHBRAirArmorUpgradeLevel1=Улучшение Воздушной Брони уровень 1
+Button/Name/ZHBRAirArmorUpgradeLevel2=Улучшение Воздушной Брони уровень 2
+Button/Name/ZHBRAirArmorUpgradeLevel3=Улучшение Воздушной Брони уровень 3
+Button/Name/ZHBRAirWeaponUpgradeLevel1=Улучшение Воздушной Атаки уровень 1
+Button/Name/ZHBRAirWeaponUpgradeLevel2=Улучшение Воздушной Атаки уровень 2
+Button/Name/ZHBRAirWeaponUpgradeLevel3=Улучшение Воздушной Атаки уровень 3
+Button/Name/ZHBRBrokenDNA=Сломанная ДНК
+Button/Name/ZHBRChimera@Fade=Скрытность
+Button/Name/ZHBRChimera@Pounce=Наскок
+Button/Name/ZHBRChimera@PounceExtended=Наскок
+Button/Name/ZHBRChimera@EmergeExtended=Отключить скрытность
+Button/Name/ZHBRCloakedSpirit=Скорость Духа
+Button/Name/ZHBRVoidBarrier=Барьер пустоты
+Button/Name/ZHBRConfusion=Замешательство
+Button/Name/ZHBRConstruct@ClusterNovaAA=Кластер нова противовоздушное
+Button/Name/ZHBRConstruct@ClusterNovaAG=Кластер нова противоназемное
+Button/Name/ZHBRConstruct@TransformToConstructAntiAir=Трансформация конструкции
+Button/Name/ZHBRConstruct@TransformToConstructAntiGround=Трансформация конструкции
+Button/Name/ZHBRConsumeDNA=ПоглощениеДНК
+Button/Name/ZHBRDeepTunnel=Глубокий тунель
+Button/Name/ZHBRAnnihilation=Сфера разрушения
+Button/Name/ZHBRDisappearance=Исчезновение
+Button/Name/ZHBRDominatorCliffMovePassive=Парение в воздухе
+Button/Name/ZHBRDreadnokWeapon=Удар пустоты
+Button/Name/ZHBREnergation=Подзарядка
+Button/Name/ZHBREnergationDeformer=Искажение пустоты
+Button/Name/ZHBREnergator@CancelVoidTrance=Отменить Трансформацию пустоты
+Button/Name/ZHBREnergator@EnergationRange=Подзарядка
+Button/Name/ZHBREnergator@VoidTrance=Трансформация пустоты
+Button/Name/ZHBREvaporator=Испаритель
+Button/Name/ZHBRFlayerBerserker=Берсерк
+Button/Name/ZHBRFlayerFury=Ярость
+Button/Name/ZHBRFlayerFury@Research=Ярость
+Button/Name/ZHBRGroundArmorUpgradeLevel1=Улучшение Наземной Брони уровень 1
+Button/Name/ZHBRGroundArmorUpgradeLevel2=Улучшение Наземной Брони уровень 2
+Button/Name/ZHBRGroundArmorUpgradeLevel3=Улучшение Наземной Брони уровень 3
+Button/Name/ZHBRGroundWeaponUpgradeLevel1=Улучшение Наземной Атаки уровень 1
+Button/Name/ZHBRGroundWeaponUpgradeLevel2=Улучшение Наземной Атаки уровень 2
+Button/Name/ZHBRGroundWeaponUpgradeLevel3=Улучшение Наземной Атаки уровень 3
+Button/Name/ZHBRHybridRaceControl@AirBattleUnitPage=Боевые воздушные юниты
+Button/Name/ZHBRHybridRaceControl@AirSupportUnitPage=Воздушные юниты поддержки
+Button/Name/ZHBRHybridRaceControl@GroundUnitPage=Наземные юниты
+Button/Name/ZHBRIndestructible=Нерушимый
+Button/Name/ZHBRInterdimensionalOverload=Межпространственная перегрузка
+Button/Name/ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal=Трансформировать в подвижную форму
+Button/Name/ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal=Трансформировать в статичную форму
+Button/Name/ZHBRIonicField=Ионное поле
+Button/Name/ZHBRMineralMining=Добыча минералов
+Button/Name/ZHBRMinionBuild@ConstructAntiAir=Конструкция (воздушная)
+Button/Name/ZHBRMinionBuild@ConstructAntiGround=Конструкция (наземная)
+Button/Name/ZHBRMinionBuild@SummonAdvancedStructured=Вызвать продвинутое строение
+Button/Name/ZHBRMinionBuild@SummonAmplifier=Вызвать Минерального сборщика
+Button/Name/ZHBRMinionBuild@SummonCapsule=Вызвать Капсулу
+Button/Name/ZHBRMinionBuild@SummonConstructAntiAir=Вызвать Конструкцию (воздушная)
+Button/Name/ZHBRMinionBuild@SummonConstructAntiGround=Вызвать Конструкцию (наземная)
+Button/Name/ZHBRMinionBuild@SummonCrypt=Вызвать Склеп
+Button/Name/ZHBRMinionBuild@SummonDeformer=Вызвать Деформатор
+Button/Name/ZHBRMinionBuild@SummonHarvester=Вызвать Жнеца
+Button/Name/ZHBRMinionBuild@SummonHoldingCell=Вызвать Камеру удержания
+Button/Name/ZHBRMinionBuild@SummonIonicCrystal=Вызвать Ионный кристалл
+Button/Name/ZHBRMinionBuild@SummonKeystone=Вызвать Ключевой камень
+Button/Name/ZHBRMinionBuild@SummonProjector=Вызвать Проектор
+Button/Name/ZHBRMinionBuild@SummonStasisCell=Вызвать Камеру стазиса
+Button/Name/ZHBRMinionBuild@SummonStructure=Вызвать строение
+Button/Name/ZHBRMinionBuild@SummonTemple=Вызвать Храм
+Button/Name/ZHBRMinionBuild@SummonTomb=Вызвать Могилу
+Button/Name/ZHBRMinionBuild@SummonVespeneConcentrator=Вызвать Газовый коцетратор
+Button/Name/ZHBRMinionBuild@SummonVoidForge=Вызвать Кузница пустоты
+Button/Name/ZHBRMinionBuild@SummonVoidRift=Вызвать Разлом пустоты
+Button/Name/ZHBRMinionHarvest@Gather=Собирать ресурсы
+Button/Name/ZHBRMinionHarvest@Return=Выгрузить ресурсы
+Button/Name/ZHBRMinionMorph=Механическая реинкарнация
+Button/Name/ZHBRMoveSpirit=Скорость Духа
+Button/Name/ZHBRNavigator@FromTheVoid=Из пустоты
+Button/Name/ZHBRNavigatorLoad@Load=Загрузить
+Button/Name/ZHBRNavigatorLoad@UnloadAll=Выгрузить
+Button/Name/ZHBRNavigatorLoad@UnloadAllM=Unload All
+Button/Name/ZHBRNemesisDisintegrator@Disintegrator=Дезинтегратор
+Button/Name/ZHBRNemesisDisintegrator@Ionizer=Ионизатор
+Button/Name/ZHBRPermanentPower=Постоянное подключение
+Button/Name/ZHBRPhaseShift=Фазовый сдвиг
+Button/Name/ZHBRPlasmaticBlast=Плазменный взрыв
+Button/Name/ZHBRPlasmaticBlast@PlasmaticCharge=Плазменный заряд
+Button/Name/ZHBRPollinatorShadowMantle@Off=Выключить плащ невидимку
+Button/Name/ZHBRPollinatorShadowMantle@On=Плащ невидимка
+Button/Name/ZHBRPowerField=Мощное поле
+Button/Name/ZHBRPowerField@Cancel=Отменить мощное поле
+Button/Name/ZHBRPrimeSummoning=Первичный призыв
+Button/Name/ZHBRPrimeSummoningCancel=Отменить первичный призыв
+Button/Name/ZHBRDestructionOrb=Псионический шар
+Button/Name/ZHBRPsionicTornado=Псионическое торнадо
+Button/Name/ZHBRRaceControl@AirBattleUnitPage=Боевые воздушные юниты
+Button/Name/ZHBRRaceControl@AirBattleUnitPageUnitExtended=Боевые воздушные юниты
+Button/Name/ZHBRRaceControl@AirSupportUnitPage=Воздушные юниты поддержки
+Button/Name/ZHBRRaceControl@AirSupportUnitPageUnitExtended=Воздушные юниты поддержки
+Button/Name/ZHBRRaceControl@ChooseAmplifier=Выбрать Сборщика минералов
+Button/Name/ZHBRRaceControl@ChooseCapsule=Выбрать Капсулу
+Button/Name/ZHBRRaceControl@ChooseConstructAntiAir=Выбрать Конструкцию (воздушная)
+Button/Name/ZHBRRaceControl@ChooseConstructAntiGround=Выбрать Конструкцию (земля)
+Button/Name/ZHBRRaceControl@ChooseCrypt=Выбрать Склеп
+Button/Name/ZHBRRaceControl@ChooseDeformer=Выбрать Деформатор
+Button/Name/ZHBRRaceControl@ChooseHarvester=Выбрать Харвест
+Button/Name/ZHBRRaceControl@ChooseHoldingCell=Выбрать Камеру удержания
+Button/Name/ZHBRRaceControl@ChooseIonicCrystal=Выбрать Ионный кристалл
+Button/Name/ZHBRRaceControl@ChooseKeystone=Выбрать Ключевой камень
+Button/Name/ZHBRRaceControl@ChooseProjector=Выбрать Проектор
+Button/Name/ZHBRRaceControl@ChooseStasisCell=Выбрать Камеру стазиса
+Button/Name/ZHBRRaceControl@ChooseTemple=Выбрать Храм
+Button/Name/ZHBRRaceControl@ChooseTomb=Выбрать Могилу
+Button/Name/ZHBRRaceControl@ChooseVespeneConcentrator=Выбрать Газовый концентратор
+Button/Name/ZHBRRaceControl@ChooseVoidForge=Выбрать Кузницу пустоты
+Button/Name/ZHBRRaceControl@ChooseVoidRift=Выбрать Пустотный разлом
+Button/Name/ZHBRRaceControl@GroundUnitPage=Наземные юниты
+Button/Name/ZHBRRaceControl@GroundUnitPageUnitExtended=Наземные юниты
+Button/Name/ZHBRRaceControl@GroundUnitPageUnitExtendedNextMenu=Следующее меню
+Button/Name/ZHBRRaceControl@ResearchPage=Лист улучшений
+Button/Name/ZHBRRaceControl@SwapPage=Сменить лист
+Button/Name/ZHBRRestorationShield=Восстановление здоровья
+Button/Name/ZHBRRevealingSacrifice=Раскрывающая жертва
+Button/Name/ZHBRSentinelJump=Прыжок подчинения
+Button/Name/ZHBRSentinelLeap=Прыжок
+Button/Name/ZHBRSentinelLeap@Extended=Прыжок
+Button/Name/ZHBRSentinelLeap@ZHBRSentinelSubjugationJump=Subjugation Jump
+Button/Name/ZHBRSentinelProtectionJumpPassive=Прыжок защиты
+Button/Name/ZHBRSentinelSubjugationJump@SubjugationJump=Прыжок подчинения
+Button/Name/ZHBRSentinelSubjugationResearch=Подчинение
+Button/Name/ZHBRStructureTeleport=Телепортировать строение
+Button/Name/ZHBRTempleTrain@SummonMinion=Вызвать миньона
+Button/Name/ZHBRTimeWarp=Остановка времени
+Button/Name/ZHBRToxicity=Токсичность
+Button/Name/ZHBRTransfusion=Преобразование энергии
+Button/Name/ZHBRUltimateUnitOfTransfusion=Ультимативное преобразование энергии
+Button/Name/ZHBRUpgradeToAdvancedBehemoth=Продвинутый Бегемот
+Button/Name/ZHBRUpgradeToAdvancedDominator=Продвинутый Доминатор
+Button/Name/ZHBRUpgradeToAdvancedNemesis=Продвинутый Немезис
+Button/Name/ZHBRVespeneMining=Добыча газа
+Button/Name/ZHBRVoidBonus=Бонус пустоты
+Button/Name/ZHBRVoidChasm=Бездна пустоты
+Button/Name/ZHBRVoidImmunity=Иммунитет пустоты
+Button/Name/ZHBRVoidPhantom=Пустотный Фантом
+Button/Name/ZHBRVoidRiftTrain@SummonAdvancedBehemoth=Вызвать Продвинутого Бегемота
+Button/Name/ZHBRVoidRiftTrain@SummonAdvancedDominator=Вызвать Продвинутого Доминатора
+Button/Name/ZHBRVoidRiftTrain@SummonAdvancedNemesis=Вызвать Продвинутого Немезиса
+Button/Name/ZHBRVoidRiftTrain@SummonBehemoth=Вызвать Бегемота
+Button/Name/ZHBRVoidRiftTrain@SummonChimera=Вызвать Химеру
+Button/Name/ZHBRVoidRiftTrain@SummonConductor=Вызвать Кондуктор
+Button/Name/ZHBRVoidRiftTrain@SummonDominator=Вызвать Доминатора
+Button/Name/ZHBRVoidRiftTrain@SummonDreadnok=Вызвать Дреднока
+Button/Name/ZHBRVoidRiftTrain@SummonEnergator=Вызвать Энергатора
+Button/Name/ZHBRVoidRiftTrain@SummonFlayer=Вызвать Живодера
+Button/Name/ZHBRVoidRiftTrain@SummonNavigator=Вызвать Навигатор
+Button/Name/ZHBRVoidRiftTrain@SummonNemesis=Вызвать Немезиса
+Button/Name/ZHBRVoidRiftTrain@SummonPollinator=Вызвать Опылителя
+Button/Name/ZHBRVoidRiftTrain@SummonProteus=Вызвать Протеуса
+Button/Name/ZHBRVoidRiftTrain@SummonPsyon=Вызвать Псиона
+Button/Name/ZHBRVoidRiftTrain@SummonSentinel=Вызвать Дозорного
+Button/Name/ZHBRVoidRiftTrain@SummonShapeshifter=Вызвать Оборотня
+Button/Name/ZHBRVoidRiftTrain@SummonStrider=Вызвать Страйдера
+Button/Name/ZHBRVoidRiftTrain@SummonWarbringer=Вызвать Вестника войны
+Button/Name/ZHBRVoidRiftTrain@SummonWarrior=Вызвать Воина
+Button/Name/ZHBRVoidShield=Защита пустоты
+Button/Name/ZHBRWarbringerMaceStrike=Удар булавы
+Button/Name/ZHBRWarbringerMaceStrike@MaceCannon=Пушка - булава
+Button/Name/ZHBRWarbringerOrbitalGuidance=Орбитальное наведение
+Button/Name/ZHBRWarriorDeconstruction=Деконструкция
+Button/Name/ZHBRWormhole=Червоточина
+Button/Tooltip/ConductorPhaseShiftResearch=Уменьшает стоимость <c val="#ColorAttackInfo">Фазового сдвига</c> Кондуктора на <c val="#ColorAttackInfo"><d ref="Upgrade,ZHBRPhaseShift,EffectArray[0].Value"/></c> ед. энергии. Увеличивает максимальный блокированный урон <c val="#ColorAttackInfo">Барьера пустоты</c> на <c val="#ColorAttackInfo"><d ref="Upgrade,ZHBRPhaseShift,EffectArray[1].Value"/></c>.
+Button/Tooltip/HybridButtonNemesisAttackPassive=Атаки Немезиса <c val="ffff8a">не может</c> быть замедлена. Так же Немезис может преследовать цель <c val="ffff8a">не прерывая</c> атаку.
+Button/Tooltip/HybridCloakedSpiritW=Дух получает <c val="FFFF80">постоянную невидимость</c>.
+Button/Tooltip/HybridDeformerDestructionArise=При разрушении восстанавливает <c val="ffff8a">20</c> единиц <c val="ffffff">Защитного поля</c> и так же увеличивает его <c val="ffff8a">максимум</c>  в радиусе <c val="ffff8a">8</c>, продолжительность <c val="ffff8a"><d ref="Behavior,HybridDeformer@DestructionAriseMaxShields,Duration" precision="1"/> секунд</c>.
+Button/Tooltip/HybridDeformerSelfDestruction=Деформатор немедленно <c val="FF8080">самоучничтожается</c> и дает эффект <c val="FFFF8A">Энергетической волны</c>.
+Button/Tooltip/HybridDominatorDomination=Цель <c val="FFFF80">не воспринимает</c> команды и <c val="FFFF80">не может</c> двигаться, наносит <c val="FFFF80">50%</c> урона. Продолжительность зависит от ее лимита:<n/><n/>0 - 2 Лимита: 6 секунд<n/>2 - 4 Лимита: 4 секунды<n/>4 + Лимита или псионик: 2 секунды<n/><n/><c val="FF8080">Не действует на крупные единицы.</c>
+Button/Tooltip/HybridDominatorDomination@Extended=Цель <c val="FFFF80">не воспринимает</c> команды и <c val="FFFF80">не может</c> двигаться, наносит <c val="FFFF80">50%</c> урона. Продолжительность зависит от ее лимита:<n/><n/>0 - 2 Лимита: 6 секунд<n/>2 - 4 Лимита: 4 секунды<n/>4 + Лимита или псионик: 2 секунды<n/><n/><c val="FF8080">Не действует на крупные единицы.</c>
+Button/Tooltip/ZHBRCancelStationarity=Отменяет бонусную область обзора и детекции и позволяет двигаться.
+Button/Tooltip/ZHBRStationarity=<c val="FFFF80">Увеличивает</c> область обзора и детекции на <c val="FFFF80">3</c>, но не может двигаться.
+Button/Tooltip/HybridPsyonCorrosionOfStructurePassive=Когда псион атакует строение, все строения в радиусе 3,5 <c val="ffff8a"> снижают</c> свою эффективность против <c val="ffff8a">воздушных</c> целей на <c val="ffff8a">50%</c> и теряют <c val="FFFF80"><d ref="2*Effect,HybridPsyon@FragmentumCorrosionPermamentDamage,Amount"/></c> единиц здоровья в сек.
+Button/Tooltip/HybridPsyonImmunetoAttackSpeedChangePassive=Когда Псион <c val="ffff8a">начинает</c> атаковать воздушных юнитов его атака <c val="ffff8a">не может</c> быть замедлена.
+Button/Tooltip/HybridSpiritCancelSiegeMod=Бонус обзора отменяется и возвращается режим движения.
+Button/Tooltip/HybridSpiritSiegeMod=<c val="FFFF80">Увеличивает</c> обзор на <c val="FFFF80">2</c> но не позволяет двигаться.
+Button/Tooltip/HybridSpiritSiegeMode=<c val="FFFF80">Увеличивает</c> обзор на <c val="FFFF80">2</c> но не позволяет двигаться.
+Button/Tooltip/HybridStriderActivateEvaporator=Тратится энергия <c val="#Void">Пустоты</c> на увеличение урона от каждой атаки.
+Button/Tooltip/HybridStriderActivateEvaporator@Extended=Тратится энергия <c val="#Void">Пустоты</c> на увеличение урона от каждой атаки.
+Button/Tooltip/HybridStriderDeactivateEvaporator=Не тратится энергия <c val="#Void">Пустоты</c> на выстрел.
+Button/Tooltip/HybridStriderDeactivateEvaporator@Extended=Не тратится энергия <c val="#Void">Пустоты</c> на выстрел.
+Button/Tooltip/HybridUniversalButtonCancelSiegeMod=Перевести в <c val="FFFF80">подвижный</c> режим всех юнитов поддержки.
+Button/Tooltip/HybridUniversalButtonCancelSiegeMode=Перевести всех юнитов поддержки в <c val="FFFF80">подвижный</c> режим.
+Button/Tooltip/HybridUniversalButtonSiegeMod=Перевести в <c val="FFFF80">стационарный</c> режим всех юнитов поддержки.
+Button/Tooltip/HybridUniversalButtonSiegeMode=Перевести всех юнитов поддержки в <c val="FFFF80">стационарный</c> режим.
+Button/Tooltip/ImmunetoAttackSpeedChange=This unit is immune to any attack speed change.
+Button/Tooltip/ZHBRAcceleration=<c val="FFFF80">Псион</c> увеличивает скорость передвижения на <c val="FFFF80"><d ref="100*Behavior,ZHBRAcceleration,Modification.MoveSpeedMultiplier"/>%</c> в течении <c val="FFFF80"><d ref="Behavior,ZHBRAcceleration,Duration"/></c> секунд.
+Button/Tooltip/ZHBRAmplifier=Призван на месторождение полезных ископаемых для добычи <c val="FFFF80"><d ref="-Effect,ZHBRMineralMining@MiningMU,Resources"/></c> минералов каждые  <c val="FFFF80"><d ref="Behavior,ZHBRMineralMining@Mining,Period" precision="2"/></c> секунды.
+Button/Tooltip/ZHBRBehemoth=Чудовищное существо. Может использовать <c val="ffff8a">Поглощение ДНК</c> для восстановления здоровья и <c val="ffffff"> Защитного поля</c>.<n/><n/><c val="ffff8a">Может атаковать наземные подразделения.</c><n/><n/><c val="FFFFFF">Генерирует энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.
+Button/Tooltip/ZHBRBrokenDNA=<c val="ffff8a">Бегемот</c> увеличивает <c val="ffff8a">максимальное здоровье</c> и дополнительно <c val="ffff8a">восстановливает здоровье</c> или <c val="ffffff">защитное поле</c> быстрее на <c val="ffff8a"><d ref="Upgrade,ZHBRBrokenDNA,EffectArray[1].Value" player="0"/></c> единицы от каждой цели каждой волны Поглощения ДНК. Продолжительность <c val="ffff8a"><d ref="Behavior,ZHBRConsumeDNA@LifeStealMain,Duration" precision="1"/></c> секунд (не более 50% от начального максимального здоровья).
+Button/Tooltip/ZHBRCapsule=Улучшает Разлом пустоты, содержит обновления для <c val="ffff8a">Бегемотов</c> и <c val="ffff8a">Доминаторов</c>.<n/><n/><c val="ffff8a">Открывает:</c><n/>- Бегемоты<n/>- Доминаторы
+Button/Tooltip/ZHBRChimera=Могущественный воин. Остается скрытым, пока питается от <c val="#Void">Пустоты</c>, и может быть быстро скрыт в энергетическом поле <c val="#Void">Пустоты</c>.<n/><n/><c val="ffff8a">Может атакуйте наземные и воздушные подразделения.</c>
+Button/Tooltip/ZHBRChimera@Fade=Химера становится <c val="ffff8a">невидимой</c> и использует оружие только <c val="ffff8a">ближнего</c> боя.
+Button/Tooltip/ZHBRChimera@Pounce=Увеличивает скорость передвижения на <c val="ffff8a">125%</c>  в течении <c val="ffff8a"><d ref="Behavior,ZHBRChimera@Pounce,Duration"precision="2"/></c> сек.
+Button/Tooltip/ZHBRChimera@PounceExtended=Увеличивает скорость передвижения на <c val="ffff8a">125%</c>  в течении <c val="ffff8a"><d ref="Behavior,ZHBRChimera@Pounce,Duration"precision="2"/></c> сек.
+Button/Tooltip/ZHBRChimera@EmergeExtended=Химера снова становится видимой и может использовать все виды оружия.
+Button/Tooltip/ZHBRCloakedSpirit=<c val="FFFF80">Увеличивает </c>скорость Духа на <c val="FFFF80"> <d ref="Upgrade,ZHBRMoveSpirit,EffectArray[0].Value*100-100"/>%</c>.
+Button/Tooltip/ZHBRConductor=Поддерживающий воздушный блок. Может создавать <c val="FFFF80">усиленное поле</c> <c val="#Void">Пустоты</c>  и <c val="FFFF80">отключать</c> любое устройство или структуру.<n/><n/><c val="FFFFFF">Может генерировать энергию без каких-либо требований. НЕ использует энергию <c val="#Void">Пустоты</c>, передаваемую от энергатора или деформатора.</c>
+Button/Tooltip/ZHBRVoidBarrier=Блокирует <c val="ffff8a"><d ref="100*(1-Behavior,ZHBRVoidBarrier,DamageResponse.ModifyFraction)"/>%</c> любого урона, но не более <c val="ffff8a"><d ref="Behavior,ZHBRVoidBarrier,DamageResponse.ModifyLimit"/></c>. Длительность <c val="FFFF80"><d ref="Behavior,ZHBRVoidBarrier,Duration"precision="1"/> секунд.
+Button/Tooltip/ZHBRConfusion=Заставляет вражеских юнитов атаковать на <c val="FFFF80">25%</c> медленнее в течении <c val="FFFF80"><d ref="Behavior,ZHBRConfusion,Duration"precision="1"/> секунд</c>.
+Button/Tooltip/ZHBRConstruct@AntiAir=Мощный противовоздушный страж, который проверяет на прочность тех, кто ищет Залы Откровения. Может быть преобразован в наземную конструкцию.<n/><n/><c val="#ColorAttackInfo">Может атаковать воздушные подразделения.</c>
+Button/Tooltip/ZHBRConstruct@AntiGround=Мощный наземный страж, который проверяет на прочность тех, кто ищет Залы Откровения. Может быть преобразован в противовоздушную конструкцию.<n/><n/><c val="#ColorAttackInfo">Может атаковать наземные подразделения.</c>
+Button/Tooltip/ZHBRConstruct@ClusterNovaAA=Захватывает цель и может нанести <c val="#ColorAttackInfo">3 дополнительных </c>выстрела на <c val="#ColorAttackInfo">дистанции 7 - 12.</c>
+Button/Tooltip/ZHBRConstruct@ClusterNovaAG=Захватывает цель и может нанести <c val="#ColorAttackInfo">3 дополнительных </c>выстрела на <c val="#ColorAttackInfo">дистанции 7 - 12.</c><n/>Так же может атаковать дополнительно <c val="#ColorAttackInfo"><d ref="Effect,ZHBRConstructWeaponAntiGround@Search,AreaArray[0].MaxCount"/></c> цели с уроном <c val="ffff8a"><d ref="Effect,ZHBRConstructWeaponAntiGround@DamageLow,Amount"/></c>.
+Button/Tooltip/ZHBRConstruct@TransformToConstructAntiAir=Трансфрмировать в Конструкцию (Воздушная).
+Button/Tooltip/ZHBRConstruct@TransformToConstructAntiGround=Трансфрмировать в Конструкцию (Наземная).
+Button/Tooltip/ZHBRConsumeDNA=Наносит <c val="ffff8a"><d ref="Effect,ZHBRConsumeDNA@Damage,Amount"/></c> урона каждому вражескому юниту и восстанавливает <c val="ffff8a"><d ref="Effect,ZHBRConsumeDNA@UDTotalVital,Amount"/></c> единиц здоровья или <c val="ffffff">Защитного поля</c> от атаки по врагу каждую <c val="FFFF80"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Period" precision="2"/></c> секунду. <c val="ffff8a">Увеличивает</c> скорость передвижения на <c val="ffff8a">0.6</c>. Продолжительность <c val="FFFF80"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Duration" precision="2"/></c> секунд.
+Button/Tooltip/ZHBRCrypt=Улучшает Разлом пустоты, содержит обновления для <c val="ffff8a">Вестников войны</c>, <c val="ffff8a">Протеусов</c> и <c val="ffff8a">Страйдеров</c>.<n/><n/><c val="ffff8a"></c></c><c val="ffff8a">Открывает:</c><n/>- Вестников войны<n/>- Протеусов<n/>- Страйдеров<n/>- Превращение миньонов в Духов.
+Button/Tooltip/ZHBRDeepTunnel=<c val="ffff8a">Химера</c> роет подземный тунель в указанное место с <c val="#Void">Пустотным</c> полем.
+Button/Tooltip/ZHBRDeformer=Поддерживающая конструкция. Заряжает энергией <c val="#Void">Пустоты</c> близлежащих юнитов.<n/><n/><c val="FFE303">Детектор</c>
+Button/Tooltip/ZHBRAnnihilation=<c val="FFFF80">Увеличивает</c> радиус атаки Псионического шара на <c val="FFFF80"><d ref="Upgrade,ZHBRAnnihilation,EffectArray[0].Value"/></c> и урон на <c val="FFFF80"><d ref="Upgrade,ZHBRAnnihilation,EffectArray[1].Value"/></c>.
+Button/Tooltip/ZHBRDisappearance=Создает ауру <c val="FFFF80">Энергатора</c>. Все юниты рядом становятся невидимыми. Длится <c val="FFFF80"><d ref="Behavior,ZHBRDisappearance@Cloak,Duration" precision="1"/></c> секунды.
+Button/Tooltip/ZHBRDominator=Псионический монстр пользователь энергии <c val="#Void">Пустоты</c>, наносящий большой урон атаками. Может использовать <c val="ffff8a"> Псионический шар</c> для нанесения урона по площади и <c val="ffff8a">Замешательство</c> для ослабления вражеских юнитов.<n/><n/><c val="ffff8a"> Может атаковать с воздуха и наземные подразделения.</c><n/><n/><c val="FFFFFF">Генерирует энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRDominatorCliffMovePassive=Доминатор может <c val="FFFF80">видеть</c> возвышенности и <c val="FFFF80">перемещаться</c> через уступы. Так же может летать над <c val="FFFF80">войсками</c>.
+Button/Tooltip/ZHBRDreadnok=Сильная поддержка пользователя энергии <c val="#Void">Пустоты</c>. Может использовать <c val="FFFF80">Псионический торнадо</c> для нанесения большого урона и <c val="FFFF80">Остановку времени</c> для выведения из строя вражеских юнитов.<n/><n/><c val="#ColorAttackInfo">Может атаковать наземные и воздушные подразделения.</c><n/><n/><c val="FFFFFF">Генерирует энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRDreadnokWeapon=Сжигает <c val="f078ff">35</c> энергии противнику за выстрел.
+Button/Tooltip/ZHBREnergation=Восстанавливает <d ref="Effect,ZHBREnergation@Restore,RechargeVitalRate"/> единиц энергии <c val="#Void">Пустоты</c> в секунду. На восстановление <d ref="1/Effect,ZHBREnergation@Restore,DrainVitalCostFactor" precision="1"/> единиц энергии <c val="#Void">Пустоты</c> тратится 1 стандартная единица <c val="f078ff">Энергии</c>.<n/>Юнит Протеус имеет приоритет.<n/>
+Button/Tooltip/ZHBREnergationDeformer=Восстанавливает <d ref="Effect,ZHBREnergation@RestoreDeformer,RechargeVitalRate"/> единиц энергии <c val="#Void">Пустоты</c> в секунду. На восстановление <d ref="1/Effect,ZHBREnergation@RestoreDeformer,DrainVitalCostFactor" precision="1"/> единиц энергии <c val="#Void">Пустоты</c> тратится 1 стандартная единица <c val="f078ff">Энергии</c>.<n/>Юнит Протеус имеет приоритет.<n/><n/><c val="FFFF80">Энергия передается в 2 раза быстрее во время боя</c>.<n/>
+Button/Tooltip/ZHBREnergator=Поддерживающее воздушное подразделение. Может восстанавливать энергию <c val="#Void">Пустоты</c> для дружественных подразделений. Может использовать <c val="FFFF80">Исчезновение</c> для маскировки союзников.<n/><n/><c val="FFFF80">Может атаковать наземные и воздушные подразделения.</c><n/><n/><c val="FFFFFF">Может генерировать энергию без каких-либо требований. НЕ использует энергию <c val="#Void">Пустоты</c>, передаваемую от деформатора.</c>
+Button/Tooltip/ZHBREnergator@CancelVoidTrance=Отменить все бонусы и позволить энергатору передвигаться.
+Button/Tooltip/ZHBREnergator@EnergationRange=Восстанавливает <d ref="Effect,ZHBREnergation@Restore,RechargeVitalRate*1.25"/> единиц энергии <c val="#Void">Пустоты</c> в секунду. На восстановление <d ref="1/Effect,ZHBREnergation@Restore,DrainVitalCostFactor" precision="1"/> единиц энергии <c val="#Void">Пустоты</c> тратится 1 стандартная единица <c val="f078ff">Энергии</c>.<n/>Юнит Протеус имеет приоритет.<n/>
+Button/Tooltip/ZHBREnergator@VoidTrance=Энергатор не может двигаться но <c val="ffff8a">атакует</c> в <c val="ffff8a">2</c> раза быстрее, <c val="ffff8a">заряжает</c> на <c val="ffff8a">2</c> единици дальше и <c val="ffff8a">быстрее</c> на <c val="ffff8a">25%</c>.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor=Улучшает броню всей наземной армии Сил Пустоты.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons=Улучшает атаку всей наземной армии Сил Пустоты.
+Button/Tooltip/ZHBREvaporator=Увеличивает урон на <c val="FFFF80"><d ref="100*Effect,ZHBREvaporator@StoreUserData,Amount"/>%</c>.<n/><n/>Расходует <c val="FFFF80"><d ref="-Effect,ZHBREvaporator@ReduceEnergy,VitalArray.Change"/></c> единиц энергии <c val="#Void">Пустоты</c> на каждый выстрел.
+Button/Tooltip/ZHBRFlayer=Свирепый уничтожитель легких юнитов.<n/><n/><c val="ffff8a">Может атаковать наземные юниты.</c>
+Button/Tooltip/ZHBRFlayerBerserker=Увеличивает скорость перемещения <c val="FFFF80">Живодера</c> на <c val="FFFF80"><d ref="100*Upgrade,ZHBRFlayerBerserker@Berserker,EffectArray[0].Value-100"/>%</c>.
+Button/Tooltip/ZHBRFlayerFury=Периодически увеличивает атаку <c val="ffff8a">Живодера</c> с <c val="ffff8a"><d ref="Effect,ZHBRFlayerWeapon@InitialPersistent,PeriodCount"/></c> to <c val="ffff8a"><d ref="Effect,ZHBRFlayerFury@InitialPersistent,PeriodCount"/></c>.
+Button/Tooltip/ZHBRFlayerFury@Research=Периодически увеличивает атаку <c val="ffff8a">Живодера</c> с <c val="ffff8a"><d ref="Effect,ZHBRFlayerWeapon@InitialPersistent,PeriodCount"/></c> to <c val="ffff8a"><d ref="Effect,ZHBRFlayerFury@InitialPersistent,PeriodCount"/></c>.
+Button/Tooltip/ZHBRHarvester=Вызывается над Веспеновым гейзером, чтобы можно было собирать газ.
+Button/Tooltip/ZHBRHarvesterRich=Призывается над гейзером Веспена, чтобы можно было собирать веспеновый газ.
+Button/Tooltip/ZHBRHoldingCell=Содержит основные улучшения гибридов.
+Button/Tooltip/ZHBRIndestructible=При получении фатального урона <c val="FFFF80">Страйдер</c> вызывает <c val="FFFF80">Вспомогательного робота</c> на <c val="FFFF80"><d ref="Behavior,ZHBRStriderCrawler@CarryBehavior,Duration"/></c> секунд. <c val="FFFF80">Вспомогательный робот</c> имеет <c val="FFFF80"><d ref="-100*Behavior,ZHBRStriderCrawler@CarryBehavior,Modification.VitalMaxAdditiveMultiplierArray[Life]+50"/>%</c> здоровья и <c val="FFFFFF">Защитного поля</c>.
+Button/Tooltip/ZHBRInterdimensionalOverload=После подготовки в <c val="FFFF80"><d ref="Abil,ZHBRInterdimensionalOverload,CastIntroTime[0]"/> секунды</c> <c val="FFFF80">Навигатор</c> телепортируется к любому <c val="FF8080">своему</c> юниту или строению.
+Button/Tooltip/ZHBRIonicCrystal=Обеспечивает снабжение. Снабжение позволяет вам призывать больше юнитов.<n/><n/>Создает энергетическое поле <c val="#Void">Пустоты</c>, позволяющее юнитам вокруг восстанавливать <c val="ffffff">Защитное поле</c> и энергию <c val="#Void">Пустоты</c>.</c><n/><n/><c val="ffff8a">Подвижная конструкция.</c>
+Button/Tooltip/ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal=Позволяет Ионному кристаллу передвигаться.
+Button/Tooltip/ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal=Передвижение для Ионного кристалла невозможно.
+Button/Tooltip/ZHBRIonicField=Увеличивает радиус поля <c val="#Void">Пустоты</c> <c val="FFFF80">Ионного кристалла</c> на <c val="FFFF80"><d ref="100*((Behavior,ZHBRVoid@PowerSourceIonicCrystalLarge,Radius/Behavior,ZHBRVoid@PowerSourceIonicCrystalSmall,Radius)-1)"/>%</c>. Так же увеличивает скорость передвижения на <c val="FFFF80"><d ref="100*Upgrade,ZHBRIonicField,EffectArray[0].Value-100" precision="0"/>%</c> и обзор на <c val="FFFF80"><d ref="Upgrade,ZHBRIonicField,EffectArray[1].Value"/></c>.
+Button/Tooltip/ZHBRKeystone=Улучшает Разлом пустоты, содержит обновления для <c val="ffff8a">Химер</c>, <c val="ffff8a">Страйдеров</c>, и  <c val="ffff8a">Дредноков</c>.<n/><n/><c val="ffff8a">Пока подключен к полю <c val="#Void">Пустоты</c> открывает:</c><n/>- Химер<n/>- Дредноков
+Button/Tooltip/ZHBRMineralMining=Каждые <c val="FFFF80"><d ref="Behavior,ZHBRMineralMining@Mining,Period" precision="2"/></c> секунды добыватся <c val="FFFF80"><d ref="-Effect,ZHBRMineralMining@MiningMU,Resources"/></c> минерала.
+Button/Tooltip/ZHBRMinion=Основная рабочая единица. Может собирать ресурсы и строить гибридные структуры. Может пожертвовать собой, чтобы стать Духом.<n/><n/><c val="ffff8a">Может атаковать наземные подразделения.</c>
+Button/Tooltip/ZHBRMinionBuild@SummonAdvancedStructured=Список продвинутых структур.
+Button/Tooltip/ZHBRMinionBuild@SummonStructure=Список базовых строений.
+Button/Tooltip/ZHBRMinionHarvest@Gather=Приказывает отряду собрать ресурсы на выбранном месторождении полезных ископаемых или Веспеновым гейзере.
+Button/Tooltip/ZHBRMinionHarvest@Return=Возвращает перенесенные ресурсы в ближайшый Храм.
+Button/Tooltip/ZHBRMinionMorph=Миньон превращается в <c val="ffff8a">Духа</c>, маленького быстро летающего разведчика с низким уровнем здоровья.
+Button/Tooltip/ZHBRNavigator=Flying transport. Can use <c val="ffff8a">Interdimensional Overload</c> to teleport to any player unit.<n/><n/><c val="FFE303">Detector</c><n/><n/><n/>Летающий транспорт. Может использовать <c val="ffff8a">Межпространственную перегрузку</c> для телепортации к любому своему юниту или строению.<n/><n/><c val="FFE303">Детектор</c>
+Button/Tooltip/ZHBRNavigator@FromTheVoid=<c val="FFFF80">Навигатор</c> невидим если никого не перевозит.
+Button/Tooltip/ZHBRNavigatorLoad@Load=Загружает армию в трюм Навигатора.
+Button/Tooltip/ZHBRNavigatorLoad@UnloadAll=Выгрузить всю армию.
+Button/Tooltip/ZHBRNavigatorLoad@UnloadAllM=Unloads all units.
+Button/Tooltip/ZHBRNemesis=Флагманское воздушное подразделение. Может потреблять энергию <c val="#Void">Пустоты</c> для усиления атаки.<n/><n/><c val="FFFF80">Может атаковать наземные и воздушные подразделения.</c><n/><n/><c val="FFFFFF">Генериреут энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRNemesisAdvanced=Флагманское воздушное подразделение. Может использовать два режима атаки.<n/><n/><c val="FFFF80">Может атаковать наземные и воздушные подразделения.</c>
+Button/Tooltip/ZHBRNemesisDisintegrator@Disintegrator=Оружие игнорирует <c val="FFFF80">броню</c> и увеличивает дальность на <c val="ffff8a"><d ref="Behavior,ZHBRNemesisDisintegrator,Modification.WeaponRange" precision="2"/></c>. Урон <c val="ffff8a"><d ref="Effect,ZHBRNemesisWeapon@DamageArmorIgnore,Amount+Behavior,ZHBRNemesisDisintegrator,Modification.DamageDealtScaled[Ranged]"/></c> (по всем целям).<n/><n/>Оружие тратит <c val="ffff8a"><d ref="-Effect,ZHBRNemesisWeapon@NetworkDrain,VitalArray.Change"/></c> единиц энергии <c val="#Void">Пустоты</c> за каждый выстрел.
+Button/Tooltip/ZHBRNemesisDisintegrator@Ionizer=Оружие наносит базовый урон с базовой дальностью действия.<n/><n/>Не требует затрат энергии <c val="#Void">Пустоты</c>.
+Button/Tooltip/ZHBRPermanentPower=Обеспечивает непрерывную связь с <c val="#Void">Пустотой</c>.
+Button/Tooltip/ZHBRPhaseShift=Структура или юнит находится в стазисе в течении <c val="#ColorAttackInfo"><d ref="Behavior,ZHBRPhaseShift,Duration"/> seconds</c>. Цель не может атаковать, использовать способности или давать энергию.
+Button/Tooltip/ZHBRPlasmaticBlast=<c val="ffff8a">Оборотень</c> наносит урон по области по воздушным целям, но на каждую атаку тратит <c val="ffff8a"><d ref="Abil,ZHBRPlasmaticBlast,Cost[0].Vital[Energy]"/></c> единиц энергии <c val="#Void">Пустоты</c>.
+Button/Tooltip/ZHBRPlasmaticBlast@PlasmaticCharge=<c val="ffff8a">Оборотень</c> наносит сильный урон по одиочным <c val="ffff8a">бронированным</c> наземным целям</c> без затрат энергии <c val="#Void">Пустоты</c>.
+Button/Tooltip/ZHBRPollinator=Воздушный юнит. Потребляет энергию <c val="#Void">пустоты</c>, чтобы стать невидимым.<n/><n/><c val="ffff8a">Может атаковать наземные юниты.</c></n></n><c val="FFFFFF">Генерирует энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRPollinatorShadowMantle@Off=Юнит снова становится видимым для врагов.
+Button/Tooltip/ZHBRPollinatorShadowMantle@On=Скрывает юнита для врагов. <c val="FF8080">Уменьшает</c> скорость перемещения на <c val="FF8080">0.5</c>. Может быть обнаружен только с помощью эффектов обнаружения.<n/><n/><c val="#Void">Тратит <d ref="-1 * (Behavior,ZHBRPollinatorShadowMantle@ShadowMantle,Modification.VitalRegenArray[2] + Unit,ZHBRHorror,EnergyRegenRate)" precision="1"/> энергии Пустоты в секунду.</c>
+Button/Tooltip/ZHBRPowerField=Создает усиленное поле <c val="#Void">Пустоты</c>. Все юниты и строения восстанавливают в нем <c val="FFFFFF">Защитное поле</c> быстрее, даже если они атакованы.<n/><n/><c val="FFFF80">В этом режиме Кондуктор не может двигаться или использовать способности.</c>
+Button/Tooltip/ZHBRPowerField@Cancel=Вернуть <c val="FFFF80">Кондуктору</c> подвижность.
+Button/Tooltip/ZHBRPrimeSummoning=Все юниты, вызванные другими Разломами пустоты, появятся в <c val="ffff8a">выбранном</c> Разломе пустоты и будут подчиняться его точке сбора. Этот  Разлом пустоты будет получать на <c val="ffff8a"><d ref="100*(1-Behavior,ZHBRPrimeSummoning@Controller,DamageResponse.ModifyFraction)"/>%</c> меньше урона от всех источников.
+Button/Tooltip/ZHBRPrimeSummoningCancel=Все вызванные юниты будут появляться в собственных Разломах Пустоты.
+Button/Tooltip/ZHBRProjector=Улучшает Разлом пустоты, содержит обновления для <c val="ffff8a">Псионов</c>.<n/><n/><c val="ffff8a">Пока подключен к полю <c val="#Void">Пустоты</c> открывает:</c><n/>- Псионов<n/>- Опылителей
+Button/Tooltip/ZHBRProteus=Очень живучий юнит. Потребляет энергию <c val="#Void">Пустоты</c> для восстановления <c val="ffffff"> защитного</c> щита.<n/><n/><c val="ffff8a">Может атаковать наземные подразделения.</c><n/><n/><c val="FFFFFF">Генерирует энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRDestructionOrb=Выпускает псионический шар который наносит <c val="FFFF80"><d ref="Effect,ZHBRDestructionOrb@Damage,Amount"/></c> урона (<c val="FFFF80">+3</c> бонус по бронированным) каждые <c val="FFFF80"><d ref="Effect,ZHBRDestructionOrb@InitialPersistent,Marker.Duration" precision="2"/></c> секунд <c val="FFFF80">8</c> раз. Шар <c val="FFFF80">отключает</c> способности юнитов на короткое время (если они ещё не запущены).<n/><n/><c val="FF8080">Одновременно каждая цель может быть атакована только 1 шаром.<c/>
+Button/Tooltip/ZHBRPsionicTornado=Создается торнадо, движущееся в указанную точку. Наносит <c val="FFFF80">120</c> урона в течении <c val="FFFF80"><d ref="Effect,ZHBRDreadnokTornado@PersistentStart,PeriodCount*Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]+Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]" precision="1"/></c> секунд. Торнадом можно управлять если кастер жив, не в транспорте и не дальше расстояния 12.
+Button/Tooltip/ZHBRPsyon=Быстрый воздушный юнит, может атаковать во время движения. Может использовать <c val="FFFF80">Ускорение</c> для увеличения скорости передвижения.
+Button/Tooltip/ZHBRRaceControl@AirBattleUnitPage=Список боевых воздушных юнитов.
+Button/Tooltip/ZHBRRaceControl@AirBattleUnitPageUnitExtended=Список <c val="ffff8a">способностей</c> боевых воздушных юнитов в выделенной группе.
+Button/Tooltip/ZHBRRaceControl@AirSupportUnitPage=Список поддерживающих воздушных юнитов.
+Button/Tooltip/ZHBRRaceControl@AirSupportUnitPageUnitExtended=Список <c val="ffff8a">способностей</c> поддерживающих воздушных юнитов в выделенной группе.
+Button/Tooltip/ZHBRRaceControl@GroundUnitPage=Список наземных юнитов.
+Button/Tooltip/ZHBRRaceControl@GroundUnitPageUnitExtended=Список <c val="ffff8a">способностей</c> наземных юнитов в выделенной группе.
+Button/Tooltip/ZHBRRaceControl@GroundUnitPageUnitExtendedNextMenu=Список <c val="ffff8a">способностей</c> наземных юнитов.
+Button/Tooltip/ZHBRRaceControl@ResearchPage=Список технических сооружений. Кнопки появятся, как только будет создано техническое здание.
+Button/Tooltip/ZHBRReaver=
+Button/Tooltip/ZHBRRestorationShield=Войска и строения Сил пустоты <c val="FFFF8A">Восстанавливают здоровье</c> пока находятся в поле <c val="#Void">Пустоты</c> и имеют <c val="FFFF8A">полное</c> <c val="FFFFFF">Защитное поле.</c> Так же начальный запас <c val="#Void">энергии Пустоты</c> увеличивается до <c val="#Void">100%</c> от максимальной.
+Button/Tooltip/ZHBRRevealingSacrifice=Дух вселяется в цель и получает ее обзор плюс способность видеть невидимые и закопанные войска. Через <c val="FFFF80"><d ref="Behavior,ZHBRRevealingSacrifice,Duration"/></c> секунд дух <c val="FF8080">умирает</c>.
+Button/Tooltip/ZHBRSentinel=Быстрый мобильный отряд. Может использовать <c val="FFFF80">Прыжок подчинения</c> для перемещения за спину противника. Также может перепрыгивать уступы и преграды.<n/><n/><c val="ffff8a">Может атаковать наземные отряды.</c>
+Button/Tooltip/ZHBRSentinelJump=Дозорный прыгает на цель и наносит <c val="FFFF80"><d ref="Effect,ZHBRSentinelSubjugationJump@Damage,Amount"/></c> единиц урона. Если цель не крупная то оглушает на <c val="FFFF80"><d ref="Behavior,ZHBRSentinelSubjugationJump@Stun,Duration" precision="1"/> секунду</c>.<n/>
+Button/Tooltip/ZHBRSentinelLeap=Дозорный может <c val="FFFF80">прыгнуть</c> в указанную точку включая <c val="FFFF80">возвышенность</c> даже <c val="FFFF80">без обзора</c> (если это возможно).
+Button/Tooltip/ZHBRSentinelLeap@Extended=Дозорный может <c val="FFFF80">прыгнуть</c> в указанную точку включая <c val="FFFF80">возвышенность</c> даже <c val="FFFF80">без обзора</c> (если это возможно).
+Button/Tooltip/ZHBRSentinelLeap@ZHBRSentinelSubjugationJump=Sentinel jumps behind enemy target dealing <c val="FFFF80"><d ref="Effect,ZHBRSentinelJump@Damage,Amount"/> damage</c>. If target is a unit, also stuns them for <c val="FFFF80"><d ref="Behavior,ZHBRSentinelJump@Stun,Duration" precision="1"/> second</c>.<n/>
+Button/Tooltip/ZHBRSentinelProtectionJumpPassive=При любом прыжке Дозорный <c val="FFFF8A">увеличивает</c> скорость перемещения на <c val="FFFF8A">50%</c> и получает <c val="FFFF8A">меньше</c> урона так же на <c val="FFFF8A">50%</c>. Продолжительность <c val="FFFF8A"><d ref="Behavior,ZHBRProtectionJump@Armor,Duration" precision="1"/></c> секунды.
+Button/Tooltip/ZHBRSentinelSubjugationJump@SubjugationJump=Дозорный прыгает на цель и наносит <c val="FFFF80"><d ref="Effect,ZHBRSentinelSubjugationJump@Damage,Amount"/></c> единиц урона. Если цель не крупная то оглушает на <c val="FFFF80"><d ref="Behavior,ZHBRSentinelSubjugationJump@Stun,Duration" precision="1"/> секунду</c>.<n/>
+Button/Tooltip/ZHBRSentinelSubjugationResearch=Позволяет <c val="FFFF80">Дозорному</c> использовать <c val="FFFF80">Прыжок подчинения</c> и <c val="FFFF80">увеличивает</c> продолжительность <c val="FFFF80">Прыжка защиты </c> на <c val="FFFF80"><d ref="Upgrade,ZHBRSubjugationJump@ZHBRSubjugation,EffectArray[3].Value/1.4"/></c> секунду.
+Button/Tooltip/ZHBRShapeshifter=Штурмовой воздушный отряд. Потребляет энергию  <c val="#Void">Пустоты</c>, чтобы наносить урон воздушным отрядам. Может использовать <c val="FFFF80">Бездну пустоты</c> для обезвреживания любых инитов и строений.<n/><n/><c val="FFFF80">Может атаковать наземные и воздушные цели.</c><n/><n/><c val="FFFFFF">Генерирует энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRSpirit=Быстрый гибридный отряд-разведчик. После обновления получает маскировку.
+Button/Tooltip/ZHBRSpirit@Phantasm=Invulnerable scouting flyer that automatically disappears after <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> seconds. Will also vanish upon its associated <c val="FFFF80">Spirit</c>'s death, cancelling <c val="ffff8a">Transcendence</c> siege mode or manually cancelling <c val="ffff8a">Void Phantom</c> itself.
+Неуязвимый разведывательный летающий юнит, который автоматически исчезает через <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> секунды. Также исчезнет после смерти связанного с ним <c val="FFFF80">Духа</c>, что отменит режим осады <c val="ffff8a">Трансценденция</c> или позволит вручную отменить действие <c val="ffff8a">Фантома Пустоты</c>.
+Button/Tooltip/ZHBRStasisCell=Улучшает Разлом пустоты, содержит обновления для <c val="ffff8a">Воинов</c>, <c val="ffff8a">Живодеров</c>, <c val="ffff8a">Дозорных</c>.<n/><n/><c val="ffff8a">Пока подключен к полю <c val="#Void">Пустоты</c> открывает:</c><n/>- Живодеров<n/>- Дозорных
+Button/Tooltip/ZHBRStrider=Отряд дальнобойной поддержки. Потребляет энергию <c val="#Void">Пустоты</c> для увеличения урона от атаки.<n/><n/><c val="ffff8a">Может атаковать наземные и воздушные отряды.</c><n/><n/><c val="FFFFFF">Генерирует энергию <c val="#Void">Пустоты</c> только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRStriderCrawler=Мини Страйдер. У него меньше здоровья. Потребляет энергию <c val="#Void">Пустоты</c> для увеличения урона от атаки.<n/><n/><c val="ffff8a">Может атаковать наземные и воздушные подразделения.</c>
+Button/Tooltip/ZHBRStructureTeleport=Телепортировать строение в указанную точку в течении <c val="ffff8a"><d ref="Behavior,ZHBRStructureTeleport@Controller,Duration"/> секунд</c>. Во время телепортации строение получает на <c val="ff8a8a">300%</c> больше урона.
+Button/Tooltip/ZHBRTemple=Первичная структура. Может получать собранные ресурсы.<n/><n/><c val="ffff8a">Открывает:</c><n/>- Миньоны
+Button/Tooltip/ZHBRTimeWarp=Искривляет время в указанной области. Время замедляется для <c val="ffff8a">всех наземных врагов</c> на <c val="ffff8a">50%</c> в течении <c val="ffff8a"><d ref="Effect,ZHBRTimeWarp@PersistentStart,PeriodCount*Effect,ZHBRTimeWarp@PersistentStart,PeriodicPeriodArray[0]" precision="1"/> секунд</c> и затем <c val="ffff8a">полностью останавливается</c> на <c val="ffff8a"><d ref="Effect,ZHBRTimeWarp@PersistentEnd,PeriodCount*Effect,ZHBRTimeWarp@PersistentStart,PeriodicPeriodArray[0]" precision="1"/> секунд</c>. В этой области юниты становятся видимыми.<n/><n/><c val="FF8080">Не действует на крупные единицы.</c><n/>
+Button/Tooltip/ZHBRTomb=Улучшает Разлом пустоты, содержит обновления для <C val="ffff8a">Энергаторов</C>, <C val="ffff8a">Кондукторов</C> и <C val="ffff8a">Духов</c>.<n/><n/><c val="ffff8a">Открывает:</c><n/>- Энергаторы<n/>- Навигаторы<n/>- Кондуктороы
+Button/Tooltip/ZHBRToxicity=Атака <c val="FFFF80">Опылителя</c> наносит <c val="FFFF80">15</c> урона биологическим целям в течении <c val="FFFF80">3</c> секунд.
+Button/Tooltip/ZHBRTransfusion=Восстанавливает <c val="ffff8a"><d ref="Effect,ZHBRTransfusion@Restore,RechargeVitalRate"/></c> единиц <c val="#FFFFFF">Защитного поля</c> в секунду. На восстановление <c val="ffff8a"><d ref="1/Effect,ZHBRTransfusion@Restore,DrainVitalCostFactor" precision="1"/></c> единиц <c val="#FFFFFF">Защитного поля</c> требуется <c val="ffff8a">1</c> единица энергии <c val="#Void">Пустоты</c>.
+Button/Tooltip/ZHBRUltimateUnitOfTransfusion=Увеличивает эффективность <c val="ffff8a">Преобразования энергии</c> у <c val="ffff8a"> Протеуса</c> на <c val="ffff8a"><d ref="-100*(1-Upgrade,ZHBRUltimateUnitOfTransfusion,EffectArray[0].Value)"/>%</c>. Так же увеличивает скорость восстановления <c val="#FFFFFF">Защитного поля</c> от энергии <c val="#Void">Пустоты</c> на <c val="ffff8a"><d ref="100*(Upgrade,ZHBRUltimateUnitOfTransfusion,EffectArray[1].Value-1)"/>%</c>.
+Button/Tooltip/ZHBRUpgradeToAdvancedBehemoth=Upgrades <c val="ffff8a">Behemoth</c> to <c val="ffff8a">Advanced Behemoth</c>:<n/><n/><ul indent="2" text="•"><li/>Здоровье <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[0].Value"/></c></ul><ul indent="2" text="•"><li/><c val="ffffff">Защитное поле</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[9].Value" player="0"/></c></ul><ul indent="2" text="•"><li/><c val="#Void">Энергия Пустоты</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[2].Value" player="0"/></c></ul><ul indent="2" text="•"><li/>Урон <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[4].Value"/></c></ul><ul indent="2" text="•"><li/>Может <c val="ffff8a">перешагивать</c> небольших юнитов</ul><ul indent="2" text="•"><li/><c val="ffff8a">Видит</c> возвышенность</c>
+Button/Tooltip/ZHBRUpgradeToAdvancedDominator=Улучшает <c val="ffff8a">Доминатора</c> до <c val="ffff8a">Продвинутого Доминатора</c>:<n/><n/></ul><ul indent="2" text="•"><li/><c val="FFFFFF">Защитное поле</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[0].Value"/></c></ul><ul indent="2" text="•"><li/><c val="#Void">Энергия пустоты</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[1].Value"/></c></ul><ul indent="2" text="•"><li/>Дальность обзора <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[2].Value"/></c></ul><ul indent="2" text="•"><li/>Количество зарядов Подавления <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[3].Value"/></c>
+Button/Tooltip/ZHBRUpgradeToAdvancedNemesis=Улучшает <c val="ffff8a">Немезиса</c> до <c val="ffff8a">Продвинутого Немезиса</c>:<n/><n/><ul indent="2" text="•"><li/>Здоровье <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[4].Value"/></c></ul><ul indent="2" text="•"><li/><c val="FFFFFF">Защитное поле</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[2].Value"/></c></ul><ul indent="2" text="•"><li/><c val="#Void">Энергия пустоты</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[0].Value"/></c></ul><ul indent="2" text="•"><li/>Скорость передвижения <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[1].Value*1.4" precision="2" /></c></ul>
+Button/Tooltip/ZHBRVespeneConcentrator=Вызывается над веспеновым гейзером для извлечения <c val="FFFF80"><d ref="-Effect,ZHBRVespeneMining@MiningMU,Resources"/></c> единиц газа каждые <c val="FFFF80"><d ref="Behavior,ZHBRVespeneMining@Mining,Period" precision="2"/></c> секунды.
+Button/Tooltip/ZHBRVespeneMining=Каждые <c val="FFFF80"><d ref="Behavior,ZHBRVespeneMining@Mining,Period" precision="2"/></c> секунды добывается <c val="FFFF80"><d ref="-Effect,ZHBRVespeneMining@MiningMU,Resources"/></c> единицы веспенового газа.
+Button/Tooltip/ZHBRVoidBonus=Увеличивает количество добываемых миньонами ресурсов на <c val="ffff8a"><d ref="Upgrade,ZHBRVoidBonus,EffectArray[0].Value"/></c> если они находятся в поле <c val="#Void">Пустоты</c>.
+Button/Tooltip/ZHBRVoidChasm=<c val="ffff8a">Оборотень</c> призывает силы пустоты в течении <c val="ffff8a"><d ref="Behavior,ZHBRVoidChasmStartingDelay,Duration+0.071" precision="0"/> секунд</c>. После этого все цели получают <c val="ffff8a">25%</c> урона от максимального здоровья. Воздушные и наземные цели меняются местами и они не могут использовать способности и атаковать, но и не могут быть атакованы. Продолжительность <c val="ffff8a"><d ref="Behavior,ZHBRVoidChasm,Duration" precision="0"/> секунд</c>.
+Button/Tooltip/ZHBRVoidForge=Улучшает Разлом пустоты, содержит улучшения для <c val="ffff8a">Оборотней</c> и <c val="ffff8a">Немезисов</c>.</c><n/><n/><c val="FFFF80">Открывает:</c><n/>- Оборотни<n/>- Немезисы
+Button/Tooltip/ZHBRVoidImmunity=Увеличивает <c val="ffff80">максимальный</c> запас <c val="ffffff">Защитного поля</c> <c val="ffff80">на 50%</c> и <c val="ffff80">броню</c> <c val="ffffff">Защитного поля</c> на <c val="ffff8a"><d ref="Behavior,ZHBRVoidImmunity,Modification.ShieldArmorBonus"/></c>.
+Button/Tooltip/ZHBRVoidPhantom=<c val="FFFF80">Дух</c> призывает неуязвимое летающее c val="ffff8a">Фантомное</c> существо, которое может двигаться, но не может атаковать. Доступно только в режиме осады <c val="ffff8a">Трансценденция</c> и исчезает через <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> секунды, или при ручной отмене, снятии осады или смерти <c val="FFFF80">Духа</c>.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon=Улучшает атаку всей воздушной армии Сил Пустоты.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor=Улучшает броню всей воздушной армии Сил Пустоты.
+Button/Tooltip/ZHBRVoidRift=Призывает армию Пустоты.<n/><n/><c val="ffff8a">Открывает:</c><n/>- Воин
+Button/Tooltip/ZHBRVoidShield=Увеличивает <c val="FFFF80">начальное</c> количество <c val="FFFFFF">Защитного поля</c> всех юнитов и строений до максимального. Так же дает <c val="FFFF80">+<d ref="Upgrade,ZHBRVoidShield,EffectArray[39].Value"/></c> к броне <c val="FFFFFF">Защитного поля</c> и еще <c val="FFFF80">+<d ref="Upgrade,ZHBRVoidShield,EffectArray[39].Value"/></c> пока есть связь с полем <c val="#Void">Пустоты</c>.
+Button/Tooltip/ZHBRWarbringer=Подразделение поддержки дальнего боя. Наносит большой урон одиночным целям и может использовать <c val="FFFF8A"> Удар булавой</c> для нанесения урона по площади.<n/><n/><c val="FFFF8A"> Может атаковать наземные подразделения.</c><n/><n/><c val="FFFFFF">Генерирует энергию <c val="#Void">пустоты </c>только в <c val="#Void"> Поле пустоты</c>.</c>
+Button/Tooltip/ZHBRWarbringerMaceStrike=В радиусе до <c val="ffff8a">1</c> наносит урон <c val="ffff8a"><d ref="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount"/> (<d ref="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount*2"/> по бронированным)</c> целям и <c val="ffff8a">50%</c> в радиусе <c val="ffff80">1.5</c>. Может разрушить силовое поле. <c val="FF8080">Задержка</c> перед нанесением урона <c val="FF8080"><d ref="Effect,ZHBRWarbringerWeaponMaceStrike@InitialPersistent,PeriodicPeriodArray[0]" precision="1"/></c> секунда.
+Button/Tooltip/ZHBRWarbringerMaceStrike@MaceCannon=Оружие наносит базовый урон с базовой дальностью действия и без потери энергии <c val="#Void">Пустоты</c>.
+Button/Tooltip/ZHBRWarbringerOrbitalGuidance=<c val="FFFF80">Вестник войны</c> увеличивает дистанцию <c val="FFFF80">Удара булавы</c> на <c val="ffff8a"><d ref="Upgrade,ZHBRWarbringerOrbitalGuidance,EffectArray[0].Value" precision="2"/></c>.
+Button/Tooltip/ZHBRWarrior=Пехота общего назначения.<n/><n/><c val="#ColorAttackInfo">Может атаковать наземные и воздушные подразделения.</c>
+Button/Tooltip/ZHBRWarriorDeconstruction=Увеличивает урон <c val="FFFF80">Воина</c> на <c val="FFFF80"><d ref="Upgrade,ZHBRWarriorDeconstruction@Deconstruction,EffectArray[1].Value"/></c> и дает бонусный урон по <c val="FFFF80">строениям</c>.
+Button/Tooltip/ZHBRWormhole=<c val="ffff8a">Псион</c> мгновенно телепортируется на небольшое расстояние.
+DataCollection/Name/HybridSpiritSiegeMod=Siege Mod
+DataCollection/Name/ZHBRDomination=[Hybrid] - Dominator - Domination
+DataCollection/Name/ZHBRSentinelLeap=Leap
+DataCollection/Name/ZHBRSentinelSubjugationJump=Subjugation Jump
+DataCollection/Name/ZHBRWarbringerMaceStrike=Mace Strike
+DocInfo/Name=[AR2] Hybrids
+Effect/Name/Hybrid12111345r=++++
+Effect/Name/HybridConsructAAWeapon@SwitchDistance=Switch Distance
+Effect/Name/HybridMicroDisableAbility@ApplyBehaviorStasis=Micro Disable Ability Stasis
+Effect/Name/HybridMicroDisableAbility@ApplyBehaviorTimeStop=Micro Disable Ability Time Stop
+Effect/Name/HybridPsionicTornadoTargettedIssueOrder=Targetted Issue Order
+Effect/Name/HybridSpirit@SwitchRevealingSacrifice=Switch Revealing Sacrifice
+Effect/Name/HybridStriderWeapon@SwitchLaunch2=Switch Launch Копия
+Effect/Name/ZHBRBehemothBrokenDNASingleCaster@ApplyBehavior=Broken DNA Single Caster
+Effect/Name/ZHBRCancelClusterNova@TargetLocalStatus=Cancel Target Locked Status
+Effect/Name/ZHBRConstructCancelMarkerAA=Cancel Marker AA
+Effect/Name/ZHBRConstructMarkerAA@ApplyBehavior=Marker AA
+Effect/Name/ZHBRConstructMarkerSwitchBeam@ApplyBehavior=Marker Switch Beam
+Effect/Name/ZHBRConstructReloadWeaponAA=Reload Weapon AA
+Effect/Name/ZHBRConstructWeaponAntiAir@InitialSet=Initial Set
+Effect/Name/ZHBRConsumeDNA@ApplySlowingdown=Apply Slowing down
+Effect/Name/ZHBRConsumeDNA@HealSwitch2=Heal Switch Копия
+Effect/Name/ZHBRConsumeDNA@Search2=+++
+Effect/Name/ZHBRDeformerDestructionAriseReduceShields2=Reduce Shields Копия
+Effect/Name/ZHBRDestructionArise@EffectEnd=Effect End
+Effect/Name/ZHBRDomination@ApplyBehaviorUnitUp=Apply Behavior Unit Up
+Effect/Name/ZHBRDomination@ApplyBuff=Apply Buff
+Effect/Name/ZHBRDomination@ImpactSet=Impact Set
+Effect/Name/ZHBRDomination@SearchArea=Search Area
+Effect/Name/ZHBRDominatorDisableAbility@ApplyBehavior=Destruction Orb Disable Ability
+Effect/Name/ZHBRDominatorSingleCaster@ApplyBehavior=Destruction Orb Single Caster
+Effect/Name/ZHBRDominator@DestructionOrbDamageSet=Destruction Orb Damage Set
+Effect/Name/ZHBRDreadnokTornado@PersistentEnd=Persistent End
+Effect/Name/ZHBRDreadnokTornado@PersistentStart=Persistent Start
+Effect/Name/ZHBRDreadnokTornado@SearchEnd=Search End
+Effect/Name/ZHBRDreadnokTornado@SearchStart=Search Start
+Effect/Name/ZHBRDreadnokTornado@UnitCreationSetW=Unit Creation Set W
+Effect/Name/ZHBRDreadnokWeapon@DamageAlly=Damage Ally
+Effect/Name/ZHBRHighSpeedRestoreNetwork@ApplyBehavior=Hight Seed Restore Network
+Effect/Name/ZHBRPollinatorVoidToxin@Damage=Damage
+Effect/Name/ZHBRPsionicTornado@DamageEnd=Damage End
+Effect/Name/ZHBRPsionicTornado@DamageStart=Damage Start
+Effect/Name/ZHBRRevealingSacrificeForSelf@ApplyBehavior=Revealing Sacrific For Self@ApplyBehavior
+Effect/Name/ZHBRRevealingSacrificeTargetDetection@ApplyBehavior=Revealing Sacrific Target Detection@ApplyBehavior
+Effect/Name/ZHBRSentinel@CooldownForLeap=Cool Down For Leap
+Effect/Name/ZHBRSentinel@CooldownForSubjugationJump=Cool Down For Subjugation Jump
+Effect/Name/ZHBRSentinelLeap@ApplyJumpBuff=Apply Jump Buff
+Effect/Name/ZHBRSentinelLeap@ApplyStun=Apply Stun
+Effect/Name/ZHBRSentinelLeap@Damage=Damage
+Effect/Name/ZHBRSentinelLeap@ImpactSet=Impact Set
+Effect/Name/ZHBRSentinelLeap@InitialSet=Initial Set
+Effect/Name/ZHBRSentinelLeap@LM=Launch Missile
+Effect/Name/ZHBRSentinelLeap@RemoveJumpBuff=Remove Jump Buff
+Effect/Name/ZHBRSentinelSubjugationJump@ApplyJumpBuff=Apply Jump Buff
+Effect/Name/ZHBRSentinelSubjugationJump@ApplyStun=Apply Stun
+Effect/Name/ZHBRSentinelSubjugationJump@Damage=Damage
+Effect/Name/ZHBRSentinelSubjugationJump@ImpactSet=Impact Set
+Effect/Name/ZHBRSentinelSubjugationJump@InitialSet=Initial Set
+Effect/Name/ZHBRSentinelSubjugationJump@LM=Launch Missile
+Effect/Name/ZHBRSentinelSubjugationJump@RemoveJumpBuff=Remove Jump Buff
+Effect/Name/ZHBRSetConstructEndAttackAA=End Attack AA
+Effect/Name/ZHBRSetConstructSwitchBeamSet=Switch Beam Set
+Effect/Name/ZHBRShapshifterInterruptAbility@ApplyBehavior=Interrupt Ability
+Effect/Name/ZHBRShapshifterStartingDelay@ApplyBehavior=Starting Delay
+Effect/Name/ZHBRSiegeModeApplyStopMove=Apply Stop Move
+Effect/Name/ZHBRSiegeModeCancelStopMove=Cancel Stop Move
+Effect/Name/ZHBRTimeWarp@ApplyDebuffEnd=Apply Debuff End
+Effect/Name/ZHBRTimeWarp@ApplyDebuffStart=Apply Debuff Start
+Effect/Name/ZHBRTimeWarp@PersistentEnd=Persistent End
+Effect/Name/ZHBRTimeWarp@PersistentStart=Persistent Start
+Effect/Name/ZHBRTimeWarp@SearchEnd=Search End
+Effect/Name/ZHBRTimeWarp@SearchMicroDisableAbilityTimeStop=Search Micro Disable Ability Time Stop
+Effect/Name/ZHBRTimeWarp@SearchStart=Search Start
+Effect/Name/ZHBRUnitBorn@EnergyShieldsSet=Started Energe and Shields
+Effect/Name/ZHBRUnitBorn@StartingEnergy=Starting Energy
+Effect/Name/ZHBRUnitBorn@StartingShield=Starting Shields
+Effect/Name/ZHBRVoidChasm@InitialPersistent2=Initial Persistent Копия
+Effect/Name/ZHBRWarbringerMacStrikeBanAutocast2=Apply Ban Auto cast Копия
+Effect/Name/ZHBRWarbringerMaceStrike@SearchCorrosiveBileForceFieldKill=Search (Corrosive Bile Force Field Kill)
+Effect/Name/ZHBRWarbringerWeaponMaceStrike@EndingSet=Ending Set
+Effect/Name/ZHBRWormhole@Teleport=Teleport
+Error/ZHBR_PermanentPowerAlreadyBuffed=Цель уже имеет Постоянное подключение
+Error/ZHBR_VoidEnergyUserRequired=Must target Void energy user.
+Error/ZHBR_VoidImmunityAlreadyBuffed=Цель уже имеет Иммунитет пустоты
+HybridDominatorDisableSecondApply=Цель контролировалась недавно
+HybridDominatorDomination=Цель уже контролируется
+RequirementNode/Tooltip/CountBehaviorZHBRChimera@FadeCheckQueuedOrBetterAtUnit391207227=Находиться в поле пустоты
+RequirementNode/Tooltip/CountBehaviorZHBRCommon@RequiresCrystallicShrineCompleteOnlyAtUnit3760657428TechTreeCheat=Atleast 1 Crystallic Shrine in Network.
+RequirementNode/Tooltip/CountUnitAlias_ZHBRIonicCrystalCompleteOnly2766371930TechTreeCheat=Ионный кристалл
+RequirementNode/Tooltip/CountUnitTechAlias_ZHBR_HarvesterCompleteOnly4064654695=Жнец
+RequirementNode/Tooltip/CountUpgradeZHBRAccelerationCompleteOnly3995139899=Изучить Ускорение в Проекторе
+RequirementNode/Tooltip/CountUpgradeZHBRBrokenDNACompleteOnly2538930120=Изучить Сломанную ДНК в Капсуле
+RequirementNode/Tooltip/CountUpgradeZHBRCloakedSpiritCompleteOnly3516416024=Изучить Невидимость духа в Могиле
+RequirementNode/Tooltip/CountUpgradeZHBRDeepTunnelCompleteOnly3826630383=Изучить Глубокий тунель в Ключевом камне
+RequirementNode/Tooltip/CountUpgradeZHBRAnnihilationCompleteOnly1500912908=Изучить Сферу разрушения в Капсуле
+RequirementNode/Tooltip/CountUpgradeZHBRDisappearanceCompleteOnly1585767443=Изучить исчесзновение в Могиле
+RequirementNode/Tooltip/CountUpgradeZHBREnhancedArmor@UpgradeCompleteOnly4257213191=Research Enchanced Armor at the Void Forge
+RequirementNode/Tooltip/CountUpgradeZHBRFlayerBerserker@BerserkerCompleteOnly840449553=Изучить Берсерк в Камере стазиса
+RequirementNode/Tooltip/CountUpgradeZHBRFlayerFuryCompleteOnly431183636=Изучить Ярость в Камере стазиса
+RequirementNode/Tooltip/CountUpgradeZHBRGroundArmorUpgradeLevel1QueuedOrBetter539044291=Hybrid Ground Armor Level 1
+RequirementNode/Tooltip/CountUpgradeZHBRIndestructibleCompleteOnly3103326302=Изучить Нерушимый в Склепе
+RequirementNode/Tooltip/CountUpgradeZHBRIonicFieldCompleteOnly1472742402=Изучить Ионное поле в Камере стазиса
+RequirementNode/Tooltip/CountUpgradeZHBRKeystone@ConnectionCompleteOnly1036980592=Хотя бы 1 Ключевой камень подключенный к пустоте
+RequirementNode/Tooltip/CountUpgradeZHBRKeystone@ConnectionCompleteOnly2087955852=Хотя бы 1 Ключевой камень подключенный к пустоте
+RequirementNode/Tooltip/CountUpgradeZHBRPhaseShiftCompleteOnly1593847152=Изучить Фазовый сдвиг в Склепе
+RequirementNode/Tooltip/CountUpgradeZHBRPrimeSummoningCompleteOnly4121997442=Research «Prime Summoning» in Vespene Concentrator.
+RequirementNode/Tooltip/CountUpgradeZHBRProjector@ConnectionCompleteOnly3296784140=Хотя бы 1 Проектор подключенный к пустоте
+RequirementNode/Tooltip/CountUpgradeZHBRProjector@ConnectionCompleteOnly4096833109=Хотя бы 1 Проектор подключенный к пустоте
+RequirementNode/Tooltip/CountUpgradeZHBRProjectorCompleteOnly3760657428TechTreeCheat=Atleast 1 Crystallic Shrine in Network.
+RequirementNode/Tooltip/CountUpgradeZHBRStasisCell@ConnectionCompleteOnly669515756=Хотя бы 1 Камера стазиса подключенная к пустоте
+RequirementNode/Tooltip/CountUpgradeZHBRSubjugationJump@ZHBRSubjugationCompleteOnly1631692077=Изучить подчинение в Камере стазиса
+RequirementNode/Tooltip/CountUpgradeZHBRToxicityCompleteOnly198870487=Research Toxicity at the Projector
+RequirementNode/Tooltip/CountUpgradeZHBRUltimateUnitOfTransfusionCompleteOnly1091555285=Изучить Ультимативное преобразование энергии в Склепе
+RequirementNode/Tooltip/CountUpgradeZHBRUpgradeToAdvancedBehemothCompleteOnly1333653123=Изучить Продвинутого Бегемота в Капсуле
+RequirementNode/Tooltip/CountUpgradeZHBRUpgradeToAdvancedDominatorCompleteOnly1837506799=Изучить Продвинутого Доминатора в Капсуле
+RequirementNode/Tooltip/CountUpgradeZHBRUpgradeToAdvancedNemesisCompleteOnly2988682573=Изучить Продвинутого Немезиса в Кузнице пустоты
+RequirementNode/Tooltip/CountUpgradeZHBRVoidBonusCompleteOnly2571165972=Изучить бонус пустоты в Камере удержания
+RequirementNode/Tooltip/CountUpgradeZHBRVoidChasmCompleteOnly2054791450=Изучить Бездну пустоты в Кузнице пустоты
+RequirementNode/Tooltip/CountUpgradeZHBRWarbringerOrbitalGuidanceCompleteOnly1011428171=Изучить Орбитальное наведение в Склепе
+RequirementNode/Tooltip/CountUpgradeZHBRWatcher@ZHBRWatcherCompleteOnly2928385730=Research Protection Jump at the Stasis Cell
+RequirementNode/Tooltip/Or108536510CountUnitZHBRCryptCompleteOnlyCountUnitZHBRStasisCellCompleteOnly=Склеп или Камера стазиса
+RequirementNode/Tooltip/Or1156852249CountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnly=Могила или Проектор
+RequirementNode/Tooltip/Or1879812533CountUnitZHBRCryptCompleteOnlyCountUnitZHBRHoldingCellCompleteOnly=Склеп или Камера удержания
+RequirementNode/Tooltip/Or4121997442CountUnitZHBRCryptCompleteOnlyCountUnitZHBRTombCompleteOnly=Research «Prime Summoning» in Vespene Concentrator.
+RequirementNode/Tooltip/Or57773908CountUnitZHBRCryptCompleteOnlyCountUnitZHBRTombCompleteOnly=Склеп или могила
+RequirementNode/Tooltip/Or609975200CountUpgradeZHBRKeystone@ConnectionCompleteOnlyCountUpgradeZHBRProjector@ConnectionCompleteOnly=Ключевой камень или Проектор подключенные к пустоте
+UI/HelpControl_RaceControl=Выбрать все строения и рабочих<k val="WarpIn" count="100"/>
+UI/Tooltip/Protection=<c val="FFFFFF">Защитное поле:</c> 
+UI/Tooltip/VoidEnergy=<c val="#Void">Энергия Пустоты</c>: 
+Unit/Category/ZHBRUnits=Void Forces
+Unit/LifeArmorName/ZHBRArmor=Броня Силы Пустоты
+Unit/LifeArmorName/ZHBRBuildingPlating=Строительная обшивка
+Unit/Name/ZHBRAmplifier=Минеральный сборщик
+Unit/Name/ZHBRBehemoth=Бегемот
+Unit/Name/ZHBRBehemothAdvanced=Продвинутый Бегемот
+Unit/Name/ZHBRCapsule=Капсула
+Unit/Name/ZHBRChimera=Химера
+Unit/Name/ZHBRConductor=Кондуктор
+Unit/Name/ZHBRConstruct@AntiAir=Конструкция (Воздушная)
+Unit/Name/ZHBRConstruct@AntiAir@AntiGround=Construct (Anti-Ground)
+Unit/Name/ZHBRConstruct@AntiGround=Конструкция (Наземная)
+Unit/Name/ZHBRConstruct@AntiGround@AntiGround=Construct (Anti-Ground)
+Unit/Name/ZHBRCrypt=Склеп
+Unit/Name/ZHBRDeformer=Деформатор
+Unit/Name/ZHBRDominator=Доминатор
+Unit/Name/ZHBRDominatorAdvanced=Продвинутый Доминатор
+Unit/Name/ZHBRDreadnok=Дреднок
+Unit/Name/ZHBREnergator=Энергатор
+Unit/Name/ZHBRFlayer=Живодер
+Unit/Name/ZHBRHarvester=Жнец
+Unit/Name/ZHBRHarvesterRich=Жнец
+Unit/Name/ZHBRHoldingCell=Камера удержания 
+Unit/Name/ZHBRIonicCrystal=Ионный кристалл
+Unit/Name/ZHBRKeystone=Ключевой камень
+Unit/Name/ZHBRMinion=Миньон
+Unit/Name/ZHBRNavigator=Навигатор
+Unit/Name/ZHBRNemesis=Немезис
+Unit/Name/ZHBRNemesisAdvanced=Продвинутый Немезис
+Unit/Name/ZHBRPollinator=Опылитель
+Unit/Name/ZHBRProjector=Проектор
+Unit/Name/ZHBRProteus=Протеус
+Unit/Name/ZHBRPsionicTornado=Псионическое торнадо
+Unit/Name/ZHBRPsyon=Псион
+Unit/Name/ZHBRRaceControl=Сила Пустоты
+Unit/Name/ZHBRSentinel=Дозорный
+Unit/Name/ZHBRShapeshifter=Оборотень
+Unit/Name/ZHBRSpirit=Дух
+Unit/Name/ZHBRSpirit@Phantasm=Фантазм
+Unit/Name/ZHBRStasisCell=Камера стазиса
+Unit/Name/ZHBRStrider=Страйдер
+Unit/Name/ZHBRStriderCrawler=Вспомогательный робот
+Unit/Name/ZHBRTemple=Храм
+Unit/Name/ZHBRTomb=Могила
+Unit/Name/ZHBRVespeneConcentrator=Газовый коцетратор
+Unit/Name/ZHBRVoidForge=Кузница пустоты
+Unit/Name/ZHBRVoidRift=Разлом пустоты
+Unit/Name/ZHBRWarbringer=Вестник войны
+Unit/Name/ZHBRWarrior=Воин
+Unit/Name/ZHBRWarrior@Changeling=Воин
+Unit/ShieldArmorName/ZHBRShields=Защитное поле
+Unit/ShieldArmorTooltip/ZHBRShields=<c val="FFFFFF">Защитное поле</c> представляет собой огромный энергитический щит, быстро восстанавливающийся, пока юнит питается от <c val="#Void">Пустоты</c>.
+Upgrade/Name/ZHBRAcceleration=Ускорение
+Upgrade/Name/ZHBRAirArmorUpgradeLevel1=Сила пустоты Воздушная броня уровень 1
+Upgrade/Name/ZHBRAirArmorUpgradeLevel2=Сила пустоты Воздушная броня уровень 2
+Upgrade/Name/ZHBRAirArmorUpgradeLevel3=Сила пустоты Воздушная броня уровень 3
+Upgrade/Name/ZHBRAirWeaponUpgradeLevel1=Сила пустоты Воздушная атака уровень 1
+Upgrade/Name/ZHBRAirWeaponUpgradeLevel2=Сила пустоты Воздушная атака уровень 2
+Upgrade/Name/ZHBRAirWeaponUpgradeLevel3=Сила пустоты Воздушная атака уровень 3
+Upgrade/Name/ZHBRBrokenDNA=Сломанная ДНК
+Upgrade/Name/ZHBRCloakedSpirit=Невидимость духа
+Upgrade/Name/ZHBRDeepTunnel=Глубокий туннель
+Upgrade/Name/ZHBRAnnihilation=Сфера разрушения
+Upgrade/Name/ZHBRDisappearance=Исчезновение
+Upgrade/Name/ZHBREnhancedArmor@Upgrade=Улучшение
+Upgrade/Name/ZHBRFlayerBerserker@Berserker=Берсерк
+Upgrade/Name/ZHBRFlayerFury=Ярость
+Upgrade/Name/ZHBRGroundArmorUpgradeLevel1=Сила пустоты Наземная броня уровень 1
+Upgrade/Name/ZHBRGroundArmorUpgradeLevel2=Сила пустоты Наземная броня уровень 2
+Upgrade/Name/ZHBRGroundArmorUpgradeLevel3=Сила пустоты Наземная броня уровень 3
+Upgrade/Name/ZHBRGroundWeaponUpgradeLevel1=Сила пустоты Наземная атака уровень 1
+Upgrade/Name/ZHBRGroundWeaponUpgradeLevel2=Сила пустоты Наземная атака уровень 2
+Upgrade/Name/ZHBRGroundWeaponUpgradeLevel3=Сила пустоты Наземная атака уровень 3
+Upgrade/Name/ZHBRIndestructible=Нерушимый
+Upgrade/Name/ZHBRIonicField=Ионное поле
+Upgrade/Name/ZHBRKeystone@Connection=Connection
+Upgrade/Name/ZHBRMoveSpirit=Скорость Духа
+Upgrade/Name/ZHBRPhaseShift=Эффективность пустоты
+Upgrade/Name/ZHBRPrimeSummoning=Первичный вызов
+Upgrade/Name/ZHBRProjector=Projector
+Upgrade/Name/ZHBRProjector@Connection=Connection
+Upgrade/Name/ZHBRProtectionJump@ZHBRProtectionJump=Защитный прыжок
+Upgrade/Name/ZHBRRestorationHealth=Восстановление здоровья
+Upgrade/Name/ZHBRSpray=Spray Hybrids
+Upgrade/Name/ZHBRStasisCell@Connection=Connection
+Upgrade/Name/ZHBRStructureTeleport@Controller=Controller
+Upgrade/Name/ZHBRSubjugationJump@ZHBRSubjugation=Подчинение
+Upgrade/Name/ZHBRToxicity=Токсичность
+Upgrade/Name/ZHBRUltimateUnitOfTransfusion=Ультимативное преобразование энергии
+Upgrade/Name/ZHBRUpgradeToAdvancedBehemoth=Продвинутый Бегемот
+Upgrade/Name/ZHBRUpgradeToAdvancedDominator=Продвинутый Доминатор
+Upgrade/Name/ZHBRUpgradeToAdvancedNemesis=Продвинутый Немезис
+Upgrade/Name/ZHBRVoidBonus=Бонус пустоты
+Upgrade/Name/ZHBRVoidChasm=Бездна пустоты
+Upgrade/Name/ZHBRVoidShield=Защита пустоты
+Upgrade/Name/ZHBRWarbringerOrbitalGuidance=Орбитальное наведение
+Upgrade/Name/ZHBRWarriorDeconstruction@Deconstruction=Деконструкция
+Upgrade/Name/ZHBRWatcher@ZHBRWatcher=Watcher
+Weapon/Name/HybridPsyon@FragmentumCorrosion=Фрагментарная коррозия
+Weapon/Name/ZHBRBehemothWeapon=Чудовищные когти
+Weapon/Name/ZHBRBehemothWeaponAntiAir=Био-заграждение
+Weapon/Name/ZHBRChimeraMeleeWeapon=Энергетические кинжалы
+Weapon/Name/ZHBRChimeraRangedWeapon=Псионическое нападение
+Weapon/Name/ZHBRConstructWeaponAntiAir=Противовоздушная пушка
+Weapon/Name/ZHBRConstructWeaponAntiGround=Противоназемные лучи
+Weapon/Name/ZHBRDominatorWeapon=Пси - взрыв
+Weapon/Name/ZHBRDreadnokWeapon=Сокрушительный удар
+Weapon/Name/ZHBREnergatorWeapon=Клинок- паразит
+Weapon/Name/ZHBRFlayerWeapon=Острый резак
+Weapon/Name/ZHBRMinionWeapon=Пучок частиц
+Weapon/Name/ZHBRNemesisWeapon=Синхронизатор
+Weapon/Name/ZHBRPollinatorWeapon=Чакра
+Weapon/Name/ZHBRProteusWeapon=Дикий удар
+Weapon/Name/ZHBRPsyonWeapon=Сфокусированный луч
+Weapon/Name/ZHBRSentinelWeapon=Свирепые когти
+Weapon/Name/ZHBRShapeshifterWeapon=Плазменный взрыв
+Weapon/Name/ZHBRShapeshifterWeapon2=Плазменный заряд
+Weapon/Name/ZHBRStriderWeapon=Уничтожитель забвения
+Weapon/Name/ZHBRWarbringerWeaponMaceCannon=Пушка - булава
+Weapon/Name/ZHBRWarbringerWeaponMaceStrike=Удар булавой
+Weapon/Name/ZHBRWarriorWeapon=Пси - сфера
+Weapon/Tip/HybridPsyon@FragmentumCorrosion=Может атаковать только <c val="FFFF80">строения</c>.
+Weapon/Tip/ZHBRBehemothWeapon=Наносит <c val="FFFF80">20% рассеянного урона</c> в радиусе 2
+ZHBR Not Ionic Crystal=Ионный кристалл уже подключен к пустоте.
+ZHBRTempleInRange=Рядом нет Храма
+e_cmdMustTargetZHBR=Юнит должен принадлежать силам пустоты.

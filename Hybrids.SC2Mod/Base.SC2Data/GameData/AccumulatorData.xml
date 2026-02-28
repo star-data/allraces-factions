@@ -109,4 +109,19 @@
         <Key value="EvaporatorDamage"/>
         <ApplicationRule value="AdditiveMultiply"/>
     </CAccumulatorUserData>
+    <CAccumulatorEffectAmount id="ZHBRVoidBarrier@InheritEffectDamage">
+        <ApplicationRule value="AdditiveMultiply"/>
+        <AmountType value="DamageInherited"/>
+    </CAccumulatorEffectAmount>
+    <CAccumulatorVitals id="ZHBRVoidChasm@MaxLifeFraction">
+        <Ratio value="0.01"/>
+        <UnitSource Effect="ZHBRShapeshifterVoidChasm@Damage" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+    </CAccumulatorVitals>
+    <CAccumulatorVitals id="ZHBRVoidChasm@MaxShieldsFraction">
+        <Ratio value="0.01"/>
+        <VitalType value="Shields"/>
+        <UnitSource Effect="ZHBRShapeshifterVoidChasm@DamageShields" Value="Target"/>
+        <ModificationType value="PerUnitMaxVital"/>
+    </CAccumulatorVitals>
 </Catalog>

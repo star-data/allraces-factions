@@ -1,18 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CBehaviorBuff id="HybridPsyon@FragmentumCorrosion">
-        <Alignment value="Negative"/>
-        <InfoIcon value="Assets\Textures\btn-ability-zerg-fungalgrowth.dds"/>
+    <CBehaviorBuff id="HybridBigForceFieldFateAndBlock" parent="TimedLife">
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <DisplayDuration index="Self" value="1"/>
-        <DisplayDuration index="Ally" value="1"/>
-        <DisplayDuration index="Enemy" value="1"/>
-        <TimeScaleSource Value="Global"/>
-        <Duration value="5.6"/>
+        <DisplayDuration index="Self" value="0"/>
+        <DisplayDuration index="Ally" value="0"/>
+        <Duration value="15"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="ZHBRShapeshifterVoidChasm@SearchPush"/>
+        <ExpireEffect value="HybridBigForceFieldTimedLifeFate"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridBehaviorForAnimationResearchVoidRift">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-zhybrid-voidrift.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <DisableValidatorArray value="ZHBRVoidRift@SourceHasOrders"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridDeformer@DestructionAriseMaxShields">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-fleethyperjump.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <MaxStackCount value="0"/>
+        <Duration value="14"/>
+        <FinalEffect value="ZHBRDestructionArise@EffectEnd"/>
         <Modification>
-            <StateFlags index="SuppressAttack" value="1"/>
+            <VitalMaxArray index="Shields" value="25"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridMicroDisableAbilityStasis">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1"/>
+        <Modification>
+            <StateFlags index="Silence" value="1"/>
+            <AbilClassEnableArray index="CAbilHarvest" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridMinionVoidBonusActive">
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Requirements value="ZHBRVoidBonus@Use"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridMinionVoidBonusWork">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ZHBRMinionVoidBonus@OrderWork"/>
+        <Requirements value="ZHBRVoidBonus@Use"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="HybridMinionVoidBonusWorkInVoidField"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridMinionVoidBonusWorkInVoidField">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.125"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridPsyon@FragmentumCorrosion">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-leech.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="5.6"/>
+        <Period value="0.7"/>
+        <PeriodicEffect value="HybridPsyon@FragmentumCorrosionPermamentDamage"/>
+        <DamageResponse Location="Attacker" ModifyFraction="0.5" TargetFilters="Air;-">
+            <Kind index="Spell" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="HybridDeformer@DestructionArise">
         <Alignment value="Positive"/>
@@ -21,11 +79,14 @@
         <Modification>
             <DeathResponse Chance="1" Effect="HybridDeformer@DestructionAriseSearch"/>
         </Modification>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-fleethyperjump.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="HybridClusterNovaVerifyTargetBehavior">
-        <InfoFlags index="Hidden" value="1"/>
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofform-psionicblast.dds"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
-        <Duration value="11.25"/>
+        <MaxStackCount value="0"/>
+        <Duration value="100"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="HybridPollinatorVoidToxinSlow">
         <Alignment value="Negative"/>
@@ -45,27 +106,14 @@
         <DisableValidatorArray value="HybridCasterShieldsGE50"/>
         <Modification MoveSpeedMultiplier="1.25"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="HybridStructureResearchStateValidateBehavior">
-        <BehaviorFlags index="Permanent" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
-        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
-        <Requirements value="ZHBRVoidBonus@ResearchInProgress"/>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="HybridStructureResearchStateValidateBehaviorCrypts">
-        <BehaviorFlags index="Permanent" value="1"/>
-        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
-        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
-        <Requirements value="ZHBRVoidBonus@ResearchInProgress"/>
-    </CBehaviorBuff>
     <CBehaviorBuff id="HybridPollinatorVoidToxin">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="NoPurificationNova"/>
-        <Duration value="1.5"/>
-        <Period value="0.75"/>
-        <PeriodCount value="2"/>
-        <PeriodicEffect value="ZHBRPollinatorWeapon@Damage"/>
+        <Duration value="4.2"/>
+        <Period value="0.28"/>
+        <PeriodicEffect value="ZHBRPollinatorVoidToxin@Damage"/>
     </CBehaviorBuff>
     <CBehaviorJump id="HybridSentinelWatcher@CliffJump">
         <BehaviorFlags index="Permanent" value="1"/>
@@ -87,33 +135,242 @@
         <LandArrivalRange value="0.05"/>
         <LandCheckRadius value="5"/>
     </CBehaviorJump>
+    <CBehaviorBuff id="HybridBehaviorForAnimationResearchProjector">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-zhybrid-projector.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <DisableValidatorArray value="ZHBRProjector@SourceHasOrders"/>
+        <Modification TimeScale="3">
+            <VitalRegenMultiplier index="Life" value="-0.666"/>
+            <VitalRegenMultiplier index="Shields" value="-0.666"/>
+            <RateMultiplierArray index="Queueable" value="0.333"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRAcceleration">
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Face value="ZHBRAcceleration"/>
         <InfoIcon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
         <BehaviorCategories index="Fast" value="1"/>
         <DisplayDuration index="Self" value="1"/>
         <Duration value="7"/>
         <Modification MoveSpeedMultiplier="2.5"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRActivateEvaporatorUI">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="ZHBRStriderHasNotBehaviorActivateEvaporator"/>
+        <DisableValidatorArray value="NotHiddenSelf"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRAmplifier@PathingBlockerController">
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CasterNotDead"/>
         <FinalEffect value="SuicideRemove"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRChimera@Cloak">
-        <Face value="ZHBRChimera@Cloak"/>
+    <CBehaviorBuff id="ZHBRVoidBarrier@DamageFractionLogic">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="ZHBRVoidBarrier@TargetMainBehaviorGT0"/>
+        <DamageResponse>
+            <Handled value="ZHBRVoidBarrier@DamageFraction"/>
+            <ModifyFraction value="0.8"/>
+            <Priority value="4"/>
+            <HandledValue value="Original"/>
+            <Chance value="1"/>
+        </DamageResponse>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidBarrier@Marker">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDeepTunnel@Tooltip">
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="ZHBRDeepTunnel@IsCasting"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDreadnokWeapon@ReduceEnergyTooltip">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <MaxStackCount value="20"/>
+        <Duration value="1"/>
+        <RemoveValidatorArray value="IsEnergyCapable"/>
+        <RemoveValidatorArray value="TargetIsEnemyOrNeutral"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBREnergator@VoidTrance">
+        <InfoIcon value="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Period value="0.7"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffect value="ZHBRSiegeModeApplyStopMove"/>
+        <FinalEffect value="ZHBRSiegeModeCancelStopMove"/>
+        <ExpireEffect value="ZHBRSiegeModeCancelStopMove"/>
+        <Modification Height="0.75" HealDealtAdditiveMultiplier="0.5" AttackSpeedMultiplier="2">
+            <HeightTime index="Start" value="0.5"/>
+            <HeightTime index="Stop" value="0.5"/>
+            <AbilLinkEnableArray value="ZHBREnergation@EnergationRange"/>
+            <AbilLinkDisableArray value="ZHBREnergation@Energation"/>
+        </Modification>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRChimera@FadeCheck">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ZHBRVoid@TargetIsConnectedPermament"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRChimera@Pounce">
+        <InfoIcon value="Assets\Textures\btn-ability-nova-neckbreaker.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+        <Modification MoveSpeedMultiplier="2.25"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRConstructMarkerSwitchBeam">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofform-psionicblast.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDominatorDestructionOrbDisableAbilityMini">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.75"/>
+        <Modification>
+            <AbilClassDisableArray index="CAbilProgress" value="1"/>
+            <AbilClassDisableArray index="CAbilAugment" value="1"/>
+            <AbilClassDisableArray index="CAbilBehavior" value="1"/>
+            <AbilClassDisableArray index="CAbilMerge" value="1"/>
+            <AbilClassDisableArray index="CAbilMergeable" value="1"/>
+            <AbilClassDisableArray index="CAbilResearch" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRFlayerFury@Tooltip">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ZHBRFlayerFury@HasUpgrade"/>
+        <DisableValidatorArray value="ZHBRFlayerFury@HasNoCooldownBehaviorCaster"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRInterdimensionalOverload@Tooltip">
+        <InfoIcon value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="4.2"/>
+        <RemoveValidatorArray value="ZHBRInterdimensionalOverload@IsCasting"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRNemesisLaunchAttack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <Duration value="0.0625"/>
+        <InitialEffect value="ZHBRNemesisTimeAttack"/>
+        <Modification>
+            <WeaponDisableArray value="ZHBRNemesisWeapon"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRNemesisTimeAttack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <RemoveValidatorArray value="CasterIsAttacking"/>
+        <Duration value="0.3125"/>
+        <Modification>
+            <WeaponEnableArray value="ZHBRNemesisWeaponHidden"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRSiegeModeStopMove">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRPounce">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <FinalEffect value="ZHBRStriderApplyActivateEvaporatorUI"/>
+        <ExpireEffect value="ZHBRStriderApplyActivateEvaporatorUI"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDomination">
+        <Face value="ZHBRDomination"/>
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="14"/>
+        <Modification>
+            <DamageDealtFraction index="Spell" value="-0.25"/>
+            <DamageDealtFraction index="Melee" value="-0.25"/>
+            <DamageDealtFraction index="Ranged" value="-0.25"/>
+            <DamageDealtFraction index="Splash" value="-0.25"/>
+            <DamageDealtFraction index="NoProc" value="-0.25"/>
+            <DamageTakenFraction index="Spell" value="0.25"/>
+            <DamageTakenFraction index="Melee" value="0.25"/>
+            <DamageTakenFraction index="Ranged" value="0.25"/>
+            <DamageTakenFraction index="Splash" value="0.25"/>
+            <DamageTakenFraction index="NoProc" value="0.25"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRConsumeDNA@LifeStealUp">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <MaxStackCount value="60"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+            <VitalMaxArray index="Life" value="5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDominationDisableSecondApply">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendant&apos;sDestructionOrbtravelsfurther.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDominatorDestructionOrbSingleCaster">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRChimera@Fade">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
         <BehaviorCategories index="Cloak" value="1"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Modification>
             <StateFlags index="Cloak" value="1"/>
+            <WeaponDisableArray value="ZHBRChimeraRangedWeapon"/>
+        </Modification>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDominatorDestructionOrbDisableAbility">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psionicorb.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.75"/>
+        <Modification>
+            <AbilClassDisableArray index="CAbilProgress" value="1"/>
+            <AbilClassDisableArray index="CAbilAugment" value="1"/>
+            <AbilClassDisableArray index="CAbilBehavior" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectInstant" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>
+            <AbilClassDisableArray index="CAbilMerge" value="1"/>
+            <AbilClassDisableArray index="CAbilMergeable" value="1"/>
+            <AbilClassDisableArray index="CAbilResearch" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBREvaporator@AttackRangeBuff">
-        <InfoFlags index="Hidden" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-solarlance.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <DisableValidatorArray value="ZHBREvaporator@CasterHasRequiredEnergy"/>
+        <DisableValidatorArray value="ZHBRStriderHasNotBehaviorActivateEvaporator"/>
+        <Modification>
+            <DamageDealtUnscaled index="Ranged" value="10"/>
+            <DamageDealtAttributeUnscaled index="Armored" value="2"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRIonicField@Controller">
         <InfoFlags index="Hidden" value="1"/>
@@ -121,13 +378,10 @@
         <Requirements value="ZHBRIonicField@Use"/>
         <Modification>
             <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
-            <VitalMaxFractionArray index="Life" value="2"/>
-            <VitalMaxFractionArray index="Shields" value="2"/>
-            <VitalRegenMultiplier index="Shields" value="5"/>
+            <VitalRegenMultiplier index="Shields" value="1.5"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRNavigator@FromTheVoid">
-        <Face value="ZHBRNavigator@FromTheVoid"/>
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-hero-propheticvision.dds"/>
         <BehaviorCategories index="Cloak" value="1"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
@@ -135,49 +389,72 @@
         <Modification>
             <StateFlags index="Cloak" value="1"/>
         </Modification>
+        <Alignment value="Positive"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRPlasmaticBlast">
-        <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Modification>
             <WeaponEnableArray value="ZHBRShapeshifterWeapon"/>
             <WeaponDisableArray value="ZHBRShapeshifterWeapon2"/>
         </Modification>
         <InitialEffect value="ZHBRPlasmaticBlast@ModifyUnit"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRPrimeSummoning@Controller">
-        <Face value="ZHBRPrimeSummoning"/>
         <InfoIcon value="Assets\Textures\tip_voidrift.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Requirements value="ZHBRPrimeSummoning@Use"/>
-        <DamageResponse ModifyFraction="0.8">
+        <RemoveValidatorArray value="ZHBRHasTombOrCrypt"/>
+        <DamageResponse ModifyFraction="0.6">
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRProtectionJump@Armor">
-        <Face value="ZHBRProtectionJump"/>
+        <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-zerg-dehakaspawn.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Duration value="2.52"/>
-        <Modification MoveSpeedMultiplier="1.4">
-            <DamageTakenFraction index="Spell" value="-0.4"/>
-            <DamageTakenFraction index="Melee" value="-0.4"/>
-            <DamageTakenFraction index="Ranged" value="-0.4"/>
-            <DamageTakenFraction index="Splash" value="-0.4"/>
-            <DamageTakenFraction index="NoProc" value="-0.4"/>
+        <Duration value="3.5"/>
+        <Modification MoveSpeedMultiplier="1.5">
+            <DamageTakenFraction index="Spell" value="-0.5"/>
+            <DamageTakenFraction index="Melee" value="-0.5"/>
+            <DamageTakenFraction index="Ranged" value="-0.5"/>
+            <DamageTakenFraction index="Splash" value="-0.5"/>
+            <DamageTakenFraction index="NoProc" value="-0.5"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRPsionicTornado@MaxDistance">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="HybridDrednokPsionicTornadoMaxDistance"/>
+        <Modification MoveSpeedMultiplier="0.01"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRPsionicTornado@TornadoBehaviorEnd">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.4"/>
+        <Period value="0.3115"/>
+        <InitialEffect value="ZHBRPsionicTornado@DamageEnd"/>
+        <PeriodicEffect value="ZHBRPsionicTornado@DamageEnd"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRPsionicTornado@TravelController">
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <PeriodicEffect value="ZHBRPsionicTornado@CertainDirection"/>
         <Period value="0.2"/>
         <PeriodCount value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRPsionicTornado@StartSpeedUp">
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.3125"/>
+        <Modification MoveSpeedMultiplier="12">
+            <StateFlags index="Unselectable" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRPsyonWeapon@Cooldown">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
         <TimeScaleSource Value="Caster"/>
-        <Duration value="0.42"/>
+        <Duration value="0.375"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Detector5" parent="Detector">
         <Alignment value="Positive"/>
@@ -189,7 +466,7 @@
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Duration value="14.4"/>
+        <Duration value="28"/>
         <Modification>
             <StateFlags index="Stasis" value="1"/>
             <StateFlags index="Stun" value="1"/>
@@ -197,47 +474,59 @@
             <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressDetection" value="1"/>
             <StateFlags index="SuppressRadar" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
             <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
             <BehaviorClassDisableArray index="CBehaviorPowerSource" value="1"/>
             <BehaviorClassDisableArray index="CBehaviorResource" value="1"/>
             <BehaviorLinkDisableArray value="SalvageBunker"/>
             <BehaviorLinkDisableArray value="SalvageShared"/>
             <BehaviorLinkDisableArray value="SensorTowerRadar"/>
+            <BehaviorLinkDisableArray value="TerranBuildingBurnDown"/>
         </Modification>
         <TimeScaleSource Value="Global"/>
-        <Face value="ZHBRPhaseShift"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRConsumeDNA@Stun">
-        <Alignment value="Negative"/>
+    <CBehaviorBuff id="ZHBRConsumeDNA@LifeStealMain">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
-        <BehaviorCategories index="Stun" value="1"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Duration value="0.42"/>
-        <Modification>
-            <StateFlags index="Stun" value="1"/>
-        </Modification>
+        <Duration value="35"/>
+        <InitialEffect value="ZHBRConsumeDNA@ApplyLifeStealUp"/>
+        <RefreshEffect value="ZHBRConsumeDNA@ApplyLifeStealUp"/>
+        <ExpireEffect value="ZHBRBehemothBrokenDNA@RemoveLifeStealUp"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRPowerField@SuppressionBehavior">
+        <InfoIcon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterNotForcedToMove"/>
+        <RemoveValidatorArray value="HybridCasterIsNotSilencted"/>
+        <RemoveValidatorArray value="ZCRCasterNotInStasis"/>
+        <RemoveValidatorArray value="ZCRCasterNotStunned"/>
+        <FinalEffect value="ZHBRPowerField@RemoveDummyUnit"/>
         <Modification>
             <ModifyFlags index="SuppressMoving" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <AbilClassDisableArray index="CAbilMove" value="1"/>
             <AbilClassDisableArray index="CAbilStop" value="1"/>
+            <AbilLinkDisableArray value="ZHBRPhaseShift"/>
+            <AbilLinkDisableArray value="ZHBRVoidBarrier"/>
         </Modification>
-        <FinalEffect value="ZHBRPowerField@RemoveDummyUnit"/>
-        <InfoFlags index="Hidden" value="1"/>
-        <RemoveValidatorArray value="CasterNotForcedToMove"/>
-        <RemoveValidatorArray value="CasterIsNotSilencted"/>
-        <RemoveValidatorArray value="ZCRCasterNotInStasis"/>
-        <RemoveValidatorArray value="ZCRCasterNotStunned"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRPsionicTornado@TornadoBehavior">
+    <CBehaviorBuff id="ZHBRPsionicTornado@TornadoBehaviorStart">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Period value="0.13"/>
-        <PeriodicEffect value="ZHBRPsionicTornado@Search"/>
-        <Duration value="12"/>
-        <ExpireEffect value="TimedLifeFate"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.35"/>
+        <Period value="0.28"/>
+        <InitialEffect value="ZHBRPsionicTornado@DamageStart"/>
+        <PeriodicEffect value="ZHBRPsionicTornado@DamageStart"/>
     </CBehaviorBuff>
     <CBehaviorWander id="ZHBRPsionicTornado@Wander">
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
@@ -270,14 +559,17 @@
         <Requirements value="ZHBRUpgradeToAdvancedBehemoth@Use"/>
         <RemoveValidatorArray value="ZHBRCommon@IsReaver"/>
         <PeriodicEffect value="ZHBRBehemothAdvanced@Morph"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRRestorationShield">
+    <CBehaviorBuff id="ZHBRRestorationHealthHight">
         <Face value="ZHBRRestorationShield"/>
-        <InfoIcon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Requirements value="ZHBRRestorationShield@Use"/>
+        <Requirements value="ZHBRRestorationHealth@Use"/>
         <DisableValidatorArray value="ShieldsFull"/>
         <DisableValidatorArray value="CasterLifeNotFull"/>
+        <DisableValidatorArray value="ZHBRRestoreLifeCondition@ConnectNetwork"/>
         <Modification>
             <VitalRegenArray index="Life" value="2"/>
         </Modification>
@@ -292,8 +584,127 @@
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
         <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRStructureTeleport@Controller">
+    <CBehaviorBuff id="ZHBRBehemothBrokenDNASingleCaster">
         <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRRestorationHealthLow">
+        <Face value="ZHBRRestorationShield"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Requirements value="ZHBRRestorationHealth@Use"/>
+        <DisableValidatorArray value="ShieldsFull"/>
+        <DisableValidatorArray value="CasterLifeNotFull"/>
+        <DisableValidatorArray value="ZHBRRestoreLifeCondition@ConnectNetwork"/>
+        <Modification>
+            <VitalRegenArray index="Life" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDeactivateEvaporator">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <FinalEffect value="ZHBRStriderApplyActivateEvaporatorUI"/>
+        <ExpireEffect value="ZHBRStriderApplyActivateEvaporatorUI"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRSpiritSiegeMode">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification SightBonus="2">
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <AbilLinkEnableArray value="ZHBRVoidPhantom"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRRevealingSacrificeTargetDetection">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.35"/>
+        <Modification>
+            <ModifyFlags index="Detected" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRConstructMarker">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofform-psionicblast.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <MaxStackCount value="3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRSentinelLeap@JumpBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
+        <Modification>
+            <StateFlags index="SuppressCollision" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRSentinelLeap@Stun">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
+        <BehaviorCategories index="Stun" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="1.4"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRSentinelSubjugationJump@BanAutocast">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRNavigatorStationarity">
+        <InfoIcon value="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <SightBonus value="3"/>
+            <DetectBonus value="3"/>
+            <Radar value="18"/>
+            <RadarFilters value="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried,Cloaked"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <DamageTakenFraction index="Spell" value="-0.4"/>
+            <DamageTakenFraction index="Melee" value="-0.4"/>
+            <DamageTakenFraction index="Ranged" value="-0.4"/>
+            <DamageTakenFraction index="Splash" value="-0.4"/>
+            <DamageTakenFraction index="NoProc" value="-0.4"/>
+        </Modification>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRTDeformer@BeamColor">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.125"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRTimeDisableRestorationShield">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ZHBRDisableRestoreShieldsTimeTakeDamage"/>
+        <DisableValidatorArray value="ZHBRVoid@CasterUnitWithinPowerRangeLessThenLevel"/>
+        <Modification>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+        </Modification>
+        <InitialEffect value="ZHBRUnitBorn@EnergyShieldsSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRRevealingSacrificeForSelf">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="NotStasis"/>
+        <RemoveValidatorArray value="NoPurificationNova"/>
+        <Duration value="42"/>
+        <Modification Detect="11"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRStructureTeleport@Controller">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadon.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <BuffFlags index="Countdown" value="0"/>
         <Duration value="14"/>
@@ -306,7 +717,573 @@
             <RateMultiplierArray index="Progress" value="0.001"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRHighSpeedRestoreNetwork">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ZHBRTimeGiveDamage"/>
+        <DisableValidatorArray value="ZHBRVoid@TargetUnitWithinPowerRangeLevel2"/>
+        <Modification>
+            <VitalRegenMultiplier index="Energy" value="0.5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRTimeWarp@End">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1"/>
+        <Modification TimeScale="0.01">
+            <ModifyFlags index="Reveal" value="1"/>
+            <StateFlags index="Daze" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDeformer@RechargeUp">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ZHBREnergation@DeformerRestoreUnitBelowHalfEnergy"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="ZHBRDeformerBeamColor@ApplyBehavior"/>
+        <Modification HealDealtMultiplier="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HybridMicroDisableAbilityTimeStop">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1"/>
+        <Modification>
+            <StateFlags index="Silence" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <AbilClassEnableArray index="CAbilHarvest" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRTimeWarp@Middle">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.1"/>
+        <Modification TimeScale="0.5">
+            <ModifyFlags index="Reveal" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRTempleMarkerIssue">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-zhybrid-temple.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRDominatorDomination">
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendant&apos;spsiorbtravelsfurther.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HybridCasterIsNotStasis"/>
+        <RemoveValidatorArray value="ZCRCasterNotStunned"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <RemoveValidatorArray value="ZHBRCasterHasNotBehaviorRavenScramblerMissile"/>
+        <Duration value="8.4"/>
+        <DurationOverride>
+            <Duration value="2.8"/>
+            <ValidatorArray value="ZHBRDomination@@PsionicFilter"/>
+        </DurationOverride>
+        <DurationOverride>
+            <Duration value="2.8"/>
+            <ValidatorArray value="HybridFoodUseMore4"/>
+        </DurationOverride>
+        <DurationOverride>
+            <Duration value="5.6"/>
+            <ValidatorArray value="HybridFoodUseMore2"/>
+        </DurationOverride>
+        <FinalEffect value="ZHBRDomination@ApplyDisableSecondApply"/>
+        <ExpireEffect value="ZHBRDomination@ApplyDisableSecondApply"/>
+        <Modification Height="1" MoveSpeedMaximum="0">
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <HeightTime index="Start" value="4"/>
+            <HeightTime index="Stop" value="0.25"/>
+            <DamageDealtFraction index="Melee" value="-0.5"/>
+            <DamageDealtFraction index="Ranged" value="-0.5"/>
+            <DamageDealtFraction index="Splash" value="-0.5"/>
+        </Modification>
+        <DamageResponse Location="Attacker" ModifyFraction="0.5">
+            <Kind index="Melee" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRProteus@UpgradeUIBehavior">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Requirements value="ZHBRUltimateUnitOfTransfusion@Use"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidChasmStructure">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <Modification Height="1.35" MoveSpeedMaximum="0">
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressRadar" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <HeightTime index="Start" value="12"/>
+            <HeightTime index="Stop" value="0.04"/>
+            <PlaneDelta index="Air" value="1"/>
+        </Modification>
+        <InitialEffect value="ZHBRShapeshifterVoidChasm@DamageSet"/>
+        <Period value="0.625"/>
+        <PeriodicEffect value="ZHBRShapeshifterVoidChasm@DamageSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidChasmStartingDelay">
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="2.9"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityBehemoth">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="125"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityDreadnok">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="42"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityConductor">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="45"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityDominator">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="100"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityWarbringer">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="27"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityCapsule">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="175"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityStasisCell">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="100"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityTomb">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="125"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityTemple">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="300"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityVoidForge">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="250"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityVespeneConcentrator">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="62"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityChimera">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="37"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityProjector">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="100"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityHarvesterRich">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="87"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityKeystone">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="100"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityIonicCrystalMoveable">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="50"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityIonicCrystal">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="50"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityHoldingCell">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="150"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityHarvester">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="87"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityDeformer">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="50"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityCrypt">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="125"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityConstructAG">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="75"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityVoidRift">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="125"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityConstructAA">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="75"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityWarrior">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="17"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityCrawler">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="20"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityStrider">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="40"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunitySpirit">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="15"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityShapeshifter">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="47"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunitySentinel">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="30"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityPsyon">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="25"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityProteus">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="50"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityPollinator">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="20"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityAmplifier">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="50"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityNemesis">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="87"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityNavigator">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="35"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityMinion">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="7"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityFlayer">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="32"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidImmunityEnergator">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxArray index="Shields" value="22"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidBarrier">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="28"/>
+        <DamageResponse>
+            <Handled value="ZHBRVoidBarrier@AttackReact"/>
+            <ModifyFraction value="0"/>
+            <ModifyLimit value="75"/>
+            <ModifyMinimumDamage value="1"/>
+            <Priority value="3"/>
+            <ExcludeEffectArray value="ZHBRVoidBarrier@DamageFraction"/>
+            <Chance value="1"/>
+        </DamageResponse>
+        <Alignment value="Positive"/>
+        <MaxStackCount value="4"/>
+        <MaxStackCountPerCaster value="4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidPhantom">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\zergqueenemmisive.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Modification>
+            <StateFlags index="Benign" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressPassenger" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidPhantom@CancelDummyBehavior">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.125"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidPhantom@Caster">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\zergqueenemmisive.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <DisableValidatorArray value="NotBeingAbducted"/>
+        <DisableValidatorArray value="KD8CasterKnockingBack"/>
+        <RemoveValidatorArray value="ZHBRSpiritSiegeMode@IsSpiritUsingTranscendence"/>
+        <Duration value="14.0625"/>
+        <Modification>
+            <StateFlags index="SuppressPassenger" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRVoidPhantom@Timer">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <DisableValidatorArray value="CasterNotAbducted"/>
+        <DisableValidatorArray value="KD8CasterKnockingBack"/>
+        <RemoveValidatorArray value="CasterNotDead"/>
+        <RemoveValidatorArray value="ZHBRVoidPhantom@CasterIsNotPhantasming"/>
+        <Duration value="14"/>
+        <FinalEffect value="ZHBRVoidPhantom@TimerCancelSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRWarbringerMarkerAnimation">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRWarbringerMaceStrikeReduceDamageForSelf">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <DamageResponse Location="Attacker" ModifyFraction="0.5">
+            <Kind index="Melee" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <RequireEffectInChainArray value="ZHBRWarbringerWeaponMaceStrike@Damage"/>
+            <ValidatorArray value="TargetIsAllyorPlayer"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorPowerUser id="ZHBRVoid@PowerUserPermanent">
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <PowerLink value="ZHBRVoid"/>
         <Flags index="DisplayPower" value="1"/>
@@ -314,9 +1291,11 @@
         <PoweredWhileUnderConstruction value="1"/>
         <PowerStageArray/>
         <PowerStageArray MinPowerLevel="1"/>
-        <PowerStageArray MinPowerLevel="2" LevelGainEffect="ZHBRVoid@RemoveSuppressedRegenerationTarget"/>
-        <Face value="ZHBRPermanentPower"/>
-        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
+        <PowerStageArray MinPowerLevel="2" LevelGainEffect="ZHBRVoid@RemoveSuppressedRegenerationTarget">
+            <Modification>
+                <VitalRegenArray index="Shields" value="2"/>
+            </Modification>
+        </PowerStageArray>
     </CBehaviorPowerUser>
     <CBehaviorPowerUser id="ZHBRVoid@PowerUserPermanentNetwork">
         <InfoFlags index="Hidden" value="1"/>
@@ -326,17 +1305,17 @@
         <Flags index="HideUnpoweredText" value="1"/>
         <PowerStageArray>
             <Modification>
-                <VitalRegenArray index="Energy" value="1.129"/>
+                <VitalRegenArray index="Energy" value="3"/>
             </Modification>
         </PowerStageArray>
         <PowerStageArray MinPowerLevel="1">
             <Modification>
-                <VitalRegenArray index="Energy" value="1.129"/>
+                <VitalRegenArray index="Energy" value="3"/>
             </Modification>
         </PowerStageArray>
         <PowerStageArray MinPowerLevel="2">
             <Modification>
-                <VitalRegenArray index="Energy" value="1.3515"/>
+                <VitalRegenArray index="Energy" value="3"/>
             </Modification>
         </PowerStageArray>
     </CBehaviorPowerUser>
@@ -344,28 +1323,30 @@
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Duration value="8.4"/>
-        <Modification>
+        <Duration value="15"/>
+        <Modification MoveSpeedMaximum="0">
+            <StateFlags index="Stasis" value="1"/>
             <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressRadar" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
             <PlaneDelta index="Ground" value="1"/>
         </Modification>
-        <Period value="1"/>
-        <PeriodCount value="8"/>
-        <PeriodicEffect value="ZHBRVoidChasm@AirPeriodicDamage"/>
+        <InitialEffect value="ZHBRShapeshifterVoidChasm@DamageSet"/>
+        <Period value="0.625"/>
+        <PeriodicEffect value="ZHBRShapeshifterVoidChasm@DamageSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRStriderCrawler@CarryBehavior">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
         <DisplayDuration index="Self" value="1"/>
-        <Duration value="28"/>
+        <Duration value="84"/>
         <ExpireEffect value="Suicide"/>
-        <Modification>
-            <VitalMaxAdditiveMultiplierArray index="Life" value="-0.5"/>
-            <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.5"/>
-            <VitalRegenMultiplier index="Life" value="-0.5"/>
-            <VitalRegenMultiplier index="Shields" value="-0.5"/>
-        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRStriderCrawler@SpawnBehavior">
         <InfoFlags index="Hidden" value="1"/>
@@ -525,17 +1506,18 @@
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
     </CBehaviorUnitTracker>
     <CBehaviorBuff id="ZHBRNemesisDisintegrator">
-        <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
         <InitialEffect value="ZHBRNemesisWeapon@RestoreEnergy"/>
-        <Modification>
-            <DamageDealtScaled index="Ranged" value="12"/>
+        <Modification WeaponRange="4">
+            <DamageDealtScaled index="Ranged" value="3"/>
+            <DamageDealtAttributeScaled index="Light" value="-3"/>
         </Modification>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-topbar-stasisbeam.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRNemesisWeapon@CD">
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
         <TimeScaleSource Value="Caster"/>
-        <Duration value="0.35"/>
+        <Duration value="0.5"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRPollinatorShadowMantle@ShadowMantle">
@@ -544,12 +1526,11 @@
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CanSpendEnergy"/>
         <RemoveValidatorArray value="hasEnergy"/>
-        <Modification MoveSpeedMultiplier="1.3">
+        <InitialEffect value="ZHBRPollinatorShadowMantle@RestoreEnergy"/>
+        <Modification MoveSpeedBonus="-0.3554">
             <StateFlags index="Cloak" value="1"/>
-            <VitalMaxArray index="Shields" value="35"/>
-            <VitalRegenArray index="Energy" value="-7.1406"/>
+            <VitalRegenArray index="Energy" value="-7.1445"/>
         </Modification>
-        <InitialEffect value="ZHBRPollinatorShadowMantle@Restore5Energy"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRDisappearance@Cloak">
         <Alignment value="Positive"/>
@@ -567,25 +1548,23 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Requirements value="ZHBRCloakedSpirit@Use"/>
+        <Requirements value="ZHBRCloakedSpirit@UseWithOutUpgrade"/>
         <Modification>
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRRevealingSacrifice">
-        <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="NotStasis"/>
         <RemoveValidatorArray value="NoPurificationNova"/>
-        <Duration value="28"/>
+        <Duration value="42"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="HybridSpiritRevealingSacrifice@SearchArea"/>
         <Modification>
-            <ModifyFlags index="Reveal" value="1"/>
-            <ModifyFlags index="Detected" value="1"/>
             <ModifyFlags index="ShareSight" value="1"/>
-            <StateFlags index="SuppressCloak" value="1"/>
         </Modification>
-        <RevealUnit Value="Target"/>
+        <Alignment value="Negative"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR">
         <InfoFlags index="Hidden" value="1"/>
@@ -629,23 +1608,34 @@
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Duration value="8.4"/>
-        <Modification>
+        <Duration value="15"/>
+        <Modification Height="4" MoveSpeedMaximum="0">
+            <StateFlags index="Stasis" value="1"/>
             <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <StateFlags index="SuppressRadar" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+            <HeightTime index="Start" value="6"/>
+            <HeightTime index="Stop" value="0.25"/>
             <PlaneDelta index="Air" value="1"/>
         </Modification>
-        <Period value="1"/>
-        <PeriodCount value="8"/>
-        <PeriodicEffect value="ZHBRVoidChasm@GroundPeriodicDamage"/>
+        <InitialEffect value="ZHBRShapeshifterVoidChasm@DamageSet"/>
+        <Period value="0.625"/>
+        <PeriodicEffect value="ZHBRShapeshifterVoidChasm@DamageSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRVoidImmunity">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-oracle-stasiscalibration.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Modification>
-            <VitalMaxArray index="Shields" value="70"/>
+        <Modification ShieldArmorBonus="1">
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
         </Modification>
-        <Face value="ZHBRVoidImmunity"/>
+        <InitialEffect value="HybridTemple@VoidImmunitySwitch"/>
     </CBehaviorBuff>
     <CBehaviorPowerSource id="ZHBRVoid@PowerSourceIonicCrystalSmall">
         <InfoFlags index="Hidden" value="1"/>
@@ -665,7 +1655,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <PowerLevel value="2"/>
-        <Radius value="5"/>
+        <Radius value="6"/>
         <PowerLink value="ZHBRVoid"/>
     </CBehaviorPowerSource>
     <CBehaviorPowerUser id="ZHBRVoid@PowerUser">
@@ -680,11 +1670,16 @@
                 <BehaviorLinkDisableArray value="ZHBRStasisCell@Connection"/>
                 <BehaviorLinkDisableArray value="ZHBRKeystone@Connection"/>
                 <BehaviorLinkDisableArray value="ZHBRProjector@Connection"/>
-                <BehaviorLinkDisableArray value="ZHBRChimera@Cloak"/>
+                <BehaviorLinkDisableArray value="ZHBRChimera@Fade"/>
+                <BehaviorLinkDisableArray value="HybridMinionVoidBonusActive"/>
             </Modification>
         </PowerStageArray>
         <PowerStageArray MinPowerLevel="1"/>
-        <PowerStageArray MinPowerLevel="2" LevelGainEffect="ZHBRVoid@RemoveSuppressedRegenerationTarget"/>
+        <PowerStageArray MinPowerLevel="2" LevelGainEffect="ZHBRVoid@RemoveSuppressedRegenerationTarget">
+            <Modification>
+                <VitalRegenArray index="Shields" value="2"/>
+            </Modification>
+        </PowerStageArray>
         <PoweredWhileUnderConstruction value="1"/>
     </CBehaviorPowerUser>
     <CBehaviorPowerUser id="ZHBRVoid@PowerUserNetwork">
@@ -698,12 +1693,12 @@
         </PowerStageArray>
         <PowerStageArray MinPowerLevel="1">
             <Modification EnergyDamageRatioMultiplier="-0.5">
-                <VitalRegenArray index="Energy" value="1.129"/>
+                <VitalRegenArray index="Energy" value="2"/>
             </Modification>
         </PowerStageArray>
         <PowerStageArray MinPowerLevel="2">
             <Modification EnergyDamageRatioMultiplier="-0.5">
-                <VitalRegenArray index="Energy" value="1.3515"/>
+                <VitalRegenArray index="Energy" value="2"/>
             </Modification>
         </PowerStageArray>
     </CBehaviorPowerUser>
@@ -727,23 +1722,22 @@
             <StateFlags index="Untargetable" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRTimeWarp">
+    <CBehaviorBuff id="ZHBRTimeWarp@Start">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
-        <Duration value="0.1"/>
-        <Modification TimeScale="0.01">
-            <ModifyFlags index="Reveal" value="1"/>
-            <StateFlags index="Silence" value="1"/>
-            <StateFlags index="Daze" value="1"/>
-            <StateFlags index="SuppressCloak" value="1"/>
-        </Modification>
         <TimeScaleSource Value="Global"/>
+        <Duration value="0.1"/>
+        <Modification TimeScale="0.5">
+            <ModifyFlags index="Reveal" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRFlayerFury">
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <DisableValidatorArray value="ZHBRFlayerFury@HasUpgrade"/>
         <InfoFlags index="Hidden" value="1"/>
+        <InitialEffect value="ZHBRFlayerFury@TooltipAB"/>
+        <FinalEffect value="ZHBRFlayerFury@TooltipRB"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRFlayerFury@Cooldown">
         <Cost>
@@ -751,14 +1745,16 @@
         </Cost>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Duration value="5"/>
-        <InfoFlags index="Hidden" value="1"/>
+        <FinalEffect value="ZHBRFlayerFury@TooltipAB"/>
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRMinionBuild@InProgress">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRMinionBuild@DisableSpirit">
-        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-unit-zhybrid-spirit.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Modification>
             <AbilLinkDisableArray value="ZHBRMinionMorph@MechanicalReincarnation"/>
@@ -766,15 +1762,17 @@
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRConsumeDNA@PeriodicBuff">
-        <InfoFlags index="Hidden" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-dehaka-consume.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Duration value="5.6"/>
         <Period value="1.4"/>
         <PeriodCount value="4"/>
         <InitialEffect value="ZHBRConsumeDNA@Search"/>
         <PeriodicEffect value="ZHBRConsumeDNA@Search"/>
+        <Modification MoveSpeedBonus="0.4296"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRSentinelJump@Stun">
+    <CBehaviorBuff id="ZHBRSentinelSubjugationJump@Stun">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Duration value="1.4"/>
@@ -784,7 +1782,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
         <BehaviorCategories index="Stun" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRSentinelJump@JumpBuff">
+    <CBehaviorBuff id="ZHBRSentinelSubjugationJump@JumpBuff">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
         <Modification>
@@ -819,18 +1817,24 @@
             <BehaviorClassDisableArray index="CBehaviorResource" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ZHBRPsiOrb@SearchBehavior">
+    <CBehaviorBuff id="ZHBRDestructionOrb@SearchBehavior">
         <EditorCategories value="AbilityorEffectType:Units,Race:ZHBR"/>
-        <Period value="0.6"/>
-        <PeriodicEffect value="ZHBRPsiOrb@Search"/>
+        <Period value="0.375"/>
+        <PeriodicEffect value="ZHBRDestructionOrb@Search"/>
         <Duration value="3"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZHBRConfusion">
-        <Face value="ZHBRConfusion"/>
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
         <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
         <Duration value="14"/>
-        <FinalEffect value="HybridDominatorConfusionDamage"/>
+        <Modification AttackSpeedMultiplier="0.8"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZHBRWarbringerBanAutoCast">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <EditorCategories value="Race:ZHBR,AbilityorEffectType:Units"/>
+        <Duration value="1.75"/>
     </CBehaviorBuff>
 </Catalog>

@@ -48,6 +48,7 @@ fixed libZHBR_gf_HybridBuildControllerReturnBuildUnitRadius (order lp_order);
 // Trigger Declarations
 trigger libZHBR_gt_OfflineInitialization;
 trigger libZHBR_gt_InitializeHybrids;
+trigger libZHBR_gt_NukeAlert;
 trigger libZHBR_gt_RaceControlUnitSelection;
 trigger libZHBR_gt_RaceControlButtonInitialization;
 trigger libZHBR_gt_RaceControlButtonUsed;
@@ -63,6 +64,8 @@ trigger libZHBR_gt_HybridStasisCellConnection;
 trigger libZHBR_gt_HybridKeystoneConnection;
 trigger libZHBR_gt_HybridProjectorConnection;
 trigger libZHBR_gt_HybridVespeneConcentratorConstructionCompleted;
+trigger libZHBR_gt_HybridShapeshifterVoidChasmUp;
+trigger libZHBR_gt_HybridShapeshifterVoidChasmDown;
 trigger libZHBR_gt_HybridNavigatorCargoUI;
 
 // Library Initialization

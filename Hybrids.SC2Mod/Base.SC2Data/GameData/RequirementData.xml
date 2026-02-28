@@ -20,6 +20,50 @@
         <EditorCategories value="Race:ZHBR"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRBrokenDNAQueuedOrBetter0"/>
     </CRequirement>
+    <CRequirement id="ZHBRCloakedSpirit@UseWithOutUpgrade">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="CountUnitZHBRTombCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ZHBRFade@Use">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="CountBehaviorZHBRChimera@FadeCheckQueuedOrBetterAtUnit391207227"/>
+    </CRequirement>
+    <CRequirement id="ZHBRNavigatorCancelStationarity">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Show" Link="CountBehaviorZHBRNavigatorStationarityInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ZHBREnergatorVoidTrance">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Show" Link="NotCountBehaviorZHBREnergator@VoidTranceInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ZHBREnergatorCancelVoidTrance">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Show" Link="CountBehaviorZHBREnergator@VoidTranceInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ZHBRSpiritSiegeMod">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Show" Link="NotCountBehaviorZHBRSpiritSiegeModInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ZHBRCommon@RequiresCryptOrKeystoneUse">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="OrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ZHBRCommon@RequiresTombOrProjectorUse">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="OrCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ZHBRCommon@RequiresKeystoneOrProjectorUseUpgrade">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="Or609975200CountUpgradeZHBRKeystone@ConnectionCompleteOnlyCountUpgradeZHBRProjector@ConnectionCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ZHBRCommon@RequiresVoidForgeOrCapsuleUse">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="OrCountUnitZHBRVoidForgeCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ZHBRMinionMorph@Research">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="CountUnitZHBRCryptCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="ZHBRCommon@RequiresCryptUse">
         <EditorCategories value="Race:ZHBR"/>
         <NodeArray index="Use" Link="CountUnitZHBRCryptCompleteOnly"/>
@@ -80,16 +124,21 @@
         <EditorCategories value="Race:ZHBR"/>
         <NodeArray index="Use" Link="CountUpgradeZHBRDeepTunnelCompleteOnly3826630383"/>
     </CRequirement>
+    <CRequirement id="ZHBRPrimeSummoning@Cancel">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Show" Link="CountBehaviorZHBRPrimeSummoning@ControllerCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="ZHBRDestructionOrb@Research">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Show" Link="EqCountUpgradeZHBRDestructionOrbQueuedOrBetter0"/>
+        <NodeArray index="Show" Link="EqCountUpgradeZHBRAnnihilationQueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRDestructionOrb@Use">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Use" Link="CountUpgradeZHBRDestructionOrbCompleteOnly1500912908"/>
+        <NodeArray index="Use" Link="CountUpgradeZHBRAnnihilationCompleteOnly1500912908"/>
     </CRequirement>
     <CRequirement id="ZHBRDisappearance@Research">
         <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="CountUnitZHBRProjectorCompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeZHBRDisappearanceQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="ZHBRDisappearance@Use">
@@ -132,17 +181,33 @@
         <EditorCategories value="Race:ZHBR"/>
         <NodeArray index="Show" Link="CountBehaviorZHBRPrimeSummoning@ControllerCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="ZHBRPrimeSummoning@UseAbilityWithOutResearch">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="Or4121997442CountUnitZHBRCryptCompleteOnlyCountUnitZHBRTombCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="ZHBRSentinelWatcher@Research">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Show" Link="LTCountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpQueuedOrBetter1"/>
+        <NodeArray index="Show" Link="LTCountUpgradeZHBRWatcher@ZHBRWatcherQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="ZHBRSpiritCancelSiegeMod">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Show" Link="CountBehaviorZHBRSpiritSiegeModInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ZHBRNavigatorStationarity">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Show" Link="NotCountBehaviorZHBRNavigatorStationarityInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ZHBRSpiritSiegeMod@IsSieged">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="CountBehaviorZHBRSpiritSiegeModeCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="ZHBRSubjugationJump@Use">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Use" Link="CountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpCompleteOnly2928385730"/>
+        <NodeArray index="Use" Link="CountUpgradeZHBRSubjugationJump@ZHBRSubjugationCompleteOnly1631692077"/>
     </CRequirement>
     <CRequirement id="ZHBRSubjugationJump@Research">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Show" Link="LTCountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpQueuedOrBetter1"/>
+        <NodeArray index="Show" Link="LTCountUpgradeZHBRSubjugationJump@ZHBRSubjugationQueuedOrBetter1"/>
     </CRequirement>
     <CRequirement id="ZHBRProtectionJump@Use">
         <EditorCategories value="Race:ZHBR"/>
@@ -154,7 +219,7 @@
     </CRequirement>
     <CRequirement id="ZHBRSentinelWatcher@Use">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Use" Link="CountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpCompleteOnly2928385730"/>
+        <NodeArray index="Use" Link="CountUpgradeZHBRWatcher@ZHBRWatcherCompleteOnly2928385730"/>
     </CRequirement>
     <CRequirement id="ZHBRToxicity@Use">
         <EditorCategories value="Race:ZHBR"/>
@@ -172,8 +237,13 @@
         <EditorCategories value="Race:ZHBR"/>
         <NodeArray index="Use" Link="CountUpgradeZHBRUltimateUnitOfTransfusionCompleteOnly1091555285"/>
     </CRequirement>
+    <CRequirement id="ZHBRVoidBarrier@Use">
+        <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="CountUpgradeZHBRPhaseShiftCompleteOnly3033292665"/>
+    </CRequirement>
     <CRequirement id="ZHBRVoidBonus@Research">
         <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="OrCountUnitZHBRVoidForgeCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeZHBRVoidBonusQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="ZHBRVoidBonus@ResearchInProgress">
@@ -200,13 +270,14 @@
         <EditorCategories value="Race:ZHBR"/>
         <NodeArray index="Use" Link="GTCountUpgradeZHBRVoidShieldCompleteOnly0"/>
     </CRequirement>
-    <CRequirement id="ZHBRRestorationShield@Research">
+    <CRequirement id="ZHBRRestorationHealth@Research">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Show" Link="EqCountUpgradeZHBRRestorationShieldQueuedOrBetter0"/>
+        <NodeArray index="Use" Link="Or57773908CountUnitZHBRCryptCompleteOnlyCountUnitZHBRTombCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeZHBRRestorationHealthQueuedOrBetter0"/>
     </CRequirement>
-    <CRequirement id="ZHBRRestorationShield@Use">
+    <CRequirement id="ZHBRRestorationHealth@Use">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Use" Link="GTCountUpgradeZHBRRestorationShieldCompleteOnly0"/>
+        <NodeArray index="Use" Link="GTCountUpgradeZHBRRestorationHealthCompleteOnly0"/>
     </CRequirement>
     <CRequirement id="ZHBRSpray@HaveSprayZHBR">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
@@ -214,7 +285,7 @@
     </CRequirement>
     <CRequirement id="ZHBRCommon@RequiresCrystallicShrineUseUpgrade">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Use" Link="CountUpgradeZHBRCrystallicShrineCompleteOnly3760657428TechTreeCheat"/>
+        <NodeArray index="Use" Link="CountUpgradeZHBRProjectorCompleteOnly3760657428TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="ZHBRCommon@RequiresStasisCellUseUpgrade">
         <EditorCategories value="Race:ZHBR"/>
@@ -250,11 +321,15 @@
     </CRequirement>
     <CRequirement id="ZHBRCloakedSpirit@Use">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Use" Link="CountUpgradeZHBRCloakedSpiritCompleteOnly3516416024"/>
+        <NodeArray index="Use" Link="CountUpgradeZHBRMoveSpiritCompleteOnly3516416024"/>
     </CRequirement>
     <CRequirement id="ZHBRCloakedSpirit@Research">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Show" Link="LTCountUpgradeZHBRCloakedSpiritQueuedOrBetter1"/>
+        <NodeArray index="Show" Link="LTCountUpgradeZHBRMoveSpiritQueuedOrBetter1"/>
+    </CRequirement>
+    <CRequirement id="ZHBRVoidPhantom@Phantasming">
+        <EditorCategories value="Race:ZHBR,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountBehaviorZHBRVoidPhantom@CasterCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="ZHBRIonicField@Use">
         <EditorCategories value="Race:ZHBR"/>
@@ -274,62 +349,58 @@
     </CRequirement>
     <CRequirement id="ZHBRGroundArmorUpgradeLevel1@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="CountUnitZHBRCryptCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRGroundArmorUpgradeLevel1QueuedOrBetter5390442910"/>
     </CRequirement>
     <CRequirement id="ZHBRGroundArmorUpgradeLevel2">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundArmorUpgradeLevel1CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundArmorUpgradeLevel1CompleteOnlyOrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRGroundArmorUpgradeLevel2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRGroundArmorUpgradeLevel3">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundArmorUpgradeLevel2CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundArmorUpgradeLevel2CompleteOnlyOrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRGroundArmorUpgradeLevel3QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRGroundWeaponUpgradeLevel1@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="CountUnitZHBRCryptCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRGroundWeaponUpgradeLevel1QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRGroundWeaponUpgradeLevel2@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundWeaponUpgradeLevel1CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundWeaponUpgradeLevel1CompleteOnlyOrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRGroundWeaponUpgradeLevel2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRGroundWeaponUpgradeLevel3@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundWeaponUpgradeLevel2CompleteOnlyCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRGroundWeaponUpgradeLevel2CompleteOnlyOrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnlyCountUnitZHBRCapsuleCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRGroundWeaponUpgradeLevel3QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRAirArmorUpgradeLevel1@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="CountUnitZHBRTombCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRAirArmorUpgradeLevel1QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRAirArmorUpgradeLevel2@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirArmorUpgradeLevel1CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirArmorUpgradeLevel1CompleteOnlyOrCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRAirArmorUpgradeLevel2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRAirArmorUpgradeLevel3@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirArmorUpgradeLevel2CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirArmorUpgradeLevel2CompleteOnlyOrCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRAirArmorUpgradeLevel3QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRAirWeaponUpgradeLevel1@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="CountUnitZHBRTombCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRAirWeaponUpgradeLevel1QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRAirWeaponUpgradeLevel2@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirWeaponUpgradeLevel1CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirWeaponUpgradeLevel1CompleteOnlyOrCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRAirWeaponUpgradeLevel2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRAirWeaponUpgradeLevel3@Research">
         <EditorCategories value="Race:ZHBR,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirWeaponUpgradeLevel2CompleteOnlyCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeZHBRAirWeaponUpgradeLevel2CompleteOnlyOrCountUnitZHBRTombCompleteOnlyCountUnitZHBRProjectorCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeZHBRAirWeaponUpgradeLevel3QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="ZHBRPrimeSummoning@Research">
@@ -355,6 +426,7 @@
     </CRequirement>
     <CRequirement id="ZHBRFlayerFury@Research">
         <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="OrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnly"/>
         <NodeArray index="Show" Link="LTCountUpgradeZHBRFlayerFuryQueuedOrBetter1"/>
     </CRequirement>
     <CRequirement id="ZHBRFlayerFury@HasBehavior">
@@ -383,10 +455,11 @@
     </CRequirement>
     <CRequirement id="ZHBRWarbringerMaceStrike@HasBuff">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Show" Link="CountBehaviorZHBRWarbringerMaceStrikeCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorZHBRWarbringerMaceStrike111CompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="ZHBRWarbringerOrbitalGuidance@OrbitalGuidance">
         <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="CountUnitZHBRKeystoneCompleteOnly"/>
         <NodeArray index="Show" Link="LTCountUpgradeZHBRWarbringerOrbitalGuidanceQueuedOrBetter1"/>
     </CRequirement>
     <CRequirement id="ZHBRWarbringerMaceStrike@HasNoBuff">
@@ -399,10 +472,11 @@
     </CRequirement>
     <CRequirement id="ZHBRWarriorDeconstruction@Research">
         <EditorCategories value="Race:ZHBR"/>
+        <NodeArray index="Use" Link="OrCountUnitZHBRCryptCompleteOnlyCountUnitZHBRKeystoneCompleteOnly"/>
         <NodeArray index="Show" Link="LTCountUpgradeZHBRWarriorDeconstruction@DeconstructionQueuedOrBetter1"/>
     </CRequirement>
     <CRequirement id="ZHBRWarriorDeconstruction@Use">
         <EditorCategories value="Race:ZHBR"/>
-        <NodeArray index="Use" Link="Eq599990200CountUpgradeZHBRWarriorDeconstruction@DeconstructionCompleteOnly1"/>
+        <NodeArray index="Use" Link="CountUpgradeZHBRWarriorDeconstruction@DeconstructionCompleteOnly"/>
     </CRequirement>
 </Catalog>

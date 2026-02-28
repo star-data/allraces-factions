@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CFootprint id="ZHBRBigForceField@Footprint">
+        <Layers index="Check" Area="-2,-2,2,2">
+            <Sets index="0">
+                <Negative index="NoBuild" value="0"/>
+                <Negative index="Creep" value="0"/>
+                <Negative index="Masked" value="0"/>
+                <Negative index="Water" value="1"/>
+            </Sets>
+            <Rows value="...."/>
+            <Rows value="...."/>
+            <Rows value="...."/>
+            <Rows value="...."/>
+        </Layers>
+        <Layers index="Place" Area="-2,-2,2,2">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoBuild" value="0"/>
+                <Positive index="NearResources" value="1"/>
+            </Sets>
+            <Rows value="...."/>
+            <Rows value="...."/>
+            <Rows value="...."/>
+            <Rows value="...."/>
+        </Layers>
+        <Shape>
+            <Mode value="Overlay"/>
+            <Radius value="2.8286"/>
+            <Offsets value="-2,-2;2,-2;-2,2;2,2"/>
+            <Borders value="0,2,0;1,0,0;2,3,0;3,1,0"/>
+        </Shape>
+    </CFootprint>
     <CFootprint id="ZHBRAmplifier@Placement">
         <Layers index="Check" Area="-1,0,1,1">
             <Sets index="0">

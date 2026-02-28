@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CSound id="ZHBRVoidPhantom@DeathFX" parent="Combat">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Adept_DeathFX00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_DeathFX01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_DeathFX02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_DeathFX03.wav" FacialGroup=""/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-6.000000,-6.000000"/>
+    </CSound>
     <CSound id="HybridPsyon@FragmentumCorrosionImpact" parent="Spell">
         <EditorCategories value="Race:ZHBR"/>
         <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Construction\Zerg_BuildingMorphStart0.wav"/>
@@ -108,6 +117,79 @@
         <Pitch value="-16.400000,-14.400000"/>
         <Volume value="-10.760000,-10.760000"/>
     </CSound>
+    <CSound id="ZHBRChimeraFade@SoundStop" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Sonar_Drone_Ping_01_.wav" FacialGroup=""/>
+        <Volume value="0.500000,0.500000"/>
+    </CSound>
+    <CSound id="ZHBREnergatorVoidTrance@Stop" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\ZHybrid\Dominator\Dominator_Attack04.ogg" FacialGroup=""/>
+        <Pitch value="5.000000,5.000000"/>
+    </CSound>
+    <CSound id="ZHBRNavigatorStationarity@Stop" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\PsiBlade_Launch_C01.wav" FacialGroup=""/>
+        <Pitch value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="ZHBRChimeraFade@SoundStart" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Sonar_Drone_Ping_01a_.wav" FacialGroup=""/>
+        <Volume value="4.500000,4.500000"/>
+    </CSound>
+    <CSound id="ZHBRVoidBarrier@Launch" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Tychus_Medic_HealingMatrix_Off_01.wav"/>
+        <Pitch value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="ZHBRSpiritSiegeMode@Start" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\MainMenu_Takeover_Fenix_SMX2_Fenix_LowerArm01_1ch.wav" FacialGroup=""/>
+        <Volume value="-4.000000,-4.000000"/>
+        <Pitch value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="ZHBRNavigatorStationarity@Start" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Protoss_FlyingUnit_Medium_Land_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss_FlyingUnit_Medium_Land_04.wav" FacialGroup=""/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="ZHBREnergatorVoidTrance@Start" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Uni\Units\DiabloSmall\DiabloSmall_voxRoar_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Units\DiabloSmall\DiabloSmall_voxRoar_03.wav" FacialGroup=""/>
+        <Pitch value="9.000000,9.000000"/>
+        <Volume value="1.000000,1.000000"/>
+    </CSound>
+    <CSound id="ZHBRPounce@LaunchSound" parent="Combat">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud04.wav" FacialGroup=""/>
+        <Volume value="-8.000000,-8.000000"/>
+    </CSound>
+    <CSound id="ZHBRDeactivateEvaporator@LaunchSound" parent="Combat">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zeratul_BlinkCloud04.wav" FacialGroup=""/>
+        <Volume value="-8.000000,-8.000000"/>
+    </CSound>
+    <CSound id="ZHBRDomination@Impact" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_Confusion_Impact01.ogg" FacialGroup=""/>
+        <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_Confusion_Impact02.ogg" FacialGroup=""/>
+        <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_Confusion_Impact03.ogg" FacialGroup=""/>
+        <PlayDelay value="400,400"/>
+    </CSound>
+    <CSound id="ZHBRDomination@Start" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_Confusion_Start01.ogg" FacialGroup=""/>
+        <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_Confusion_Start02.ogg" FacialGroup=""/>
+        <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_Confusion_Start03.ogg" FacialGroup=""/>
+    </CSound>
     <CSound id="ZHBREnergation@StartDeformer" parent="Spell">
         <EditorCategories value="Race:ZHBR"/>
         <AssetArray File="Assets\Sounds\Uni\UI\Impact_SwtStrike_01.wav" Offset="10000,10000" FacialGroup=""/>
@@ -125,6 +207,39 @@
         <OffsetShiftIn Time="1000" Pitch="-20.000000"/>
         <Pitch value="-4.000000,-2.000000"/>
         <Volume value="-12.000000,-12.000000"/>
+    </CSound>
+    <CSound id="ZHBRPounce@Sound" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_ScorescreenWipe1.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_ScorescreenWipe2.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\BattleNet_UI\UI_Bnet_ScorescreenWipe3.ogg" FacialGroup=""/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="ZHBRSentinelLeap@Land" parent="Movement">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Ultra_Land00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Ultra_Land01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Ultra_Land02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Ultra_Land03.wav" FacialGroup=""/>
+        <Pitch value="-6.000000,0.000000"/>
+        <Volume value="2.000000,4.000000"/>
+    </CSound>
+    <CSound id="ZHBRSentinelLeap@Launch" parent="Movement">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Footsteps0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Footsteps1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Footsteps2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Footsteps3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Footsteps4.wav" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="ZHBRSpiritSiegeMode@Stop" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\MainMenu_Takeover_Fenix_SMX2_Fenix_LowerArm04_1ch.wav" FacialGroup=""/>
+        <Pitch value="-1.000000,-1.000000"/>
+        <Volume value="-4.000000,-4.000000"/>
     </CSound>
     <CSound id="ZHBRStriderWeapon@AttackImpactEvaporator" parent="Combat">
         <EditorCategories value="Race:ZHBR"/>
@@ -274,6 +389,72 @@
         <AssetArray File="assets\Sounds\VO\ZHybrid\Minion\Minion_Attack05.ogg" FacialGroup=""/>
         <AssetArray File="assets\Sounds\VO\ZHybrid\Minion\Minion_Attack06.ogg" FacialGroup=""/>
         <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="ZHBRVoidBarrier@Stop" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\UI_Gen_2.wav"/>
+    </CSound>
+    <CSound id="ZHBRVoidPhantom@EndSound" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferTeleport_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferTeleport_02.wav" Volume="-1.000000,-1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferTeleport_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferTeleport_04.wav" Volume="-2.000000,-2.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferTeleport_05.wav" Volume="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferTeleport_06.wav" Volume="-2.000000,-2.000000" FacialGroup=""/>
+        <DupeMuteCount value="3"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-6.000000,-6.000000"/>
+    </CSound>
+    <CSound id="ZHBRVoidPhantom@LaunchSound" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferLaunch_01.wav" Volume="-1.000000,-1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferLaunch_02.wav" Volume="-1.000000,-1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferLaunch_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferLaunch_04.wav" Volume="-4.000000,-4.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferLaunch_05.wav" Volume="-4.000000,-4.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Adept_PsionicTransferLaunch_06.wav" Volume="-3.000000,-3.000000" FacialGroup=""/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="3"/>
+        <DupePrioritization value="Oldest"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="ZHBRVoidPhantom@VO" parent="ZergAck">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_01a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_02a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_02b.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_03a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_04a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_04b.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_04c.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_04d.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_05a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_05b.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_05c.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_06.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_06a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_06b.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_06c.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_07.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_07a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_07b.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_08.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_08a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Stetellite_What_Vx_09.wav" FacialGroup=""/>
+        <AssetArrayTemplate>
+            <File value="LocalizedData\Sounds\VO\Protoss\^TemplateParam2^.ogg"/>
+            <FacialAnim value="^TemplateParam1^"/>
+            <FacialGroup value="^TemplateParam1^"/>
+            <FacialFile value="LocalizedData\Sounds\VO\Protoss\^TemplateParam1^.fxe"/>
+        </AssetArrayTemplate>
+        <Volume value="-8.000000,-8.000000"/>
     </CSound>
     <CSound id="ZHBRWarrior@Death" parent="Death">
         <EditorCategories value="Race:ZHBR"/>
@@ -2184,7 +2365,7 @@
         <Pitch value="-3.000000,-2.000000"/>
         <Volume value="-10.000000,-10.000000"/>
     </CSound>
-    <CSound id="ZHBRSentinelJump@Land" parent="Movement">
+    <CSound id="ZHBRSentinelSubjugationJump@Land" parent="Movement">
         <EditorCategories value="Race:ZHBR"/>
         <AssetArray File="Assets\Sounds\Ultra_Land00.wav" FacialGroup=""/>
         <AssetArray File="Assets\Sounds\Ultra_Land01.wav" FacialGroup=""/>
@@ -2193,7 +2374,7 @@
         <Pitch value="-6.000000,0.000000"/>
         <Volume value="2.000000,4.000000"/>
     </CSound>
-    <CSound id="ZHBRSentinelJump@Launch" parent="Movement">
+    <CSound id="ZHBRSentinelSubjugationJump@Launch" parent="Movement">
         <EditorCategories value="Race:ZHBR"/>
         <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Footsteps0.wav" FacialGroup=""/>
         <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Footsteps1.wav" FacialGroup=""/>
@@ -2532,7 +2713,7 @@
         <AssetArray File="assets\Sounds\VO\ZHybrid\Warrior\Warrior_Yes06.ogg" FacialGroup=""/>
         <Volume value="-4.000000,-4.000000"/>
     </CSound>
-    <CSound id="ZHBRPsiOrb@BeamImpact" parent="Combat">
+    <CSound id="ZHBRDestructionOrb@BeamImpact" parent="Combat">
         <EditorCategories value="Race:ZHBR"/>
         <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_PsionicOrb_Electric_01.ogg" FacialGroup=""/>
         <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_PsionicOrb_Electric_02.ogg" FacialGroup=""/>
@@ -2545,7 +2726,7 @@
         <Pitch value="-3.000000,0.000000"/>
         <Volume value="-8.000000,-6.000000"/>
     </CSound>
-    <CSound id="ZHBRPsiOrb@Impact" parent="Combat">
+    <CSound id="ZHBRDestructionOrb@Impact" parent="Combat">
         <EditorCategories value="Race:ZHBR"/>
         <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_PsionicOrb_Impact_01.ogg" FacialGroup=""/>
         <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_PsionicOrb_Impact_02.ogg" FacialGroup=""/>
@@ -2561,7 +2742,7 @@
         <Pitch value="-3.000000,0.000000"/>
         <Volume value="-6.000000,-4.000000"/>
     </CSound>
-    <CSound id="ZHBRPsiOrb@Launch" parent="Spell">
+    <CSound id="ZHBRDestructionOrb@Launch" parent="Spell">
         <EditorCategories value="Race:ZHBR"/>
         <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_PsionicOrb_Launch_01.ogg" FacialGroup=""/>
         <AssetArray File="assets\Sounds\ZHybrid\Dominator\Dominator_PsionicOrb_Launch_02.ogg" FacialGroup=""/>
@@ -2840,5 +3021,10 @@
         <Pitch value="-2.000000,1.000000"/>
         <SustainFade index="1" Time="2000" Volume="-96.000000"/>
         <Volume value="-6.000000,-3.000000"/>
+    </CSound>
+    <CSound id="ZHBRWormhole@Teleport" parent="Spell">
+        <EditorCategories value="Race:ZHBR"/>
+        <AssetArray File="Assets\Sounds\Adun_Turret_Rotate_04.wav" FacialGroup=""/>
+        <Volume value="1.000000,1.000000"/>
     </CSound>
 </Catalog>

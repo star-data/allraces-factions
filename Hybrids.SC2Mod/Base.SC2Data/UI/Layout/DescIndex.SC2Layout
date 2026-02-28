@@ -2,4 +2,6 @@
 <Desc>
   <Include path="UI/Layout/UI/UnitStatus.SC2Layout" />
   <Include path="UI/Layout/UI/GameUI_ZCR.SC2Layout" />
+    <!-- <Include path="UI/Layout/ZHBRConstants.SC2Layout"/> -->
+    <!-- <Include path="UI/Layout/TechTreePanel_ZHBR.SC2Layout"/> -->
 </Desc>

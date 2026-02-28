@@ -65,7 +65,7 @@
         <Host Subject="_Selectable"/>
     </CActorModel>
     <CActorUnit default="1" id="ZHBRBuildingEx" parent="ProtossBuilding">
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Macros value="BuildingFlattenTerrainMacro"/>
         <Macros value="SnowVisualBuildingMacroMP"/>
         <Macros value="ZHBRCommon@DestroyParticles"/>
@@ -110,6 +110,116 @@
         <WireframeShieldColor value="255,192,192,192"/>
         <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
     </CActorUnit>
+    <CActorModel id="HybridDominatorDominationImpactVisualEffect" parent="ModelAddition">
+        <Aliases index="0" removed="1"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
+        <On Terms="Behavior.ZHBRDominatorDomination.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRDominatorDomination.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,0,0"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="0.250000"/>
+        <ModelFlags index="UseSyncSeed" value="0"/>
+    </CActorModel>
+    <CActorModel id="HybridMinionVoidBonusMineralsRich" parent="ModelAnimationStyleContinuousUNIT">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <Inherits index="WarpGroup" value="1"/>
+        <On Terms="Behavior.CarryHighYieldMineralFieldMinerals.On; ValidateEffect ZHBRMinionVoidBonusCasterHasActivBehavior" Send="Create"/>
+        <On Terms="Behavior.CarryHighYieldMineralFieldMinerals.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="AbilMorph; MorphFrom ZHBRMinion; MorphTo ZHBRSpirit" Send="Destroy"/>
+        <On Terms="Behavior.CarryHighYieldMineralFieldMinerals.On" Target="CarryHighYieldMineralFieldMinerals" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,155,0"/>
+        <HostSiteOps Ops="SOpAttachHardPoint"/>
+        <Scale value="0.350000,0.250000,0.350000"/>
+    </CActorModel>
+    <CActorModel id="HybridMinionVoidBonusMinerals" parent="ModelAnimationStyleContinuousUNIT">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <Inherits index="WarpGroup" value="1"/>
+        <On Terms="Behavior.CarryMineralFieldMinerals.On; ValidateEffect ZHBRMinionVoidBonusCasterHasActivBehavior" Send="Create"/>
+        <On Terms="Behavior.CarryMineralFieldMinerals.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="AbilMorph; MorphFrom ZHBRMinion; MorphTo ZHBRSpirit" Send="Destroy"/>
+        <On Terms="Behavior.CarryMineralFieldMinerals.On" Target="CarryMineralFieldMinerals" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHardPoint"/>
+        <Scale value="0.350000,0.250000,0.350000"/>
+    </CActorModel>
+    <CActorModel id="HybridCloneContaminateModel" parent="ModelAddition">
+        <Inherits index="TintColor" value="0"/>
+        <AcceptedHostedPropTransfers index="BaseModelScale" value="0"/>
+        <Remove Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Behavior.Contaminated.On; ValidateEffect ZHBRContaminate@Condition" Send="Create"/>
+        <On Terms="Behavior.Contaminated.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorOrphan" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation; ValidateUnitType ZHBRCommon@IsHoldingCell" Send="SetScale 0.700000,0.700000,1.500000"/>
+        <On Terms="ActorCreation; ValidateUnitType ZHBRCommon@IsCrypt" Send="SetScale 0.600000,0.600000,1.100000"/>
+        <On Terms="ActorCreation; ValidateUnitType ZHBRCommon@IsProjector" Send="SetScale 0.600000,0.600000,1.100000"/>
+        <On Terms="ActorCreation; ValidateUnitType ZHBRCommon@IsCapsule" Send="SetScale 0.900000,0.900000,1.300000"/>
+        <On Terms="ActorCreation; ValidateUnitType ZHBRCommon@IsVoidForge" Send="SetScale 0.550000,0.550000,0.750000"/>
+        <HostSiteOps Ops="SOpAttachCenterSoft"/>
+        <Model value="ContaminateModel"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorBeamSimple id="HybridDomination@MindBeam" parent="BeamSimpleAnimationStyleContinuous">
+        <Macros value="ActionTargetTeleportDestroy"/>
+        <On Terms="Effect.ZHBRDomination@ApplyBehaviorUnitUp.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRDomination@ApplyDisableSecondApply.Start" Send="Destroy"/>
+        <On Terms="Effect.ZHBRDomination@ApplyBehaviorUnitUp.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRDomination@ApplyBehaviorUnitUp.Start" Send="Create"/>
+        <Model value="HybridDominationMindBeam"/>
+        <Scale value="1.750000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <HostLaunch Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <HostLaunchSiteOps Ops="SOpAttachHead"/>
+        <HostImpact Subject="_Unit" Scope="Target" Actor="Find"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorUnit id="HybridChazmBigForceField" parent="GenericUnitStandardNoAutoSoundLinks" unitName="ForceField">
+        <On index="0" Terms="UnitBirth.HybridVoidChazmBigForceField"/>
+        <On index="1" Terms="UnitBirth.HybridVoidChazmBigForceField"/>
+        <On index="2" Terms="UnitRevive.HybridVoidChazmBigForceField"/>
+        <On index="3" Terms="UnitRevive.HybridVoidChazmBigForceField"/>
+        <On index="4" Terms="UnitConstruction.HybridVoidChazmBigForceField.Start"/>
+        <On index="5" Terms="UnitConstruction.HybridVoidChazmBigForceField.Finish"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="" VoiceLink=""/>
+        <PlacementModel value="Invisible"/>
+        <HeroIcon value="Assets\Textures\btn-ability-protoss-forcefield.dds"/>
+        <HighlightTooltip value="Unit/Name/HybridChazmBigForceField"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-ability-protoss-forcefield.dds"/>
+        <Model value="Invisible"/>
+    </CActorUnit>
+    <CActorSiteRocker id="HybridEnergatorVoidTrace">
+        <On Terms="ActorCreation" Target="::Main" Send="RefSetFromMsg ::Host ::Sender"/>
+        <On Terms="TimerExpired; TimerName DelayDestroy" Send="Destroy"/>
+        <On Terms="Behavior.ZHBREnergator@VoidTrance.On" Send="Create"/>
+        <On Terms="Behavior.ZHBREnergator@VoidTrance.Off" Send="Transition Out 1.000000"/>
+        <On Terms="Behavior.ZHBREnergator@VoidTrance.Off" Send="TimerSet 1.000000 DelayDestroy"/>
+        <Elevation value="0.100000,0.050000"/>
+        <ElevationPeriod value="2.500000,1.000000"/>
+        <Pitch value="11.997,5.9985"/>
+        <PitchPeriod value="3.500000,10.000000"/>
+        <Roll value="4.9987,4.9987"/>
+        <RollPeriod value="2.500000,1.000000"/>
+    </CActorSiteRocker>
     <CActorSound id="HybridPsyon@FragmentumCorrosionEndSound" parent="SoundOneShot">
         <On Terms="Behavior.HybridPsyon@FragmentumCorrosion.Off" Send="Create"/>
         <Sound value="HyrbidPsyon@FragmentumCorrosionEnd"/>
@@ -125,8 +235,8 @@
         <On Terms="Behavior.HybridPsyon@FragmentumCorrosion.On" Send="Create"/>
         <On Terms="Behavior.HybridPsyon@FragmentumCorrosion.Off" Send="AnimBracketStop BSD"/>
         <On Terms="ActorOrphan" Send="AnimBracketStop BSD"/>
-        <HostSiteOps Ops="SOpAttachCenterSoft"/>
-        <AutoScaleFactor value="0.500000"/>
+        <HostSiteOps Ops="AttachHeadTop HybridSOpMoveUpBy1"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
     </CActorModel>
     <CActorSound id="HybridConfusionDamageImpact" parent="SoundOneShot">
         <On Terms="Effect.HybridDominatorConfusionDamage.Start; At Caster" Send="Create"/>
@@ -150,12 +260,52 @@
         <Inherits index="Visibility" value="1"/>
         <Inherits index="WarpGroup" value="1"/>
         <On Terms="Effect.HybridDeformer@DestructionAriseSet.Start" Send="Create"/>
-        <HostSiteOps Ops="SOpAttachCenterSoft"/>
+        <HostSiteOps Ops="SOpAttachCenterSoft SOpMoveByDot5 SOpMoveEastByDot1 SOpMoveEastByDot1 SOpMoveEastByDot1 SOpMoveEastByDot1 SOpMoveEastByDot1"/>
         <AutoScaleFactor value="1.000000"/>
         <AutoScaleFromSelectionFactor value="1.000000"/>
         <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="UseSyncSeed" value="1"/>
     </CActorModel>
+    <CActorSiteRocker id="HybridDominatorDominationUnitUp">
+        <On Terms="ActorCreation" Target="::Main" Send="RefSetFromMsg ::Host ::Sender"/>
+        <On Terms="TimerExpired; TimerName DelayDestroy" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRDominatorDomination.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRDominatorDomination.Off" Send="Transition Out 1.000000"/>
+        <On Terms="Behavior.ZHBRDominatorDomination.Off" Send="TimerSet 1.000000 DelayDestroy"/>
+        <Elevation value="0.100000,0.050000"/>
+        <ElevationPeriod value="2.500000,1.000000"/>
+        <Pitch value="11.997,5.9985"/>
+        <PitchPeriod value="3.500000,10.000000"/>
+        <Roll value="4.9987,4.9987"/>
+        <RollPeriod value="2.500000,1.000000"/>
+    </CActorSiteRocker>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveCentreForConstructBeam">
+        <LocalOffset value="-0.030000,0.000000,-0.500000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveRightForConstructBeam">
+        <LocalOffset value="-1.760000,0.315000,-0.930000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveLeftForCunsumeDNA">
+        <LocalOffset value="0.250000,0.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveUpBy1_5">
+        <LocalOffset value="0.000000,0.000000,1.500000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveLeftForConstructBeam">
+        <LocalOffset value="1.680000,0.200000,-0.750000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveVoidBarrierFlayer">
+        <LocalOffset value="0.300000,0.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveVoidBarrierDreadnok">
+        <LocalOffset value="0.000000,0.250000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveVoidBarrierPartStructure">
+        <LocalOffset value="0.000000,0.000000,-0.500000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveWeaponForStrider">
+        <LocalOffset value="0.000000,0.000000,-0.300000"/>
+    </CActorSiteOpLocalOffset>
     <CActorMissile id="HybridSpiritSacificingReveal" parent="GenericAttackMissile" unitName="HybridSpiritSacificingReveal"/>
     <CActorAction id="HybridSpiritSacificingRevealAttack" parent="GenericAttack" effectImpact="HybridSacrificingRevealDummyDamage">
         <On Terms="Effect.HybridSpiritSacificingRevealLaunch.Start; At Caster" Send="Create"/>
@@ -202,12 +352,12 @@
     </CActorModel>
     <CActorModel id="HybridConstructAttackImpactVisualEffect" parent="ModelAnimationStyleContinuous">
         <Flags index="SuppressSaveLoad" value="1"/>
+        <Supporter Scope="Target"/>
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
         <On Terms="Behavior.HybridClusterNovaVerifyTargetBehavior.On" Send="Create"/>
         <On Terms="Behavior.HybridClusterNovaVerifyTargetBehavior.Off" Send="AnimBracketStop BSD"/>
-        <HostSiteOps Ops="SOpMoveUpBy2"/>
-        <Supporter Scope="Target"/>
         <Host Scope="Target"/>
+        <HostSiteOps Ops="SOpMoveUpBy2"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
     <CActorModel id="HybridConstructAttackVisualEffect2nd" parent="ModelAnimationStyleOneShot">
@@ -219,17 +369,17 @@
     </CActorModel>
     <CActorSiteRocker id="HybridRockTargetUnit">
         <On Terms="ActorCreation" Target="::Main" Send="RefSetFromMsg ::Host ::Sender"/>
-        <On Terms="Behavior.ZHBRVoidChasm.On" Send="Create"/>
-        <On Terms="Behavior.ZHBRVoidChasm.Off" Send="Transition Out 1.000000"/>
-        <On Terms="Behavior.ZHBRVoidChasm.Off" Send="TimerSet 1.000000 DelayDestroy"/>
         <On Terms="TimerExpired; TimerName DelayDestroy" Send="Destroy"/>
         <On Terms="Behavior.ZHBRVoidChasmGround.On" Send="Create"/>
         <On Terms="Behavior.ZHBRVoidChasmGround.Off" Send="Transition Out 1.000000"/>
         <On Terms="Behavior.ZHBRVoidChasmGround.Off" Send="TimerSet 1.000000 DelayDestroy"/>
-        <Elevation value="-5.000000,-0.500000"/>
-        <ElevationPeriod value="1.750000,0.500000"/>
-        <Pitch value="21.9946,9.9975"/>
-        <PitchPeriod value="1.000000,0.250000"/>
+        <On Terms="Behavior.ZHBRVoidChasmStructure.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidChasmStructure.Off" Send="Transition Out 1.000000"/>
+        <On Terms="Behavior.ZHBRVoidChasmStructure.Off" Send="TimerSet 1.000000 DelayDestroy"/>
+        <Elevation value="0.100000,0.050000"/>
+        <ElevationPeriod value="2.500000,1.000000"/>
+        <Pitch value="11.997,5.9985"/>
+        <PitchPeriod value="3.500000,10.000000"/>
         <Roll value="4.9987,4.9987"/>
         <RollPeriod value="2.500000,1.000000"/>
     </CActorSiteRocker>
@@ -238,7 +388,19 @@
         <Host Subject="_Selectable"/>
         <Sound value="HybridTombResearchStartImpactSound"/>
     </CActorSound>
-    <CActorEventMacro id="HybridStasisCell_and_Crypt_QueueAnim">
+    <CActorSiteOpLocalOffset id="SOpMoveEastByDot1">
+        <LocalOffset value="0.100000,0.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="SOpMoveLeftByDot1">
+        <LocalOffset value="0.100000,0.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="SOpMoveRightByDot1">
+        <LocalOffset value="-0.100000,0.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorEventMacro id="ShieldColorMacro">
+        <On Terms="ActorCreation; ScopeContains _ShieldWhite" Send="SetTintColor {240,80,40 7.000000}"/>
+    </CActorEventMacro>
+    <CActorEventMacro id="HybridQueueAnim_StasisCell_Crypt_Tomb">
         <On Terms="Abil.que1.Start" Send="StatusIncrement Queuing"/>
         <On Terms="Abil.que1.Stop" Send="StatusDecrement Queuing"/>
         <On Terms="Abil.que5.Start" Send="StatusIncrement Queuing"/>
@@ -266,10 +428,9 @@
         <Sound value="HybridCapsuleResearchEndSound"/>
     </CActorSound>
     <CActorAction id="HybridPsyon@FragmentumCorrosionAttack" parent="GenericAttack" effectImpact="HybridPsyon@FragmentumCorrosionDamage" effectLaunch="HybridPsyon@FragmentumCorrosionLaunchMissile">
-        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+        <LaunchAttachQuery Methods="Center 0"/>
         <LaunchAssets Sound="HybridPsyon@FragmentumCorrosionLaunch"/>
         <Missile value="HybridPsyon@FragmentumCorrosionMissile"/>
-        <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpUpDefault"/>
         <ImpactMap index="None" Model="HybridPsyon@FragmentumCorrosionImpact"/>
         <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
         <ImpactPhysics Name="KineticOverloadImpact" MatchKeys="Basic" Physics="TempestAttackForce"/>
@@ -284,6 +445,7 @@
         <On Terms="UnitBirth" Send="AnimBracketStart Lifetime Birth Walk"/>
         <On Terms="UnitDeath" Send="Destroy"/>
         <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="UnitBirth.HybridPsyon@FragmentumCorrosionWeapon" Send="SetTintColor 0,120,179"/>
         <Model value="HybridPsyon@FragmentumCorrosionWeapon"/>
         <PreHost value="_ActorAction"/>
     </CActorMissile>
@@ -306,11 +468,707 @@
         <StatusBarFlags index="Duration" value="0"/>
         <StatusBarFlags index="Magazine" value="0"/>
     </CActorUnit>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveUpBy1">
+        <LocalOffset value="0.000000,0.000000,1.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridMinionVoidBonusModelMove">
+        <LocalOffset value="0.000000,-0.500000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorSiteOpLocalOffset id="HybridSOpMoveVoidBarrierSentinel">
+        <LocalOffset value="0.350000,0.000000,-0.350000"/>
+    </CActorSiteOpLocalOffset>
     <CActorUnit id="ZHBRAmplifier@PathingBlocker" parent="GenericUnitStandard" unitName="ZHBRAmplifier@PathingBlocker">
         <EditorCategories value=""/>
         <Model value="Invisible"/>
         <HighlightTooltip value="Unit/Name/Bogus"/>
     </CActorUnit>
+    <CActorModel id="ZHBRChimera@BladeShimmer" parent="ZCRModelAnimationStyleContinuous">
+        <Flags index="RespondsToUnitPlayerChange" value="1"/>
+        <On Terms="ActorCreation.ZHBRChimera" Send="Create"/>
+        <On Terms="ActorCreation.ZHBRChimera" Send="HostSiteOpsSet"/>
+        <ModelFlags index="AutomateGlobalLoops" value="0"/>
+        <ModelFlags index="UseSyncSeed" value="1"/>
+    </CActorModel>
+    <CActorModel id="ZHBRChimeraFade@BehaviorModelStart" parent="ModelAddition">
+        <Aliases index="0" removed="1"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRChimera@Fade.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRChimera@Fade.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="0.300000,0.300000,0.050000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="0"/>
+    </CActorModel>
+    <CActorSound id="ZHBRChimeraFade@SoundStop" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRChimera@Fade.Off" Send="Create"/>
+    </CActorSound>
+    <CActorRange id="ZHBREnergation@RangeMax" parent="RangeAbil" abil="ZHBREnergation@Energation">
+        <On index="1" Terms="Abil.ZHBREnergation@EnergationRange.TargetOn" Send="Create"/>
+        <On index="2" Terms="Abil.ZHBREnergation@EnergationRange.TargetOff" Send="Destroy"/>
+        <On index="3" Terms="Abil.ZHBREnergation@EnergationRange.ButtonHoverOn" Send="Create"/>
+        <On index="4" Terms="Abil.ZHBREnergation@EnergationRange.ButtonHoverOff" Send="Destroy"/>
+        <Abil Link="ZHBREnergation@EnergationRange"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+    </CActorRange>
+    <CActorSound id="ZHBREnergatorVoidTrance@SoundStop" parent="SoundOneShot">
+        <On Terms="Abil.ZHBRCancelEnergatorVoidTrance.TargetFinishStart" Send="Create"/>
+        <Sound value="ZHBREnergatorVoidTrance@Stop"/>
+    </CActorSound>
+    <CActorModel id="ZHBRChimeraFade@BehaviorModelStop" parent="ModelAddition">
+        <Aliases index="0" removed="1"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRChimera@Fade.Off" Send="Create"/>
+        <On Terms="Behavior.ZHBRChimera@Fade.On" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,255,0"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpMoveDownBy1"/>
+        <Scale value="0.900000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="0"/>
+    </CActorModel>
+    <CActorSound id="ZHBRChimeraFade@SoundStart" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRChimera@Fade.On" Send="Create"/>
+    </CActorSound>
+    <CActorModel id="ZHBRHarvesterMinionVoidBonus@Gas" parent="ModelAnimationStyleContinuousUNIT">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <Inherits index="WarpGroup" value="1"/>
+        <On Terms="Behavior.ZHBRHarvester@CarryHarvestableVespeneGeyserGasZHBR.On; ValidateEffect ZHBRMinionVoidBonusCasterHasActivBehavior" Send="Create"/>
+        <On Terms="Behavior.ZHBRHarvester@CarryHarvestableVespeneGeyserGasZHBR.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRHarvester@CarryHarvestableVespeneGeyserGasZHBR.Off" Send="RefClear ::Host"/>
+        <On Terms="AbilMorph; MorphFrom ZHBRMinion; MorphTo ZHBRSpirit" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRHarvester@CarryHarvestableVespeneGeyserGasZHBR.On" Target="ZHBRHarvester@CarryHarvestableVespeneGeyserGasZHBR" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHardPoint"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+    </CActorModel>
+    <CActorModel id="ZHBRHarvesterMinionVoidBonus@GasRich" parent="ModelAnimationStyleContinuousUNIT">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <Inherits index="WarpGroup" value="1"/>
+        <On Terms="Behavior.ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR.On; ValidateEffect ZHBRMinionVoidBonusCasterHasActivBehavior" Send="Create"/>
+        <On Terms="Behavior.ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR.Off" Send="RefClear ::Host"/>
+        <On Terms="AbilMorph; MorphFrom ZHBRMinion; MorphTo ZHBRSpirit" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR.On" Target="ZHBRHarvesterRich@CarryHarvestableVespeneGeyserGasZHBR" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHardPoint"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+    </CActorModel>
+    <CActorRange id="ZHBRNavigatorStationarityRadar">
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <Inherits index="Visibility" value="0"/>
+        <FogVisibility value="Visible"/>
+        <On Terms="Abil.ZHBRStationarity.ButtonHoverOn" Send="Create"/>
+        <On Terms="Abil.ZHBRStationarity.ButtonHoverOff; ValidateUnit ZHBRNavigator@CasterHasNotStationarity" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRNavigatorStationarity.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRNavigatorStationarity.Off" Send="Destroy"/>
+        <Range value="18.000000"/>
+        <Icon value="Assets\Textures\radaricon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+        <IconTint value="255,100,150,200"/>
+        <RangeFlags index="Minimap" value="1"/>
+    </CActorRange>
+    <CActorBeamSimple id="ZHBRVoidBarrier@Beam" parent="BeamSimpleAnimationStyleOneShot">
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce 0.500000 AsDuration"/>
+        <On Terms="Effect.ZHBRVoidBarrier@ApplyBehavior.Start; At Caster" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,255,98"/>
+        <Scale value="0.250000"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <HostLaunch Subject="_Unit" Scope="Caster"/>
+        <HostLaunchSiteOps Ops="SOpAttachWeapon01 SOpMoveBackByDot25"/>
+        <HostImpact Subject="_Unit" Scope="Target"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorEventMacro id="ZHBRVoidBarrier@ImpactModelMacro">
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade" Send="SetTintColor 200,250,100"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade" Send="SetTintColor 255,150,50"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Send="SetOpacity 0.350000"/>
+        <On Terms="BehaviorLevel.ZHBRVoidBarrier; Level 1" Send="SetOpacity 0.350000"/>
+        <On Terms="BehaviorLevel.ZHBRVoidBarrier; Level 2" Send="SetOpacity 0.650000"/>
+        <On Terms="BehaviorLevel.ZHBRVoidBarrier; Level 3" Send="SetOpacity 1.000000"/>
+        <On Terms="BehaviorLevel.ZHBRVoidBarrier; Level 3; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade" Send="SetTintColor 200,250,100"/>
+        <On Terms="BehaviorLevel.ZHBRVoidBarrier; Level 3; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade" Send="SetTintColor 255,150,50"/>
+        <On Terms="BehaviorLevel.ZHBRVoidBarrier; Level 4; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade" Send="SetTintColor {200,250,100 2.000000}"/>
+        <On Terms="BehaviorLevel.ZHBRVoidBarrier; Level 4; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade" Send="SetTintColor {255,150,50 2.000000}"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Start; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackFour" Send="SetTintColor {200,250,100 4.000000}"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Start; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackFour" Send="SetTintColor {255,150,50 4.000000}"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Start; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackLessThanFour" Send="SetTintColor {200,250,100 2.000000}"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Start; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackLessThanFour" Send="SetTintColor {255,150,50 2.000000}"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Stop; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackFour" Send="SetTintColor {200,250,100 2.000000}"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Stop; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackFour" Send="SetTintColor {255,150,50 2.000000}"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Stop; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackLessThanFour" Send="SetTintColor 200,250,100"/>
+        <On Terms="Effect.ZHBRVoidBarrier@AttackReact.Stop; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackLessThanFour" Send="SetTintColor 255,150,50"/>
+        <On Terms="ActorCreation; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade" Send="TimerSet 1.000000 CheckUpgrade"/>
+        <On Terms="TimerExpired; TimerName CheckUpgrade; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackFour" Send="SetTintColor {255,150,50 2.000000}"/>
+        <On Terms="TimerExpired; TimerName CheckUpgrade; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackLessThanFour" Send="SetTintColor 255,150,50"/>
+        <On Terms="TimerExpired; TimerName CheckUpgrade; ValidatePlayer ZHBRVoidBarrier@HasVoidEfficiencyUpgrade" Send="TimerKill CheckUpgrade"/>
+        <On Terms="TimerExpired; TimerName CheckUpgrade; ValidatePlayer ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade" Send="TimerSet 1.000000 CheckUpgrade"/>
+        <!-- <On Terms="Upgrade.ZHBRPhaseShift.Remove; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackFour" Send="SetTintColor {200,250,100 2.000000}"/>
+        <On Terms="Upgrade.ZHBRPhaseShift.Remove; ValidateUnit ZHBRVoidBarrier@TargetBehaviorStackLessThanFour" Send="SetTintColor 200,250,100"/> -->
+    </CActorEventMacro>
+    <CActorModel id="ZHBRVoidBarrier@ImpactModelPollinator" parent="ModelAddition">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="ZHBRVoidBarrier@ImpactModelMacro"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsPollinator" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Target="ZHBRVoidBarrier@ImpactModel" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpMoveUpByDot25 SOpMoveUpByDot25"/>
+        <Model value="ZHBRVoidBarrier@ImpactModel"/>
+        <Scale value="0.650000"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="ZHBRVoidBarrier@ImpactModelMinion" parent="ModelAddition">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="ZHBRVoidBarrier@ImpactModelMacro"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsMinion" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Target="ZHBRVoidBarrier@ImpactModel" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpMoveByDot1 SOpMoveByDot1"/>
+        <Model value="ZHBRVoidBarrier@ImpactModel"/>
+        <Scale value="0.500000"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="ZHBRVoidBarrier@ImpactModelDreadnok" parent="ModelAddition">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="ZHBRVoidBarrier@ImpactModelMacro"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsDreadnok" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Target="ZHBRVoidBarrier@ImpactModel" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter HybridSOpMoveVoidBarrierDreadnok"/>
+        <Model value="ZHBRVoidBarrier@ImpactModel"/>
+        <Scale value="0.650000,0.850000,0.650000"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="ZHBRVoidBarrier@ImpactModelSentinel" parent="ModelAddition">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="ZHBRVoidBarrier@ImpactModelMacro"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsSentinel" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Target="ZHBRVoidBarrier@ImpactModel" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter HybridSOpMoveVoidBarrierSentinel"/>
+        <Model value="ZHBRVoidBarrier@ImpactModel"/>
+        <Scale value="0.650000"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="ZHBRVoidBarrier@ImpactModelFlayer" parent="ModelAddition">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="ZHBRVoidBarrier@ImpactModelMacro"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsFlayer" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Target="ZHBRVoidBarrier@ImpactModel" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachCenter HybridSOpMoveVoidBarrierFlayer"/>
+        <Model value="ZHBRVoidBarrier@ImpactModel"/>
+        <Scale value="0.450000"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="ZHBRVoidBarrier@ImpactModelPartStructure" parent="ModelAddition">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="ZHBRVoidBarrier@ImpactModelMacro"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsTemple" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Target="ZHBRVoidBarrier@ImpactModel" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsCapsule" Send="SetScale 0.500000,0.500000,0.650000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsIonicCrystal" Send="SetScale 0.500000,0.500000,0.750000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsIonicCrystalMoveable" Send="SetScale 0.500000,0.500000,0.750000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsCapsule" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsIonicCrystal" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsIonicCrystalMoveable" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsDeformer" Send="SetScale 0.400000,0.400000,0.650000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsDeformer" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachCenter HybridSOpMoveVoidBarrierPartStructure"/>
+        <Model value="ZHBRVoidBarrier@ImpactModel"/>
+        <Scale value="0.750000"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorSound id="ZHBRVoidBarrier@LaunchSound" parent="SoundOneShot">
+        <On Terms="Effect.ZHBRVoidBarrier@ApplyBehavior.Start; At Caster" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <Sound value="ZHBRVoidBarrier@Launch"/>
+    </CActorSound>
+    <CActorSound id="ZHBRVoidBarrier@StopSound" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <Sound value="ZHBRVoidBarrier@Stop"/>
+    </CActorSound>
+    <CActorRange id="ZHBRVoidBarrier@Range" parent="RangeAbil" abil="ZHBRPhaseShift">
+        <On index="1" Terms="Abil.ZHBRVoidBarrier.TargetOn" Send="Create"/>
+        <On index="2" Terms="Abil.ZHBRVoidBarrier.TargetOff" Send="Destroy"/>
+        <On index="3" Terms="Abil.ZHBRVoidBarrier.ButtonHoverOn" Send="Create"/>
+        <On index="4" Terms="Abil.ZHBRVoidBarrier.ButtonHoverOff" Send="Destroy"/>
+        <Abil Link="ZHBRVoidBarrier"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconArcLength value="3.250000"/>
+    </CActorRange>
+    <CActorModel id="ZHBRVoidBarrier@ImpactModel" parent="ModelAddition">
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="ZHBRVoidBarrier@ImpactModelMacro"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsBehemoth" Send="SetScale 0.600000,0.600000,0.725000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsBehemoth; ValidateEffect ZHBRUpgradeToAdvancedBehemoth@HasUpgrade" Send="SetScale 0.700000,0.700000,0.825000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsConductor" Send="SetScale 0.550000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsDominator" Send="SetScale 0.350000,0.350000,0.500000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsNavigator" Send="SetScale 0.450000,0.550000,0.450000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsPsyon" Send="SetScale 0.300000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsShapeshifter" Send="SetScale 0.600000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsSpirit" Send="SetScale 0.375000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsWarbringer" Send="SetScale 0.625000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsWarrior" Send="SetScale 0.550000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsWarriorChangeling" Send="SetScale 0.550000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsConstructAntiAir" Send="SetScale 0.550000,0.550000,0.650000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsConstructAntiGround" Send="SetScale 0.550000,0.550000,0.650000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsCrypt" Send="SetScale 0.550000,0.550000,0.950000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsHarvester" Send="SetScale 0.550000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsHarvesterRich" Send="SetScale 0.550000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsHoldingCell" Send="SetScale 0.400000,0.400000,0.550000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsVespeneConcentrator" Send="SetScale 0.550000,0.750000,0.250000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsProjector" Send="SetScale 0.550000,0.550000,1.100000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsStasisCell" Send="SetScale 0.450000,0.450000,1.100000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsTomb" Send="SetScale 0.550000,0.550000,0.950000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsVoidRift" Send="SetScale 0.450000,0.450000,0.700000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsVoidForge" Send="SetScale 0.500000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsEnergator" Send="SetScale 0.300000,0.475000,0.300000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsNemesis" Send="SetScale 0.350000,0.525000,0.350000"/>
+        <On Terms="Behavior.ZHBRVoidBarrier.On; ValidateUnitType ZHBRCommon@IsStriderCrawler" Send="SetScale 0.300000"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="0.450000"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorRange id="ZHBRSelfDestruction@Range">
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <On Terms="Abil.ZHBRDeformer@SelfDestruction.ButtonHoverOn" Send="Create"/>
+        <On Terms="Abil.ZHBRDeformer@SelfDestruction.ButtonHoverOff" Send="Destroy"/>
+        <Range value="10.000000"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+        <RangeFlags index="Minimap" value="1"/>
+    </CActorRange>
+    <CActorSound id="ZHBRSpiritSiegeMode@SoundStart" parent="SoundOneShot">
+        <On Terms="Abil.ZHBRSpiritSiegeMode.SourceCastStart" Send="Create"/>
+        <Sound value="ZHBRSpiritSiegeMode@Start"/>
+    </CActorSound>
+    <CActorSound id="ZHBRSpiritSiegeMode@SoundStop" parent="SoundOneShot">
+        <On Terms="Abil.ZHBRCancelSiegeMod.TargetFinishStart" Send="Create"/>
+        <Sound value="ZHBRSpiritSiegeMode@Stop"/>
+    </CActorSound>
+    <CActorSound id="ZHBRStationarity@SoundStart" parent="SoundOneShot">
+        <On Terms="Abil.ZHBRStationarity.SourceCastStart" Send="Create"/>
+        <Sound value="ZHBRNavigatorStationarity@Start"/>
+    </CActorSound>
+    <CActorBeamSimple id="ZHBRConstructWeaponAntiGround@BeamLeft" parent="BeamSimpleAnimationStyleContinuous">
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth {} Death ContentPlayOnce"/>
+        <On Terms="Effect.ZHBRConstructWeaponAntiGround@DamageLow.Start; At Target; ValidateEffect ZHBRConstructHasMarkerSwithcBeam" Send="Create"/>
+        <Model value="ZHBRConstruct@Beam"/>
+        <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachWeapon HybridSOpMoveLeftForConstructBeam"/>
+        <HostImpact Subject="_Unit" Actor="Find"/>
+        <HostImpactSiteOps Ops="SOpAttachHarness"/>
+    </CActorBeamSimple>
+    <CActorBeamSimple id="ZHBRConstructWeaponAntiGround@BeamRight" parent="BeamSimpleAnimationStyleContinuous">
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth {} Death ContentPlayOnce"/>
+        <On Terms="Effect.ZHBRConstructWeaponAntiGround@DamageLow.Start; At Target; ValidateEffect ZHBRConstructHasNotMarkerSwithcBeam" Send="Create"/>
+        <Model value="ZHBRConstruct@Beam"/>
+        <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachWeapon HybridSOpMoveRightForConstructBeam"/>
+        <HostImpact Subject="_Unit" Actor="Find"/>
+        <HostImpactSiteOps Ops="SOpAttachHarness"/>
+    </CActorBeamSimple>
+    <CActorModel id="ZHBRDisintegrator@BehaviorModel" parent="ModelAddition">
+        <Aliases index="0" removed="1"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentForceLooping"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRNemesisDisintegrator.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRNemesisDisintegrator.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,255,0"/>
+        <HostSiteOps Ops="SOpAttachWeapon"/>
+        <Scale value="0.550000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="0"/>
+    </CActorModel>
+    <CActorModelMaterial id="ZHBREnergatorAnimationGlazeSiegeMode" parent="GlazeParent">
+        <On Terms="ActorCreation" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="AnimDone; AnimName Death" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <On Terms="Abil.ZHBREnergatorVoidTrance.SourceCastStart" Send="Create"/>
+        <On Terms="Abil.ZHBRCancelEnergatorVoidTrance.TargetFinishStart" Send="AnimBracketStop BSD"/>
+        <Model value="ZHBREnergatorModelGlazeSiegeMode"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModelMaterial>
+    <CActorModelMaterial id="ZHBRNavigatorAnimationGlazeSiegeMode" parent="GlazeParent">
+        <On Terms="ActorCreation" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="AnimDone; AnimName Death" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <On Terms="Abil.ZHBRStationarity.SourcePrepStart" Send="Create"/>
+        <On Terms="Abil.ZHBRCancelStationarity.TargetFinishStop" Send="AnimBracketStop BSD"/>
+        <Model value="ZHBRNavigatorModelGlazeSiegeMode"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModelMaterial>
+    <CActorModel id="ZHBRProteus@ProteusUpgrade" parent="ModelAddition">
+        <Flags index="RespondsToUnitPlayerChange" value="1"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentForceLooping"/>
+        <On Terms="Behavior.ZHBRProteus@UpgradeUIBehavior.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetOpacity 0.200000"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="2.250000"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModel>
+    <CActorModel id="ZHBRPounce@BehaviorModelUI" parent="ModelAddition">
+        <Aliases index="0" removed="1"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRChimera@Pounce.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRChimera@Pounce.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,0,0"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="0.850000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="0"/>
+    </CActorModel>
+    <CActorModel id="ZHBRPounce@Launch" parent="ModelAnimationStyleContinuous">
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce"/>
+        <On Terms="Effect.ZHBRPounce@Set.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRPounce@Set.Start; At TargetOuter" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorSound id="ZHBRPounce@LaunchSound" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.ZHBRPounce@Set.Start" Send="Create"/>
+    </CActorSound>
+    <CActorRange id="ZHBRPounce@Range" parent="RangeAbil" abil="ZHBRDeactivateEvaporator">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconArcLength value="3.250000"/>
+    </CActorRange>
+    <CActorModel id="ZHBRDeactivateEvaporator@BehaviorModelUI" parent="ModelAddition">
+        <Aliases index="0" removed="1"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,128,0 3.000000}"/>
+        <On Terms="Behavior.ZHBREvaporator@AttackRangeBuff.On" Send="Create"/>
+        <On Terms="Behavior.ZHBREvaporator@AttackRangeBuff.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachWeapon"/>
+        <Scale value="0.500000"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="0"/>
+    </CActorModel>
+    <CActorModel id="ZHBRDeactivateEvaporator@Launch" parent="ModelAnimationStyleContinuous">
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce"/>
+        <On Terms="Effect.ZHBRDeactivateEvaporator@Set.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRDeactivateEvaporator@Set.Start; At TargetOuter" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorSound id="ZHBRDeactivateEvaporator@LaunchSound" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.ZHBRDeactivateEvaporator@Set.Start" Send="Create"/>
+    </CActorSound>
+    <CActorRange id="ZHBRDeactivateEvaporator@Range" parent="RangeAbil" abil="ZHBRDeactivateEvaporator">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconArcLength value="3.250000"/>
+    </CActorRange>
+    <CActorSound id="ZHBRPounce@Sound" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRChimera@Pounce.On" Send="Create"/>
+    </CActorSound>
+    <CActorModel id="ZHBRDeformer@DeformerDestructionAriseMaxShield" parent="ModelAddition">
+        <Flags index="RespondsToUnitPlayerChange" value="1"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentForceLooping"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On" Send="Create"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.Off" Send="Destroy"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwo" Send="SetTintColor {0,255,0 2.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThree" Send="SetTintColor {255,255,0 3.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFour" Send="SetTintColor {255,0,0 4.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFive" Send="SetTintColor {255,0,0 5.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSix" Send="SetTintColor {255,0,0 10.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSeven" Send="SetTintColor {255,0,0 15.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorEight" Send="SetTintColor {255,0,0 20.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorNine" Send="SetTintColor {255,0,0 25.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTen" Send="SetTintColor {255,0,0 30.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorEleven" Send="SetTintColor {255,0,0 35.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwelve" Send="SetTintColor {255,0,0 40.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirteen" Send="SetTintColor {255,0,0 45.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFourteen" Send="SetTintColor {255,0,0 50.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFifteen" Send="SetTintColor {255,0,0 55.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSixteen" Send="SetTintColor {255,0,0 60.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSeventeen" Send="SetTintColor {255,0,0 65.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorEighteen" Send="SetTintColor {255,0,0 70.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorNineteen" Send="SetTintColor {255,0,0 75.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwenty" Send="SetTintColor {255,0,0 80.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyOne" Send="SetTintColor {255,0,0 85.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyTwo" Send="SetTintColor {255,0,0 90.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyThree" Send="SetTintColor {255,0,0 95.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyFour" Send="SetTintColor {255,0,0 100.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyFive" Send="SetTintColor {255,0,0 105.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentySix" Send="SetTintColor {255,0,0 110.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentySeven" Send="SetTintColor {255,0,0 115.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyEight" Send="SetTintColor {255,0,0 120.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyNine" Send="SetTintColor {255,0,0 125.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirty" Send="SetTintColor {255,0,0 130.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyOne" Send="SetTintColor {255,0,0 135.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyTwo" Send="SetTintColor {255,0,0 140.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyThree" Send="SetTintColor {255,0,0 145.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyFour" Send="SetTintColor {255,0,0 150.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyFive" Send="SetTintColor {255,0,0 155.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtySix" Send="SetTintColor {255,0,0 160.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtySeven" Send="SetTintColor {255,0,0 165.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyEight" Send="SetTintColor {255,0,0 170.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyNine" Send="SetTintColor {255,0,0 175.000000}"/>
+        <On Terms="Effect.ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFortyAndMore" Send="SetTintColor {255,0,0 180.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorOne" Send="SetTintColor 0,128,192"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwo" Send="SetTintColor {0,255,0 2.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThree" Send="SetTintColor {255,255,0 3.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFour" Send="SetTintColor {255,0,0 4.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFive" Send="SetTintColor {255,0,0 5.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSix" Send="SetTintColor {255,0,0 10.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSeven" Send="SetTintColor {255,0,0 15.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorEight" Send="SetTintColor {255,0,0 20.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorNine" Send="SetTintColor {255,0,0 25.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTen" Send="SetTintColor {255,0,0 30.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorEleven" Send="SetTintColor {255,0,0 35.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwelve" Send="SetTintColor {255,0,0 40.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirteen" Send="SetTintColor {255,0,0 45.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFourteen" Send="SetTintColor {255,0,0 50.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorFifteen" Send="SetTintColor {255,0,0 55.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSixteen" Send="SetTintColor {255,0,0 60.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorSeventeen" Send="SetTintColor {255,0,0 65.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorEighteen" Send="SetTintColor {255,0,0 70.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorNineteen" Send="SetTintColor {255,0,0 75.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwenty" Send="SetTintColor {255,0,0 80.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyOne" Send="SetTintColor {255,0,0 85.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyTwo" Send="SetTintColor {255,0,0 90.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyThree" Send="SetTintColor {255,0,0 95.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyFour" Send="SetTintColor {255,0,0 100.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyFive" Send="SetTintColor {255,0,0 105.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentySix" Send="SetTintColor {255,0,0 110.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentySeven" Send="SetTintColor {255,0,0 115.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyEight" Send="SetTintColor {255,0,0 120.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorTwentyNine" Send="SetTintColor {255,0,0 125.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirty" Send="SetTintColor {255,0,0 130.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyOne" Send="SetTintColor {255,0,0 135.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyTwo" Send="SetTintColor {255,0,0 140.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyThree" Send="SetTintColor {255,0,0 145.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyFour" Send="SetTintColor {255,0,0 150.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyFive" Send="SetTintColor {255,0,0 155.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtySix" Send="SetTintColor {255,0,0 160.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtySeven" Send="SetTintColor {255,0,0 165.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyEight" Send="SetTintColor {255,0,0 170.000000}"/>
+        <On Terms="Effect.ZHBRDestructionArise@EffectEnd.Stop; ValidateEffect ZHBRDeformerCountMaxShieldBehaviorThirtyNine" Send="SetTintColor {255,0,0 175.000000}"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsWarbringer" Send="SetScale 1.200000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsWarrior" Send="SetScale 1.200000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsWarriorChangeling" Send="SetScale 1.200000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsConductor" Send="SetScale 1.500000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsNavigator" Send="SetScale 1.500000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsEnergator" Send="SetScale 2.750000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsNemesis" Send="SetScale 0.600000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsPsyon" Send="SetScale 0.850000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsSpirit" Send="SetScale 1.300000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsDominator" Send="SetScale 0.750000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsShapeshifter" Send="SetScale 2.500000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsCapsule" Send="SetScale 2.500000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsConstructAntiAir" Send="SetScale 1.500000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsConstructAntiGround" Send="SetScale 1.500000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsHoldingCell" Send="SetScale 2.000000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsIonicCrystal" Send="SetScale 1.250000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsIonicCrystalMoveable" Send="SetScale 1.250000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsTomb" Send="SetScale 1.750000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsTemple" Send="SetScale 1.500000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsCrypt" Send="SetScale 1.750000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsDeformer" Send="SetScale 0.550000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsPollinator" Send="SetScale 1.300000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsVoidForge" Send="SetScale 1.250000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsStrider" Send="SetScale 0.700000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsStriderCrawler" Send="SetScale 0.700000"/>
+        <On Terms="Behavior.HybridDeformer@DestructionAriseMaxShields.On; ValidateUnitType ZHBRCommon@IsSentinel" Send="SetScale 0.700000"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,128,192"/>
+        <HostSiteOps Ops="SOpAttachHead"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <AutoScaleFactor value="0.700000"/>
+    </CActorModel>
+    <CActorRange id="ZHBRPsionicTornado@RangeMax" parent="RangeAbil" abil="">
+        <Filter index="Ally" value="1"/>
+        <Filter index="Enemy" value="1"/>
+        <On index="0" Terms="Effect.ZHBRDreadnokTornado@PersistentStart.Start" Send="Create"/>
+        <On index="1" Terms="Effect.ZHBRDreadnokTornado@PersistentStart.Stop" Send="Destroy"/>
+        <On index="2" Terms="Effect.ZHBRDreadnokTornado@SearchStart.Start; ValidateEffect DistanceLessThan7_5" Send="SetTintColor 255,255,255"/>
+        <On index="3" Terms="Effect.ZHBRDreadnokTornado@SearchStart.Start; ValidateEffect DistanceMoreThanOrEquals7_5" Send="SetTintColor 255,255,0"/>
+        <On index="4" Terms="Effect.ZHBRDreadnokTornado@SearchStart.Start; ValidateEffect HybridDrednokPsionicTornadoMaxDistance" Send="SetTintColor 255,0,0"/>
+        <Range value="12.000000"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+    </CActorRange>
+    <CActorModel id="ZHBRSpiritSiegeMod" parent="ZCRModelAnimationStyleContinuousUnitBase">
+        <AcceptedHostedPropTransfers index="BaseModelScale" value="1"/>
+        <AcceptedHostedPropTransfers index="CastShadows" value="1"/>
+        <AcceptedHostedPropTransfers index="CloakEffect" value="1"/>
+        <AcceptedHostedPropTransfers index="CreepEngulfment" value="1"/>
+        <AcceptedHostedPropTransfers index="Decal" value="1"/>
+        <AcceptedHostedPropTransfers index="LocalTintColor" value="1"/>
+        <AcceptedHostedPropTransfers index="Opacity" value="1"/>
+        <AcceptedHostedPropTransfers index="Scale" value="1"/>
+        <AcceptedHostedPropTransfers index="TeamColor" value="1"/>
+        <AcceptedHostedPropTransfers index="TimeScale" value="1"/>
+        <AcceptedHostedPropTransfers index="TintColor" value="1"/>
+        <AcceptedHostedPropTransfers index="Visibility" value="1"/>
+        <AcceptedHostedPropTransfers index="WarpGroup" value="1"/>
+        <On Terms="Behavior.ZHBRSpiritSiegeMode.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRSpiritSiegeMode.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,128,128"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="0.850000"/>
+    </CActorModel>
+    <CActorRange id="ZHBRDominatorDomination@Range" parent="RangeAbil" abil="ZHBRConfusion">
+        <On index="1" Terms="Abil.ZHBRDominatorDomination@ZHBRDomination.TargetOn" Send="Create"/>
+        <On index="2" Terms="Abil.ZHBRDominatorDomination@ZHBRDomination.TargetOff" Send="Destroy"/>
+        <On index="3" Terms="Abil.ZHBRDominatorDomination@ZHBRDomination.ButtonHoverOn" Send="Create"/>
+        <On index="4" Terms="Abil.ZHBRDominatorDomination@ZHBRDomination.ButtonHoverOff" Send="Destroy"/>
+        <Abil Link="ZHBRDominatorDomination@ZHBRDomination"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+        <IconTint value="255,255,128,128"/>
+    </CActorRange>
+    <CActorBeamSimple id="ZHBRDomination@Beam" parent="BeamSimpleAnimationStyleOneShot">
+        <EditorCategories value=""/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth {} {} ContentPlayOnce"/>
+        <On Terms="Effect.ZHBRDomination@ApplyBuff.Start" Send="Create"/>
+        <On Terms="ActorCreation" Send="TimerSet 0.850000 Duration"/>
+        <On Terms="TimerExpired; TimerName Duration" Send="Destroy"/>
+        <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachCenter SOpMoveBy1" HoldPosition="1" HoldRotation="1"/>
+        <HostImpactSiteOps Ops="SOpTargetUnit"/>
+    </CActorBeamSimple>
+    <CActorBeamSimple id="ZHBRDomination@BeamToThePoint" parent="BeamSimpleAnimationStyleOneShot">
+        <EditorCategories value=""/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth {} {} ContentPlayOnce"/>
+        <On Terms="Effect.ZHBRDomination@SearchArea.Start" Send="Create"/>
+        <On Terms="ActorCreation" Send="TimerSet 0.850000 Duration"/>
+        <On Terms="TimerExpired; TimerName Duration" Send="Destroy"/>
+        <Model value="ZHBRDomination@Beam"/>
+        <Scale value="2.000000"/>
+        <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachCenter SOpMoveBy1" HoldPosition="1" HoldRotation="1"/>
+        <HostImpactSiteOps Ops="SOpTargetPoint SOpMoveUpBy1" HoldPosition="1" HoldRotation="1"/>
+    </CActorBeamSimple>
+    <CActorSplat id="ZHBRDomination@CursorSplat" parent="ProtossCursorSplat" abil="ZHBRDomination">
+        <On Terms="Abil.ZHBRDomination.Cursor" Send="SetTintColor 255,98,98"/>
+        <Model value="PsiStormCursorSplat"/>
+        <Scale value="1.700000"/>
+    </CActorSplat>
+    <CActorModelMaterial id="ZHBRDomination@Glaze" parent="GlazeParent">
+        <On Terms="Behavior.ZHBRDomination.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="ModelMaterialApplyTo ::Main"/>
+        <On Terms="Behavior.ZHBRDomination.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="AnimDone; AnimName Death" Send="ModelMaterialRemoveFrom ::Main"/>
+        <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModelMaterial>
+    <CActorModel id="ZHBRDomination@MarkerFX" parent="ZCRModelAnimationStyleContinuousUnitBase">
+        <On Terms="Behavior.ZHBRDomination.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRDomination.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachOverhead"/>
+        <Model value="ZHBRDomination@Marker"/>
+    </CActorModel>
+    <CActorRange id="ZHBRDomination@Range" parent="RangeAbil" abil="ZHBRDomination">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+        <IconTint value="255,255,128,128"/>
+    </CActorRange>
+    <CActorSound id="ZHBRDomination@SoundImpact" parent="SoundOneShot">
+        <On Terms="Effect.ZHBRDomination@ApplyBuff.Start; At Target" Send="Create"/>
+        <Sound value="ZHBRDomination@Impact"/>
+    </CActorSound>
+    <CActorSound id="ZHBRDomination@SoundStart" parent="SoundOneShot">
+        <On Terms="Effect.ZHBRDomination@ApplyBuff.Start; At Caster" Send="Create"/>
+        <Sound value="ZHBRDomination@Start"/>
+    </CActorSound>
     <CActorUnit id="ZHBRConstruct@AntiGround" parent="ZHBRBuildingEx" unitName="ZHBRConstruct@AntiGround">
         <On index="65" Send="AnimBracketStart Attack"/>
         <On Terms="Signal.*.ConstructTargetDummyCreated" Send="RefSetFromMsg ::actor.ConstructWeaponTarget ::Sender"/>
@@ -440,6 +1298,11 @@
     <CActorAction id="ZHBREnergation@ActionDeformer" parent="GenericAttackBase">
         <On Terms="Effect.ZHBREnergation@RestoreDeformer.Start; At Caster" Send="Create"/>
         <On Terms="Effect.ZHBREnergation@RestoreDeformer.Stop" Send="Destroy"/>
+        <On Terms="ActorCreation.ZHBREnergation@ImpactDeformer; ValidateUnit ZHBRDeformerHasNotRechargeUpBehavior" Target="ZHBREnergation@ImpactDeformer" Send="Signal DeformerBeamImpactTintDown"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.On" Target="ZHBREnergation@ImpactDeformer" Send="Signal DeformerBeamImpactTintUp"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.Off" Target="ZHBREnergation@ImpactDeformer" Send="Signal DeformerBeamImpactTintDown"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.On" Send="ClearTintColor"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.Off" Send="SetTintColor 25,50,250"/>
         <LaunchAssets Sound="ZHBREnergation@StartDeformer"/>
         <Beam value="ZHBREnergation@BeamDeformer"/>
         <BeamScope value="Caster"/>
@@ -448,6 +1311,7 @@
         <ImpactModel value="ZHBREnergation@ImpactDeformer"/>
         <ShieldFlashType value="None"/>
         <Lifetime value="-1.000000"/>
+        <HostImpactSource Scope="Caster"/>
     </CActorAction>
     <CActorBeamSimple id="ZHBREnergation@BeamDeformer" parent="BeamSimpleAnimationStyleContinuous">
         <Supporter Subject="::Creator"/>
@@ -461,6 +1325,12 @@
         <On Terms="ActorCreation; ValidateUnit CasterHasBatteryOverchargeBehavior" Send="SetScale 2.000000 0.000000 OverchargeScale"/>
         <On Terms="Behavior.BatteryOvercharge.On" Send="SetScale 2.000000 0.000000 OverchargeScale"/>
         <On Terms="Behavior.BatteryOvercharge.Off" Send="ClearScale 0.000000 OverchargeScale"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.On" Send="ClearTintColor"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.Off" Send="SetTintColor 25,50,250"/>
+        <On Terms="ActorCreation" Send="SetTintColor 25,50,250"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.On" Target="ZHBREnergation@ImpactDeformer" Send="Signal DeformerBeamImpactTintUpBEAM"/>
+        <On Terms="Behavior.ZHBRDeformer@RechargeUp.Off" Target="ZHBREnergation@ImpactDeformer" Send="Signal DeformerBeamImpactTintDownBEAM"/>
+        <On Terms="ActorCreation.ZHBREnergation@ImpactDeformer" Target="ZHBREnergation@ImpactDeformer" Send="Signal DeformerBeamImpactTintDownBEAM"/>
         <Scale value="0.300000"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
     </CActorBeamSimple>
@@ -472,6 +1342,12 @@
         <On Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death"/>
         <On Terms="AnimBracketState.*.AfterClosing; AnimName BSD" Send="Destroy"/>
         <On Terms="SupporterDestruction" Send="AnimBracketStop BSD"/>
+        <On Terms="Signal.*.DeformerBeamImpactTintUp" Send="ClearTintColor"/>
+        <On Terms="Signal.*.DeformerBeamImpactTintDown" Send="SetTintColor 25,50,250"/>
+        <On Terms="ActorCreation" Send="TimerSet 0.062500 TintCheckLoop"/>
+        <On Terms="TimerExpired; TimerName TintCheckLoop; ValidateUnit ZHBREnergation@DeformerRestoreUnitBelowHalfEnergy" Send="ClearTintColor"/>
+        <On Terms="TimerExpired; TimerName TintCheckLoop; ValidateUnit ZHBREnergation@DeformerRestoreUnitAboveHalfEnergy" Send="SetTintColor 25,50,250"/>
+        <On Terms="TimerExpired; TimerName TintCheckLoop" Send="TimerSet 0.062500 TintCheckLoop"/>
         <HostForProps Subject="ShieldBatteryRechargeEx5@Beam" Scope="Caster" Actor="Find"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
@@ -489,7 +1365,198 @@
         <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="UseSyncSeed" value="0"/>
     </CActorModel>
-    <CActorRange id="ZHBRJump@Range" parent="RangeAbil" abil="ZHBRSentinelJump">
+    <CActorModel id="ZHBRDreadnokTornado@ModelAnimation" parent="ModelAnimationStyleContinuous">
+        <Aliases value="_Snapshot"/>
+        <Inherits index="CastShadows" value="1"/>
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="CreepEngulfment" value="1"/>
+        <Inherits index="Decal" value="1"/>
+        <Inherits index="ModelMaterials" value="1"/>
+        <Inherits index="Opacity" value="1"/>
+        <Inherits index="TeamColor" value="1"/>
+        <Inherits index="TintColor" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <Inherits index="WarpGroup" value="1"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
+        <On Terms="UnitBirth.ZHBRPsionicTornado" Send="Create"/>
+        <On Terms="UnitDeath.ZHBRPsionicTornado" Send="AnimBracketStop BSD"/>
+        <On Terms="Effect.ZHBRDreadnokTornado@SearchStart.Start; ValidateEffect DistanceLessThan7_5" Send="SetTintColor 255,255,255"/>
+        <On Terms="Effect.ZHBRDreadnokTornado@SearchStart.Start; ValidateEffect DistanceMoreThanOrEquals7_5" Send="SetTintColor 255,255,85"/>
+        <On Terms="Effect.ZHBRDreadnokTornado@SearchStart.Start; ValidateEffect HybridDrednokPsionicTornadoMaxDistance" Send="SetTintColor 255,13,13"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <Scale value="0.900000"/>
+    </CActorModel>
+    <CActorModel id="ZHBRSentinelLeap@JumpLaunchModel" parent="ZCRModelAnimationStyleOneShot">
+        <Inherits index="CloakEffect" value="1"/>
+        <On Terms="Behavior.ZHBRSentinelLeap@JumpBuff.On" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpShadow" HoldPosition="1" HoldRotation="1"/>
+    </CActorModel>
+    <CActorModel id="ZHBRSentinelLeap@LandDownModel" parent="ZCRModelAnimationStyleOneShot">
+        <Inherits index="CloakEffect" value="1"/>
+        <On Terms="Behavior.ZHBRWarbringerMaceStrike.Off" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpShadow"/>
+    </CActorModel>
+    <CActorSound id="ZHBRSentinelLeap@LandSound" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRSentinelLeap@JumpBuff.Off" Send="Create"/>
+        <Sound value="ZHBRSentinelLeap@Land"/>
+    </CActorSound>
+    <CActorSound id="ZHBRSentinelLeap@LaunchSound" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRSentinelLeap@JumpBuff.On" Send="Create"/>
+        <Sound value="ZHBRSentinelLeap@Launch"/>
+    </CActorSound>
+    <CActorModel id="ZHBRSentinelLeap@Stun" parent="ZCRModelAnimationStyleContinuousUnitBase">
+        <On Terms="Behavior.ZHBRSentinelLeap@Stun.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRSentinelLeap@Stun.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachOverhead"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="ZHBRNavigatorStationarity" parent="ZCRModelAnimationStyleContinuousUnitBase">
+        <AcceptedHostedPropTransfers index="BaseModelScale" value="1"/>
+        <AcceptedHostedPropTransfers index="CastShadows" value="1"/>
+        <AcceptedHostedPropTransfers index="CloakEffect" value="1"/>
+        <AcceptedHostedPropTransfers index="CreepEngulfment" value="1"/>
+        <AcceptedHostedPropTransfers index="Decal" value="1"/>
+        <AcceptedHostedPropTransfers index="LocalTintColor" value="1"/>
+        <AcceptedHostedPropTransfers index="Opacity" value="1"/>
+        <AcceptedHostedPropTransfers index="Scale" value="1"/>
+        <AcceptedHostedPropTransfers index="TeamColor" value="1"/>
+        <AcceptedHostedPropTransfers index="TimeScale" value="1"/>
+        <AcceptedHostedPropTransfers index="TintColor" value="1"/>
+        <AcceptedHostedPropTransfers index="Visibility" value="1"/>
+        <AcceptedHostedPropTransfers index="WarpGroup" value="1"/>
+        <On Terms="Abil.ZHBRStationarity.SourceCastStop" Send="Create"/>
+        <On Terms="Abil.ZHBRCancelStationarity.TargetFinishStart" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,255,255"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Scale value="2.000000"/>
+    </CActorModel>
+    <CActorSound id="ZHBREnergatorVoidTrance@SoundStart" parent="SoundOneShot">
+        <On Terms="Abil.ZHBREnergatorVoidTrance.TargetFinishStart" Send="Create"/>
+        <Sound value="ZHBREnergatorVoidTrance@Start"/>
+    </CActorSound>
+    <CActorSound id="ZHBRStationarity@SoundStop" parent="SoundOneShot">
+        <On Terms="Abil.ZHBRCancelStationarity.TargetFinishStart" Send="Create"/>
+        <Sound value="ZHBRNavigatorStationarity@Stop"/>
+    </CActorSound>
+    <CActorModel id="ZHBRMinionVoidBonus@ModelManing" parent="ZCRModelAnimationStyleContinuous">
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Stand Stand Death"/>
+        <On index="2" Terms="AnimBracketState.*.AfterClosing; AnimName BSD" Send="Destroy"/>
+        <On Terms="Behavior.HybridMinionVoidBonusWorkInVoidField.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.HybridMinionVoidBonusWorkInVoidField.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetOpacity"/>
+        <On Terms="Abil.ZHBRMinionHarvest.Start" Send="SetOpacity 1.000000"/>
+        <HostSiteOps Ops="SOpAttachOverhead SOpMoveUpByDot2 HybridMinionVoidBonusModelMove"/>
+        <Scale value="0.135000"/>
+    </CActorModel>
+    <CActorUnit id="ZHBRVoidPhantom@Phantasm" parent="GenericUnitStandard">
+        <Aliases value="_UnitSmall"/>
+        <Model value="ZHBRVoidPhantom@Phantasm"/>
+        <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridPhantasm"/>
+        <AnimBlendTime value="0.200000"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <DeathArray index="Normal" ModelLink="" SoundLink="ZHBRVoidPhantom@DeathFX"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="60"/>
+        <BarWidth value="50"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-unit-zhybrid-spirit.dds"/>
+        </GroupIcon>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-unit-zhybrid-spirit.dds"/>
+        </Wireframe>
+        <WireframeShield>
+            <Image value="Assets\Textures\wireframe-unit-zhybrid-spirit-shield01.dds"/>
+            <Image value="Assets\Textures\wireframe-unit-zhybrid-spirit-shield02.dds"/>
+            <Image value="Assets\Textures\wireframe-unit-zhybrid-spirit-shield03.dds"/>
+        </WireframeShield>
+        <Baselines index="Stand" BlendIn="1.000000" BlendOut="1.000000"/>
+        <Baselines index="Walk" BlendIn="1.000000" BlendOut="1.000000"/>
+        <PortraitModel value="ZHBRSpirit@Portrait"/>
+        <HeroIcon value="Assets\Textures\btn-unit-zhybrid-spirit.dds"/>
+        <HighlightTooltip value="Unit/Name/ZHBRPhantasm"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>
+        <NameOffset value="80"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-ability-zhybrid-protection.dds"/>
+        <SoundArray index="Birth" value="ZHBRVoidPhantom@LaunchSound"/>
+        <SoundArray index="Ready" value="ZHBRSpirit@Ready"/>
+        <SoundArray index="What" value="ZHBRSpirit@What"/>
+        <SoundArray index="Yes" value="ZHBRSpirit@Yes"/>
+        <StatusColors index="Shields">
+            <ColorArray index="0" value="255,255,255,255"/>
+        </StatusColors>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,0,255,191"/>
+        </StatusColors>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zhybrid-spirit.dds"/>
+        <VitalColors index="Shields">
+            <ColorArray value="255,255,255,255"/>
+        </VitalColors>
+        <VitalColors index="Energy">
+            <ColorArray value="255,0,255,191"/>
+        </VitalColors>
+        <VitalNames index="Shields" value="UI/Tooltip/Protection"/>
+        <VitalNames index="Energy" value="UI/Tooltip/VoidEnergy"/>
+        <WireframeShieldColor value="255,192,192,192"/>
+        <On index="0" Terms="UnitBirth.ZHBRSpirit@Phantasm"/>
+        <On index="1" Terms="UnitBirth.ZHBRSpirit@Phantasm"/>
+        <On index="2" Terms="UnitRevive.ZHBRSpirit@Phantasm"/>
+        <On index="3" Terms="UnitRevive.ZHBRSpirit@Phantasm"/>
+        <On index="4" Terms="UnitConstruction.ZHBRSpirit@Phantasm"/>
+        <On index="5" Terms="UnitConstruction.ZHBRSpirit@Phantasm"/>
+        <On Terms="ActorCreation" Send="SetTintColor {15,255,115 2.000000}"/>
+        <On Terms="Effect.ZHBRVoidPhantom@TimerCancelSet.Start" Send="Create ZHBRVoidPhantom@PhantasmDeath"/>
+    </CActorUnit>
+    <CActorModel id="ZHBRVoidPhantom@PhantasmDeath" parent="ModelAnimationStyleOneShot">
+        <On Terms="ActorCreation" Send="SetTintColor {15,255,115 2.000000}"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+    </CActorModel>
+    <CActorModel id="ZHBRVoidPhantom@PhantasmIn" parent="ModelAnimationStyleOneShot">
+        <InheritType value="OneShot"/>
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+    </CActorModel>
+    <CActorSound id="ZHBRVoidPhantom@PhantasmInSound" parent="SoundOneShot">
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+    </CActorSound>
+    <CActorModel id="ZHBRVoidPhantom@PhantasmOut" parent="ModelAnimationStyleOneShot">
+        <Inherits index="Visibility" value="1"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOriginStationary"/>
+    </CActorModel>
+    <CActorModel id="ZHBRVoidPhantom@PhantasmSpawn" parent="ModelAnimationStyleOneShot">
+        <Inherits index="Visibility" value="1"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+    </CActorModel>
+    <CActorSound id="ZHBRVoidPhantom@PhantasmSpawnSound" parent="SoundOneShot">
+        <On Terms="Effect.ZHBRVoidPhantom@CU.Start" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+        <Sound value="ZHBRVoidPhantom@LaunchSound"/>
+    </CActorSound>
+    <CActorModel id="ZHBRVoidRift@BuildingResearch" parent="ModelAnimationStyleContinuousUNIT">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="TimeScale" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Behavior.HybridBehaviorForAnimationResearchVoidRift.On" Send="Create"/>
+        <On Terms="Behavior.HybridBehaviorForAnimationResearchVoidRift.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachHarness HybridSOpMoveUpBy1"/>
+        <Model value="ZHBRVoidRift@Researching"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <ModelFlags index="UseSyncSeed" value="1"/>
+    </CActorModel>
+    <CActorRange id="ZHBRSubjugationJump@Range" parent="RangeAbil" abil="ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump">
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
     </CActorRange>
@@ -502,14 +1569,70 @@
         <HostSiteOps Ops="SOpAttachCenter"/>
         <AutoScaleFactor value="1.250000"/>
     </CActorModel>
+    <CActorRange id="ZHBRMaceStrike@Range" parent="RangeAbil" abil="">
+        <On index="1" Terms="Abil.ZHBRWarbringerMaceStrike.TargetOn" Send="Create"/>
+        <On index="2" Terms="Abil.ZHBRWarbringerMaceStrike.TargetOff" Send="Destroy"/>
+        <On index="3" Terms="Abil.ZHBRWarbringerMaceStrike.ButtonHoverOn" Send="Create"/>
+        <On index="4" Terms="Abil.ZHBRWarbringerMaceStrike.ButtonHoverOff" Send="Destroy"/>
+        <Range value="9.000000"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+        <IconTint value="255,0,255,128"/>
+    </CActorRange>
+    <CActorSplat id="ZHBRMaceStrike@CursorSplat" parent="ProtossCursorSplat" abil="ZHBRPsionicTornado">
+        <On index="0" Terms="Abil.ZHBRWarbringerMaceStrike.Cursor" Send="Create"/>
+        <On Terms="Abil.ZHBRWarbringerMaceStrike.Cursor" Send="SetTintColor 0,255,64"/>
+        <Model value="PsiStormCursorSplat"/>
+    </CActorSplat>
+    <CActorRange id="ZHBRLeap@Range" parent="RangeAbil" abil="ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump">
+        <On index="1" Terms="Abil.ZHBRSentinelLeap.TargetOn" Send="Create"/>
+        <On index="2" Terms="Abil.ZHBRSentinelLeap.TargetOff" Send="Destroy"/>
+        <On index="3" Terms="Abil.ZHBRSentinelLeap.ButtonHoverOn" Send="Create"/>
+        <On index="4" Terms="Abil.ZHBRSentinelLeap.ButtonHoverOff" Send="Destroy"/>
+        <Abil Link="ZHBRSentinelLeap"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconArcLength value="3.250000"/>
+    </CActorRange>
+    <CActorRange id="ZHBRConstructMax@Range" parent="RangeAbil" abil="ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump">
+        <On index="1" Terms="Behavior.ZHBRConstructMarker.On" Send="Create"/>
+        <On index="2" Terms="Behavior.ZHBRConstructMarker.Off" Send="Destroy"/>
+        <On index="3" removed="1"/>
+        <On index="4" removed="1"/>
+        <Abil Link=""/>
+        <Range value="12.000000"/>
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconArcLength value="1.250000"/>
+    </CActorRange>
+    <CActorRange id="ZHBRTemple@MaxRange" parent="RangeAbil" abil="ZHBRPowerField@DummyAbility">
+        <Filter index="Ally" value="1"/>
+        <Filter index="Neutral" value="1"/>
+        <Filter index="Enemy" value="1"/>
+        <VisibleTo index="Ally" value="1"/>
+        <VisibleTo index="Neutral" value="1"/>
+        <VisibleTo index="Enemy" value="1"/>
+        <FogVisibility value="Hidden"/>
+        <On index="1" Terms="SelectionLocalUpdate.ZHBRTemple.Start" Send="Create"/>
+        <On index="2" Terms="SelectionLocalUpdate.ZHBRTemple.Stop" Send="Destroy"/>
+        <On index="3" removed="1"/>
+        <On index="4" removed="1"/>
+        <Abil Link=""/>
+        <Range value="29.500000"/>
+        <Icon value="Assets\Textures\radaricon2.dds"/>
+        <IconScale value="0.010000,0.001250"/>
+        <IconArcLength value="0.025000"/>
+    </CActorRange>
     <CActorAction id="ZHBRStriderWeapon@AttackEvaporator" parent="GenericAttack" effectImpact="ZHBRStriderWeapon@Damage" effectLaunch="ZHBRStriderWeapon@LMEvaporator">
         <LaunchAttachQuery Methods="AMFilterWeapon"/>
         <LaunchAssets Sound="ZHBRStriderWeapon@AttackLaunchEvaporator"/>
         <Missile value="ZHBRStriderWeapon@AttackMissileEvaporator"/>
         <ImpactMap index="None" Model="ZHBRStriderWeapon@ImpactEvaporator" Sound="ZHBRStriderWeapon@AttackImpactEvaporator"/>
+        <On Terms="Effect.ZHBRStriderWeapon@DamageByArmor.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <On Terms="Effect.ZHBRStriderWeapon@DamageByArmor.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
     </CActorAction>
     <CActorMissile id="ZHBRStriderWeapon@AttackMissileEvaporator" parent="GenericAttackMissile" unitName="ZHBRStriderWeapon@MissileEvaporator">
         <On Terms="ActorCreation; ValidateUnit AdeptGlaivesUpgraded" Send="ModelSwap Adept_Missile_Upgrade"/>
+        <On Terms="UnitBirth.ZHBRStriderWeapon@MissileEvaporator" Send="SetTintColor {255,128,0 3.000000}"/>
     </CActorMissile>
     <CActorModel id="ZHBRStructures@BuildingResearchBlue" parent="ModelAnimationStyleContinuousUNIT">
         <Aliases value="_Snapshot"/>
@@ -526,12 +1649,14 @@
         <Inherits index="TintColor" value="1"/>
         <Inherits index="Visibility" value="1"/>
         <Inherits index="WarpGroup" value="1"/>
-        <HostSiteOps Ops="AttachHeadTop SOpMoveUpBy3"/>
+        <HostSiteOps Ops="AttachHeadTop"/>
         <Model value="ZHBRStructures@ResearchingBlue"/>
         <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
         <ModelFlags index="UseSyncSeed" value="1"/>
-        <On Terms="Abil.ZHBRTomb@Research.Start" Send="Create"/>
-        <On Terms="Abil.ZHBRTomb@Research.Stop" Send="AnimBracketStop BSD"/>
+        <On Terms="Abil.ZHBRProjector@Research.Start" Send="Create"/>
+        <On Terms="Abil.ZHBRProjector@Research.Stop" Send="AnimBracketStop BSD"/>
+        <On Terms="Abil.ZHBRProjector@Research.Start" Send="SetTintColor 0,255,255"/>
     </CActorModel>
     <CActorSound id="ZHBRStructureTeleport@SoundTPOut" parent="SoundOneShot">
         <HostSiteOps Ops="SOpOriginPoint SOpMoveUpByDot5" HoldPosition="1" HoldRotation="1"/>
@@ -543,7 +1668,8 @@
         <On Terms="Behavior.ZHBRVoid@PowerUserPermanent.Destroy" Send="AnimBracketStop BSD"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
     </CActorModelMaterial>
-    <CActorModel id="HybridDeformerDestructionArise@Impact" parent="ModelAnimationStyleOneShotUNIT">
+    <!-- Removing this actor because it makes no sense and doesn't really add anything ? -->
+    <!-- <CActorModel id="HybridDeformerDestructionArise@Impact" parent="ModelAnimationStyleOneShotUNIT">
         <Aliases value="_Snapshot"/>
         <Flags index="SuppressSaveLoad" value="0"/>
         <Flags index="RespondsToUnitPlayerChange" value="1"/>
@@ -563,7 +1689,7 @@
         <HostSiteOps Ops="SOpAttachCenterSoft"/>
         <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="UseSyncSeed" value="1"/>
-    </CActorModel>
+    </CActorModel> -->
     <CActorModel id="ZHBRStructures@BuildingResearchVoidBonus" parent="ModelAnimationStyleContinuousUNIT">
         <Aliases value="_Snapshot"/>
         <Flags index="RespondsToUnitPlayerChange" value="1"/>
@@ -651,11 +1777,13 @@
         <Inherits index="TintColor" value="1"/>
         <Inherits index="Visibility" value="1"/>
         <Inherits index="WarpGroup" value="1"/>
-        <On Terms="Abil.ZHBRTomb@Research.Start" Send="Create"/>
-        <On Terms="Abil.ZHBRTomb@Research.Stop" Send="Create"/>
-        <HostSiteOps Ops="AttachHeadTop SOpMoveUpBy3"/>
+        <On Terms="Abil.ZHBRProjector@Research.Start" Send="Create"/>
+        <On Terms="Abil.ZHBRProjector@Research.Stop" Send="Create"/>
+        <On Terms="Abil.ZHBRProjector@Research.Start" Send="SetTintColor 0,255,255"/>
+        <HostSiteOps Ops="AttachHeadTop"/>
         <Model value="ZHBRStructures@ResearchingBlueStart"/>
         <ModelFlags index="AllowHitTest" value="0"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
         <ModelFlags index="UseSyncSeed" value="1"/>
     </CActorModel>
     <CActorModel id="ZHBRStructures@BuildingResearchRedEnd" parent="ModelAnimationStyleOneShotUNIT">
@@ -745,15 +1873,6 @@
         <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="UseSyncSeed" value="1"/>
     </CActorModel>
-    <CActorRange id="ZHBRTemple@Range">
-        <Flags index="SuppressSaveLoad" value="1"/>
-        <!--<On Terms="SelectionLocalUpdate.ZHBRTemple.Start" Send="Create"/>
-        <On Terms="SelectionLocalUpdate.ZHBRTemple.Stop" Send="Destroy"/>-->
-        <Range value="10.000000"/>
-        <Icon value="Assets\Textures\RadarIcon2.dds"/>
-        <IconScale value="0.010000,0.001250"/>
-        <IconArcLength value="0.025000"/>
-    </CActorRange>
     <CActorSound id="ZHBRPermanentPower@ImpactSound" parent="SoundOneShot">
         <On Terms="Effect.ZHBRPermanentPower@CastSet.Start; At Target" Send="Create"/>
         <Host Subject="_Selectable"/>
@@ -802,7 +1921,7 @@
         <Sound value="ZHBRPowerField@Cast"/>
     </CActorSound>
     <CActorSound id="ZHBRConstructWeaponAntiGround@BeamAttackImpactSound" parent="SoundOneShot">
-        <On Terms="Effect.ZHBRConstructWeaponAntiGround@Damage.Start; At Target" Send="Create"/>
+        <On Terms="Effect.ZHBRConstructWeaponAntiGround@DamageHight.Start; At Target" Send="Create"/>
         <Sound value="ZHBRConstructWeaponAntiGround@BeamAttackImpact"/>
     </CActorSound>
     <CActorSplat id="ZHBRDeepTunnel@BurrowedSplat" parent="BurrowedSplatBase"/>
@@ -920,6 +2039,8 @@
         <On Terms="Behavior.ZHBRVoidChasm.Off" Send="AnimBracketStop BSD"/>
         <On Terms="Behavior.ZHBRVoidChasmGround.On" Send="Create"/>
         <On Terms="Behavior.ZHBRVoidChasmGround.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRVoidChasmStructure.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidChasmStructure.Off" Send="AnimBracketStop BSD"/>
         <HostSiteOps Ops="SOpAttachCenter"/>
         <Model value="ZHBRVoidChasm@Impact"/>
         <AutoScaleFactor value="1.000000"/>
@@ -1118,9 +2239,9 @@
     </CActorModel>
     <CActorUnit id="ZHBRConductor" parent="GenericUnitStandard" unitName="ZHBRConductor">
         <Aliases value="_UnitMedium"/>
-        <Aliases value="_ShieldBlack"/>
-        <On Terms="Abil.ZHBRPowerField.SourceCastStart" Send="AnimPlay Spell Attack 0 -1.000000 -1.000000 1.500000 AsDuration"/>
-        <On Terms="Abil.ZHBRPowerField@Cancel.SourceCastStart" Send="AnimPlay Spell Attack,End 0 -1.000000 -1.000000 1.500000 AsDuration 0.000000 30"/>
+        <Aliases value="_ShieldWhite"/>
+        <On Terms="Abil.ZHBRPowerField.SourceCastStart" Send="AnimPlay Spell Attack 0 -1.000000 -1.000000 1.000000 AsDuration"/>
+        <On Terms="Abil.ZHBRPowerField@Cancel.SourceCastStart" Send="AnimPlay Spell Attack,End 0 -1.000000 -1.000000 1.000000 AsDuration 0.000000 30"/>
         <On Terms="Behavior.ZHBRPowerField@SuppressionBehavior.On" Send="AnimPlay Spell Stand,Channel PlayForever -1.000000 -1.000000 -1.000000 AsAutomatic 0.000000 30"/>
         <On Terms="Behavior.ZHBRPowerField@SuppressionBehavior.Off; !AnimPlaying Spell Attack,End" Send="AnimClear Spell"/>
         <On Terms="Effect.ZHBRPowerField@IssueDummyOrder.Start" Send="Create ZHBRPowerField@GroundModel"/>
@@ -1174,7 +2295,7 @@
         <Flags index="RespondsToUnitPlayerChange" value="1"/>
         <EditorCategories value=""/>
         <On Terms="UnitPlayerChange" Send="FilterUpdate"/>
-        <Range value="4.500000"/>
+        <Range value="5.500000"/>
         <Icon value="Assets\Textures\line_blue.dds"/>
         <IconScale value="0.001000,0.001000"/>
         <IconArcLength value="0.025000"/>
@@ -1193,7 +2314,7 @@
         <Filter index="Enemy" value="1"/>
         <Macros value="ZHBRVoid@MacroConductor"/>
     </CActorUnit>
-    <CActorModel id="ZHBRPsiOrb@GuideVisualQuadCenter" parent="ModelAnimationStyleContinuous">
+    <CActorModel id="ZHBRDestructionOrb@GuideVisualQuadCenter" parent="ModelAnimationStyleContinuous">
         <Aliases value="_GuideQuadSegment"/>
         <Flags index="SuppressSaveLoad" value="1"/>
         <Inherits index="CastShadows" value="1"/>
@@ -1210,7 +2331,7 @@
         <HostSiteOps Ops="SOp2DRotation"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
     </CActorModel>
-    <CActorModel id="ZHBRPsiOrb@GuideVisualQuadImpact" parent="ModelAnimationStyleContinuous">
+    <CActorModel id="ZHBRDestructionOrb@GuideVisualQuadImpact" parent="ModelAnimationStyleContinuous">
         <Aliases value="_GuideQuadSegment"/>
         <Flags index="SuppressSaveLoad" value="1"/>
         <Inherits index="CastShadows" value="1"/>
@@ -1227,7 +2348,7 @@
         <HostSiteOps Ops="SOp2DRotation"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
     </CActorModel>
-    <CActorModel id="ZHBRPsiOrb@GuideVisualQuadLaunch" parent="ModelAnimationStyleContinuous">
+    <CActorModel id="ZHBRDestructionOrb@GuideVisualQuadLaunch" parent="ModelAnimationStyleContinuous">
         <Aliases value="_GuideQuadSegment"/>
         <Flags index="SuppressSaveLoad" value="1"/>
         <Inherits index="CastShadows" value="1"/>
@@ -1250,7 +2371,7 @@
     </CActorModel>
     <CActorUnit id="ZHBRProteus" parent="GenericUnitStandard" unitName="ZHBRProteus">
         <Aliases value="_UnitMedium"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Model value="ZHBRProteus@Model"/>
         <BuildModel value="ZHBRProteus@Model"/>
         <DeathArray index="Normal" ModelLink="ZHBRProteus@Death" SoundLink="ZHBRProteus@Death"/>
@@ -1294,16 +2415,21 @@
             <Image value="assets\textures\wireframe-unit-zhybrid-proteus-shield03.dds"/>
         </WireframeShield>
         <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
+        <VitalNames index="Shields" value="UI/Tooltip/Protection"/>
     </CActorUnit>
     <CActorUnit id="ZHBRPsionicTornado" parent="GenericUnitMinimal" unitName="ZHBRPsionicTornado">
         <On Terms="ActorCreation" Send="SetMinimapVisibility"/>
         <Model value="ZHBRPsionicTornado@Tornado"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
-        <UnitIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <UnitIcon value="Assets\Textures\stunswirl1_orange.dds"/>
+        <VisibleOpacity value="0.000000"/>
+        <Scale value="0.200000"/>
     </CActorUnit>
     <CActorUnit id="ZHBRPsyon" parent="GenericUnitStandard" unitName="ZHBRPsyon">
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Model value="ZHBRPsyon@Model"/>
+        <BuildModel value="ZHBRPsyon@Model"/>
         <ModelFlags index="OutlineEmitter" value="1"/>
         <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
         <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level0.dds"/>
@@ -1349,10 +2475,11 @@
             <Image value="assets\textures\wireframe-unit-zhybrid-psyon-shield02.dds"/>
             <Image value="assets\textures\wireframe-unit-zhybrid-psyon-shield03.dds"/>
         </WireframeShield>
+        <VitalNames index="Shields" value="UI/Tooltip/Protection"/>
     </CActorUnit>
     <CActorModel id="ZHBRRestorationShield@HealTick" parent="ZCRModelAnimationStyleContinuousUnitBase">
-        <On Terms="Behavior.ZHBRRestorationShield.On" Send="Create"/>
-        <On Terms="Behavior.ZHBRRestorationShield.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRRestorationHealthHight.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRRestorationHealthHight.Off" Send="AnimBracketStop BSD"/>
         <HostSiteOps Ops="SOpAttachCenter"/>
     </CActorModel>
     <CActorUnit id="ZHBRCapsule" parent="ZHBRBuildingEx" unitName="ZHBRCapsule">
@@ -1402,7 +2529,9 @@
         <Inherits index="BaseModelScale" value="1"/>
         <Inherits index="Scale" value="1"/>
         <EditorCategories value=""/>
-        <On Terms="Effect.ZHBRPsionicTornado@Damage.Start; At Target" Send="Create"/>
+        <On Terms="Effect.ZHBRPsionicTornado@DamageStart.Start; At Target" Send="Create"/>
+        <On Terms="Effect.ZHBRPsionicTornado@DamageEnd.Start; At Target" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor {0,160,80 2.000000}"/>
         <Host Subject="_Selectable"/>
         <HostSiteOps Ops="SOpAttachCenter"/>
         <AutoScaleFactor value="1.250000"/>
@@ -1552,15 +2681,16 @@
         <AcquisitionPitchHalfArc value="25.000000"/>
         <ShieldFlashType value="Header"/>
     </CActorAction>
-    <CActorModel id="ZHBRConsumeDNA@Stun" parent="ZCRModelAnimationStyleContinuousUnitBase">
-        <On Terms="Behavior.ZHBRConsumeDNA@Stun.On" Send="Create"/>
-        <On Terms="Behavior.ZHBRConsumeDNA@Stun.Off" Send="AnimBracketStop BSD"/>
-        <HostSiteOps Ops="SOpAttachOverhead"/>
-        <AutoScaleFactor value="1.000000"/>
+    <CActorModel id="ZHBRConsumeDNA@LifeSteal" parent="ZCRModelAnimationStyleContinuousUnitBase">
+        <On Terms="Behavior.ZHBRConsumeDNA@LifeStealMain.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRConsumeDNA@LifeStealMain.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,64,0"/>
+        <HostSiteOps Ops="SOpAttachHead HybridSOpMoveLeftForCunsumeDNA"/>
+        <AutoScaleFactor value="0.850000"/>
     </CActorModel>
     <CActorUnit id="ZHBRStriderCrawler" parent="GenericUnitStandard" unitName="ZHBRStriderCrawler">
         <Aliases value="_UnitSmall"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Macros value="ZHBRCommon@DestroyParticles"/>
         <ModelFlags index="OutlineEmitter" value="1"/>
         <DeathArray index="Normal" ModelLink="ZHBRStrider@Death" SoundLink="Zealot_DeathFX"/>
@@ -1577,13 +2707,13 @@
         </TerrainSquibs>
         <WalkAnimMoveSpeed value="0.8515"/>
         <BarOffset value="45"/>
-        <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridStrider"/>
+        <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridStriderCrawler"/>
         <CustomUnitStatusOffset value="0,-20"/>
         <GroupIcon>
             <Image value="assets\textures\wireframe-unit-zhybrid-crawler.DDS"/>
         </GroupIcon>
         <HeroIcon value="assets\textures\btn-unit-zhybrid-crawler.DDS"/>
-        <LifeArmorIcon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level0.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel0.dds"/>
         <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
         <SoundArray index="Ready" value="ZHBRStrider@Ready"/>
         <SoundArray index="Help" value="ZHBRStrider@Help"/>
@@ -1619,12 +2749,12 @@
     </CActorUnit>
     <CActorModel id="ZHBRVoidChasm@Model" parent="ZCRModelAnimationStyleContinuous">
         <On Terms="Effect.ZHBRVoidChasm@InitialPersistent.Start; At Effect" Send="Create"/>
-        <On Terms="Effect.ZHBRVoidChasm@InitialPersistent.Stop" Send="SetOpacity 0.000000 2.000000 OpacityDeath"/>
+        <On Terms="Effect.ZHBRVoidChasm@InitialPersistent.Stop; ValidateCreationEffect ZHBRShapeshifterVoidCham@InterruptAnimation" Send="SetOpacity 0.000000 2.000000 OpacityDeath"/>
         <On Terms="ActorCreation" Send="AnimBracketStart BSD Stand,Unpowered,End Stand,Unpowered IGNORE"/>
         <On Terms="ActorCreation" Send="SetOpacity 0.000000 0.000000 OpacityBirth"/>
         <On Terms="ActorCreation" Send="TimerSet 0.062500 OpacityBirth"/>
         <On Terms="TimerExpired; TimerName OpacityBirth" Send="ClearOpacity 2.000000 OpacityBirth"/>
-        <On Terms="Effect.ZHBRVoidChasm@InitialPersistent.Stop" Send="TimerSet 2.000000 OpacityDeath"/>
+        <On Terms="Effect.ZHBRVoidChasm@InitialPersistent.Stop; ValidateCreationEffect ZHBRShapeshifterVoidCham@InterruptAnimation" Send="TimerSet 2.000000 OpacityDeath"/>
         <On Terms="TimerExpired; TimerName OpacityDeath" Send="Destroy"/>
         <On Terms="ModelEvent; ModelEventName VoidChasm_Birth" Send="Create ZHBRVoidChasm@Birth"/>
         <On Terms="ModelEvent; ModelEventName VoidChasm_Birth2" Send="Create ZHBRVoidChasm@Birth2"/>
@@ -1634,6 +2764,8 @@
         <On Terms="ModelEvent; ModelEventName VoidChasm_DeathExplosion3" Send="Create ZHBRVoidChasm@DeathExplosion3"/>
         <On Terms="ModelEvent; ModelEventName VoidChasm_DeathExplosion4" Send="Create ZHBRVoidChasm@DeathExplosion4"/>
         <On Terms="ModelEvent; ModelEventName VoidChasm_DeathSweetener" Send="Create ZHBRVoidChasm@DeathSweetener"/>
+        <On Terms="Effect.ZHBRVoidChasm@EndPersistent.Stop" Send="SetOpacity 0.000000 2.000000 OpacityDeath"/>
+        <On Terms="Effect.ZHBRVoidChasm@EndPersistent.Stop" Send="TimerSet 2.000000 OpacityDeath"/>
         <Remove Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death"/>
         <HostSiteOps Ops="SOpTargetPoint" HoldPosition="1" HoldRotation="1"/>
     </CActorModel>
@@ -1673,6 +2805,7 @@
         <PlacementActorModel value="ZHBRCommon@PlacementModelStandWork"/>
         <PlaceholderActorModel value="ZHBRCommon@PlaceholderModelStandWork"/>
         <CustomUnitStatusOffset value="0,-80"/>
+        <Macros value="HybridQueueAnim_StasisCell_Crypt_Tomb"/>
     </CActorUnit>
     <CActorSimple id="ZHBRVespeneMining@Simple">
         <EditorCategories value=""/>
@@ -1780,13 +2913,13 @@
         <HostSiteOps Ops="SOpMoveUpByDot25" HoldRotation="1"/>
         <Scale value="1.500000"/>
     </CActorModel>
-    <CActorModel id="ZHBRSentinelJump@JumpLaunchModel" parent="ZCRModelAnimationStyleOneShot">
+    <CActorModel id="ZHBRSentinelSubjugationJump@JumpLaunchModel" parent="ZCRModelAnimationStyleOneShot">
         <Inherits index="CloakEffect" value="1"/>
-        <On Terms="Behavior.ZHBRSentinelJump@JumpBuff.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRSentinelSubjugationJump@JumpBuff.On" Send="Create"/>
         <Host Subject="_Selectable"/>
         <HostSiteOps Ops="SOpAttachCenter SOpShadow" HoldPosition="1" HoldRotation="1"/>
     </CActorModel>
-    <CActorModel id="ZHBRSentinelJump@LandDownModel" parent="ZCRModelAnimationStyleOneShot">
+    <CActorModel id="ZHBRSentinelSubjugationJump@LandDownModel" parent="ZCRModelAnimationStyleOneShot">
         <Inherits index="CloakEffect" value="1"/>
         <On Terms="Behavior.ZHBRWarbringerMaceStrike.Off" Send="Create"/>
         <Host Subject="_Selectable"/>
@@ -1879,8 +3012,10 @@
     </CActorMissile>
     <CActorUnit id="ZHBRShapeshifter" parent="GenericUnitStandard" unitName="ZHBRShapeshifter">
         <Aliases value="_UnitLarge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On index="65" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Spell,C"/>
+        <On Terms="Abil.ZHBRVoidChasm.SourceChannelStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="Abil.ZHBRVoidChasm.SourceChannelStop" Send="AnimBracketStop Attack"/>
         <Model value="ZHBRShapeshifter@Model"/>
         <Baselines index="Stand" BlendIn="1.000000" BlendOut="1.000000"/>
         <Baselines index="Walk" BlendIn="1.000000" BlendOut="1.000000"/>
@@ -1981,40 +3116,40 @@
     </CActorSound>
     <CActorUnit id="ZHBRNavigator" parent="GenericUnitStandard" unitName="ZHBRNavigator">
         <Aliases value="_UnitLarge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
+        <Model value="ZHBRNavigator@Model"/>
         <ModelFlags index="OutlineEmitter" value="1"/>
+        <Baselines index="Walk" AnimProps="Stand,00"/>
         <BuildModel value="ZHBRNavigator@Model"/>
         <DeathArray index="Normal" ModelLink="ZHBRNavigator@Death" SoundLink="ZHBRNavigator@DeathExplosion"/>
         <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        <PlacementModel value="ZHBRNavigator@Model"/>
         <PortraitModel value="ZHBRNavigator@Portrait"/>
+        <BarHeight value="6"/>
         <BarOffset value="40"/>
         <BarWidth value="63"/>
+        <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridNavigator"/>
+        <CustomUnitStatusOffset value="0,-20"/>
         <GlossaryAnim value="GLstand,A"/>
         <GroupIcon>
             <Image value="assets\textures\wireframe-unit-zhybrid-navigator.dds"/>
         </GroupIcon>
         <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>
         <NameOffset value="60"/>
+        <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
         <SoundArray index="Ready" value="ZHBRNavigator@Ready"/>
         <SoundArray index="Help" value="ZHBRNavigator@Help"/>
         <SoundArray index="What" value="ZHBRNavigator@What"/>
         <SoundArray index="Yes" value="ZHBRNavigator@Yes"/>
         <SoundArray index="Pissed" value="ZHBRNavigator@Pissed"/>
-        <UnitIcon value="assets\textures\btn-unit-zhybrid-navigator.dds"/>
-        <Wireframe>
-            <Image value="assets\textures\wireframe-unit-zhybrid-navigator.dds"/>
-        </Wireframe>
-        <WireframeShield>
-            <Image value="assets\textures\wireframe-unit-zhybrid-navigator-shield01.DDS"/>
-            <Image value="assets\textures\wireframe-unit-zhybrid-navigator-shield02.DDS"/>
-            <Image value="assets\textures\wireframe-unit-zhybrid-navigator-shield03.DDS"/>
-        </WireframeShield>
         <StatusColors index="Shields">
             <ColorArray index="0" value="255,255,255,255"/>
         </StatusColors>
         <StatusColors index="Energy">
             <ColorArray index="0" value="255,0,255,191"/>
         </StatusColors>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+        <UnitIcon value="assets\textures\btn-unit-zhybrid-navigator.dds"/>
         <VitalColors index="Shields">
             <ColorArray value="255,255,255,255"/>
         </VitalColors>
@@ -2023,15 +3158,15 @@
         </VitalColors>
         <VitalNames index="Shields" value="UI/Tooltip/Protection"/>
         <VitalNames index="Energy" value="UI/Tooltip/VoidEnergy"/>
+        <Wireframe>
+            <Image value="assets\textures\wireframe-unit-zhybrid-navigator.dds"/>
+        </Wireframe>
+        <WireframeShield>
+            <Image value="assets\textures\wireframe-unit-zhybrid-navigator-shield01.DDS"/>
+            <Image value="assets\textures\wireframe-unit-zhybrid-navigator-shield02.DDS"/>
+            <Image value="assets\textures\wireframe-unit-zhybrid-navigator-shield03.DDS"/>
+        </WireframeShield>
         <WireframeShieldColor value="255,192,192,192"/>
-        <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridNavigator"/>
-        <CustomUnitStatusOffset value="0,-20"/>
-        <BarHeight value="6"/>
-        <Baselines index="Walk" AnimProps="Stand,00"/>
-        <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
-        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
-        <Model value="ZHBRNavigator@Model"/>
-        <PlacementModel value="ZHBRNavigator@Model"/>
     </CActorUnit>
     <CActorBeamSimple id="ZHBRNavigatorLoad@WarpOut" parent="BeamSimpleAnimationStyleOneShot">
         <On Terms="AbilTransport.ZHBRNavigatorLoad.CargoLoad" Send="Create"/>
@@ -2040,22 +3175,22 @@
     </CActorBeamSimple>
     <CActorUnit id="ZHBRNemesisAdvanced" parent="GenericUnitStandard" unitName="ZHBRNemesisAdvanced">
         <Aliases value="_UnitHuge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Remove Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
         <On Terms="ActorCreation" Target="ZHBRNemesis" Send="Destroy Immediate"/>
         <On Terms="Abil.ZHBRNemesisStream.SourceChannelStart" Send="$Spell PlayForever"/>
         <On Terms="Abil.ZHBRNemesisStream.SourceChannelStop" Send="AnimClear Spell"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start" Send="Create ZHBRNemesisWeapon@Beam"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start" Send="Create ZHBRNemesisWeapon@Beam"/>
         <On Terms="Effect.ZHBRNemesisWeapon@Damage.Start; FromEffectTreeDescendant" Send="ActionDamage"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop" Target="ZHBRNemesisWeapon@Beam" Send="Destroy"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop" Target="ZHBRNemesisWeapon@Beam" Send="Destroy"/>
         <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Work,Start Work"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.On" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOn"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.Off" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOff"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOn"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration" Send="Create ZHBRNemesisWeapon@BeamLeft"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration" Send="Create ZHBRNemesisWeapon@BeamRight"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop" Target="ZHBRNemesisWeapon@BeamLeft" Send="Destroy"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop" Target="ZHBRNemesisWeapon@BeamRight" Send="Destroy"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOn"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration" Send="Create ZHBRNemesisWeapon@BeamLeft"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration" Send="Create ZHBRNemesisWeapon@BeamRight"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop" Target="ZHBRNemesisWeapon@BeamLeft" Send="Destroy"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop" Target="ZHBRNemesisWeapon@BeamRight" Send="Destroy"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.On" Target="ZHBRNemesisWeapon@Beam" Send="Create ZHBRNemesisWeapon@BeamLeft"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.On" Target="ZHBRNemesisWeapon@Beam" Send="Create ZHBRNemesisWeapon@BeamRight"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.Off" Target="ZHBRNemesisWeapon@BeamLeft" Send="Destroy"/>
@@ -2133,7 +3268,7 @@
         <HostImpactSiteOps Ops="SOpCasterUnit SOpAttachWeapon"/>
     </CActorBeamSimple>
     <CActorBeamSimple id="ZHBRNemesisWeapon@Beam" parent="BeamSimpleAnimationStyleContinuous">
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop; At Effect" Send="AnimBracketStop BSD"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop; At Effect" Send="AnimBracketStop BSD"/>
         <On Terms="Signal.*.BeamOn" Send="ModelSwap ZHBRNemesisWeapon@BuffedBeam"/>
         <On Terms="Signal.*.BeamOff" Send="ModelSwap ZHBRNemesisWeapon@Beam"/>
         <Scale value="1.500000"/>
@@ -2144,20 +3279,20 @@
         <Macros value="ActionTargetTeleportDestroy"/>
     </CActorBeamSimple>
     <CActorSound id="ZHBRNemesisWeapon@LoopSound" parent="SoundContinuous">
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; At Caster" Send="Create"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop" Send="Destroy"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop" Send="Destroy"/>
         <Sound value="ZHBRNemesisWeapon@WeaponLoop"/>
     </CActorSound>
     <CActorSound id="ZHBRNemesisWeapon@StartSound" parent="SoundOneShot">
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; At Target" Send="Create"/>
+        <On Terms="Effect.ZHBRNemesisLaunchAttack.Start; At Target" Send="Create"/>
         <Sound value="ZHBRNemesisWeapon@WeaponStart"/>
     </CActorSound>
     <CActorSound id="ZHBRNemesisWeapon@Vx_02_Sound" parent="SoundOneShot">
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop; At Caster" Send="Create"/>
         <Sound value="ZHBRNemesisWeapon@Vx_02"/>
     </CActorSound>
     <CActorSound id="ZHBRNemesisWeapon@_Vx_01_Sound" parent="SoundOneShot">
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; At Caster" Send="Create"/>
         <Sound value="ZHBRNemesisWeapon@Vx_01"/>
     </CActorSound>
     <CActorSound id="ZHBRNemesis@DeathSound" parent="SoundOneShot">
@@ -2179,26 +3314,28 @@
     </CActorSound>
     <CActorUnit id="ZHBRNemesis" parent="GenericUnitStandard" unitName="ZHBRNemesis">
         <Aliases value="_UnitHuge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Remove Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="67" Terms="Behavior.ZHBRNemesisTimeAttack.Off" Send="AnimBracketStop Attack"/>
         <On Terms="Upgrade.ZHBRUpgradeToAdvancedNemesis.Add" Send="ModelSwap ZHBRNemesis@ModelAdvanced"/>
         <On Terms="Upgrade.ZHBRUpgradeToAdvancedNemesis.Remove" Send="ModelSwap ZHBRNemesis@Model"/>
         <On Terms="UnitBirth; ValidatePlayer ZHBRUpgradeToAdvancedNemesis@HasUpgrade" Send="ModelSwap ZHBRNemesis@ModelAdvanced"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; At Caster" Send="Create ZHBRNemesisWeapon@Beam"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; At Caster" Send="Create ZHBRNemesisWeapon@Beam"/>
         <On Terms="Effect.ZHBRNemesisWeapon@Damage.Start; FromEffectTreeDescendant" Send="ActionDamage"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop; At Caster" Target="ZHBRNemesisWeapon@Beam" Send="Destroy"/>
-        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Work,Start Work"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop; At Caster" Target="ZHBRNemesisWeapon@Beam" Send="Destroy"/>
+        <On Terms="WeaponStart.ZHBRNemesisWeapon.AttackStart" Send="AnimBracketStart Attack Work,Start Work"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.On" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOn"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.Off" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOff"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration; At Caster" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOn"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration; At Caster" Send="Create ZHBRNemesisWeapon@BeamLeft"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration; At Caster" Send="Create ZHBRNemesisWeapon@BeamRight"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop; At Caster" Target="ZHBRNemesisWeapon@BeamLeft" Send="Destroy"/>
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop; At Caster" Target="ZHBRNemesisWeapon@BeamRight" Send="Destroy"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration; At Caster" Target="ZHBRNemesisWeapon@Beam" Send="Signal BeamOn"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration; At Caster" Send="Create ZHBRNemesisWeapon@BeamLeft"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Start; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration; At Caster" Send="Create ZHBRNemesisWeapon@BeamRight"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop; At Caster" Target="ZHBRNemesisWeapon@BeamLeft" Send="Destroy"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop; At Caster" Target="ZHBRNemesisWeapon@BeamRight" Send="Destroy"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.On" Target="ZHBRNemesisWeapon@Beam" Send="Create ZHBRNemesisWeapon@BeamLeft"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.On" Target="ZHBRNemesisWeapon@Beam" Send="Create ZHBRNemesisWeapon@BeamRight"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.Off" Target="ZHBRNemesisWeapon@BeamLeft" Send="Destroy"/>
         <On Terms="Behavior.ZHBRNemesisDisintegrator.Off" Target="ZHBRNemesisWeapon@BeamRight" Send="Destroy"/>
+        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop; ValidateEffect ZHBRNemesisWeapon@CasterHasNotLaunchAttack" Send="AnimBracketStop Attack"/>
         <DeathArray index="Normal" ModelLink="ZHBRNemesis@Death" SoundLink="ZHBRNemesis@Death_Vanish" VoiceLink="ZHBR_Zerg_Death"/>
         <DeathCustoms ModelLink="ZergLargeUnitDeathLow" Name="AntiGravZerg"/>
         <PortraitModel value="ZHBRNemesis@Portrait"/>
@@ -2256,7 +3393,7 @@
         <PlacementModel value="ZHBRNemesis@Model"/>
     </CActorUnit>
     <CActorSound id="ZHBRNemesis@StopSound" parent="SoundOneShot">
-        <On Terms="Effect.ZHBRNemesisWeapon@Persistent.Stop; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRNemesisWeaponHidden@Persistent.Stop; At Caster" Send="Create"/>
         <Sound value="ZHBRNemesisWeapon@WeaponEnd"/>
     </CActorSound>
     <CActorAction id="ZHBRPollinatorWeapon@Attack" parent="GenericAttack" effectImpact="ZHBRPollinatorWeapon@Damage" effectLaunch="ZHBRPollinatorWeapon@LM">
@@ -2332,7 +3469,7 @@
         <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridPollinator"/>
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
         <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Model value="ZHBRPollinator@Model"/>
         <BuildModel value="ZHBRPollinator@Model"/>
         <PlacementModel value="ZHBRPollinator@Model"/>
@@ -2413,12 +3550,15 @@
     </CActorSound>
     <CActorUnit id="ZHBREnergator" parent="GenericUnitStandard" unitName="ZHBREnergator">
         <Aliases value="_UnitMedium"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On index="65" Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
         <On index="66" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
         <On index="67" Terms="Abil.ZHBRDisappearance.SourceCastStart" Send="$Spell"/>
         <On index="68" Terms="WeaponStart.*.AttackStart" Send="AnimPlay Attack Attack"/>
         <On Terms="WeaponStop.*.AttackStop" Send="AnimClear Attack"/>
+        <On Terms="Abil.ZHBREnergatorVoidTrance.SourcePrepStart" Send="AnimPlay Attack A"/>
+        <On Terms="Abil.ZHBREnergatorVoidTrance.TargetFinishStart" Send="SetScale 1.075000 0.700000"/>
+        <On Terms="Abil.ZHBRCancelEnergatorVoidTrance.TargetFinishStart" Send="SetScale 1.000000 0.700000"/>
         <Model value="ZHBREnergator@Model"/>
         <BuildModel value="ZHBREnergator@Model"/>
         <DeathArray index="Normal" ModelLink="ZHBREnergator@Death" SoundLink="ZHBREnergator@Death"/>
@@ -2490,12 +3630,13 @@
         <On Terms="AnimDone; AnimName Death" Send="Destroy"/>
         <On Terms="Behavior.ZHBRRevealingSacrifice.On" Send="Create"/>
         <On Terms="Behavior.ZHBRRevealingSacrifice.Off" Send="AnimBracketStop BSD"/>
-        <Host Subject=""/>
-        <HostSiteOps Ops="AttachHeadTop SOpMoveUpBy3"/>
+        <On Terms="Behavior.ZHBRRevealingSacrificeForSelf.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRRevealingSacrificeForSelf.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRRevealingSacrificeForSelf.On" Send="SetTintColor 0,255,0"/>
+        <HostSiteOps Ops="SOpAttachOverhead HybridSOpMoveUpBy1_5"/>
+        <Scale value="1.750000"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
         <ModelFlags index="UseSyncSeed" value="0"/>
-        <AutoScaleFactor value="1.000000"/>
-        <AutoScaleFromSelectionFactor value="1.000000"/>
     </CActorModel>
     <CActorModel id="ZHBRRevealingSacrifice@Launch" parent="ModelAnimationStyleContinuous">
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce"/>
@@ -2510,8 +3651,11 @@
     </CActorRange>
     <CActorUnit id="ZHBRSpirit" parent="GenericUnitStandard" unitName="ZHBRSpirit">
         <Aliases value="_UnitLarge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On Terms="AbilMorph.*.Start; MorphFrom ZHBRMinion; MorphTo ZHBRSpirit" Send="Create"/>
+        <On Terms="Abil.ZHBRSpiritSiegeMode.SourcePrepStart" Send="AnimBracketStart Attack Attack {} {} OpeningPlayForever"/>
+        <On Terms="Abil.ZHBRCancelSiegeMod.TargetFinishStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.ZHBRVoidPhantom.SourceCastStart" Send="Create ZHBRVoidPhantom@PhantasmSpawn"/>
         <Scale value="0.550000"/>
         <Baselines index="Stand" BlendIn="1.000000" BlendOut="1.000000"/>
         <Baselines index="Walk" BlendIn="1.000000" BlendOut="1.000000"/>
@@ -2523,7 +3667,7 @@
             <Image value="assets\textures\wireframe-unit-zhybrid-spirit.dds"/>
         </GroupIcon>
         <HeroIcon value="assets\textures\btn-unit-zhybrid-spirit.dds"/>
-        <LifeArmorIcon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level0.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>
         <NameOffset value="80"/>
         <SoundArray index="Birth" value="ZHBRSpirit_Ready"/>
         <SoundArray index="Ready" value="ZHBRSpirit@Ready"/>
@@ -2621,7 +3765,7 @@
         <PlacementActorModel value="ZHBRCommon@PlacementModelStandWork"/>
         <PlaceholderActorModel value="ZHBRCommon@PlaceholderModelStandWork"/>
         <CustomUnitStatusOffset value="0,-80"/>
-        <Macros value="HybridStasisCell_and_Crypt_QueueAnim"/>
+        <Macros value="HybridQueueAnim_StasisCell_Crypt_Tomb"/>
     </CActorUnit>
     <CActorModel id="ZHBRCommon@PlacementModelStandWork" parent="ZHBRCommon@PlacementModel">
         <Remove Terms="ActorCreation" Send="AnimGroupApply Placement"/>
@@ -2674,7 +3818,7 @@
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-Void-VoidThrasher.dds"/>
         </Wireframe>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
     </CActorUnit>
     <CActorSiteOpForward id="ZHBRConstruct@SOps">
         <HostForward Subject="::actor.ConstructWeaponTarget" Actor="Find"/>
@@ -2690,7 +3834,7 @@
     </CActorModel>
     <CActorSound id="ZHBRConstructWeaponAntiGround@BeamAttackLaunchSound" parent="SoundOneShot">
         <Sound value="ZHBRConstructWeaponAntiGround@BeamAttackLaunch"/>
-        <On Terms="Effect.ZHBRConstructWeaponAntiGround@Damage.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRConstructWeaponAntiGround@DamageHight.Start; At Caster" Send="Create"/>
     </CActorSound>
     <CActorModel id="ZHBRConstruct@PlacementModelAntiGround">
         <Aliases value="_Main"/>
@@ -2776,13 +3920,15 @@
         <HostSiteOps Ops="SOpMoveUpByDot25"/>
         <Scale value="0.800000"/>
     </CActorUnit>
-    <CActorBeamSimple id="ZHBRConstructWeaponAntiGround@Beam" parent="BeamSimpleAnimationStyleContinuous">
+    <CActorBeamSimple id="ZHBRConstructWeaponAntiGround@BeamCentre" parent="BeamSimpleAnimationStyleContinuous">
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth {} Death ContentPlayOnce"/>
-        <On Terms="Effect.ZHBRConstructWeaponAntiGround@Damage.Start; At Target" Send="Create"/>
+        <On Terms="Effect.ZHBRConstructWeaponAntiGround@DamageHight.Start; At Target" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor 255,128,0"/>
         <Model value="ZHBRConstruct@Beam"/>
-        <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachWeapon"/>
+        <HostLaunchSiteOps Ops="SOpCasterUnit AttachHeadTop HybridSOpMoveCentreForConstructBeam"/>
         <HostImpact Subject="_Unit" Actor="Find"/>
         <HostImpactSiteOps Ops="SOpAttachHarness"/>
+        <Scale value="2.500000"/>
     </CActorBeamSimple>
     <CActorUnit id="ZHBRVespeneConcentrator" parent="ZHBRBuildingEx" unitName="ZHBRVespeneConcentrator">
         <Aliases value="_UnitMedium"/>
@@ -3162,7 +4308,7 @@
         <PlacementActorModel value="ZHBRCommon@PlacementModelStandWork"/>
         <PlaceholderActorModel value="ZHBRCommon@PlaceholderModelStandWork"/>
         <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridStasisCell"/>
-        <Macros value="HybridStasisCell_and_Crypt_QueueAnim"/>
+        <Macros value="HybridQueueAnim_StasisCell_Crypt_Tomb"/>
     </CActorUnit>
     <CActorSound id="ZHBRVoidImmunity@SoundLoop" parent="SoundContinuous">
         <Sound value="ZHBRVoidImmunity@Loop"/>
@@ -3171,7 +4317,7 @@
         <Sound value="ZHBRVoidImmunity@End"/>
     </CActorSound>
     <CActorSound id="ZHBRVoidImmunity@SoundCast" parent="SoundOneShot">
-        <On Terms="Behavior.ZHBRVoidImmunity.On" Send="Create"/>
+        <On Terms="Effect.ZHBRVoidImmunity@ApplyBuff.Start" Send="Create"/>
         <Sound value="ZHBRVoidImmunity@Start"/>
     </CActorSound>
     <CActorModel id="ZHBRVoidImmunity@Model" parent="ZCRModelAnimationStyleContinuousUnitBase">
@@ -3350,7 +4496,7 @@
     </CActorRange>
     <CActorUnit id="ZHBRChimera" parent="GenericUnitBase" unitName="ZHBRChimera">
         <Aliases value="_UnitMedium"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Macros value="ZergBurrowStandardAnimMacro"/>
         <Macros value="ZergMediumBurrowEffects"/>
         <Macros value="UnloadDropAnim"/>
@@ -3362,6 +4508,7 @@
         <On Terms="Abil.ZHBRDeepTunnel.SourceCastStart" Send="AnimPlay Spell Burrow"/>
         <On Terms="Abil.ZHBRDeepTunnel.SourceFinishStart" Send="AnimPlay Spell Unburrow 0 -1.000000 -1.000000 1.500000 AsDuration"/>
         <On Terms="AnimPlay; !AnimName Spell" Send="AnimClear Spell"/>
+        <On Terms="WeaponStop.ZHBRChimeraRangedWeapon.AttackStop" Send="AnimClear Attack"/>
         <ModelFlags index="OutlineEmitter" value="1"/>
         <EventDataSound Name="HydraliskAttackImpactMelee" Actor="UnitSound" Sound="Hydralisk_AttackImpactMelee"/>
         <DeathArray index="Normal" ModelLink="ZHBRChimera@Death" SoundLink="Hydralisk_Explode"/>
@@ -3443,6 +4590,7 @@
         <Model value="ZHBRChimera@Model"/>
         <BuildModel value="ZHBRChimera@Model"/>
         <PlacementModel value="ZHBRChimera@Model"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-ability-zhybrid-protection.dds"/>
     </CActorUnit>
     <CActorAction id="ZHBRChimeraMeleeWeapon@Attack" parent="GenericAttack" effectAttack="ZHBRChimeraMeleeWeapon@Damage">
         <LaunchAttachQuery Methods="AMFilterWeaponLeft"/>
@@ -3451,14 +4599,14 @@
         <ShieldFlashType value="Header"/>
     </CActorAction>
     <CActorSound id="ZHBRTimeWarp@SoundImpact" parent="SoundOneShot">
-        <On Terms="Behavior.ZHBRTimeWarp.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRTimeWarp@Start.On" Send="Create"/>
         <Sound value="ZHBRTimeWarp@Impact"/>
     </CActorSound>
     <CActorModel id="ZHBRTimeWarp@ModelImpact" parent="ModelAnimationStyleContinuous">
         <Inherits index="BaseModelScale" value="1"/>
         <Inherits index="Scale" value="1"/>
-        <On Terms="Behavior.ZHBRTimeWarp.On" Send="Create"/>
-        <On Terms="Behavior.ZHBRTimeWarp.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZHBRTimeWarp@Start.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRTimeWarp@Start.Off" Send="AnimBracketStop BSD"/>
         <Host Subject="_Selectable"/>
         <HostSiteOps Ops="SOpAttachCenter"/>
         <Model value="ZHBRTimeWarp@Impact"/>
@@ -3466,25 +4614,28 @@
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
     </CActorModel>
     <CActorSound id="ZHBRTimeWarp@SoundEnd" parent="SoundContinuous">
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Stop" Send="Create"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentStart.Stop" Send="Create"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentMiddle.Stop" Send="Create"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Sound value="ZHBRTimeWarp@End"/>
     </CActorSound>
     <CActorModel id="ZHBRTimeWarp@Model" parent="ZCRModelAnimationStyleContinuous">
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Start" Send="Create"/>
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Stop; !AnimPlayingProps Birth" Send="AnimBracketStop BSD"/>
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Stop; AnimPlayingProps Birth" Send="TimerSet 1.000000 Death"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentStart.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentEnd.Stop; !AnimPlayingProps Birth" Send="AnimBracketStop BSD"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentStart.Stop; AnimPlayingProps Birth" Send="TimerSet 1.000000 Death"/>
         <On Terms="TimerExpired; TimerName Death" Send="AnimBracketStop BSD"/>
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Start" Send="TimerSet 4.000000 EndTimer"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentStart.Start" Send="TimerSet 4.000000 EndTimer"/>
         <On Terms="TimerExpired; TimerName EndTimer" Send="TimerSet 0.500000 ClearOpacityTimer"/>
-        <On Terms="TimerExpired; TimerName EndTimer" Send="SetOpacity 0.100000 0.500000 Notify"/>
+        <On Terms="TimerExpired; TimerName EndTimer" Send="SetOpacity 1.000000 0.500000 Notify"/>
         <On Terms="TimerExpired; TimerName ClearOpacityTimer" Send="TimerSet 0.500000 SetOpacityTimer"/>
         <On Terms="TimerExpired; TimerName ClearOpacityTimer" Send="ClearOpacity 0.500000 Notify"/>
         <On Terms="TimerExpired; TimerName SetOpacityTimer" Send="TimerSet 0.500000 ClearOpacityTimer"/>
-        <On Terms="TimerExpired; TimerName SetOpacityTimer" Send="SetOpacity 0.100000 0.500000 Notify"/>
+        <On Terms="TimerExpired; TimerName SetOpacityTimer" Send="SetOpacity 1.000000 0.500000 Notify"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentMiddle.Start" Send="SetTintColor 0,255,255"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentEnd.Start" Send="SetTintColor 0,113,113"/>
     </CActorModel>
     <CActorSound id="ZHBRTimeWarp@SoundLaunch" parent="SoundContinuous">
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentStart.Start" Send="Create"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Sound value="ZHBRTimeWarp@Launch"/>
     </CActorSound>
@@ -3497,18 +4648,19 @@
         <IconScale value="0.010000,0.001250"/>
     </CActorRange>
     <CActorSound id="ZHBRTimeWarp@SoundLoop" parent="SoundContinuous">
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Start" Send="Create"/>
-        <On Terms="Effect.ZHBRTimeWarp@Persistent.Stop" Send="Destroy"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentStart.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRTimeWarp@PersistentEnd.Stop" Send="Destroy"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Sound value="ZHBRTimeWarp@Loop"/>
     </CActorSound>
     <CActorUnit id="ZHBRDominatorAdvanced" parent="GenericUnitBase" unitName="ZHBRDominatorAdvanced">
         <Aliases value="_UnitHuge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
+        <Macros value="RemoveFlyerHelperMacro"/>
         <On index="35" Terms="UnitBirth.*.Normal" Send="AnimPlay Birth Stand 0 0.000000"/>
         <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Spell"/>
         <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
-        <On Terms="Abil.ZHBRPsiOrb.SourceCastStart" Send="AnimPlay Spell Stand,Work"/>
+        <On Terms="Abil.ZHBRDestructionOrb.SourceCastStart" Send="AnimPlay Spell Stand,Work"/>
         <On Terms="Abil.ZHBRConfusion.SourceCastStart" Send="AnimPlay Spell Stand,Work"/>
         <On Terms="ActorCreation" Target="ZHBRDominator" Send="Destroy Immediate"/>
         <On Terms="ActorCreation; UnitWalking" Send="AnimPlay Walk Walk PlayForever"/>
@@ -3526,31 +4678,27 @@
         <BarDistance value="42"/>
         <BarOffset value="120"/>
         <BarWidth value="90"/>
+        <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridDominatorAdvanced"/>
+        <CustomUnitStatusOffset value="0,50"/>
         <GroupIcon>
             <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss.DDS"/>
         </GroupIcon>
         <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel0.dds"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
         <SoundArray index="Birth" value="ZHBR_Birth"/>
         <SoundArray index="Ready" value="ZHBRDominator@Ready"/>
         <SoundArray index="What" value="ZHBRDominator@What"/>
         <SoundArray index="Yes" value="ZHBRDominator@Yes"/>
         <SoundArray index="Attack" value="ZHBRDominator@Attack"/>
         <SoundArray index="Pissed" value="ZHBR_Pissed"/>
-        <UnitIcon value="assets\textures\btn-unit-zhybrid-AdvancedProtoss.DDS"/>
-        <Wireframe>
-            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss.DDS"/>
-        </Wireframe>
-        <WireframeShield>
-            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss-Shield01.dds"/>
-            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss-Shield02.dds"/>
-            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss-Shield03.dds"/>
-        </WireframeShield>
         <StatusColors index="Shields">
             <ColorArray index="0" value="255,255,255,255"/>
         </StatusColors>
         <StatusColors index="Energy">
             <ColorArray index="0" value="255,0,255,191"/>
         </StatusColors>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+        <UnitIcon value="assets\textures\btn-unit-zhybrid-AdvancedProtoss.DDS"/>
         <VitalColors index="Shields">
             <ColorArray value="255,255,255,255"/>
         </VitalColors>
@@ -3559,20 +4707,24 @@
         </VitalColors>
         <VitalNames index="Shields" value="UI/Tooltip/Protection"/>
         <VitalNames index="Energy" value="UI/Tooltip/VoidEnergy"/>
+        <Wireframe>
+            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss.DDS"/>
+        </Wireframe>
+        <WireframeShield>
+            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss-Shield01.dds"/>
+            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss-Shield02.dds"/>
+            <Image value="assets\textures\wireframe-unit-zhybrid-AdvancedProtoss-Shield03.dds"/>
+        </WireframeShield>
         <WireframeShieldColor value="255,192,192,192"/>
-        <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridDominatorAdvanced"/>
-        <CustomUnitStatusOffset value="0,50"/>
-        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
-        <ShieldArmorIcon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
-        <Macros value="RemoveFlyerHelperMacro"/>
     </CActorUnit>
     <CActorUnit id="ZHBRDominator" parent="GenericUnitBase" unitName="ZHBRDominator">
         <Aliases value="_UnitHuge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Spell"/>
         <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
-        <On Terms="Abil.ZHBRPsiOrb.SourceCastStart" Send="AnimPlay Spell Stand,Work"/>
-        <On Terms="Abil.ZHBRConfusion.SourceCastStart" Send="AnimPlay Spell Stand,Work"/>
+        <On Terms="Abil.ZHBRConfusion.SourceCastStart" Send="AnimPlay Spell1 Attack NonLooping -1.000000 -1.000000 1.250000 AsTimeScale"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Spell1 0.500000"/>
+        <On Terms="Abil.ZHBRDestructionOrb.SourceCastStart" Send="AnimPlay Spell2 Stand,Work NonLooping"/>
         <On Terms="Upgrade.ZHBRUpgradeToAdvancedDominator.Add" Send="ModelSwap ZHBRDominator@ModelAdvanced"/>
         <On Terms="Upgrade.ZHBRUpgradeToAdvancedDominator.Remove" Send="ModelSwap ZHBRDominator@Model"/>
         <On Terms="UnitBirth; ValidatePlayer ZHBRUpgradeToAdvancedDominator@HasUpgrade" Send="ModelSwap ZHBRDominator@ModelAdvanced"/>
@@ -3648,11 +4800,13 @@
     <CActorSplat id="ZHBRConfusion@CursorSplat" parent="ProtossCursorSplat" abil="ZHBRConfusion">
         <Model value="PsiStormCursorSplat"/>
         <Scale value="1.700000"/>
+        <On Terms="Abil.ZHBRConfusion.Cursor" Send="SetTintColor 255,98,98"/>
     </CActorSplat>
     <CActorRange id="ZHBRConfusion@Range" parent="RangeAbil" abil="ZHBRConfusion">
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="0.025000"/>
         <IconScale value="0.010000,0.001250"/>
+        <IconTint value="255,255,128,128"/>
     </CActorRange>
     <CActorSound id="ZHBRConfusion@SoundStart" parent="SoundOneShot">
         <On Terms="Effect.ZHBRConfusion@ApplyBuff.Start; At Caster" Send="Create"/>
@@ -3676,22 +4830,23 @@
         <On index="1" Terms="ActorCreation" Send="$Stand,02 PlayForever"/>
     </CActorModel>
     <CActorSound id="ZHBRPsionicTornado@SoundStart" parent="SoundOneShot">
-        <On Terms="Behavior.ZHBRPsionicTornado@TornadoBehavior.On" Send="Create"/>
+        <On Terms="Effect.ZHBRDreadnokTornado@PersistentStart.Start" Send="Create"/>
         <HostSiteOps Ops="SOpTargetPoint"/>
         <Sound value="ZHBRPsionicTornado@Start"/>
     </CActorSound>
     <CActorSound id="ZHBRPsionicTornado@SoundEnd" parent="SoundOneShot">
-        <On Terms="Behavior.ZHBRPsionicTornado@TornadoBehavior.Off" Send="Create"/>
+        <On Terms="Effect.ZHBRDreadnokTornado@PersistentEnd.Stop" Send="Create"/>
         <HostSiteOps Ops="SOpTargetPoint"/>
         <Sound value="ZHBRPsionicTornado@End"/>
     </CActorSound>
     <CActorSound id="ZHBRPsionicTornado@SoundLoop" parent="SoundOneShot">
-        <On Terms="Behavior.ZHBRPsionicTornado@TornadoBehavior.On" Send="Create"/>
-        <On Terms="Behavior.ZHBRPsionicTornado@TornadoBehavior.Off" Send="Destroy"/>
+        <On Terms="Effect.ZHBRDreadnokTornado@PersistentStart.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRDreadnokTornado@PersistentStart.Stop" Send="Destroy"/>
         <Sound value="ZHBRPsionicTornado@Loop"/>
     </CActorSound>
     <CActorSound id="ZHBRPsionicTornado@SoundImpact" parent="SoundOneShot">
-        <On Terms="Effect.ZHBRPsionicTornado@Damage.Start; At Target" Send="Create"/>
+        <On Terms="Effect.ZHBRPsionicTornado@DamageStart.Start; At Target" Send="Create"/>
+        <On Terms="Effect.ZHBRPsionicTornado@DamageEnd.Start; At Target" Send="Create"/>
         <Host Subject="_Selectable"/>
         <Sound value="ZHBRPsionicTornado@Impact"/>
     </CActorSound>
@@ -3702,11 +4857,11 @@
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="0.025000"/>
         <IconScale value="0.010000,0.001250"/>
-        <Range value="7.000000"/>
         <On index="1" Terms="Abil.ZHBRPsionicTornado.TargetOn" Send="Create"/>
         <On index="2" Terms="Abil.ZHBRPsionicTornado.TargetOff" Send="Destroy"/>
         <On index="3" Terms="Abil.ZHBRPsionicTornado.ButtonHoverOn" Send="Create"/>
         <On index="4" Terms="Abil.ZHBRPsionicTornado.ButtonHoverOff" Send="Destroy"/>
+        <Range value="8.000000"/>
     </CActorRange>
     <CActorAction id="ZHBRDreadnokWeapon@Attack" parent="GenericAttack" effectImpact="ZHBRDreadnokWeapon@Damage" effectLaunch="ZHBRDreadnokWeapon@LM">
         <ImpactMap index="None" Model="ZHBRDreadnokWeapon@Impact" Scale="0.500000" AnimProps="Death"/>
@@ -3714,12 +4869,12 @@
     <CActorMissile id="ZHBRDreadnokWeapon@AttackMissile" parent="GenericAttackMissile" unitName="ZHBRDreadnokWeapon@Missile"/>
     <CActorUnit id="ZHBRDreadnok" parent="GenericUnitStandard" unitName="ZHBRDreadnok">
         <Aliases value="_UnitLarge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On Terms="UnitBirth.ZHBRDreadnok" Send="AttachModel {} ZHBRDreadnok@HitTestSphere {Origin 0} SOpMoveUpBy1"/>
         <On Terms="WeaponStart.ZHBRDreadnokWeapon.AttackStart" Send="AnimBracketStart Attack Spell"/>
         <On Terms="WeaponStop.ZHBRDreadnokWeapon.AttackStop" Send="AnimBracketStop Attack"/>
-        <On Terms="Abil.ZHBRPsionicTornado.SourceCastStart" Send="AnimPlay Spell Attack"/>
-        <On Terms="Abil.ZHBRTimeWarp.SourceCastStart" Send="AnimPlay Spell Attack"/>
+        <On Terms="Abil.ZHBRPsionicTornado.SourceCastStart" Send="AnimPlay Spell Attack,03 FullMatch"/>
+        <On Terms="Abil.ZHBRTimeWarp.SourceCastStart" Send="AnimPlay Spell Attack,00 VariationMatch"/>
         <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Spell"/>
         <On Terms="WeaponStart.*.AttackStart" Send="AnimClear Spell"/>
         <On Terms="Abil.ZHBRConfusion.SourceCastStart" Send="$Spell"/>
@@ -3789,10 +4944,11 @@
     </CActorAction>
     <CActorUnit id="ZHBRFlayer" parent="GenericUnitStandard" unitName="ZHBRFlayer">
         <Aliases value="_UnitMedium"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On index="65" Terms="Effect.ZHBRFlayerFury@InitialPersistent.Start; At Caster" Send="AnimPlay Attack Spell,00 0 -1.000000 -1.000000 1.000000 AsAutomatic 0.000000 20"/>
         <On Terms="Effect.ZHBRFlayerWeapon@InitialPersistent.Start; At Caster" Send="AnimPlay Attack Attack"/>
         <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Attack"/>
+        <On Terms="WeaponStop.ZHBRFlayerWeapon.AttackStop" Send="AnimClear Attack"/>
         <Model value="ZHBRFlayer@Model"/>
         <BuildModel value="ZHBRFlayer@Model"/>
         <DeathArray index="Normal" ModelLink="ZHBRFlayer@Death" SoundLink="Zealot_DeathFX"/>
@@ -3899,6 +5055,7 @@
         <On Terms="Effect.ZHBRMinionBuild@Cancel.Start" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SetTintColor 255,0,0"/>
         <Model value="ZHBRMinion@BuildBeam"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
         <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachCenter"/>
         <HostImpactSiteOps Ops="SOpAttachOrigin"/>
@@ -3912,7 +5069,7 @@
     </CActorSound>
     <CActorUnit id="ZHBRMinion" parent="GenericUnitStandard" unitName="ZHBRMinion">
         <Aliases value="_UnitSmall"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Macros value="CarryAnim"/>
         <Macros value="BuildAnim"/>
         <Macros value="MacroWorkerHat"/>
@@ -4000,7 +5157,7 @@
         <On Terms="Effect.ZHBRConsumeDNA@Search.Start" Send="Create"/>
     </CActorSound>
     <CActorRange id="ZHBRConsumeDNA@Range">
-        <Range value="2.750000"/>
+        <Range value="3.000000"/>
         <IconScale value="0.010000,0.001250"/>
         <IconArcLength value="0.025000"/>
         <Flags index="SuppressSaveLoad" value="1"/>
@@ -4010,7 +5167,7 @@
     </CActorRange>
     <CActorUnit id="ZHBRBehemoth" parent="GenericUnitStandard" unitName="ZHBRBehemoth">
         <Aliases value="_UnitHuge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On Terms="Upgrade.ZHBRUpgradeToAdvancedBehemoth.Add" Send="ModelSwap ZHBRBehemoth@ModelAdvanced"/>
         <On Terms="Upgrade.ZHBRUpgradeToAdvancedBehemoth.Remove" Send="ModelSwap ZHBRBehemoth@Model"/>
         <On Terms="UnitBirth; ValidatePlayer ZHBRUpgradeToAdvancedBehemoth@HasUpgrade" Send="ModelSwap ZHBRBehemoth@ModelAdvanced"/>
@@ -4078,7 +5235,9 @@
         <ShieldFlashType value="Full"/>
         <ForceCommencementFrom value="ZHBRConsumeDNA@LaunchMissile"/>
     </CActorAction>
-    <CActorMissile id="ZHBRConsumeDNA@AttackMissile" parent="GenericAttackMissile" unitName="ZHBRConsumeDNA@Missile"/>
+    <CActorMissile id="ZHBRConsumeDNA@AttackMissile" parent="GenericAttackMissile" unitName="ZHBRConsumeDNA@Missile">
+        <On Terms="UnitBirth.ZHBRConsumeDNA@Missile; ValidateCreationEffect ZHBRUpgradeToBrokenDNA@HasUpgrade" Send="SetTintColor 0,255,0"/>
+    </CActorMissile>
     <CActorSound id="ZHBRConsumeDNA@Impact" parent="SoundOneShot">
         <On Terms="Effect.ZHBRConsumeDNA@ImpactSet.Start; At Caster" Send="Create"/>
     </CActorSound>
@@ -4088,7 +5247,7 @@
     <CActorAction id="ZHBRBehemothWeapon@Attack" parent="GenericAttack" effectAttack="ZHBRBehemothWeapon@Damage"/>
     <CActorUnit id="ZHBRBehemothAdvanced" parent="GenericUnitStandard" unitName="ZHBRBehemothAdvanced">
         <Aliases value="_UnitHuge"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Macros value="ZHBRCommon@DestroyParticles"/>
         <On index="35" Terms="UnitBirth.*.Normal" Send="AnimPlay Birth Stand 0 0.000000"/>
         <On Terms="ActorCreation" Target="ZHBRBehemoth" Send="Destroy Immediate"/>
@@ -4159,23 +5318,23 @@
     <CActorMissile id="ZHBRBehemothWeaponAntiAir@AttackMissile" parent="GenericAttackMissile" unitName="ZHBRBehemothWeaponAntiAir@Missile">
         <Model value="ZHBRBehemothWeaponAntiAir@AttackWeapon"/>
     </CActorMissile>
-    <CActorModel id="ZHBRSentinelJump@Stun" parent="ZCRModelAnimationStyleContinuousUnitBase">
-        <On Terms="Behavior.ZHBRSentinelJump@Stun.On" Send="Create"/>
-        <On Terms="Behavior.ZHBRSentinelJump@Stun.Off" Send="AnimBracketStop BSD"/>
+    <CActorModel id="ZHBRSentinelSubjugationJump@Stun" parent="ZCRModelAnimationStyleContinuousUnitBase">
+        <On Terms="Behavior.ZHBRSentinelSubjugationJump@Stun.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRSentinelSubjugationJump@Stun.Off" Send="AnimBracketStop BSD"/>
         <HostSiteOps Ops="SOpAttachOverhead"/>
-        <AutoScaleFactor value="1.000000"/>
+        <AutoScaleFactor value="1.400000"/>
     </CActorModel>
-    <CActorSound id="ZHBRSentinelJump@LandSound" parent="SoundOneShot">
-        <On Terms="Behavior.ZHBRSentinelJump@JumpBuff.Off" Send="Create"/>
-        <Sound value="ZHBRSentinelJump@Land"/>
+    <CActorSound id="ZHBRSentinelSubjugationJump@LandSound" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRSentinelSubjugationJump@JumpBuff.Off" Send="Create"/>
+        <Sound value="ZHBRSentinelSubjugationJump@Land"/>
     </CActorSound>
-    <CActorSound id="ZHBRSentinelJump@LaunchSound" parent="SoundOneShot">
-        <On Terms="Behavior.ZHBRSentinelJump@JumpBuff.On" Send="Create"/>
-        <Sound value="ZHBRSentinelJump@Launch"/>
+    <CActorSound id="ZHBRSentinelSubjugationJump@LaunchSound" parent="SoundOneShot">
+        <On Terms="Behavior.ZHBRSentinelSubjugationJump@JumpBuff.On" Send="Create"/>
+        <Sound value="ZHBRSentinelSubjugationJump@Launch"/>
     </CActorSound>
     <CActorUnit id="ZHBRSentinel" parent="GenericUnitStandard" unitName="ZHBRSentinel">
         <Aliases value="_UnitMedium"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Model value="ZHBRSentinel@Model"/>
         <BuildModel value="ZHBRSentinel@Model"/>
         <DeathArray index="Normal" ModelLink="ZHBRSentinel@Death" SoundLink="Zealot_DeathFX"/>
@@ -4217,8 +5376,23 @@
         <VitalNames index="Shields" value="UI/Tooltip/Protection"/>
         <VitalNames index="Energy" value="UI/Tooltip/VoidEnergy"/>
         <WireframeShieldColor value="255,192,192,192"/>
-        <On Terms="Behavior.ZHBRSentinelJump@JumpBuff.On" Send="AnimBracketStart Jump Jump,Start Jump"/>
-        <On Terms="Behavior.ZHBRSentinelJump@JumpBuff.Off" Send="AnimBracketStop Jump"/>
+        <On Terms="Behavior.ZHBRSentinelSubjugationJump@JumpBuff.On" Send="AnimBracketStart SubjugationJump3 Jump,Start Jump Block 0 0.300000 AsDuration"/>
+        <On Terms="Behavior.ZHBRSentinelSubjugationJump@JumpBuff.Off" Send="AnimBracketStop SubjugationJump3 0 1.000000 AsDuration"/>
+        <!-- <On Terms="Behavior.ZHBRSentinelLeap@JumpBuff.On" Send="AnimPlay Leap1 Jump,Start FullMatch -1.000000 -1.000000 0.750000 AsTimeScale"/>
+        <On Terms="Behavior.ZHBRSentinelLeap@JumpBuff" Send="TimerSet 0.250000 LeapTimer1"/>
+        <On Terms="TimerExpired; TimerName LeapTimer1" Send="AnimPlay Leap2 Jump FullMatch"/>
+        <On Terms="TimerExpired; TimerName LeapTimer1" Send="TimerSet 0.150000 LeapTimer2"/>
+        <On Terms="TimerExpired; TimerName LeapTimer2" Send="AnimPlay Leap3 Jump,End"/>
+        <On Terms="TimerExpired; TimerName LeapTimer2" Send="TimerSet 0.750000 LeapTimer3"/>
+        <On Terms="TimerExpired; TimerName LeapTimer1" Send="AnimClear Leap1"/>
+        <On Terms="TimerExpired; TimerName LeapTimer2" Send="AnimClear Leap2"/>
+        <On Terms="TimerExpired; TimerName LeapTimer3" Send="AnimClear Leap3"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Leap3 0.500000"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimClear Leap3 2.000000"/> -->
+        <On Terms="Behavior.ZHBRSentinelLeap@JumpBuff.On" Send="AnimBracketStart Leap3 Jump,Start Jump Jump,End 0 0.300000 AsDuration"/>
+        <On Terms="Behavior.ZHBRSentinelLeap@JumpBuff.Off" Send="AnimBracketStop Leap3 0 1.000000 AsDuration"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear SubjugationJump3 0.500000"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Leap3 0.500000"/>
         <CustomUnitStatusFrame value="UnitStatus/UnitStatusFrame_HybridSentinel"/>
         <CustomUnitStatusOffset value="0,20"/>
         <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
@@ -4281,7 +5455,7 @@
     </CActorMissile>
     <CActorUnit id="ZHBRStrider" parent="GenericUnitStandard" unitName="ZHBRStrider">
         <Aliases value="_UnitMedium"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Macros value="ZHBRCommon@DestroyParticles"/>
         <On index="65" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack,01"/>
         <Model value="ZHBRStrider@Model"/>
@@ -4308,7 +5482,7 @@
             <Image value="assets\textures\wireframe-unit-zhybrid-strider.DDS"/>
         </GroupIcon>
         <HeroIcon value="assets\textures\btn-unit-zhybrid-Warrior.DDS"/>
-        <LifeArmorIcon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level0.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel0.dds"/>
         <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
         <SoundArray index="Ready" value="ZHBRStrider@Ready"/>
         <SoundArray index="Help" value="ZHBRStrider@Help"/>
@@ -4345,20 +5519,21 @@
     <CActorModel id="ZHBRWarbringerMaceStrike@Warning" parent="ModelAnimationStyleContinuous">
         <EditorCategories value=""/>
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
-        <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@InitialPersistent.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@InitialPersistent.Start" Send="Create"/>
         <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@InitialPersistent.Stop" Send="TimerSet 0.500000 Life"/>
         <On Terms="TimerExpired; TimerName Life" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,255,64"/>
         <HostSiteOps Ops="SOpTargetPoint SOpMoveDownByDot5" HoldPosition="1"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
     <CActorModel id="ZHBRWarbringerWeaponMaceStrike@AOEImapctModel" parent="ZCRModelAnimationStyleOneShot">
-        <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@Search.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@Damage.Start" Send="Create"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Model value="ZHBRWarbringerWeaponMaceStrike@AOEModel"/>
     </CActorModel>
     <CActorSound id="ZHBRWarbringerWeaponMaceStrike@AttackImpact" parent="SoundOneShot">
         <EditorCategories value=""/>
-        <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@Search.Start" Send="Create"/>
+        <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@Damage.Start" Send="Create"/>
         <HostSiteOps Ops="SOpTargetPoint"/>
     </CActorSound>
     <CActorSound id="ZHBRWarbringerWeaponMaceStrike@AttackLaunch" parent="SoundOneShot">
@@ -4368,6 +5543,7 @@
     </CActorSound>
     <CActorModel id="ZHBRWarbringerWeaponMaceStrike@LaunchModel" parent="ZCRModelAnimationStyleOneShot">
         <On Terms="Effect.ZHBRWarbringerWeaponMaceStrike@InitialPersistent.Start" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,255,128"/>
         <HostSiteOps Ops="SOpShadow"/>
     </CActorModel>
     <CActorRange id="ZHBRWarbringerWeaponMaceStrike@Range" parent="RangeWeapon" weapon="ZHBRWarbringerWeaponMaceStrike">
@@ -4386,16 +5562,19 @@
     </CActorAction>
     <CActorMissile id="ZHBRWarbringerWeaponMaceCannon@AttackMissile" parent="GenericAttackMissile" unitName="ZHBRWarbringerWeaponMaceCannon@Missile">
         <On Terms="ActorCreation; ValidateUnit AdeptGlaivesUpgraded" Send="ModelSwap Adept_Missile_Upgrade"/>
+        <On Terms="UnitBirth.ZHBRWarbringerWeaponMaceCannon@Missile" Send="SetTintColor 149,255,43"/>
     </CActorMissile>
     <CActorUnit id="ZHBRWarbringer" parent="GenericUnitStandard" unitName="ZHBRWarbringer">
         <Aliases value="_UnitSmall"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <Macros value="RemoveFlyerHelperMacro"/>
         <Macros value="ZHBRCommon@DestroyParticles"/>
         <On Terms="WeaponStart.ZHBRWarbringerWeaponMaceCannon.AttackStart" Send="TimerSet 1.000000 AttackAnim"/>
         <On Terms="TimerExpired; TimerName AttackAnim" Send="AnimBracketStop Attack"/>
         <On Terms="Behavior.ZHBRWarbringerMaceStrike.On" Send="Create ZHBRWarbringerWeaponMaceStrike@Range"/>
         <On Terms="Behavior.ZHBRWarbringerMaceStrike.Off" Target="ZHBRWarbringerWeaponMaceStrike@Range" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRWarbringerMarkerAnimation.On" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="Behavior.ZHBRWarbringerMarkerAnimation.Off" Send="AnimBracketStop Attack"/>
         <Model value="ZHBRWarbringer@Model"/>
         <AnimBlendTime value="0.450000"/>
         <ModelFlags index="OutlineEmitter" value="1"/>
@@ -4455,7 +5634,7 @@
         <On Terms="TimerExpired; TimerName Checker; ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration; IsStatus Selected 1" Send="SetFilter All Clear"/>
         <On Terms="TimerExpired; TimerName Checker; !ValidateUnit ZHBRNemesisWeapon@CasterHasDisintegration" Send="SetFilter All"/>
         <On Terms="TimerExpired; TimerName Checker; !IsStatus Selected 1" Send="SetFilter All"/>
-        <Range value="14.250000"/>
+        <Range value="11.000000"/>
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
         <Terms value="Cap 1"/>
@@ -4463,7 +5642,7 @@
     </CActorRange>
     <CActorUnit id="ZHBRWarrior@Changeling" parent="GenericUnitStandard" unitName="ZHBRWarrior@Changeling">
         <Aliases value="_UnitSmall"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <AcceptedHostedPropTransfers index="Scale" value="0"/>
         <On index="65" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack,01"/>
         <On Terms="ActorCreation" Send="SetLocalTintColor 255,128,255"/>
@@ -4524,6 +5703,7 @@
         </WireframeShield>
         <WireframeShieldColor value="255,192,192,192"/>
         <Macros value="ZHBRCommon@DestroyParticles"/>
+        <Scale value="0.850000"/>
         <ShieldArmorIcon value="assets\textures\btn-ability-zhybrid-protection.dds"/>
     </CActorUnit>
     <CActorAction id="ZHBRChimeraRangedWeapon@Attack" parent="GenericAttack" effectImpact="ZHBRChimeraRangedWeapon@Damage" effectLaunch="ZHBRChimeraRangedWeapon@LM">
@@ -4547,6 +5727,8 @@
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
     <CActorAction id="ZHBRWarriorWeapon@AttackUpgraded" parent="GenericAttack" effectImpact="ZHBRWarriorWeapon@Damage" effectLaunch="ZHBRWarriorWeapon@LM">
+        <On index="1" Terms="Effect.ZHBRWarriorWeapon@DamageUpgrade.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <On index="2" Terms="Effect.ZHBRWarriorWeapon@DamageUpgrade.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
         <On index="6" Terms="Effect.ZHBRWarriorWeapon@LM.Start; At Caster; ValidateUnit ZHBRDeconstruction@UpgradeCompleted" Send="Create"/>
         <LaunchAttachQuery Methods="AMFilterWeaponRight"/>
         <LaunchAssets Sound="ZHBRWarriorWeapon@AttackLaunch"/>
@@ -4556,7 +5738,7 @@
     <CActorMissile id="ZHBRWarriorWeapon@AttackMissile" parent="GenericAttackMissile" unitName="ZHBRWarriorWeapon@Missile"/>
     <CActorUnit id="ZHBRWarrior" parent="GenericUnitStandard" unitName="ZHBRWarrior">
         <Aliases value="_UnitSmall"/>
-        <Aliases value="_ShieldBlack"/>
+        <Aliases value="_ShieldWhite"/>
         <On index="65" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack,01"/>
         <Model value="ZHBRWarrior@Model"/>
         <ModelFlags index="OutlineEmitter" value="1"/>
@@ -4642,23 +5824,23 @@
         <On Terms="ActorDestruction" Target="_Unit" Send="ClearScale 0.500000 Amplifier"/>
     </CActorSimple>
     <CActorModel id="ZHBRDeformer@PlacementModel" parent="ZHBRCommon@PlacementModel">
-        <On Terms="ActorCreation" Send="Create ZHBREnergation@Range"/>
+        <On Terms="ActorCreation" Send="Create ZHBRSelfDestruction@Range"/>
     </CActorModel>
-    <CActorBeamSimple id="ZHBRPsiOrb@Beam" parent="BeamSimpleAnimationStyleOneShot">
+    <CActorBeamSimple id="ZHBRDestructionOrb@Beam" parent="BeamSimpleAnimationStyleOneShot">
         <On Terms="ActorCreation" Send="TimerSet 1.000000 Death"/>
         <On Terms="TimerExpired; TimerName Death" Send="AnimBracketStop BSD"/>
-        <Scale value="0.500000"/>
+        <On Terms="ActorCreation; ValidateEffect ZHBRUpgradeToDestructionOrb@HasUpgrade" Send="SetTintColor 255,255,53"/>
     </CActorBeamSimple>
-    <CActorAction id="ZHBRPsiOrb@Attack" parent="GenericAttack" effectImpact="ZHBRPsiOrb@FinalSearch" effectLaunch="ZHBRPsiOrb@LaunchMissile">
+    <CActorAction id="ZHBRDestructionOrb@Attack" parent="GenericAttack" effectImpact="ZHBRDestructionOrb@FinalSearch" effectLaunch="ZHBRDestructionOrb@LaunchMissile">
         <EditorCategories value=""/>
-        <LaunchAssets Sound="ZHBRPsiOrb@Launch"/>
-        <Missile value="ZHBRPsiOrb@Missile"/>
-        <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow ZHBRPsiOrb@ImpactOffset"/>
-        <ImpactMap index="None" Model="ZHBRPsiOrb@FinalImpactModel" Sound="ZHBRPsiOrb@Impact"/>
-        <ImpactModel value="ZHBRPsiOrb@AttackImpactModel"/>
+        <LaunchAssets Sound="ZHBRDestructionOrb@Launch"/>
+        <Missile value="ZHBRDestructionOrb@Missile"/>
+        <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow ZHBRDestructionOrb@ImpactOffset"/>
+        <ImpactMap index="None" Model="ZHBRDestructionOrb@FinalImpactModel" Sound="ZHBRDestructionOrb@Impact"/>
+        <ImpactModel value="ZHBRDestructionOrb@AttackImpactModel"/>
         <LaunchSiteOps Ops="SOpAttachTarget SOpMoveByDot75"/>
     </CActorAction>
-    <CActorModel id="ZHBRPsiOrb@AttackImpactModel">
+    <CActorModel id="ZHBRDestructionOrb@AttackImpactModel">
         <Flags index="SuppressCreationErrors" value="1"/>
         <Flags index="SuppressSaveLoad" value="1"/>
         <Inherits index="Visibility" value="1"/>
@@ -4666,38 +5848,39 @@
         <On Terms="AnimBracketState.*.AfterClosing; AnimName BSD" Send="Destroy"/>
         <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
-    <CActorAction id="ZHBRPsiOrb@BeamAttack" parent="GenericAttack" effectAttack="ZHBRPsiOrb@Damage">
+    <CActorAction id="ZHBRDestructionOrb@BeamAttack" parent="GenericAttack" effectAttack="ZHBRDestructionOrb@Damage">
         <EditorCategories value=""/>
-        <Beam value="ZHBRPsiOrb@Beam"/>
-        <ImpactMap index="None" Sound="ZHBRPsiOrb@BeamImpact"/>
-        <LaunchSiteOps Ops="SOpAttachHarness SOpMoveUpBy2"/>
+        <Beam value="ZHBRDestructionOrb@Beam"/>
+        <ImpactMap index="None" Sound="ZHBRDestructionOrb@BeamImpact"/>
     </CActorAction>
-    <CActorSplat id="ZHBRPsiOrb@CursorSplat" parent="ProtossCursorSplat" abil="ZHBRPsiOrb">
-        <Model value="ZHBRPsiOrb@CursorSplat"/>
+    <CActorSplat id="ZHBRDestructionOrb@CursorSplat" parent="ProtossCursorSplat" abil="ZHBRDestructionOrb">
+        <Model value="ZHBRDestructionOrb@CursorSplat"/>
     </CActorSplat>
-    <CActorModel id="ZHBRPsiOrb@@FinalImpactModel" parent="ModelAnimationStyleOneShot">
+    <CActorModel id="ZHBRDestructionOrb@@FinalImpactModel" parent="ModelAnimationStyleOneShot">
         <EditorCategories value=""/>
-        <On Terms="Effect.ZHBRPsiOrb@FinalSearch.Start" Send="Create"/>
-        <Model value="ZHBRPsiOrb@FinalImpactModel"/>
+        <On Terms="Effect.ZHBRDestructionOrb@FinalSearch.Start" Send="Create"/>
+        <Model value="ZHBRDestructionOrb@FinalImpactModel"/>
         <Scale value="0.500000"/>
     </CActorModel>
-    <CActorMissile id="ZHBRPsiOrb@Missile" parent="GenericAttackMissile" unitName="ZHBRPsiOrb@Missile">
+    <CActorMissile id="ZHBRDestructionOrb@Missile" parent="GenericAttackMissile" unitName="ZHBRDestructionOrb@Missile">
         <Macros value="GlobalLoopMacro"/>
+        <On Terms="UnitBirth.ZHBRDestructionOrb@Missile; ValidateCreationEffect ZHBRUpgradeToDestructionOrb@HasUpgrade" Send="SetTintColor 255,255,53"/>
     </CActorMissile>
-    <CActorRange id="ZHBRPsiOrb@Range" parent="RangeAbil" abil="ZHBRPsiOrb">
+    <CActorRange id="ZHBRDestructionOrb@Range" parent="RangeAbil" abil="ZHBRDestructionOrb">
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconScale value="0.010000,0.001250"/>
         <IconArcLength value="0.025000"/>
+        <IconTint value="255,255,128,128"/>
     </CActorRange>
-    <CActorQuad id="ZHBRPsiOrb@AttackGuide" parent="ZergGuideVisualQuadDown" abil="ZHBRPsiOrb">
+    <CActorQuad id="ZHBRDestructionOrb@AttackGuide" parent="ZergGuideVisualQuadDown" abil="ZHBRDestructionOrb">
         <HostSiteOps Ops="SOpAttachOrigin"/>
-        <LaunchActor value="ZHBRPsiOrb@GuideVisualQuadLaunch"/>
-        <CenterActor value="ZHBRPsiOrb@GuideVisualQuadCenter"/>
-        <ImpactActor value="ZHBRPsiOrb@GuideVisualQuadImpact"/>
+        <LaunchActor value="ZHBRDestructionOrb@GuideVisualQuadLaunch"/>
+        <CenterActor value="ZHBRDestructionOrb@GuideVisualQuadCenter"/>
+        <ImpactActor value="ZHBRDestructionOrb@GuideVisualQuadImpact"/>
         <Height value="12.000000"/>
         <Width value="2.000000"/>
     </CActorQuad>
-    <CActorSiteOpLocalOffset id="ZHBRPsiOrb@ImpactOffset">
+    <CActorSiteOpLocalOffset id="ZHBRDestructionOrb@ImpactOffset">
         <LocalOffset value="0.000000,0.000000,1.000000"/>
     </CActorSiteOpLocalOffset>
     <!--<CActorModel id="ZHBRPowerField@GroundModel" parent="ZCRModelAnimationStyleOneShot">-->
@@ -4717,6 +5900,7 @@
         <HostSiteOps Ops="SOpTargetPoint SOpShadowSyncGround"/>
         <ScopeBearingsTracking value="ForceOff"/>
         <Model value="ZHBRPowerField@GroundIndicator"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death 0 1.000000 AsDuration"/>
     </CActorModel>
     <CActorModel id="ZHBRPowerField@TargetDummy">
         <On Terms="Effect.ZHBRPowerField@SpawnUnitSet.Start; At Target" Send="Create"/>
@@ -4766,6 +5950,8 @@
         <On Terms="Behavior.ZHBRVoidChasm.Off" Send="Destroy"/>
         <On Terms="Behavior.ZHBRVoidChasmGround.On" Send="Create"/>
         <On Terms="Behavior.ZHBRVoidChasmGround.Off" Send="Destroy"/>
+        <On Terms="Behavior.ZHBRVoidChasmStructure.On" Send="Create"/>
+        <On Terms="Behavior.ZHBRVoidChasmStructure.Off" Send="Destroy"/>
         <Sound value="ZHBRVoidChasm@Impact"/>
     </CActorSound>
     <CActorSound id="VoidTendrilDeathGripSpawnBeamSound" parent="SoundOneShot">
@@ -4795,5 +5981,36 @@
         <On Terms="Behavior.ZHBRStructureTeleport@Controller.Off" Send="AnimBracketStop BSD"/>
         <Model value="ZHBRStructureTeleport@TPModelLow"/>
     </CActorModel>
-    <CActorMissile id="ZHBRWarriorWeapon@AttackMissileUpgraded" parent="GenericAttackMissile" unitName="ZHBRWarriorWeapon@MissileUpgraded"/>
+    <CActorMissile id="ZHBRWarriorWeapon@AttackMissileUpgraded" parent="GenericAttackMissile" unitName="ZHBRWarriorWeapon@MissileUpgraded">
+        <On Terms="UnitBirth.ZHBRWarriorWeapon@MissileUpgraded" Send="SetTintColor 255,128,0"/>
+        <On Terms="UnitBirth.ZHBRWarriorWeapon@MissileUpgraded" Send="SetScale 1.400000"/>
+    </CActorMissile>
+    <CActorModel id="ZHBRWormhole@TeleportOriginModel" parent="ModelAnimationStyleOneShot">
+        <InheritType value="OneShot"/>
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <EditorCategories value=""/>
+        <On Terms="Effect.ZHBRWormhole@Teleport.Start; At Source" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor {30,120,255 5.000000} 0.200000"/>
+        <Host Subject="_Selectable"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+        <HostSiteOps Ops="SOpOriginPoint SOpMoveUpByDot5 SOpMoveUpByDot5 SOpMoveUpByDot2"/>
+    </CActorModel>
+    <CActorSound id="ZHBRWormhole@TeleportSound" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.ZHBRWormhole@Teleport.Start; At Source" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachTarget"/>
+        <Sound value="ZHBRWormhole@Teleport"/>
+    </CActorSound>
+    <CActorModel id="ZHBRWormhole@TeleportStopModel" parent="ModelAnimationStyleOneShot">
+        <InheritType value="OneShot"/>
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <EditorCategories value=""/>
+        <On Terms="Effect.ZHBRWormhole@Teleport.Stop; At Source" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetTintColor {255,255,255 5.000000}"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachTarget"/>
+    </CActorModel>
 </Catalog>

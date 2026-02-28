@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAlert id="CalldownLaunch_ProtVoidForces" parent="CalldownLaunch">
+        <Display index="Self" value="1"/>
+        <Display index="Enemy" value="0"/>
+        <QueueTime value="10.000000"/>
+        <Sound value="Alert_ProtossCalldownLaunch"/>
+    </CAlert>
+</Catalog>

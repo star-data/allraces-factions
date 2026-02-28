@@ -660,7 +660,7 @@
       <Height val="#UnitStatusBarHeight"/>
       <CollapseLayout val="True"/>
       <MinValue val="0"/>
-      <MaxValue val="12"/>
+      <MaxValue val="8"/>
       <Value val="0"/>
       <Frame type="Image" name="TopLine" template="UnitStatus/TopLineTemplate"/>
       <Frame type="Frame" name="FillImageContainer">
@@ -673,7 +673,7 @@
           <SnapToDevicePixels val="True"/>
         </Frame>
       </Frame>
-      <Frame type="Frame" name="Segmentator" template="UnitStatus/UnitStatusSegmentator12">
+      <Frame type="Frame" name="Segmentator" template="UnitStatus/UnitStatusSegmentator8">
         <Anchor relative="$parent"/>
       </Frame>
     </Frame>
@@ -1002,15 +1002,48 @@
       </Frame>
     </Frame>
 
+    <!-- Phantasm -->
+    <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridPhantasm" template="UnitStatus/UnitStatusFrameCustomNoEnergyTemplate">
+
+      <Frame type="ProgressBar" name="CustomHealthBar">
+        <Alpha val="0"/>
+        <Visible val="False"/>
+      </Frame>
+      <Frame type="ProgressBar" name="CustomShieldsBar">
+        <Alpha val="0"/>
+        <Visible val="False"/>
+      </Frame>
+      <Frame type="Frame" name="HealthBarSegmentator">
+        <Alpha val="0"/>
+      </Frame>
+      <Frame type="UnitStatusDurationBar" name="DurationBar" template="UnitStatus/UnitStatusDurationBarTemplate">
+        <Anchor side="Top" relative="$parent/HealthBar" pos="Min" offset="0"/>
+        <Anchor side="Bottom" relative="$parent/HealthBar" pos="Min" offset="5"/>
+        <Anchor side="Right" relative="$parent/HealthBar" pos="Min" offset="42"/>
+        <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="34"/>
+        <Height val="4"/>
+        <Frame type="Image" name="TopLine">
+          <Alpha val="0"/>
+        </Frame>
+        <Width val="45"/>
+      </Frame>
+      <Frame type="Image" name="BackgroundBorder">
+        <Anchor side="Top" relative="$parent/DurationBar" pos="Min" offset="-5"/>
+        <Anchor side="Left" relative="$parent/DurationBar" pos="Min" offset="-5"/>
+        <Anchor side="Right" relative="$parent/DurationBar" pos="Max" offset="5"/>
+        <Anchor side="Bottom" relative="$parent/DurationBar" pos="Max" offset="4"/>
+      </Frame>
+    </Frame>
+
     <!-- Chimera -->
     <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridChimera" template="UnitStatus/UnitStatusFrameCustomNoEnergyTemplate">
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="50"/>
+        <Text val="67"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-71"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator3">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
     </Frame>
@@ -1031,12 +1064,12 @@
     <!-- Flayer -->
     <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridFlayer" template="UnitStatus/UnitStatusFrameCustomNoEnergyTemplate">
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="50"/>
+        <Text val="67"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-70"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator3">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
     </Frame>
@@ -1047,15 +1080,15 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="90"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="74"/>
+        <Text val="65"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-55"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator2">
         <Anchor relative="$parent/EnergyBar"/>
       </Frame>
     </Frame>
@@ -1086,12 +1119,12 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="90"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="74"/>
+        <Text val="103"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-78"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator7">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
       <!--<Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator2">
@@ -1105,15 +1138,34 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="90"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="74"/>
+        <Text val="88"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-72"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator10">
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator7">
+        <Anchor relative="$parent/EnergyBar"/>
+      </Frame>
+    </Frame>
+    
+    <!-- StriderCrawler -->
+    <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridStriderCrawler" template="UnitStatus/UnitStatusFrameCustomEnergyTemplate">
+      <Frame type="Frame" name="AttachPointFrame">
+        <Anchor side="Left" relative="$parent" pos="Min" offset="90"/>
+      </Frame>
+      <Frame type="Label" name="HealthBarWidthFrame">
+        <Text val="66"/>
+      </Frame>
+      <Frame type="UnitStatusHealthBar" name="HealthBar">
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-55"/>
+      </Frame>
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator3">
+        <Anchor relative="$parent/HealthBar"/>
+      </Frame>
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator7">
         <Anchor relative="$parent/EnergyBar"/>
       </Frame>
     </Frame>
@@ -1124,13 +1176,16 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="90"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="74"/>
+        <Text val="88"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-71"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
         <Anchor relative="$parent/HealthBar"/>
+      </Frame>
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator2">
+        <Anchor relative="$parent/EnergyBar"/>
       </Frame>
     </Frame>
     
@@ -1140,17 +1195,17 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="105"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="100"/>
+        <Text val="150"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-80"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator9">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <!-- <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator1">
         <Anchor relative="$parent/EnergyBar"/>
-      </Frame>
+      </Frame> -->
       <Frame type="Image" name="NetworkFlash">
         <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="-7" />
         <Anchor side="Right" relative="$parent/HealthBar" pos="Max" offset="7" />
@@ -1163,15 +1218,15 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="105"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="100"/>
+        <Text val="150"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-80"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator12">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator2">
         <Anchor relative="$parent/EnergyBar"/>
       </Frame>
       <Frame type="Image" name="NetworkFlash">
@@ -1184,6 +1239,7 @@
     <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridDominator" template="UnitStatus/UnitStatusFrameCustomEnergyTemplate">
       <Frame type="Frame" name="AttachPointFrame">
         <Anchor side="Left" relative="$parent" pos="Min" offset="105"/>
+        <Anchor side="Top" relative="$parent" pos="Min" offset="25"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
         <Text val="100"/>
@@ -1194,9 +1250,27 @@
       <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+
+      <Frame type="Frame" name="EnergyBarSegmentator">
         <Anchor relative="$parent/EnergyBar"/>
       </Frame>
+
+      <!-- <Frame type="UnitStatusValidatorAnimElement" name="DominatorAdvancedOrNot">
+        <Anchor relative="$parent"/>
+        <Validator val="ZHBRUpgradeToAdvancedDominator@HasUpgrade"/>
+        <StateGroup name="DominatorAdvancedOrNot">
+         <State name="DominatorAdvanced">
+           <When type="AnimationState" UnitStatusValidatorState="ZHBRUpgradeToAdvancedDominator@HasUpgrade"/>
+           <Action type="PlaySound" sound="Assets\Music\ProtossSC2-Victory.ogg"/>
+           <Action type="ApplyTemplate" frame="$parent/EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator2"/>
+         </State>
+       </StateGroup>
+      </Frame> -->
+
+      <!-- <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator1">
+        <Anchor relative="$parent/EnergyBar"/>
+      </Frame> -->
+      
       <Frame type="Image" name="NetworkFlash">
         <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="-7" />
         <Anchor side="Right" relative="$parent/HealthBar" pos="Max" offset="7" />
@@ -1207,17 +1281,18 @@
     <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridDominatorAdvanced" template="UnitStatus/UnitStatusFrameCustomEnergyTemplate">
       <Frame type="Frame" name="AttachPointFrame">
         <Anchor side="Left" relative="$parent" pos="Min" offset="105"/>
+        <Anchor side="Top" relative="$parent" pos="Min" offset="25"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="100"/>
+        <Text val="120"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-70"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator8">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator2">
         <Anchor relative="$parent/EnergyBar"/>
       </Frame>
       <Frame type="Image" name="NetworkFlash">
@@ -1244,9 +1319,9 @@
       <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <!-- <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
         <Anchor relative="$parent/EnergyBar"/>
-      </Frame>
+      </Frame> -->
       <Frame type="Image" name="NetworkFlash">
         <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="-7" />
         <Anchor side="Right" relative="$parent/HealthBar" pos="Max" offset="7" />
@@ -1265,9 +1340,9 @@
       <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <!-- <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator1">
         <Anchor relative="$parent/EnergyBar"/>
-      </Frame>
+      </Frame> -->
       <Frame type="Image" name="NetworkFlash">
         <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="-7" />
         <Anchor side="Right" relative="$parent/HealthBar" pos="Max" offset="7" />
@@ -1277,12 +1352,12 @@
     <!-- Psyon -->
     <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridPsyon" template="UnitStatus/UnitStatusFrameCustomNoEnergyTemplate">
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="74"/>
+        <Text val="88"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-75"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-80"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
       <Frame type="Image" name="NetworkFlash">
@@ -1318,10 +1393,10 @@
     <!-- Conductor -->
     <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridConductor" template="UnitStatus/UnitStatusFrameCustomEnergyTemplate">
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="74"/>
+        <Text val="100"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-75"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-85"/>
       </Frame>
       <Frame type="ProgressBar" name="CustomEnergyBar">
         <Frame type="Frame" name="FillImageContainer">
@@ -1330,10 +1405,10 @@
           </Frame>
         </Frame>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator3">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator8">
         <Anchor relative="$parent/EnergyBar"/>
       </Frame>
       <Frame type="Image" name="NetworkFlash">
@@ -1344,16 +1419,19 @@
     
     <!-- Horror -->
     <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridHorror" template="UnitStatus/UnitStatusFrameCustomEnergyTemplate">
+      <Frame type="Frame" name="AttachPointFrame">
+        <Anchor side="Top" relative="$parent" pos="Min" offset="35"/>
+      </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="74"/>
+        <Text val="104"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-75"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-85"/>
       </Frame>
       <Frame type="UnitStatusEnergyBar" name="EnergyBar">
         <SegmentValue val="20"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator7">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
       <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator5">
@@ -1375,7 +1453,30 @@
       <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator12">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator4">
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator10">
+        <Anchor relative="$parent/EnergyBar"/>
+      </Frame>
+      <Frame type="Image" name="NetworkFlash">
+        <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="-10" />
+        <Anchor side="Right" relative="$parent/HealthBar" pos="Max" offset="10" />
+      </Frame>
+    </Frame>
+
+    <!-- Nemesis Advanced -->
+    <Frame type="UnitStatusFrame" name="UnitStatusFrame_HybridNemesisAdvanced" template="UnitStatus/UnitStatusFrameCustomEnergyTemplate">
+      <Frame type="Frame" name="AttachPointFrame">
+        <Anchor side="Left" relative="$parent" pos="Min" offset="90"/>
+      </Frame>
+      <Frame type="Label" name="HealthBarWidthFrame">
+        <Text val="150"/>
+      </Frame>
+      <Frame type="UnitStatusHealthBar" name="HealthBar">
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-100"/>
+      </Frame>
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator16">
+        <Anchor relative="$parent/HealthBar"/>
+      </Frame>
+      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator20">
         <Anchor relative="$parent/EnergyBar"/>
       </Frame>
       <Frame type="Image" name="NetworkFlash">
@@ -1396,7 +1497,7 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="112"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="200"/>
+        <Text val="220"/>
       </Frame>
       <Frame type="ProgressBar" name="CustomEnergyBar">
         <Frame type="Frame" name="FillImageContainer">
@@ -1406,7 +1507,7 @@
         </Frame>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-100"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-110"/>
       </Frame>
       <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator18">
         <Anchor relative="$parent/HealthBar"/>
@@ -1579,7 +1680,7 @@
         <Anchor side="Left" relative="$parent" pos="Min" offset="75"/>
       </Frame>
       <Frame type="Label" name="HealthBarWidthFrame">
-        <Text val="100"/>
+        <Text val="120"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
         <Anchor side="Left" relative="$parent" pos="Mid" offset="-100"/>
@@ -1611,9 +1712,9 @@
       <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
-      <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
+      <!-- <Frame type="Frame" name="EnergyBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
         <Anchor relative="$parent/EnergyBar"/>
-      </Frame>
+      </Frame> -->
       <Frame type="Image" name="NetworkFlash">
         <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="-7" />
         <Anchor side="Right" relative="$parent/HealthBar" pos="Max" offset="7" />
@@ -1651,7 +1752,7 @@
         <Text val="150"/>
       </Frame>
       <Frame type="UnitStatusHealthBar" name="HealthBar">
-        <Anchor side="Left" relative="$parent" pos="Mid" offset="-100"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-90"/>
       </Frame>
       <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator12">
         <Anchor relative="$parent/HealthBar"/>
@@ -1758,7 +1859,7 @@
       <Frame type="UnitStatusHealthBar" name="HealthBar">
         <Anchor side="Left" relative="$parent" pos="Mid" offset="-60"/>
       </Frame>
-      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator8">
+      <Frame type="Frame" name="HealthBarSegmentator" template="UnitStatus/UnitStatusSegmentator6">
         <Anchor relative="$parent/HealthBar"/>
       </Frame>
       <Frame type="Image" name="NetworkFlash">

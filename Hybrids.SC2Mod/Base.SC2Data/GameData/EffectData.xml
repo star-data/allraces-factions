@@ -1,9 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectSet id="FeedbackSet">
+        <ValidatorArray value="ZHBRCommon@NotTemple"/>
+    </CEffectSet>
+    <CEffectSwitch id="HybridConsructAGWeapon@SwitchDistance">
+        <EditorCategories value="Race:ZHBR"/>
+        <CaseArray Validator="DistanceMoreThen7" Effect="ZHBRConstructMarker@ApplyBehavior"/>
+        <CaseDefault value="ZHBRConstructCancelMarker"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="HybridMicroDisableAbility@ApplyBehaviorStasis">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="HybridMicroDisableAbilityStasis"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="HybridMinionVoidBonusWorkInVoidField">
+        <ValidatorArray index="0" value="ZHBRVoid@TargetIsConnectedPermament"/>
+        <EditorCategories value="Race:ZHBR"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="HybridPsyon@FragmentumCorrosionPermamentDamage">
+        <EditorCategories value="Race:ZHBR"/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectSwitch id="HybridStriderWeapon@SwitchTargetArmor">
+        <EditorCategories value="Race:ZHBR"/>
+        <CaseArray Validator="HybridTargetIsArmored" Effect="ZHBRStriderWeapon@DamageByArmor"/>
+        <CaseDefault value="ZHBRStriderWeapon@Damage"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="HybridTemple@VoidImmunitySwitch">
+        <EditorCategories value="Race:ZHBR"/>
+        <CaseArray Validator="ZHBRCommon@IsBehemoth" Effect="ZHBRVoidImmunity@Behemoth"/>
+        <CaseArray Validator="ZHBRCommon@IsChimera" Effect="ZHBRVoidImmunity@Chimera"/>
+        <CaseArray Validator="ZHBRCommon@IsConductor" Effect="ZHBRVoidImmunity@Conductor"/>
+        <CaseArray Validator="ZHBRCommon@IsDominator" Effect="ZHBRVoidImmunity@Dominator"/>
+        <CaseArray Validator="ZHBRCommon@IsDreadnok" Effect="ZHBRVoidImmunity@Dreadnok"/>
+        <CaseArray Validator="ZHBRCommon@IsEnergator" Effect="ZHBRVoidImmunity@Energator"/>
+        <CaseArray Validator="ZHBRCommon@IsFlayer" Effect="ZHBRVoidImmunity@Flayer"/>
+        <CaseArray Validator="ZHBRCommon@IsMinion" Effect="ZHBRVoidImmunity@Minion"/>
+        <CaseArray Validator="ZHBRCommon@IsNavigator" Effect="ZHBRVoidImmunity@Navigator"/>
+        <CaseArray Validator="ZHBRCommon@IsNemesis" Effect="ZHBRVoidImmunity@Nemesis"/>
+        <CaseArray Validator="ZHBRCommon@IsPollinator" Effect="ZHBRVoidImmunity@Pollinator"/>
+        <CaseArray Validator="ZHBRCommon@IsProteus" Effect="ZHBRVoidImmunity@Proteus"/>
+        <CaseArray Validator="ZHBRCommon@IsPsyon" Effect="ZHBRVoidImmunity@Psyon"/>
+        <CaseArray Validator="ZHBRCommon@IsSentinel" Effect="ZHBRVoidImmunity@Sentinel"/>
+        <CaseArray Validator="ZHBRCommon@IsShapeshifter" Effect="ZHBRVoidImmunity@Shapeshifter"/>
+        <CaseArray Validator="ZHBRCommon@IsSpirit" Effect="ZHBRVoidImmunity@Spirit"/>
+        <CaseArray Validator="ZHBRCommon@IsStrider" Effect="ZHBRVoidImmunity@Strider"/>
+        <CaseArray Validator="ZHBRCommon@IsStriderCrawler" Effect="ZHBRVoidImmunity@Crawler"/>
+        <CaseArray Validator="ZHBRCommon@IsWarbringer" Effect="ZHBRVoidImmunity@Warbringer"/>
+        <CaseArray Validator="ZHBRCommon@IsWarrior" Effect="ZHBRVoidImmunity@Warrior"/>
+        <CaseArray Validator="ZHBRCommon@IsAmplifier" Effect="ZHBRVoidImmunity@Amplifier"/>
+        <CaseArray Validator="ZHBRCommon@IsCapsule" Effect="ZHBRVoidImmunity@Capsule"/>
+        <CaseArray Validator="ZHBRCommon@IsConstructAntiAir" Effect="ZHBRVoidImmunity@ConstructAA"/>
+        <CaseArray Validator="ZHBRCommon@IsConstructAntiGround" Effect="ZHBRVoidImmunity@ConstructAG"/>
+        <CaseArray Validator="ZHBRCommon@IsCrypt" Effect="ZHBRVoidImmunity@Crypt"/>
+        <CaseArray Validator="ZHBRCommon@IsDeformer" Effect="ZHBRVoidImmunity@Deformer"/>
+        <CaseArray Validator="ZHBRCommon@IsHarvester" Effect="ZHBRVoidImmunity@Harvester"/>
+        <CaseArray Validator="ZHBRCommon@IsHarvesterRich" Effect="ZHBRVoidImmunity@HarvesterRich"/>
+        <CaseArray Validator="ZHBRCommon@IsHoldingCell" Effect="ZHBRVoidImmunity@HoldingCell"/>
+        <CaseArray Validator="ZHBRCommon@IsIonicCrystal" Effect="ZHBRVoidImmunity@IonicCrystal"/>
+        <CaseArray Validator="ZHBRCommon@IsIonicCrystalMoveable" Effect="ZHBRVoidImmunity@IonicCrystalMoveable"/>
+        <CaseArray Validator="ZHBRCommon@IsKeystone" Effect="ZHBRVoidImmunity@Keystone"/>
+        <CaseArray Validator="ZHBRCommon@IsProjector" Effect="ZHBRVoidImmunity@Projector"/>
+        <CaseArray Validator="ZHBRCommon@IsStasisCell" Effect="ZHBRVoidImmunity@StasisCell"/>
+        <CaseArray Validator="ZHBRCommon@IsTemple" Effect="ZHBRVoidImmunity@Temple"/>
+        <CaseArray Validator="ZHBRCommon@IsTomb" Effect="ZHBRVoidImmunity@Tomb"/>
+        <CaseArray Validator="ZHBRCommon@IsVespeneConcentrator" Effect="ZHBRVoidImmunity@VespeneConcentrator"/>
+        <CaseArray Validator="ZHBRCommon@IsVoidForge" Effect="ZHBRVoidImmunity@VoidForge"/>
+        <CaseArray Validator="ZHBRCommon@IsVoidRift" Effect="ZHBRVoidImmunity@VoidRift"/>
+    </CEffectSwitch>
+    <CEffectIssueOrder id="HybridTempleVoidImmunityIssueOrder">
+        <ValidatorArray value="ZHBRTempleVoidImmunity@CasterHasVoidImmunityHasMarkerIssue"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Abil value="ZHBRVoidImmunity"/>
+        <Target Effect="ZHBRVoidImmunityIssuePersistentSetFewEffect" Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="HybridTemplePermanentPowerIssueOrder">
+        <ValidatorArray value="ZHBRTempleVoidImmunity@CasterHasVoidImmunityHasMarkerIssue"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Abil value="ZHBRPermanentPower"/>
+        <Target Effect="ZHBRPermanentPowerIssuePersistentSetFewEffect" Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="HybridVoidChazmBigForceFieldTimedLife">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="HybridBigForceFieldFateAndBlock"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="15"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="HybridVoidChazmBigForceField">
+        <ValidatorArray value="CliffLevelGE1"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnOwner Value="Neutral"/>
+        <SpawnEffect value="HybridVoidChazmBigForceFieldTimedLife"/>
+        <SpawnUnit value="HybridVoidChazmBigForceField"/>
+        <SpawnRange value="0"/>
+    </CEffectCreateUnit>
     <CEffectEnumArea id="HybridDeformer@DestructionAriseSearch">
         <EditorCategories value="Race:ZHBR"/>
         <SearchFilters value="-;Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="6" Effect="HybridDeformer@DestructionAriseSet"/>
+        <AreaArray Radius="10" Effect="HybridDeformer@DestructionAriseSet"/>
+        <ValidatorArray value="IsNotConstructing"/>
     </CEffectEnumArea>
     <CEffectModifyUnit id="HybridDeformer@DestructionAriseHealImpact">
         <EditorCategories value=""/>
@@ -20,10 +119,11 @@
     </CEffectModifyUnit>
     <CEffectSet id="HybridDeformer@DestructionAriseSet">
         <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior"/>
         <EffectArray value="HybridDeformer@DestructionAriseUDTotalVital"/>
-        <EffectArray value="HybridDeformer@DestructionAriseUDLifetoRestore"/>
         <EffectArray value="HybridDeformer@DestructionAriseUDShieldtoRestore"/>
         <EffectArray value="HybridDeformer@DestructionAriseHealImpact"/>
+        <ValidatorArray value="ZHBRCommon@TargetIsVoidForcesRace"/>
     </CEffectSet>
     <CEffectUserData id="HybridDeformer@DestructionAriseUDLifetoRestore">
         <EditorCategories value=""/>
@@ -45,7 +145,7 @@
         <EditorCategories value=""/>
         <Key value="DestructionAriseTotalVital"/>
         <Operation value="Set"/>
-        <Amount value="50"/>
+        <Amount value="0"/>
     </CEffectUserData>
     <CEffectDamage id="HybridDominatorConfusionDamage">
         <EditorCategories value="Race:ZHBR"/>
@@ -59,22 +159,19 @@
         <EditorCategories value="Race:ZHBR"/>
         <AINotifyFlags index="HurtEnemy" value="1"/>
         <SearchFilters value="Structure;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="9" Effect="HybridPsyon@FragmentumCorrosionSet"/>
+        <AreaArray Radius="3.5" Effect="HybridPsyon@FragmentumCorrosionAB"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
     <CEffectSet id="HybridPsyon@FragmentumCorrosionSet">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="HybridPsyon@FragmentumCorrosionDamage"/>
-        <EffectArray value="HybridPsyon@FragmentumCorrosionAB"/>
+        <EffectArray value="HybridPsyon@FragmentumCorrosionSearch"/>
     </CEffectSet>
     <CEffectEnumArea id="HybridSpiritRevealingSacrifice@SearchArea">
         <EditorCategories value="Race:ZHBR"/>
-        <ResponseFlags index="Acquire" value="1"/>
-        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="4" Effect="ZHBRRevealingSacrifice@ApplyBehavior"/>
-        <RevealerParams>
-            <RevealFlags index="Detect" value="1"/>
-        </RevealerParams>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Dead,Hidden"/>
+        <AreaArray Radius="11" Effect="ZHBRRevealingSacrificeTargetDetection@ApplyBehavior"/>
+        <ValidatorArray value="NotHidden"/>
     </CEffectEnumArea>
     <CEffectLaunchMissile id="HybridSpiritSacificingRevealLaunch">
         <EditorCategories value="Race:ZHBR"/>
@@ -112,38 +209,376 @@
     </CEffectApplyBehavior>
     <CEffectSwitch id="HybridStriderWeapon@SwitchLaunch">
         <EditorCategories value="Race:ZHBR"/>
-        <CaseArray Validator="ZHBREvaporator@CasterHasRequiredEnergy" Effect="ZHBRStriderWeapon@LMEvaporator"/>
+        <CaseArray Validator="ZHBRStriderWeaponSwitch@HasEnergy" Effect="ZHBREvaporator@CastSet"/>
         <CaseDefault value="ZHBRStriderWeapon@LM"/>
     </CEffectSwitch>
+    <CEffectSwitch id="HybridSpirit@SwitchRevealingSacrifice">
+        <EditorCategories value="Race:ZHBR"/>
+        <CaseArray Validator="TargetIsAllyorPlayer" Effect="ZHBRRevealingSacrificeForSelf@ApplyBehavior"/>
+        <CaseDefault value="ZHBRRevealingSacrifice@ApplyBehavior"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="HybridConsructAAWeapon@SwitchDistance">
+        <EditorCategories value="Race:ZHBR"/>
+        <CaseArray Validator="DistanceMoreThen7" Effect="ZHBRConstructMarker@ApplyBehavior"/>
+        <CaseDefault value="ZHBRConstructCancelMarker"/>
+    </CEffectSwitch>
     <CEffectSet id="HybridWarbringerWeaponMaceStrikeSearchSet">
-        <EditorCategories value=""/>
+        <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRWarbringerWeaponMaceStrike@Search"/>
         <EffectArray value="ZHBRWarbringerWeaponMaceStrike@SearchMedium"/>
         <EffectArray value="ZHBRWarbringerWeaponMaceStrike@SearchOuter"/>
         <TargetLocationType value="Point"/>
     </CEffectSet>
     <CEffectApplyBehavior id="HybridPollinatorVoidToxin">
-        <ValidatorArray index="0" removed="1"/>
+        <ValidatorArray index="0" value="IsBiological"/>
         <EditorCategories value="Race:ZHBR"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="HybridPsyon@FragmentumCorrosionDamage">
         <EditorCategories value="Race:ZHBR"/>
-        <ResponseFlags index="Acquire" value="1"/>
-        <ResponseFlags index="Flee" value="1"/>
-        <ImpactLocation Value="TargetUnit"/>
-        <Visibility value="Visible"/>
-        <Flags index="Notification" value="1"/>
-        <Amount value="4"/>
-        <SearchFlags index="CallForHelp" value="1"/>
+        <ArmorReduction value="1"/>
+        <Amount value="14"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="HybridPsyon@FragmentumCorrosionLaunchMissile">
         <EditorCategories value="Race:ZHBR"/>
-        <ImpactEffect value="HybridPsyon@FragmentumCorrosionSearch"/>
+        <ImpactEffect value="HybridPsyon@FragmentumCorrosionSet"/>
         <AmmoUnit value="HybridPsyon@FragmentumCorrosionWeapon"/>
     </CEffectLaunchMissile>
-    <CEffectModifyUnit id="ZCRCasterAssignRally">
-        <RallyUnit Value="Caster"/>
+    <CEffectIssueOrder id="HybridPsionicTornadoTargettedIssueOrder">
         <EditorCategories value="Race:ZHBR"/>
+        <Abil value="move"/>
+        <Target Effect="ZHBRPsionicTornado@CreateUnit" Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="HybridMicroDisableAbility@ApplyBehaviorTimeStop">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="HybridMicroDisableAbilityTimeStop"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="HybridBigForceFieldTimedLifeFate">
+        <EditorCategories value="Race:ZHBR"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+        <Death value="Timeout"/>
+    </CEffectDamage>
+    <CEffectApplyForce id="HybridShapeshifterVoidChasm@Push">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Amount value="1"/>
+    </CEffectApplyForce>
+    <CEffectCreateHealer id="ShieldBatteryRechargeEx5">
+        <ValidatorArray value="ZHBRCommon@TargetIsNotVoidForcesRace"/>
+    </CEffectCreateHealer>
+    <CEffectApplyBehavior id="ZHBRDeepTunnel@TooltipAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRDeepTunnel@Tooltip"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBRDeepTunnel@TooltipRB">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRDeepTunnel@Tooltip"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRDreadnokWeapon@ReduceEnergyAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDreadnokWeapon@ReduceEnergyTooltip"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBREnergation@RestoreDeformerRemoveBoostBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRDeformer@RechargeUp"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRFlayerFury@TooltipAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRFlayerFury@Tooltip"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBRFlayerFury@TooltipRB">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRFlayerFury@Tooltip"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRInterdimensionalOverload@TooltipAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRInterdimensionalOverload@Tooltip"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRShapeshifterVoidChasm@DamageSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRShapeshifterVoidChasm@Damage"/>
+        <EffectArray value="ZHBRShapeshifterVoidChasm@DamageShields"/>
+    </CEffectSet>
+    <CEffectDamage id="ZHBRShapeshifterVoidChasm@DamageShields" parent="DU_WEAP_MISSILE">
+        <ValidatorArray value="ZHBRVoidChasm@UnitCanHaveShields"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <ArmorReduction value="0"/>
+        <Amount value="0">
+            <AccumulatorArray value="ZHBRVoidChasm@MaxShieldsFraction"/>
+        </Amount>
+    </CEffectDamage>
+    <CEffectSet id="ZHBRSpiritCancelSiegeMod@Set">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRSpiritCancelSiegeMod"/>
+        <EffectArray value="ZHBRVoidPhantom@CancelAB"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRVoidBarrier@ApplyBehaviorDamageFractionLogic">
+        <ValidatorArray index="0" value="ZHBRCommon@TargetIsVoidForcesRace"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidBarrier@DamageFractionLogic"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="ZHBRVoidBarrier@DamageFraction">
+        <EditorCategories value="Race:ZHBR"/>
+        <DamageModifierSource Value="Source"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <Amount value="0">
+            <AccumulatorArray value="ZHBRVoidBarrier@InheritEffectDamage"/>
+        </Amount>
+        <Fraction value="0.2"/>
+    </CEffectDamage>
+    <CEffectSet id="ZHBRVoidBarrier@Set">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRVoidBarrier@ApplyBehavior"/>
+        <EffectArray value="ZHBRVoidBarrier@ApplyBehaviorDamageFractionLogic"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRVoidPhantom@CasterAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRVoidPhantom@Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBRVoidPhantom@PhantasmCancelCasterBehaviorRB">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRVoidPhantom@Caster"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRConstructMarkerSwitchBeam@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRConstructMarkerSwitchBeam"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ZHBRShapeshifterVoidChasm@SearchPush">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="-;Self,Structure,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="HybridShapeshifterVoidChasm@Push"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="ZHBRVoidBarrier@AttackReact">
+        <EditorCategories value="Race:ZHBR"/>
+        <ExpireDelay value="0.1"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ZHBRVoidBarrier@ApplyBehaviorMarker">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidBarrier@Marker"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRDeformerBeamColor@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRTDeformer@BeamColor"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="ZHBRConstructReloadWeaponAG">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnit Value="Caster"/>
+        <Weapon Weapon="ZHBRConstructWeaponAntiGround" CooldownOperation="Set" CooldownFraction="0.5"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="ZHBRConstructWeaponAntiGround@DamageLow" parent="DU_WEAP">
+        <EditorCategories value="Race:ZHBR"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSwitch id="HybridDominatorDestructionOrbSwitch">
+        <EditorCategories value="Race:ZHBR"/>
+        <CaseArray Validator="HybridDominatorClassAbilityConditionTotal" Effect="ZHBRDominatorDisableAbilityMini@ApplyBehavior"/>
+        <CaseDefault value="ZHBRDominatorDisableAbility@ApplyBehavior"/>
+    </CEffectSwitch>
+    <CEffectSet id="ZHBRCrawlerPermanentPower@CastSet">
+        <ValidatorArray value="ZHBRVoid@CasterHasPowerUserBehaviorPermanentNetwork"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRPermanentPower@ApplyPermanentPowerUserBehavior"/>
+        <EffectArray value="ZHBRPermanentPower@ApplyPermanentPowerUserBehaviorNetwork"/>
+        <EffectArray value="ZHBRPermanentPower@RemovePowerUserDefaultBehavior"/>
+        <EffectArray value="ZHBRPermanentPower@RemovePowerUserDefaultBehaviorNetwork"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="ZHBRDeformerDestructionAriseIncreaseShields">
+        <ValidatorArray value="ZHBRVoidImmunity@TargerHasVoidImmunityBuff"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <VitalArray index="Shields">
+            <Change value="10"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="ZHBRDominatorDisableAbilityMini@ApplyBehavior">
+        <ValidatorArray index="0" value="NotStructureTarget"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDominatorDestructionOrbDisableAbilityMini"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="ZHBRDrednokDevastatingStrikeReduceEnergy">
+        <ValidatorArray value="TargetIsEnemyOrNeutral"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <VitalArray index="Energy">
+            <Change value="-35"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="ZHBREnergatorApplyVoidTrance">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBREnergator@VoidTrance"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRNemesisLaunchAttack">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRNemesisWeapon@PeriodicSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRNemesisTimeAttack"/>
+        <EffectArray value="ZHBRNemesisWeapon@DamageSet"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="ZHBRNemesisWeapon@Persistent">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <ExpireEffect value="ZHBRNemesisLaunchAttack"/>
+        <PeriodCount value="11"/>
+        <PeriodicValidator value="ZHBRNemesisWeapon@PeriodicValidatorCombine"/>
+        <PeriodicEffectArray value=""/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="ZHBRShapeshifterVoidChasm@Damage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:ZHBR"/>
+        <ArmorReduction value="0"/>
+        <Amount value="0">
+            <AccumulatorArray value="ZHBRVoidChasm@MaxLifeFraction"/>
+        </Amount>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ZHBRSiegeModeApplyStopMove">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRSiegeModeStopMove"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBREnergatorCancelVoidTrance">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBREnergator@VoidTrance"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="ZHBRSiegeModeCancelStopMove">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRSiegeModeStopMove"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRPounce@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRPounce"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRPounce@Set">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="GenericRemoveCaster"/>
+        <EffectArray value="HybridSpirit@SwitchRevealingSacrifice"/>
+        <EffectArray value="HybridSpiritSacificingRevealLaunch"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRDeactivateEvaporator@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDeactivateEvaporator"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRDeactivateEvaporator@Set">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="GenericRemoveCaster"/>
+        <EffectArray value="HybridSpirit@SwitchRevealingSacrifice"/>
+        <EffectArray value="HybridSpiritSacificingRevealLaunch"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRChimera@ApplyPounceBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRChimera@Pounce"/>
+        <ValidatorArray index="0" value="ZHBRDeepTunnel@IsNotCasting"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRPsionicTornado@ApplyTornadoBehaviorMaxDistance">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRPsionicTornado@MaxDistance"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRSetConstructSwitchBeamSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRConstructWeaponAntiGround@DamageLow"/>
+        <EffectArray value="ZHBRConstructMarkerSwitchBeam@ApplyBehavior"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRNavigatorApplyStationarityMod">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRNavigatorStationarity"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBRNavigatorCancelStationarityMod">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRNavigatorStationarity"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRStriderApplyActivateEvaporatorUI">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRActivateEvaporatorUI"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRSpiritApplySiegeMode">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRSpiritSiegeMode"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBRSpiritCancelSiegeMod">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRSpiritSiegeMode"/>
+    </CEffectRemoveBehavior>
+    <CEffectModifyUnit id="ZHBRDeformerDestructionAriseReduceShields">
+        <ValidatorArray value="ZHBRVoidImmunity@TargerHasVoidImmunityBuff"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <VitalArray index="Shields">
+            <Change value="-10"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="ZHBRDomination@ApplyDisableSecondApply">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDominationDisableSecondApply"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRDomination@ApplyBuff">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDomination"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRDomination@ImpactSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRDomination@ApplyBuff"/>
+    </CEffectSet>
+    <CEffectEnumArea id="ZHBRDomination@SearchArea">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="2" Effect="ZHBRDomination@ImpactSet"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="ZHBRDomination@ApplyBehaviorUnitUp">
+        <ValidatorArray index="0" value="ZHBRDominatorHasNotDisableSecondApply"/>
+        <ValidatorArray value="ZHBRDominatorHasNotBehaviorDomination"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDominatorDomination"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRStriderCrawler@InitialSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRStriderCrawler@CopyOrders"/>
+        <EffectArray value="ZHBRCrawlerPermanentPower@CastSet"/>
+        <EffectArray value="ZHBRCrawlerVoidImmunity@ApplyBuff"/>
+    </CEffectSet>
+    <CEffectDamage id="ZHBRStriderWeapon@DamageByArmor" parent="DU_WEAP">
+        <EditorCategories value="Race:ZHBR"/>
+        <Kind value="Ranged"/>
+        <Amount value="16"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ZHBRVoidBarrier@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidBarrier"/>
+        <ValidatorArray index="0" value="ZHBRCommon@TargetIsVoidForcesRace"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRTempleIssue@ApplyMarker">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRTempleMarkerIssue"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="ZCRCasterAssignRally">
+        <EditorCategories value="Race:ZHBR"/>
+        <RallyUnit Value="Caster"/>
     </CEffectModifyUnit>
     <CEffectApplyBehavior id="ZHBRAcceleration@ApplyBehavior">
         <EditorCategories value="Race:ZHBR"/>
@@ -154,6 +589,505 @@
         <EditorCategories value="Race:ZHBR"/>
         <Behavior value="ZHBRAmplifier@PathingBlockerController"/>
     </CEffectApplyBehavior>
+    <CEffectModifyUnit id="ZHBRPsyonReloadWeaponAA">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnit Value="Caster"/>
+        <Weapon Weapon="ZHBRPsyonWeapon" CooldownOperation="Set" CooldownFraction="0.9"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="ZHBRConsumeDNA@ApplyLifeStealUp">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRConsumeDNA@LifeStealUp"/>
+        <ValidatorArray index="0" value="ZHBRBehemothCondition@StealLifeMaxHP"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRDominatorSingleCaster@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDominatorDestructionOrbSingleCaster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRDominatorDisableAbility@ApplyBehavior">
+        <ValidatorArray index="0" value="NotStructureTarget"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRDominatorDestructionOrbDisableAbility"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ZHBRDreadnokTornado@PersistentEnd">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="TargetUnit"/>
+        <FinalEffect value="TimedLifeFate"/>
+        <PeriodCount value="9"/>
+        <PeriodicEffectArray value="ZHBRDreadnokTornado@SearchEnd"/>
+        <PeriodicPeriodArray value="0.3115"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ZHBRDreadnokTornado@SearchEnd">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="ZHBRPsionicTornado@ApplyTornadoBehaviorEnd"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="ZHBRDreadnokTornado@PersistentStart">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="TargetUnit"/>
+        <FinalEffect value="TimedLifeFate"/>
+        <PeriodCount value="29"/>
+        <PeriodicEffectArray value="ZHBRDreadnokTornado@SearchStart"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="ZHBRBehemothBrokenDNA@RemoveLifeStealUp">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRConsumeDNA@LifeStealUp"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRNemesisTimeAttack">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="ZHBRPollinatorVoidToxin@Damage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:ZHBR"/>
+        <ArmorReduction value="0"/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="ZHBRSentinel@CooldownForLeap">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="ZHBRSentinelLeap,Execute" CooldownTimeUse="10"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="ZHBRPsionicTornado@ApplyTornadoBehaviorEnd">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRPsionicTornado@TornadoBehaviorEnd"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="ZHBRPsionicTornado@DamageEnd">
+        <EditorCategories value="Race:ZHBR"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectSet id="ZHBRDreadnokTornado@UnitCreationSetW">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRDreadnokTornado@PersistentStart"/>
+        <EffectArray value="HybridPsionicTornadoTargettedIssueOrder"/>
+        <EffectArray value="ZHBRPsionicTornado@ApplyTornadoBehaviorMaxDistance"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectModifyUnit id="ZHBRSentinel@CooldownForSubjugationJump">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnit Value="Caster"/>
+        <Cost Abil="ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump,Execute" CooldownTimeUse="10"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="ZHBRSentinelLeap@ApplyJumpBuff">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRSentinelLeap@JumpBuff"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRSentinelLeap@ApplyStun">
+        <ValidatorArray index="0" value="ZHBRSentinelLeap@StunFilter"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Effect="ZHBRSentinelLeap@InitialSet"/>
+        <Behavior value="ZHBRSentinelLeap@Stun"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="ZHBRSentinelLeap@Damage">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactLocation Effect="ZHBRSentinelLeap@InitialSet" Value="TargetUnit"/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectSet id="ZHBRSentinelLeap@ImpactSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRSentinelLeap@RemoveJumpBuff"/>
+        <EffectArray value="ZHBRProtectionJump@ApplyBehavior"/>
+    </CEffectSet>
+    <CEffectSet id="ZHBRSentinelLeap@InitialSet">
+        <ValidatorArray value="HybridSentinelPlacementCheck"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRSentinelLeap@LM"/>
+        <EffectArray value="ZHBRProtectionJump@ApplyBehavior"/>
+        <EffectArray value="ZHBRSentinel@CooldownForSubjugationJump"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="ZHBRSentinelLeap@LM">
+        <EditorCategories value="Race:ZHBR"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactOffset value="0,-0.75,0"/>
+        <LaunchEffect value="ZHBRSentinelLeap@ApplyJumpBuff"/>
+        <ImpactEffect value="ZHBRSentinelLeap@ImpactSet"/>
+        <InterruptEffect value="ZHBRSentinelLeap@RemoveJumpBuff"/>
+        <Flags index="2D" value="1"/>
+        <Flags index="Placement" value="1"/>
+        <Flags index="PlacementIgnoreCliffTest" value="1"/>
+        <Flags index="PlacementOriginSideOfFootprints" value="1"/>
+        <PlacementRange value="3"/>
+        <Movers Link="ZHBRSentinelLeap@Mover"/>
+        <DeathType value="Unknown"/>
+        <FinishEffect value="ZHBRSentinelLeap@ImpactSet"/>
+    </CEffectLaunchMissile>
+    <CEffectRemoveBehavior id="ZHBRSentinelLeap@RemoveJumpBuff">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRSentinelLeap@JumpBuff"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRSentinelSubjugationJump@ApplyJumpBanAutocast">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRSentinelSubjugationJump@BanAutocast"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRShapshifterStartingDelay@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRVoidChasmStartingDelay"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="ZHBRTemplePermanentPower@PlusEnergyIssue">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="25"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="ZHBRPermanentPower@SearchTempleIssue">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="Structure;Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="HybridTSEnergyMax"/>
+        </TargetSorts>
+        <AreaArray Radius="500" Effect="HybridTemplePermanentPowerIssueOrder"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="ZHBRCrawlerVoidImmunity@ApplyBuff">
+        <ValidatorArray index="0" value="ZHBRVoidImmunity@CasterHasVoidImmunityBuff"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunity"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ZHBRTimeWarp@SearchMicroDisableAbilityTimeStop">
+        <EditorCategories value="Race:ZHBR"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <SearchFilters value="Ground;Player,Ally,Massive,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="1.75" Effect="HybridMicroDisableAbility@ApplyBehaviorTimeStop"/>
+        <RevealerParams Duration="0.5">
+            <RevealFlags index="Unfog" value="1"/>
+            <RevealFlags index="Detect" value="1"/>
+        </RevealerParams>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="ZHBRDestructionArise@EffectEnd">
+        <EditorCategories value="Race:ZHBR"/>
+        <ExpireDelay value="0.1"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Behemoth">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityBehemoth"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Dominator">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityDominator"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Conductor">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityConductor"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Amplifier">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityAmplifier"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Tomb">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityTomb"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@VoidForge">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityVoidForge"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Projector">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityProjector"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@VoidRift">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityVoidRift"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@IonicCrystal">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityIonicCrystal"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@StasisCell">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityStasisCell"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@VespeneConcentrator">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityVespeneConcentrator"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Chimera">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityChimera"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Temple">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityTemple"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@IonicCrystalMoveable">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityIonicCrystalMoveable"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@HoldingCell">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityHoldingCell"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@HarvesterRich">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityHarvesterRich"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Harvester">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityHarvester"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Deformer">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityDeformer"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Crypt">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityCrypt"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@ConstructAG">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityConstructAG"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@ConstructAA">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityConstructAA"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Capsule">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityCapsule"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Keystone">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityKeystone"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Warrior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityWarrior"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Crawler">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityCrawler"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Strider">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityStrider"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Spirit">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunitySpirit"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Shapeshifter">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityShapeshifter"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Sentinel">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunitySentinel"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Psyon">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityPsyon"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Proteus">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityProteus"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Pollinator">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityPollinator"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Nemesis">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityNemesis"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Warbringer">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityWarbringer"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Navigator">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityNavigator"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Minion">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityMinion"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Flayer">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityFlayer"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Energator">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityEnergator"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidImmunity@Dreadnok">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidImmunityDreadnok"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ZHBRVoidImmunityIssuePersistentSetFewEffect">
+        <ValidatorArray value="ZHBRCommon@TargetIsVoidForcesRace"/>
+        <ValidatorArray value="ZHBRVoidImmunity@TargetHasNotBuff"/>
+        <ValidatorArray value="ZHBRTemple@HasMaxRange"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="ZHBRTempleIssue@ApplyMarker"/>
+        <FinalEffect value="ZHBRVoidImmunity@SearchTempleIssue"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="ZHBRTempleVoidImmunity@PlusEnergyIssue"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ZHBRTimeWarp@ApplyDebuffMiddle">
+        <ValidatorArray index="0" value=""/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRTimeWarp@Middle"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ZHBRTimeWarp@PersistentMiddle">
+        <EditorCategories value="Race:ZHBR"/>
+        <OffsetFacingFallback Value="OriginPoint"/>
+        <FinalEffect value="ZHBRTimeWarp@PersistentEnd"/>
+        <PeriodCount value="45"/>
+        <PeriodicEffectArray value="ZHBRTimeWarp@SearchMiddle"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ZHBRTimeWarp@SearchMiddle">
+        <EditorCategories value="Race:ZHBR"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <SearchFilters value="Ground;Player,Ally,Massive,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="1.75" Effect="ZHBRTimeWarp@ApplyDebuffMiddle"/>
+        <RevealerParams Duration="0.5">
+            <RevealFlags index="Unfog" value="1"/>
+            <RevealFlags index="Detect" value="1"/>
+        </RevealerParams>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="ZHBRVoidChasm@ApplyBehaviorStructure">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidChasmStructure"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ZHBRVoidChasm@EndPersistent">
+        <EditorCategories value="Race:ZHBR"/>
+        <InitialEffect value="ZHBRVoidChasm@ImpactSet"/>
+        <ExpireDelay value="14"/>
+        <RevealRadius value="3"/>
+        <RevealFlags index="Unfog" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ZHBRVoidChasm@SearchForAbility">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="-;Neutral,Heroic,Missile,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="2"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="ZHBRPermanentPowerIssuePersistentSetFewEffect">
+        <ValidatorArray value="ZHBRCommon@TargetIsVoidForcesRace"/>
+        <ValidatorArray value="ZHBRTemple@HasMaxRange"/>
+        <ValidatorArray value="ZHBRVoid@TargetHasNotPowerUserBehaviorPermanent"/>
+        <ValidatorArray value="ZHBRCommon@NotIsIonicCrystalCombine"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="ZHBRTempleIssue@ApplyMarker"/>
+        <FinalEffect value="ZHBRPermanentPower@SearchTempleIssue"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="ZHBRTemplePermanentPower@PlusEnergyIssue"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="ZHBRVoidPhantom@CU">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichLocation Value="CasterUnit"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="PlacementIgnoreBlockers" value="1"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="ZHBRVoidPhantom@SpawnSet"/>
+        <SpawnUnit value="ZHBRSpirit@Phantasm"/>
+        <SpawnRange value="1"/>
+    </CEffectCreateUnit>
+    <CEffectRemoveBehavior id="ZHBRVoidPhantom@Cancel">
+        <EditorCategories value="Race:ZHBR"/>
+        <BehaviorLink value="ZHBRVoidPhantom@Caster"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRVoidPhantom@CancelAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRVoidPhantom@CancelDummyBehavior"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRVoidPhantom@InitialSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <TargetLocationType value="Point"/>
+        <EffectArray value="ZHBRVoidPhantom@CasterAB"/>
+        <EffectArray value="ZHBRVoidPhantom@CU"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="ZHBRVoidPhantom@IssueOrder">
+        <EditorCategories value="Race:ZHBR"/>
+        <Abil value="move"/>
+        <Target Effect="ZHBRVoidPhantom@CU" Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="ZHBRVoidPhantom@KillDummy">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactLocation Effect="ZHBRVoidPhantom@TimerSpawnAB" Value="TargetUnit"/>
+        <Flags index="Kill" value="1"/>
+        <Flags index="NoKillCredit" value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ZHBRVoidPhantom@SpawnAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidPhantom"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZHBRVoidPhantom@SpawnSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRVoidPhantom@SpawnAB"/>
+        <EffectArray value="ZHBRVoidPhantom@TimerSpawnAB"/>
+        <EffectArray value="ZHBRVoidPhantom@IssueOrder"/>
+    </CEffectSet>
+    <CEffectSet id="ZHBRVoidPhantom@TimerCancelSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRVoidPhantom@PhantasmCancelCasterBehaviorRB"/>
+        <EffectArray value="ZHBRVoidPhantom@KillDummy"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRVoidPhantom@TimerSpawnAB">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRVoidPhantom@Timer"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ZHBRVoidPhantom@PhantasmCancelRB">
+        <EditorCategories value="Race:ZHBR"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ZHBRWarbringerMacStrikeBanAutocast">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRWarbringerBanAutoCast"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRTimeWarp@ApplyDebuffEnd">
+        <ValidatorArray index="0" value=""/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRTimeWarp@End"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ZHBRTimeWarp@PersistentEnd">
+        <EditorCategories value="Race:ZHBR"/>
+        <OffsetFacingFallback Value="OriginPoint"/>
+        <PeriodCount value="78"/>
+        <PeriodicEffectArray value="ZHBRTimeWarp@SearchEnd"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <InitialEffect value="ZHBRTimeWarp@SearchMicroDisableAbilityTimeStop"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ZHBRTimeWarp@SearchEnd">
+        <EditorCategories value="Race:ZHBR"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <SearchFilters value="Ground;Player,Ally,Massive,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="1.75" Effect="ZHBRTimeWarp@ApplyDebuffEnd"/>
+        <RevealerParams Duration="0.5">
+            <RevealFlags index="Unfog" value="1"/>
+            <RevealFlags index="Detect" value="1"/>
+        </RevealerParams>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ZHBRDreadnokTornado@SearchStart">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="ZHBRPsionicTornado@ApplyTornadoBehaviorStart"/>
+    </CEffectEnumArea>
+    <CEffectModifyUnit id="ZHBRUnitBorn@StartingShield">
+        <ValidatorArray value="ZHBRVoidShield@UpgradeCompleted"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <VitalArray index="Shields">
+            <ChangeFraction value="1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectMorph id="ZHBRBehemothAdvanced@Morph">
         <EditorCategories value="Race:ZHBR"/>
         <MorphFlags index="IgnoreFacing" value="1"/>
@@ -163,8 +1097,52 @@
     <CEffectSet id="ZHBRBehemothWeapon@InitialSet">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRBehemothWeapon@Damage"/>
-        <EffectArray value="ZHBRBehemothWeapon@Search"/>
     </CEffectSet>
+    <CEffectModifyUnit id="ZHBRUnitBorn@StartingEnergy">
+        <ValidatorArray value="ZHBRTRestorationHealth@UpgradeCompleted"/>
+        <ValidatorArray value="ZHBRCommon@NotTemple"/>
+        <ValidatorArray value="ZHBRCommon@NotEnergator"/>
+        <ValidatorArray value="ZHBRCommon@NotConductor"/>
+        <ValidatorArray value="ZHBRCommon@NotCrawler"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <VitalArray index="Energy">
+            <ChangeFraction value="0.5"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectSet id="ZHBRUnitBorn@EnergyShieldsSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRUnitBorn@StartingEnergy"/>
+        <EffectArray value="ZHBRUnitBorn@StartingShield"/>
+    </CEffectSet>
+    <CEffectSet id="ZHBRDominator@DestructionOrbDamageSet">
+        <ValidatorArray value="ZHBRDominatorCondition@OnlySingleCaster"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRDestructionOrb@Damage"/>
+        <EffectArray value="ZHBRDominatorSingleCaster@ApplyBehavior"/>
+        <EffectArray value="HybridDominatorDestructionOrbSwitch"/>
+    </CEffectSet>
+    <CEffectDamage id="ZHBRDreadnokWeapon@DamageAlly" parent="DU_WEAP">
+        <ValidatorArray value="TargetIsAllyorPlayer"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AttributeBonus index="Psionic" value="16"/>
+        <Kind value="Ranged"/>
+        <Amount value="8"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ZHBRHighSpeedRestoreNetwork@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRHighSpeedRestoreNetwork"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="ZHBRConstructReloadWeaponAA">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnit Value="Caster"/>
+        <Weapon Weapon="ZHBRConstructWeaponAntiAir" CooldownOperation="Set" CooldownFraction="0.57"/>
+    </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="ZHBRConstructCancelMarker">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ZHBRConstructMarker"/>
+    </CEffectRemoveBehavior>
     <CEffectCreatePersistent id="ZHBRConstructWeaponAntiAir@CreatePersistent">
         <EditorCategories value="Race:ZHBR"/>
         <WhichLocation Value="TargetUnit"/>
@@ -172,34 +1150,42 @@
         <Flags index="Channeled" value="1"/>
         <InitialDelay value="0.75"/>
         <PeriodicEffectArray value="ZHBRConstructWeaponAntiAir@PeriodicSet"/>
-        <PeriodicPeriodArray value="1.5"/>
-        <InitialEffect value="ZHBRConstructWeaponAntiAir@PeriodicSet"/>
+        <PeriodicPeriodArray value="1.75"/>
+        <InitialEffect value="ZHBRConstructWeaponAntiAir@InitialSet"/>
         <PeriodicValidator value="ZHBRConstructWeaponAntiAir@PeriodicCombine"/>
-        <PeriodCount value="7"/>
+        <PeriodCount value="65535"/>
+        <FinalEffect value="ZHBRSetConstructEndAttack"/>
     </CEffectCreatePersistent>
     <CEffectSet id="ZHBRConstructWeaponAntiAir@PeriodicSet">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRConstructWeaponAntiAir@LaunchMissile"/>
-        <EffectArray value="ZHBRConstructWeaponAntiAir@TargetAllySwitch"/>
-        <ValidatorArray value="ZHBRConstructWeaponAntiAir@PeriodicCombine"/>
+        <EffectArray value="HybridConsructAAWeapon@SwitchDistance"/>
+        <EffectArray value="ZHBRConstructReloadWeaponAA"/>
+    </CEffectSet>
+    <CEffectSet id="ZHBRConstructWeaponAntiAir@InitialSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="HybridClusterNovaVerifyImpactTargetLockedStatus"/>
+        <EffectArray value="ZHBRConstructWeaponAntiAir@LaunchMissile"/>
     </CEffectSet>
     <CEffectCreatePersistent id="ZHBRConstructWeaponAntiGround@CreatePersistent">
         <EditorCategories value="Race:ZHBR"/>
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
-        <InitialDelay value="0.75"/>
         <PeriodicEffectArray value="ZHBRConstructWeaponAntiGround@PeriodicSet"/>
         <PeriodicPeriodArray value="1.5"/>
+        <PeriodCount value="65535"/>
+        <InitialDelay value="0.75"/>
         <InitialEffect value="ZHBRConstructWeaponAntiGroundInitialSet"/>
+        <FinalEffect value="ZHBRSetConstructEndAttack"/>
         <PeriodicValidator value="ZHBRConstructWeaponAntiGround@PeriodicCombine"/>
-        <PeriodCount value="7"/>
     </CEffectCreatePersistent>
     <CEffectSet id="ZHBRConstructWeaponAntiGround@PeriodicSet">
         <EditorCategories value="Race:ZHBR"/>
-        <EffectArray value="ZHBRConstructWeaponAntiGround@Damage"/>
+        <EffectArray value="ZHBRConstructWeaponAntiGround@DamageHight"/>
+        <EffectArray value="HybridConsructAGWeapon@SwitchDistance"/>
         <EffectArray value="ZHBRConstructWeaponAntiGround@TargetAllySwitch"/>
-        <ValidatorArray value="ZHBRConstructWeaponAntiGround@PeriodicCombine"/>
+        <EffectArray value="ZHBRConstructReloadWeaponAG"/>
     </CEffectSet>
     <CEffectEnumArea id="ZHBRConstructWeaponAntiAir@Search">
         <EditorCategories value="Race:ZHBR"/>
@@ -214,23 +1200,25 @@
         </RevealerParams>
     </CEffectEnumArea>
     <CEffectSet id="ZHBRConstructWeaponAntiGroundInitialSet">
-        <ValidatorArray value="ZHBRConstructWeaponAntiGround@PeriodicCombine"/>
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="HybridClusterNovaVerifyImpactTargetLockedStatus"/>
-        <EffectArray value="ZHBRConstructWeaponAntiGround@Damage"/>
+        <EffectArray value="ZHBRConstructWeaponAntiGround@DamageHight"/>
         <EffectArray value="ZHBRConstructWeaponAntiGround@TargetAllySwitch"/>
     </CEffectSet>
     <CEffectEnumArea id="ZHBRConstructWeaponAntiGround@SearchIncludeAlly">
         <EditorCategories value="Race:ZHBR"/>
+        <ImpactLocation Value="CasterUnit"/>
         <ExcludeArray Value="Target"/>
-        <SearchFilters value="Ground;Self,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="Ground,Visible;Self,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <TargetSorts>
+            <SortArray value="HybridTSPriority"/>
             <SortArray value="TSDistanceToTarget"/>
         </TargetSorts>
-        <AreaArray MaxCount="2" Radius="2" Effect="ZHBRConstructWeaponAntiGround@Damage"/>
+        <AreaArray MaxCount="2" Radius="7" Effect="ZHBRSetConstructSwitchBeamSet"/>
         <RevealerParams Duration="0.75">
             <RevealFlags index="Unfog" value="1"/>
         </RevealerParams>
+        <MaxCount value="0"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="ZHBRConstructWeaponAntiAir@SearchIncludeAlly">
         <EditorCategories value="Race:ZHBR"/>
@@ -293,11 +1281,13 @@
         <ValidatorArray value="NotHidden"/>
         <ValidatorArray value="ZHBREnergation@EnergyRegenNotSuppressed"/>
         <ValidatorArray value="ZHBRVoid@TargetIsVoidEnergyUser"/>
+        <ValidatorArray value="NotStasis"/>
         <EditorCategories value="Race:ZHBR"/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="3"/>
+        <DrainVitalCostFactor value="1"/>
         <RechargeVital value="Energy"/>
-        <RechargeVitalRate value="11"/>
+        <RechargeVitalRate value="7.1406"/>
+        <FinalEffect value="ZHBREnergation@RestoreDeformerRemoveBoostBehavior"/>
     </CEffectCreateHealer>
     <CEffectApplyBehavior id="ZHBRPermanentPower@ApplyPermanentPowerUserBehavior">
         <EditorCategories value="Race:ZHBR"/>
@@ -312,6 +1302,7 @@
         <ValidatorArray value="ZHBRCommon@TargetIsVoidForcesRace"/>
         <ValidatorArray value="ZHBRVoid@TargetHasNotPowerUserBehaviorPermanent"/>
         <ValidatorArray value="ZHBRCommon@NotIsIonicCrystalCombine"/>
+        <ValidatorArray value="ZHBRTemple@HasMaxRange"/>
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRPermanentPower@ApplyPermanentPowerUserBehavior"/>
         <EffectArray value="ZHBRPermanentPower@ApplyPermanentPowerUserBehaviorNetwork"/>
@@ -338,7 +1329,7 @@
     </CEffectRemoveBehavior>
     <CEffectEnumArea id="ZHBRPrimeSummoning@CastSearch">
         <EditorCategories value="Race:ZHBR"/>
-        <SearchFilters value="Structure;Self,Ally,Neutral,Enemy,Dead,Hidden"/>
+        <SearchFilters value="Structure;Ally,Neutral,Enemy,Dead,Hidden"/>
         <AreaArray MaxCount="1" Radius="500" Effect="ZHBRPrimeSummoning@CastRemoveControllerBehavior"/>
     </CEffectEnumArea>
     <CEffectSet id="ZHBRPrimeSummoning@CastSet">
@@ -400,9 +1391,7 @@
         <SourceKey value="PrimeSummoning"/>
     </CEffectUserData>
     <CEffectApplyBehavior id="ZHBRProtectionJump@ApplyBehavior">
-        <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Chance value="0"/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ZHBRProtectionJump@Armor"/>
     </CEffectApplyBehavior>
@@ -427,17 +1416,33 @@
     </CEffectRandomPointInCircle>
     <CEffectCreatePersistent id="ZHBRPsionicTornado@CertainDirection">
         <EditorCategories value="Race:ZHBR"/>
-        <InitialEffect value="HybridDreadnokTornadoLaunchMissile"/>
         <Marker>
             <MatchFlags index="Id" value="1"/>
         </Marker>
     </CEffectCreatePersistent>
     <CEffectSet id="ZHBRPsionicTornado@UnitCreationSet">
         <EditorCategories value="Race:ZHBR"/>
-        <EffectArray value="ZHBRPsionicTornado@ApplyTornadoBehavior"/>
+        <EffectArray value="ZHBRPsionicTornado@ApplyTornadoBehaviorStart"/>
         <EffectArray value="ZHBRPsionicTornado@ApplyTravelController"/>
         <TargetLocationType value="UnitOrPoint"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRRevealingSacrificeForSelf@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRRevealingSacrificeForSelf"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRRevealingSacrificeTargetDetection@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRRevealingSacrificeTargetDetection"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRConstructMarker@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRConstructMarker"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZHBRBehemothBrokenDNASingleCaster@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRBehemothBrokenDNASingleCaster"/>
+    </CEffectApplyBehavior>
     <CEffectLaunchMissile id="ZHBRShapeshifterWeapon2@LM">
         <EditorCategories value="Race:ZHBR"/>
         <ImpactEffect value="ZHBRShapeshifterWeapon2@Damage"/>
@@ -446,14 +1451,14 @@
     <CEffectDamage id="ZHBRShapeshifterWeapon2@Damage" parent="DU_WEAP_MISSILE">
         <ValidatorArray value="ZCRBasicMissileImpactValidator"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Visibility value="Visible"/>
-        <Amount value="20"/>
+        <Amount value="25"/>
+        <AttributeBonus index="Armored" value="15"/>
     </CEffectDamage>
     <CEffectModifyUnit id="ZHBRShapeshifterWeapon@DrainEnergy">
         <EditorCategories value="Race:ZHBR"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Energy">
-            <Change value="-50"/>
+            <Change value="-20"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectSet id="ZHBRShapeshifterWeapon@InitialSet">
@@ -463,10 +1468,11 @@
     </CEffectSet>
     <CEffectDamage id="ZHBRNemesisWeapon@DamageArmorIgnore" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
-        <ArmorReduction value="0"/>
         <Kind value="Ranged"/>
-        <Amount value="8"/>
+        <Amount value="12"/>
         <DamageModifierSource Value="Caster"/>
+        <AttributeBonus index="Light" value="3"/>
+        <ArmorReduction value="0"/>
     </CEffectDamage>
     <CEffectSwitch id="ZHBRNemesisWeapon@DamageSwitch">
         <EditorCategories value="Race:ZHBR"/>
@@ -486,7 +1492,7 @@
         <LaunchUnit Value="Caster"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Energy">
-            <Change value="50"/>
+            <Change value="20"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectAddTrackedUnit id="ZHBRPsyonWeapon@AddTrackedUnit">
@@ -522,9 +1528,9 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="ZHBRPsyonWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
-        <Visibility value="Visible"/>
-        <Amount value="9"/>
+        <Amount value="7"/>
         <DamageModifierSource Value="Caster"/>
+        <AttributeBonus index="Massive" value="2"/>
     </CEffectDamage>
     <CEffectSet id="ZHBRPsyonWeapon@PeriodicSet">
         <ValidatorArray value="ZHBRPsyonWeapon@CasterHasNotCooldownBehavior"/>
@@ -552,7 +1558,9 @@
     <CEffectSet id="ZHBRPhaseShift@CastSet">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRPhaseShift@ApplyStasisBehavior"/>
+        <EffectArray value="HybridMicroDisableAbility@ApplyBehaviorStasis"/>
         <EffectArray value="ZHBRPhaseShift@IterateTransport"/>
+        <ValidatorArray value="noMarkers"/>
     </CEffectSet>
     <CEffectModifyUnit id="GenericRemoveCaster">
         <EditorCategories value="Race:ZHBR"/>
@@ -566,14 +1574,15 @@
     <CEffectCreateUnit id="DisguiseAsWarriorCU" parent="DisguiseEx3CU">
         <SpawnUnit value="ZHBRWarrior@Changeling"/>
     </CEffectCreateUnit>
-    <CEffectApplyBehavior id="ZHBRConsumeDNA@ApplyStun">
-        <ValidatorArray index="0" value="ZHBRConsumeDNA@@StunFilter"/>
+    <CEffectApplyBehavior id="ZHBRConsumeDNA@ApplyLifeStealMain">
         <EditorCategories value="Race:ZHBR"/>
         <Chance value="0"/>
-        <Behavior value="ZHBRConsumeDNA@Stun"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRConsumeDNA@LifeStealMain"/>
     </CEffectApplyBehavior>
     <CEffectSet id="ZHBRConsumeDNA@HealSet">
         <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRConsumeDNA@ApplyLifeStealMain"/>
         <EffectArray value="ZHBRConsumeDNA@UDTotalVital"/>
         <EffectArray value="ZHBRConsumeDNA@UDLifeToRestore"/>
         <EffectArray value="ZHBRConsumeDNA@UDShieldToRestore"/>
@@ -585,8 +1594,7 @@
     <CEffectSet id="ZHBRConsumeDNA@LaunchSet">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRConsumeDNA@Damage"/>
-        <EffectArray value="ZHBRConsumeDNA@ApplyStun"/>
-        <EffectArray value="ZHBRConsumeDNA@HealSwitch"/>
+        <EffectArray value="ZHBRBehemothBrokenDNASingleCaster@ApplyBehavior"/>
     </CEffectSet>
     <CEffectUserData id="ZHBRConsumeDNA@UDLifeToRestore">
         <EditorCategories value="Race:ZHBR"/>
@@ -607,7 +1615,7 @@
     <CEffectUserData id="ZHBRConsumeDNA@UDTotalVital">
         <EditorCategories value="Race:ZHBR"/>
         <Key value="TotalVital"/>
-        <Amount value="2"/>
+        <Amount value="10"/>
         <Operation value="Set"/>
     </CEffectUserData>
     <CEffectApplyBehavior id="ZHBRPowerField@ApplyCasterSuppressionBehavior">
@@ -663,7 +1671,8 @@
     </CEffectSet>
     <CEffectDamage id="ZHBRProteusWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="60"/>
+        <Amount value="18"/>
+        <AttributeBonus index="Armored" value="9"/>
     </CEffectDamage>
     <CEffectSet id="ZHBRPsyonWeapon@PersistentInitialSet">
         <EditorCategories value="Race:ZHBR"/>
@@ -692,7 +1701,7 @@
     </CEffectSet>
     <CEffectLaunchMissile id="ZHBRStriderWeapon@LMEvaporator">
         <EditorCategories value="Race:ZHBR"/>
-        <ImpactEffect value="ZHBRStriderWeapon@Damage"/>
+        <ImpactEffect value="HybridStriderWeapon@SwitchTargetArmor"/>
         <AmmoUnit value="ZHBRStriderWeapon@MissileEvaporator"/>
         <Movers Link="ZHBRStriderWeapon@Mover"/>
     </CEffectLaunchMissile>
@@ -809,16 +1818,19 @@
     </CEffectDamage>
     <CEffectCreatePersistent id="ZHBRVoidChasm@InitialPersistent">
         <EditorCategories value="Race:ZHBR"/>
-        <InitialDelay value="2.5"/>
-        <InitialEffect value="ZHBRVoidChasm@SearchSet"/>
-        <ExpireDelay value="8.4"/>
+        <InitialEffect value="ZHBRShapshifterStartingDelay@ApplyBehavior"/>
+        <PeriodCount value="30"/>
+        <PeriodicValidator value="ZHBRShapeshifterVoidCham@InterruptAbility"/>
+        <PeriodicPeriodArray value="0.1"/>
         <RevealRadius value="3"/>
         <RevealFlags index="Unfog" value="1"/>
+        <Flags index="Channeled" value="1"/>
+        <ExpireEffect value="ZHBRVoidChasm@EndPersistent"/>
     </CEffectCreatePersistent>
     <CEffectEnumArea id="ZHBRVoidChasm@Search">
         <EditorCategories value="Race:ZHBR"/>
-        <SearchFilters value="Air;Ally,Neutral,Structure,Heroic,Missile,Dead,Hidden,Invulnerable,Unstoppable"/>
-        <AreaArray Radius="1.6" Effect="ZHBRVoidChasm@ApplyBehavior"/>
+        <SearchFilters value="Air;Neutral,Missile,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="2" Effect="ZHBRVoidChasm@ApplyBehavior"/>
     </CEffectEnumArea>
     <CEffectUserData id="ZHBRTimeWarp@MassiveUnitDetectionUD">
         <ValidatorArray value="HybridIsMassive"/>
@@ -833,23 +1845,24 @@
         <Flags index="Channeled" value="0"/>
         <PeriodCount value="2"/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="0.3"/>
+        <DrainVitalCostFactor value="0.6667"/>
         <RechargeVital value="Shields"/>
-        <RechargeVitalRate value="21.4218"/>
+        <RechargeVitalRate value="107.1406"/>
     </CEffectCreateHealer>
-    <CEffectDamage id="ZHBRPsionicTornado@Damage">
+    <CEffectDamage id="ZHBRPsionicTornado@DamageStart">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="2"/>
+        <Amount value="4"/>
     </CEffectDamage>
     <CEffectSet id="ZHBREvaporator@CastSet">
-        <ValidatorArray value="ZHBREvaporator@CasterHasRequiredEnergy"/>
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBREvaporator@ReduceEnergy"/>
         <EffectArray value="ZHBREvaporator@StoreUserData"/>
+        <EffectArray value="ZHBRStriderWeapon@LMEvaporator"/>
     </CEffectSet>
     <CEffectSet id="ZHBRFlayerFury@FirstSet">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRFlayerFury@ApplyCooldown"/>
+        <EffectArray value="ZHBRFlayerFury@TooltipRB"/>
         <EffectArray value="ZHBRFlayerWeapon@Damage"/>
     </CEffectSet>
     <CEffectAddTrackedUnit id="ZHBRRaceControl@AddTrackedUnit">
@@ -861,16 +1874,16 @@
         <EditorCategories value="Race:ZHBR"/>
         <Key value="EvaporatorDamage"/>
         <SourceKey value="EvaporatorDamage"/>
-        <Amount value="2"/>
     </CEffectUserData>
-    <CEffectApplyBehavior id="ZHBRPsionicTornado@ApplyTornadoBehavior">
+    <CEffectApplyBehavior id="ZHBRPsionicTornado@ApplyTornadoBehaviorStart">
+        <ValidatorArray index="0" value="ZHBRDrednokHasNotBehaviorTornadoEnd"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Behavior value="ZHBRPsionicTornado@TornadoBehavior"/>
+        <Behavior value="ZHBRPsionicTornado@TornadoBehaviorStart"/>
     </CEffectApplyBehavior>
     <CEffectCreateUnit id="ZHBRPsionicTornado@CreateUnit">
         <EditorCategories value="Race:ZHBR"/>
-        <WhichLocation Value="TargetPoint"/>
-        <SpawnEffect value="ZHBRPsionicTornado@UnitCreationSet"/>
+        <WhichLocation Value="CasterOuterPoint"/>
+        <SpawnEffect value="ZHBRDreadnokTornado@UnitCreationSetW"/>
         <SpawnUnit value="ZHBRPsionicTornado"/>
     </CEffectCreateUnit>
     <CEffectModifyUnit id="ZHBRStriderCrawler@CopyOrders">
@@ -887,7 +1900,7 @@
         <EditorCategories value="Race:ZHBR"/>
         <WhichLocation Value="CasterUnit"/>
         <CreateFlags index="SelectControlGroups" value="1"/>
-        <SpawnEffect value="ZHBRStriderCrawler@CopyOrders"/>
+        <SpawnEffect value="ZHBRStriderCrawler@InitialSet"/>
         <SpawnUnit value="ZHBRStriderCrawler"/>
         <SelectUnit Value="Source"/>
     </CEffectCreateUnit>
@@ -915,7 +1928,7 @@
     </CEffectApplyBehavior>
     <CEffectModifyUnit id="ZHBRMineralMining@MiningMU">
         <EditorCategories value="Race:ZHBR"/>
-        <Resources value="-3"/>
+        <Resources value="-2"/>
         <ResourcesHarvestedFraction value="1"/>
     </CEffectModifyUnit>
     <CEffectApplyBehavior id="ZHBRVoid@ApplySuppressedRegenerationCaster">
@@ -936,9 +1949,9 @@
     <CEffectDamage id="ZHBRChimeraRangedWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Kind value="Ranged"/>
-        <Amount value="28"/>
+        <Amount value="22"/>
         <Death value="Blast"/>
-        <ImpactUnitValidator value="ZCRBasicMissileImpactValidator"/>
+        <AttributeBonus index="Mechanical" value="6"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="ZHBRChimeraRangedWeapon@LM">
         <EditorCategories value="Race:ZHBR"/>
@@ -948,17 +1961,17 @@
     </CEffectLaunchMissile>
     <CEffectEnumArea id="ZHBRVoidChasm@SearchGround">
         <EditorCategories value="Race:ZHBR"/>
-        <SearchFilters value="Ground;Ally,Neutral,Air,Structure,Heroic,Missile,Dead,Hidden,Invulnerable,Unstoppable"/>
-        <AreaArray Radius="1.6" Effect="ZHBRVoidChasm@ApplyBehaviorGround"/>
+        <SearchFilters value="Ground;Neutral,Air,Structure,Missile,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="2" Effect="ZHBRVoidChasm@ApplyBehaviorGround"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="ZHBRVoidChasm@SearchStructure">
         <EditorCategories value="Race:ZHBR"/>
-        <SearchFilters value="Structure;Ally,Neutral,Air,Heroic,Missile,Dead,Hidden,Invulnerable,Unstoppable"/>
-        <AreaArray Radius="1.6" Effect="ZHBRVoidChasm@StructureDamage"/>
-        <AreaArray Radius="2" Effect="ZHBRVoidChasm@StructureDamageOuter"/>
+        <SearchFilters value="Structure;Neutral,Missile,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <AreaArray Radius="2" Effect="ZHBRVoidChasm@ApplyBehaviorStructure"/>
     </CEffectEnumArea>
-    <CEffectSet id="ZHBRVoidChasm@SearchSet">
+    <CEffectSet id="ZHBRVoidChasm@ImpactSet">
         <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="HybridVoidChazmBigForceField"/>
         <EffectArray value="ZHBRVoidChasm@Search"/>
         <EffectArray value="ZHBRVoidChasm@SearchGround"/>
         <EffectArray value="ZHBRVoidChasm@SearchStructure"/>
@@ -973,6 +1986,11 @@
         <EffectArray value="ZHBRPrimeSummoning@FindUnitWithControllerIssueOrder"/>
         <EffectArray value="ZHBRVoidRiftTrain@Set"/>
     </CEffectSet>
+    <CEffectRemoveBehavior id="ZHBRCancelClusterNova@TargetLocalStatus">
+        <EditorCategories value="Race:ZHBR"/>
+        <BehaviorLink value="HybridClusterNovaVerifyTargetBehavior"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
     <CEffectTeleport id="ZHBRVoidRiftTrain@Teleport">
         <EditorCategories value="Race:ZHBR"/>
         <WhichUnit Value="Caster"/>
@@ -980,6 +1998,11 @@
         <SourceLocation Value="OriginPoint"/>
         <TargetLocation Value="TargetPoint"/>
     </CEffectTeleport>
+    <CEffectApplyBehavior id="ZHBRWarbringerMacStrikeMarkerAnimation@ApplyBehavior">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRWarbringerMarkerAnimation"/>
+    </CEffectApplyBehavior>
     <CEffectModifyUnit id="ZHBRWarbringerMaceStrike@ModifyUnit">
         <EditorCategories value="Race:ZHBR"/>
         <ImpactUnit Value="Caster"/>
@@ -990,7 +2013,7 @@
     <CEffectDamage id="ZHBRWarbringerWeaponMaceStrike@DamageMedium" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:ZHBR"/>
         <AttributeFactor index="Armored" value="1"/>
-        <Amount value="25"/>
+        <Amount value="20"/>
         <Death value="Blast"/>
     </CEffectDamage>
     <CEffectDamage id="ZHBRWarbringerWeaponMaceStrike@DamageOuter" parent="DU_WEAP_SPLASH">
@@ -999,20 +2022,74 @@
         <Amount value="10"/>
         <Death value="Blast"/>
     </CEffectDamage>
+    <CEffectSet id="ZHBRSetConstructEndAttack">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRCancelClusterNova@TargetLocalStatus"/>
+        <EffectArray value="ZHBRConstructCancelMarker"/>
+    </CEffectSet>
+    <CEffectSet id="ZHBRWarbringerWeaponMaceStrike@EndingSet">
+        <EditorCategories value="Race:ZHBR"/>
+        <EffectArray value="ZHBRWarbringerMaceStrike@SearchCorrosiveBileForceFieldKill"/>
+        <EffectArray value="ZHBRWarbringerWeaponMaceStrike@Damage"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectEnumArea id="ZHBRWarbringerMaceStrike@SearchCorrosiveBileForceFieldKill">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="-;Missile,Stasis,Dead,Hidden"/>
+        <AreaArray Radius="1.5" Effect="RavagerCorrosiveBileForceFieldKill"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ZHBRWarbringerMaceStrike@SearchBanAutoCast">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="ZHBRWarbringerMacStrikeBanAutocast"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ZHBRVoidImmunity@SearchTempleIssue">
+        <EditorCategories value="Race:ZHBR"/>
+        <SearchFilters value="Structure;Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="HybridTSEnergyMax"/>
+        </TargetSorts>
+        <AreaArray Radius="500" Effect="HybridTempleVoidImmunityIssueOrder"/>
+    </CEffectEnumArea>
+    <CEffectModifyUnit id="ZHBRTempleVoidImmunity@PlusEnergyIssue">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="50"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectEnumArea id="ZHBRWarbringerWeaponMaceStrike@SearchMedium">
         <EditorCategories value="Race:ZHBR"/>
         <DebugTrace value="1"/>
         <ExcludeArray Value="Target"/>
-        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="Ground;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="1.25" Effect="ZHBRWarbringerWeaponMaceStrike@DamageMedium"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="ZHBRWarbringerWeaponMaceStrike@SearchOuter">
         <EditorCategories value="Race:ZHBR"/>
         <DebugTrace value="1"/>
         <ExcludeArray Value="Target"/>
-        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="Ground;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="1.5" Effect="ZHBRWarbringerWeaponMaceStrike@DamageOuter"/>
     </CEffectEnumArea>
+    <CEffectDamage id="ZHBRWarriorWeapon@DamageUpgrade" parent="DU_WEAP">
+        <EditorCategories value="Race:ZHBR"/>
+        <ImpactUnitValidator value="ZCRBasicMissileImpactValidator"/>
+        <AttributeBonus index="Structure" value="10"/>
+        <Kind value="Ranged"/>
+        <Amount value="13"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectTeleport id="ZHBRWormhole@Teleport">
+        <EditorCategories value="Race:ZHBR"/>
+        <WhichUnit Value="Caster"/>
+        <ClearQueuedOrders value="0"/>
+        <PlacementAround Value="CasterUnit"/>
+        <PlacementRange value="4"/>
+        <Range value="4"/>
+        <TargetLocation Value="TargetPoint"/>
+        <TeleportFlags index="TestCliff" value="1"/>
+    </CEffectTeleport>
     <CEffectEnumTrackedUnits id="enumdummy">
         <EditorCategories value=""/>
         <BehaviorLink value="ZHBRHybridUnitTracker"/>
@@ -1040,14 +2117,15 @@
     </CEffectSet>
     <CEffectDamage id="ZHBRShapeshifterWeapon@MainTargetDamage" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:ZHBR"/>
-        <Visibility value="Visible"/>
-        <Amount value="20"/>
+        <Amount value="15"/>
         <ValidatorArray value="ZCRBasicMissileImpactValidator"/>
+        <AttributeBonus index="Light" value="5"/>
     </CEffectDamage>
     <CEffectDamage id="ZHBRShapeshifterWeapon@AOEDamage" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="20"/>
+        <Amount value="15"/>
         <ValidatorArray value="ZCRBasicMissileImpactValidator"/>
+        <AttributeBonus index="Light" value="5"/>
     </CEffectDamage>
     <CEffectEnumArea id="ZHBRShapeshifterWeapon@Search">
         <EditorCategories value="Race:ZHBR"/>
@@ -1096,7 +2174,7 @@
         <LaunchUnit Value="Caster"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Energy">
-            <Change value="-25"/>
+            <Change value="-10"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectSet id="ZHBRNemesisWeapon@DamageSet">
@@ -1109,23 +2187,25 @@
     <CEffectDamage id="ZHBRNemesisWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Kind value="Ranged"/>
-        <Amount value="8"/>
+        <Amount value="12"/>
         <DamageModifierSource Value="Caster"/>
+        <AttributeBonus index="Light" value="3"/>
     </CEffectDamage>
-    <CEffectCreatePersistent id="ZHBRNemesisWeapon@Persistent">
+    <CEffectCreatePersistent id="ZHBRNemesisWeaponHidden@Persistent">
         <EditorCategories value="Race:ZHBR"/>
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
         <Flags index="PersistUntilDestroyed" value="1"/>
-        <PeriodicEffectArray value="ZHBRNemesisWeapon@DamageSet"/>
-        <PeriodicPeriodArray value="0.0625"/>
+        <InitialEffect value="ZHBRNemesisWeapon@PeriodicSet"/>
         <PeriodicValidator value="ZHBRNemesisWeapon@PeriodicValidatorCombine"/>
+        <PeriodicEffectArray value="ZHBRNemesisWeapon@PeriodicSet"/>
+        <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
-    <CEffectModifyUnit id="ZHBRPollinatorShadowMantle@Restore5Energy">
+    <CEffectModifyUnit id="ZHBRPollinatorShadowMantle@RestoreEnergy">
         <EditorCategories value="Race:ZHBR"/>
         <VitalArray index="Energy">
-            <Change value="5"/>
+            <Change value="25"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectLaunchMissile id="ZHBRPollinatorWeapon@LM">
@@ -1137,12 +2217,12 @@
         <EditorCategories value="Race:ZHBR"/>
         <Visibility value="Visible"/>
         <Amount value="12"/>
+        <AttributeBonus index="Light" value="11"/>
     </CEffectDamage>
     <CEffectSet id="ZHBRPollinatorWeapon@Set">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRPollinatorWeapon@Damage"/>
         <EffectArray value="HybridPollinatorVoidToxin"/>
-        <EffectArray value="HybridPollinatorVoidToxinSlow"/>
         <ValidatorArray value="NotHidden"/>
         <ValidatorArray value="NotInvulnerable"/>
         <ValidatorArray value="NotStasis"/>
@@ -1150,7 +2230,7 @@
     <CEffectDamage id="ZHBREnergatorWeapon@Damage" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:ZHBR"/>
         <Visibility value="Visible"/>
-        <Amount value="7"/>
+        <Amount value="11"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="ZHBREnergatorWeapon@LM">
         <EditorCategories value="Race:ZHBR"/>
@@ -1164,11 +2244,12 @@
         <ValidatorArray value="NotHidden"/>
         <ValidatorArray value="ZHBREnergation@EnergyRegenNotSuppressed"/>
         <ValidatorArray value="ZHBRVoid@TargetIsVoidEnergyUser"/>
+        <ValidatorArray value="NotStasis"/>
         <EditorCategories value="Race:ZHBR"/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="2"/>
+        <DrainVitalCostFactor value="0.2856"/>
         <RechargeVital value="Energy"/>
-        <RechargeVitalRate value="14"/>
+        <RechargeVitalRate value="14.2851"/>
     </CEffectCreateHealer>
     <CEffectApplyBehavior id="ZHBRDisappearance@ApplyBehavior">
         <EditorCategories value="Race:ZHBR"/>
@@ -1188,7 +2269,7 @@
         <AINotifyFlags index="HurtEnemy" value="1"/>
         <ImpactLocation Value="CasterUnitOrPoint"/>
         <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden"/>
-        <AreaArray Radius="6.75" Effect="ZHBRDisappearance@ApplyBehavior"/>
+        <AreaArray Radius="5.75" Effect="ZHBRDisappearance@ApplyBehavior"/>
         <DebugTrace value="1"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="ZHBRRevealingSacrifice@ApplyBehavior">
@@ -1198,7 +2279,7 @@
     <CEffectSet id="ZHBRRevealingSacrifice@Set">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="GenericRemoveCaster"/>
-        <EffectArray value="HybridSpiritRevealingSacrifice@SearchArea"/>
+        <EffectArray value="HybridSpirit@SwitchRevealingSacrifice"/>
         <EffectArray value="HybridSpiritSacificingRevealLaunch"/>
     </CEffectSet>
     <CEffectSet id="ZHBRConstruct@TeleportDummyEffect">
@@ -1237,21 +2318,23 @@
         <EffectArray value="ZHBRConstruct@PlacementSetVitality"/>
         <EffectArray value="GenericRemoveCaster"/>
     </CEffectSet>
-    <CEffectDamage id="ZHBRConstructWeaponAntiGround@Damage" parent="DU_WEAP">
+    <CEffectDamage id="ZHBRConstructWeaponAntiGround@DamageHight" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Amount value="20"/>
     </CEffectDamage>
     <CEffectEnumArea id="ZHBRConstructWeaponAntiGround@Search">
         <EditorCategories value="Race:ZHBR"/>
-        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray MaxCount="2" Radius="2" Effect="ZHBRConstructWeaponAntiGround@Damage"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="2" Radius="7" Effect="ZHBRSetConstructSwitchBeamSet"/>
         <ExcludeArray Value="Target"/>
         <TargetSorts>
+            <SortArray value="HybridTSPriority"/>
             <SortArray value="TSDistanceToTarget"/>
         </TargetSorts>
         <RevealerParams Duration="0.75">
             <RevealFlags index="Unfog" value="1"/>
         </RevealerParams>
+        <ImpactLocation Value="CasterUnit"/>
     </CEffectEnumArea>
     <CEffectCreatePersistent id="ZHBRConstruct@FacingPersistent">
         <EditorCategories value="Race:ZHBR"/>
@@ -1273,7 +2356,7 @@
     <CEffectDamage id="ZHBRConstructWeaponAntiAir@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Kind value="Ranged"/>
-        <Amount value="20"/>
+        <Amount value="45"/>
         <ImpactUnitValidator value="ZCRBasicMissileImpactValidator"/>
     </CEffectDamage>
     <CEffectModifyUnit id="ZHBRConstruct@SetFacing">
@@ -1298,7 +2381,9 @@
     <CEffectApplyBehavior id="ZHBRVoidImmunity@ApplyBuff">
         <EditorCategories value="Race:ZHBR"/>
         <Behavior value="ZHBRVoidImmunity"/>
-        <ValidatorArray index="0" value="ZHBRVoidImmunity@TargetHasNotBuff"/>
+        <ValidatorArray index="0" value="ZHBRCommon@TargetIsVoidForcesRace"/>
+        <ValidatorArray value="ZHBRVoidImmunity@TargetHasNotBuff"/>
+        <ValidatorArray value="ZHBRTemple@HasMaxRange"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ZHBRVoidRiftTrain@PrecursorAB">
         <EditorCategories value="Race:ZHBR"/>
@@ -1323,7 +2408,7 @@
     <CEffectDamage id="ZHBRChimeraMeleeWeapon@Damage" parent="DU_WEAP">
         <ValidatorArray value="ZCRBasicMissileImpactValidator"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="14"/>
+        <Amount value="17"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="ZHBRChimeraMeleeWeapon@InitialPersistent">
@@ -1350,36 +2435,37 @@
     <CEffectSet id="ZHBRTimeWarp@ImpactSet">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRTimeWarp@MassiveUnitDetectionUD"/>
-        <EffectArray value="ZHBRTimeWarp@ApplyDebuff"/>
+        <EffectArray value="ZHBRTimeWarp@ApplyDebuffStart"/>
     </CEffectSet>
-    <CEffectApplyBehavior id="ZHBRTimeWarp@ApplyDebuff">
-        <EditorCategories value="Race:ZHBR"/>
-        <Behavior value="ZHBRTimeWarp"/>
+    <CEffectApplyBehavior id="ZHBRTimeWarp@ApplyDebuffStart">
         <ValidatorArray index="0" value=""/>
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRTimeWarp@Start"/>
     </CEffectApplyBehavior>
-    <CEffectCreatePersistent id="ZHBRTimeWarp@Persistent">
+    <CEffectCreatePersistent id="ZHBRTimeWarp@PersistentStart">
         <EditorCategories value="Race:ZHBR"/>
         <OffsetFacingFallback Value="OriginPoint"/>
         <InitialEffect value="ZHBRTimeWarp@SearchInitial"/>
-        <PeriodCount value="112"/>
-        <PeriodicEffectArray value="ZHBRTimeWarp@Search"/>
+        <PeriodCount value="34"/>
+        <PeriodicEffectArray value="ZHBRTimeWarp@SearchStart"/>
         <PeriodicPeriodArray value="0.0625"/>
+        <FinalEffect value="ZHBRTimeWarp@PersistentEnd"/>
     </CEffectCreatePersistent>
-    <CEffectEnumArea id="ZHBRTimeWarp@Search">
+    <CEffectEnumArea id="ZHBRTimeWarp@SearchStart">
         <EditorCategories value="Race:ZHBR"/>
         <AINotifyFlags index="HurtFriend" value="1"/>
         <AINotifyFlags index="HurtEnemy" value="1"/>
-        <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
+        <SearchFilters value="Ground;Player,Ally,Massive,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
         <AreaArray Radius="1.75" Effect="ZHBRTimeWarp@ImpactSet"/>
-        <SearchFlags index="CallForHelp" value="1"/>
         <RevealerParams Duration="0.5">
             <RevealFlags index="Unfog" value="1"/>
             <RevealFlags index="Detect" value="1"/>
         </RevealerParams>
+        <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
     <CEffectDamage id="ZHBRDominatorWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="45"/>
+        <Amount value="50"/>
     </CEffectDamage>
     <CEffectSet id="ZHBRConfusion@ImpactSet">
         <EditorCategories value="Race:ZHBR"/>
@@ -1389,7 +2475,7 @@
         <EditorCategories value="Race:ZHBR"/>
         <ImpactLocation Value="TargetPoint"/>
         <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
-        <AreaArray Radius="1.95" Effect="ZHBRConfusion@ImpactSet"/>
+        <AreaArray Radius="2" Effect="ZHBRConfusion@ImpactSet"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="ZHBRConfusion@ApplyBuff">
         <EditorCategories value="Race:ZHBR"/>
@@ -1397,12 +2483,12 @@
     </CEffectApplyBehavior>
     <CEffectSet id="ZHBRPsionicTornado@SearchSet">
         <EditorCategories value="Race:ZHBR"/>
-        <EffectArray value="ZHBRPsionicTornado@Damage"/>
+        <EffectArray value="ZHBRPsionicTornado@DamageStart"/>
     </CEffectSet>
     <CEffectEnumArea id="ZHBRPsionicTornado@Search">
         <EditorCategories value="Race:ZHBR"/>
-        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.9" Effect="ZHBRPsionicTornado@Damage"/>
+        <SearchFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.9" Effect="ZHBRPsionicTornado@DamageStart"/>
         <RevealerParams Duration="0.5" ShapeExpansion="1">
             <RevealFlags index="Unfog" value="1"/>
         </RevealerParams>
@@ -1412,14 +2498,15 @@
     <CEffectSet id="ZHBRDreadnokWeapon@Set">
         <EditorCategories value="Race:ZHBR"/>
         <EffectArray value="ZHBRDreadnokWeapon@Damage"/>
+        <EffectArray value="ZHBRDrednokDevastatingStrikeReduceEnergy"/>
+        <EffectArray value="ZHBRDreadnokWeapon@ReduceEnergyAB"/>
     </CEffectSet>
     <CEffectDamage id="ZHBRDreadnokWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Kind value="Ranged"/>
-        <Amount value="8"/>
+        <Amount value="10"/>
         <Death value="Blast"/>
-        <AttributeFactor index="Psionic" value="2.5"/>
-        <LeechFraction index="Energy" value="0.5"/>
+        <AttributeBonus index="Psionic" value="14"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="ZHBRDreadnokWeapon@LM">
         <EditorCategories value="Race:ZHBR"/>
@@ -1442,10 +2529,10 @@
         <PeriodicEffectArray value="ZHBRFlayerWeapon@Damage"/>
         <PeriodicEffectArray value="ZHBRFlayerWeapon@Damage"/>
         <PeriodicEffectArray value="ZHBRFlayerWeapon@Damage"/>
-        <PeriodicPeriodArray value="0.27"/>
-        <PeriodicPeriodArray value="0.12"/>
-        <PeriodicPeriodArray value="0.12"/>
-        <PeriodicPeriodArray value="0.12"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.06"/>
+        <PeriodicPeriodArray value="0.06"/>
+        <PeriodicPeriodArray value="0.06"/>
         <TimeScaleSource Value="Caster"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ZHBRFlayerWeapon@InitialPersistent">
@@ -1453,7 +2540,7 @@
         <WhichLocation Value="TargetUnit"/>
         <PeriodCount value="2"/>
         <PeriodicEffectArray value="ZHBRFlayerWeapon@Damage"/>
-        <PeriodicPeriodArray value="0.57"/>
+        <PeriodicPeriodArray value="0.31"/>
         <PeriodicPeriodArray value="0.12"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
@@ -1465,13 +2552,13 @@
     </CEffectSwitch>
     <CEffectDamage id="ZHBRFlayerWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="10"/>
+        <Amount value="9"/>
         <Death value="Eviscerate"/>
         <LaunchLocation Value="CasterUnit"/>
         <ValidatorArray value="NotInvulnerable"/>
         <ValidatorArray value="NotHidden"/>
         <ValidatorArray value="CasterNotDeadAndTargetNotDead"/>
-        <AttributeBonus index="Light" value="10"/>
+        <AttributeBonus index="Light" value="6"/>
     </CEffectDamage>
     <CEffectSet id="ZHBRMinionBuild@Cancel">
         <EditorCategories value="Race:ZHBR"/>
@@ -1511,7 +2598,8 @@
         <EditorCategories value="Race:ZHBR"/>
         <LaunchLocation Value="CasterUnit"/>
         <SearchFilters value="Ground,Visible;Self,Player,Ally,Neutral,Structure,Missile,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="5" Effect="ZHBRConsumeDNA@LaunchMissile"/>
+        <AreaArray Radius="4" Effect="ZHBRConsumeDNA@LaunchMissile"/>
+        <ValidatorArray value="CasterIsNotHidden"/>
     </CEffectEnumArea>
     <CEffectLaunchMissile id="ZHBRConsumeDNA@LaunchMissile">
         <EditorCategories value="Race:ZHBR"/>
@@ -1533,9 +2621,7 @@
     </CEffectEnumArea>
     <CEffectDamage id="ZHBRConsumeDNA@Damage">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="3"/>
-        <AttributeBonus index="Armored" value="5"/>
-        <AttributeBonus index="Massive" value="9"/>
+        <Amount value="1"/>
     </CEffectDamage>
     <CEffectModifyUnit id="ZHBRConsumeDNA@ImpactHeal">
         <EditorCategories value="Race:ZHBR"/>
@@ -1554,7 +2640,13 @@
     </CEffectModifyUnit>
     <CEffectDamage id="ZHBRBehemothWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="35"/>
+        <Amount value="45"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground,Visible;Self,Player,Ally,RawResource,HarvestableResource,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="0"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <KindSplash value="Splash"/>
+        <AreaArray Arc="180" Radius="2" Fraction="0.2"/>
     </CEffectDamage>
     <CEffectDamage id="ZHBRBehemothWeaponAntiAir@Damage">
         <EditorCategories value="Race:ZHBR"/>
@@ -1571,63 +2663,66 @@
         <ImpactEffect value="ZHBRBehemothWeaponAntiAir@Damage"/>
         <AmmoUnit value="ZHBRBehemothWeaponAntiAir@Missile"/>
     </CEffectLaunchMissile>
-    <CEffectApplyBehavior id="ZHBRSentinelJump@ApplyStun">
-        <ValidatorArray index="0" value="ZHBRSentinelJump@StunFilter"/>
+    <CEffectApplyBehavior id="ZHBRSentinelSubjugationJump@ApplyStun">
+        <ValidatorArray index="0" value="ZHBRSentinelSubjugationJump@StunFilter"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Behavior value="ZHBRSentinelJump@Stun"/>
-        <WhichUnit Effect="ZHBRSentinelJump@InitialSet"/>
+        <Behavior value="ZHBRSentinelSubjugationJump@Stun"/>
+        <WhichUnit Effect="ZHBRSentinelSubjugationJump@InitialSet"/>
     </CEffectApplyBehavior>
-    <CEffectDamage id="ZHBRSentinelJump@Damage">
+    <CEffectDamage id="ZHBRSentinelSubjugationJump@Damage">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="15"/>
-        <ImpactLocation Effect="ZHBRSentinelJump@InitialSet" Value="TargetUnit"/>
+        <Amount value="25"/>
+        <ImpactLocation Effect="ZHBRSentinelSubjugationJump@InitialSet" Value="TargetUnit"/>
     </CEffectDamage>
-    <CEffectSet id="ZHBRSentinelJump@ImpactSet">
+    <CEffectSet id="ZHBRSentinelSubjugationJump@ImpactSet">
         <EditorCategories value="Race:ZHBR"/>
-        <EffectArray value="ZHBRSentinelJump@RemoveJumpBuff"/>
-        <EffectArray value="ZHBRSentinelJump@ApplyStun"/>
-        <EffectArray value="ZHBRSentinelJump@Damage"/>
-    </CEffectSet>
-    <CEffectSet id="ZHBRSentinelJump@InitialSet">
-        <EditorCategories value="Race:ZHBR"/>
-        <EffectArray value="ZHBRSentinelJump@LM"/>
+        <EffectArray value="ZHBRSentinelSubjugationJump@RemoveJumpBuff"/>
+        <EffectArray value="ZHBRSentinelSubjugationJump@ApplyStun"/>
+        <EffectArray value="ZHBRSentinelSubjugationJump@Damage"/>
         <EffectArray value="ZHBRProtectionJump@ApplyBehavior"/>
     </CEffectSet>
-    <CEffectApplyBehavior id="ZHBRSentinelJump@ApplyJumpBuff">
+    <CEffectSet id="ZHBRSentinelSubjugationJump@InitialSet">
         <EditorCategories value="Race:ZHBR"/>
-        <Behavior value="ZHBRSentinelJump@JumpBuff"/>
+        <EffectArray value="ZHBRSentinelSubjugationJump@LM"/>
+        <EffectArray value="ZHBRProtectionJump@ApplyBehavior"/>
+        <EffectArray value="ZHBRSentinelSubjugationJump@ApplyJumpBanAutocast"/>
+        <EffectArray value="ZHBRSentinel@CooldownForLeap"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZHBRSentinelSubjugationJump@ApplyJumpBuff">
+        <EditorCategories value="Race:ZHBR"/>
+        <Behavior value="ZHBRSentinelSubjugationJump@JumpBuff"/>
     </CEffectApplyBehavior>
-    <CEffectRemoveBehavior id="ZHBRSentinelJump@RemoveJumpBuff">
+    <CEffectRemoveBehavior id="ZHBRSentinelSubjugationJump@RemoveJumpBuff">
         <EditorCategories value="Race:ZHBR"/>
         <WhichUnit Value="Caster"/>
-        <BehaviorLink value="ZHBRSentinelJump@JumpBuff"/>
+        <BehaviorLink value="ZHBRSentinelSubjugationJump@JumpBuff"/>
     </CEffectRemoveBehavior>
-    <CEffectLaunchMissile id="ZHBRSentinelJump@LM">
+    <CEffectLaunchMissile id="ZHBRSentinelSubjugationJump@LM">
         <EditorCategories value="Race:ZHBR"/>
         <LaunchLocation Value="CasterUnit"/>
         <ImpactLocation Value="TargetPoint"/>
         <ImpactOffset value="0,-0.75,0"/>
-        <LaunchEffect value="ZHBRSentinelJump@ApplyJumpBuff"/>
-        <ImpactEffect value="ZHBRSentinelJump@ImpactSet"/>
-        <InterruptEffect value="ZHBRSentinelJump@RemoveJumpBuff"/>
+        <LaunchEffect value="ZHBRSentinelSubjugationJump@ApplyJumpBuff"/>
+        <ImpactEffect value="ZHBRSentinelSubjugationJump@ImpactSet"/>
+        <InterruptEffect value="ZHBRSentinelSubjugationJump@RemoveJumpBuff"/>
         <Flags index="2D" value="1"/>
         <Flags index="Placement" value="1"/>
         <Flags index="PlacementIgnoreCliffTest" value="1"/>
         <Flags index="PlacementOriginSideOfFootprints" value="1"/>
         <PlacementRange value="3"/>
-        <Movers Link="ZHBRSentinelJump@Mover"/>
+        <Movers Link="ZHBRSentinelSubjugationJump@Mover"/>
         <DeathType value="Unknown"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="ZHBRSentinelWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="25"/>
-        <AttributeBonus index="Structure" value="16"/>
+        <Amount value="19"/>
+        <AttributeBonus index="Structure" value="11"/>
     </CEffectDamage>
     <CEffectModifyUnit id="ZHBREvaporator@ReduceEnergy">
         <EditorCategories value="Race:ZHBR"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Energy">
-            <Change value="-20"/>
+            <Change value="-15"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectSet id="ZHBRStriderWeapon@InitialSet">
@@ -1638,10 +2733,9 @@
     <CEffectDamage id="ZHBRStriderWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Kind value="Ranged"/>
-        <Amount value="10">
-            <AccumulatorArray value="ZHBREvaporator@EvaporatorUserData"/>
-        </Amount>
+        <Amount value="14"/>
         <Death value="Blast"/>
+        <AttributeBonus index="Armored" value="2"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="ZHBRStriderWeapon@LM">
         <EditorCategories value="Race:ZHBR"/>
@@ -1651,14 +2745,20 @@
     </CEffectLaunchMissile>
     <CEffectDamage id="ZHBRWarbringerWeaponMaceStrike@Damage" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:ZHBR"/>
-        <Amount value="60"/>
+        <Amount value="35"/>
         <Death value="Blast"/>
-        <AttributeFactor index="Armored" value="1"/>
+        <AttributeBonus index="Armored" value="35"/>
+        <ArmorReduction value="0"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <AreaArray Radius="1.5" Fraction="0.5"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="ZHBRWarbringerWeaponMaceStrike@InitialPersistent">
         <EditorCategories value="Race:ZHBR"/>
-        <InitialDelay value="1.4"/>
-        <InitialEffect value="HybridWarbringerWeaponMaceStrikeSearchSet"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="ZHBRWarbringerWeaponMaceStrike@EndingSet"/>
+        <PeriodicPeriodArray value="1.4"/>
+        <InitialEffect value="ZHBRWarbringerMacStrikeMarkerAnimation@ApplyBehavior"/>
     </CEffectCreatePersistent>
     <CEffectSet id="ZHBRWarbringerWeaponMaceStrike@InitialSet">
         <EditorCategories value="Race:ZHBR"/>
@@ -1676,15 +2776,13 @@
     </CEffectModifyUnit>
     <CEffectEnumArea id="ZHBRWarbringerWeaponMaceStrike@Search">
         <EditorCategories value="Race:ZHBR"/>
-        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="0.5" Effect="ZHBRWarbringerWeaponMaceStrike@Damage"/>
-        <DebugTrace value="1"/>
-        <ExcludeArray Value="Target"/>
     </CEffectEnumArea>
     <CEffectDamage id="ZHBRWarbringerWeaponMaceCannon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Kind value="Ranged"/>
-        <Amount value="60"/>
+        <Amount value="70"/>
         <Death value="Blast"/>
         <ImpactUnitValidator value="ZCRBasicMissileImpactValidator"/>
     </CEffectDamage>
@@ -1697,10 +2795,9 @@
     <CEffectDamage id="ZHBRWarriorWeapon@Damage" parent="DU_WEAP">
         <EditorCategories value="Race:ZHBR"/>
         <Kind value="Ranged"/>
-        <Amount value="9"/>
+        <Amount value="13"/>
         <Death value="Blast"/>
         <ImpactUnitValidator value="ZCRBasicMissileImpactValidator"/>
-        <AttributeBonus index="Armored" value="8"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="ZHBRWarriorWeapon@LM">
         <EditorCategories value="Race:ZHBR"/>
@@ -1708,63 +2805,65 @@
         <AmmoUnit value="ZHBRWarriorWeapon@Missile"/>
         <Movers Link="ZHBRWarriorWeapon@Mover"/>
     </CEffectLaunchMissile>
-    <CEffectDamage id="ZHBRPsiOrb@Damage">
+    <CEffectDamage id="ZHBRDestructionOrb@Damage">
         <EditorCategories value="Race:ZHBR"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="70"/>
+        <Amount value="5"/>
         <ValidatorArray value="noMarkers"/>
+        <AttributeBonus index="Armored" value="3"/>
     </CEffectDamage>
-    <CEffectDamage id="ZHBRPsiOrb@FinalDamage">
+    <CEffectDamage id="ZHBRDestructionOrb@FinalDamage">
         <EditorCategories value="Race:ZHBR"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <Flags index="Notification" value="1"/>
         <Death value="Blast"/>
     </CEffectDamage>
-    <CEffectEnumArea id="ZHBRPsiOrb@FinalSearch">
+    <CEffectEnumArea id="ZHBRDestructionOrb@FinalSearch">
         <EditorCategories value="Race:ZHBR"/>
         <Chance value="0"/>
         <ImpactLocation Value="SourcePoint"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,RawResource,HarvestableResource,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="ZHBRPsiOrb@FinalDamage"/>
+        <AreaArray Radius="1.5" Effect="ZHBRDestructionOrb@FinalDamage"/>
     </CEffectEnumArea>
-    <CEffectCreatePersistent id="ZHBRPsiOrb@InitialPersistent">
+    <CEffectCreatePersistent id="ZHBRDestructionOrb@InitialPersistent">
         <EditorCategories value="Race:ZHBR"/>
         <WhichLocation Value="SourcePoint"/>
-        <InitialEffect value="ZHBRPsiOrb@LaunchMissile"/>
+        <InitialEffect value="ZHBRDestructionOrb@LaunchMissile"/>
         <InitialOffset value="0,-13,0"/>
-        <PeriodCount value="6"/>
+        <PeriodCount value="7"/>
         <Marker Duration="0.375">
             <MatchFlags index="Id" value="1"/>
         </Marker>
         <ExpireOffset value="0,-13,0"/>
         <FinalOffset value="0,-13,0"/>
-        <PeriodicEffectArray value="ZHBRPsiOrb@LaunchMissile"/>
+        <PeriodicEffectArray value="ZHBRDestructionOrb@LaunchMissile"/>
         <PeriodicOffsetArray value="0,-13,0"/>
-        <PeriodicPeriodArray value="0.6"/>
+        <PeriodicPeriodArray value="0.375"/>
     </CEffectCreatePersistent>
-    <CEffectLaunchMissile id="ZHBRPsiOrb@LaunchMissile">
+    <CEffectLaunchMissile id="ZHBRDestructionOrb@LaunchMissile">
         <EditorCategories value="Race:ZHBR"/>
         <ImpactLocation Value="TargetPoint"/>
-        <LaunchEffect value="ZHBRPsiOrb@ApplySearchBehavior"/>
-        <ImpactEffect value="ZHBRPsiOrb@Search"/>
-        <AmmoUnit value="ZHBRPsiOrb@Missile"/>
+        <LaunchEffect value="ZHBRDestructionOrb@ApplySearchBehavior"/>
+        <ImpactEffect value="ZHBRDestructionOrb@FinalSearch"/>
+        <AmmoUnit value="ZHBRDestructionOrb@Missile"/>
     </CEffectLaunchMissile>
-    <CEffectEnumArea id="ZHBRPsiOrb@Search">
+    <CEffectEnumArea id="ZHBRDestructionOrb@Search">
         <EditorCategories value="Race:ZHBR"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
         <TargetSorts>
+            <SortArray value="DominatorDestructionOrbSorting"/>
             <SortArray value="TSDistance"/>
             <SortArray value="TSMarker"/>
         </TargetSorts>
-        <AreaArray MaxCount="1" Radius="1.25" Effect="ZHBRPsiOrb@Damage"/>
+        <AreaArray Radius="3" Effect="ZHBRDominator@DestructionOrbDamageSet"/>
     </CEffectEnumArea>
-    <CEffectApplyBehavior id="ZHBRPsiOrb@ApplySearchBehavior">
+    <CEffectApplyBehavior id="ZHBRDestructionOrb@ApplySearchBehavior">
         <EditorCategories value="Race:ZHBR"/>
         <WhichUnit Value="Source"/>
-        <Behavior value="ZHBRPsiOrb@SearchBehavior"/>
+        <Behavior value="ZHBRDestructionOrb@SearchBehavior"/>
     </CEffectApplyBehavior>
     <CEffectCreatePersistent id="ZHBRDeepTunnel@CreatePersistent">
         <ValidatorArray value="HasVision"/>

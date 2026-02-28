@@ -3,10 +3,641 @@
     <CValidatorEffectTreeUserData default="1" id="ZCRValidatorEffectTreeUserData">
         <CheckExistence value="0"/>
     </CValidatorEffectTreeUserData>
+    <CValidatorLocationCompareRange id="DistanceMoreThanOrEquals10_5">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GE"/>
+        <Range value="10.4"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="DistanceMoreThanOrEquals7_5">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GE"/>
+        <Range value="7.4"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="DistanceLessThan7_5">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LT"/>
+        <Range value="7.4"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="HybridDrednokPsionicTornadoMaxDistance">
+        <CombineArray value="DistanceMoreThanOrEquals10_5"/>
+        <CombineArray value="CasterIsDead"/>
+        <CombineArray value="IsHiddenSelf"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareField id="HybridFoodUseMore0">
+        <Compare value="LT"/>
+        <Field value="Food"/>
+        <Value value="0"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareField id="HybridFoodUseMore1">
+        <Compare value="LT"/>
+        <Field value="Food"/>
+        <Value value="-1"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareField id="HybridFoodUseMore2">
+        <Compare value="LT"/>
+        <Field value="Food"/>
+        <Value value="-2"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareField id="HybridFoodUseMore3">
+        <Compare value="LT"/>
+        <Field value="Food"/>
+        <Value value="-3"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareField id="HybridFoodUseMore4">
+        <Compare value="LT"/>
+        <Field value="Food"/>
+        <Value value="-4"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitCompareSpeed id="HybridNemesisSmallSpeedMove">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="1.5"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorLocationCompareRange id="DistanceLessThanOrEquals9">
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Compare value="LE"/>
+        <Range value="9"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitState id="HybridCasterIsNotStasis">
+        <WhichUnit Value="Caster"/>
+        <State value="InStasis"/>
+    </CValidatorUnitState>
+    <CValidatorUnitOrderQueue id="HybridDominatorClassAbilityImmediately">
+        <AbilClass value="CAbilEffectInstant"/>
+        <WhichUnit Value="Target"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorCombine id="HybridDominatorClassAbilityConditionTotal">
+        <CombineArray value="HybridDominatorClassAbilityImmediately"/>
+        <CombineArray value="HybridDominatorClassAbilityTarget"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareField id="ZHBRCommon@TargetIsNotVoidForcesRace">
+        <Compare value="NE"/>
+        <Field value="Race"/>
+        <Value value="ZHBR"/>
+        <ResultFailed value="Error,e_cmdCannotTargetZHBR"/>
+    </CValidatorUnitCompareField>
+    <CValidatorUnitFilters id="ZHBRConductor@CanBePhaseShifted">
+        <Filters value="-;Structure,Heroic"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerHasNotRechargeUpBehavior">
+        <Compare value="LE"/>
+        <Behavior value="ZHBRDeformer@RechargeUp"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="ZHBREnergation@DeformerRestoreUnitAboveHalfEnergy">
+        <WhichUnit Effect="ZHBREnergation@RestoreDeformer"/>
+        <Compare value="GE"/>
+        <Type value="Fraction"/>
+        <Value value="0.5"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="ZHBREnergation@DeformerRestoreUnitBelowHalfEnergy">
+        <WhichUnit Effect="ZHBREnergation@RestoreDeformer"/>
+        <Compare value="LT"/>
+        <Type value="Fraction"/>
+        <Value value="0.5"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRSpiritSiegeMode@IsSpiritUsingTranscendence">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ZHBRSpiritSiegeMode"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRVoidBarrier@ConditionApply">
+        <CombineArray value="ZHBRVoidBarrier@TargetHasNotMainBehavior"/>
+        <CombineArray value="ZHBRVoidBarrier@TargetHasNotMarkerBehavior"/>
+    </CValidatorCombine>
+    <CValidatorUnitOrderQueue id="ZHBRDeepTunnel@IsCasting">
+        <AbilLink value="ZHBRDeepTunnel"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwo">
+        <Value value="2"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThree">
+        <Value value="3"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorFour">
+        <Value value="4"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorFive">
+        <Value value="5"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorSix">
+        <Value value="6"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorSeven">
+        <Value value="7"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorEight">
+        <Value value="8"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorNine">
+        <Value value="9"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTen">
+        <Value value="10"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorEleven">
+        <Value value="11"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwelve">
+        <Value value="12"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirteen">
+        <Value value="13"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorFourteen">
+        <Value value="14"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorFifteen">
+        <Value value="15"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorSixteen">
+        <Value value="16"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorSeventeen">
+        <Value value="17"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorEighteen">
+        <Value value="18"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorNineteen">
+        <Value value="19"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwenty">
+        <Value value="20"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentyOne">
+        <Value value="21"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentyTwo">
+        <Value value="22"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentyThree">
+        <Value value="23"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentyFour">
+        <Value value="24"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentyFive">
+        <Value value="25"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentySix">
+        <Value value="26"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentySeven">
+        <Value value="27"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentyEight">
+        <Value value="28"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorTwentyNine">
+        <Value value="29"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirty">
+        <Value value="30"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtyOne">
+        <Value value="31"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtyTwo">
+        <Value value="32"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtyThree">
+        <Value value="33"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtyFour">
+        <Value value="34"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtyFive">
+        <Value value="35"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtySix">
+        <Value value="36"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtySeven">
+        <Value value="37"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtyEight">
+        <Value value="38"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorThirtyNine">
+        <Value value="39"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorFortyAndMore">
+        <Compare value="GE"/>
+        <Value value="40"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerHasRechargeUpBehavior">
+        <Compare value="GT"/>
+        <Behavior value="ZHBRDeformer@RechargeUp"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDeformerCountMaxShieldBehaviorOne">
+        <Value value="1"/>
+        <Behavior value="HybridDeformer@DestructionAriseMaxShields"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="ZHBREvaporator@CasterHasNotRequiredEnergy">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="15"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareAbilStage id="ZHBRInterdimensionalOverload@IsCasting">
+        <Compare value="NE"/>
+        <AbilityStage value="Channel"/>
+        <Ability value="ZHBRInterdimensionalOverload"/>
+    </CValidatorUnitCompareAbilStage>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRMinionVoidBonusCasterHasActivBehavior">
+        <ResultFailed value="Error,HybridDominatorDomination"/>
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="HybridMinionVoidBonusActive"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="ZHBRCommon@IsConductor">
+        <Value value="ZHBRConductor"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@IsFlayer">
+        <Value value="ZHBRFlayer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@IsPsyon">
+        <Value value="ZHBRPsyon"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@IsProteus">
+        <Value value="ZHBRProteus"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@IsBehemoth">
+        <Value value="ZHBRBehemoth"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@IsSentinel">
+        <Value value="ZHBRSentinel"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@IsSpirit">
+        <Value value="ZHBRSpirit"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@NotCrawler">
+        <Value value="ZHBRStriderCrawler"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRConstructHasMarkerSwithcBeam">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ZHBRConstructMarkerSwitchBeam"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRConstructHasNotMarkerSwithcBeam">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRConstructMarkerSwitchBeam"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitOrderQueue id="HybridDominatorClassAbilityTarget">
+        <WhichUnit Value="Target"/>
+        <AbilClass value="CAbilEffectTarget"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitFilters id="ZHBRDomination@@PsionicFilter">
+        <Filters value="Psionic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareDamageTakenTime id="ZHBRDeformerTimeTakeDamageTarget">
+        <Compare value="LT"/>
+        <Value value="7"/>
+    </CValidatorUnitCompareDamageTakenTime>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRCasterHasNotBehaviorRavenScramblerMissile">
+        <ResultFailed value="Error,HybridDominatorDomination"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="RavenScramblerMissile"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDominatorHasNotDisableSecondApply">
+        <ResultFailed value="Error,HybridDominatorDisableSecondApply"/>
+        <Behavior value="ZHBRDominationDisableSecondApply"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDominatorHasNotBehaviorDomination">
+        <ResultFailed value="Error,HybridDominatorDomination"/>
+        <Behavior value="ZHBRDominatorDomination"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRMinionVoidBonusCasterHasNotActivBehavior">
+        <ResultFailed value="Error,HybridDominatorDomination"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="HybridMinionVoidBonusActive"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRNavigator@CasterHasNotStationarity">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRNavigatorStationarity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRNemesisWeapon@CasterHasNotLaunchAttack">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRNemesisLaunchAttack"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRNemesisWeapon@PeriodicValidatorCombineAdditional">
+        <CombineArray value="DistanceLessThanOrEquals9"/>
+        <CombineArray value="ZHBRNemesisWeapon@CasterHasDisintegration"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="ZHBREnergation@DeformerHasAttackingUnitInArea" parent="HostileSearch">
+        <ResultFailed value="Error,EnemiesNearby"/>
+        <AreaArray>
+            <Compare value="GT"/>
+            <Count value="0"/>
+            <Radius value="13"/>
+            <Validator value="ZHBRDeformerTimeTakeDamageTarget"/>
+        </AreaArray>
+        <Compare value="GT"/>
+        <Count value="0"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <SearchFilters value="-;Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareOrderCount id="ZHBRMinionVoidBonus@OrderWork">
+        <Compare value="GT"/>
+        <AbilLink value="ZHBRMinionHarvest"/>
+    </CValidatorUnitCompareOrderCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRStriderHasBehaviorDeactivateEvaporator">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="ZHBRDeactivateEvaporator"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="ZHBRVoidBarrier@HasNotVoidEfficiencyUpgrade">
+        <Value value="ZHBRVoidBarrier@Use"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="ZHBRVoidBarrier@HasVoidEfficiencyUpgrade">
+        <Find value="1"/>
+        <Value value="ZHBRVoidBarrier@Use"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetBehaviorStackFour">
+        <Value value="4"/>
+        <Behavior value="ZHBRVoidBarrier"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetBehaviorStackLessThanFour">
+        <Compare value="LT"/>
+        <Value value="4"/>
+        <Behavior value="ZHBRVoidBarrier"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetBehaviorStackOne">
+        <Value value="1"/>
+        <Behavior value="ZHBRVoidBarrier"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetBehaviorStackThree">
+        <Value value="3"/>
+        <Behavior value="ZHBRVoidBarrier"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetBehaviorStackTwo">
+        <Value value="2"/>
+        <Behavior value="ZHBRVoidBarrier"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetHasNotMarkerBehavior">
+        <Behavior value="ZHBRVoidBarrier@Marker"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRShapeshifterVoidCham@InterruptAnimation">
+        <CombineArray value="ZHBRStartingDelay@CasterHasBehavior"/>
+        <CombineArray value="CasterIsDead"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRStartingDelay@CasterHasBehavior">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ZHBRVoidChasmStartingDelay"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRShapeshifterVoidCham@InterruptAbility">
+        <Type value="And"/>
+        <CombineArray value="ZCRCasterNotStunned"/>
+        <CombineArray value="HybridCasterIsNotStasis"/>
+        <CombineArray value="HybridCasterIsNotSilencted"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="ZHBRBehemothCondition@StealLifeMaxHP">
+        <CombineArray value="ZHBRBehemothHasLessThan50BehaviorLifeStealUp"/>
+        <CombineArray value="ZHBRUpgradeToAdvancedBehemoth@HasUpgrade"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRBehemothHasLessThan50BehaviorLifeStealUp">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="50"/>
+        <Behavior value="ZHBRConsumeDNA@LifeStealUp"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="ZHBRCommon@NotTemple">
+        <Value value="ZHBRTemple"/>
+        <Find value="0"/>
+        <ResultFailed value="CantTargetThatUnit,Error/CantTargetTemple"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@NotEnergator">
+        <Value value="ZHBREnergator"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@NotConductor">
+        <Value value="ZHBRConductor"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@NotDeformer">
+        <Value value="ZHBRDeformer"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitOrder id="ZHBRDeformerAutoCast">
+        <AbilLink value="ZHBREnergation@EnergationDeformer"/>
+        <CmdFlags index="SetAutoCast" value="1"/>
+    </CValidatorUnitOrder>
+    <CValidatorLocationPlacement id="HybridSentinelPlacementCheck">
+        <Range value="2.5"/>
+        <Unit value="ZHBRSentinel"/>
+    </CValidatorLocationPlacement>
+    <CValidatorCombine id="ZHBRDominatorCondition@OnlySingleCaster">
+        <CombineArray value="ZHBRDominatorHasNotOnlySingleCasterBehavior"/>
+        <CombineArray value="ZHBRDominatorHasOnlySingleCasterBehaviorFromCaster"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDominatorHasOnlySingleCasterBehaviorFromCaster">
+        <Compare value="GT"/>
+        <Behavior value="ZHBRDominatorDestructionOrbSingleCaster"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDominatorHasNotOnlySingleCasterBehavior">
+        <Behavior value="ZHBRDominatorDestructionOrbSingleCaster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRDrednokHasNotBehaviorTornadoEnd">
+        <Behavior value="ZHBRPsionicTornado@TornadoBehaviorEnd"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRNemesisWeapon@CasterHasNotDisintegration">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRNemesisDisintegrator"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareOrderCount id="ZHBRProjector@SourceHasOrders">
+        <WhichUnit Value="Source"/>
+        <Compare value="GT"/>
+    </CValidatorUnitCompareOrderCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRStriderHasNotBehaviorActivateEvaporator">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRDeactivateEvaporator"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRContaminate@Condition">
+        <CombineArray value="ZHBRCommon@IsCrypt"/>
+        <CombineArray value="ZHBRCommon@IsProjector"/>
+        <CombineArray value="ZHBRCommon@IsVoidForge"/>
+        <CombineArray value="ZHBRCommon@IsCapsule"/>
+        <CombineArray value="ZHBRCommon@IsHoldingCell"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRTempleVoidImmunity@CasterHasVoidImmunityHasMarkerIssue">
+        <Compare value="GT"/>
+        <Behavior value="ZHBRTempleMarkerIssue"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="ZHBRHasTombOrCrypt">
+        <Find value="1"/>
+        <Value value="ZHBRCommon@RequiresCryptOrTombUse"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoid@CasterHasNotPowerUserBehaviorPermanentNetwork">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRVoid@PowerUserPermanentNetwork"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoid@CasterHasPowerUserBehaviorPermanentNetwork">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ZHBRVoid@PowerUserPermanentNetwork"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRVoid@TargetIsConnectedPermament">
+        <CombineArray value="ZHBRVoid@TargetIsConnected"/>
+        <CombineArray value="ZHBRVoid@TargetHasPowerUserBehaviorPermanent"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetHasNotMainBehavior">
+        <Behavior value="ZHBRVoidBarrier"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidBarrier@TargetMainBehaviorGT0">
+        <Compare value="GT"/>
+        <Behavior value="ZHBRVoidBarrier"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="ZHBRVoidChasm@UnitCanHaveShields">
+        <Filters value="CanHaveShields;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidImmunity@CasterHasNotVoidImmunityBuff">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ZHBRVoidImmunity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidImmunity@TargerHasVoidImmunityBuff">
+        <Compare value="GT"/>
+        <Behavior value="ZHBRVoidImmunity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoidPhantom@CasterIsNotPhantasming">
+        <WhichUnit Effect="ZHBRVoidPhantom@CU" Value="Caster"/>
+        <Behavior value="ZHBRVoidPhantom@CancelDummyBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareOrderCount id="ZHBRVoidRift@SourceHasOrders">
+        <WhichUnit Value="Source"/>
+        <Compare value="GT"/>
+    </CValidatorUnitCompareOrderCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRSentinelSubjugationJumpNoBanAutoCast">
+        <Behavior value="ZHBRSentinelSubjugationJump@BanAutocast"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitWeaponFiring id="ZHBRSentinelLeap@CasterNotAttacking">
+        <WhichUnit Value="Caster"/>
+        <Weapon value="ZHBRSentinelWeapon"/>
+        <Find value="0"/>
+    </CValidatorUnitWeaponFiring>
+    <CValidatorLocationEnumArea id="ZHBRSentinelLeap@NoEnemiesNearby" parent="HostileSearch">
+        <ResultFailed value="Error,EnemiesNearby"/>
+        <AreaArray Count="0" Radius="2.5" Validator="TargetIsEnemy"/>
+        <Compare value="Eq"/>
+        <Count value="0"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitFilters id="ZHBRSentinelLeap@StunFilter">
+        <WhichUnit Effect="ZHBRSentinelLeap@InitialSet"/>
+        <Filters value="-;Structure,Unstoppable"/>
+    </CValidatorUnitFilters>
+    <CValidatorPlayerRequirement id="ZHBRUpgradeToBrokenDNA@HasUpgrade">
+        <Find value="1"/>
+        <Value value="ZHBRBrokenDNA@Use"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRWarbringerMacStrikeNoBanAutoCast">
+        <Behavior value="ZHBRWarbringerBanAutoCast"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRStriderWeaponSwitch@HasEnergy">
+        <Type value="And"/>
+        <CombineArray value="ZHBREvaporator@CasterHasRequiredEnergy"/>
+        <CombineArray value="ZHBRStriderHasNotBehaviorActivateEvaporator"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="ZHBRRestoreLifeCondition@ConnectNetwork">
+        <CombineArray value="ZHBRVoid@TargetHasPowerUserBehaviorPermanentNetwork"/>
+        <CombineArray value="ZHBRVoid@TargetHasPowerUserBehaviorPermanent"/>
+        <CombineArray value="ZHBRVoid@TargetUnitWithinPowerRange"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="ZHBRTemple@HasMaxRange" parent="HostileSearch">
+        <ResultFailed value="Error,ZHBRTempleInRange"/>
+        <WhichLocation Value="TargetUnit"/>
+        <AreaArray>
+            <Compare value="GT"/>
+            <Count value="0"/>
+            <Radius value="30"/>
+            <Validator value="ZHBRCommon@IsTemple"/>
+        </AreaArray>
+        <SearchFilters value="-;Neutral,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareDamageDealtTime id="ZHBRTimeGiveDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Value value="5"/>
+    </CValidatorUnitCompareDamageDealtTime>
+    <CValidatorLocationCompareRange id="DistanceLessThanOrEquals12">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="12"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="DistanceLessThanOrEquals122">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="12"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRBehemothHasOnlySingleCasterBehaviorFromCaster">
+        <Compare value="GT"/>
+        <Behavior value="ZHBRBehemothBrokenDNASingleCaster"/>
+        <RequireCasterUnit Value="Caster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRBehemothHasNotOnlySingleCasterBehavior">
+        <Behavior value="ZHBRBehemothBrokenDNASingleCaster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ZHBRBehemothCondition@OnlySingleCaster">
+        <CombineArray value="ZHBRBehemothHasNotOnlySingleCasterBehavior"/>
+        <CombineArray value="ZHBRBehemothHasOnlySingleCasterBehaviorFromCaster"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareDamageTakenTime id="ZHBRDisableRestoreShieldsTimeTakeDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="5"/>
+    </CValidatorUnitCompareDamageTakenTime>
     <CValidatorUnitFilters id="HybridTargetIsArmored">
         <Filters value="Armored;-"/>
     </CValidatorUnitFilters>
-    <CValidatorUnitState id="CasterIsNotSilencted">
+    <CValidatorUnitState id="HybridCasterIsNotSilencted">
         <WhichUnit Value="Caster"/>
         <State value="Silenced"/>
     </CValidatorUnitState>
@@ -59,29 +690,36 @@
         <Type value="And"/>
         <CombineArray value="ZHBRCommon@NotIsIonicCrystal"/>
         <CombineArray value="ZHBRCommon@IsnotIonicCrystalMoveable"/>
+        <ResultFailed value="Error,ZHBR Not Ionic Crystal"/>
     </CValidatorCombine>
     <CValidatorCombine id="ZHBRConstructWeaponAntiAir@PeriodicCombine">
-        <CombineArray value="WeaponInRange"/>
         <CombineArray value="ZHBRConstructWeaponAntiAir@WeaponFilter"/>
+        <CombineArray value="DistanceLessThanOrEquals12"/>
+        <CombineArray value="ZHBRConstructMarkerAALessThan3"/>
+        <Type value="And"/>
     </CValidatorCombine>
     <CValidatorCombine id="ZHBRConstructWeaponAntiGround@PeriodicCombine">
-        <CombineArray value="WeaponInRange"/>
         <CombineArray value="ZHBRConstructWeaponAntiGround@WeaponFilter"/>
+        <CombineArray value="DistanceLessThanOrEquals12"/>
+        <CombineArray value="ZHBRConstructMarkerAALessThan3"/>
+        <Type value="And"/>
     </CValidatorCombine>
     <CValidatorUnitFilters id="ZHBRConstructWeaponAntiAir@WeaponFilter">
-        <Filters value="Air;Visible,Stasis,Dead,Hidden,Invulnerable"/>
+        <Filters value="Air;Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
     <CValidatorUnitFilters id="ZCRBasicMissileImpactValidator">
         <Filters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
     <CValidatorUnitFilters id="ZHBRConstructWeaponAntiGround@WeaponFilter">
-        <Filters value="Ground,Visible;Stasis,Dead,Hidden,Invulnerable"/>
+        <Filters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
     <CValidatorPlayerRequirement id="ZHBRDeconstruction@UpgradeNotCompleted">
         <Value value="ZHBRWarriorDeconstruction@Use"/>
     </CValidatorPlayerRequirement>
-    <CValidatorUnitOrderQueue id="ZHBRDeepTunnel@IsCasting">
+    <CValidatorUnitOrderQueue id="ZHBRDeepTunnel@IsNotCasting">
+        <ResultFailed value="CantQueueThatOrder,ZHBRDeepTunnelInUse"/>
         <AbilLink value="ZHBRDeepTunnel"/>
+        <Find value="0"/>
     </CValidatorUnitOrderQueue>
     <CValidatorCombine id="ZHBRNemesisWeapon@ArmorIgnoreCombine">
         <Type value="And"/>
@@ -96,7 +734,6 @@
     <CValidatorCombine id="ZHBRNemesisWeapon@PeriodicValidatorCombine">
         <Type value="And"/>
         <CombineArray value="ZHBRNemesisWeapon@TargetFilter"/>
-        <CombineArray value="WeaponInRange"/>
         <CombineArray value="ZCRCasterNotStunned"/>
         <CombineArray value="ZCRCasterNotInStasis"/>
     </CValidatorCombine>
@@ -120,7 +757,7 @@
     <CValidatorUnitCompareVital id="ZHBRPlasmaticBlast@CasterHasRequiredEnergy">
         <WhichUnit Value="Caster"/>
         <Compare value="GE"/>
-        <Value value="50"/>
+        <Value value="20"/>
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
     <CValidatorLocationComparePower id="ZHBRPowerField@CasterNotInPowerField">
@@ -199,10 +836,10 @@
         <Compare value="GT"/>
         <Range value="15"/>
     </CValidatorLocationCompareRange>
-    <CValidatorLocationCompareRange id="DistanceLessThanOrEquals14">
-        <WhichLocation Value="TargetUnitOrPoint"/>
-        <Compare value="LE"/>
-        <Range value="14"/>
+    <CValidatorLocationCompareRange id="DistanceMoreThen7">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GT"/>
+        <Range value="7"/>
     </CValidatorLocationCompareRange>
     <CValidatorLocationCompareRange id="DistanceLessThanOrEquals6">
         <WhichLocation Value="TargetUnitOrPoint"/>
@@ -214,10 +851,10 @@
         <Compare value="LE"/>
         <Range value="6.25"/>
     </CValidatorLocationCompareRange>
-    <CValidatorLocationCompareRange id="DistanceLessThanOrEquals8">
+    <CValidatorLocationCompareRange id="DistanceLessThanOrEquals13">
         <WhichLocation Value="TargetUnitOrPoint"/>
         <Compare value="LE"/>
-        <Range value="8"/>
+        <Range value="13"/>
     </CValidatorLocationCompareRange>
     <CValidatorLocationCompareRange id="DistanceLessThanOrEquals075">
         <WhichLocation Value="TargetUnitOrPoint"/>
@@ -301,10 +938,10 @@
     <CValidatorUnitType id="ZHBRCommon@IsKeystone">
         <Value value="ZHBRKeystone"/>
     </CValidatorUnitType>
-    <CValidatorUnitType id="ZHBRCommon@IsSilentCrawler">
+    <CValidatorUnitType id="ZHBRCommon@IsStriderCrawler">
         <Value value="ZHBRStriderCrawler"/>
     </CValidatorUnitType>
-    <CValidatorUnitType id="ZHBRCommon@IsSilentCrawlerCaster">
+    <CValidatorUnitType id="ZHBRCommon@IsStriderCrawlerCaster">
         <WhichUnit Value="Caster"/>
         <Value value="ZHBRStriderCrawler"/>
     </CValidatorUnitType>
@@ -328,7 +965,7 @@
         <CombineArray value="ZHBRCommon@IsTemple"/>
         <CombineArray value="ZHBRCommon@IsVoidRift"/>
     </CValidatorCombine>
-    <CValidatorUnitType id="ZHBRCommon@IsSilent">
+    <CValidatorUnitType id="ZHBRCommon@IsStrider">
         <Value value="ZHBRStrider"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="ZHBRCommon@NotScreamerCaster">
@@ -381,9 +1018,6 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="ZHBRPsyonWeapon@Cooldown"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorCompareTrackedUnitsCount id="ZHBRPsyonWeapon@CasterHasNotTrackedUnit">
-        <BehaviorLink value="ZHBRPsyonWeapon@UnitTracker"/>
-    </CValidatorCompareTrackedUnitsCount>
     <CValidatorUnitOrderTargetType id="ZHBRPsyonWeapon@OrderIsAttackMove">
         <AbilLink value="attack"/>
         <Type value="Point"/>
@@ -417,7 +1051,7 @@
     <CValidatorUnitFilters id="ZHBRPsionicTornado@TargetFilters">
         <Filters value="-;Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
-    <CValidatorUnitFilters id="ZHBRConsumeDNA@@StunFilter">
+    <CValidatorUnitFilters id="ZHBRConsumeDNA@@SlowingdownFilter">
         <Filters value="-;Massive,Structure,Heroic,Unstoppable"/>
     </CValidatorUnitFilters>
     <CValidatorPlayerRequirement id="ZHBRStructureTeleport@HasUpgrade">
@@ -430,6 +1064,13 @@
     <CValidatorEffectTreeUserData id="ZHBRTimeWarp@NoMassiveUnitsDetected" parent="ZCRValidatorEffectTreeUserData">
         <Key value="ZHBRTimeWarp@MassiveUnit"/>
     </CValidatorEffectTreeUserData>
+    <CValidatorPlayerRequirement id="ZHBRUpgradeToDestructionOrb@HasUpgrade">
+        <Find value="1"/>
+        <Value value="ZHBRDestructionOrb@Use"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoid@TargetHasNotPowerUserBehaviorNetwork">
+        <Behavior value="ZHBRVoid@PowerUserNetwork"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="ZHBRVoid@TargetHasPowerUserBehaviorPermanent">
         <Compare value="GT"/>
         <Behavior value="ZHBRVoid@PowerUserPermanent"/>
@@ -455,6 +1096,9 @@
         <Compare value="GT"/>
         <Behavior value="ZHBRVoid@PowerUserPermanentNetwork"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRVoid@TargetHasNotPowerUserBehaviorPermanentNetwork">
+        <Behavior value="ZHBRVoid@PowerUserPermanentNetwork"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="ZHBRVoid@TargetIsConnected">
         <Type value="And"/>
         <CombineArray value="ZHBRVoid@TargetPowerLevelGT0"/>
@@ -465,6 +1109,12 @@
         <CombineArray value="ZHBRVoid@TargetHasPowerUserBehaviorNetwork"/>
         <CombineArray value="ZHBRVoid@TargetHasPowerUserBehaviorPermanentNetwork"/>
     </CValidatorCombine>
+    <CValidatorCombine id="ZHBRVoid@TargetIsNotVoidEnergyUser">
+        <ResultFailed value="MustTargetEnergyCapableUnits"/>
+        <Type value="And"/>
+        <CombineArray value="ZHBRVoid@TargetHasNotPowerUserBehaviorNetwork"/>
+        <CombineArray value="ZHBRVoid@TargetHasNotPowerUserBehaviorPermanentNetwork"/>
+    </CValidatorCombine>
     <CValidatorLocationComparePower id="ZHBRVoid@TargetPointWithinPowerRange">
         <ResultFailed value="Error,Error/ZHBR_VoidPowerFieldLocationRequired"/>
         <PowerLink value="ZHBRVoid"/>
@@ -472,6 +1122,30 @@
         <PowerSource value="ZHBRVoid@PowerSourceIonicCrystalLarge"/>
         <PowerSource value="ZHBRVoid@PowerSourceIonicCrystalSmall"/>
         <Compare value="GT"/>
+    </CValidatorLocationComparePower>
+    <CValidatorLocationComparePower id="ZHBRVoid@TargetUnitWithinPowerRange">
+        <ResultFailed value="Error,Error/ZHBR_VoidPowerFieldLocationRequired"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PowerLink value="ZHBRVoid"/>
+        <PowerSource value="ZHBRVoid@PowerSourceConductor"/>
+        <PowerSource value="ZHBRVoid@PowerSourceIonicCrystalLarge"/>
+        <PowerSource value="ZHBRVoid@PowerSourceIonicCrystalSmall"/>
+        <Compare value="GT"/>
+    </CValidatorLocationComparePower>
+    <CValidatorLocationComparePower id="ZHBRVoid@TargetUnitWithinPowerRangeLevel2">
+        <ResultFailed value="Error,Error/ZHBR_VoidPowerFieldLocationRequired"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PowerLink value="ZHBRVoid"/>
+        <PowerSource value="ZHBRVoid@PowerSourceConductor"/>
+        <Value value="2"/>
+    </CValidatorLocationComparePower>
+    <CValidatorLocationComparePower id="ZHBRVoid@CasterUnitWithinPowerRangeLessThenLevel">
+        <ResultFailed value="Error,Error/ZHBR_VoidPowerFieldLocationRequired"/>
+        <WhichLocation Value="CasterUnit"/>
+        <PowerLink value="ZHBRVoid"/>
+        <PowerSource value="ZHBRVoid@PowerSourceConductor"/>
+        <Compare value="LT"/>
+        <Value value="2"/>
     </CValidatorLocationComparePower>
     <CValidatorUnitCompareBehaviorCount id="ZHBRVoidImmunity@CasterHasVoidImmunityBuff">
         <WhichUnit Value="Caster"/>
@@ -508,8 +1182,8 @@
     <CValidatorUnitType id="ZHBRCommon@IsNemesisCatacomb">
         <Value value="ZHBRNemesisCatacomb"/>
     </CValidatorUnitType>
-    <CValidatorUnitType id="ZHBRCommon@IsEngine">
-        <Value value="ZHBREngine"/>
+    <CValidatorUnitType id="ZHBRCommon@IsEnergator">
+        <Value value="ZHBREnergator"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="ZHBRCommon@IsNavigator">
         <Value value="ZHBRNavigator"/>
@@ -553,6 +1227,9 @@
     <CValidatorUnitType id="ZHBRCommon@IsWarrior">
         <Value value="ZHBRWarrior"/>
     </CValidatorUnitType>
+    <CValidatorUnitType id="ZHBRCommon@IsWarriorChangeling">
+        <Value value="ZHBRWarrior@Changeling"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="ZHBRCommon@IsMinion">
         <Value value="ZHBRMinion"/>
     </CValidatorUnitType>
@@ -564,9 +1241,6 @@
     </CValidatorUnitType>
     <CValidatorUnitType id="ZHBRCommon@IsIonicCrystal">
         <Value value="ZHBRIonicCrystal"/>
-    </CValidatorUnitType>
-    <CValidatorUnitType id="ZHBRCommon@IsScreamer">
-        <Value value="ZHBREnergator"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="ZHBRCommon@IsDominator">
         <Value value="ZHBRDominator"/>
@@ -594,9 +1268,10 @@
         <Find value="1"/>
         <Value value="ZHBRUpgradeToAdvancedNemesis@Use"/>
     </CValidatorPlayerRequirement>
-    <CValidatorUnitCompareVital id="ZHBRNemesisDisintegrator@HasEnergy">
+    <CValidatorUnitCompareVital id="ZHBRNemesisDisintegrator@HasEnergyForShoot">
         <ResultFailed value="NotEnoughEnergy,Error/ZHBR_VoidEnergyNotEnough"/>
-        <Compare value="GT"/>
+        <Compare value="GE"/>
+        <Value value="10"/>
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
     <CValidatorUnitCompareBehaviorCount id="ZHBRNemesisWeapon@CasterHasNotCooldownBehavior">
@@ -643,16 +1318,16 @@
         <Find value="1"/>
         <Value value="ZHBRUpgradeToAdvancedBehemoth@Use"/>
     </CValidatorPlayerRequirement>
-    <CValidatorUnitWeaponFiring id="ZHBRSentinelJump@CasterNotAttacking">
+    <CValidatorUnitWeaponFiring id="ZHBRSentinelSubjugationJump@CasterNotAttacking">
         <WhichUnit Value="Caster"/>
         <Weapon value="ZHBRSentinelWeapon"/>
         <Find value="0"/>
     </CValidatorUnitWeaponFiring>
-    <CValidatorUnitFilters id="ZHBRSentinelJump@StunFilter">
-        <WhichUnit Effect="ZHBRSentinelJump@InitialSet"/>
-        <Filters value="-;Structure,Unstoppable"/>
+    <CValidatorUnitFilters id="ZHBRSentinelSubjugationJump@StunFilter">
+        <WhichUnit Effect="ZHBRSentinelSubjugationJump@InitialSet"/>
+        <Filters value="-;Massive,Structure,Unstoppable"/>
     </CValidatorUnitFilters>
-    <CValidatorLocationEnumArea id="ZHBRSentinelJump@NoEnemiesNearby" parent="HostileSearch">
+    <CValidatorLocationEnumArea id="ZHBRSentinelSubjugationJump@NoEnemiesNearby" parent="HostileSearch">
         <AreaArray Count="0" Radius="2.5" Validator="TargetIsEnemy"/>
         <Count value="0"/>
         <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -664,7 +1339,7 @@
     <CValidatorUnitCompareVital id="ZHBREvaporator@CasterHasRequiredEnergy">
         <WhichUnit Value="Caster"/>
         <Compare value="GE"/>
-        <Value value="10"/>
+        <Value value="15"/>
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
     <CValidatorUnitComparePowerUserLevel id="ZHBRVoid@TargetPowerLevelGT0">
@@ -679,6 +1354,10 @@
         <Find value="1"/>
         <Value value="ZHBRVoidBonus@ResearchInProgress"/>
     </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="ZHBRTRestorationHealth@UpgradeCompleted">
+        <Find value="1"/>
+        <Value value="ZHBRRestorationHealth@Use"/>
+    </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="ZHBRVoidShield@UpgradeNotCompleted">
         <Value value="ZHBRVoidShield@Use"/>
     </CValidatorPlayerRequirement>
@@ -689,8 +1368,21 @@
         <Value value="150"/>
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="ZHBRDeformerCasterEnergyMoreThanMinimum">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Type value="Fraction"/>
+        <Value value="0.075"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
     <CValidatorUnitCompareBehaviorCount id="ZHBRWarbringerMaceStrike@TargetHasBuff">
         <Compare value="GT"/>
         <Behavior value="ZHBRWarbringerMaceStrike"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ZHBRConstructMarkerAALessThan3">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="3"/>
+        <Behavior value="ZHBRConstructMarker"/>
     </CValidatorUnitCompareBehaviorCount>
 </Catalog>

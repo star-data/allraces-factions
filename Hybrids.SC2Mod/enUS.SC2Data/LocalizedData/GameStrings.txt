@@ -3,7 +3,12 @@ Abil/Name/ZHBRAcceleration=Acceleration
 Abil/Name/ZHBRAiurStun=Hybrid Aiur Stun
 Abil/Name/ZHBRBlink=Blink
 Abil/Name/ZHBRCPlasmaBlast=Plasma Blast
+Abil/Name/ZHBRCancelEnergatorVoidTrance=Cancel Void Trance
+Abil/Name/ZHBRCancelSiegeMod=Cancel Siege mod
+Abil/Name/ZHBRCancelStationarity=Cancel Stationarity
 Abil/Name/ZHBRCapsule@Research=Research
+Abil/Name/ZHBRChimeraFade=Fade
+Abil/Name/ZHBRChimeraPounce=Pounce
 Abil/Name/ZHBRCommon@SelectAllStructured=Select All Structures
 Abil/Name/ZHBRConfusion=Confusion
 Abil/Name/ZHBRConstruct@TransformToAntiAir=Transform To Anti-Air
@@ -11,11 +16,17 @@ Abil/Name/ZHBRConstruct@TransformToAntiGround=Transform To Anti-Ground
 Abil/Name/ZHBRConsumeDNA=Consume DNA
 Abil/Name/ZHBRConsumeZerg=Hybrid - Consume Zerg
 Abil/Name/ZHBRCrypt@Research=Research
+Abil/Name/ZHBRDeactivateEvaporator=Revealing Sacrifice
 Abil/Name/ZHBRDeepTunnel=Deep Tunnel
+Abil/Name/ZHBRDeformer@SelfDestruction=Sel-fDestruction
+Abil/Name/ZHBRDestructionOrb=Destruction Orb
 Abil/Name/ZHBRDisappearance=Disappearance
 Abil/Name/ZHBRDisintegrator@Disintegrator=Disintegrator
 Abil/Name/ZHBREnergation@Energation=Energation
 Abil/Name/ZHBREnergation@EnergationDeformer=Energation
+Abil/Name/ZHBREnergation@EnergationRange=Energation Range
+Abil/Name/ZHBREnergationVoidTrance=Void Trance
+Abil/Name/ZHBREnergatorVoidTrance=Void Trance
 Abil/Name/ZHBRGeneralMindControl=Mind Control
 Abil/Name/ZHBRGeneralPhaseShift=Phase Shift
 Abil/Name/ZHBRHoldingCell@Research=Research
@@ -31,6 +42,7 @@ Abil/Name/ZHBRNavigation=Navigation
 Abil/Name/ZHBRNavigatorLoad=Load-Unload
 Abil/Name/ZHBRNemesisDisintegrator=Disintegrator
 Abil/Name/ZHBRPermanentPower=Permanent Power
+Abil/Name/ZHBRPermanentPowerIssue=Permanent Power (Issue)
 Abil/Name/ZHBRPhaseShift=Phase Shift
 Abil/Name/ZHBRPlasmaticBlast=Plasmatic Blast
 Abil/Name/ZHBRPollinatorShadowMantle@ShadowMantle=ShadowMantle
@@ -40,15 +52,17 @@ Abil/Name/ZHBRPowerField@DummyAbility=Dummy Ability
 Abil/Name/ZHBRPrimeSummoning@Instant=Instant
 Abil/Name/ZHBRPrimeSummoning@Transport=Transport
 Abil/Name/ZHBRProjector@Research=Research
-Abil/Name/ZHBRPsiOrb=Psi Orb
 Abil/Name/ZHBRPsionicTornado=Psionic Tornado
 Abil/Name/ZHBRPsyon@Stop=Stop
 Abil/Name/ZHBRReleaseVoid=Hybrid Release Void
 Abil/Name/ZHBRResearchParent=[Hybrid] - Research Parent
 Abil/Name/ZHBRRevealingSacrifice=Revealing Sacrifice
 Abil/Name/ZHBRSentinelJump=Jump
+Abil/Name/ZHBRSpiritSiegeMode=Siege mode
 Abil/Name/ZHBRSpray=Spray
 Abil/Name/ZHBRStasisCell@Research=Research
+Abil/Name/ZHBRStationarity=Stationarity
+Abil/Name/ZHBRStriderActivateEvaporator=Deactivate Evaporator
 Abil/Name/ZHBRStructureTeleport=Structure Teleport
 Abil/Name/ZHBRStructureTeleport@Amplifier=Structure Teleport (Amplifier)
 Abil/Name/ZHBRStructureTeleport@Capsule=Structure Teleport (Capsule)
@@ -72,11 +86,17 @@ Abil/Name/ZHBRTemple@Rally=Rally
 Abil/Name/ZHBRTempleTrain=Train
 Abil/Name/ZHBRTimeWarp=Time Warp
 Abil/Name/ZHBRTomb@Research=Research
+Abil/Name/ZHBRVoidBarrier=Void Barrier
 Abil/Name/ZHBRVoidChasm=Void Chasm
 Abil/Name/ZHBRVoidForge@Research=Research
 Abil/Name/ZHBRVoidImmunity=Void Immunity
+Abil/Name/ZHBRVoidImmunityGiveIssue=Void Immunity (Issue)
+Abil/Name/ZHBRVoidPhantom=Void Phantom
+Abil/Name/ZHBRVoidPhantom@Cancel=Void Phantom Cancel
+Abil/Name/ZHBRVoidPhantom@PhantasmCancel=Void Phantom Phantasm Cancel
 Abil/Name/ZHBRVoidRiftTrain=Train
 Abil/Name/ZHBRWarbringerMaceStrike=Mace Strike
+Abil/Name/ZHBRWormhole=Wormhole
 Achievement/Description/Mastery_Purifier03=Kill 5 Hybrid Behemoths in less than 15 minutes in the "Purification" mission on Hard difficulty.
 Achievement/Description/Mastery_Ulnar02=Kill the Hybrid Behemoth in less than 12 minutes in "The Infinite Cycle" mission on Hard difficulty.
 AchievementTerm/Name/Anniversary_Meta_ZHybrid01=We're the Terrans Now
@@ -89,6 +109,11 @@ Attribute001/Value002/Name=Protoss
 Attribute001/Value003/Name=Zerg
 Attribute001/Value004/Name=Void Forces
 Attribute001/Value005/Name=Random
+Behavior/Name/HybridClusterNovaVerifyTargetBehavior=Cluster Nova
+Behavior/Name/HybridDeformer@DestructionAriseMaxShields=Destruction Arise
+Behavior/Name/HybridMinionVoidBonusActive=Void Bonus
+Behavior/Name/HybridMinionVoidBonusWork=Work
+Behavior/Name/HybridMinionVoidBonusWorkInVoidField=Work In Void Field
 Behavior/Name/HybridPollinatorVoidToxin=Void Toxin
 Behavior/Name/HybridPsyon@FragmentumCorrosion=Fragmentum Corrosion
 Behavior/Name/HybridSentinelWatcher@CliffJump=CliffJump
@@ -96,59 +121,141 @@ Behavior/Name/HybridStructureResearchStateValidateBehavior=Research State Valida
 Behavior/Name/HybridStructureResearchStateValidateBehaviorCrypts=Research State Validate Behavior
 Behavior/Name/RadiusTestBehavior=Radius Test Behavior
 Behavior/Name/ZHBRAcceleration=Acceleration
-Behavior/Name/ZHBRAmplifier@PathingBlockerController=Pathing Blocker Controller
-Behavior/Name/ZHBRBehemothAdvanced@MorphController=Morph Controller
 Behavior/Name/ZHBRCZergyRoots=Zergy Roots
-Behavior/Name/ZHBRChimera@Cloak=Cloak
+Behavior/Name/ZHBRChimera@Fade=Fade
+Behavior/Name/ZHBRChimera@Pounce=Pounce
 Behavior/Name/ZHBRConfusion=Confusion
+Behavior/Name/ZHBRConstructMarkerSwitchBeam=Marker Switch Beam
+Behavior/Name/ZHBRConsumeDNA@PeriodicBuff=Consume DNA
 Behavior/Name/ZHBRConsumeDNA@Stun=Stun
+Behavior/Name/ZHBRDeepTunnel@Tooltip=Deep Tunnel
+Behavior/Name/ZHBRDeformer@RechargeUp=Recharge Boost
 Behavior/Name/ZHBRDisappearance@Cloak=Disappearance
+Behavior/Name/ZHBRDominatorDestructionOrbSingleCaster=Destruction Orb Suppression
+Behavior/Name/ZHBRDominatorDomination=Domination
 Behavior/Name/ZHBRDontDie=Hybrid Dont Die
+Behavior/Name/ZHBRDreadnokWeapon@ReduceEnergyTooltip=Void Siphon
 Behavior/Name/ZHBREmpowermentAiur01=Hybrid Empowerment (Aiur01)
+Behavior/Name/ZHBREnergator@VoidTrance=Void Trance
+Behavior/Name/ZHBREvaporator@AttackRangeBuff=Evaporator
 Behavior/Name/ZHBRFZergyRoots=Zergy Roots
+Behavior/Name/ZHBRFlayerFury@Cooldown=Cooldown
+Behavior/Name/ZHBRFlayerFury@Tooltip=Fury
 Behavior/Name/ZHBRGeneralPhaseShift=Phase Shift
 Behavior/Name/ZHBRHybridUnitTracker=Hybrid Unit Tracker
+Behavior/Name/ZHBRInterdimensionalOverload@Tooltip=Interdimensional Overload
 Behavior/Name/ZHBRKorhalStun=Stunned
+Behavior/Name/ZHBRMinionBuild@DisableSpirit=Mechanical Reincarnation
 Behavior/Name/ZHBRNavigator@FromTheVoid=From the Void
+Behavior/Name/ZHBRNavigatorStationarity=Stationarity
 Behavior/Name/ZHBRNemesis@TrackUnit=Track
+Behavior/Name/ZHBRNemesisDisintegrator=Disintegrator
+Behavior/Name/ZHBRNemesisLaunchAttack=Launch Attack
+Behavior/Name/ZHBRNemesisTimeAttackLong=Time Attack Long
 Behavior/Name/ZHBRPhaseShift=Phase Shift
+Behavior/Name/ZHBRPlasmaticBlast=Plasmatic Blast
 Behavior/Name/ZHBRPollinatorShadowMantle@ShadowMantle=Shadow Mantle
-Behavior/Name/ZHBRPrimeSummoning@Controller=Controller
-Behavior/Name/ZHBRProtectionJump@Armor=Armor
-Behavior/Name/ZHBRPsiOrb@SearchBehavior=Search Behavior
-Behavior/Name/ZHBRPsionicTornado@TornadoBehavior=Tornado Behavior
-Behavior/Name/ZHBRPsionicTornado@TravelController=Travel Controller
+Behavior/Name/ZHBRPowerField@SuppressionBehavior=Power Field
+Behavior/Name/ZHBRPrimeSummoning@Controller=Prime Summoning
+Behavior/Name/ZHBRProtectionJump@Armor=Protection Jump
+Behavior/Name/ZHBRPsionicTornado@TornadoBehaviorStart=Psionic Tornado
 Behavior/Name/ZHBRRaceControl@UnitTracker=Unit Tracker
 Behavior/Name/ZHBRRestorationShield=Restoration Shield
 Behavior/Name/ZHBRRevealingSacrifice=Revealing Sacrifice
+Behavior/Name/ZHBRRevealingSacrificeForSelf=Revealing Sacrifice
 Behavior/Name/ZHBRSentinelJump@Stun=Stun
+Behavior/Name/ZHBRSentinelSubjugationJump@Stun=Subjugation Jump Stun
 Behavior/Name/ZHBRSingularity=Hybrid Singularity
+Behavior/Name/ZHBRSpiritSiegeMode=Transcendence
+Behavior/Name/ZHBRStructureTeleport@Controller=Structure Teleport
 Behavior/Name/ZHBRSuicideChargeUpTimer=Suicide Attack Charging
 Behavior/Name/ZHBRTimeWarp=Time Warp
-Behavior/Name/ZHBRVoid@PowerUserPermanent=Power User Permanent
-Behavior/Name/ZHBRVoidChasm=Void Chasm
+Behavior/Name/ZHBRTimeWarp@End=Time Warp End
+Behavior/Name/ZHBRTimeWarp@Start=Time Warp Start
+Behavior/Name/ZHBRVoid@PowerUserPermanent=Permanent Power
+Behavior/Name/ZHBRVoidBarrier=Void Barrier
+Behavior/Name/ZHBRVoidChasm=Void Chasm Air
 Behavior/Name/ZHBRVoidChasmGround=Void Chasm Ground
+Behavior/Name/ZHBRVoidChasmStartingDelay=Void Chasm Cast
+Behavior/Name/ZHBRVoidChasmStructure=Void Chasm Structure
 Behavior/Name/ZHBRVoidImmunity=Void Immunity
-Behavior/Tooltip/HybridPollinatorVoidToxin=Target's movement speed is reduced and it will take continuous damage over a short period of time.
-Behavior/Tooltip/HybridPsyon@FragmentumCorrosion=This structure is unable to attack.
+Behavior/Name/ZHBRVoidPhantom=Phantasm
+Behavior/Name/ZHBRVoidPhantom@Caster=Void Phantom
+Behavior/Tooltip/HybridClusterNovaVerifyTargetBehavior=Marked for suffering <c val="FFFF80"><d ref="Behavior,ZHBRConstructMarker,MaxStackCount"/></c> additional shots from a <c val="FFFF80">Construct</c> within <c val="FFFF80"><d ref="Weapon,ZHBRConstructWeaponAntiAir,Range" precision="2"/> - <d ref="Validator,DistanceLessThanOrEquals12,Range" precision="2"/></c> range.
+Behavior/Tooltip/HybridDeformer@DestructionAriseMaxShields=<c val="ffff8a">+<d ref="Behavior,HybridDeformer@DestructionAriseMaxShields,Modification.VitalMaxArray[Shields]" precision="2"/></c> <c val="ffffff">Protection</c> during <c val="ffff8a"><d ref="Behavior,HybridDeformer@DestructionAriseMaxShields,Duration)" precision="2"/></c> seconds for each Deformer sacrifice. Currently totalling <c val="ffff8a">+<d ref="Behavior,HybridDeformer@DestructionAriseMaxShields,Modification.VitalMaxArray[Shields]*$BehaviorStackCount:HybridDeformer@DestructionAriseMaxShields$" precision="2"/></c> <c val="ffffff">Protection</c>.
+Behavior/Tooltip/HybridMinionVoidBonusActive=While powered by <c val="#Void">Void</c>, harvests <c val="ffff80">1</c> more resource per trip. <c val="ffff80">2</c> more for Rich resources.
+Behavior/Tooltip/HybridPollinatorVoidToxin=This Biological unit suffers <c val="FFFF80"><d ref="Effect,ZHBRPollinatorVoidToxin@Damage,Amount * Behavior,HybridPollinatorVoidToxin,Duration / Behavior,HybridPollinatorVoidToxin,Period" precision="2"/></c> damage over <c val="FFFF80"><d ref="Behavior,HybridPollinatorVoidToxin,Duration)" precision="2"/></c> seconds.
+Behavior/Tooltip/HybridPsyon@FragmentumCorrosion=This Structure deals <c val="ffff8a"><d ref="100*(1 - Behavior,HybridPsyon@FragmentumCorrosion,DamageResponse.ModifyFraction)" precision="2"/>%</c> reduced damage against aerial targets and suffers <c val="FFFF80"><d ref="Effect,HybridPsyon@FragmentumCorrosionPermamentDamage,Amount/Behavior,HybridPsyon@FragmentumCorrosion,Period" precision="2"/></c> damage per second during <c val="FFFF80"><d ref="Behavior,HybridPsyon@FragmentumCorrosion,Duration" precision="2"/></c> seconds.
 Behavior/Tooltip/HybridStructureResearchStateValidateBehavior=When the Hybrid player is researching Void Bonus, all structures will display this information to other players.
 Behavior/Tooltip/HybridStructureResearchStateValidateBehaviorCrypts=When the Hybrid player is researching Void Bonus, all structures will display this information to other players.
+Behavior/Tooltip/InhibitorZoneTemporalField=This unit's movement speed is reduced by <d ref="1-Behavior,InhibitorZoneTemporalField,Modification.MoveSpeedMultiplier*100"/>%.
+Behavior/Tooltip/ZHBRAcceleration=Movement speed increased by <c val="FFFF80"><d ref="100*Behavior,ZHBRAcceleration,Modification.MoveSpeedMultiplier"/>%</c> for <c val="FFFF80"><d ref="Behavior,ZHBRAcceleration,Duration"/></c> seconds.
+Behavior/Tooltip/ZHBRChimera@Fade=Cloaked and restricted to melee attacks.
+Behavior/Tooltip/ZHBRChimera@Pounce=Movement speed greatly increased momentarily.
+Behavior/Tooltip/ZHBRConfusion=Weapon attack speed reduced by <c val="FFFF80"><d ref="100*(1 - Behavior,ZHBRConfusion,Modification.AttackSpeedMultiplier)"precision="2"/>%</c> for <c val="FFFF80"><d ref="Behavior,ZHBRConfusion,Duration"precision="1"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRConfusion$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRConsumeDNA@PeriodicBuff=Boosting movement speed and releasing life-stealing miasma for <c val="ffff8a"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Duration" precision="2"/></c> seconds.
 Behavior/Tooltip/ZHBRConsumeDNA@Stun=This unit is Stunned for <d ref="Behavior,ZHBRConsumeDNA@Stun,Duration" precision="1"/> seconds.
-Behavior/Tooltip/ZHBRDisappearance@Cloak=This unit is cloaked by Disappearance.
+Behavior/Tooltip/ZHBRDeepTunnel@Tooltip=Burrowing to safety then relocating to any chosen location powered by <c val="#Void">Void</c>.
+Behavior/Tooltip/ZHBRDeformer@RechargeUp=Energy transfer rate amplified by <c val="FFFF80"><d ref="100*(Behavior,ZHBRDeformer@RechargeUp,Modification.HealDealtMultiplier - 1)" precision="2"/>%</c> while target unit has below <c val="FFFF80"><d ref="100*Validator,ZHBREnergation@DeformerRestoreUnitBelowHalfEnergy,Value" precision="2"/>%</c> energy.
+Behavior/Tooltip/ZHBRDisappearance@Cloak=Temporarily cloaked. <c val="ffff8a"><d ref="Behavior,ZHBRDisappearance@Cloak,Duration" precision="2"/></c> seconds per <c val="ffff8a">Energator</c> cast.
+Behavior/Tooltip/ZHBRDominatorDestructionOrbSingleCaster=Silenced by and taking damage from a <c val="FFFF80">Destruction Orb</c>.
+Behavior/Tooltip/ZHBRDominatorDomination=This unit is being <c val="FFFF80">Dominated</c>, dealing <c val="FFFF80"><d ref="100*(1+Behavior,ZHBRDominatorDomination,Modification.DamageDealtFraction[2])" precision="1"/>%</c> less damage and unable to respond to commands. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRDominatorDomination$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRDreadnokWeapon@ReduceEnergyTooltip=<c val="FFFF80"><d ref="(-Effect,ZHBRDrednokDevastatingStrikeReduceEnergy,VitalArray[Energy].Change)*$BehaviorStackCount:ZHBRDreadnokWeapon@ReduceEnergyTooltip$" precision="2"/></c> energy being drained by an enemy <c val="FFFF80">Dreadnok</c>'s weapon attack.
+Behavior/Tooltip/ZHBREnergator@VoidTrance=Weapon attack rate multiplied by <c val="FFFF80"><d ref="Behavior,ZHBREnergator@VoidTrance,Modification.AttackSpeedMultiplier" precision="2"/></c>, energy transfer range increased by <c val="FFFF80"><d ref="Abil,ZHBREnergation@EnergationRange,Range[0] - Abil,ZHBREnergation@Energation,Range[0]"/></c> and rate amplified by <c val="FFFF80"><d ref="100*Behavior,ZHBREnergator@VoidTrance,Modification.HealDealtAdditiveMultiplier" precision="2"/>%</c>, but immobilized.
+Behavior/Tooltip/ZHBREvaporator@AttackRangeBuff=Weapon attack damage strengthened by <c val="FFFF80"><d ref="Behavior,ZHBREvaporator@AttackRangeBuff,Modification.DamageDealtUnscaled[Ranged]" precision="2"/></c> <c val="FFFF80">(<d ref="Behavior,ZHBREvaporator@AttackRangeBuff,Modification.DamageDealtUnscaled[Ranged] + Behavior,ZHBREvaporator@AttackRangeBuff,Modification.DamageDealtAttributeUnscaled[Armored]" precision="2"/> vs Armored)</c>.
+Behavior/Tooltip/ZHBRFlayerFury@Cooldown=Enhanced attack on cooldown for <c val="FFFF80"><d ref="Behavior,ZHBRFlayerFury@Cooldown,Duration)" precision="2"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRFlayerFury@Cooldown$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRFlayerFury@Tooltip=Next weapon attack's number of strikes increased by <c val="ffff8a"><d ref="(Effect,ZHBRFlayerFury@InitialPersistent,PeriodCount - Effect,ZHBRFlayerWeapon@InitialPersistent,PeriodCount)*$BehaviorStackCount:ZHBRFlayerFury@Tooltip$" precision="2"/></c>.
 Behavior/Tooltip/ZHBRGeneralPhaseShift=This structure is immune to all damage and effects but is unable to attack or use abilities.
-Behavior/Tooltip/ZHBRPollinatorShadowMantle@ShadowMantle=This unit is cloaked. In addition, It receives 35 maximum shield and 30% bonus movement speed.
-Behavior/Tooltip/ZHBRProtectionJump@Armor=This unit receive -40% damage and increase 40% movement speed after using "Jump" ability.
-Behavior/Tooltip/ZHBRRevealingSacrifice=This unit or structure is providing vision for the enemy.
+Behavior/Tooltip/ZHBRInterdimensionalOverload@Tooltip=Preparing teleportation towards an allied unit.
+Behavior/Tooltip/ZHBRMinionBuild@DisableSpirit=This <c val="ffff80">Minion</c> is currently in the process of morphing into a <c val="ffff80">Spirit</c>. Lasts <c val="FFFF80"><d ref="Abil,ZHBRMinionMorph@MechanicalReincarnation,InfoArray[0].SectionArray[Abils].DurationArray[Duration]" precision="0"/></c> seconds.
+Behavior/Tooltip/ZHBRNavigator@FromTheVoid=Always cloaked in the absence of cargo.
+Behavior/Tooltip/ZHBRNavigatorStationarity=Acquiring <c val="FFFF80"><d ref="Behavior,ZHBRNavigatorStationarity,Modification.Radar"/></c> radar range, magnifying vision and detection range to <c val="FFFF80"><d ref="Unit,ZHBRNavigator,Sight + Behavior,ZHBRNavigatorStationarity,Modification.DetectBonus"/></c> and reducing damage taken by <c val="FFFF80"><d ref="-100*(Behavior,ZHBRNavigatorStationarity,Modification.DamageTakenFraction[0])"/>%</c>, in exchange for being locked in place.
+Behavior/Tooltip/ZHBRNemesisDisintegrator=Extending weapon range to <c val="FFFF80"><d ref="Weapon,ZHBRNemesisWeapon,Range + Behavior,ZHBRNemesisDisintegrator,Modification.WeaponRange" precision="2"/></c> while ignoring both armor and upgrades.
+Behavior/Tooltip/ZHBRPhaseShift=Phased out of existence, unable to move, attack or be damaged for <c val="ffff8a"><d ref="Behavior,ZHBRPhaseShift,Duration)" precision="2"/></c> seconds.
+Behavior/Tooltip/ZHBRPlasmaticBlast=Poised to inflict wide anti-air area damage.
+Behavior/Tooltip/ZHBRPollinatorShadowMantle@ShadowMantle=Maintains cloaking at the cost of <c val="#Void">Void</c> energy and reduced movement speed.
+Behavior/Tooltip/ZHBRPowerField@SuppressionBehavior=Currently deploying an enhanced <c val="#Void">Void</c> power field.
+Behavior/Tooltip/ZHBRPrimeSummoning@Controller=Currently acting as a hub for all other <c val="ffff80">Void Rifts</c>, and also reducing damage taken by <c val="FFFF80"><d ref="100*(1 - Behavior,ZHBRPrimeSummoning@Controller,DamageResponse.ModifyFraction)" precision="2"/>%</c>.
+Behavior/Tooltip/ZHBRProtectionJump@Armor=Movement speed increased by <c val="FFFF80"><d ref="100*(Behavior,ZHBRProtectionJump@Armor,Modification.MoveSpeedMultiplier - 1)" precision="2"/>%</c> and incoming damage reduced by <c val="FFFF80"><d ref="100*(1 + Behavior,ZHBRProtectionJump@Armor,Modification.DamageTakenFraction[2])" precision="1"/>%</c> for <c val="FFFF8A"><d ref="Behavior,ZHBRProtectionJump@Armor,Duration" precision="1"/></c> seconds.
+Behavior/Tooltip/ZHBRPsionicTornado@TornadoBehaviorStart=Taking <c val="FFFF80"><d ref="Effect,ZHBRPsionicTornado@DamageStart,Amount / Behavior,ZHBRPsionicTornado@TornadoBehaviorStart,Period)" precision="2"/></c> damage per second from a <c val="FFFF80">Psionic Tornado</c>.
+Behavior/Tooltip/ZHBRRevealingSacrifice=Haunted by a <c val="FFFF80">Spirit</c>, providing full vision and detection for the enemy during <c val="FFFF80"><d ref="Behavior,ZHBRRevealingSacrifice,Duration" precision="2"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRRevealingSacrifice$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRRevealingSacrificeForSelf=Detection provided by a <c val="FFFF80">Spirit</c> for <c val="FFFF80"><d ref="Behavior,ZHBRRevealingSacrificeForSelf,Duration" precision="2"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRRevealingSacrificeForSelf$)/1.4" precision="0"/></c> seconds remaining.
 Behavior/Tooltip/ZHBRSentinelJump@Stun=This unit is Stunned for <d ref="Behavior,ZHBRSentinelJump@Stun,Duration" precision="1"/> second.
+Behavior/Tooltip/ZHBRSentinelSubjugationJump@Stun=Stunned for <c val="FFFF80"><d ref="Behavior,ZHBRSentinelSubjugationJump@Stun,Duration" precision="2"/></c> second after taking <c val="FFFF80"><d ref="Effect,ZHBRSentinelSubjugationJump@Damage,Amount"/></c> damage.
+Behavior/Tooltip/ZHBRSpiritSiegeMode=Vision range expanded to <c val="FFFF80"><d ref="Unit,ZHBRSpirit,Sight + Behavior,ZHBRSpiritSiegeMode,Modification.SightBonus" precision="2"/></c>, at the cost of all mobility.
+Behavior/Tooltip/ZHBRStructureTeleport@Controller=Void Forces Structures take <c val="FFFF80"><d ref="100*Behavior,ZHBRStructureTeleport@Controller,Modification.DamageTakenFraction[2]" precision="2"/>%</c> increased damage while teleporting.
 Behavior/Tooltip/ZHBRSuicideChargeUpTimer=If allowed to complete, will damage Alarak.
 Behavior/Tooltip/ZHBRTimeWarp=This unit is time warped.
-Behavior/Tooltip/ZHBRVoidChasm=Unable to act and vulnerable for ground attacks.
-Behavior/Tooltip/ZHBRVoidChasmGround=Unable to act and vulnerable for ground attacks.
-Behavior/Tooltip/ZHBRVoidImmunity=Maximum shield amount is increased by 100.
+Behavior/Tooltip/ZHBRTimeWarp@End=This unit's time is slowed by <c val="FFFF80"><d ref="100*(1-Behavior,ZHBRTimeWarp@End,Modification.TimeScale)" precision="2"/>%</c>.
+Behavior/Tooltip/ZHBRTimeWarp@Start=This unit's time is slowed by <c val="FFFF80"><d ref="100*(1-Behavior,ZHBRTimeWarp@Start,Modification.TimeScale)" precision="2"/>%</c>.
+Behavior/Tooltip/ZHBRVoid@PowerUserPermanent=Eternally powered by <c val="#Void">Void</c> until death, and regenerating <c val="#Void">Void</c> energy <c val="FFFF80"><d ref="100*(Behavior,ZHBRVoid@PowerUserPermanentNetwork,PowerStageArray[1].Modification.VitalRegenArray[Energy] - Behavior,ZHBRVoid@PowerUserNetwork,PowerStageArray[1].Modification.VitalRegenArray[Energy])/Behavior,ZHBRVoid@PowerUserNetwork,PowerStageArray[1].Modification.VitalRegenArray[Energy]" precision="2"/>%</c> faster.
+Behavior/Tooltip/ZHBRVoidBarrier=Taking <c val="ffff8a"><d ref="100*(1-Effect,ZHBRVoidBarrier@DamageFraction,Fraction)" precision="2"/>%</c> reduced damage until the maximum tolerance limit of <c val="ffff8a"><d ref="Behavior,ZHBRVoidBarrier,DamageResponse.ModifyLimit"/></c> damage per stack is breached. Stack tally currently equal to <c val="ffff8a"><d ref="$BehaviorStackCount:ZHBRVoidBarrier$" precision="2"/></c>.
+Behavior/Tooltip/ZHBRVoidChasm=Trapped in stasis, forced to the ground and taking damage equivalent to <c val="FFFF80"><d ref="100*((Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio * Behavior,ZHBRVoidChasm,Duration / Behavior,ZHBRVoidChasm,Period) + Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio)" precision="2"/>%</c> of total <c val="FFFF80">Maximum Health</c> over <c val="FFFF80"><d ref="Behavior,ZHBRVoidChasm,Duration"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRVoidChasm$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRVoidChasmGround=Trapped in stasis, forced into the air and taking damage equivalent to <c val="FFFF80"><d ref="100*((Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio * Behavior,ZHBRVoidChasmGround,Duration / Behavior,ZHBRVoidChasmGround,Period) + Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio)" precision="2"/>%</c> of total <c val="FFFF80">Maximum Health</c> over <c val="FFFF80"><d ref="Behavior,ZHBRVoidChasmGround,Duration"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRVoidChasmGround$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRVoidChasmStartingDelay=Focusing for <c val="FFFF80"><d ref="Behavior,ZHBRVoidChasmStartingDelay,Duration+0.071" precision="2"/></c> seconds then releasing a <c val="FFFF80">Void Chasm</c>.
+Behavior/Tooltip/ZHBRVoidChasmStructure=Trapped in stasis and taking damage equivalent to <c val="FFFF80"><d ref="100*((Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio * Behavior,ZHBRVoidChasmStructure,Duration / Behavior,ZHBRVoidChasmStructure,Period) + Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio)" precision="2"/>%</c> of total <c val="FFFF80">Maximum Health</c> over <c val="FFFF80"><d ref="Behavior,ZHBRVoidChasmStructure,Duration"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRVoidChasmStructure$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRVoidImmunity=<c val="ffff80">Maximum</c> <c val="ffffff">Protection</c> raised by <c val="ffff80">50%</c> and <c val="ffffff">Protection</c> armor increased by <c val="ffff8a"><d ref="Behavior,ZHBRVoidImmunity,Modification.ShieldArmorBonus"/></c>.
+Behavior/Tooltip/ZHBRVoidPhantom=Invulnerable scouting flyer that dissipates after <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> seconds. <c val="FFFF80"><d ref="($BehaviorRemainingDuration:ZHBRVoidPhantom@Timer$)/1.4" precision="0"/></c> seconds remaining.
+Behavior/Tooltip/ZHBRVoidPhantom@Caster=Currently projecting an invulnerable flying <c val="FFFF80">Phantasm</c> which lasts up to <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> seconds or until cancelled by quitting <c val="FFFF80">Transcendence</c> siege mode, manually aborting the ability, or the <c val="FFFF80">Spirit</c>'s death.
 Button/CooldownOverrider/ZHBRFlayerFury=<d ref="Behavior,ZHBRFlayerFury@Cooldown,Duration"/>
 Button/CooldownOverrider/ZHBRFlayerFury@Research=<d ref="Behavior,ZHBRFlayerFury@Cooldown,Duration"/>
+Button/Name/ConductorPhaseShiftResearch=Void Efficiency
+Button/Name/HybridButtonNemesisAttackPassive=Nemesis Attack
+Button/Name/HybridCloakedSpiritW=Cloaked Spirit
 Button/Name/HybridDeformerDestructionArise=Destruction Arise
-Button/Name/ImmunetoAttackSpeedChange=Immune to Attack Speed Change
+Button/Name/HybridDeformerSelfDestruction=Self-Destruction
+Button/Name/HybridDominatorDomination=Domination
+Button/Name/HybridDominatorDomination@Extended=Domination
+Button/Name/HybridPsyonCorrosionOfStructurePassive=Corrosion of structure
+Button/Name/HybridPsyonImmunetoAttackSpeedChangePassive=Immunity to slow attack
+Button/Name/HybridSpiritCancelSiegeMod=Cancel Transcendence
+Button/Name/HybridSpiritSiegeMode=Transcendence
+Button/Name/HybridStriderActivateEvaporator=Activate Evaporator
+Button/Name/HybridStriderActivateEvaporator@Extended=Activate Evaporator
+Button/Name/HybridStriderDeactivateEvaporator=Deactivate Evaporator
+Button/Name/HybridStriderDeactivateEvaporator@Extended=Deactivate Evaporator
+Button/Name/HybridUniversalButtonCancelSiegeMode=Cancel Siege Mode
+Button/Name/HybridUniversalButtonSiegeMode=Siege Mode
 Button/Name/SpawHybridHydralisk=Spawn Hybrid Hydralisk
 Button/Name/SpawHybridMutalisk=Spawn Hybrid Mutalisk
 Button/Name/SpawHybridRoach=Spawn Hybrid Roach
@@ -161,26 +268,41 @@ Button/Name/ZHBRAirArmorUpgradeLevel3=Upgrade Air Armor Level 3
 Button/Name/ZHBRAirWeaponUpgradeLevel1=Upgrade Air Weapons Level 1 
 Button/Name/ZHBRAirWeaponUpgradeLevel2=Upgrade Air Weapons Level 2
 Button/Name/ZHBRAirWeaponUpgradeLevel3=Upgrade Air Weapons Level 3
+Button/Name/ZHBRAnnihilation=Annihilation
 Button/Name/ZHBRBlink=Blink
 Button/Name/ZHBRBrokenDNA=Broken DNA
 Button/Name/ZHBRCPlasmaBlast=Plasma Blast
 Button/Name/ZHBRCZergyRoots=Zergy Roots
-Button/Name/ZHBRChimera@Cloak=Cloak
-Button/Name/ZHBRCloakedSpirit=Cloaked Spirit
+Button/Name/ZHBRCancelStationarity=Cancel Stationarity
+Button/Name/ZHBRChimera@Emerge=Emerge
+Button/Name/ZHBRChimera@EmergeExtended=Emerge
+Button/Name/ZHBRChimera@Fade=Fade
+Button/Name/ZHBRChimera@FadeExtended=Fade
+Button/Name/ZHBRChimera@Pounce=Pounce
+Button/Name/ZHBRChimera@PounceExtended=Pounce
+Button/Name/ZHBRCloakedSpirit=Void Engine
+Button/Name/ZHBRConductor@VoidBarrierExtended=Void Barrier
 Button/Name/ZHBRConfusion=Confusion
 Button/Name/ZHBRConstruct@ClusterNova=Cluster Nova
+Button/Name/ZHBRConstruct@ClusterNovaAA=Cluster Nova AA
+Button/Name/ZHBRConstruct@ClusterNovaAG=Cluster Nova AG
 Button/Name/ZHBRConstruct@TransformToConstructAntiAir=Transform To Construct (Anti-Air)
 Button/Name/ZHBRConstruct@TransformToConstructAntiGround=Transform To Construct (Anti-Ground)
 Button/Name/ZHBRConsumeDNA=Consume DNA
 Button/Name/ZHBRConsumeZerg=Consume Zerg
+Button/Name/ZHBRDeactivateEvaporator=Revealing Sacrifice
 Button/Name/ZHBRDeepTunnel=Deep Tunnel
 Button/Name/ZHBRDestructionOrb=Destruction Orb
 Button/Name/ZHBRDisappearance=Disappearance
 Button/Name/ZHBRDisintegrator@Disintegrator=Disintegrator
 Button/Name/ZHBRDisintegrator@Ionizer=Ionizer
-Button/Name/ZHBRDreadnokWeapon=Devastating Strike
+Button/Name/ZHBRDominatorCliffMovePassive=Air soar
+Button/Name/ZHBRDreadnokWeapon=Void Siphon
 Button/Name/ZHBREnergation=Energation
-Button/Name/ZHBREnergationDeformer=Energation
+Button/Name/ZHBREnergationDeformer=Void Distortion
+Button/Name/ZHBREnergator@CancelVoidTrance=Cancel Void Trance
+Button/Name/ZHBREnergator@EnergationRange=Energation
+Button/Name/ZHBREnergator@VoidTrance=Void Trance
 Button/Name/ZHBREngineResearch@GroundArmorLevel3=Upgrade Ground Armor Level 3
 Button/Name/ZHBREngineResearch@GroundWeaponsLevel1=Upgrade Ground Weapons Level 1
 Button/Name/ZHBREngineResearch@GroundWeaponsLevel2=Upgrade Ground Weapons Level 2
@@ -199,9 +321,9 @@ Button/Name/ZHBRGroundArmorUpgradeLevel3=Upgrade Ground Armor Level 3
 Button/Name/ZHBRGroundWeaponUpgradeLevel1=Upgrade Ground Weapons Level 1 
 Button/Name/ZHBRGroundWeaponUpgradeLevel2=Upgrade Ground Weapons Level 2
 Button/Name/ZHBRGroundWeaponUpgradeLevel3=Upgrade Ground Weapons Level 3
-Button/Name/ZHBRHybridRaceControl@AirBattleUnitPage=Air Battle Unit Page
-Button/Name/ZHBRHybridRaceControl@AirSupportUnitPage=Air Support Unit Page
-Button/Name/ZHBRHybridRaceControl@GroundUnitPage=Ground Unit Page
+Button/Name/ZHBRHybridRaceControl@AirBattleUnitPage=Air Battle Unit page
+Button/Name/ZHBRHybridRaceControl@AirSupportUnitPage=Air Support Unit page
+Button/Name/ZHBRHybridRaceControl@GroundUnitPage=Ground Unit page
 Button/Name/ZHBRIndestructible=Indestructible
 Button/Name/ZHBRInterdimensionalOverload=Interdimensional Overload
 Button/Name/ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal=Transform To Moveable Ionic Crystal
@@ -233,11 +355,14 @@ Button/Name/ZHBRMinionBuild@SummonVoidRift=Summon Void Rift
 Button/Name/ZHBRMinionHarvest@Gather=Gather
 Button/Name/ZHBRMinionHarvest@Return=Return Cargo
 Button/Name/ZHBRMinionMorph=Mechanical Reincarnation
+Button/Name/ZHBRMoveSpirit=Void Engine
 Button/Name/ZHBRNavigation@Navigation=Navigation
 Button/Name/ZHBRNavigator@FromTheVoid=From the Void
 Button/Name/ZHBRNavigatorLoad@Load=Load
+Button/Name/ZHBRNavigatorLoad@LoadExtended=Load
 Button/Name/ZHBRNavigatorLoad@UnloadAll=Unload All
 Button/Name/ZHBRNavigatorLoad@UnloadAllM=Unload All
+Button/Name/ZHBRNavigatorLoad@UnloadAllStationarity=Unload All Stationarity
 Button/Name/ZHBRNemesisDisintegrator@Disintegrator=Disintegrator
 Button/Name/ZHBRNemesisDisintegrator@Ionizer=Ionizer
 Button/Name/ZHBRNemesisNetworkReassembly@NetworkReassembly=Network Reassembly
@@ -247,14 +372,17 @@ Button/Name/ZHBRPlasmaticBlast=Plasmatic Blast
 Button/Name/ZHBRPlasmaticBlast@PlasmaticCharge=Plasmatic Charge
 Button/Name/ZHBRPollinatorShadowMantle@Off=Shadow Mantle (Decloak)
 Button/Name/ZHBRPollinatorShadowMantle@On=Shadow Mantle (Cloak)
+Button/Name/ZHBRPounce@HybridStriderDeactivateEvaporator=Deactivate Evaporator
 Button/Name/ZHBRPowerField=Power Field
 Button/Name/ZHBRPowerField@Cancel=Cancel Power Field
 Button/Name/ZHBRPrimeSummoning=Prime Summoning
+Button/Name/ZHBRPrimeSummoningCancel=Cancel Prime Summoning
 Button/Name/ZHBRProtectionJump=ZHBRProtectionJump
-Button/Name/ZHBRPsiOrb=Destruction Wave
 Button/Name/ZHBRPsionicTornado=Psionic Tornado
-Button/Name/ZHBRRaceControl@AirBattleUnitPage=Air Battle Unit Page
-Button/Name/ZHBRRaceControl@AirSupportUnitPage=Air Support Unit Page
+Button/Name/ZHBRRaceControl@AirBattleUnitPage=Air Battle Unit page
+Button/Name/ZHBRRaceControl@AirBattleUnitPageUnitExtended=Air Battle Unit + Dominator page
+Button/Name/ZHBRRaceControl@AirSupportUnitPage=Air Support Unit page
+Button/Name/ZHBRRaceControl@AirSupportUnitPageUnitExtended=Air Support Unit page
 Button/Name/ZHBRRaceControl@ChooseAmplifier=Choose Amplifier
 Button/Name/ZHBRRaceControl@ChooseCapsule=Choose Capsule
 Button/Name/ZHBRRaceControl@ChooseConstructAntiAir=Choose Construct (Anti-Air)
@@ -272,18 +400,27 @@ Button/Name/ZHBRRaceControl@ChooseTomb=Choose Tomb
 Button/Name/ZHBRRaceControl@ChooseVespeneConcentrator=Choose Vespene Concentrator
 Button/Name/ZHBRRaceControl@ChooseVoidForge=Choose Void Forge
 Button/Name/ZHBRRaceControl@ChooseVoidRift=Choose Void Rift
-Button/Name/ZHBRRaceControl@GroundUnitPage=Ground Unit Page
-Button/Name/ZHBRRaceControl@ResearchPage=Research Page
-Button/Name/ZHBRRaceControl@SwapPage=Swap Page
-Button/Name/ZHBRRestorationShield=Restoration Shield
+Button/Name/ZHBRRaceControl@GroundUnitPage=Ground Unit page
+Button/Name/ZHBRRaceControl@GroundUnitPageUnitExtended=Ground Unit page
+Button/Name/ZHBRRaceControl@GroundUnitPageUnitExtendedNextMenu=Ground Unit page 2
+Button/Name/ZHBRRaceControl@ResearchPage=Research page
+Button/Name/ZHBRRaceControl@SwapPage=Swap page
+Button/Name/ZHBRRaceControl@TeleportPage=Teleport Structure page
+Button/Name/ZHBRRestorationShield=Restoration Health
 Button/Name/ZHBRRevealingSacrifice=Revealing Sacrifice
-Button/Name/ZHBRSentinelJump=Jump
+Button/Name/ZHBRSentinelJump=Subjugation Jump
+Button/Name/ZHBRSentinelLeap=Leap
+Button/Name/ZHBRSentinelLeap@Extended=Leap
+Button/Name/ZHBRSentinelProtectionJumpPassive=Protection Jump
+Button/Name/ZHBRSentinelSubjugationJump@SubjugationJump=Subjugation Jump
+Button/Name/ZHBRSentinelSubjugationResearch=Subjugation
 Button/Name/ZHBRShrineResearch@ExpressMantle=Express Mantle
+Button/Name/ZHBRStationarity=Stationarity
 Button/Name/ZHBRStructureTeleport=Teleport Structure
 Button/Name/ZHBRSubjugationJump2=Subjugation Jump
 Button/Name/ZHBRSubjugationJumpPassive=Subjugation Jump
 Button/Name/ZHBRTempleTrain@SummonMinion=Summon Minion
-Button/Name/ZHBRTimeWarp=Time Warp
+Button/Name/ZHBRTimeWarp=Time Stop
 Button/Name/ZHBRToxicity=Toxicity
 Button/Name/ZHBRTransfusion=Transfusion
 Button/Name/ZHBRUltimateUnitOfTransfusion=Ultimate Unit of Transfusion
@@ -292,9 +429,11 @@ Button/Name/ZHBRUpgradeToAdvancedDominator=Advanced Dominator
 Button/Name/ZHBRUpgradeToAdvancedNemesis=Advanced Nemesis
 Button/Name/ZHBRUrunMassRecall=Mass Recall
 Button/Name/ZHBRVespeneMining=Vespene Mining
+Button/Name/ZHBRVoidBarrier=Void Barrier
 Button/Name/ZHBRVoidBonus=Void Bonus
 Button/Name/ZHBRVoidChasm=Void Chasm
 Button/Name/ZHBRVoidImmunity=Void Immunity
+Button/Name/ZHBRVoidPhantom=Void Phantom
 Button/Name/ZHBRVoidRiftTrain@SummonAdvancedBehemoth=Summon Advanced Behemoth
 Button/Name/ZHBRVoidRiftTrain@SummonAdvancedDominator=Summon Advanced Dominator
 Button/Name/ZHBRVoidRiftTrain@SummonAdvancedNemesis=Summon Advanced Nemesis
@@ -323,223 +462,279 @@ Button/Name/ZHBRWarbringerOrbitalGuidance=Orbital Guidance
 Button/Name/ZHBRWarriorDeconstruction=Deconstruction
 Button/Name/ZHBRWatcher=Watcher
 Button/Name/ZHBRWatcherPassive=Watcher
+Button/Name/ZHBRWormhole=Wormhole
 Button/Tooltip/Attack=Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.
-Button/Tooltip/HybridDeformerDestructionArise=When destroyed, heal <c val="ffff8a">50</c> combined life and shield amount for nearby friendly units within <c val="ffff8a">6</c> range.
-Button/Tooltip/ImmunetoAttackSpeedChange=This unit is immune to any attack speed change.
+Button/Tooltip/ConductorPhaseShiftResearch=Reduce the cost of <c val="FFFF80">Conductor</c>'s <c val="FFFF80">Phase Shift</c> by <c val="FFFF80"><d ref="Upgrade,ZHBRPhaseShift,EffectArray[0].Value"/></c> energy. Increase the maximum damage blocked by <c val="FFFF80">Void Barrier</c> by <c val="FFFF80"><d ref="Upgrade,ZHBRPhaseShift,EffectArray[1].Value"/></c>.
+Button/Tooltip/HybridButtonNemesisAttackPassive=<c val="ffff8a">Nemesis</c>'s attack rate cannot be slowed down. A <c val="ffff8a">Nemesis</c> can also pursue targets without interrupting its beam.
+Button/Tooltip/HybridCloakedSpiritW=<c val="FFFF80">Spirits</c> gain permanent cloaking whenever the player has a <c val="ffff8a">Tomb</c> alive.
+Button/Tooltip/HybridDeformerDestructionArise=When destroyed, all friendly Void Forces units within <c val="FFFF80"><d ref="Effect,HybridDeformer@DestructionAriseSearch,AreaArray[0].Radius" precision="2"/></c> range receive <c val="ffff8a"><d ref="Behavior,HybridDeformer@DestructionAriseMaxShields,Modification.VitalMaxArray[Shields])" precision="2"/></c> <c val="ffffff">Protection</c> and their <c val="ffff8a">Maximum</c> <c val="ffffff">Protection</c> limit is increased by <c val="ffff8a"><d ref="Behavior,HybridDeformer@DestructionAriseMaxShields,Modification.VitalMaxArray[Shields])" precision="2"/></c> for <c val="ffff8a"><d ref="Behavior,HybridDeformer@DestructionAriseMaxShields,Duration" precision="1"/></c> seconds.
+Button/Tooltip/HybridDeformerSelfDestruction=The Deformer immediately self-destructs and grants the <c val="FFFF8A">Destruction Arise</c> effect.
+Button/Tooltip/HybridDominatorDomination=Target is immobilized, no longer responds to commands and deals <c val="FFFF80"><d ref="100*(1+Behavior,ZHBRDominatorDomination,Modification.DamageDealtFraction[2])" precision="1"/>%</c> reduced damage. Duration depends on the target's supply count:<n/><n/>0 - <d ref="-Validator,HybridFoodUseMore2,Value" precision="2"/> supply: <d ref="Behavior,ZHBRDominatorDomination,Duration" precision="2"/> seconds<n/><d ref="-Validator,HybridFoodUseMore2,Value" precision="2"/> - <d ref="-Validator,HybridFoodUseMore4,Value" precision="2"/> supply: <d ref="Behavior,ZHBRDominatorDomination,DurationOverride[2].Duration" precision="2"/> seconds<n/><d ref="-Validator,HybridFoodUseMore4,Value" precision="2"/>+ supply or Psionic: <d ref="Behavior,ZHBRDominatorDomination,DurationOverride[1].Duration" precision="2"/> seconds<n/><n/><c val="ffff8a">Massive units are immune.</c>
+Button/Tooltip/HybridDominatorDomination@Extended=Target is immobilized, no longer responds to commands and deals <c val="FFFF80">50%</c> reduced damage. Duration depends on the target's supply count:<n/><n/>0 - 2 supply: 6 seconds<n/>2 - 4 supply: 4 seconds<n/>4+ supply or Psionic: 2 seconds<n/><n/><c val="ffff8a">Massive units are immune.</c><n/>
+Button/Tooltip/HybridPsyonCorrosionOfStructurePassive=When a Psyon attacks a ground structure, all enemy ground structures within a <c val="ffff8a"><d ref="Effect,HybridPsyon@FragmentumCorrosionSearch,AreaArray[0].Radius" precision="2"/></c> radius lose <c val="ffff8a"><d ref="100*(1 - Behavior,HybridPsyon@FragmentumCorrosion,DamageResponse.ModifyFraction)" precision="2"/>%</c> effectiveness against aerial targets and suffer <c val="FFFF80"><d ref="Effect,HybridPsyon@FragmentumCorrosionPermamentDamage,Amount/Behavior,HybridPsyon@FragmentumCorrosion,Period" precision="2"/></c> damage per second. These effects last <c val="FFFF80"><d ref="Behavior,HybridPsyon@FragmentumCorrosion,Duration" precision="2"/></c> seconds and can be refreshed but not stacked.
+Button/Tooltip/HybridPsyonImmunetoAttackSpeedChangePassive=Once this unit has started attacking an aerial target, its attack rate cannot be slowed down.
+Button/Tooltip/HybridSpiritCancelSiegeMod=Remove bonus vision and allow movement.
+Button/Tooltip/HybridSpiritSiegeMode=Gain <c val="FFFF80">+2</c> vision range, but lose all mobility.
+Button/Tooltip/HybridStriderActivateEvaporator=Each projectile fired drains <c val="#Void">Void</c> energy to increase its damage output.
+Button/Tooltip/HybridStriderActivateEvaporator@Extended=Each projectile fired drains <c val="#Void">Void</c> energy to increase its damage output.
+Button/Tooltip/HybridStriderDeactivateEvaporator=Shoot basic projectiles without any <c val="#Void">Void</c> energy consumption.
+Button/Tooltip/HybridStriderDeactivateEvaporator@Extended=Shoot basic projectiles without any <c val="#Void">Void</c> energy consumption.
+Button/Tooltip/HybridUniversalButtonCancelSiegeMode=All support units switch to mobile mode.
+Button/Tooltip/HybridUniversalButtonSiegeMode=All support units switch to stationary mode.
+Button/Tooltip/HybridVoidChazmBigForceField=___
 Button/Tooltip/PlatformPowerCore=Fuel source for the Hybrid breeding facility.
 Button/Tooltip/PreserverBase=The Protoss-Zerg Hybrid has imprisoned the Preservers in a stasis field and is using their psionic energies to recreate his physical form when he dies. Destroy the Preserver Prisons to permanently kill the Hybrid.
 Button/Tooltip/PreserverPrison=The Protoss-Zerg Hybrid has imprisoned the Preservers in a stasis field and is using their psionic energies to recreate his physical form when he dies. Destroy the Preserver Prisons to permanently kill the Hybrid.
 Button/Tooltip/Probe2=Basic worker unit. Can gather resources and warp in Protoss structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/SoulChannel=Use the Preservers' psionic energies to recreate the Protoss-Zerg Hybrid's physical form when he dies.
 Button/Tooltip/ZHBR=An unstoppable monstrosity. Run for your life!<n/><n/><c val="FFE303">Detector. Will resurrect if killed.</c>
-Button/Tooltip/ZHBRAcceleration=<c val="FFFF80">Psyon</c> increases its movespeed by <c val="FFFF80"><d ref="100*Behavior,ZHBRAcceleration,Modification.MoveSpeedMultiplier"/>%</c> for <c val="FFFF80"><d ref="Behavior,ZHBRAcceleration,Duration"/> seconds</c>.
+Button/Tooltip/ZHBRAcceleration=Boosts <c val="FFFF80">Psyon</c>'s movement speed by <c val="FFFF80"><d ref="100*Behavior,ZHBRAcceleration,Modification.MoveSpeedMultiplier"/>%</c> for <c val="FFFF80"><d ref="Behavior,ZHBRAcceleration,Duration"/></c> seconds.
 Button/Tooltip/ZHBRAiur01=Monstrous creature made from both Protoss and Zerg DNA. Capable of powerful attacks.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/ZHBRAmplifier=Summoned over a Mineral Field to extract <c val="FFFF80"><d ref="-Effect,ZHBRMineralMining@MiningMU,Resources"/></c> minerals every <c val="FFFF80"><d ref="Behavior,ZHBRMineralMining@Mining,Period" precision="2"/></c> seconds.
-Button/Tooltip/ZHBRBehemoth=Monstrous creature. Devastating melee attacks deal area damage. Can use <c val="ffff8a">Consume DNA</c> to restore life and <c val="ffffff">Protection</c> shields.<n/><n/><c val="ffff8a">Can attack ground units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
+Button/Tooltip/ZHBRAnnihilation=Increases the attack radius of <c val="ffff8a">Destruction Orb</c> by <c val="FFFF80"><d ref="Upgrade,ZHBRAnnihilation,EffectArray[0].Value"/></c> and its damage per tick per target by <c val="FFFF80"><d ref="Upgrade,ZHBRAnnihilation,EffectArray[1].Value"/></c>.
+Button/Tooltip/ZHBRBehemoth=Monstrous creature. Can drain nearby enemies using <c val="ffff8a">Consume DNA</c> to restore Life and <c val="ffffff">Protection</c> shields at the cost of <c val="#Void">Void</c> energy.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/ZHBRBlink=Teleports the Hybrid to a nearby target location.<n/>
-Button/Tooltip/ZHBRBrokenDNA=<c val="ffff8a">Behemoths</c> Stun enemy units with each tick of Consume DNA for <c val="ffff8a"><d ref="Behavior,ZHBRConsumeDNA@Stun,Duration" precision="1"/> seconds</c>.<n/><n/><c val="ffff8a">Ignores Massive, Heroic targets.</c>
+Button/Tooltip/ZHBRBrokenDNA=<c val="ffff8a">Behemoth</c> increases its <c val="ffff8a">Maximum Life</c> and further boosts the regeneration of Life or <c val="FFFFFF">Protection</c> by <c val="ffff8a">+<d ref="Upgrade,ZHBRBrokenDNA,EffectArray[1].Value" player="0"/></c> for each target and each tick of <c val="ffff8a">Consume DNA</c>, while also incrementing its damage from <c val="ffff8a">1</c> to <c val="ffff8a">3</c>. The extra <c val="ffff8a">Maximum Life</c> cannot exceed <c val="ffff8a">+<d ref="100*(Validator,ZHBRBehemothHasLessThan50BehaviorLifeStealUp,Value*Behavior,ZHBRConsumeDNA@LifeStealUp,Modification.VitalMaxArray[Life])/(Unit,ZHBRBehemoth,LifeMax)" precision="2"/>%</c> and only persists for <c val="ffff8a"><d ref="Behavior,ZHBRConsumeDNA@LifeStealMain,Duration" precision="1"/></c> seconds unless refreshed.
 Button/Tooltip/ZHBRCPlasmaBlast=Shoots a ball of bio-plasma toward a target, causing <d ref="Effect,ZHBRCPlasmaBlastDamage,Amount"/> damage.
 Button/Tooltip/ZHBRCZergyRoots=Roots the target and deals damage over <d time="9"/>.
-Button/Tooltip/ZHBRCapsule=Improve Void Rifts, contains upgrades for <c val="ffff8a">Dominators</c> and <c val="ffff8a">Behemoths</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Dominators<n/>- Behemoths
-Button/Tooltip/ZHBRChimera=Powerful warrior. Persists cloaked while is powered by <c val="#Void">Void</c> and can be quickly burrowed within <c val="#Void">Void</c> power field.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
-Button/Tooltip/ZHBRChimera@Cloak=<c val="ffff8a">Chimera</c> remains cloaked while is powered by <c val="#Void">Void</c>.
-Button/Tooltip/ZHBRCloakedSpirit=Spirit gains <c val="FFFF80">permanent cloak</c>.
-Button/Tooltip/ZHBRConductor=Support air unit. Can create empowered <c val="#Void">Void</c> <c val="FFFF80">Power Field</c> and <c val="FFFF80">Phase Out</c> any unit or structure.<n/><n/><c val="FFFFFF">Can generate energy without any requirement. Does NOT use <c val="#Void">Void</c> energy transferred from Energator or Deformer.</c>
-Button/Tooltip/ZHBRConfusion=Makes enemy units marked for <c val="FFFF80"><d ref="Behavior,ZHBRConfusion,Duration"/> seconds</c>. After this duration, affected units take <c val="FFFF80">85</c> damage.
-Button/Tooltip/ZHBRConstruct@AntiAir=Powerful Anti-Air guardian that test the strength of those who seek the Halls of Revelation. Can be transformed to Anti-Ground construct.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
-Button/Tooltip/ZHBRConstruct@AntiGround=Powerful Anti-Ground guardian that test the strength of those who seek the Halls of Revelation. Can be transformed to Anti-Air construct.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ZHBRCancelStationarity=Allow movement but remove all bonuses.
+Button/Tooltip/ZHBRCapsule=Contains upgrades for <c val="ffff8a">Behemoths</c> and <c val="ffff8a">Dominators</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Behemoths<n/>- Dominators
+Button/Tooltip/ZHBRChimera=Powerful mobile fighter. Can become a cloaked melee assassin at will under <c val="#Void">Void</c> power supply. Can use <c val="FFFF8A">Pounce</c> to quickly cover short distances. Can be upgraded to use <c val="FFFF8A">Deep Tunnel</c> for long-distance repositioning.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ZHBRChimera@Emerge=Chimera loses cloaking but can use all weapons.
+Button/Tooltip/ZHBRChimera@Fade=Chimera turns invisible but only uses its melee weapon.
+Button/Tooltip/ZHBRChimera@Pounce=Increase movement speed by <c val="ffff8a"><d ref="100*(Behavior,ZHBRChimera@Pounce,Modification.MoveSpeedMultiplier - 1)"precision="2"/>%</c> for <c val="ffff8a"><d ref="Behavior,ZHBRChimera@Pounce,Duration"precision="2"/></c> second.
+Button/Tooltip/ZHBRChimera@PounceExtended=Increase movement speed by <c val="ffff8a">125%</c> for <c val="ffff8a"><d ref="Behavior,ZHBRChimera@Pounce,Duration"precision="2"/></c> second.
+Button/Tooltip/ZHBRCloakedSpirit=Increases the movement speed of <c val="FFFF80">Spirits</c> and <c val="FFFF80">Phantasms</c> by <c val="FFFF80"><d ref="Upgrade,ZHBRMoveSpirit,EffectArray[0].Value*100-100"/>%</c>.
+Button/Tooltip/ZHBRConductor=Versatile air support caster. Can create enhanced <c val="#Void">Void</c> power field, or use <c val="F078FF">energy</c> to <c val="FFFF80">Phase Out</c> any unit and cast <c val="FFFF80">Void Barrier</c> protecting friendly units.
+Button/Tooltip/ZHBRConfusion=Reduces the weapon attack speed of affected enemy ground and air units by <c val="FFFF80">25%</c> for <c val="FFFF80"><d ref="Behavior,ZHBRConfusion,Duration"precision="1"/></c> seconds. Does not affect structures.
+Button/Tooltip/ZHBRConstruct@AntiAir=Powerful anti-air guardian that tests the strength of those who seek the Halls of Revelation. Can be transformed into <c val="FFFF80">Anti-Ground Construct</c>.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/ZHBRConstruct@AntiGround=Powerful anti-ground guardian that tests the strength of those who seek the Halls of Revelation. Can be transformed into <c val="FFFF80">Anti-Air Construct</c>.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/ZHBRConstruct@ClusterNova=Lock on the main target and attacks <c val="#ColorAttackInfo"><d ref="Effect,ZHBRConstructWeaponAntiGround@Search,AreaArray[0].MaxCount"/></c> additional targets.
-Button/Tooltip/ZHBRConstruct@TransformToConstructAntiAir=Transform to Anti-Air construct.
-Button/Tooltip/ZHBRConstruct@TransformToConstructAntiGround=Transform to Anti-Ground construct.
-Button/Tooltip/ZHBRConsumeDNA=Deals <c val="ffff8a"><d ref="Effect,ZHBRConsumeDNA@Damage,Amount"/></c> Damage to each non-structure enemy nearby and restore <c val="ffff8a"><d ref="Effect,ZHBRConsumeDNA@UDTotalVital,Amount"/></c> life or <c val="ffffff">Protection</c> shield per each enemy hit upon activation and every <c val="FFFF80"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Period" precision="2"/></c> second during <c val="FFFF80"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Duration" precision="2"/></c> seconds.
+Button/Tooltip/ZHBRConstruct@ClusterNovaAA=Lock onto a target, and when they move out of range fire <c val="FFFF80"><d ref="Behavior,ZHBRConstructMarker,MaxStackCount"/></c> additional shots within <c val="FFFF80"><d ref="Weapon,ZHBRConstructWeaponAntiAir,Range" precision="2"/> - <d ref="Validator,DistanceLessThanOrEquals12,Range" precision="2"/></c> extended range.
+Button/Tooltip/ZHBRConstruct@ClusterNovaAG=Lock onto a target, and when they move out of range fire <c val="FFFF80"><d ref="Behavior,ZHBRConstructMarker,MaxStackCount"/></c> additional shots within <c val="FFFF80"><d ref="Weapon,ZHBRConstructWeaponAntiGround,Range" precision="2"/> - <d ref="Validator,DistanceLessThanOrEquals12,Range" precision="2"/></c> extended range.<n/>Also within <c val="FFFF80">7</c> range can attack <c val="FFFF80"><d ref="Effect,ZHBRConstructWeaponAntiGround@Search,AreaArray[0].MaxCount"/></c> more targets at the same time, dealing <c val="ffff8a"><d ref="Effect,ZHBRConstructWeaponAntiGround@DamageLow,Amount"/></c> damage per shot each.
+Button/Tooltip/ZHBRConstruct@TransformToConstructAntiAir=Transforms into <c val="FFFF80">Anti-Air Construct</c>.
+Button/Tooltip/ZHBRConstruct@TransformToConstructAntiGround=Transforms into <c val="FFFF80">Anti-Ground Construct</c>.
+Button/Tooltip/ZHBRConsumeDNA=Every <c val="FFFF80"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Period" precision="2"/></c> second emits a wave of miasma dealing <c val="ffff8a"><d ref="Effect,ZHBRConsumeDNA@Damage,Amount"/></c> damage to all non-structure enemies nearby and restoring <c val="ffff8a"><d ref="Effect,ZHBRConsumeDNA@UDTotalVital,Amount"/></c> Life or <c val="ffffff">Protection</c> shields for each enemy hit. Releases a total of <c val="FFFF80"><d ref="1 + Behavior,ZHBRConsumeDNA@PeriodicBuff,PeriodCount" precision="2"/></c> waves and increases movement speed by <c val="ffff8a"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Modification.MoveSpeedBonus" precision="1"/></c> over <c val="FFFF80"><d ref="Behavior,ZHBRConsumeDNA@PeriodicBuff,Duration" precision="2"/></c> seconds.
 Button/Tooltip/ZHBRConsumeZerg=Consumes all Zerg in the area.
-Button/Tooltip/ZHBRCrypt=Improve Void Rifts, contains upgrades for <c val="ffff8a">Sentinels</c> and <c val="ffff8a">Proteuses</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Warbringers<n/>- Sentinels<n/>- Proteuses
-Button/Tooltip/ZHBRDeepTunnel=<c val="ffff8a">Chimera</c> burrows to target location within <c val="#Void">Void</c> power field.
-Button/Tooltip/ZHBRDeformer=Support structure. Recharges <c val="#Void">Void</c> energy of nearby units.<n/><n/><c val="FFE303">Detector</c>
+Button/Tooltip/ZHBRCrypt=Contains upgrades for <c val="ffff8a">Warbringers</c>, <c val="ffff8a">Proteuses</c> and <c val="ffff8a">Striders</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Warbringers<n/>- Proteuses<n/>- Striders<n/>- Minion morph to Spirit
+Button/Tooltip/ZHBRDeepTunnel=<c val="ffff8a">Chimera</c> quickly burrows to safety then appears at target location within <c val="#Void">Void</c> power field.
+Button/Tooltip/ZHBRDeformer=Support structure. Uses <c val="F078FF">energy</c> to recharge the <c val="#Void">Void</c> energy of nearby units.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/ZHBRDestroyer=Powerful psionic attacker.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
-Button/Tooltip/ZHBRDestructionOrb=Destruction Wave deals damage to <c val="FFFF80"><d ref="Upgrade,ZHBRDestructionOrb,EffectArray[0].Value"/></c> an additional enemy.
-Button/Tooltip/ZHBRDisappearance=Creates a cloak aura around the <c val="FFFF80">Energator</c>. All units in range are cloaked for <c val="FFFF80"><d ref="Behavior,ZHBRDisappearance@Cloak,Duration" precision="1"/> <lang rule="plural">second,seconds</lang></c>.
+Button/Tooltip/ZHBRDestructionOrb=Unleashes a raging sphere that travels in a straight line, dealing <c val="FFFF80"><d ref="Effect,ZHBRDestructionOrb@Damage,Amount"/> (<d ref="Effect,ZHBRDestructionOrb@Damage,Amount + Effect,ZHBRDestructionOrb@Damage,AttributeBonus[Armored]"/> vs Armored)</c> damage in a small radius around itself every <c val="FFFF80"><d ref="Effect,ZHBRDestructionOrb@InitialPersistent,Marker.Duration" precision="2"/></c> seconds up to <c val="FFFF80"><d ref="Behavior,ZHBRDestructionOrb@SearchBehavior,Duration/Behavior,ZHBRDestructionOrb@SearchBehavior,Period" precision="2"/></c> times. Each hit prevents non-structure victims from actively using abilities for <c val="FFFF80"><d ref="Effect,ZHBRDestructionOrb@InitialPersistent,Marker.Duration" precision="2"/></c> seconds, but does not interrupt abilities already started.<n/><n/><c val="FF8080">Each target can only be attacked by <d ref="Behavior,ZHBRDominatorDestructionOrbSingleCaster,MaxStackCount" precision="2"/> sphere at the same time.<c/>
+Button/Tooltip/ZHBRDisappearance=Creates a cloaking aura around the <c val="FFFF80">Energator</c>. All units within range are cloaked for <c val="FFFF80"><d ref="Behavior,ZHBRDisappearance@Cloak,Duration" precision="1"/> <lang rule="plural">second,seconds</lang></c>.
 Button/Tooltip/ZHBRDisintegrator@Disintegrator=Activate to increase weapon damage by <c val="ffff8a"><d ref="100*((Accumulator,ZHBRNemesisWeapon@DisintegratorArithmeticDamage,Parameters[0]+Effect,ZHBRNemesisWeapon@Damage,Amount)-Effect,ZHBRNemesisWeapon@Damage,Amount)/Effect,ZHBRNemesisWeapon@Damage,Amount"/>% </c>, range to <c val="ffff8a"><d ref="Weapon,ZHBRNemesisWeapon,Range+Behavior,ZHBRDisintegrator@Behavior,Modification.WeaponRange"/></c> and <c val="FFFF80">armor ignore</c>. Attack speed is <c val="FFFF8a">reduced</c> and <c val="FFFF80">drains </c>energy.
 Button/Tooltip/ZHBRDisintegrator@Ionizer=Activate to increase <c val="FFFF80">attack speed</c>. <c val="FFFF80">Does not drain</c> energy, however weapon <c val="FFFF80">range </c>and <c val="FFFF80">damage </c>are reduced to their base values.
-Button/Tooltip/ZHBRDominator=Psionic monstrous <c val="#Void">Void</c> energy user with high damage attacks. Can use <c val="ffff8a">Psionic Orb</c> to deal area damage and <c val="ffff8a">Confusion</c> to make enemy units weaker.<n/><n/><c val="ffff8a">Can attack air and ground units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
-Button/Tooltip/ZHBRDreadnok=Strong support <c val="#Void">Void</c> energy user. Can use <c val="FFFF80">Psionic Tornado</c> to deal high damage and <c val="FFFF80">Time Warp</c> to disable enemy units.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
-Button/Tooltip/ZHBRDreadnokWeapon=Dreadnok restores <d ref="Effect,ZHBRDreadnokWeapon@Damage,LeechFraction[Energy]" precision="2"/> <c val="#Void">Void</c> energy for each point of weapon damage dealt.
-Button/Tooltip/ZHBREnergation=Restores up to <d ref="Effect,ZHBREnergation@Restore,RechargeVitalRate"/> <c val="#Void">Void</c> energy per second. Every <d ref="1/Effect,ZHBREnergation@Restore,DrainVitalCostFactor" precision="1"/> <c val="#Void">Void</c> restored drains 1 <c val="f078ff">Energy</c>.
-Button/Tooltip/ZHBREnergationDeformer=Restores up to <d ref="Effect,ZHBREnergation@Restore,RechargeVitalRate"/> <c val="#Void">Void</c> energy per second. Every <d ref="1/Effect,ZHBREnergation@Restore,DrainVitalCostFactor" precision="1"/> <c val="#Void">Void</c> restored drains 1 <c val="f078ff">Energy</c>.
-Button/Tooltip/ZHBREnergator=Support air unit. Can restore <c val="#Void">Void</c> energy to friendly units. Can use <c val="FFFF80">Disappearance</c> to cloak allies.<n/><n/><c val="FFFF80">Can attack ground and air units.</c><n/><n/><c val="FFFFFF">Can generate energy without any requirement. Does NOT use <c val="#Void">Void</c> energy transferred from Deformer.</c>
+Button/Tooltip/ZHBRDominator=Psionic abomination with high-damage attacks. Can <c val="ffff8a">Dominate</c> enemy units or consume <c val="#Void">Void</c> energy to manipulate the battlefield: <c val="ffff8a">Confusion</c> weakens large groups of enemy units, <c val="ffff8a">Destruction Orb</c> deals area damage and briefly disrupts ability usage.<n/><n/><c val="#ColorAttackInfo">Can attack air and ground units.</c>
+Button/Tooltip/ZHBRDominatorCliffMovePassive=Dominator can see through obstacles and high ground, move up and down cliffs as well as fly over ground units, but remains targetable only by anti-ground weapons and abilities.
+Button/Tooltip/ZHBRDreadnok=Strong support caster. Consumes <c val="#Void">Void</c> energy to use <c val="FFFF80">Psionic Tornado</c> dealing high area damage or <c val="FFFF80">Time Stop</c> disabling enemy units.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ZHBRDreadnokWeapon=Weapon attacks burn <c val="f078ff"><d ref="-Effect,ZHBRDrednokDevastatingStrikeReduceEnergy,VitalArray[Energy].Change" precision="2"/></c> energy per shot from the target. Does not affect allied targets.
+Button/Tooltip/ZHBREnergation=Restores up to <c val="FFFF80"><d ref="Effect,ZHBREnergation@Restore,RechargeVitalRate"/></c> of the target's <c val="#Void">Void</c> energy per second. Every <c val="FFFF80"><d ref="1/Effect,ZHBREnergation@Restore,DrainVitalCostFactor" precision="1"/></c> <c val="#Void">Void</c> energy restored drains <c val="ffff8a">1</c> <c val="f078ff">energy</c> from the <c val="ffff8a">Energator</c>.<n/><c val="ffff8a">Proteuses</c> have auto-targeting priority over all other units.<n/>
+Button/Tooltip/ZHBREnergationDeformer=Restores up to <c val="FFFF80"><d ref="Effect,ZHBREnergation@RestoreDeformer,RechargeVitalRate"/></c> <c val="#Void">Void</c> energy per second. Every <c val="FFFF80"><d ref="1/Effect,ZHBREnergation@RestoreDeformer,DrainVitalCostFactor" precision="1"/></c> <c val="#Void">Void</c> energy restored for the target drains <c val="ffff8a">1</c> <c val="f078ff">energy</c> from the Deformer.<n/>Proteuses have priority over all other potential targets.<n/><n/><c val="FFFF80">Energy transfer becomes <c val="FFFF80"><d ref="100*(Behavior,ZHBRDeformer@RechargeUp,Modification.HealDealtMultiplier - 1)" precision="2"/>%</c> faster when the target unit has less than <c val="FFFF80"><d ref="100*Validator,ZHBREnergation@DeformerRestoreUnitBelowHalfEnergy,Value" precision="2"/>%</c> <c val="#Void">Void</c> energy left.</c><n/>
+Button/Tooltip/ZHBREnergator=Flying energy provider. Uses <c val="F078FF">energy</c> to restore the <c val="#Void">Void</c> energy of friendly units at a fast pace. Can siege to boost its abilities and damage output. Can be upgraded to use <c val="FFFF80">Disappearance</c> to cloak allies and itself for a short period.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ZHBREnergator@CancelVoidTrance=Remove all buffs and unlock movement.
+Button/Tooltip/ZHBREnergator@EnergationRange=Restores up to <c val="FFFF80"><d ref="Effect,ZHBREnergation@Restore,RechargeVitalRate*(1 + Behavior,ZHBREnergator@VoidTrance,Modification.HealDealtAdditiveMultiplier)"/></c> of the target's <c val="#Void">Void</c> energy per second. Every <c val="FFFF80"><d ref="1/Effect,ZHBREnergation@Restore,DrainVitalCostFactor" precision="1"/></c> <c val="#Void">Void</c> energy restored drains <c val="ffff8a">1</c> <c val="f078ff">energy</c> from the <c val="ffff8a">Energator</c>.<n/><c val="ffff8a">Proteuses</c> have auto-targeting priority over all other units.<n/>
+Button/Tooltip/ZHBREnergator@VoidTrance=<c val="ffff8a">Energator</c>'s weapon attack rate is multiplied by <c val="FFFF80"><d ref="Behavior,ZHBREnergator@VoidTrance,Modification.AttackSpeedMultiplier" precision="2"/></c>, <c val="ffff8a">Energation</c>'s range is increased by <c val="FFFF80"><d ref="Abil,ZHBREnergation@EnergationRange,Range[0] - Abil,ZHBREnergation@Energation,Range[0]"/></c> and energy transfer rate is boosted by <c val="FFFF80"><d ref="100*Behavior,ZHBREnergator@VoidTrance,Modification.HealDealtAdditiveMultiplier" precision="2"/>%</c>, but movement is locked.
 Button/Tooltip/ZHBREngineResearch@GroundArmorLevel3=Maximizes the armor of Protoss ground units.
 Button/Tooltip/ZHBREngineResearch@GroundWeaponsLevel1=Upgrades the damage dealt by Protoss ground units.
 Button/Tooltip/ZHBREngineResearch@GroundWeaponsLevel2=Further upgrades the damage dealt by Protoss ground units.
 Button/Tooltip/ZHBREngineResearch@WeaponsLevel3=Maximizes the damage dealt by Protoss ground units.
-Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor=Upgrades armor of Hybrid ground units.
-Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons=Upgrades weapon of Hybrid ground units.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor1=Upgrades the armor of Void Forces ground units.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor2=Further upgrades the armor of Void Forces ground units.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundArmor3=Maximizes the armor of Void Forces ground units.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons1=Upgrades the damage dealt by Void Forces ground units.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons2=Further upgrades the damage dealt by Void Forces ground units.
+Button/Tooltip/ZHBREngineUpgrades@UpgradeGroundWeapons3=Maximizes the damage dealt by Void Forces ground units.
 Button/Tooltip/ZHBREnhancedArmor=<c val="FFFF80">Shapeshifters</c> Life armor is incresaed by <c val="FFFF80"><d ref="Upgrade,ZHBREnhancedArmor@Upgrade,EffectArray[0].Value" precision="1"/></c>.
-Button/Tooltip/ZHBREvaporator=Empowers Silent's Weapon to deal <c val="FFFF80"><d ref="100*Effect,ZHBREvaporator@StoreUserData,Amount"/>%</c> increased damage.<n/><n/>Drains <d ref="-Effect,ZHBREvaporator@ReduceEnergy,VitalArray.Change"/> <c val="#Void">Void</c> energy per each attack.
+Button/Tooltip/ZHBREvaporator=Empowers weapon attack damage by <c val="FFFF80">10 (12 vs Armored)</c>, with an extra <c val="FFFF80">+1</c> for each ground weapon upgrade.<n/><n/>Drains <c val="FFFF80"><d ref="-Effect,ZHBREvaporator@ReduceEnergy,VitalArray.Change"/></c> <c val="#Void">Void</c> energy for each shot.
 Button/Tooltip/ZHBRFPlasmaBlast=Shoots a ball of bio-plasma toward a target, causing <d ref="Effect,ZHBRFPlasmaBlastDamage,Amount"/> damage.<n/>
 Button/Tooltip/ZHBRFZergyRoots=Roots the target and deals damage over <d time="9"/>.
-Button/Tooltip/ZHBRFlayer=Ferocious annihilator of light units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
-Button/Tooltip/ZHBRFlayerBerserker=Increases Flayer's movespeed by <c val="FFFF80"><d ref="100*Upgrade,ZHBRFlayerBerserker@Berserker,EffectArray[0].Value-100"/>%</c>.
-Button/Tooltip/ZHBRFlayerFury=Increases the number of hits of the next Basic Attack from <c val="ffff8a"><d ref="Effect,ZHBRFlayerWeapon@InitialPersistent,PeriodCount"/></c> to <c val="ffff8a"><d ref="Effect,ZHBRFlayerFury@InitialPersistent,PeriodCount"/></c>.
-Button/Tooltip/ZHBRFlayerFury@Research=Periodically increases the number of hits of <c val="FFFF80">Flayer's </c>Basic Attacks from <c val="ffff8a"><d ref="Effect,ZHBRFlayerWeapon@InitialPersistent,PeriodCount"/></c> to <c val="ffff8a"><d ref="Effect,ZHBRFlayerFury@InitialPersistent,PeriodCount"/></c>.
+Button/Tooltip/ZHBRFlayer=Ferocious annihilator of Light units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ZHBRFlayerBerserker=Increases <c val="FFFF80">Flayer</c>'s movement speed by <c val="FFFF80"><d ref="100*Upgrade,ZHBRFlayerBerserker@Berserker,EffectArray[0].Value-100"/>%</c>.
+Button/Tooltip/ZHBRFlayerFury=Increases the number of hits for the next basic weapon attack from <c val="ffff8a"><d ref="Effect,ZHBRFlayerWeapon@InitialPersistent,PeriodCount"/></c> to <c val="ffff8a"><d ref="Effect,ZHBRFlayerFury@InitialPersistent,PeriodCount"/></c>.
+Button/Tooltip/ZHBRFlayerFury@Research=Periodically increases the number of hits from <c val="FFFF80">Flayer</c>'s basic attacks from <c val="ffff8a"><d ref="Effect,ZHBRFlayerWeapon@InitialPersistent,PeriodCount"/></c> to <c val="ffff8a"><d ref="Effect,ZHBRFlayerFury@InitialPersistent,PeriodCount"/></c>. Also reduces <c val="FFFF80">Flayer</c>'s production time by <c val="FFFF80"><d ref="Upgrade,ZHBRFlayerFury,EffectArray[0].Value/1.4"/></c> seconds.
 Button/Tooltip/ZHBRGeneral=Powerful psionic attacker.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/ZHBRGeneralPhaseShift=Causes the targeted unit to phase out for <d ref="Behavior,ZHBRGeneralPhaseShift,Duration"/> seconds. Phased units are immune to all damage and most effects, but they are unable to attack or use abilities.
 Button/Tooltip/ZHBRHarvester=Summoned over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/ZHBRHarvesterRich=Warped in over a Vespene Geyser to allow harvesting of vespene gas.
-Button/Tooltip/ZHBRHoldingCell=Contains common Hybrid upgrades.
-Button/Tooltip/ZHBRIndestructible=Upong taking fatal damage <c val="FFFF80">Strider</c> becomes a <c val="FFFF80">Crawler</c> for <c val="FFFF80"><d ref="Behavior,ZHBRStriderCrawler@CarryBehavior,Duration"/> seconds</c>. <c val="FFFF80">Crawler</c> has <c val="FFFF80"><d ref="-100*Behavior,ZHBRStriderCrawler@CarryBehavior,Modification.VitalMaxAdditiveMultiplierArray[Life]"/>%</c> less Life and <c val="FFFFFF">Protection</c> shields.
-Button/Tooltip/ZHBRInterdimensionalOverload=After preparation for <c val="FFFF80"><d ref="Abil,ZHBRInterdimensionalOverload,CastIntroTime[0]"/> seconds</c> <c val="FFFF80">Navigator</c> teleports to any <c val="FF8080">Player unit</c>.
-Button/Tooltip/ZHBRIonicCrystal=Provides supply. Supply allows you to summon more units.<n/><n/>Creates <c val="#Void">Void</c> powerfield, allowing units around to restore <c val="ffffff">Protection</c> shields and <c val="#Void">Void</c> energy.</c><n/><n/><c val="ffff8a">Moveable structure.</c>
-Button/Tooltip/ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal=Allows Ionic Crystal to move.
-Button/Tooltip/ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal=Allows Ionic Crystal prevent movement.
-Button/Tooltip/ZHBRIonicField=Increases <c val="#Void">Void</c> Power fields area of <c val="FFFF80">Ionic Crystals</c> by <c val="FFFF80"><d ref="100*((Behavior,ZHBRVoid@PowerSourceIonicCrystalLarge,Radius/Behavior,ZHBRVoid@PowerSourceIonicCrystalSmall,Radius)-1)"/>%</c> and their Life and <c val="FFFFFF">Protection</c> by <c val="FFFF80"><d ref="100*Behavior,ZHBRIonicField@Controller,Modification.VitalMaxFractionArray[Life]"/>%</c>.
-Button/Tooltip/ZHBRKeystone=Improve Void Rifts, contains upgrades for <c val="ffff8a">Chimeras</c>, <c val="ffff8a">Striders</c> and <c val="ffff8a">Dreadnoks</c>.<n/><n/><c val="ffff8a">While within <c val="#Void">Void</c> powerfield enables:</c><n/>- Chimeras<n/>- Striders<n/>- Dreadnoks
-Button/Tooltip/ZHBRMineralMining=Every <c val="FFFF80"><d ref="Behavior,ZHBRMineralMining@Mining,Period" precision="2"/></c> seconds harverst <c val="FFFF80"><d ref="-Effect,ZHBRMineralMining@MiningMU,Resources"/></c> minerals.
+Button/Tooltip/ZHBRHoldingCell=Contains common Void Forces upgrades.
+Button/Tooltip/ZHBRIndestructible=Upon taking fatal damage the <c val="FFFF80">Strider</c> becomes a <c val="FFFF80">Crawler</c> for <c val="FFFF80"><d ref="Behavior,ZHBRStriderCrawler@CarryBehavior,Duration"/></c> seconds. <c val="FFFF80">Crawlers</c> have <c val="FFFF80"><d ref="-100*Behavior,ZHBRStriderCrawler@CarryBehavior,Modification.VitalMaxAdditiveMultiplierArray[Life]+50"/>%</c> less Life and <c val="FFFFFF">Protection</c> shields.
+Button/Tooltip/ZHBRInterdimensionalOverload=After preparing for <c val="FFFF80"><d ref="Abil,ZHBRInterdimensionalOverload,CastIntroTime[0]"/></c> seconds, the <c val="FFFF80">Navigator</c> teleports to any unit or structure owned by the Player.
+Button/Tooltip/ZHBRIonicCrystal=Provides supply. Supply allows you to summon more units.<n/><n/>Creates <c val="#Void">Void</c> power field, allowing nearby units to quickly recover <c val="ffffff">Protection</c> shields and <c val="#Void">Void</c> energy.</c><n/><n/><c val="ffff8a">Moveable structure.</c>
+Button/Tooltip/ZHBRIonicCrystalMorph@TransformToMoveableIonicCrystal=Uproots the <c val="ffff80">Ionic Crystal</c>, allowing movement.
+Button/Tooltip/ZHBRIonicCrystalMorph@TransformToStaticIonicCrystal=Moves to target location then roots the <c val="ffff80">Ionic Crystal</c>, preventing movement.
+Button/Tooltip/ZHBRIonicField=Increases the <c val="#Void">Void</c> power field area of <c val="FFFF80">Ionic Crystals</c> by <c val="FFFF80"><d ref="100*((Behavior,ZHBRVoid@PowerSourceIonicCrystalLarge,Radius/Behavior,ZHBRVoid@PowerSourceIonicCrystalSmall,Radius)-1)"/>%</c>. Also increases movement speed by <c val="FFFF80"><d ref="100*Upgrade,ZHBRIonicField,EffectArray[0].Value-100" precision="0"/>%</c> and vision radius by <c val="FFFF80"><d ref="Upgrade,ZHBRIonicField,EffectArray[1].Value"/></c>.
+Button/Tooltip/ZHBRKeystone=Contains an upgrade for <c val="ffff8a">Chimeras</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Chimeras<n/>- Dreadnoks
+Button/Tooltip/ZHBRMineralMining=Every <c val="FFFF80"><d ref="Behavior,ZHBRMineralMining@Mining,Period" precision="2"/></c> seconds mining <c val="FFFF80"><d ref="-Effect,ZHBRMineralMining@MiningMU,Resources"/></c> minerals.
 Button/Tooltip/ZHBRMineralMining@TextKicker=<s val="Kicker_Minerals">+<d ref="-Effect,ZHBRMineralMining@MiningMU,Resources"/></s><IMG path="Assets\Textures\icon-mineral-protoss.dds" height="28" width="28"/>
-Button/Tooltip/ZHBRMinion=Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/ZHBRMinion=Basic worker unit. Can gather resources and summon Void Forces structures. Can sacrifice itself to become a <c val="ffff8a">Spirit</c>.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/ZHBRMinionBuild@SummonAdvancedStructured=A list of advanced structures.
 Button/Tooltip/ZHBRMinionBuild@SummonStructure=A list of basic structures.
-Button/Tooltip/ZHBRMinionHarvest@Gather=Orders unit to gather resources from a selected Mineral Field or Vespene Geyser.
+Button/Tooltip/ZHBRMinionHarvest@Gather=Orders <c val="ffff8a">Minion</c> to gather resources from a selected Mineral Field or Vespene Geyser.
 Button/Tooltip/ZHBRMinionHarvest@Return=Returns the carried resources to the nearest drop-off point.
-Button/Tooltip/ZHBRMinionMorph=Minion transforms into a <c val="ffff8a">Spirit</c>, a small fast flying scout unit with low health.
+Button/Tooltip/ZHBRMinionMorph=<c val="ffff8a">Minion</c> transforms into a <c val="ffff8a">Spirit</c>, a small scouting flyer with low health which can sacrifice itself to spy on any unit or structure temporarily, granting both vision and detection.
+Button/Tooltip/ZHBRMoveSpirit=<c val="FFFF80">Increase</c> speed move Spirit by <c val="FFFF80"> <d ref="Upgrade,ZHBRMoveSpirit,EffectArray[0].Value*100-100"/>% </c>.
 Button/Tooltip/ZHBRNavigation@Navigation=After <d ref="Effect,ZHBRNavigation@InitialCP,PeriodicPeriodArray[0]" precision="1"/> seconds warps to the target <c val="FF8080">void portal</c>.
-Button/Tooltip/ZHBRNavigator=Flying transport. Can use <c val="ffff8a">Interdimensional Overload</c> to teleport to any player unit.<n/><n/><c val="FFE303">Detector</c>
-Button/Tooltip/ZHBRNavigator@FromTheVoid=<c val="FFFF80">Navigator</c> remains cloaked while contains no units.
+Button/Tooltip/ZHBRNavigator=Evasive flying transport. Automatically cloaks when empty. Can load units from a short distance. Can siege to heighten its vision and toughness. Can use <c val="ffff8a">Interdimensional Overload</c> to teleport to any player unit.<n/><n/><c val="FFE303">Detector</c>
+Button/Tooltip/ZHBRNavigator@FromTheVoid=<c val="FFFF80">Navigator</c> remains cloaked while its cargo hold is empty.
 Button/Tooltip/ZHBRNavigatorLoad@Load=Loads units into the Navigator's hold.
 Button/Tooltip/ZHBRNavigatorLoad@UnloadAll=Unloads all units.
 Button/Tooltip/ZHBRNavigatorLoad@UnloadAllM=Unloads all units.
-Button/Tooltip/ZHBRNemesis=Flagship air unit. Can consume <c val="#Void">Void</c> energy to empower attack.<n/><n/><c val="FFFF80">Can attack ground and air units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
+Button/Tooltip/ZHBRNavigatorLoad@UnloadAllStationarity=Unloads all units.
+Button/Tooltip/ZHBRNemesis=Mighty assault flagship. Consumes <c val="#Void">Void</c> energy to empower attack range and ignore armor.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/ZHBRNemesisAdvanced=Flagship air unit. Can use two attack modes.<n/><n/><c val="FFFF80">Can attack ground and air units.</c>
 Button/Tooltip/ZHBRNemesisDesolation@Desolation=Creates a cloak aura around the Screamer. All units in range are cloaked for <c val="FFFF80"><d ref="Behavior,ZHBRNemesisDesolation@Behavior,Duration" precision="1"/> seconds</c>.
 Button/Tooltip/ZHBRNemesisDisintegrator2=Activate to increase weapon damage by <c val="ffff8a"><d ref="Behavior,ZHBRNemesisDisintegrator,Modification.DamageDealtUnscaled[2]"/></c>, range by <c val="ffff8a"><d ref="Behavior,ZHBRNemesisDisintegrator,Modification.WeaponRange" precision="2"/></c> and reduce target <c val="FFFF80">armor </c>by <c val="FFFF80"><d ref="-1*Behavior,ZHBRNemesisDisintegrator@ArmorReduction,Modification.LifeArmorBonus" precision="2"/></c>. Attack speed is <c val="FFFF8a">reduced</c> by <c val="FFFF8a"><d ref="-100*Behavior,ZHBRNemesisDisintegrator,Modification.AdditiveAttackSpeedFactor"/>%</c> and drains <c val="#Void">Void</c>.
-Button/Tooltip/ZHBRNemesisDisintegrator@Disintegrator=Weapon ignores <c val="FFFF80">armor</c> and its range is increased by <c val="ffff8a"><d ref="Behavior,ZHBRNemesisDisintegrator,Modification.WeaponRange" precision="2"/></c>, but damage is decreased by <c val="ffff8a"><d ref="-Behavior,ZHBRNemesisDisintegrator,Modification.DamageDealtScaled[Ranged]"/></c>.<n/><n/>Weapon drains <c val="ffff8a"><d ref="-Effect,ZHBRNemesisWeapon@NetworkDrain,VitalArray.Change"/></c> <c val="#Void">Void</c> energy per attack.
-Button/Tooltip/ZHBRNemesisDisintegrator@Ionizer=Weapon deals base damage with base range and without <c val="#Void">Void</c> energy cost.
+Button/Tooltip/ZHBRNemesisDisintegrator@Disintegrator=Weapon consumes <c val="ffff8a"><d ref="-Effect,ZHBRNemesisWeapon@NetworkDrain,VitalArray.Change"/></c> <c val="#Void">Void</c> energy per attack. Increases range by <c val="ffff8a"><d ref="Behavior,ZHBRNemesisDisintegrator,Modification.WeaponRange" precision="2"/></c> and always deals <c val="ffff8a"><d ref="Effect,ZHBRNemesisWeapon@DamageArmorIgnore,Amount+Behavior,ZHBRNemesisDisintegrator,Modification.DamageDealtScaled[Ranged]"/></c> damage, ignoring the target's armor, type and friendly air weapon upgrades.
+Button/Tooltip/ZHBRNemesisDisintegrator@Ionizer=Weapon deals base damage with base range without consuming <c val="#Void">Void</c> energy.
 Button/Tooltip/ZHBRNemesisNetworkReassembly@NetworkReassembly=Reduces Nemesis <c val="FFFF80">«Disintegrator» </c><c val ="#Network">Network</c> consumption by <c val="FFFF80"><d ref="-100*(Effect,ZHBRNemesisWeapon@EnergyRemove,VitalArray[Energy].Change-(Effect,ZHBRNemesisWeapon@EnergyRemove,VitalArray[Energy].Change-Upgrade,ZHBRNemesisNetworkReassembly@NetworkReassembly,EffectArray[0].Value)*(-1))/Effect,ZHBRNemesisWeapon@EnergyRemove,VitalArray[Energy].Change*(-1)"precision="3"/>%</c>.
-Button/Tooltip/ZHBRPermanentPower=Makes unit be permanently powered by <c val="#Void">Void</c>.
-Button/Tooltip/ZHBRPhaseShift=Target structure or unit is phased out of existence for <c val="#ColorAttackInfo"><d ref="Behavior,ZHBRPhaseShift,Duration"/> seconds</c>. It cannot be attacked, use abilities and provide power.
-Button/Tooltip/ZHBRPlasmaticBlast=<c val="ffff8a">Shapeshifter</c> deals splash damage, but each attack costs <c val="ffff8a"><d ref="Abil,ZHBRPlasmaticBlast,Cost[0].Vital[Energy]"/></c> <c val="#Void">Void</c> energy.
-Button/Tooltip/ZHBRPlasmaticBlast@PlasmaticCharge=<c val="ffff8a">Shapeshifter</c> deals high damage against single <c val="ffff8a">armored</c> units</c> without <c val="#Void">Void</c> energy cost.
-Button/Tooltip/ZHBRPollinator=Air unit. Consumes <c val="#Void">Void</c> energy to became cloaked.<n/><n/><c val="ffff8a">Can attack ground units.</c></n></n><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
-Button/Tooltip/ZHBRPollinatorShadowMantle@Off=Decloaks the selected unit, making it visible to enemies. Remove the movement speed buff and recover <c val="FFFF80"> 35 </c> Protection Shield.
-Button/Tooltip/ZHBRPollinatorShadowMantle@On=Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects. In addition, increase  <c val="FFFF80"> 35 </c> Protection Shield and <c val="FFFF80"> 30% </c> movement speed. <n/><n/><c val="#Void">Drains <d ref="-1 * (Behavior,ZHBRPollinatorShadowMantle@ShadowMantle,Modification.VitalRegenArray[2] + Unit,ZHBRHorror,EnergyRegenRate)" precision="1"/> Void energy per second.</c>
-Button/Tooltip/ZHBRPowerField=Create empowered <c val="#Void">Void</c> power field. Units and structures in power field regenerate their <c val="#FFFFFF">Protection</c> shield even if they are in combat and their <c val="#Void">Void</c> energy regen rate is increased by <c val="FFFF80"><d ref="100*((Behavior,ZHBRVoid@PowerUserNetwork,PowerStageArray[2].Modification.VitalRegenArray[Energy]/Behavior,ZHBRVoid@PowerUserNetwork,PowerStageArray[1].Modification.VitalRegenArray[Energy])-1)"/>%</c>.<n/><n/><c val="FFFF80">While channeling, Conductor can not use abilities or move.</c>
-Button/Tooltip/ZHBRPowerField@Cancel=Reverts <c val="FFFF80">Conductor</c> back to Moveable Mode, allowing it to move.
-Button/Tooltip/ZHBRPrimeSummoning=All units summoned by other Void Rifts will spawn at the <c val="ffff8a">chosen Void Rift</c> and obey its rally point. This Void Rift takes <c val="ffff8a"><d ref="100*(1-Behavior,ZHBRPrimeSummoning@Controller,DamageResponse.ModifyFraction)"/>%</c> less damage from all sources
-Button/Tooltip/ZHBRProjector=<c val="ffff8a">While within <c val="#Void">Void</c> powerfield enables:</c><n/>- Pollinators<n/>- Psyons<n/>- Shapeshifter
+Button/Tooltip/ZHBRPermanentPower=Target becomes immutably powered by <c val="#Void">Void</c>, no longer requiring the vicinity of an <c val="ffff80">Ionic Crystal</c> or <c val="ffff80">Conductor</c>. Also increases <c val="#Void">Void</c> energy regeneration rate from <c val="FFFF80"><d ref="Behavior,ZHBRVoid@PowerUserNetwork,PowerStageArray[1].Modification.VitalRegenArray[Energy]" precision="2"/></c> to <c val="FFFF80"><d ref="Behavior,ZHBRVoid@PowerUserPermanentNetwork,PowerStageArray[1].Modification.VitalRegenArray[Energy]" precision="2"/></c> per second.
+Button/Tooltip/ZHBRPhaseShift=Target structure or unit is phased out of existence for <c val="ffff8a"><d ref="Behavior,ZHBRPhaseShift,Duration"/></c> seconds. It cannot be attacked, use abilities nor provide power.
+Button/Tooltip/ZHBRPlasmaticBlast=<c val="ffff8a">Shapeshifter</c> damages enemy air units over a large, <c val="FFFF80"><d ref="Effect,ZHBRShapeshifterWeapon@Search,AreaArray[0].Radius" precision="2"/></c> radius area around the main target, but each attack costs <c val="ffff8a"><d ref="Abil,ZHBRPlasmaticBlast,Cost[0].Vital[Energy]"/></c> <c val="#Void">Void</c> energy.
+Button/Tooltip/ZHBRPlasmaticBlast@PlasmaticCharge=<c val="ffff8a">Shapeshifter</c> deals high single-target damage against Armored ground units without consuming <c val="#Void">Void</c> energy.
+Button/Tooltip/ZHBRPollinator=Dedicated air-to-ground slayer. Consumes <c val="#Void">Void</c> energy to maintain cloaking. Poisons Biological victims dealing damage over time. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ZHBRPollinatorShadowMantle@Off=Decloaks the <c val="FFFF80">Pollinator</c>, making it visible to enemies.
+Button/Tooltip/ZHBRPollinatorShadowMantle@On=Cloaks the <c val="FFFF80">Pollinator</c>, preventing enemy units from seeing or attacking it, but also reduces movement speed by <c val="ffff8a"><d ref="(-Behavior,ZHBRPollinatorShadowMantle@ShadowMantle,Modification.MoveSpeedBonus)" precision="2"/></c>. A cloaked unit will only be revealed by detectors or effects.<n/><n/><c val="#Void">Drains <d ref="-Behavior,ZHBRPollinatorShadowMantle@ShadowMantle,Modification.VitalRegenArray[2]" precision="1"/> Void energy per second.</c>
+Button/Tooltip/ZHBRPounce@HybridStriderDeactivateEvaporator=Not spend <c val="#Void">Void</c> energy by shot.
+Button/Tooltip/ZHBRPowerField=Generate augmented <c val="#Void">Void</c> power field, wherein units and structures regenerate their <c val="FFFFFF">Protection</c> shields faster by <c val="FFFF80"><d ref="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[2].Modification.VitalRegenArray[Shields]" precision="2"/></c> per second including while attacked.<n/><n/><c val="FFFF80">Channeled ability: Conductor cannot move nor use other abilities concurrently.</c>
+Button/Tooltip/ZHBRPowerField@Cancel=<c val="FFFF80">Conductor</c> reverts to a mobile form, able to cast other abilities.
+Button/Tooltip/ZHBRPrimeSummoning=All units summoned by other <c val="ffff8a">Void Rifts</c> will spawn at the chosen <c val="ffff8a">Void Rift</c> and obey its rally point. This chosen one takes <c val="ffff8a"><d ref="100*(1-Behavior,ZHBRPrimeSummoning@Controller,DamageResponse.ModifyFraction)"/>%</c> less damage from all sources.
+Button/Tooltip/ZHBRPrimeSummoningCancel=All summoned units will appear from their own <c val="ffff8a">Void Rifts</c>.
+Button/Tooltip/ZHBRProjector=Contains an upgrade for <c val="ffff8a">Psyons</c><n/><n/><c val="ffff8a">Enables:</c><n/>- Psyons<n/>- Pollinators
 Button/Tooltip/ZHBRProtectionJump=<c val="FFFF80">Sentinels</c> gain <c val="FFFF80">40%</c> Damage Deduction and <c val="FFFFFF">40%</c> movement speed for <c val="FFFF80">1.8 seconds</c> upon casting <c val="FFFF80">Jump</c>.
-Button/Tooltip/ZHBRProteus=Heavy surviving unit. Consumes <c val="#Void">Void</c> energy to restore <c val="ffffff">Protection</c> shield.<n/><n/><c val="ffff8a">Can attack ground units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
-Button/Tooltip/ZHBRPsiOrb=From caster to target point, unleashes <c val="FFFF80">6</c> traveling Destruction Waves that deals up to <c val="FFFF80"><d ref="Effect,ZHBRPsiOrb@Damage,Amount*Behavior,ZHBRPsiOrb@SearchBehavior,Duration/Effect,ZHBRPsiOrb@InitialPersistent,Marker.Duration"/></c> to each enemy along its path.<n/><n/>Same enemy can be damaged every <c val="FFFF80"><d ref="Effect,ZHBRPsiOrb@InitialPersistent,Marker.Duration" precision="2"/> seconds</c>.
-Button/Tooltip/ZHBRPsionicTornado=Creates a straight-moving Tornado at target point for <c val="FFFF80"><d ref="Behavior,ZHBRPsionicTornado@TornadoBehavior,Duration" precision="1"/> seconds</c>. Tornado deals <c val="FFFF80"><d ref="Effect,ZHBRPsionicTornado@Damage,Amount*1/Behavior,ZHBRPsionicTornado@TornadoBehavior,Period"/></c> damage per second.<n/><n/>
-Button/Tooltip/ZHBRPsyon=Fast air unit, can attack while moving. Can use <c val="FFFF80">Acceleration</c> to increase movespeed.
-Button/Tooltip/ZHBRRaceControl@AirBattleUnitPage=List of Hybrid air battle units.
-Button/Tooltip/ZHBRRaceControl@AirSupportUnitPage=List of Hybrid air support units.
-Button/Tooltip/ZHBRRaceControl@GroundUnitPage=List of Hybrid ground units.
-Button/Tooltip/ZHBRRaceControl@ResearchPage=A list of tech structures. Buttons will appear as soon as tech building will be created.
-Button/Tooltip/ZHBRRestorationShield=Hybrid units and structures gain <c val="FFFF80">+1</c> armor for their<c val="FFFFFF">Protection</c> shield and restore life when <c val="FFFFFF">Protection</c> shields are full. In addition, units gain full <c val="FFFFFF">Protection</c> shield upon production.
-Button/Tooltip/ZHBRRevealingSacrifice=Spirit <c val="FF8080">self-destructs</c> and provides vision of target enemy unit or structure for <c val="FFFF80"><d ref="Behavior,ZHBRRevealingSacrifice,Duration"/> seconds</c>, revealing them.
-Button/Tooltip/ZHBRSentinel=Fast mobile unit. Can use <c val="FFFF80">Jump</c> ability to move behind enemy.<n/><n/><c val="ffff8a">Can attack ground units.</c>
-Button/Tooltip/ZHBRSentinelJump=Sentinel jumps behind enemy target dealing <c val="FFFF80"><d ref="Effect,ZHBRSentinelJump@Damage,Amount"/> damage</c>. If target is a unit, also stuns them for <c val="FFFF80"><d ref="Behavior,ZHBRSentinelJump@Stun,Duration" precision="1"/> second</c>.<n/>
-Button/Tooltip/ZHBRShapeshifter=Assault air unit. Consumes <c val="#Void">Void</c> energy to deals splash damage to air units. Can use <c val="FFFF80">Void Chasm</c> to ground air units.<n/><n/><c val="FFFF80">Can attack and air units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
+Button/Tooltip/ZHBRProteus=Heavy surviving frontliner. Consumes <c val="#Void">Void</c> energy to restore <c val="ffffff">Protection</c> shields.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ZHBRPsionicTornado=Create a Tornado within <c val="FFFF80"><d ref="Actor,ZHBRPsionicTornado@Range,Range" precision="1"/></c> range and move it towards the target point. Deals <c val="FFFF80"><d ref="(Effect,ZHBRPsionicTornado@DamageStart,Amount / Behavior,ZHBRPsionicTornado@TornadoBehaviorStart,Period) * (Effect,ZHBRDreadnokTornado@PersistentStart,PeriodCount*Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]+Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0])" precision="2"/></c> damage over <c val="FFFF80"><d ref="Effect,ZHBRDreadnokTornado@PersistentStart,PeriodCount*Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]+Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]" precision="1"/></c> seconds to any ground or air, allied or enemy units and structures. Tornadoes can be manually controlled if their caster is not hidden, dead, nor further than <c val="FFFF80"><d ref="Actor,ZHBRPsionicTornado@RangeMax,Range" precision="1"/></c> range away.
+Button/Tooltip/ZHBRPsionicTornadoUnit=Vicious energy storm. Deals <c val="FFFF80"><d ref="(Effect,ZHBRPsionicTornado@DamageStart,Amount / Behavior,ZHBRPsionicTornado@TornadoBehaviorStart,Period) * (Effect,ZHBRDreadnokTornado@PersistentStart,PeriodCount*Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]+Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0])" precision="2"/></c> damage over <c val="FFFF80"><d ref="Effect,ZHBRDreadnokTornado@PersistentStart,PeriodCount*Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]+Effect,ZHBRDreadnokTornado@PersistentStart,PeriodicPeriodArray[0]" precision="1"/></c> seconds to any ground or air, allied or enemy units and structures. Can be manually controlled if its caster is not hidden, dead, nor further than <c val="FFFF80"><d ref="Actor,ZHBRPsionicTornado@RangeMax,Range" precision="1"/></c> range away.
+Button/Tooltip/ZHBRPsyon=Air-superiority flyer, can attack while moving. Able to erode ground structures and weaken anti-air static defenses. Can use <c val="FFFF80">Wormhole</c> to teleport a short distance. Can be upgraded to use <c val="FFFF80">Acceleration</c> greatly increasing movement speed for a brief period.<n/><n/><c val="#ColorAttackInfo">Can attack air units and ground structures.</c>
+Button/Tooltip/ZHBRRaceControl@AirBattleUnitPage=List of Void Forces air battle units.
+Button/Tooltip/ZHBRRaceControl@AirBattleUnitPageUnitExtended=List of Void Forces air battle unit + Dominator abilities from selected group.
+Button/Tooltip/ZHBRRaceControl@AirSupportUnitPage=List of Void Forces air support units.
+Button/Tooltip/ZHBRRaceControl@AirSupportUnitPageUnitExtended=List of Void Forces air support unit abilities from selected group.
+Button/Tooltip/ZHBRRaceControl@GroundUnitPage=List of Void Forces ground units.
+Button/Tooltip/ZHBRRaceControl@GroundUnitPageUnitExtended=List of Void Forces ground unit abilities from selected group.
+Button/Tooltip/ZHBRRaceControl@GroundUnitPageUnitExtendedNextMenu=Second list of Void Forces ground unit abilities from selected group.
+Button/Tooltip/ZHBRRaceControl@ResearchPage=A list of tech structures. Buttons will appear as soon as a tech building is created.
+Button/Tooltip/ZHBRRaceControl@TeleportPage=Select a type of structure to teleport to target location over <c val="ffff8a"><d ref="Behavior,ZHBRStructureTeleport@Controller,Duration"/> seconds</c>. During teleportation, structures take <c val="FFFF80"><d ref="100*Behavior,ZHBRStructureTeleport@Controller,Modification.DamageTakenFraction[2]" precision="2"/>%</c> more damage.
+Button/Tooltip/ZHBRRestorationShield=While powered by <c val="#Void">Void</c>, Void Forces units and structures will start regenerating <c val="FFFF8A">Life</c> once <c val="FFFFFF">Protection</c> shields are full: <c val="FFFF80"><d ref="Behavior,ZHBRRestorationHealthHight,Modification.VitalRegenArray[Life]" precision="2"/></c> per second for Structures, <c val="FFFF80">Proteuses</c> and Massive units, <c val="FFFF80"><d ref="Behavior,ZHBRRestorationHealthLow,Modification.VitalRegenArray[Life]" precision="2"/></c> per second for all other units. Also for all <c val="#Void">Void</c> energy users, <c val="FFFF80">Starting</c> <c val="#Void">Void</c> energy increases from <c val="FFFF80"><d ref="100*Unit,ZHBRStrider,EnergyStart/Unit,ZHBRStrider,EnergyMax" precision="2"/>%</c> to <c val="FFFF80"><d ref="100*((Unit,ZHBRStrider,EnergyStart/Unit,ZHBRStrider,EnergyMax) + Effect,ZHBRUnitBorn@StartingEnergy,VitalArray[Energy].ChangeFraction)" precision="2"/>%</c> of <c val="FFFF80">Maximum</c> <c val="#Void">Void</c> energy.
+Button/Tooltip/ZHBRRevealingSacrifice=The <c val="FFFF80">Spirit</c> sacrifices itself to enter any allied or enemy target and reveal everything that it sees while also gaining detection in that area. Disappears after <c val="FFFF80"><d ref="Behavior,ZHBRRevealingSacrifice,Duration"/></c> seconds.
+Button/Tooltip/ZHBRSentinel=Fast opportunistic scout. Can <c val="FFFF80">Leap</c> up and down cliffs, over ledges and obstacles. Can be upgraded to use <c val="FFFF80">Subjugation Jump</c> to spring behind and stun enemies.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ZHBRSentinelJump=Sentinel jumps behind enemy target dealing <c val="FFFF80"><d ref="Effect,ZHBRSentinelSubjugationJump@Damage,Amount"/> damage</c>. If target is a unit, also stuns them for <c val="FFFF80"><d ref="Behavior,ZHBRSentinelSubjugationJump@Stun,Duration" precision="1"/> second</c>.<n/>
+Button/Tooltip/ZHBRSentinelLeap=<c val="FFFF8A">Sentinel</c> can spring towards a specified point including across cliffs or over obstacles, as well as into fog of war.
+Button/Tooltip/ZHBRSentinelLeap@Extended=<c val="FFFF8A">Sentinel</c> can spring towards a specified point including across cliffs or over obstacles, as well as into fog of war.
+Button/Tooltip/ZHBRSentinelProtectionJumpPassive=After jumping, for <c val="FFFF8A"><d ref="Behavior,ZHBRProtectionJump@Armor,Duration" precision="2"/></c> seconds the <c val="FFFF8A">Sentinel</c>'s movement speed is increased by <c val="FFFF80"><d ref="100*(Behavior,ZHBRProtectionJump@Armor,Modification.MoveSpeedMultiplier - 1)" precision="2"/>%</c> and all incoming damage is reduced by <c val="FFFF80"><d ref="100*(1 + Behavior,ZHBRProtectionJump@Armor,Modification.DamageTakenFraction[2])" precision="1"/>%</c>. This damage reduction also applies during the jump itself.
+Button/Tooltip/ZHBRSentinelSubjugationJump@SubjugationJump=<c val="FFFF8A">Sentinel</c> jumps behind enemy target dealing <c val="FFFF80"><d ref="Effect,ZHBRSentinelSubjugationJump@Damage,Amount"/></c> damage. Stuns non-Massive units for <c val="FFFF80"><d ref="Behavior,ZHBRSentinelSubjugationJump@Stun,Duration" precision="1"/></c> second.<n/>
+Button/Tooltip/ZHBRSentinelSubjugationResearch=Allows <c val="FFFF80">Sentinels</c> to use <c val="FFFF80">Subjugation Jump</c> and <c val="FFFF80">increases</c> the duration of <c val="FFFF80">Protection Jump</c> passive by <c val="FFFF80"><d ref="Upgrade,ZHBRSubjugationJump@ZHBRSubjugation,EffectArray[3].Value/1.4"/></c> second.
+Button/Tooltip/ZHBRShapeshifter=Tactical air support fiend. Either specializes in anti-ground anti-Armored damage or consumes <c val="#Void">Void</c> energy to target enemy air units in a large area. Can use <c val="FFFF80">Void Chasm</c> neutralizing any unit or structure in an area.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/ZHBRShrineResearch@ExpressMantle=Increases Pollinator speed when using <c val="FFFF80">Shadow Mantle</c>.
-Button/Tooltip/ZHBRSpirit=Fast Hybrid Scout unit. Gets cloaking after upgrade.
-Button/Tooltip/ZHBRStasisCell=Improve Void Rifts, contains upgrades for <c val="ffff8a">Flayers</c>.<n/><n/><c val="ffff8a">While within <c val="#Void">Void</c> powerfield enables:</c><n/>- Flayers
-Button/Tooltip/ZHBRStrider=Ranged support unit. Consumes <c val="#Void">Void</c> energy to increase attack damage.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
-Button/Tooltip/ZHBRStriderCrawler=Crawler Strider. Has less vitals. Consumes <c val="#Void">Void</c> energy to increase attack damage.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
-Button/Tooltip/ZHBRStructureTeleport=Teleport structure to target location over <c val="ffff8a"><d ref="Behavior,ZHBRStructureTeleport@Controller,Duration"/> seconds</c>.
+Button/Tooltip/ZHBRSpirit=Dedicated scouting flyer. Gains cloaking when player has a <c val="ffff8a">Tomb</c>. Can use <c val="ffff8a">Transcendence</c> to siege and increase vision range. Can use <c val="ffff8a">Revealing Sacrifice</c> to merge with any unit or structure gaining both vision and detection temporarily.
+Button/Tooltip/ZHBRSpirit@Phantasm=Invulnerable scouting flyer that automatically disappears after <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> seconds. Will also vanish upon its associated <c val="FFFF80">Spirit</c>'s death, cancelling <c val="ffff8a">Transcendence</c> siege mode or manually cancelling <c val="ffff8a">Void Phantom</c> itself.
+Button/Tooltip/ZHBRStasisCell=Contains upgrades for <c val="ffff8a">Warriors</c>, <c val="ffff8a">Flayers</c> and <c val="ffff8a">Sentinels</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Flayers<n/>- Sentinels
+Button/Tooltip/ZHBRStationarity=<c val="FFFF80">Navigator</c> becomes immobile, gains <c val="FFFF80">+<d ref="Behavior,ZHBRNavigatorStationarity,Modification.DetectBonus"/></c> vision and detection range, <c val="FFFF80"><d ref="Behavior,ZHBRNavigatorStationarity,Modification.Radar"/></c> radar range and <c val="FFFF80"><d ref="-100*(Behavior,ZHBRNavigatorStationarity,Modification.DamageTakenFraction[0])"/>%</c> reduced damage.
+Button/Tooltip/ZHBRStrider=Resilient damage-dealer. Consumes <c val="#Void">Void</c> energy to increase attack damage.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ZHBRStriderCrawler=Crawling Strider. Only has <c val="FFFF80"><d ref="100*(Unit,ZHBRStriderCrawler,LifeMax + Unit,ZHBRStriderCrawler,ShieldsMax)/(Unit,ZHBRStrider,LifeMax + Unit,ZHBRStrider,ShieldsMax)" precision="2"/>%</c> health. Consumes <c val="#Void">Void</c> energy to increase attack damage.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ZHBRStructureTeleport=Teleports structure to target location over <c val="ffff8a"><d ref="Behavior,ZHBRStructureTeleport@Controller,Duration"/> seconds</c>. During teleportation, the structure takes <c val="FFFF80"><d ref="100*Behavior,ZHBRStructureTeleport@Controller,Modification.DamageTakenFraction[2]" precision="2"/>%</c> more damage.
 Button/Tooltip/ZHBRSubjugationJump2=<c val="FFFF80">Sentinels</c> gain <c val="FFFF80">2.5 </c> seconds cooldown deduction on <c val="FFFF80">Jump</c> ability.
 Button/Tooltip/ZHBRSubjugationJumpPassive=<c val="FFFF80">Sentinels</c> gain <c val="FFFF80">2.5 </c> seconds cooldown deduction on <c val="FFFF80">Jump</c> ability.
-Button/Tooltip/ZHBRTemple=Primary structure. Can receive gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Minions
-Button/Tooltip/ZHBRTimeWarp=Warps spacetime within the target area for <c val="ffff8a"><d ref="Effect,ZHBRTimeWarp@Persistent,PeriodCount*Effect,ZHBRTimeWarp@Persistent,PeriodicPeriodArray[0]" precision="1"/> seconds</c>. All <c val="ffff8a">enemy ground units</c> within the field are time stopped, disabled to act and revealed.
-Button/Tooltip/ZHBRTomb=Contains upgrades for <c val="ffff8a">Energators</c>, <c val="ffff8a">Conductors</c>, <c val="ffff8a">Navigators</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Energators<n/>- Conductors<n/>- Navigators<n/>- Minion morph to Spirit
-Button/Tooltip/ZHBRToxicity=Attacks from <c val="FFFF80">Pollinator's</c> reduce target movement speed by <c val="FFFF80">50%</c>.
+Button/Tooltip/ZHBRTemple=Primary structure. Can receive gathered resources. Can use the <c val="ffff8a">Void Immunity</c> and <c val="ffff8a">Permanent Power</c> abilities. <n/><n/><c val="ffff8a">Enables:</c><n/>- Minions
+Button/Tooltip/ZHBRTimeWarp=Warps space-time within the target area. Time in this area slows down for all enemy ground units by <c val="FFFF80"><d ref="100*(1-Behavior,ZHBRTimeWarp@Start,Modification.TimeScale)" precision="2"/>%</c> during <c val="ffff8a"><d ref="Effect,ZHBRTimeWarp@PersistentStart,PeriodCount*Effect,ZHBRTimeWarp@PersistentStart,PeriodicPeriodArray[0]" precision="1"/></c> seconds, then for the next <c val="ffff8a"><d ref="Effect,ZHBRTimeWarp@PersistentEnd,PeriodCount*Effect,ZHBRTimeWarp@PersistentStart,PeriodicPeriodArray[0]" precision="1"/></c> seconds time stops completely, preventing ability usage. This zone also reveals burrowed units as well as cloaked ground or air units for the entire duration. Does not affect friendly units.<n/><n/><c val="ffff8a">Massive units are immune.</c>
+Button/Tooltip/ZHBRTomb=Contains upgrades for <c val="ffff8a">Energators</c>, <c val="ffff8a">Conductors</c> and <c val="ffff8a">Spirits</c>.<n/><n/><c val="ffff8a">Enables:</c><n/>- Energators<n/>- Navigators<n/>- Conductors
+Button/Tooltip/ZHBRToxicity=<c val="FFFF80">Pollinator</c>'s weapon attack causes <c val="FFFF80"><d ref="Effect,ZHBRPollinatorVoidToxin@Damage,Amount * Behavior,HybridPollinatorVoidToxin,Duration / Behavior,HybridPollinatorVoidToxin,Period" precision="2"/></c> damage over <c val="FFFF80"><d ref="Behavior,HybridPollinatorVoidToxin,Duration" precision="2"/></c> seconds to Biological targets. Multiple hits do not stack damage but refresh the duration.
 Button/Tooltip/ZHBRTransfusion=Restores up to <c val="ffff8a"><d ref="Effect,ZHBRTransfusion@Restore,RechargeVitalRate"/></c> <c val="#FFFFFF">Protection</c> shield per second. Every <c val="ffff8a"><d ref="1/Effect,ZHBRTransfusion@Restore,DrainVitalCostFactor" precision="1"/></c> <c val="#FFFFFF">Protection</c> shield restored drains <c val="ffff8a">1</c> <c val="#Void">Void</c> energy.
-Button/Tooltip/ZHBRUltimateUnitOfTransfusion=Increases Proteus's <c val="ffff8a">Transfusion</c> <c val="#FFFFFF">Protection</c> shield amount restored per <c val="ffff8a">1</c> <c val="#Void">Void</c> energy by <c val="ffff8a"><d ref="100*(1-Upgrade,ZHBRUltimateUnitOfTransfusion,EffectArray[0].Value)"/>%</c> and restoration amount by <c val="ffff8a"><d ref="100*(Upgrade,ZHBRUltimateUnitOfTransfusion,EffectArray[1].Value-1)"/>%</c>.
-Button/Tooltip/ZHBRUpgradeToAdvancedBehemoth=Upgrades <c val="ffff8a">Behemoth</c> to <c val="ffff8a">Advanced Behemoth</c>:<n/><n/><ul indent="2" text="•"><li/>Life <c val="ffff8a">+100</c></ul><ul indent="2" text="•"><li/><c val="ffffff">Protection Armor</c> <c val="ffff8a">+1</c></ul><ul indent="2" text="•"><li/><c val="ffffff">Life Armor</c> <c val="ffff8a">+1</c></ul><ul indent="2" text="•"><li/><c val="ffffff">Protection</c> <c val="ffff8a">+50</c></ul><ul indent="2" text="•"><li/><c val="#Void">Void energy</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[3].Value" player="0"/></c></ul><ul indent="2" text="•"><li/>Movespeed <c val="ffff8a">+0.42</c></ul><ul indent="2" text="•"><li/>Damage <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[5].Value"/></c></ul>
-Button/Tooltip/ZHBRUpgradeToAdvancedDominator=Upgrades <c val="ffff8a">Dominator</c> to <c val="ffff8a">Advanced Dominator</c>:<n/><n/><ul indent="2" text="•"><li/>Life <c val="ffff8a">+100</c></ul><ul indent="2" text="•"><li/><c val="FFFFFF">Protection</c> <c val="ffff8a">+50</c></ul><ul indent="2" text="•"><li/><c val="#Void">Void energy</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[3].Value"/></c>
-Button/Tooltip/ZHBRUpgradeToAdvancedNemesis=Upgrades <c val="ffff8a">Nemesis</c> to <c val="ffff8a">Advanced Nemesis</c>:<n/><n/></ul><ul indent="2" text="•"><li/><c val="#Void">Void energy</c> <c val="ffff8a">+100</c></ul><ul indent="2" text="•"><li/>Weapon Damage <c val="ffff8a">+2</c>
+Button/Tooltip/ZHBRUltimateUnitOfTransfusion=Increases <c val="ffff8a">Proteus</c> <c val="ffff8a">Transfusion</c>'s <c val="#FFFFFF">Protection</c> shield amount restored per <c val="ffff8a">1</c> <c val="#Void">Void</c> Energy by <c val="ffff8a"><d ref="100*(Upgrade,ZHBRUltimateUnitOfTransfusion,EffectArray[0].Value-1)"/>%</c>, and shield restoration rate by <c val="ffff8a"><d ref="100*(Upgrade,ZHBRUltimateUnitOfTransfusion,EffectArray[1].Value-1)"/>%</c>.
+Button/Tooltip/ZHBRUpgradeToAdvancedBehemoth=Upgrades <c val="ffff8a">Behemoth</c> to <c val="ffff8a">Advanced Behemoth</c>:<n/><n/><ul indent="2" text="•"><li/>Life <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[0].Value"/></c></ul><ul indent="2" text="•"><li/><c val="ffffff">Protection</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[9].Value" player="0"/></c></ul><ul indent="2" text="•"><li/><c val="#Void">Void</c> energy <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[2].Value" player="0"/></c></ul><ul indent="2" text="•"><li/>Damage <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedBehemoth,EffectArray[4].Value"/></c></ul><ul indent="2" text="•"><li/>Can stride over small units</ul><ul indent="2" text="•"><li/>Can see through obstacles and high ground
+Button/Tooltip/ZHBRUpgradeToAdvancedDominator=Upgrades <c val="ffff8a">Dominator</c> to <c val="ffff8a">Advanced Dominator</c>:<n/><n/></ul><ul indent="2" text="•"><li/><c val="FFFFFF">Protection</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[0].Value"/></c></ul><ul indent="2" text="•"><li/><c val="#Void">Void</c> energy <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[1].Value"/></c></ul><ul indent="2" text="•"><li/>Increase vision radius by <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[2].Value"/></c></ul><ul indent="2" text="•"><li/><c val="ffff8a">Domination</c> maximum charge amount <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedDominator,EffectArray[3].Value"/></c>
+Button/Tooltip/ZHBRUpgradeToAdvancedNemesis=Upgrades <c val="ffff8a">Nemesis</c> to <c val="ffff8a">Advanced Nemesis</c>:<n/><n/><ul indent="2" text="•"><li/>Life <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[4].Value"/></c></ul><ul indent="2" text="•"><li/><c val="FFFFFF">Protection</c> <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[2].Value"/></c></ul><ul indent="2" text="•"><li/><c val="#Void">Void</c> energy <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[0].Value"/></c></ul><ul indent="2" text="•"><li/>Movement speed <c val="ffff8a">+<d ref="Upgrade,ZHBRUpgradeToAdvancedNemesis,EffectArray[1].Value*1.4" precision="2" /></c></ul>
 Button/Tooltip/ZHBRUrunMassRecall=Teleports Urun and all nearby friendly units to the targeted structure.
 Button/Tooltip/ZHBRVespeneConcentrator=Summoned over a Vespene Geyser to extract <c val="FFFF80"><d ref="-Effect,ZHBRVespeneMining@MiningMU,Resources"/></c> vespene every <c val="FFFF80"><d ref="Behavior,ZHBRVespeneMining@Mining,Period" precision="2"/></c> seconds.
-Button/Tooltip/ZHBRVespeneMining=Every <c val="FFFF80"><d ref="Behavior,ZHBRVespeneMining@Mining,Period" precision="2"/></c> seconds harverst <c val="FFFF80"><d ref="-Effect,ZHBRVespeneMining@MiningMU,Resources"/></c> vespene.
+Button/Tooltip/ZHBRVespeneMining=Every <c val="FFFF80"><d ref="Behavior,ZHBRVespeneMining@Mining,Period" precision="2"/></c> seconds mining <c val="FFFF80"><d ref="-Effect,ZHBRVespeneMining@MiningMU,Resources"/></c> vespene.
 Button/Tooltip/ZHBRVespeneMining@TextKicker=<s val="Kicker_Gas">+<d ref="-Effect,ZHBRVespeneMining@MiningMU,Resources"/></s><IMG path="Assets\Textures\icon-gas-protoss.dds" height="28" width="28"/>
-Button/Tooltip/ZHBRVoidBonus=Increases Minion's harvest resource amount by <c val="ffff8a"><d ref="Upgrade,ZHBRVoidBonus,EffectArray[0].Value"/></c> while they are powered by <c val="#Void">Void</c>.
-Button/Tooltip/ZHBRVoidChasm=<c val="ffff8a">Shapeshifter</c> prepares for <c val="ffff8a"><d ref="Effect,ZHBRVoidChasm@InitialPersistent,InitialDelay" precision="2"/> seconds</c>. After that all targets in an area are forced to travel between air and ground repeatedly, making them unable to act and vulnerable for ground and air attacks for <c val="ffff8a"><d ref="Behavior,ZHBRVoidChasm,Duration" precision="2"/> seconds</c>, dealing <c val="ffff8a">18</c> total damage to ground units over the duration and dealing <c val="ffff8a">90</c> total damage to air units over the duration.
-Button/Tooltip/ZHBRVoidForge=Contains upgrade for <c val="ffff8a">Nemesises</c>.</c><n/><n/><c val="FFFF80">Enables:<n/>- Nemesises
-Button/Tooltip/ZHBRVoidImmunity=Increases <c val="ffffff">Protection</c> Armor of target by <c val="ffff8a"><d ref="Behavior,ZHBRVoidImmunity,Modification.ShieldArmorBonus"/></c>.
-Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon=Upgrades weapon of Hybrid air units.
-Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor=Upgrades armor of Hybrid air units.
-Button/Tooltip/ZHBRVoidRift=Summons Hybrid units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Warriors
-Button/Tooltip/ZHBRVoidShield=Increases <c val="FFFFFF">Protection</c> armor of all units and structures by <c val="FFFF80"><d ref="Upgrade,ZHBRVoidShield,EffectArray[0].Value"/></c> while they are powered by <c val="#Void">Void</c>.
+Button/Tooltip/ZHBRVoidBarrier=Conjures a defensive screen on the target, blocking <c val="ffff8a"><d ref="100*(1-Effect,ZHBRVoidBarrier@DamageFraction,Fraction)" precision="2"/>%</c> of any incoming damage for a maximum total of <c val="ffff8a"><d ref="Behavior,ZHBRVoidBarrier,DamageResponse.ModifyLimit"/></c> damage. Can be stacked up to <c val="FFFF80"><d ref="Behavior,ZHBRVoidBarrier,MaxStackCount" precision="0"/></c> times on a given target, with each stack lasting <c val="FFFF80"><d ref="Behavior,ZHBRVoidBarrier,Duration"precision="1"/></c> seconds or until its damage limit becomes exhausted. Further stacking will only refresh the oldest stack's duration and damage tolerance.
+Button/Tooltip/ZHBRVoidBonus=Increases <c val="FFFF80">Minion</c>'s resource harvest amount by <c val="ffff8a"><d ref="Upgrade,ZHBRVoidBonus,EffectArray[0].Value"/></c> (<c val="ffff8a">2</c> for Rich resources) while they are powered by <c val="#Void">Void</c>.
+Button/Tooltip/ZHBRVoidChasm=<c val="ffff8a">Shapeshifter</c> aims at an area and prepares for <c val="ffff8a"><d ref="Behavior,ZHBRVoidChasmStartingDelay,Duration+0.071" precision="2"/></c> seconds. Afterwards, all targets in the area are phased out, swap places between air and ground, while taking damage equivalent to <c val="FFFF80"><d ref="100*((Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio * Behavior,ZHBRVoidChasmGround,Duration / Behavior,ZHBRVoidChasmGround,Period) + Accumulator,ZHBRVoidChasm@MaxLifeFraction,Ratio)" precision="2"/>%</c> of their total <c val="ffff8a">Maximum Health</c> over <c val="ffff8a"><d ref="Behavior,ZHBRVoidChasm,Duration" precision="0"/></c> seconds. This area also impedes the movement of any ground or air units attempting to pass through it.
+Button/Tooltip/ZHBRVoidForge=Contains upgrades for <c val="ffff8a">Shapeshifters</c> and <c val="ffff8a">Nemesises</c>.</c><n/><n/><c val="FFFF80">Enables:</c><n/>- Shapeshifters<n/>- Nemesises
+Button/Tooltip/ZHBRVoidImmunity=Increases target's <c val="ffff80">Maximum</c> <c val="ffffff">Protection</c> by <c val="ffff80">50%</c> and their <c val="ffffff">Protection</c> armor by <c val="ffff8a"><d ref="Behavior,ZHBRVoidImmunity,Modification.ShieldArmorBonus"/></c>.
+Button/Tooltip/ZHBRVoidPhantom=<c val="FFFF80">Spirit</c> invokes an invulnerable flying <c val="ffff8a">Phantasm</c> that can move but cannot attack. Available only during <c val="ffff8a">Transcendence</c> siege mode and will dissipate after <c val="FFFF80"><d ref="Behavior,ZHBRVoidPhantom@Timer,Duration" precision="2"/></c> seconds, or upon manual cancellation, unsieging or the <c val="FFFF80">Spirit</c>'s death.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon1=Upgrades the damage dealt by Void Forces air units.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon2=Further upgrades the damage dealt by Void Forces air units.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeAirWeapon3=Maximizes the damage dealt by Void Forces air units.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor1=Upgrades the armor of Void Forces air units.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor2=Further upgrades the armor of Void Forces air units.
+Button/Tooltip/ZHBRVoidPortalUpgrades@UpgradeArmor3=Maximizes the armor of Void Forces air units.
+Button/Tooltip/ZHBRVoidRift=Summons Void Forces units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Warriors
+Button/Tooltip/ZHBRVoidShield=Increases <c val="FFFF80">Starting</c> <c val="FFFFFF">Protection</c> of all units and structures from <c val="FFFF80"><d ref="100*Unit,ZHBRWarrior,ShieldsStart/Unit,ZHBRWarrior,ShieldsMax" precision="2"/>%</c> to <c val="FFFF80"><d ref="100*Effect,ZHBRUnitBorn@StartingShield,VitalArray[Shields].ChangeFraction" precision="2"/>%</c> <c val="FFFF80">Maximum</c> <c val="FFFFFF">Protection</c>, grants <c val="FFFF80">+<d ref="Upgrade,ZHBRVoidShield,EffectArray[82].Value"/></c> <c val="FFFFFF">Protection</c> armor and <c val="FFFF80">+<d ref="Upgrade,ZHBRVoidShield,EffectArray[39].Value"/></c> more while they are powered by <c val="#Void">Void</c>.
 Button/Tooltip/ZHBRVoidToxin=<c val="FFFF80">Pollinator's</c> attack will apply poison status to target, dealing <c val="FFFF80">2</c>  additional weapon attacks in <c val="FFFF80">1</c> second and slow down target movement by <c val="FFFF80">50%</c>.<n/><c val="ffff8a">Cannot slow down frenzied units such as Ultralisk.</c>
-Button/Tooltip/ZHBRWarbringer=Long ranged support unit. Deals high damage to single targets and can use <c val="FFFF8A">Mace Strike</c> to deal area damage.<n/><n/><c val="FFFF8A">Can attack ground units.</c><n/><n/><c val="FFFFFF">Generate <c val="#Void">Void</c> energy only in <c val="#Void">Void Field</c>.</c>
-Button/Tooltip/ZHBRWarbringerMaceStrike=Weapon damage deals splash damage, gains increased range.<n/><n/>Each attack costs <c val="ffff8a"><d ref="-Effect,ZHBRWarbringerWeaponMaceStrike@RemoveEnergy,VitalArray[Energy].Change"/></c> <c val="#Void">Void</c> energy.
+Button/Tooltip/ZHBRWarbringer=Long-ranged anti-ground specialist. Deals high damage to single targets. Consumes <c val="#Void">Void</c> energy to cast <c val="FFFF8A">Mace Strike</c> dealing high area damage.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ZHBRWarbringerMaceStrike=After a <c val="ffff8a"><d ref="Effect,ZHBRWarbringerWeaponMaceStrike@InitialPersistent,PeriodicPeriodArray[0]" precision="2"/></c> second delay, bombard target area to cause <c val="ffff8a"><d ref="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount"/> (<d ref="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount + Effect,ZHBRWarbringerWeaponMaceStrike@Damage,AttributeBonus[Armored]"/> vs Armored)</c> damage to enemy ground units, ignoring any friendly units. Deals full damage within <c val="ffff8a"><d ref="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,AreaArray[0].Radius" precision="2"/></c> radius and <c val="ffff8a"><d ref="100*Effect,ZHBRWarbringerWeaponMaceStrike@Damage,AreaArray[1].Fraction" precision="2"/>%</c> within <c val="ffff80"><d ref="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,AreaArray[1].Radius" precision="2"/></c> radius.</n></n><c val="#ColorAttackInfo">Can destroy Protoss Force Fields.</c>
 Button/Tooltip/ZHBRWarbringerMaceStrike@MaceCannon=Weapon deals base damage with base range and without <c val="#Void">Void</c> energy cost.
-Button/Tooltip/ZHBRWarbringerOrbitalGuidance=Increases Warbringer's attack range of <c val="FFFF80">Mace Strike</c> by <c val="ffff8a"><d ref="Upgrade,ZHBRWarbringerOrbitalGuidance,EffectArray[0].Value" precision="2"/></c>.
-Button/Tooltip/ZHBRWarrior=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
-Button/Tooltip/ZHBRWarriorDeconstruction=Increases Warrior's damage <c val="FFFF80">against Structures</c> by <c val="FFFF80"><d ref="100*Upgrade,ZHBRWarriorDeconstruction@Deconstruction,EffectArray[0].Value"/>%</c>.
+Button/Tooltip/ZHBRWarbringerOrbitalGuidance=Increases <c val="FFFF80">Warbringer</c> <c val="FFFF80">Mace Strike</c>'s maximum cast range by <c val="ffff8a"><d ref="Upgrade,ZHBRWarbringerOrbitalGuidance,EffectArray[0].Value" precision="2"/></c>.
+Button/Tooltip/ZHBRWarrior=Potent versatile infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ZHBRWarrior@Changeling=Potent versatile infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ZHBRWarriorDeconstruction=Increases <c val="FFFF80">Warrior</c>'s base damage by <c val="FFFF80"><d ref="Upgrade,ZHBRWarriorDeconstruction@Deconstruction,EffectArray[1].Value"/></c> and adds <c val="FFFF80">+<d ref="Effect,ZHBRWarriorWeapon@DamageUpgrade,AttributeBonus[Structure]"/> (+<d ref="Upgrade,ZHBRGroundWeaponUpgradeLevel1,EffectArray[33].Value"/> per weapon upgrade)</c> bonus damage against Structures.
 Button/Tooltip/ZHBRWatcher=<c val="FFFF80">Sentinels</c> gain <c val="FFFF80">25%</c> Movement Speed and <c val="FFFF80">Cliff Jump</c> ability.
 Button/Tooltip/ZHBRWatcherPassive=<c val="FFFF80">Sentinels</c> gain <c val="FFFF80">25%</c> Movement Speed and <c val="FFFF80">Cliff Jump</c> ability.
+Button/Tooltip/ZHBRWormhole=<c val="ffff8a">Psyon</c> instantaneously teleports a short distance.
 Canttargetscreamer=Can't target Screamer
 Card/Name/ZHBRBehemoth/1GU1=Shared - Ground Units
 Card/Name/ZHBRBehemoth/2AU1=Shared - Air Support Units
-Card/Name/ZHBRBehemoth/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRBehemoth/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRChimera/1GU1=Shared - Ground Units
 Card/Name/ZHBRChimera/2AU1=Shared - Air Support Units
-Card/Name/ZHBRChimera/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRChimera/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRConductor/1GU1=Shared - Ground Units
 Card/Name/ZHBRConductor/2AU1=Shared - Air Support Units
-Card/Name/ZHBRConductor/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRConductor/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRDominator/1GU1=Shared - Ground Units
 Card/Name/ZHBRDominator/2AU1=Shared - Air Support Units
-Card/Name/ZHBRDominator/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRDominator/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRDreadnok/1GU1=Shared - Ground Units
 Card/Name/ZHBRDreadnok/2AU1=Shared - Air Support Units
-Card/Name/ZHBRDreadnok/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRDreadnok/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBREnergator/1GU1=Shared - Ground Units
 Card/Name/ZHBREnergator/2AU1=Shared - Air Support Units
-Card/Name/ZHBREnergator/2AU2=Shared - Air Battle Units
+Card/Name/ZHBREnergator/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRFlayer/1GU1=Shared - Ground Units
 Card/Name/ZHBRFlayer/2AU1=Shared - Air Support Units
-Card/Name/ZHBRFlayer/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRFlayer/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRMinion/HBl1=Basic Structures
 Card/Name/ZHBRMinion/HBl2=Advanced Structures
 Card/Name/ZHBRNavigator/1GU1=Shared - Ground Units
 Card/Name/ZHBRNavigator/2AU1=Shared - Air Support Units
-Card/Name/ZHBRNavigator/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRNavigator/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRNemesis/1GU1=Shared - Ground Units
 Card/Name/ZHBRNemesis/2AU1=Shared - Air Support Units
-Card/Name/ZHBRNemesis/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRNemesis/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRPollinator/1GU1=Shared - Ground Units
 Card/Name/ZHBRPollinator/2AU1=Shared - Air Support Units
-Card/Name/ZHBRPollinator/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRPollinator/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRProteus/1GU1=Shared - Ground Units
 Card/Name/ZHBRProteus/2AU1=Shared - Air Support Units
-Card/Name/ZHBRProteus/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRProteus/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRPsyon/1GU1=Shared - Ground Units
 Card/Name/ZHBRPsyon/2AU1=Shared - Air Support Units
-Card/Name/ZHBRPsyon/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRPsyon/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRRaceControl/1TS1=Teleport Basic Structures
 Card/Name/ZHBRRaceControl/1TS2=Teleport Advanced Structures
 Card/Name/ZHBRRaceControl/2RT1=Research Techonology
 Card/Name/ZHBRSentinel/1GU1=Shared - Ground Units
 Card/Name/ZHBRSentinel/2AU1=Shared - Air Support Units
-Card/Name/ZHBRSentinel/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRSentinel/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRShapeshifter/1GU1=Shared - Ground Units
 Card/Name/ZHBRShapeshifter/2AU1=Shared - Air Support Units
-Card/Name/ZHBRShapeshifter/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRShapeshifter/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRSpirit/1GU1=Shared - Ground Units
 Card/Name/ZHBRSpirit/2AU1=Shared - Air Support Units
-Card/Name/ZHBRSpirit/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRSpirit/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRStrider/1GU1=Shared - Ground Units
 Card/Name/ZHBRStrider/2AU1=Shared - Air Support Units
-Card/Name/ZHBRStrider/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRStrider/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRVoidRift/1GU1=Ground Units
 Card/Name/ZHBRVoidRift/2AU1=Air Support Units
 Card/Name/ZHBRVoidRift/2AU2=Air Battle Units
 Card/Name/ZHBRWarbringer/1GU1=Shared - Ground Units
 Card/Name/ZHBRWarbringer/2AU1=Shared - Air Support Units
-Card/Name/ZHBRWarbringer/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRWarbringer/2AU2=Air Battle Units + Dominator
 Card/Name/ZHBRWarrior/1GU1=Shared - Ground Units
 Card/Name/ZHBRWarrior/2AU1=Shared - Air Support Units
-Card/Name/ZHBRWarrior/2AU2=Shared - Air Battle Units
+Card/Name/ZHBRWarrior/2AU2=Air Battle Units + Dominator
 Commander/Name/ZHBRCommon=Commander
 DataCollection/Name/ZHBRAcceleration=[Hybrid] - Psyon - Acceleration
 DataCollection/Name/ZHBRAirArmorUpgradeLevel1=[Hybrid] - Air Armor Upgrade (Level 1)
@@ -549,6 +744,7 @@ DataCollection/Name/ZHBRAirWeaponUpgradeLevel1=[Hybrid] - Air Weapon Upgrade (Le
 DataCollection/Name/ZHBRAirWeaponUpgradeLevel2=[Hybrid] - Air Weapon Upgrade (Level 2)
 DataCollection/Name/ZHBRAirWeaponUpgradeLevel3=[Hybrid] - Air Weapon Upgrade (Level 3)
 DataCollection/Name/ZHBRAmplifier=[Hybrid] - Amplifier
+DataCollection/Name/ZHBRAnnihilation=[Hybrid] - Dominator - Annihilation
 DataCollection/Name/ZHBRBehemoth=[Hybrid] - Behemoth
 DataCollection/Name/ZHBRBehemothAdvanced=[Hybrid] - Behemoth Advanced
 DataCollection/Name/ZHBRBehemothWeapon=[Hybrid] - Behemoth - Weapon
@@ -567,6 +763,7 @@ DataCollection/Name/ZHBRConstructWeaponAntiAir=[Hybrid] - Construct - Weapon Ant
 DataCollection/Name/ZHBRConstructWeaponAntiGround=[Hybrid] - Construct - Weapon Anti-Ground
 DataCollection/Name/ZHBRConsumeDNA=[Hybrid] - Behemoth - Consume DNA
 DataCollection/Name/ZHBRCrypt=[Hybrid] - Crypt
+DataCollection/Name/ZHBRDeactivateEvaporator=Deactivate Evaporator
 DataCollection/Name/ZHBRDeepTunnel=[Hybrid] - Chimera - Deep Tunnel
 DataCollection/Name/ZHBRDeformer=[Hybrid] - Deformer
 DataCollection/Name/ZHBRDestructionOrb=[Hybrid] - Dominator - Destruction Orb
@@ -620,13 +817,13 @@ DataCollection/Name/ZHBRPlasmaticBlast=[Hybrid] - Shapeshifter - Plasmatic Blast
 DataCollection/Name/ZHBRPollinator=[Hybrid] - Pollinator
 DataCollection/Name/ZHBRPollinatorShadowMantle=[Hybrid] - Pollinator - Shadow Mantle
 DataCollection/Name/ZHBRPollinatorWeapon=[Hybrid] - Pollinator - Weapon
+DataCollection/Name/ZHBRPounce=Pounce
 DataCollection/Name/ZHBRPowerField=[Hybrid] - Conductor - Power Field
 DataCollection/Name/ZHBRPrimeSummoning=[Hybrid] - Void Rift - Prime Summoning
 DataCollection/Name/ZHBRProjector=[Hybrid] - Projector
 DataCollection/Name/ZHBRProtectionJump=[Hybrid] - Sentinel - Protection Jump
 DataCollection/Name/ZHBRProteus=[Hybrid] - Proteus
 DataCollection/Name/ZHBRProteusWeapon=[Hybrid] - Proteus - Weapon
-DataCollection/Name/ZHBRPsiOrb=[Hybrid] - Dominator - Psi Orb
 DataCollection/Name/ZHBRPsionicTornado=[Hybrid] - Dreadnok - Psionic Tornado
 DataCollection/Name/ZHBRPsyon=[Hybrid] - Psyon
 DataCollection/Name/ZHBRPsyonWeapon=[Hybrid] - Psyon - Weapon
@@ -642,6 +839,7 @@ DataCollection/Name/ZHBRShapeshifterWeapon2=[Hybrid] - Shapeshifter - Weapon
 DataCollection/Name/ZHBRSpirit=[Hybrid] - Spirit
 DataCollection/Name/ZHBRSpray=[Hybrid] - Spray
 DataCollection/Name/ZHBRStasisCell=[Hybrid] - Stasis Cell
+DataCollection/Name/ZHBRStationarity=Stationarity
 DataCollection/Name/ZHBRStrider=[Hybrid] - Strider
 DataCollection/Name/ZHBRStriderCrawler=[Hybrid] - Strider Crawler
 DataCollection/Name/ZHBRStriderWeapon=[Hybrid] - Strider - Weapon
@@ -659,10 +857,12 @@ DataCollection/Name/ZHBRUpgradeToAdvancedNemesis=[Hybrid] - Nemesis - Upgrade to
 DataCollection/Name/ZHBRVespeneConcentrator=[Hybrid] - Vespene Concentrator
 DataCollection/Name/ZHBRVespeneMining=[Hybrid] - Vespene Mining
 DataCollection/Name/ZHBRVoid=[Hybrid] - Void
+DataCollection/Name/ZHBRVoidBarrier=Void Barrier
 DataCollection/Name/ZHBRVoidBonus=[Hybrid] - Minion - Void Bonus
 DataCollection/Name/ZHBRVoidChasm=[Hybrid] - Shapeshifter - Void Chasm
 DataCollection/Name/ZHBRVoidForge=[Hybrid] - Void Forge
 DataCollection/Name/ZHBRVoidImmunity=[Hybrid] - Temple - Void Immunity
+DataCollection/Name/ZHBRVoidPhantom=Void Phantom
 DataCollection/Name/ZHBRVoidRift=[Hybrid] - Void Rift
 DataCollection/Name/ZHBRVoidRiftTrain=[Hybrid] - Void Rift Train
 DataCollection/Name/ZHBRVoidShield=[Hybrid] - Void Shield
@@ -675,11 +875,14 @@ DataCollection/Name/ZHBRWarbringerWeaponMaceStrike=[Hybrid] - Warbringer - Weapo
 DataCollection/Name/ZHBRWarrior=[Hybrid] - Warrior
 DataCollection/Name/ZHBRWarriorDeconstruction=[Hybrid] - Warrior - Deconstruction
 DataCollection/Name/ZHBRWarriorWeapon=[Hybrid] - Warrior - Weapon
+DataCollection/Name/ZHBRWormhole=[Hybrid] - Psyon - Wormhole
 DocInfo/DescLong=Main Data Mod used for including in the extension mods <n/>Adds Hybrids<n/>Author: Zero 
 DocInfo/Name=[AR2] Hybrids
 DocInfo/Website=https://discord.gg/Q5UfjRXfHa
 Effect/Name/GenericRemoveCaster=Generic - Remove Caster
+Effect/Name/HybridBigForceFieldTimedLifeFate=Timed Life Fate
 Effect/Name/HybridClusterNovaVerifyImpactTargetLockedStatus=Cluster Nova - Verify Impact Target Locked Status
+Effect/Name/HybridConsructAGWeapon@SwitchDistance=Switch Distance
 Effect/Name/HybridDeformer@DestructionAriseHealImpact=Heal Impact
 Effect/Name/HybridDeformer@DestructionAriseSearch=Destruction Arise Search
 Effect/Name/HybridDeformer@DestructionAriseSet=Set
@@ -687,18 +890,29 @@ Effect/Name/HybridDeformer@DestructionAriseUDLifetoRestore=UD Life to Restore
 Effect/Name/HybridDeformer@DestructionAriseUDShieldtoRestore=UD Shield to Restore
 Effect/Name/HybridDeformer@DestructionAriseUDTotalVital=UD Total Vital
 Effect/Name/HybridDominatorConfusionDamage=Confusion Damage
+Effect/Name/HybridDominatorDestructionOrbSwitch=Destruction Orb Switch
 Effect/Name/HybridDreadnokTornadoLaunchMissile=Psionic Tornado Launch Missile
+Effect/Name/HybridMicroDisableAbility@ApplyBehavior=Micro Disable Ability
+Effect/Name/HybridMinionVoidBonusWorkInVoidField=Work In Void Field
 Effect/Name/HybridPollinatorVoidToxin=Void Toxin
 Effect/Name/HybridPollinatorVoidToxinSlow=Void Toxin
 Effect/Name/HybridPsyon@FragmentumCorrosionAB=Fragmentum Corrosion Apply Behavior
 Effect/Name/HybridPsyon@FragmentumCorrosionDamage=Fragmentum Corrosion Damage
 Effect/Name/HybridPsyon@FragmentumCorrosionLaunchMissile=Fragmentum Corrosion Launch Missile
+Effect/Name/HybridPsyon@FragmentumCorrosionPermamentDamage=Fragmentum Corrosion Permament Damage
 Effect/Name/HybridPsyon@FragmentumCorrosionSearch=Fragmentum Corrosion Search
 Effect/Name/HybridPsyon@FragmentumCorrosionSet=Fragmentum Corrosion Set
 Effect/Name/HybridSacrificingRevealDummyDamage=Sacrificing Reveal Dummy Damage
+Effect/Name/HybridShapeshifterVoidChasm@Push=Push
 Effect/Name/HybridSpiritRevealingSacrifice@SearchArea=Search Area
 Effect/Name/HybridSpiritSacificingRevealLaunch=Sacrificing Reveal Launch Effect
 Effect/Name/HybridStriderWeapon@SwitchLaunch=Switch Launch
+Effect/Name/HybridStriderWeapon@SwitchTargetArmor=Switch Target Armor
+Effect/Name/HybridTemple@VoidImmunitySwitch=Switch
+Effect/Name/HybridTemplePermanentPowerIssueOrder=Issue Order
+Effect/Name/HybridTempleVoidImmunityIssueOrder=Issue Order
+Effect/Name/HybridVoidChazmBigForceField=Big Force Field
+Effect/Name/HybridVoidChazmBigForceFieldTimedLife=Big Force Field Timed Life
 Effect/Name/HybridWarbringerWeaponMaceStrikeSearchSet=Search Set
 Effect/Name/RadiusTestSearchArea=Radius Test Search Area
 Effect/Name/ZCRCasterAssignRally=ZCR - Caster Assign Rally
@@ -707,11 +921,13 @@ Effect/Name/ZHBRAiurSearch=Hybrid Aiur Search
 Effect/Name/ZHBRAiurStun=Hybrid Aiur Stun
 Effect/Name/ZHBRAmplifier@ApplyPathingBlockerController=Apply Pathing Blocker Controller
 Effect/Name/ZHBRBehemothAdvanced@Morph=Morph
+Effect/Name/ZHBRBehemothBrokenDNA@RemoveLifeStealUp=Remove Life Steal Up
 Effect/Name/ZHBRBehemothWeapon@Damage=Damage
 Effect/Name/ZHBRBehemothWeapon@InitialSet=Set
 Effect/Name/ZHBRBehemothWeapon@Search=Search
 Effect/Name/ZHBRBehemothWeaponAntiAir@Damage=Damage
 Effect/Name/ZHBRBehemothWeaponAntiAir@LaunchMissile=Launch Missile
+Effect/Name/ZHBRChimera@ApplyPounceBehavior=Apply Pounce Behavior
 Effect/Name/ZHBRChimeraMeleeWeapon@Damage=Damage
 Effect/Name/ZHBRChimeraMeleeWeapon@InitialPersistent=Initial Persistent
 Effect/Name/ZHBRChimeraRangedWeapon@Damage=Damage
@@ -728,6 +944,9 @@ Effect/Name/ZHBRConstruct@PlacementSetVitality=Placement Set Vitality
 Effect/Name/ZHBRConstruct@SetFacing=Set Facing
 Effect/Name/ZHBRConstruct@SpawnSet=Spawn Set
 Effect/Name/ZHBRConstruct@TeleportDummyEffect=Teleport Dummy Effect
+Effect/Name/ZHBRConstructCancelMarker=Cancel Marker
+Effect/Name/ZHBRConstructMarker@ApplyBehavior=Marker
+Effect/Name/ZHBRConstructReloadWeaponAG=Reload Weapon AG
 Effect/Name/ZHBRConstructWeaponAntiAir@CreatePersistent=Create Persistent
 Effect/Name/ZHBRConstructWeaponAntiAir@Damage=Damage
 Effect/Name/ZHBRConstructWeaponAntiAir@LaunchMissile=Launch Missile
@@ -736,12 +955,15 @@ Effect/Name/ZHBRConstructWeaponAntiAir@Search=Search
 Effect/Name/ZHBRConstructWeaponAntiAir@SearchIncludeAlly=Search (Include Ally)
 Effect/Name/ZHBRConstructWeaponAntiAir@TargetAllySwitch=Target Ally Switch
 Effect/Name/ZHBRConstructWeaponAntiGround@CreatePersistent=Create Persistent
-Effect/Name/ZHBRConstructWeaponAntiGround@Damage=Damage
+Effect/Name/ZHBRConstructWeaponAntiGround@DamageHight=Damage Hight
+Effect/Name/ZHBRConstructWeaponAntiGround@DamageLow=Damage Low
 Effect/Name/ZHBRConstructWeaponAntiGround@PeriodicSet=Periodic Set
 Effect/Name/ZHBRConstructWeaponAntiGround@Search=Search
 Effect/Name/ZHBRConstructWeaponAntiGround@SearchIncludeAlly=Search (Include Ally)
 Effect/Name/ZHBRConstructWeaponAntiGround@TargetAllySwitch=Target Ally Switch
 Effect/Name/ZHBRConstructWeaponAntiGroundInitialSet=Initial Set
+Effect/Name/ZHBRConsumeDNA@ApplyLifeStealMain=Apply Life Steal Main
+Effect/Name/ZHBRConsumeDNA@ApplyLifeStealUp=Apply Life Steal Up
 Effect/Name/ZHBRConsumeDNA@ApplyPeriodicBuff=Apply Periodic Buff
 Effect/Name/ZHBRConsumeDNA@ApplyStun=Apply Stun
 Effect/Name/ZHBRConsumeDNA@Damage=Damage
@@ -767,19 +989,45 @@ Effect/Name/ZHBRConsumeZergLaunchSet=Hybrid - Consume Zerg (Launch Set)
 Effect/Name/ZHBRConsumeZergModifyUnit=Hybrid - Consume Zerg (Modify Unit)
 Effect/Name/ZHBRConsumeZergSearch=Hybrid - Consume Zerg (Search)
 Effect/Name/ZHBRConsumeZergSet=Hybrid - Consume Zerg (Set)
+Effect/Name/ZHBRCrawlerPermanentPower@CastSet=Cast Set
+Effect/Name/ZHBRCrawlerVoidImmunity@ApplyBuff=Apply Buff
+Effect/Name/ZHBRDeactivateEvaporator@ApplyBehavior=Apply Behavior
+Effect/Name/ZHBRDeactivateEvaporator@Set=Set
 Effect/Name/ZHBRDeepTunnel@CreatePersistent=Create Persistent
 Effect/Name/ZHBRDeepTunnel@Teleport=Teleport
+Effect/Name/ZHBRDeepTunnel@TooltipAB=Tooltip AB
+Effect/Name/ZHBRDeepTunnel@TooltipRB=Tooltip RB
+Effect/Name/ZHBRDeformerBeamColor@ApplyBehavior=Beam Color
+Effect/Name/ZHBRDeformerDestructionAriseIncreaseShields=Increase Shields
+Effect/Name/ZHBRDeformerDestructionAriseMaxShields@ApplyBehavior=Max Shields Apply
+Effect/Name/ZHBRDeformerDestructionAriseReduceShields=Reduce Shields
+Effect/Name/ZHBRDestructionOrb@ApplySearchBehavior=Apply Search Behavior
+Effect/Name/ZHBRDestructionOrb@Damage=Damage
+Effect/Name/ZHBRDestructionOrb@FinalDamage=Final Damage
+Effect/Name/ZHBRDestructionOrb@FinalSearch=Final Search
+Effect/Name/ZHBRDestructionOrb@InitialPersistent=Initial Persistent
+Effect/Name/ZHBRDestructionOrb@LaunchMissile=Launch Missile
+Effect/Name/ZHBRDestructionOrb@Search=Search
 Effect/Name/ZHBRDisappearance@ApplyBehavior=Apply Buff
 Effect/Name/ZHBRDisappearance@Persistent=Persistent
 Effect/Name/ZHBRDisappearance@Search=Search
 Effect/Name/ZHBRDisintegrator@ApplyBehavior=Apply Behavior
 Effect/Name/ZHBRDisintegrator@Set=Set
+Effect/Name/ZHBRDomination@ApplyDisableSecondApply=Apply Disable Second Apply
+Effect/Name/ZHBRDominatorDisableAbilityMini@ApplyBehavior=Destruction Orb Disable Ability Mini
 Effect/Name/ZHBRDominatorWeapon@Damage=Damage
 Effect/Name/ZHBRDreadnokWeapon@Damage=Damage
 Effect/Name/ZHBRDreadnokWeapon@LM=LM
+Effect/Name/ZHBRDreadnokWeapon@ReduceEnergyAB=Reduce Energy AB
 Effect/Name/ZHBRDreadnokWeapon@Set=Set
+Effect/Name/ZHBRDrednokDevastatingStrikeReduceEnergy=Reduce Energy
 Effect/Name/ZHBREnergation@Restore=Restore
 Effect/Name/ZHBREnergation@RestoreDeformer=Restore
+Effect/Name/ZHBREnergation@RestoreDeformerRemoveBoostBehavior=Restore - Deformer - Remove Boost Behavior
+Effect/Name/ZHBREnergatorApplyVoidTrance=Apply Void Trance
+Effect/Name/ZHBREnergatorApplyVoidTranceStopMove=Apply Void Trance Stop Move
+Effect/Name/ZHBREnergatorCancelVoidTrance=Cancel Void Trance
+Effect/Name/ZHBREnergatorCancelVoidTranceStopMove=Cancel Void Trance Stop Move
 Effect/Name/ZHBREnergatorWeapon@Damage=Damage
 Effect/Name/ZHBREnergatorWeapon@LM=LM
 Effect/Name/ZHBREvaporator@CastSet=Cast Set
@@ -788,6 +1036,8 @@ Effect/Name/ZHBREvaporator@StoreUserData=Store User Data
 Effect/Name/ZHBRFlayerFury@ApplyCooldown=Apply Cooldown
 Effect/Name/ZHBRFlayerFury@FirstSet=First Set
 Effect/Name/ZHBRFlayerFury@InitialPersistent=Initial Persistent
+Effect/Name/ZHBRFlayerFury@TooltipAB=Tooltip AB
+Effect/Name/ZHBRFlayerFury@TooltipRB=Tooltip RB
 Effect/Name/ZHBRFlayerWeapon@Damage=Damage
 Effect/Name/ZHBRFlayerWeapon@InitialPersistent=Initial Persistent
 Effect/Name/ZHBRFlayerWeapon@InitialSwitch=Initial Switch
@@ -798,6 +1048,7 @@ Effect/Name/ZHBRGeneralPhaseShift=Hybrid General Phase Shift
 Effect/Name/ZHBRGeneralPhaseShiftIterateTransport=Hybrid General Phase Shift Iterate Transport
 Effect/Name/ZHBRGeneralPhaseShiftSet=Hybrid General Phase Shift Set
 Effect/Name/ZHBRInterdimensionalOverload@Teleport=Teleport
+Effect/Name/ZHBRInterdimensionalOverload@TooltipAB=Tooltip AB
 Effect/Name/ZHBRMineralMining@ApplySuppressionBehavior=Apply Suppression Behavior
 Effect/Name/ZHBRMineralMining@MiningMU=Mining (MU)
 Effect/Name/ZHBRMinionBuild@ApplyBehavior=Apply Behavior
@@ -815,12 +1066,16 @@ Effect/Name/ZHBRNavigation@TeleportOutAB=Teleport Out AB
 Effect/Name/ZHBRNavigation@TeleportOutABSet=TeleportOutABSet
 Effect/Name/ZHBRNavigation@TeleportOutTargetAB2=TeleportOutTargetAB
 Effect/Name/ZHBRNavigation@TeleportSet=Teleport Set
+Effect/Name/ZHBRNavigatorApplyStationarityMod=Apply Stationarity Mod
+Effect/Name/ZHBRNavigatorCancelStationarityMod=Cancel Stationarity Mod
 Effect/Name/ZHBRNavigatorLoad@LoadDummy=LoadDummy
 Effect/Name/ZHBRNavigatorLoad@Set=Unload Cargo Set Effect
 Effect/Name/ZHBRNemesisDesolation@Damage=Damage
 Effect/Name/ZHBRNemesisDesolation@DamageInitial=Damage Initial
 Effect/Name/ZHBRNemesisDisintegrator@ApplyBehavior=Apply Behavior
 Effect/Name/ZHBRNemesisDisintegrator@Set=Set
+Effect/Name/ZHBRNemesisLaunchAttack=Launch Attack
+Effect/Name/ZHBRNemesisTimeAttack=Time Attack
 Effect/Name/ZHBRNemesisWeapon@AddTrackedUnit=Add Tracked Unit
 Effect/Name/ZHBRNemesisWeapon@ApplyCooldown=Apply Cooldown
 Effect/Name/ZHBRNemesisWeapon@Damage=Damage
@@ -829,23 +1084,29 @@ Effect/Name/ZHBRNemesisWeapon@DamageSet=Damage Set
 Effect/Name/ZHBRNemesisWeapon@DamageSwitch=Damage (Switch)
 Effect/Name/ZHBRNemesisWeapon@FinalSet=Final Set
 Effect/Name/ZHBRNemesisWeapon@NetworkDrain=Network Drain
+Effect/Name/ZHBRNemesisWeapon@PeriodicSet=Periodic Set
 Effect/Name/ZHBRNemesisWeapon@Persistent=Persistent
 Effect/Name/ZHBRNemesisWeapon@RB=Remove Behavior
 Effect/Name/ZHBRNemesisWeapon@RemoveTrackedUnit=Remove Tracked Unit
 Effect/Name/ZHBRNemesisWeapon@RestoreEnergy=Restore Energy
+Effect/Name/ZHBRNemesisWeaponHidden@Persistent=Persistent
 Effect/Name/ZHBRPermanentPower@ApplyPermanentPowerUserBehavior=Apply Permanent Power User Behavior
 Effect/Name/ZHBRPermanentPower@ApplyPermanentPowerUserBehaviorNetwork=Apply Permanent Power User Behavior (Network)
 Effect/Name/ZHBRPermanentPower@CastSet=Cast Set
 Effect/Name/ZHBRPermanentPower@RemovePowerUserDefaultBehavior=Remove Power User Default Behavior
 Effect/Name/ZHBRPermanentPower@RemovePowerUserDefaultBehaviorNetwork=Remove Power User Default Behavior (Network)
+Effect/Name/ZHBRPermanentPower@SearchTempleIssue=Search Temple (Issue)
+Effect/Name/ZHBRPermanentPowerIssuePersistentSetFewEffect=Persistent (Set few effects) (Issue)
 Effect/Name/ZHBRPhaseShift@ApplyStasisBehavior=Apply Stasis Behavior
 Effect/Name/ZHBRPhaseShift@CastSet=Cast Set
 Effect/Name/ZHBRPhaseShift@IterateTransport=Iterate Transport
 Effect/Name/ZHBRPlasmaticBlast@ModifyUnit=Modify Unit
-Effect/Name/ZHBRPollinatorShadowMantle@Restore5Energy=Restore5Energy
+Effect/Name/ZHBRPollinatorShadowMantle@RestoreEnergy=Restore Energy
 Effect/Name/ZHBRPollinatorWeapon@Damage=Damage
 Effect/Name/ZHBRPollinatorWeapon@LM=LM
 Effect/Name/ZHBRPollinatorWeapon@Set=Set
+Effect/Name/ZHBRPounce@ApplyBehavior=Apply Behavior
+Effect/Name/ZHBRPounce@Set=Set
 Effect/Name/ZHBRPowerField@ApplyCasterSuppressionBehavior=Apply Caster Suppression Behavior
 Effect/Name/ZHBRPowerField@ClearQueuedOrders=Clear Queued Orders
 Effect/Name/ZHBRPowerField@CreatePersistent=Create Persistent
@@ -868,14 +1129,9 @@ Effect/Name/ZHBRPrimeSummoning@IssueUnloadOrder=Issue Unload Order
 Effect/Name/ZHBRPrimeSummoning@UDIncrement=UD Increment
 Effect/Name/ZHBRProtectionJump@ApplyBehavior=Apply Behavior
 Effect/Name/ZHBRProteusWeapon@Damage=Damage
-Effect/Name/ZHBRPsiOrb@ApplySearchBehavior=Apply Search Behavior
-Effect/Name/ZHBRPsiOrb@Damage=Damage
-Effect/Name/ZHBRPsiOrb@FinalDamage=Final Damage
-Effect/Name/ZHBRPsiOrb@FinalSearch=Final Search
-Effect/Name/ZHBRPsiOrb@InitialPersistent=Initial Persistent
-Effect/Name/ZHBRPsiOrb@LaunchMissile=Launch Missile
-Effect/Name/ZHBRPsiOrb@Search=Search
-Effect/Name/ZHBRPsionicTornado@ApplyTornadoBehavior=Apply Tornado Behavior
+Effect/Name/ZHBRPsionicTornado@ApplyTornadoBehaviorEnd=Apply Tornado Behavior End
+Effect/Name/ZHBRPsionicTornado@ApplyTornadoBehaviorMaxDistance=Apply Tornado Behavior Max Distance
+Effect/Name/ZHBRPsionicTornado@ApplyTornadoBehaviorStart=Apply Tornado Behavior Start
 Effect/Name/ZHBRPsionicTornado@ApplyTravelController=Apply Travel Controller
 Effect/Name/ZHBRPsionicTornado@CertainDirection=Certain Direction
 Effect/Name/ZHBRPsionicTornado@CreateUnit=Create Unit
@@ -885,6 +1141,7 @@ Effect/Name/ZHBRPsionicTornado@RandomPointInCircle=Random Point In Circle
 Effect/Name/ZHBRPsionicTornado@Search=Search
 Effect/Name/ZHBRPsionicTornado@SearchSet=Search Set
 Effect/Name/ZHBRPsionicTornado@UnitCreationSet=Unit Creation Set
+Effect/Name/ZHBRPsyonReloadWeaponAA=Reload Weapon AA
 Effect/Name/ZHBRPsyonWeapon@AddTrackedUnit=Add Tracked Unit
 Effect/Name/ZHBRPsyonWeapon@ApplyCooldownBehavior=Apply Cooldown Behavior
 Effect/Name/ZHBRPsyonWeapon@CastSwitch=Cast Switch
@@ -908,7 +1165,13 @@ Effect/Name/ZHBRSentinelJump@ImpactSet=Impact Set
 Effect/Name/ZHBRSentinelJump@InitialSet=Initial Set
 Effect/Name/ZHBRSentinelJump@LM=Launch Missile
 Effect/Name/ZHBRSentinelJump@RemoveJumpBuff=Remove Jump Buff
+Effect/Name/ZHBRSentinelSubjugationJump@ApplyJumpBanAutocast=Apply Jump Ban Auto cast
 Effect/Name/ZHBRSentinelWeapon@Damage=Damage
+Effect/Name/ZHBRSetConstructEndAttack=End Attack
+Effect/Name/ZHBRShapeshifterVoidChasm@Damage=Damage
+Effect/Name/ZHBRShapeshifterVoidChasm@DamageSet=Damage Set
+Effect/Name/ZHBRShapeshifterVoidChasm@DamageShields=Damage Shields
+Effect/Name/ZHBRShapeshifterVoidChasm@SearchPush=Search Push
 Effect/Name/ZHBRShapeshifterWeapon2@Damage=Damage
 Effect/Name/ZHBRShapeshifterWeapon2@LM=LM
 Effect/Name/ZHBRShapeshifterWeapon@AOEDamage=AOE Damage
@@ -918,12 +1181,18 @@ Effect/Name/ZHBRShapeshifterWeapon@InitialSet=Initial Set
 Effect/Name/ZHBRShapeshifterWeapon@LM=LM
 Effect/Name/ZHBRShapeshifterWeapon@MainTargetDamage=Main Target Damage
 Effect/Name/ZHBRShapeshifterWeapon@Search=Search
+Effect/Name/ZHBRSpiritApplySiegeMode=Apply Siege Mode
+Effect/Name/ZHBRSpiritCancelSiegeMod=Cancel Siege Mod
+Effect/Name/ZHBRSpiritCancelSiegeMod@Set=Cancel Siege Mod Set
 Effect/Name/ZHBRSpray=Spray Hybrid
 Effect/Name/ZHBRStasisCell@BirthSet=Birth Set
 Effect/Name/ZHBRStasisCell@DeathSet=Death Set
+Effect/Name/ZHBRStriderApplyActivateEvaporatorUI=Apply Activate Evaporator UI
 Effect/Name/ZHBRStriderCrawler@CopyOrders=Copy Orders
 Effect/Name/ZHBRStriderCrawler@CreateUnit=Create Unit
+Effect/Name/ZHBRStriderCrawler@InitialSet=Initial Set
 Effect/Name/ZHBRStriderWeapon@Damage=Damage
+Effect/Name/ZHBRStriderWeapon@DamageByArmor=Damage By Armor
 Effect/Name/ZHBRStriderWeapon@InitialSet=Initial Set
 Effect/Name/ZHBRStriderWeapon@LM=LM
 Effect/Name/ZHBRStriderWeapon@LMEvaporator=LM  Evaporator
@@ -944,12 +1213,19 @@ Effect/Name/ZHBRStructureTeleport@StoreStats=Store Stats
 Effect/Name/ZHBRStructureTeleport@StoreVoidImmunityData=Store Void Immunity Data
 Effect/Name/ZHBRTemple@BirthSet=Birth Set
 Effect/Name/ZHBRTemple@DeathSet=Death Set
+Effect/Name/ZHBRTempleIssue@ApplyMarker=Apply Marker (Issue)
+Effect/Name/ZHBRTemplePermanentPower@PlusEnergyIssue=Plus Energy (Issue)
+Effect/Name/ZHBRTempleVoidImmunity@PlusEnergyIssue=Plus Energy (Issue)
 Effect/Name/ZHBRTimeWarp@ApplyDebuff=Apply Debuff
+Effect/Name/ZHBRTimeWarp@ApplyDebuffMiddle=Apply Debuff Middle
 Effect/Name/ZHBRTimeWarp@ImpactSet=Impact Set
 Effect/Name/ZHBRTimeWarp@MassiveUnitDetectionUD=Massive Unit Detection UD
 Effect/Name/ZHBRTimeWarp@Persistent=Persistent
+Effect/Name/ZHBRTimeWarp@PersistentMiddle=Persistent Middle
 Effect/Name/ZHBRTimeWarp@Search=Search
 Effect/Name/ZHBRTimeWarp@SearchInitial=Search (Initial)
+Effect/Name/ZHBRTimeWarp@SearchMicroDisableAbility=Search Micro Disable Ability
+Effect/Name/ZHBRTimeWarp@SearchMiddle=Search Middle
 Effect/Name/ZHBRTransfusion@Restore=Restore
 Effect/Name/ZHBRVespeneConcentrator@UpdateUnitCountTriggerSet=Update Unit Count Trigger Set
 Effect/Name/ZHBRVespeneMining@ApplySuppressionBehavior=Apply Suppression Behavior
@@ -957,25 +1233,91 @@ Effect/Name/ZHBRVespeneMining@MiningMU=Mining (MU)
 Effect/Name/ZHBRVoid@ApplySuppressedRegenerationCaster=Apply Suppressed Regeneration (Caster)
 Effect/Name/ZHBRVoid@RemoveSuppressedRegenerationCaster=Remove Suppressed Regeneration (Caster)
 Effect/Name/ZHBRVoid@RemoveSuppressedRegenerationTarget=Remove Suppressed Regeneration (Target)
+Effect/Name/ZHBRVoidBarrier@ApplyBehavior=Void Barrier
+Effect/Name/ZHBRVoidBarrier@ApplyBehaviorDamageFractionLogic=Damage Fraction Logic
+Effect/Name/ZHBRVoidBarrier@ApplyBehaviorMarker=Void Barrier Marker
+Effect/Name/ZHBRVoidBarrier@AttackReact=Attack React
+Effect/Name/ZHBRVoidBarrier@DamageFraction=Damage Fraction
+Effect/Name/ZHBRVoidBarrier@Set=Set
 Effect/Name/ZHBRVoidChasm@AirPeriodicDamage=Air Periodic Damage
 Effect/Name/ZHBRVoidChasm@ApplyBehavior=Apply Behavior
 Effect/Name/ZHBRVoidChasm@ApplyBehaviorGround=Apply Behavior Ground
+Effect/Name/ZHBRVoidChasm@ApplyBehaviorStructure=Apply Behavior Structure
+Effect/Name/ZHBRVoidChasm@EndPersistent=End Persistent
 Effect/Name/ZHBRVoidChasm@GroundPeriodicDamage=Ground Periodic Damage
+Effect/Name/ZHBRVoidChasm@ImpactSet=Impact Set
 Effect/Name/ZHBRVoidChasm@InitialPersistent=Initial Persistent
 Effect/Name/ZHBRVoidChasm@Search=Search
+Effect/Name/ZHBRVoidChasm@SearchForAbility=Search For Ability
 Effect/Name/ZHBRVoidChasm@SearchGround=Search
-Effect/Name/ZHBRVoidChasm@SearchSet=SearchSet
-Effect/Name/ZHBRVoidChasm@SearchStructure=SearchStructure
+Effect/Name/ZHBRVoidChasm@SearchStructure=Search Structure
 Effect/Name/ZHBRVoidChasm@StructureDamage=Structure Damage
 Effect/Name/ZHBRVoidChasm@StructureDamageOuter=Structure Damage Outer
+Effect/Name/ZHBRVoidImmunity@Amplifier=Amplifier
 Effect/Name/ZHBRVoidImmunity@ApplyBuff=Apply Buff
+Effect/Name/ZHBRVoidImmunity@Behemoth=Behemoth
+Effect/Name/ZHBRVoidImmunity@Capsule=Capsule
+Effect/Name/ZHBRVoidImmunity@Chimera=Chimera
+Effect/Name/ZHBRVoidImmunity@Conductor=Conductor
+Effect/Name/ZHBRVoidImmunity@ConstructAA=Construct (Anti-Air)
+Effect/Name/ZHBRVoidImmunity@ConstructAG=Construct (Anti-Ground)
+Effect/Name/ZHBRVoidImmunity@Crawler=Crawler
+Effect/Name/ZHBRVoidImmunity@Crypt=Crypt
+Effect/Name/ZHBRVoidImmunity@Deformer=Deformer
+Effect/Name/ZHBRVoidImmunity@Dominator=Dominator
+Effect/Name/ZHBRVoidImmunity@Dreadnok=Dreadnok
+Effect/Name/ZHBRVoidImmunity@Energator=Energator
+Effect/Name/ZHBRVoidImmunity@Flayer=Flayer
+Effect/Name/ZHBRVoidImmunity@Harvester=Harvester
+Effect/Name/ZHBRVoidImmunity@HarvesterRich=Harvester Rich
+Effect/Name/ZHBRVoidImmunity@HoldingCell=Holding Cell
+Effect/Name/ZHBRVoidImmunity@IonicCrystal=Ionic Crystal
+Effect/Name/ZHBRVoidImmunity@IonicCrystalMoveable=Ionic Crystal Moveable
+Effect/Name/ZHBRVoidImmunity@Keystone=Keystone
+Effect/Name/ZHBRVoidImmunity@Minion=Minion
+Effect/Name/ZHBRVoidImmunity@Navigator=Navigator
+Effect/Name/ZHBRVoidImmunity@Nemesis=Nemesis
+Effect/Name/ZHBRVoidImmunity@Pollinator=Pollinator
+Effect/Name/ZHBRVoidImmunity@Projector=Projector
+Effect/Name/ZHBRVoidImmunity@Proteus=Proteus
+Effect/Name/ZHBRVoidImmunity@Psyon=Psyon
+Effect/Name/ZHBRVoidImmunity@SearchTempleIssue=Search Temple (Issue)
+Effect/Name/ZHBRVoidImmunity@Sentinel=Sentinel
+Effect/Name/ZHBRVoidImmunity@Shapeshifter=Shapeshifter
+Effect/Name/ZHBRVoidImmunity@Spirit=Spirit
+Effect/Name/ZHBRVoidImmunity@StasisCell=Stasis Cell
+Effect/Name/ZHBRVoidImmunity@Strider=Strider
+Effect/Name/ZHBRVoidImmunity@Temple=Temple
+Effect/Name/ZHBRVoidImmunity@Tomb=Tomb
+Effect/Name/ZHBRVoidImmunity@VespeneConcentrator=Vespene Concentrator
+Effect/Name/ZHBRVoidImmunity@VoidForge=Void Forge
+Effect/Name/ZHBRVoidImmunity@VoidRift=Void Rift
+Effect/Name/ZHBRVoidImmunity@Warbringer=Warbringer
+Effect/Name/ZHBRVoidImmunity@Warrior=Warrior
+Effect/Name/ZHBRVoidImmunityIssuePersistentSetFewEffect=Persistent (Set few effects) (Issue)
+Effect/Name/ZHBRVoidPhantom@CU=Void Phantom CU
+Effect/Name/ZHBRVoidPhantom@Cancel=Void Phantom Cancel
+Effect/Name/ZHBRVoidPhantom@CancelAB=Void Phantom Cancel AB
+Effect/Name/ZHBRVoidPhantom@CasterAB=Void Phantom Caster AB
+Effect/Name/ZHBRVoidPhantom@InitialSet=Void Phantom Initial Set
+Effect/Name/ZHBRVoidPhantom@IssueOrder=Void Phantom Issue Order
+Effect/Name/ZHBRVoidPhantom@KillDummy=Void Phantom Kill Dummy
+Effect/Name/ZHBRVoidPhantom@PhantasmCancelCasterBehaviorRB=Void Phantom Phantasm Cancel Caster Behavior RB
+Effect/Name/ZHBRVoidPhantom@PhantasmCancelRB=Void Phantom Phantasm Cancel RB
+Effect/Name/ZHBRVoidPhantom@SpawnAB=Void Phantom Spawn AB
+Effect/Name/ZHBRVoidPhantom@SpawnSet=Void Phantom Spawn Set
+Effect/Name/ZHBRVoidPhantom@TimerCancelSet=Void Phantom Timer Cancel Set
+Effect/Name/ZHBRVoidPhantom@TimerSpawnAB=Void Phantom Timer Spawn AB
 Effect/Name/ZHBRVoidRiftTrain@InitialSet=Initial Set
 Effect/Name/ZHBRVoidRiftTrain@LM=LM
 Effect/Name/ZHBRVoidRiftTrain@PrecursorAB=Precursor AB
 Effect/Name/ZHBRVoidRiftTrain@PrecursorRB=Precursor RB
 Effect/Name/ZHBRVoidRiftTrain@Set=Set
 Effect/Name/ZHBRVoidRiftTrain@Teleport=Teleport
+Effect/Name/ZHBRWarbringerMacStrikeBanAutocast=Apply Ban Auto cast
+Effect/Name/ZHBRWarbringerMacStrikeMarkerAnimation@ApplyBehavior=Marker Animation
 Effect/Name/ZHBRWarbringerMaceStrike@ModifyUnit=Modify Unit
+Effect/Name/ZHBRWarbringerMaceStrike@SearchBanAutoCast=Search Ban Auto Cast
 Effect/Name/ZHBRWarbringerWeaponMaceCannon@Damage=Damage
 Effect/Name/ZHBRWarbringerWeaponMaceCannon@LM=LM
 Effect/Name/ZHBRWarbringerWeaponMaceStrike@Damage=Damage
@@ -988,13 +1330,18 @@ Effect/Name/ZHBRWarbringerWeaponMaceStrike@Search=Search
 Effect/Name/ZHBRWarbringerWeaponMaceStrike@SearchMedium=Search Medium
 Effect/Name/ZHBRWarbringerWeaponMaceStrike@SearchOuter=Search Outer
 Effect/Name/ZHBRWarriorWeapon@Damage=Damage
+Effect/Name/ZHBRWarriorWeapon@DamageUpgrade=Damage
 Effect/Name/ZHBRWarriorWeapon@LM=LM
+Effect/Name/ZHBRWormhole@Teleport=Teleport
 Effect/Name/enumdummy=enum dummy
+Error/CantTargetTemple=Can't target a Temple.
 Error/ZHBR_PermanentPowerAlreadyBuffed=Target already has «Permanent Power» buff.
 Error/ZHBR_VoidEnergyNotEnough=Not enough Void energy.
 Error/ZHBR_VoidEnergyUserRequired=Must target Void energy user.
 Error/ZHBR_VoidImmunityAlreadyBuffed=Target already has «Void Immunity» buff.
 Error/ZHBR_VoidPowerFieldLocationRequired=Must target Void power field location.
+HybridDominatorDisableSecondApply=Must wait <d ref="Behavior,ZHBRDominationDisableSecondApply,Duration" precision="2"/> seconds before Dominating this target again
+HybridDominatorDomination=Target already Dominated
 Param/Expression/lib_ZHBR_1B9B19B6=Order Count: ~A~
 Param/Expression/lib_ZHBR_6E88D762=Maximum Order: ~A~
 Param/Expression/lib_ZHBR_BC017FCD=Current Build Index: ~A~
@@ -1003,6 +1350,7 @@ Param/Expression/lib_ZHBR_DBE6E908=Minion Order Count: ~A~
 Param/Value/lib_ZHBR_20331BCE=Can't Build
 Param/Value/lib_ZHBR_20E898F4=Visible (#)
 Param/Value/lib_ZHBR_2E293887=Order 3
+Param/Value/lib_ZHBR_3085DBC8=Launch Nuke Detected
 Param/Value/lib_ZHBR_420EBFD8=Order 2
 Param/Value/lib_ZHBR_45DB97F6=Order
 Param/Value/lib_ZHBR_5FD84D88=Big Path
@@ -1020,6 +1368,7 @@ Param/Value/lib_ZHBR_F964BE05=Visible (@)
 Param/Value/lib_ZHBR_FF7D169B=Can Build - Point Hidden - Move
 Race/Name/ZHBR=Void Forces
 RequirementNode/Tooltip/And539044291Eq419273267CountUpgradeZHBREngineUpgrades@ArmorsLevel2CompleteOnly39489479071CountUnitZHBRProcessorCompleteOnly1132973752=Hybrid Ground Armor Level 2
+RequirementNode/Tooltip/CountBehaviorZHBRChimera@FadeCheckQueuedOrBetterAtUnit391207227=Being powered by Void
 RequirementNode/Tooltip/CountBehaviorZHBRCommon@RequiresCrystallicShrineCompleteOnlyAtUnit3760657428TechTreeCheat=Atleast 1 Crystallic Shrine in Network.
 RequirementNode/Tooltip/CountUnitAlias_ZHBRIonicCrystalCompleteOnly2766371930TechTreeCheat=Ionic Crystal
 RequirementNode/Tooltip/CountUnitTechAlias_ZHBR_HarvesterCompleteOnly4064654695=Harvester
@@ -1028,11 +1377,10 @@ RequirementNode/Tooltip/CountUnitZHBRNemesisCatacombCompleteOnly1132973752=Proce
 RequirementNode/Tooltip/CountUnitZHBRProcessorCompleteOnly1132973752=Processor
 RequirementNode/Tooltip/CountUnitZHBRProcessorCompleteOnly1132973752TechTreeCheat=Processor
 RequirementNode/Tooltip/CountUpgradeZHBRAccelerationCompleteOnly3995139899=Research Acceleration at the Projector
+RequirementNode/Tooltip/CountUpgradeZHBRAnnihilationCompleteOnly1500912908=Research Annihilation at the Capsule
 RequirementNode/Tooltip/CountUpgradeZHBRBrokenDNACompleteOnly2538930120=Research Broken DNA at the Capsule
-RequirementNode/Tooltip/CountUpgradeZHBRCloakedSpiritCompleteOnly3516416024=Research Cloaked Spirit at the Tomb
 RequirementNode/Tooltip/CountUpgradeZHBRCrystallicShrineCompleteOnly3760657428TechTreeCheat=Atleast 1 Crystallic Shrine in Network.
 RequirementNode/Tooltip/CountUpgradeZHBRDeepTunnelCompleteOnly3826630383=Research Deep Tunnel at the Keystone
-RequirementNode/Tooltip/CountUpgradeZHBRDestructionOrbCompleteOnly1500912908=Research Destruction Orb at the Capsule
 RequirementNode/Tooltip/CountUpgradeZHBRDisappearanceCompleteOnly1585767443=Research Disappearance at the Tomb
 RequirementNode/Tooltip/CountUpgradeZHBRDreadnokSlowingEjection@SlowingEjectionCompleteOnly2772096292=Research Slowing Ejection in «Workshop».
 RequirementNode/Tooltip/CountUpgradeZHBREnhancedArmor@UpgradeCompleteOnly4257213191=Research Enchanced Armor at the Void Forge
@@ -1042,23 +1390,30 @@ RequirementNode/Tooltip/CountUpgradeZHBRGroundArmorUpgradeLevel1QueuedOrBetter53
 RequirementNode/Tooltip/CountUpgradeZHBRIndestructibleCompleteOnly3103326302=Research Indestructible at the Keystone
 RequirementNode/Tooltip/CountUpgradeZHBRIonicFieldCompleteOnly1472742402=Research Ionic Field at the Holding Cell
 RequirementNode/Tooltip/CountUpgradeZHBRKeystone@ConnectionCompleteOnly1036980592=Atleast 1 Keystone in Network field.
+RequirementNode/Tooltip/CountUpgradeZHBRMoveSpiritCompleteOnly3516416024=Research Cloaked Spirit at the Tomb
 RequirementNode/Tooltip/CountUpgradeZHBRPhaseShiftCompleteOnly1593847152=Research Phase Shift at the Tomb
+RequirementNode/Tooltip/CountUpgradeZHBRPhaseShiftCompleteOnly3033292665=Research Void Efficiency at the Tomb
 RequirementNode/Tooltip/CountUpgradeZHBRPrimeSummoningCompleteOnly4121997442=Research «Prime Summoning» in Vespene Concentrator.
 RequirementNode/Tooltip/CountUpgradeZHBRProjector@ConnectionCompleteOnly4096833109=Atleast 1 Projector in Network field.
 RequirementNode/Tooltip/CountUpgradeZHBRProtectionJump@ZHBRProtectionJumpCompleteOnly2928385730=Research Protection Jump at the Stasis Cell
 RequirementNode/Tooltip/CountUpgradeZHBRStasisCell@ConnectionCompleteOnly669515756=Atleast 1 Stasis Cell within Network powerfield.
 RequirementNode/Tooltip/CountUpgradeZHBRStasisCell@StasisCellCompleteOnly3229616992TechTreeCheat=Atleast 1 Stasis Cell in Network.
+RequirementNode/Tooltip/CountUpgradeZHBRSubjugationJump@ZHBRSubjugationCompleteOnly1631692077=Research Subjugation at the Stasis Cell
 RequirementNode/Tooltip/CountUpgradeZHBRSubjugationJump@ZHBRSubjugationJumpCompleteOnly2928385730=Research Protection Jump at the Stasis Cell
 RequirementNode/Tooltip/CountUpgradeZHBRToxicityCompleteOnly198870487=Research Toxicity at the Projector
 RequirementNode/Tooltip/CountUpgradeZHBRUltimateUnitOfTransfusionCompleteOnly1091555285=Research Ultimate Unit of Transfusion at the Crypt
-RequirementNode/Tooltip/CountUpgradeZHBRUpgradeToAdvancedBehemothCompleteOnly1333653123=Research «Advanced Reaver» in Processor.
+RequirementNode/Tooltip/CountUpgradeZHBRUpgradeToAdvancedBehemothCompleteOnly1333653123=Research Advanced Behemoth at the Capsule
 RequirementNode/Tooltip/CountUpgradeZHBRUpgradeToAdvancedDominatorCompleteOnly1837506799=Research Advanced Dominator at the Capsule
 RequirementNode/Tooltip/CountUpgradeZHBRUpgradeToAdvancedNemesisCompleteOnly2988682573=Research Advanced Nemesis at the Void Forge
 RequirementNode/Tooltip/CountUpgradeZHBRVoidBonusCompleteOnly2571165972=Research Void Bonus at the Holding Cell
 RequirementNode/Tooltip/CountUpgradeZHBRVoidChasmCompleteOnly2054791450=Research Void Chasm at the Void Forge
 RequirementNode/Tooltip/CountUpgradeZHBRWarbringerOrbitalGuidanceCompleteOnly1011428171=Research Orbital Guidanc» at the Crypt
+RequirementNode/Tooltip/CountUpgradeZHBRWatcher@ZHBRWatcherCompleteOnly2928385730=Research Protection Jump at the Stasis Cell
 RequirementNode/Tooltip/CrystallicShrineinNetwork=Atleast 1 Crystallic Shrine in Network
 RequirementNode/Tooltip/Eq599990200CountUpgradeZHBRWarriorDeconstruction@DeconstructionCompleteOnly1=Research Deconstruction in Stasis Cell
+RequirementNode/Tooltip/Or3707283896CountUpgradeZHBRKeystone@ConnectionCompleteOnlyCountUpgradeZHBRProjector@ConnectionCompleteOnly=Keystone or Projector connection on network
+RequirementNode/Tooltip/Or609975200CountUnitZHBRCapsuleCompleteOnlyCountUnitZHBRVoidForgeCompleteOnly=Keystone or Projector connection to network
+RequirementNode/Tooltip/Or609975200CountUpgradeZHBRKeystone@ConnectionCompleteOnlyCountUpgradeZHBRProjector@ConnectionCompleteOnly=Keystone or Projector connection to network
 RequirementNode/Tooltip/ProcessingCoreinNetwork=Atleast 1 Processing Core in Network
 RequirementNode/Tooltip/ZHBRArmorLevel1=Hybrid Ground Armor Level 1
 SimpleDisplay/ZHBRMinionHarvest@Gather=<IMG path="Assets\Textures\tutorialmouserightbuttondown.dds" alignment="absolutemiddle"/> <s val="@@@SimpleCommandRow">to Gather Resources</s>
@@ -1069,10 +1424,11 @@ UI/Teleporting=Teleporting
 UI/Tooltip/Protection=<c val="FFFFFF">Protection:</c> 
 UI/Tooltip/VoidEnergy=<c val="#Void">Void</c> Energy: 
 Unit/Category/ZHBRUnits=Void Forces
-Unit/LifeArmorName/ZHBRArmor=Hybrid Armor
-Unit/LifeArmorName/ZHBRBuildingPlating=Building Plating
+Unit/LifeArmorName/ZHBRArmor=Void Armor
+Unit/LifeArmorName/ZHBRBuildingPlating=Void Plating
 Unit/Name/HybridPsyon@FragmentumCorrosionWeapon=Fragmentum Corrosion Weapon
 Unit/Name/HybridSpiritSacificingReveal=Sacrificing Reveal
+Unit/Name/HybridVoidChazmBigForceField=Big Force Field
 Unit/Name/ZHBRAmplifier=Amplifier
 Unit/Name/ZHBRAmplifier@PathingBlocker=Pathing Blocker
 Unit/Name/ZHBRBehemoth=Behemoth
@@ -1092,6 +1448,7 @@ Unit/Name/ZHBRConsumeDNA@Missile=Missile
 Unit/Name/ZHBRCrypt=Crypt
 Unit/Name/ZHBRDeformer=Deformer
 Unit/Name/ZHBRDestroyer=Hybrid Destroyer
+Unit/Name/ZHBRDestructionOrb@Missile=Missile
 Unit/Name/ZHBRDominator=Dominator
 Unit/Name/ZHBRDominatorAdvanced=Advanced Dominator
 Unit/Name/ZHBRDreadnok=Dreadnok
@@ -1111,12 +1468,12 @@ Unit/Name/ZHBRMinion=Minion
 Unit/Name/ZHBRNavigator=Navigator
 Unit/Name/ZHBRNemesis=Nemesis
 Unit/Name/ZHBRNemesisAdvanced=Advanced Nemesis
+Unit/Name/ZHBRPhantasm=Phantasm
 Unit/Name/ZHBRPollinator=Pollinator
 Unit/Name/ZHBRPollinatorWeapon@Weapon=Weapon
 Unit/Name/ZHBRPowerField@DummyUnit=Dummy Unit
 Unit/Name/ZHBRProjector=Projector
 Unit/Name/ZHBRProteus=Proteus
-Unit/Name/ZHBRPsiOrb@Missile=Missile
 Unit/Name/ZHBRPsionicTornado=Psionic Tornado
 Unit/Name/ZHBRPsyon=Psyon
 Unit/Name/ZHBRRaceControl=Void Forces
@@ -1126,6 +1483,7 @@ Unit/Name/ZHBRShapeshifterWeapon2@Weapon=Weapon
 Unit/Name/ZHBRShapeshifterWeapon@Weapon=Weapon
 Unit/Name/ZHBRSingularityFeedbackWeapon=Hybrid Singularity Feedback Weapon
 Unit/Name/ZHBRSpirit=Spirit
+Unit/Name/ZHBRSpirit@Phantasm=Phantasm
 Unit/Name/ZHBRStasisCell=Stasis Cell
 Unit/Name/ZHBRStrider=Strider
 Unit/Name/ZHBRStriderCrawler=Crawler
@@ -1146,41 +1504,41 @@ Unit/Name/ZHBRWarriorWeapon@Missile=Missile
 Unit/Name/ZHBRWarriorWeapon@MissileUpgraded=Missile Upgraded
 Unit/ShieldArmorName/ZHBRAiur01Shields=Hybrid Shields
 Unit/ShieldArmorName/ZHBRShields=Protection
-Unit/ShieldArmorTooltip/ZHBRShields=<c val="FFFFFF">Protection</c> is a huge shield slowly regenerating while unit is powered by <c val="#Void">Void</c>.
+Unit/ShieldArmorTooltip/ZHBRShields=<c val="FFFFFF">Protection</c> is a huge shield quickly regenerating while powered by <c val="#Void">Void</c>: <c val="FFFF80"><d ref="Unit,ZHBRTemple,ShieldRegenRate" precision="2"/></c> per second for Structures, <c val="FFFF80">Proteuses</c> and Massive units, <c val="FFFF80"><d ref="Unit,ZHBRWarrior,ShieldRegenRate" precision="2"/></c> per second for all other units, and <c val="FFFF80"><d ref="Validator,ZHBRDisableRestoreShieldsTimeTakeDamage,Value" precision="1"/></c> seconds of delay after taking damage.
 UnitKillRank/H05SHybrid=Hybrid
 UnitKillRank/Z02Hybrid=Hybrid
 Upgrade/Name/ZHBRAcceleration=Acceleration
-Upgrade/Name/ZHBRAirArmorUpgradeLevel1=Hybrid Air Armor Level 1
-Upgrade/Name/ZHBRAirArmorUpgradeLevel2=Hybrid Air Armor Level 2
-Upgrade/Name/ZHBRAirArmorUpgradeLevel3=Hybrid Air Armor Level 3
+Upgrade/Name/ZHBRAirArmorUpgradeLevel1=Void Forces Air Armor Level 1
+Upgrade/Name/ZHBRAirArmorUpgradeLevel2=Void Forces Air Armor Level 2
+Upgrade/Name/ZHBRAirArmorUpgradeLevel3=Void Forces Air Armor Level 3
 Upgrade/Name/ZHBRAirArmors=[Hybrid] - Air Armors
-Upgrade/Name/ZHBRAirWeaponUpgradeLevel1=Hybrid Air Weapons Level 1
-Upgrade/Name/ZHBRAirWeaponUpgradeLevel2=Hybrid Air Weapons Level 2
-Upgrade/Name/ZHBRAirWeaponUpgradeLevel3=Hybrid Air Weapons Level 3
+Upgrade/Name/ZHBRAirWeaponUpgradeLevel1=Void Forces Air Weapons Level 1
+Upgrade/Name/ZHBRAirWeaponUpgradeLevel2=Void Forces Air Weapons Level 2
+Upgrade/Name/ZHBRAirWeaponUpgradeLevel3=Void Forces Air Weapons Level 3
 Upgrade/Name/ZHBRAirWeapons=[Hybrid] - Air Weapons
+Upgrade/Name/ZHBRAnnihilation=Annihilation
 Upgrade/Name/ZHBRBrokenDNA=Broken DNA
 Upgrade/Name/ZHBRCPlasmaUpgradeHard=Plasma Upgrade - Advanced
 Upgrade/Name/ZHBRCPlasmaUpgradeInsane=Plasma Upgrade - Expert
-Upgrade/Name/ZHBRCloakedSpirit=Cloaked Spirit
 Upgrade/Name/ZHBRDeepTunnel=Deep Tunnel
-Upgrade/Name/ZHBRDestructionOrb=Destruction Orb
 Upgrade/Name/ZHBRDisappearance=Disappearance
 Upgrade/Name/ZHBRDreadnokSlowingEjection@SlowingEjection=Slowing Ejection
 Upgrade/Name/ZHBREnhancedArmor@Upgrade=Upgrade
 Upgrade/Name/ZHBRFlayerBerserker@Berserker=Berserker
 Upgrade/Name/ZHBRFlayerFury=Fury
 Upgrade/Name/ZHBRGroundArmor=[Hybrid] - Ground Armor
-Upgrade/Name/ZHBRGroundArmorUpgradeLevel1=Hybrid Ground Armor Level 1
-Upgrade/Name/ZHBRGroundArmorUpgradeLevel2=Hybrid Ground Armor Level 2
-Upgrade/Name/ZHBRGroundArmorUpgradeLevel3=Hybrid Ground Armor Level 3
-Upgrade/Name/ZHBRGroundWeaponUpgradeLevel1=Hybrid Ground Weapons Level 1
-Upgrade/Name/ZHBRGroundWeaponUpgradeLevel2=Hybrid Ground Weapons Level 2
-Upgrade/Name/ZHBRGroundWeaponUpgradeLevel3=Hybrid Ground Weapons Level 3
+Upgrade/Name/ZHBRGroundArmorUpgradeLevel1=Void Forces Ground Armor Level 1
+Upgrade/Name/ZHBRGroundArmorUpgradeLevel2=Void Forces Ground Armor Level 2
+Upgrade/Name/ZHBRGroundArmorUpgradeLevel3=Void Forces Ground Armor Level 3
+Upgrade/Name/ZHBRGroundWeaponUpgradeLevel1=Void Forces Ground Weapons Level 1
+Upgrade/Name/ZHBRGroundWeaponUpgradeLevel2=Void Forces Ground Weapons Level 2
+Upgrade/Name/ZHBRGroundWeaponUpgradeLevel3=Void Forces Ground Weapons Level 3
 Upgrade/Name/ZHBRGroundWeapons=[Hybrid] - Ground Weapons
 Upgrade/Name/ZHBRIndestructible=Indestructible
 Upgrade/Name/ZHBRIonicField=Ionic Field
 Upgrade/Name/ZHBRKeystone@Connection=Connection
-Upgrade/Name/ZHBRPhaseShift=Phase Shift
+Upgrade/Name/ZHBRMoveSpirit=Void Engine
+Upgrade/Name/ZHBRPhaseShift=Void Efficiency
 Upgrade/Name/ZHBRPrimeSummoning=Prime Summoning
 Upgrade/Name/ZHBRProjector=Projector
 Upgrade/Name/ZHBRProjector@Connection=Connection
@@ -1203,7 +1561,7 @@ Upgrade/Name/ZHBRWarriorDeconstruction@Deconstruction=Deconstruction
 Upgrade/Name/ZHBRWatcher@ZHBRWatcher=Watcher
 Weapon/Name/HybridPsyon@FragmentumCorrosion=Fragmentum Corrosion
 Weapon/Name/ZHBRBehemoth=Claws
-Weapon/Name/ZHBRBehemothWeapon=Claws
+Weapon/Name/ZHBRBehemothWeapon=Monstrous Talons
 Weapon/Name/ZHBRBehemothWeaponAntiAir=Bio-Barrage
 Weapon/Name/ZHBRC=Psionic Shock
 Weapon/Name/ZHBRChimeraMeleeWeapon=Power Daggers
@@ -1214,19 +1572,24 @@ Weapon/Name/ZHBRD=Void Blast
 Weapon/Name/ZHBRDominatorWeapon=Psi Blast
 Weapon/Name/ZHBRDreadnokWeapon=Devastating Strike
 Weapon/Name/ZHBREnergatorWeapon=Parasite Glaive
-Weapon/Name/ZHBRFlayerWeapon=Claws
+Weapon/Name/ZHBRFlayerWeapon=Voracious Rippers
 Weapon/Name/ZHBRGeneral=Psi Blast
 Weapon/Name/ZHBRMinionWeapon=Particle Beam
 Weapon/Name/ZHBRNemesisWeapon=Synchronizer
+Weapon/Name/ZHBRNemesisWeaponHidden=Synchronizer Hidden
 Weapon/Name/ZHBRPollinatorWeapon=Chakrum
-Weapon/Name/ZHBRProteusWeapon=Claws
+Weapon/Name/ZHBRProteusWeapon=Wild Smash
 Weapon/Name/ZHBRPsyonWeapon=Focus Beam
-Weapon/Name/ZHBRSentinelWeapon=Claws
+Weapon/Name/ZHBRSentinelWeapon=Raging Claws
 Weapon/Name/ZHBRShapeshifterWeapon=Plasmatic Blast
 Weapon/Name/ZHBRShapeshifterWeapon2=Plasmatic Charge
 Weapon/Name/ZHBRStriderWeapon=Oblivion Shredder
 Weapon/Name/ZHBRWarbringerWeaponMaceCannon=Mace Cannon
 Weapon/Name/ZHBRWarbringerWeaponMaceStrike=Mace Strike
 Weapon/Name/ZHBRWarriorWeapon=Psi Orb
-Weapon/Tip/HybridPsyon@FragmentumCorrosion=Damage all enemy structures within <c val="FFFF80">9</c> range and disable their attack, but do not prevent their ability casting and production.
-e_cmdMustTargetZHBR=Must target Void Forces units.
+Weapon/Tip/HybridPsyon@FragmentumCorrosion=Can only attack Structures.
+Weapon/Tip/ZHBRBehemothWeapon=Deals <c val="FFFF80"><d ref="100*Effect,ZHBRBehemothWeapon@Damage,AreaArray[0].Fraction" precision="2"/>%</c> splash damage in a radius of <c val="FFFF80"><d ref="Effect,ZHBRBehemothWeapon@Damage,AreaArray[0].Radius" precision="2"/></c>.
+ZHBRDeepTunnelInUse=Unavailable while Deep Tunnelling
+ZHBRTempleInRange=Target must be near a Temple
+e_cmdCannotTargetZHBR=Cannot target Void Forces units
+e_cmdMustTargetZHBR=Must target Void Forces units

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTargetSortValidator id="DominatorDestructionOrbSorting">
+        <WhichUnit Value="Target"/>
+        <Validator value="ZHBRDominatorHasOnlySingleCasterBehaviorFromCaster"/>
+    </CTargetSortValidator>
+    <CTargetSortValidator id="EnergatorProteusSorting">
+        <WhichUnit Value="Target"/>
+        <Descending value="1"/>
+        <Validator value="ZHBRCommon@IsProteus"/>
+    </CTargetSortValidator>
+    <CTargetSortVital id="HybridTSEnergyMax">
+        <Descending value="1"/>
+        <Vital value="Energy"/>
+    </CTargetSortVital>
+    <CTargetSortPriority id="HybridTSPriority">
+        <Descending value="1"/>
+    </CTargetSortPriority>
+</Catalog>

@@ -137,34 +137,43 @@
     </CUpgrade>
     <CUpgrade id="ZHBRAcceleration">
         <Icon value="Assets\Textures\btn-ability-stetmann-stetelliteoverloadspeed.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRBrokenDNA">
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-hydralisk-muscularaugments.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
-        <EffectArray Reference="Effect,ZHBRConsumeDNA@ApplyStun,Chance" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRConsumeDNA@ApplyLifeStealMain,Chance" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRConsumeDNA@UDTotalVital,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ZHBRConsumeDNA@Damage,Amount" Value="2"/>
         <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRDeepTunnel">
         <Icon value="Assets\Textures\btn-ability-zeratul-topbar-directlegions.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
-    <CUpgrade id="ZHBRDestructionOrb">
+    <CUpgrade id="ZHBRAnnihilation">
         <Icon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
-        <EffectArray Reference="Effect,ZHBRPsiOrb@Search,AreaArray[0].MaxCount" Value="1"/>
-        <EditorCategories value="Race:ZHBR"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EffectArray Reference="Effect,ZHBRDestructionOrb@Search,AreaArray[0].Radius" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRDestructionOrb@Damage,Amount" Value="2"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRDisappearance">
         <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRGroundArmorUpgradeLevel1" parent="ZHBRGroundArmor">
         <Name value="Upgrade/Name/ZHBRGroundArmorUpgradeLevel1"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level1.dds"/>
+        <Alert value="TrainWorkerComplete_Prot"/>
         <ScoreAmount value="200"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level1.dds"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^@Changeling,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level1.dds"/>
@@ -173,6 +182,7 @@
     <CUpgrade id="ZHBRGroundArmorUpgradeLevel2" parent="ZHBRGroundArmor">
         <Name value="Upgrade/Name/ZHBRGroundArmorUpgradeLevel2"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level2.dds"/>
+        <Alert value="TrainWorkerComplete_Prot"/>
         <ScoreAmount value="300"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level2.dds"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^@Changeling,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level2.dds"/>
@@ -181,150 +191,191 @@
     <CUpgrade id="ZHBRGroundArmorUpgradeLevel3" parent="ZHBRGroundArmor">
         <Name value="Upgrade/Name/ZHBRGroundArmorUpgradeLevel3"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level3.dds"/>
+        <Alert value="TrainWorkerComplete_Prot"/>
         <ScoreAmount value="400"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level3.dds"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^@Changeling,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-dehaka-groundcarapace-level3.dds"/>
         <LeaderLevel value="3"/>
     </CUpgrade>
     <CUpgrade id="ZHBRIndestructible">
-        <EditorCategories value="Race:ZHBR"/>
         <Icon value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        <Alert value="TrainWorkerComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRPhaseShift">
-        <EditorCategories value="Race:ZHBR"/>
         <Icon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
-    </CUpgrade>
-    <CUpgrade id="ZHBRSubjugationJump@ZHBRSubjugationJump">
-        <Icon value="assets\Textures\btn-Hybrid-Sentinel-Subjugate.dds"/>
-        <Race value="ZHBR"/>
-        <EffectArray Operation="Subtract" Reference="Abil,ZHBRSentinelJump,Cost[0].Cooldown.TimeUse" Value="3.500000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ZHBRPhaseShift,Cost[0].Vital[Energy]" Value="25"/>
+        <EffectArray Reference="Behavior,ZHBRVoidBarrier,DamageResponse.ModifyLimit" Value="25"/>
         <EditorCategories value="Race:ZHBR"/>
+        <AffectedUnitArray value="ZHBRAmplifier"/>
+        <AffectedUnitArray value="ZHBRCapsule"/>
+        <AffectedUnitArray value="ZHBRConstruct@AntiAir"/>
+        <AffectedUnitArray value="ZHBRConstruct@AntiGround"/>
+        <AffectedUnitArray value="ZHBRCrypt"/>
+        <AffectedUnitArray value="ZHBRDeformer"/>
+        <AffectedUnitArray value="ZHBRHarvester"/>
+        <AffectedUnitArray value="ZHBRHarvesterRich"/>
+        <AffectedUnitArray value="ZHBRHoldingCell"/>
+        <AffectedUnitArray value="ZHBRIonicCrystal"/>
+        <AffectedUnitArray value="ZHBRIonicCrystal@Moveable"/>
+        <AffectedUnitArray value="ZHBRKeystone"/>
+        <AffectedUnitArray value="ZHBRProjector"/>
+        <AffectedUnitArray value="ZHBRStasisCell"/>
+        <AffectedUnitArray value="ZHBRTemple"/>
+        <AffectedUnitArray value="ZHBRTomb"/>
+        <AffectedUnitArray value="ZHBRVespeneConcentrator"/>
+        <AffectedUnitArray value="ZHBRVoidForge"/>
+        <AffectedUnitArray value="ZHBRVoidRift"/>
+        <AffectedUnitArray value="ZHBRBehemoth"/>
+        <AffectedUnitArray value="ZHBRChimera"/>
+        <AffectedUnitArray value="ZHBRConductor"/>
+        <AffectedUnitArray value="ZHBRDominator"/>
+        <AffectedUnitArray value="ZHBRDreadnok"/>
+        <AffectedUnitArray value="ZHBREnergator"/>
+        <AffectedUnitArray value="ZHBRFlayer"/>
+        <AffectedUnitArray value="ZHBRMinion"/>
+        <AffectedUnitArray value="ZHBRNavigator"/>
+        <AffectedUnitArray value="ZHBRNemesis"/>
+        <AffectedUnitArray value="ZHBRPollinator"/>
+        <AffectedUnitArray value="ZHBRProteus"/>
+        <AffectedUnitArray value="ZHBRPsyon"/>
+        <AffectedUnitArray value="ZHBRSentinel"/>
+        <AffectedUnitArray value="ZHBRShapeshifter"/>
+        <AffectedUnitArray value="ZHBRSpirit@Phantasm"/>
+        <AffectedUnitArray value="ZHBRSpirit"/>
+        <AffectedUnitArray value="ZHBRStrider"/>
+        <AffectedUnitArray value="ZHBRStriderCrawler"/>
+        <AffectedUnitArray value="ZHBRWarbringer"/>
+        <AffectedUnitArray value="ZHBRWarrior"/>
+        <AffectedUnitArray value="ZHBRWarrior@Changeling"/>
+        <AffectedUnitArray value="ZHBRBehemothAdvanced"/>
+        <AffectedUnitArray value="ZHBRDominatorAdvanced"/>
+        <AffectedUnitArray value="ZHBRNemesisAdvanced"/>
     </CUpgrade>
-    <CUpgrade id="ZHBRRestorationShield">
+    <CUpgrade id="ZHBRSubjugationJump@ZHBRSubjugation">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-leapattack.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ZHBRSentinelLeap,Cost[0].Cooldown.TimeUse" Value="0.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ZHBRSentinelSubjugationJump@ZHBRSentinelSubjugationJump,Cost[0].Cooldown.TimeUse" Value="0.000000"/>
+        <EffectArray Operation="Subtract" Reference="Effect,ZHBRSentinel@CooldownForSubjugationJump,Cost[0].CooldownTimeUse" Value="0.000000"/>
+        <EffectArray Reference="Behavior,ZHBRProtectionJump@Armor,Duration" Value="1.400000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AffectedUnitArray value="ZHBRSentinel"/>
+    </CUpgrade>
+    <CUpgrade id="ZHBRVoidShield">
         <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
-        <EditorCategories value="Race:ZHBR"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
-        <EffectArray Reference="Unit,ZHBRBehemoth,ShieldsStart" Value="250"/>
-        <EffectArray Reference="Unit,ZHBRChimera,ShieldsStart" Value="90"/>
-        <EffectArray Reference="Unit,ZHBRConductor,ShieldsStart" Value="100"/>
-        <EffectArray Reference="Unit,ZHBRDominator,ShieldsStart" Value="100"/>
-        <EffectArray Reference="Unit,ZHBRDreadnok,ShieldsStart" Value="100"/>
-        <EffectArray Reference="Unit,ZHBREnergator,ShieldsStart" Value="90"/>
-        <EffectArray Reference="Unit,ZHBRFlayer,ShieldsStart" Value="80"/>
-        <EffectArray Reference="Unit,ZHBRMinion,ShieldsStart" Value="13"/>
-        <EffectArray Reference="Unit,ZHBRNavigator,ShieldsStart" Value="90"/>
-        <EffectArray Reference="Unit,ZHBRNemesis,ShieldsStart" Value="175"/>
-        <EffectArray Reference="Unit,ZHBRPollinator,ShieldsStart" Value="75"/>
-        <EffectArray Reference="Unit,ZHBRProteus,ShieldsStart" Value="150"/>
-        <EffectArray Reference="Unit,ZHBRPsyon,ShieldsStart" Value="100"/>
-        <EffectArray Reference="Unit,ZHBRSentinel,ShieldsStart" Value="100"/>
-        <EffectArray Reference="Unit,ZHBRShapeshifter,ShieldsStart" Value="120"/>
-        <EffectArray Reference="Unit,ZHBRSpirit,ShieldsStart" Value="13"/>
-        <EffectArray Reference="Unit,ZHBRStrider,ShieldsStart" Value="100"/>
-        <EffectArray Reference="Unit,ZHBRStriderCrawler,ShieldsStart" Value="40"/>
-        <EffectArray Reference="Unit,ZHBRWarbringer,ShieldsStart" Value="50"/>
-        <EffectArray Reference="Unit,ZHBRWarrior,ShieldsStart" Value="50"/>
+        <EffectArray Reference="Unit,ZHBRConductor,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRBehemoth,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRChimera,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRDominator,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRDreadnok,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBREnergator,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRFlayer,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRMinion,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRNavigator,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRNemesis,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRPollinator,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRProteus,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRPsyon,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRSentinel,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRShapeshifter,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRSpirit,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRStrider,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRStriderCrawler,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRWarbringer,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRWarrior,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRAmplifier,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRCapsule,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRConstruct@AntiAir,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRConstruct@AntiGround,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRCrypt,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRDeformer,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRHarvester,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRHarvesterRich,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRHoldingCell,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRIonicCrystal@Moveable,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRIonicCrystal,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRKeystone,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRProjector,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRStasisCell,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRTemple,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRTomb,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRVespeneConcentrator,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRVoidForge,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRVoidRift,ShieldArmorLevel" Value="2"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[1].Modification.ShieldArmorBonus" Value="1"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[2].Modification.ShieldArmorBonus" Value="1"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[0].Modification.ShieldArmorBonus" Value="1"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[1].Modification.ShieldArmorBonus" Value="1"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[2].Modification.ShieldArmorBonus" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRAmplifier,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRBehemoth,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRCapsule,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRChimera,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRConductor,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRConductor,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRConstruct@AntiAir,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRConstruct@AntiGround,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRCrypt,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRDeformer,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRDominator,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRDreadnok,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBREnergator,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRFlayer,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRHarvester,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRHarvesterRich,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRHoldingCell,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRIonicCrystal@Moveable,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRIonicCrystal,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRKeystone,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRMinion,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRNavigator,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRNemesis,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRPollinator,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRProjector,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRProteus,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRPsyon,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRSentinel,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRShapeshifter,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRSpirit,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRStasisCell,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRStrider,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRStriderCrawler,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRWarbringer,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRWarrior,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRConductor,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRBehemoth,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRChimera,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRDominator,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRDreadnok,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBREnergator,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRFlayer,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRMinion,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRNavigator,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRNemesis,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRPollinator,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRProteus,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRPsyon,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRSentinel,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRShapeshifter,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRSpirit,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRStrider,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRStriderCrawler,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRWarbringer,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRWarrior,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRAmplifier,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRCapsule,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRConstruct@AntiAir,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRConstruct@AntiGround,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRCrypt,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRDeformer,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRHarvester,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRHarvesterRich,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRHoldingCell,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRIonicCrystal,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRIonicCrystal@Moveable,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRKeystone,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRProjector,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRStasisCell,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRTemple,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRTomb,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRVespeneConcentrator,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRVoidForge,ShieldArmor" Value="1"/>
         <EffectArray Reference="Unit,ZHBRVoidRift,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRAmplifier,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRCapsule,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRConstruct@AntiAir,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRConstruct@AntiGround,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRCrypt,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRDeformer,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRHarvester,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRHarvesterRich,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRHoldingCell,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRIonicCrystal@Moveable,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRIonicCrystal,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRKeystone,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRProjector,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRStasisCell,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRTemple,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRTomb,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRVespeneConcentrator,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRVoidForge,ShieldArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRVoidRift,ShieldArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRWarbringer,ShieldArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRWarrior,ShieldArmor" Value="1"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRKeystone@Connection">
+        <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
         <LeaderAlias value=""/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRProjector@Connection">
+        <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
         <LeaderAlias value=""/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRStructureTeleport@Controller">
+        <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
         <AffectedUnitArray value="ZHBRIonicCrystal"/>
         <AffectedUnitArray value="ZHBRIonicCrystal@Moveable"/>
         <AffectedUnitArray value="ZHBRPowerField@DummyUnit"/>
         <LeaderAlias value=""/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRWatcher@ZHBRWatcher">
         <Icon value="assets\Textures\btn-Hybrid-Sentinel-Watcher.dds"/>
+        <Alert value="TrainWorkerComplete_Prot"/>
         <Race value="ZHBR"/>
         <EffectArray Operation="Multiply" Reference="Unit,ZHBRSentinel,Speed" Value="1.25"/>
         <EffectArray Operation="Set" Reference="Unit,ZHBRSentinel,Mover" Value="CliffJumper"/>
@@ -332,253 +383,399 @@
     </CUpgrade>
     <CUpgrade id="ZHBRToxicity">
         <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-voidfury.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
         <EffectArray Reference="Effect,ZHBRPollinatorWeapon@Damage,AttributeFactor[Light]" Value="1"/>
         <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRUltimateUnitOfTransfusion">
         <Icon value="Assets\Textures\btn-ability-protoss-shieldrecharge.dds"/>
-        <EffectArray Operation="Multiply" Reference="Effect,ZHBRTransfusion@Restore,DrainVitalCostFactor" Value="0.5"/>
-        <EffectArray Operation="Multiply" Reference="Effect,ZHBRTransfusion@Restore,RechargeVitalRate" Value="1.5"/>
-        <EditorCategories value="Race:ZHBR"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EffectArray Operation="Divide" Reference="Effect,ZHBRTransfusion@Restore,DrainVitalCostFactor" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Effect,ZHBRTransfusion@Restore,RechargeVitalRate" Value="2.000000"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AffectedUnitArray value="ZHBRProteus"/>
     </CUpgrade>
     <CUpgrade id="ZHBRVoidBonus">
         <Icon value="Assets\Textures\btn-ability-hornerhan-salvagebonus.dds"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[0].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[0].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/>
-        <EditorCategories value="Race:ZHBR"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
+        <!-- <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/> -->
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[1].Modification.ResourceHarvestAmountMultiplier[Vespene]" Value="0.125"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
+        <!-- <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/> -->
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[2].Modification.ResourceHarvestAmountMultiplier[Vespene]" Value="0.125"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[0].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
+        <!-- <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[0].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/> -->
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[0].Modification.ResourceHarvestAmountMultiplier[Vespene]" Value="0.125"/>
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
+        <!-- <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[1].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/> -->
+        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Minerals]" Value="1"/>
+        <!-- <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[2].Modification.ResourceHarvestAmountBonus[Vespene]" Value="1"/> -->
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRVoidChasm">
         <Icon value="Assets\Textures\btn-ability-zeratul-avatarofessence-devolutionwave.dds"/>
-        <EditorCategories value="Race:ZHBR"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
-    <CUpgrade id="ZHBRVoidShield">
+    <CUpgrade id="ZHBRRestorationHealth">
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
-        <EditorCategories value="Race:ZHBR"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[1].Modification.ShieldArmorBonus" Value="2"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUser,PowerStageArray[2].Modification.ShieldArmorBonus" Value="2"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[0].Modification.ShieldArmorBonus" Value="2"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[1].Modification.ShieldArmorBonus" Value="2"/>
-        <EffectArray Reference="Behavior,ZHBRVoid@PowerUserPermanent,PowerStageArray[2].Modification.ShieldArmorBonus" Value="2"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRSpray">
         <Flags index="UpgradeCheat" value="0"/>
+        <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
         <AffectedUnitArray value="ZHBRMinion"/>
         <LeaderAlias value=""/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRUpgradeToAdvancedNemesis">
         <Icon value="Assets\Textures\tip_hybridnemesis.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
+        <EffectArray Reference="Unit,ZHBRNemesis,EnergyMax" Value="100"/>
+        <EffectArray Reference="Unit,ZHBRNemesis,Speed" Value="0.410100"/>
+        <EffectArray Reference="Unit,ZHBRNemesis,ShieldsMax" Value="25"/>
+        <EffectArray Reference="Unit,ZHBRNemesis,LifeMax" Value="50"/>
+        <EffectArray Reference="Unit,ZHBRNemesis,LifeStart" Value="50"/>
+        <EffectArray Reference="Unit,ZHBRNemesis,EnergyStart" Value="50"/>
+        <EffectArray Reference="Behavior,ZHBRVoidImmunityNemesis,Modification.VitalMaxArray[Shields]" Value="13"/>
+        <EffectArray Operation="Set" Reference="Actor,ZHBRNemesis,CustomUnitStatusFrame" Value="UnitStatus/UnitStatusFrame_HybridNemesisAdvanced"/>
         <EditorCategories value="Race:ZHBR"/>
         <AffectedUnitArray value="ZHBRNemesis"/>
         <AffectedUnitArray value="ZHBRNemesisAdvanced"/>
-        <EffectArray Reference="Unit,ZHBRNemesis,EnergyMax" Value="100"/>
-        <EffectArray Reference="Effect,ZHBRNemesisWeapon@Damage,Amount" Value="2"/>
-        <EffectArray Reference="Effect,ZHBRNemesisWeapon@DamageArmorIgnore,Amount" Value="2"/>
-        <Race value="ZHBR"/>
     </CUpgrade>
-    <CUpgrade id="ZHBRCloakedSpirit">
-        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
-        <EditorCategories value="Race:ZHBR"/>
+    <CUpgrade id="ZHBRMoveSpirit">
+        <Icon value="Assets\Textures\btn-upgrade-nova-monomolecularblade.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ZHBRSpirit,Speed" Value="1.398400"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ZHBRSpirit@Phantasm,Speed" Value="1.398400"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRIonicField">
         <Icon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ZHBRIonicCrystal@Moveable,Speed" Value="1.800700"/>
+        <EffectArray Reference="Unit,ZHBRIonicCrystal@Moveable,Sight" Value="2"/>
+        <EffectArray Reference="Unit,ZHBRIonicCrystal,Sight" Value="2"/>
         <EditorCategories value="Race:ZHBR"/>
         <AffectedUnitArray value="ZHBRIonicCrystal"/>
         <AffectedUnitArray value="ZHBRIonicCrystal@Moveable"/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRProjector">
+        <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
         <LeaderAlias value=""/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBREnhancedArmor@Upgrade">
+        <Icon value="Assets\Textures\btn-ability-zerg-armoraura.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
         <EffectArray Reference="Unit,ZHBRShapeshifter,LifeArmor" Value="2"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Icon value="Assets\Textures\btn-ability-zerg-armoraura.dds"/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRGroundWeaponUpgradeLevel1" parent="ZHBRGroundWeapons">
         <Name value="Upgrade/Name/ZHBRGroundWeaponUpgradeLevel1"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level1.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="200"/>
-        <LeaderLevel value="1"/>
         <EffectArray index="3" Reference="Effect,ZHBRSentinelWeapon@Damage,Amount" Value="2"/>
         <EffectArray index="4" Reference="Effect,ZHBRWarbringerWeaponMaceCannon@Damage,Amount" Value="5"/>
-        <EffectArray index="5" Reference="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,AttributeBonus[Armored]" Value="5"/>
-        <EffectArray index="6" Reference="Effect,ZHBRProteusWeapon@Damage,Amount" Value="5"/>
-        <EffectArray index="8" Reference="Effect,ZHBRChimeraRangedWeapon@Damage,Amount" Value="2"/>
-        <EffectArray index="11" Reference="Effect,ZHBRDominatorWeapon@Damage,Amount" Value="4"/>
-        <EffectArray index="12" Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="3"/>
-        <EffectArray index="20" Reference="Weapon,ZHBRChimeraMeleeWeapon," Value="1"/>
-        <EffectArray index="21" Reference="Weapon,ZHBRChimeraRangedWeapon," Value="1"/>
-        <EffectArray Reference="Effect,ZHBRFlayerWeapon@Damage,AttributeBonus[Light]" Value="1"/>
-        <EffectArray Reference="Effect,ZHBRDreadnokWeapon@Damage,AttributeBonus[Psionic]" Value="2"/>
-        <EffectArray Reference="Effect,ZHBRWarriorWeapon@Damage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray index="5" Reference="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,AttributeBonus[Armored]" Value="0"/>
+        <EffectArray index="6" Reference="Effect,ZHBRProteusWeapon@Damage,Amount" Value="2"/>
+        <EffectArray index="7" Reference="Effect,ZHBRChimeraMeleeWeapon@Damage,Amount" Value="2"/>
+        <EffectArray index="8" Reference="Effect,ZHBRChimeraRangedWeapon@Damage,AttributeBonus[Mechanical]" Value="1"/>
+        <EffectArray index="11" Reference="Effect,ZHBRDominatorWeapon@Damage,Amount" Value="5"/>
+        <EffectArray index="12" Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="5"/>
+        <EffectArray index="20" Reference="Weapon,ZHBRStriderWeapon,Level" Value="1"/>
+        <EffectArray index="21" Reference="Weapon,ZHBRDreadnokWeapon,Level" Value="1"/>
+        <EffectArray index="22" Reference="Weapon,ZHBRDominatorWeapon,Level" Value="1"/>
+        <EffectArray index="23" Reference="Weapon,ZHBRBehemothWeapon,Level" Value="1"/>
+        <EffectArray index="24" Reference="Effect,ZHBRDreadnokWeapon@Damage,AttributeBonus[Psionic]" Value="2"/>
+        <EffectArray index="25" Reference="Effect,ZHBRDreadnokWeapon@DamageAlly,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRDreadnokWeapon@DamageAlly,AttributeBonus[Psionic]" Value="2"/>
+        <EffectArray Reference="Weapon,ZHBRChimeraMeleeWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ZHBRChimeraRangedWeapon,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,ZHBRChimeraMeleeWeapon,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray Reference="Effect,ZHBRSentinelWeapon@Damage,AttributeBonus[Structure]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRProteusWeapon@Damage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRWarriorWeapon@DamageUpgrade,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRWarriorWeapon@DamageUpgrade,AttributeBonus[Structure]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRChimeraRangedWeapon@Damage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ZHBRStriderWeapon@DamageByArmor,Amount" Value="1"/>
+        <EffectArray Reference="Behavior,ZHBREvaporator@AttackRangeBuff,Modification.DamageDealtUnscaled[Ranged]" Value="1"/>
+        <AffectedUnitArray value="ZHBRChimera"/>
+        <AffectedUnitArray value="ZHBRBehemothAdvanced"/>
+        <AffectedUnitArray value="ZHBRDominatorAdvanced"/>
+        <LeaderLevel value="1"/>
     </CUpgrade>
     <CUpgrade id="ZHBRGroundWeaponUpgradeLevel2" parent="ZHBRGroundWeapons">
         <Name value="Upgrade/Name/ZHBRGroundWeaponUpgradeLevel2"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level2.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="300"/>
-        <LeaderLevel value="2"/>
         <EffectArray index="3" Reference="Effect,ZHBRSentinelWeapon@Damage,Amount" Value="2"/>
         <EffectArray index="4" Reference="Effect,ZHBRWarbringerWeaponMaceCannon@Damage,Amount" Value="5"/>
-        <EffectArray index="5" Reference="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount" Value="5"/>
-        <EffectArray index="6" Reference="Effect,ZHBRProteusWeapon@Damage,Amount" Value="5"/>
-        <EffectArray index="8" Reference="Effect,ZHBRChimeraRangedWeapon@Damage,Amount" Value="2"/>
-        <EffectArray index="11" Reference="Effect,ZHBRDominatorWeapon@Damage,Amount" Value="4"/>
-        <EffectArray index="12" Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="3"/>
+        <EffectArray index="5" Reference="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount" Value="0"/>
+        <EffectArray index="6" Reference="Effect,ZHBRProteusWeapon@Damage,Amount" Value="2"/>
+        <EffectArray index="7" Reference="Effect,ZHBRChimeraMeleeWeapon@Damage,Amount" Value="2"/>
+        <EffectArray index="8" Reference="Effect,ZHBRChimeraRangedWeapon@Damage,AttributeBonus[Mechanical]" Value="1"/>
+        <EffectArray index="11" Reference="Effect,ZHBRDominatorWeapon@Damage,Amount" Value="5"/>
+        <EffectArray index="12" Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="5"/>
+        <EffectArray index="20" Reference="Weapon,ZHBRChimeraMeleeWeapon,Level" Value="1"/>
+        <EffectArray index="21" Reference="Weapon,ZHBRChimeraRangedWeapon,Level" Value="1"/>
         <EffectArray Reference="Effect,ZHBRDreadnokWeapon@Damage,AttributeBonus[Psionic]" Value="2"/>
-        <EffectArray Reference="Effect,ZHBRFlayerWeapon@Damage,AttributeBonus[Light]" Value="1"/>
-        <EffectArray Reference="Effect,ZHBRWarriorWeapon@Damage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRDreadnokWeapon@DamageAlly,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRDreadnokWeapon@DamageAlly,AttributeBonus[Psionic]" Value="2"/>
+        <EffectArray Operation="Set" Reference="Weapon,ZHBRChimeraMeleeWeapon,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray Reference="Effect,ZHBRSentinelWeapon@Damage,AttributeBonus[Structure]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRProteusWeapon@Damage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRWarriorWeapon@DamageUpgrade,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRWarriorWeapon@DamageUpgrade,AttributeBonus[Structure]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRChimeraRangedWeapon@Damage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ZHBRStriderWeapon@DamageByArmor,Amount" Value="1"/>
+        <EffectArray Reference="Behavior,ZHBREvaporator@AttackRangeBuff,Modification.DamageDealtUnscaled[Ranged]" Value="1"/>
+        <LeaderLevel value="2"/>
     </CUpgrade>
     <CUpgrade id="ZHBRGroundWeaponUpgradeLevel3" parent="ZHBRGroundWeapons">
         <Name value="Upgrade/Name/ZHBRGroundWeaponUpgradeLevel3"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-bothattacks-level3.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="400"/>
-        <LeaderLevel value="3"/>
         <EffectArray index="3" Reference="Effect,ZHBRSentinelWeapon@Damage,Amount" Value="2"/>
         <EffectArray index="4" Reference="Effect,ZHBRWarbringerWeaponMaceCannon@Damage,Amount" Value="5"/>
-        <EffectArray index="5" Reference="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount" Value="5"/>
-        <EffectArray index="6" Reference="Effect,ZHBRProteusWeapon@Damage,Amount" Value="5"/>
+        <EffectArray index="5" Reference="Effect,ZHBRWarbringerWeaponMaceStrike@Damage,Amount" Value="0"/>
+        <EffectArray index="6" Reference="Effect,ZHBRProteusWeapon@Damage,Amount" Value="2"/>
+        <EffectArray index="7" Reference="Effect,ZHBRChimeraMeleeWeapon@Damage,Amount" Value="2"/>
         <EffectArray index="8" Reference="Effect,ZHBRChimeraRangedWeapon@Damage,Amount" Value="2"/>
-        <EffectArray index="11" Reference="Effect,ZHBRDominatorWeapon@Damage,Amount" Value="4"/>
-        <EffectArray index="12" Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="3"/>
+        <EffectArray index="11" Reference="Effect,ZHBRDominatorWeapon@Damage,Amount" Value="5"/>
+        <EffectArray index="12" Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="5"/>
+        <EffectArray index="20" Reference="Weapon,ZHBRChimeraMeleeWeapon,Level" Value="1"/>
+        <EffectArray index="21" Reference="Weapon,ZHBRChimeraRangedWeapon,Level" Value="1"/>
         <EffectArray Reference="Effect,ZHBRDreadnokWeapon@Damage,AttributeBonus[Psionic]" Value="2"/>
-        <EffectArray Reference="Effect,ZHBRFlayerWeapon@Damage,AttributeBonus[Light]" Value="1"/>
-        <EffectArray Reference="Effect,ZHBRWarriorWeapon@Damage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRDreadnokWeapon@DamageAlly,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRDreadnokWeapon@DamageAlly,AttributeBonus[Psionic]" Value="2"/>
+        <EffectArray Operation="Set" Reference="Weapon,ZHBRChimeraMeleeWeapon,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray Reference="Effect,ZHBRSentinelWeapon@Damage,AttributeBonus[Structure]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRProteusWeapon@Damage,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRWarriorWeapon@DamageUpgrade,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRWarriorWeapon@DamageUpgrade,AttributeBonus[Structure]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRChimeraRangedWeapon@Damage,AttributeBonus[Mechanical]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRStriderWeapon@DamageByArmor,Amount" Value="1"/>
+        <EffectArray Reference="Behavior,ZHBREvaporator@AttackRangeBuff,Modification.DamageDealtUnscaled[Ranged]" Value="1"/>
+        <AffectedUnitArray value="ZHBRProteus"/>
+        <LeaderLevel value="3"/>
     </CUpgrade>
     <CUpgrade id="ZHBRStasisCell@Connection">
+        <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
         <LeaderAlias value=""/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRAirWeaponUpgradeLevel1" parent="ZHBRAirWeapons">
         <Name value="Upgrade/Name/ZHBRAirWeaponUpgradeLevel1"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level1.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="200"/>
-        <LeaderLevel value="1"/>
         <EffectArray index="3" Reference="Effect,ZHBRShapeshifterWeapon@AOEDamage,Amount" Value="2"/>
         <EffectArray index="4" Reference="Effect,ZHBRShapeshifterWeapon@MainTargetDamage,Amount" Value="2"/>
         <EffectArray index="5" Reference="Effect,ZHBRShapeshifterWeapon2@Damage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ZHBRPollinatorWeapon@Damage,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRShapeshifterWeapon2@Damage,AttributeBonus[Armored]" Value="2"/>
+        <EffectArray Reference="Effect,HybridPsyon@FragmentumCorrosionDamage,Amount" Value="1"/>
+        <EffectArray Reference="Weapon,HybridPsyon@FragmentumCorrosion,Level" Value="1"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,ZHBRNemesisDisintegrator,Modification.DamageDealtScaled[Ranged]" Value="1"/>
+        <AffectedUnitArray value="ZHBRPsyon"/>
+        <LeaderLevel value="1"/>
     </CUpgrade>
     <CUpgrade id="ZHBRAirWeaponUpgradeLevel2" parent="ZHBRAirWeapons">
         <Name value="Upgrade/Name/ZHBRAirWeaponUpgradeLevel2"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level2.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="300"/>
-        <LeaderLevel value="2"/>
         <EffectArray index="3" Reference="Effect,ZHBRShapeshifterWeapon@AOEDamage,Amount" Value="2"/>
         <EffectArray index="4" Reference="Effect,ZHBRShapeshifterWeapon@MainTargetDamage,Amount" Value="2"/>
         <EffectArray index="5" Reference="Effect,ZHBRShapeshifterWeapon2@Damage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ZHBRPollinatorWeapon@Damage,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRShapeshifterWeapon2@Damage,AttributeBonus[Armored]" Value="2"/>
+        <EffectArray Reference="Weapon,HybridPsyon@FragmentumCorrosion,Level" Value="1"/>
+        <EffectArray Reference="Effect,HybridPsyon@FragmentumCorrosionDamage,Amount" Value="1"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,ZHBRNemesisDisintegrator,Modification.DamageDealtScaled[Ranged]" Value="1"/>
+        <AffectedUnitArray value="ZHBRPsyon"/>
+        <LeaderLevel value="2"/>
     </CUpgrade>
     <CUpgrade id="ZHBRAirWeaponUpgradeLevel3" parent="ZHBRAirWeapons">
         <Name value="Upgrade/Name/ZHBRAirWeaponUpgradeLevel3"/>
         <Icon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level3.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="400"/>
-        <LeaderLevel value="3"/>
         <EffectArray index="3" Reference="Effect,ZHBRShapeshifterWeapon@AOEDamage,Amount" Value="2"/>
         <EffectArray index="4" Reference="Effect,ZHBRShapeshifterWeapon@MainTargetDamage,Amount" Value="2"/>
         <EffectArray index="5" Reference="Effect,ZHBRShapeshifterWeapon2@Damage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ZHBRPollinatorWeapon@Damage,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ZHBRShapeshifterWeapon2@Damage,AttributeBonus[Armored]" Value="2"/>
+        <EffectArray Reference="Weapon,HybridPsyon@FragmentumCorrosion,Level" Value="1"/>
+        <EffectArray Reference="Effect,HybridPsyon@FragmentumCorrosionDamage,Amount" Value="1"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,ZHBRNemesisDisintegrator,Modification.DamageDealtScaled[Ranged]" Value="1"/>
+        <AffectedUnitArray value="ZHBRPsyon"/>
+        <LeaderLevel value="3"/>
     </CUpgrade>
     <CUpgrade id="ZHBRAirArmorUpgradeLevel1" parent="ZHBRAirArmors">
         <Name value="Upgrade/Name/ZHBRAirArmorUpgradeLevel1"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="200"/>
         <ScoreValue value="ArmorTechnologyValue"/>
+        <EffectArray index="0" removed="1"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
         <LeaderLevel value="1"/>
     </CUpgrade>
     <CUpgrade id="ZHBRAirArmorUpgradeLevel2" parent="ZHBRAirArmors">
         <Name value="Upgrade/Name/ZHBRAirArmorUpgradeLevel2"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="300"/>
         <ScoreValue value="ArmorTechnologyValue"/>
+        <EffectArray index="0" removed="1"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
         <LeaderLevel value="2"/>
     </CUpgrade>
     <CUpgrade id="ZHBRAirArmorUpgradeLevel3" parent="ZHBRAirArmors">
         <Name value="Upgrade/Name/ZHBRAirArmorUpgradeLevel3"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <ScoreAmount value="400"/>
         <ScoreValue value="ArmorTechnologyValue"/>
+        <EffectArray index="0" removed="1"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArrayTemplate Operation="Set" Reference="Actor,^ParamId^,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
         <LeaderLevel value="3"/>
     </CUpgrade>
     <CUpgrade id="ZHBRUpgradeToAdvancedDominator">
         <Icon value="Assets\Textures\tip_Hybriddominator.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
+        <EffectArray Reference="Unit,ZHBRDominator,ShieldsMax" Value="100"/>
+        <EffectArray Reference="Unit,ZHBRDominator,EnergyMax" Value="100"/>
+        <EffectArray Reference="Unit,ZHBRDominator,Sight" Value="3"/>
+        <EffectArray Reference="Abil,ZHBRDominatorDomination@ZHBRDomination,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,ZHBRDominatorDomination@ZHBRDomination,Cost[0].Charge.CountStart" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRDominator,EnergyStart" Value="50"/>
+        <EffectArray Reference="Behavior,ZHBRVoidImmunityDominator,Modification.VitalMaxArray[Shields]" Value="50"/>
+        <EffectArray Reference="Behavior,ZHBRVoidImmunityDominator,Modification.VitalMaxArray[Shields]" Value="50"/>
+        <EffectArray Operation="Set" Reference="Actor,ZHBRDominator,CustomUnitStatusFrame" Value="UnitStatus/UnitStatusFrame_HybridDominatorAdvanced"/>
         <EditorCategories value="Race:ZHBR"/>
         <AffectedUnitArray value="ZHBRDominator"/>
         <AffectedUnitArray value="ZHBRDominatorAdvanced"/>
-        <EffectArray Operation="Multiply" Reference="Unit,ZHBRDominator,LifeMax" Value="1.5"/>
-        <EffectArray Operation="Multiply" Reference="Unit,ZHBRDominator,LifeStart" Value="1.5"/>
-        <EffectArray Operation="Multiply" Reference="Unit,ZHBRDominator,ShieldsMax" Value="1.5"/>
-        <EffectArray Reference="Unit,ZHBRDominator,EnergyMax" Value="100"/>
-        <EffectArray Operation="Multiply" Reference="Unit,ZHBRDominator,ShieldRegenRate" Value="1.500000"/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRFlayerFury">
-        <EditorCategories value="Race:ZHBR,UpgradeType:SpellResearch"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ZHBRVoidRiftTrain,InfoArray[Train3].Time" Value="8.400000"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRFlayerBerserker@Berserker">
+        <Icon value="Assets\Textures\btn-upgrade-kerrigan-broodlordspeed.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
         <EffectArray Operation="Multiply" Reference="Unit,ZHBRFlayer,Speed" Value="1.300700"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Icon value="Assets\Textures\btn-upgrade-kerrigan-broodlordspeed.dds"/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRUpgradeToAdvancedBehemoth">
         <Icon value="Assets\Textures\tip_Hybridbehemoth.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
         <EffectArray Reference="Unit,ZHBRBehemoth,LifeMax" Value="100"/>
         <EffectArray Reference="Unit,ZHBRBehemoth,LifeStart" Value="100"/>
-        <EffectArray Reference="Unit,ZHBRBehemoth,ShieldsMax" Value="50"/>
         <EffectArray Reference="Unit,ZHBRBehemoth,EnergyMax" Value="100"/>
-        <EffectArray Reference="Unit,ZHBRBehemoth,Speed" Value="0.300700"/>
-        <EffectArray Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="5"/>
-        <EffectArray Reference="Unit,ZHBRBehemoth,ShieldArmor" Value="1"/>
-        <EffectArray Reference="Unit,ZHBRBehemoth,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,ZHBRBehemoth,Speed" Value="0.000000"/>
+        <EffectArray Reference="Effect,ZHBRBehemothWeapon@Damage,Amount" Value="15"/>
+        <EffectArray Reference="Unit,ZHBRBehemoth,VisionHeight" Value="1"/>
+        <EffectArray Operation="Set" Reference="Unit,ZHBRBehemoth,Collide[Land2]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ZHBRBehemoth,Collide[Land16]" Value="0"/>
+        <!-- this Land11 position also determines whether the unit will collide with other units -->
+        <!-- but what determines continuing to collide with manually chosen units like Massive units, even after this upgrade removes collision, is the hijacking of an unused Air collision flag-->
+        <!-- <EffectArray Operation="Set" Reference="Unit,ZHBRBehemoth,Collide[Land11]" Value="1"/> -->
+        <EffectArray Reference="Unit,ZHBRBehemoth,EnergyStart" Value="50"/>
+        <EffectArray Reference="Unit,ZHBRBehemoth,ShieldsMax" Value="50"/>
+        <EffectArray Reference="Behavior,ZHBRVoidImmunityBehemoth,Modification.VitalMaxArray[Shields]" Value="25"/>
+        <EffectArray Operation="Set" Reference="Actor,ZHBRBehemoth,CustomUnitStatusFrame" Value="UnitStatus/UnitStatusFrame_HybridBehemothAdvanced"/>
         <EditorCategories value="Race:ZHBR"/>
         <AffectedUnitArray value="ZHBRBehemoth"/>
         <AffectedUnitArray value="ZHBRBehemothAdvanced"/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRProtectionJump@ZHBRProtectionJump">
         <Icon value="Assets\Textures\btn-ability-zerg-dehakaspawn.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <Race value="ZHBR"/>
         <EffectArray Reference="Effect,ZHBRProtectionJump@ApplyBehavior,Chance" Value="1"/>
         <EditorCategories value="Race:ZHBR"/>
-        <Race value="ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRPrimeSummoning">
         <Icon value="Assets\Textures\tip_voidrift.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
         <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
     <CUpgrade id="ZHBRWarbringerOrbitalGuidance">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds"/>
-        <EffectArray Reference="Weapon,ZHBRWarbringerWeaponMaceStrike,Range" Value="2"/>
-        <EditorCategories value="Race:ZHBR"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EffectArray Reference="Weapon,ZHBRWarbringerWeaponMaceStrike,Range" Value="2"/>
+        <EffectArray Reference="Actor,ZHBRMaceStrike@Range,Range" Value="2.000000"/>
+        <EffectArray Reference="Abil,ZHBRWarbringerMaceStrike,Range[0]" Value="2"/>
+        <EffectArray Reference="Abil,ZHBRWarbringerMaceStrike,AutoCastRange" Value="2"/>
+        <EditorCategories value="Race:ZHBR"/>
+        <AffectedUnitArray value="ZHBRWarbringer"/>
     </CUpgrade>
     <CUpgrade id="ZHBRWarriorDeconstruction@Deconstruction">
-        <EffectArray Reference="Effect,ZHBRWarriorWeapon@Damage,AttributeFactor[Structure]" Value="2"/>
-        <EffectArray Operation="Set" Reference="Effect,ZHBRWarriorWeapon@LM,AmmoUnit" Value="ZHBRWarriorWeapon@MissileUpgraded"/>
-        <EditorCategories value="Race:ZHBR"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-terrandefendermodestructureattack.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
         <Race value="ZHBR"/>
+        <EffectArray Operation="Set" Reference="Effect,ZHBRWarriorWeapon@LM,AmmoUnit" Value="ZHBRWarriorWeapon@MissileUpgraded"/>
+        <EffectArray Reference="Effect,ZHBRWarriorWeapon@DamageUpgrade,Amount" Value="3"/>
+        <EffectArray Operation="Set" Reference="Effect,ZHBRWarriorWeapon@LM,ImpactEffect" Value="ZHBRWarriorWeapon@DamageUpgrade"/>
+        <EffectArray Operation="Set" Reference="Weapon,ZHBRWarriorWeapon,DisplayEffect" Value="ZHBRWarriorWeapon@DamageUpgrade"/>
+        <EditorCategories value="Race:ZHBR"/>
     </CUpgrade>
 </Catalog>

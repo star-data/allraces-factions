@@ -22,6 +22,12 @@ UI/ResourceFrameSupplyIcon_ZHBR=assets\textures\icon-supply-zhybrid_nobg.dds
 UI/ResourceFrameArmyIcon_ZHBR=assets\textures\btn-unit-zhybrid-warrior.dds
 UI/ResourceFrameWorkerIcon_ZHBR=assets\textures\btn-unit-zhybrid-minion.dds
 
+// Tech Tree //
+
+UI/TechGlossaryButtonNormal_ZHybrid=Assets\ui\ui_ingame_help_glossary_zhybrid_normalandpressed.dds
+UI/TechTreeBuildingNameBackground_ZHybrid=Assets\ui\ui_techtree_iconname_frame_zhybrid.dds
+UI/UnitListBackgroundImage_ZHybrid=Assets\ui\ui_techtree_techname_frame_zhybrid.dds
+
 // Observer Interface Assets //
 
 // Pro 2020/WCS 3
