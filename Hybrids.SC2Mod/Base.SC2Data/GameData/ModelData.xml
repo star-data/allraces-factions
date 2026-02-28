@@ -2796,7 +2796,7 @@
         <ScaleMin value="1.300000,1.300000,1.300000"/>
     </CModel>
     <CModel id="ZHBRSentinel@Model" parent="Unit" Race="ZHBR">
-        <Model value="Sentinel.m3"/>
+        <Model value="Assets\Units\ZHybrid\Sentinel\Sentinel.m3"/>
         <Events>
             <Anim value="Attack,00"/>
             <Name value="AttackSoundWhoosh"/>
